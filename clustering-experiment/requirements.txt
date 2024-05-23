@@ -3,3 +3,5 @@ tqdm
 langchain
 langchain-community
 wikipedia
+scikit-learn
+chromadb
