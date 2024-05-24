@@ -5,3 +5,4 @@ langchain-community
 wikipedia
 scikit-learn
 chromadb
+python-dotenv
