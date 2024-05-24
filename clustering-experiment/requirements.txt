@@ -6,3 +6,8 @@ wikipedia
 scikit-learn
 chromadb
 python-dotenv
+praw
+scipy
+networkx
+matplotlib
+adjustText
