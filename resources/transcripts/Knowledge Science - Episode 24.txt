@@ -1,0 +1,533 @@
+ Hallo und herzlich willkommen.
+
+Die heutige Sendung möchten wir nutzen, um die aus Folge 5 und 6 auf Basis von Conversation AI dargestellten Assistenzsysteme nochmal aufzugreifen und möchten vor allem heute auf die Schnittstelle in der Nutzung von Assistenzsystemen eingehen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, diese Woche möchten wir gerne über Assistenzsysteme nochmal sprechen.
+
+Wir haben ja letzte Woche noch über die Generative Adversion Networks gesprochen mit so einer
+
+Eigentlich kann man ja fast sagen, eine Miniserie, weil es waren ja doch auch zwei, drei Veranstaltungen, wo wir darüber gesprochen haben.
+
+Und diese Woche würden wir gerne eine etwas ältere Sendung aufgreifen, nämlich die Sendung Folge 5 und Folge 6.
+
+Da hatten wir mal ein Interview mit der Vitas AI und haben über Conversation AI-Chatbots gesprochen.
+
+Damals waren das ja Assistenzsysteme, die wir dargestellt haben, vor allem im Restaurantbereich von der VITAS, die im Endeffekt Plätze reservieren und damit eine Konversation ja zulassen.
+
+Genau, da haben wir schon gesehen, es ist eine Mischung aus konversationeller, elektrischer, Dialogsysteme.
+
+Also wir haben Systeme, die einen natürlichsprachlichen Dialog mit den Anwender und Anwenderinnen führen.
+
+Und Assistenzsysteme im weiteren Sinne.
+
+Wollen wir mal sehen, wir haben eigentlich ein Informationsbedürfnis und wollen ein System, was uns hilft, dieses Informationsbedürfnis der Anwender und Anwenderinnen irgendwie zu decken.
+
+Also das ist eigentlich auch die Aufgabe von Informationssystemen im Allgemeinen.
+
+Jetzt hier aber gerade in der Kombination, wir wollen das natürlich sprachlich machen, und hatten dann überlegt, wie wir letztendlich so ein System aufbauen können.
+
+Vom Eingang der Anfrage über natürliche Sprache bis hin zur Ausgabe.
+
+Und was wir damals ausgeklammert hatten, war ja die Tatsache, ja was ist denn, wenn das jetzt nicht textuelle Eingabe ist, sondern der Anwender wirklich spricht.
+
+Das wollen wir gleich ansprechen.
+
+Vorher aber vielleicht nochmal, um die Zuhörer und Zuhörerinnen alle abzuholen, nochmal die Überlegung, was zeichnet solche Systeme aus?
+
+Solche dialogbasierten Systeme.
+
+Und da fand ich es sehr schön, eine Darstellung in diesen verschiedenen Level von Assistenzsystemen und Dialogsystemen.
+
+Es geht ja los mit dem ganz rudimentären System, wie es jeder kennt, der Informationen irgendwo für braucht.
+
+Jeder muss wissen, wo kriegt er die Information her, wie krümme ich daran und was brauche ich überhaupt.
+
+Das kann man sich so vorstellen wie eine Kommandozeile, man muss die Befehle kennen, man tippt es ein.
+
+Das ist das ganz klassische Level 1, jegliche Form von Informationssystem.
+
+Da kann man sich das so vorstellen, die verschiedenen Level, die wir da definiert haben.
+
+dass man quasi das Wissen, was man braucht, um an die Information zu kommen, immer weiter eingeschränkt wird.
+
+Sodass es dem Anwender, der Anwenderin, immer leichter gemacht wird, an die Information zu kommen, die er oder sie benötigt.
+
+Und da würde ich mal sagen, der Sprung von einem klassischen Informationssystem sogar zu einem Assistenzsystem wäre dann ja sogar noch, dass das Assistenzsystem selbst sieht oder merkt, welche Information der Anwender, die Anwenderin braucht.
+
+Also vielleicht zwischen Pull- und Push-System.
+
+und sie ihm oder ihr direkt zur Verfügung stellt.
+
+Vielleicht kannst du noch mal ein bisschen was zum Level weiter sagen.
+
+Level 2, was war das denn?
+
+Ja, wir haben ja im Endeffekt 5 Levels, die wir damals aufgeführt haben.
+
+Und das erste hast du ja gesagt, das ist ja praktisch nur so eine Art Buffetskette.
+
+Man könnte es vielleicht auch anders darstellen, auch nur eine reine Notifikation, dass der Assistent einfach nur zu einem gewissen Zeitpunkt eine Antwort gibt.
+
+Also wenn man da überhaupt von einem Assistent sprechen kann.
+
+Wobei eigentlich kann man schon, weil auch der Hinweis auf den Termin ja eigentlich ein Assistent sein kann.
+
+Dann kommt die Stufe 2, wenn man jetzt mal so ein bisschen weitergehen und das mal ein bisschen auch schon in Richtung, also wirklich auf den Fokus Resistenzsystemen zieht, dann sind das sozusagen so Fragen-Antworten-Systeme, also FAQ-Systeme, wie das so heißt, Frequently Asked Questions, die man hier greifen kann.
+
+Und die Stufe 3 wäre dann schon eine Kontextabhängigkeit.
+
+Bevor wir zu der Stufe kommen, vielleicht noch hervorzuheben, dass von Stufe 1 zu 2 tatsächlich der Sprung schon da ist, dass ich von einer
+
+sagen wir mal, definierten API, so eine Schnittstelle, wie ich ein System nutze, wo ich die Befehle kennen muss.
+
+Ich wechsle zu einer freien textuellen Eingabe, dass ich geführt werde, das System mich fragt, dass ich frei eingeben kann, was ich brauche.
+
+Und das System da schon anfängt herauszulesen, was der Anwender, die Anwenderin eigentlich wissen möchte.
+
+Dass er fragt Schritt für Schritt oder irgendwo aus der Frage direkt ableitet.
+
+Jetzt sagst du Level 3 Contextualized Assistant, also Kontextabhängigkeit, was bedeutet das?
+
+Das ist ja schon die, also du hast das jetzt so dargestellt, dass dann ganze Konversationen geführt werden, das ist bei Stufe 2 noch gar nicht so stark drin, bei Stufe 2 haben wir noch den Punkt,
+
+dass wir eine Frage stellen zum Beispiel, und wir kriegen eine Antwort, vielleicht mit der einen oder anderen Rückfrage.
+
+Bei einem kontextabhängigen Assistenten, also Stufe drei, da haben wir praktisch das Themengebiet, über das wir reden, in dem Kontext.
+
+Und wenn wir eine Frage stellen und dann zum Beispiel mal Abweichung oder eine Zwischenfrage haben, oder wenn es ein bisschen größer oder komplexer wird, dann behält der Assistent sozusagen den Kontext und kann diesen Gedanken oder diesen Kommunikationsfaden mitführen.
+
+Und das ist die Stufe, in der wir uns momentan eigentlich in einer gewissen Weise bewegen.
+
+Also das ist auch der Wissensstand.
+
+Wir haben dann Stufe 4 und 5 noch, wo es dann hingeht zu komplett personalisierten Assistenten, die zum Beispiel für mich was weiß ich, den Friseur ausmachen und da die Kommunikation durchführen.
+
+Und Stufe 5 wäre dann wirklich schon, wenn man es jetzt mal so bezeichnen würde, ich glaube, wir haben es damals ein bisschen anders bezeichnet,
+
+Aber um es nochmal heute greifbar zu machen, man könnte dann von autonomen Organisationen, von Assistenten sprechen, also Agenten im Endeffekt, die untereinander auch schon agieren.
+
+Wenn man das mal ein bisschen überlegt, könnte man eigentlich sagen, dass der Kontext immer größer und weiter wird.
+
+So ist es.
+
+Man könnte sagen, eigentlich was wir als erstmalig kontextabhängig beschrieben haben, als Level 3,
+
+wo es eigentlich primär um den Kontext innerhalb einer Konversation geht.
+
+Was habe ich schon gesagt, springe ich irgendwie hin und her, wenn ich das aber diesem Kontext übertrage, auch über Einzelgespräche und Anwendungen heraus, dass ich den Benutzer wieder, die Benutzerin wiedererkenne, dass ich Informationen über diese Person habe und damit einbringen kann.
+
+Das wäre dann personalisiert, aber einfach nicht eine Erweiterung des Kontextes.
+
+Und wenn ich den Kontext noch weiter fasse, dass ich nicht nur den Anwender, die Anwenderin wiedererkenne, sondern auch noch das Wissen darüber, dass es andere Assistenzsysteme gibt, die voneinander wissen, die ihre Schnittstellen kennen, die Sachen austauschen können, die autonom agieren können, Aufgaben erfüllen.
+
+Das ist die Frage, möchte man das, möchte man das nicht.
+
+Wenn ich ein Assistenzsystem habe, was dann automatisch das andere Assistenzsystem, das meine Zulieferer anruft und aushandelt, was ich dann für Produkte oder für Ersatzteile brauche.
+
+Die handeln das alles aus, ich muss nichts mehr machen.
+
+Als Kinder hatten wir immer so einen Witz über die moderne Kartoffelerntemaschine, die sät Kartoffeln aus, gießt sie, düngt sie, erntet sie, schält sie und isst sie selbst.
+
+Also die Frage ist, wozu brauchen wir den Menschen am Ende dann noch, aber das ist ein anderes Thema, denke ich mal.
+
+Gibt's übrigens ein schönes startup kasten farm bot die machen genau alles was du dargestellt hast kann man gern mal googeln also vom ernten gewässern wachsen überwachen und die hätten nur dass sie am ende die kartoffeln nicht erst verkaufen wenn sie sind noch aber nicht nicht selbst essen hoffe ich mal ansonsten sind wir wieder bei beim selbstversorger.
+
+Gut, also insofern hat diese Kontextabhängigkeit sehr, sehr wichtig.
+
+Wie man sowas modelliert, was man braucht, um die verschiedenen Absichten zu erkennen, hatten wir damals alle schon thematisiert, wo wir jetzt vielleicht in der Tiefe zu dem Zeitpunkt nicht aufgreifen.
+
+Aber vielleicht eine Sache, ein wichtiger Anknüpfungspunkt, weil wir hatten damals diskutiert, das war ja in Folge des GPT-3-Modells, was wir vorgestellt hatten, dass es ja so End-zu-End-Lösungen gibt.
+
+Die quasi alles erlernen und aufgrund liebe ich große informationsmengen was ich zugang zum weltweit web alles an fragen beantworten können und da wieder finden das klappt manchmal sehr gut im detail aber auch wieder nicht.
+
+Und wir hatten schon gesagt, wenn wir das in einem ernstzunehmend betrieblichen Kontext haben, dann müssen wir uns gewisserweise auf die Antworten auch verlassen können.
+
+Wir möchten, dass sie korrekt sind, dass sie konsistent sind.
+
+Und eine Möglichkeit, sowas hinzubekommen, ist, indem ich solche Systeme auch verknüpfe mit bestehenden Informationssystemen.
+
+Ich habe ja in den meisten Unternehmen Informationssysteme, die die ganzen operativen Prozesse abbilden.
+
+Und letztendlich muss ich Anknüpfungspunkte zu diesen Systemen schaffen.
+
+Genau, wir haben damals ja nur über die eigentlichen Konversationssysteme gesprochen.
+
+Und wenn wir das jetzt betrachten, wir haben ja im Endeffekt sind es Business-Gewinnungssysteme.
+
+Wir haben im Endeffekt Wissen im Unternehmen in einem gewissen Kontext und die wollen wir haben, indem wir es befragen und wollen mit dieser Information dann irgendeine Entscheidung treffen oder automatisiert eine Entscheidung durchführen oder ähnliches.
+
+Das heißt, wir müssen eigentlich nicht nur auf die Konversation an sich achten, also so auf dem Motto, hallo, schönes System, kriege ich eine schöne Antwort drauf und dann kann ich die nächste Frage stellen und so weiter, sondern es muss auch zu dem Inhalt des Unternehmens, des Kontextes passen.
+
+Und da müssen wir zwangsläufig eigentlich auf Informationen zurückgreifen, die einerseits, ich sag mal, allgemeingültig vorhanden sind, die andererseits aber auch flüchtig und schnell sind.
+
+Also wenn ich da zum Beispiel an den Prozessschritt denke, ein Einkaufsprozess, zu dem ich gerade eine Frage habe, der ist halt nur gerade aktuell, solange der Einkaufsprozess noch läuft.
+
+Wenn der Einkauf abgeschlossen ist, das Produkt geliefert wurde,
+
+oder die Ware und das bezahlt ist, dann ist diese Information eigentlich zumindest in dem Moment nicht mehr so akut wichtig.
+
+Es gibt unterschiedliche Arten von Informationen, Realtime-Informationen, die sofort verfügbar und nutzbar sein müssen.
+
+Es gibt sicherlich langfristige Informationen, Stammdaten, welche Produkte habe ich, welche Eigenschaften haben die, wo man einfach drauf zugreifen kann.
+
+Und das bedeutet, dass wir eigentlich, wenn wir jetzt sowas anschauen, so ein System im Unternehmen als Assistenzsystem oder auch als persönliche Assistenz, dass wir ihm eigentlich zufüttern müssen mit Informationen.
+
+Und da sieht man schon, dass die Quellen, also die Systeme, auch aus der KI-Sicht heraus, was wir brauchen,
+
+ganz schön vielfältig sind.
+
+Weil auf der einen Seite haben wir ganz strukturierte Daten, wo wir ganz einfach, du hast das ja schon gesagt, Stammdaten sind, wenn du schon von Stammdaten sprichst, dann sind die ja schon abgelegt als Stammdaten, dann sind die strukturiert, dann kann ich die abfragen, ja, dann kann ich die Bestellnummer abfragen, dann kann ich die Kundennummer abfragen und so weiter und kriege ich genau die Information.
+
+Wir haben aber auch ganz viele Informationen, ich denke da zum Beispiel an Verträge oder an andere Dokumente, wo halt die Daten nicht so strukturiert vorliegen, also unstrukturiert.
+
+Das heißt, auch hier brauchen wir in gewisser Weise KI-Verfahren, oder generell Verfahren, die mir aus den unstrukturierten Daten eine gewisse Strukturiertheit machen, damit ich sie weiterverarbeiten kann.
+
+Und wenn wir das... Beispiel können, ja, würde ich gerade unterbrechen.
+
+Beispiele können ja auch sein, so weicheres Wissen, wer ist denn der richtige Ansprechpartner, die Ansprechpartnerin in einem Zulieferer, den ich oder die ich kontaktieren muss für irgendeines meiner Probleme.
+
+Oftmals Wissen, was vielleicht in Kommunikationen, E-Mails vorhanden ist oder auch vielleicht auch nur in den Köpfen der Mitarbeiter und Mitarbeiterinnen.
+
+Also implizites Wissen, was man hofft, irgendwie vielleicht mal irgendwann anzapfen zu können.
+
+Und da sprechen wir eigentlich über Information Retrieval in einer gewissen Weise.
+
+Dass wir durch Informationen aus einem gewissen Korpus an Daten, sei es strukturiert oder unstrukturiert, ansammeln, verwertbar machen können, also maschinell verwertbar machen können, und dann wieder einem solchen Assistenzsystem, um sein Wissen darzustellen, zu übergeben.
+
+Aber um das zu machen, haben wir natürlich
+
+Also, wie gesagt, brauchen wir die einzelnen technischen Komponenten, wo wir sich auch nochmal dann dem Einzelnen drauf eingehen werden in den nächsten Folgen.
+
+Aber wir haben natürlich auch das Thema der Schnittstelle.
+
+Und wir haben es ja in dem Teaser am Anfang der heutigen Sendung gesagt, wir wollen über die Schnittstellen sprechen.
+
+Wenn wir das jetzt betrachten, wie bedient man Systeme?
+
+Wir können uns an einen Rechner hinsetzen und Befehle eingeben.
+
+Mit, ich sag mal, ganz klar wissend, wie der Befehl heißt und den geben wir ein und dann kriegt man die Antwort raus.
+
+Das mache ich auch noch unheimlich gerne, weil dann weiß ich genau, dass das, was ich zurückkriege, auch das ist, was ich haben wollte.
+
+Genau.
+
+So, und das ist also die eine Möglichkeit.
+
+Die andere Möglichkeit ist, und das machen sicher die meisten von uns ganz gerne, die benutzen grafische Oberflächen, indem sie eine Maus benutzen, indem sie auf Piktogramme klicken, indem sie einfach Symbole haben und sich damit diese etwas komplexere Welt der Parameter und Befehle ausblenden lassen und vereinfachen können.
+
+Also ich hoffe dann jedes mal dass diese oberfläche auch wirklich jedes detail der befehle die ich gerne nutzen möchte auch kennen und nicht nur irgendwie so eine abgespeckte variante aber zumindest die die die wichtigsten wiederkehrenden sachen sind auf jeden fall dabei und man kann das meiste gut erledigen.
+
+Also man versucht eigentlich, wenn man das jetzt betrachtet, dass man auch die Bedienung der Informationsbeschaffung aus Sicht des Menschen erleichtert.
+
+Nämlich erst sind es die Befehle gewesen, vorher hätte man ja mit Lochkarten gearbeitet, um die Informationen rauszukriegen.
+
+Die älteren Zuhörer kennen vielleicht noch, was Lochkarten sind.
+
+Dann kamen irgendwann die Befehle, dann kamen die grafischen Oberflächen.
+
+das ist doch eigentlich nicht wirklich natürlich denn wie kommunizieren wir menschen miteinander ich klicke ja nicht auf einer oberfläche rum und damit du irgendwas machst gut natürlich man kann jemanden hinterentreten aber normalerweise sage ich dem menschen ja was er machen soll ja und deswegen geht auch die richtung.
+
+ich der Meinung, mehr mal mehr in Richtung Sprache.
+
+Also natürlich erst mal Text, dass man praktisch von Sprache tippen kann.
+
+Und das merken wir ja auch, wenn man jetzt mal so die Entwicklung des Internets anschaut.
+
+Vor x Jahrzehnten, also gerade am Anfang, da haben wir in der Suchmaschine Wörter eingegeben.
+
+Und zwar die Schlagwörter, die man gesucht hat.
+
+Heute kann ich schön, also es ist fast besser, ich schreibe ganze Sätze rein mit klarer Formulierung, was ich möchte.
+
+Das trifft viel besser, als wenn ich die Schlagwörter sozusagen eingebe.
+
+Also man merkt, dass auch die Systeme darauf vorbereitet werden, mit der kontinuierlichen Sprache, also der natürlichen Sprache, besser umgehen zu können als mit Schlagwörtern oder ähnliches.
+
+Genau das ist, was ich vorhin auch schon damit ansprechen wollte, dass man Freitext hat, aber noch Text basiert, aber auch das ist ja mühsam.
+
+Man muss tippen, je nachdem, was man für ein Endgerät hat.
+
+Wenn eine Tastatur geht, ist es noch schneller, wenn man das auf dem Handy-Touchscreen tippt.
+
+Klar, da hat man Wortergänzungen, geht es inzwischen auch schneller, aber noch einfacher ist natürlich die gesprochene Sprache.
+
+bequemer in manchen situationen geht es aber gar nicht anders stehe vor du bist arzt ärztin operationen und und muss ein system bedienen lass die hände gar nicht frei oder oder hätte sie frei muss erst handschuhe ausziehen hinter wieder sterilisieren bis in irgendeinem, was weiß ich arbeite in der fabrikhalle mit hohen temperaturen schutzanzug und kannst gar nicht auf einer tastatur tippen.
+
+Pflegedienst ist natürlich systeme die auf gesprochene sprache reagieren genau das was wir brauchen.
+
+sieht man ja auch die Entwicklung.
+
+Wenn man die Autoentwicklung anschaut, überall sind Sprachassistenten mittlerweile drin.
+
+Wenn wir Google anschauen, wenn wir Alexa von Amazon anschauen, wenn wir die Handys anschauen, alles funktioniert mittlerweile recht gut mit Sprache.
+
+Und dass das funktioniert, haben wir eine natürliche Schnittstelle.
+
+Das ist einmal sozusagen die Schnittstelle, dass das Gerät, der Assistent, der Bot uns erkennt.
+
+im Endeffekt Speech-to-Text, dass also durch die Sprache, die wir jetzt sprechen, dann in Text transferiert wird.
+
+Das ist die eine Richtung.
+
+Und die andere Richtung ist, dass natürlich das Gerät, der Bot, der Assistent, uns antworten kann, also durch den Text in Sprache transferiert werden, also Text-to-Speech.
+
+Diese beiden Verfahren gibt's.
+
+Ich würde jetzt ganz gern mal mit dem Text zu Speech anfangen, dass wir da mal reinschauen, weil das ist schon ganz interessant.
+
+Da gibt es schon ziemlich lange Bestrebungen dafür, dass man versuchen möchte, dass Maschinen fähig sind, mit uns zu kommunizieren.
+
+Und ziemlich lang ist wirklich ziemlich lang.
+
+Also wenn man so ein bisschen recherchiert, dann kommt man auf Zeiten, wo man sagt 1791 gab es dann die Erfindung von Wolfgang von Kempelen, eine sprechende Maschine zu bauen.
+
+1791 habe ich das richtig verstanden das hast du richtig verstanden das ist schon ein bisschen älter haben wir werden dann wieder in den text mal youtube video reinhängen gibt es ein schönes video von dem nachbau von der maschine.
+
+Ist das nicht zufällig die basis für die mechanical turf?
+
+Das ist was anderes.
+
+Nee, ich glaube nicht.
+
+Also bin ich mir nicht sicher, aber ich glaube nicht.
+
+Das ist ein Blasebalg, der praktisch die Lunge darstellen soll und dann praktisch durch, ja, man hat glaube ich, ich weiß nicht, was für ein Material das war, vorne dann irgendeinen, ich hätte jetzt gesagt aus Gummis, so einen Filter davor gemacht, dass man dann damit so in gewisser Weise Mundbewegung Stimmbänder simulieren kann.
+
+Und dann praktisch, ja, kleine Phoneme, also praktisch die Aussprache darstellen kann und kurze Sätze auch darstellen kann.
+
+Ich erinnere mich gerade, das habe ich vor Geromazeit auch mal gelesen und der Mechanical Turk, das war so ein schachspielender Automat, aber auch irgendwie wahrscheinlich zu der Zeit, wo sich dann dabei hinterher herausstellte, dass da eigentlich ein kleiner Mensch unten drunter saß, der die Figuren bewegt hat.
+
+Also man sieht, es ist schon ein bisschen länger, dass man sich damit beschäftigt und sich Gedanken macht.
+
+Die Schwierigkeit an solchen Systemen, die lassen sich eigentlich schön zusammenfassen.
+
+Wir haben eigentlich das große Problem bei solchen Sprachsystemen, dass man praktisch als Hauptziel natürlich hat, dass man einfach eine natürliche Aussprache hat.
+
+Das ist das eine Hauptziel.
+
+Und das andere Hauptziel natürlich Verständlichkeit.
+
+Und jeder, der mal auf eine Computerstimme am Rechner gehört hat oder ähnliches, der sagt, okay, man kann den Computer verstehen, also so eine Sprachsynthesierung, man versteht ihn, aber er ist halt mechanisch-robotik oder ähnliches, sodass man dann einen gewissen Störfaktor hat.
+
+Also das Ziel bei diesen ganzen Entwicklungen ist, in eine Richtung zu kommen, dass man eigentlich nicht mehr unterscheiden kann.
+
+Also vermeintlich, wir hatten es ja damals bei der Sendung mit der Vitas AI, dass es manchmal vielleicht sogar ganz recht ist, dass man so ein bisschen raushört, dass es ein Computer ist, damit man nicht ganz so erschrickt, also im Sinne von, dass man die Person dann mit einem anderen verwechselt oder Ähnliches.
+
+War eine spannende Diskussion auch mit dem Kollegen damals, dass man hier einfach
+
+Sagt es soll so natürlich wie möglich sein also möchten dem rechner quasi so menschlichen touch verleihen dass es menschlich klingt dass man nicht alles perfekt spricht mal langsamer schneller die betonung bisschen variiert werden glaube ich damals sogar diskutiert vielleicht wenn der das dialog system merkt hier spricht jemand dialekt dass man halt auch entsprechend die die sprache dahingehend ein bisschen anpasst dass er sich irgendwie ja vertrauter fühlt.
+
+Ja, du hast jetzt schon einige Qualitätsmerkmale genannt für so eine Sprachsynthese, zum Beispiel einmal die Silbenübergänge, dass man also sagt, wie natürlich werden die Übergänge gesprochen, dass es da keine Abhackungen gibt, dass es einfach, so wie wir jetzt auch, ja wir reden ja und haben einen flüssigen Spruch, also meistens, manchmal kommt ein M rein, manchmal wiederholen wir es.
+
+Ja, aber auch das ist wieder menschlich.
+
+Auch das ist menschlich, genau.
+
+Wenn das völlig weg ist, wenn wir hinterher unseren Podcast bearbeiten würden und alles rausschneiden, klingt auch nicht mehr natürlich.
+
+So ist es, ja.
+
+Und dann das nächste Qualitätsmerkmal ist die sogenannte Prosody, das ist die Satzmelodie.
+
+Also ist der Satz von der Melodie her so, wie ein Mensch sprechen würde oder eher nicht?
+
+Also bei Fragen geht es am Ende in der Regel ja hoch vom Klang her.
+
+Ist das so?
+
+Schön dargestellt, Karsten.
+
+Dann haben wir das Sprechtempo.
+
+Das ist auch ein Thema.
+
+Also zu schnell, zu langsam.
+
+Hat jeder schon mal gehört, wenn man mal Audiodateien einfach schneller abspielt, die dann so, du hast das neulich mal gemacht, die dann wie Schlümpfe klingen oder Chipmunks.
+
+oder sowas.
+
+Also Geschwindigkeit, genau.
+
+Ja, dann der Sprechrhythmus ist ein Qualitätsmerkmal und natürlich auch, und das ist das, was man ja, wenn man zum Beispiel nervös ist, wie jetzt hier in dem Podcast, dann sind zum Beispiel Pausen ersetzt man dann durch Amps.
+
+Aber Pausen gehören halt auch zur natürlichen Aussprache dazu und helfen auch dem Hörer zuzuhören und bringen damit eine höhere Qualität.
+
+Ja es kann ja auch ein signal sein dass jemand nachdenkt, natürlich gibt es sprachtrainer die sagen das darf man nicht sagen aber wenn es nicht zu oft vorkommt, menschliche drüber nachdenken zu symbolisieren mensch der überlegt jemand erstmal bevor er was sagt das ist eigentlich alles ganz ganz normal.
+
+Und das sind im Endeffekt die Ziele, die man mit diesen Text-to-Speech-Systemen versucht zu erreichen.
+
+Qualitätsmerkmale, Verständlichkeit und ein natürlicher Klang.
+
+Also das heißt, wir haben gegeben schon einen Text, den wir aussprechen, also synthetisieren wollen, und es ist jetzt nur noch ein Häkchen die Aufgabe, den tatsächlich in die Wellen, akustisch gesehen, zu überführen.
+
+Ja, und ehrlich gesagt, da ist es jetzt echt interessant.
+
+Wir hatten ja die Sendung mit den Gans, die da einen wahnsinnigen Sprung machen.
+
+Das ist wirklich eine sehr natürliche, also wenn man die verwendet, dass es eine sehr natürliche Aussprache gibt.
+
+Aber wie angedeutet, 1791, nicht der erste, wahrscheinlich gab es vorher auch schon Versuche, aber halt schon einer der Versuche,
+
+Und es gibt unterschiedliche Verfahren, mit denen man das machen kann.
+
+Und wenn man das mal so historisch-chronologisch aufblättern möchte, dann gibt es als Ansätze, die sind die sogenannten Konkatenativen Ansätze.
+
+Das sind Ansätze, bei denen man versucht, Teile der Sprache aufzunehmen und dann wie so ein Baukastensystem, also wie Lego, dann aneinanderzureihen.
+
+Also man nimmt einen Menschen und lässt einfach jedes Wort sagen.
+
+Und dann tut man je nachdem, was man haben möchte, nimmt man einfach den Satz, ich bin heute nach Hause gegangen, einfach die einzelnen Wörter und hängen die hintereinander.
+
+Du nimmst einfach alle Wörter schon mal auf, wie die sogenannte Canned Systeme, also du hast das quasi aus der Dose abgespielt, du hast jedes Wort, das es gibt, aufgenommen und hängst die alle hintereinander.
+
+Und das klingt dann wirklich mal so zusammengestückelt, wenn es nicht gut gemacht wird.
+
+So ist es.
+
+Und da unterscheidet man auch wieder mit zwei Arten.
+
+Das ist einmal das sogenannte Phrase Slicing.
+
+Das ist natürlich, dass du gerade die Worte nimmst und dann natürlich um dieses Problem mit dem Hintereinanderhängen und die Übergänge nicht so gut, weil du müsstest ja jedes Wort mit der gleichen Frequenz- oder Stimmmodellierung beenden, damit es zum nächsten gut zusammenpasst.
+
+Kann man denn nicht auch, wenn du sagst, so zusammenbasteln, kann ich das denn nicht auch auf der Buchstaben- oder Phonemebene machen, dann so zusammenbauen und basteln?
+
+Das was du jetzt beschreibt sind so in der unit selection nennt sich das und da macht man es genau auf der vornebenebene und versucht dann einzelne elemente zusammenzubauen und dann wörter wieder zusammen zu lesen oder ist es so.
+
+Ich habe wenn du wenn du liest als kind oder du lernst dann liest du doch auch fußstabe silbe für silbe.
+
+Ich weiß ich überwinde das ganz gerade erzählt überlege ich mir diese worte eben vielleicht nicht oder das kommt danach aber am anfang wenn wenn kinder lesen lernen da muss man doch buchstabe für buchstabe darüber gehen und spricht alles ganz langsam und irgendwann ist man weiter dann sieht man vielleicht ganze wörter auf einmal erkennt die und spricht die gleich.
+
+muss man ja, damit man halt, weil nicht jede Silbe oder jeder Buchstabe vielleicht gleich klingt oder ausgesprochen wird, sondern kontextabhängig.
+
+Das ist ja dann, da unterscheiden sich dann die Leser-Anfänger von den Fortgeschrittenen, dass sie halt die ganzen Wörter sehen und richtig aussprechen im Kontext, auch den gesamten Satz im Kontext sehen.
+
+Es ist eine Frage oder auch nicht, die Betonung entsprechend wählen.
+
+Aber letztendlich durchleben wir nicht gerade auf dem rechner die art und weise wie wir menschen vernünftig.
+
+Sprechen also also wenn man jetzt wirklich vorliest weil wir sprechen ja nicht frei sondern wir lesen ja ab wir haben den text gegeben.
+
+Ja das ist schon von der argumentation schon richtig.
+
+Gut.
+
+Ich würde mal weitergehen, dass wir mal durch die Liste der historischen Entwicklung gehen, weil wir hatten ja schon angedeutet oder schon gesagt 1791, die Erfindung der Sprechenden Maschinen, das sind sogenannte Formanzsynthese-Ansätze.
+
+Da wird im Endeffekt versucht, über die Formanzsynthese menschliche Stimme ohne Aufnahme von Spechern zu erzeugen, also indem ich die Luft durch irgendwas
+
+Presse oder halt einfach über den Weg versucht, es nachzubauen.
+
+Und es gab auch im gleichen Kontext Systeme, die nennen sich sogenannte artikulatorischen Synthese.
+
+Das heißt, regelbasiert versucht man, den menschlichen Sprachapparat, also wirklich Stimmbänder und die Sprachphysiologie und alles, was damit zu tun hat, künstlich nachzubauen.
+
+Darf ich aber eine frage mal wenn du sagst versuch das mit diesen maschinen zu machen dass das verstehe ich was war denn damals die eingabe für das system aber sicherlich nicht in text auf dem blatt papier sondern man hat vielleicht hart kodiert irgendwo die sequenz der buchstaben
+
+So ist es, genau so ist es, genau so ist es.
+
+Und da ist nämlich zum Beispiel Martin Ritsch hat eine Maschine gebaut, auch 1990 noch, also das ist jetzt nicht 1700 so und so, sondern das ist dann 1990 gewesen, der Talking Machine, und die baut tatsächlich so Lungen, Sprachapparat, Zunge, Unterkiefer, Kehlkopf und so weiter nach, kann man auch auf YouTube sich schön anschauen, wie das gemacht ist.
+
+Und das Problem an dem Ganzen ist aber, das kann man sich vorstellen, am Ende ist halt die Realität halt einfach zu komplex, dass am Ende halt wirklich so eine natürliche Sprache rauskommt, dass man sagt, man kann es nicht mehr unterscheiden.
+
+Aber das zeigt ja trotzdem eigentlich die Grundart des Problems.
+
+Ich bin Fan davon, Informationsverarbeitung, Eingabe, Ausgabe.
+
+Eingabe ist der Text wie auch immer repräsentiert.
+
+Wirklich als Buchstaben folgen oder irgendwie anders schon kodiert, dass ich weiß, welche Buchstaben da stehen.
+
+Und die Ausgabe ist tatsächlich
+
+in der akustik die die wellen die druckwellen die irgendwo erzeugen muss und am ende habe ich natürlich immer irgendwas mechanisches was diese schallwellen erzeugt, auch wenn ich mit dem computer mache dann habe ich halt dann lautsprecher oder irgendwas dass ich die die die luft in bewegung setze.
+
+Und das kann ich natürlich auf direkt mechanischem Wege versuchen, wie das die Herren, die du gerade vorgestellt hast, gemacht haben.
+
+Oder aber da, wo wir jetzt ja hinwollen, ich habe einen Computer dazwischen, und der macht es auf digitalem Umwege, indem er halt irgendwo einen Lautsprecher ansteuert und da dieselben Signale hinschickt, wie ich sie hätte, wenn ich schon eine aufgenommene MP3-Datei hätte.
+
+Genau.
+
+Und da haben wir jetzt dann eigentlich die zwei wesentlichen Verfahren oder Arten von Verfahren, die mittlerweile in der Anwendung sind, die man auch kennt, wenn man mal so Stimmen synthesiert hat.
+
+Das ist einmal das statistische System, also so wie dann die hitten Markov-Modelle.
+
+die vor allem linguistische Merkmale nehmen und dann durch verschiedenartigste Entscheidungsbäume auf Wahrscheinlichkeitsdichten abbilden und dadurch, zum Beispiel das, was wir vorhin gesagt haben, die konkreten, nativen Ansätze, Wörter zusammensetzen, Übergänge berechnen und damit halt einfach eine möglichst gute Stimme zu erzeugen oder zu berechnen.
+
+Das sind natürlich die ganzen Forschungen, die im Endeffekt aus diesen, ich sag mal, mehr physischen Modellen, laufen dort mit rein und kommen dann zu einer, ich sag mal, mehr oder minder guten Sprachausgabe.
+
+Bei diesen statistischen Systemen ist es halt ganz häufig, wobei, man darf es nicht ganz so hart abgrenzen, weil wenn wir über Deep-Learning-Systeme sprechen, dann sind das auch statistische Systeme eigentlich, wenn man das betrachtet.
+
+im genaueren, aber man trennt es halt hier von den Begrifflichkeiten jetzt so ein bisschen, weil man hier halt schon noch in einer gewissen Weise eine gewisse Vorgabe macht oder eine gewisse Regel hat, wie dieses System aufgebaut hat.
+
+Man modelliert das explizit, was man da haben möchte.
+
+Das wäre jetzt meine nächste Frage gewesen.
+
+Neuronale Netze können noch alles, universelle Funktionsapproximatoren.
+
+Kann ich nicht einfach ein neuronales Netz lernen, was genau diese Aufgabe macht?
+
+Und das sind die aktuellen Buren.
+
+Also dass man sogenannte State-of-the-art Deep-Learning-Modelle hat, also Deep-Learning-basierte Methoden, die halt linguistische Merkmale direkt, also ohne Regeln, auf akustische Merkmale in tiefen neuronalen Netzen abbilden.
+
+Also direkt Eingabe der Satz, Ausgabe die Sprache.
+
+Das ist, das denke ich mal, sollten wir dann in der nächsten Folge
+
+Direkt mal im Detail durchsprechen, nur vielleicht schon mal vorab, wir haben ja über die GANs geredet, die Generative Adversarial Networks, und letztendlich hat mir Hazur auch schon angedeutet, das war eine Möglichkeit, sowas sehr, sehr gut hinzukriegen.
+
+Und interessanterweise haben wir dann aber, also wir wollen ja nicht irgendwie was zufälliges nutzen, um irgendwas täuschend ähnliches zu generieren, sondern wir wollen ja dann eine Sprachausgabe, die auch noch zu dem Satz passt.
+
+Wir wollen nicht irgendwas sagen, sondern es soll ja das gesprochen werden, was wir möchten.
+
+Das ist ja schon ein Unterschied.
+
+Und um sowas hinzukriegen, wenn wir sehen, geht man dahin über, dass man mindestens zwei Diskriminatoren hat.
+
+Da hatten wir letztes mal auch schon drüber gesprochen.
+
+Ein Diskriminator, der muss in der Lage sein zu beurteilen, passt denn das gesprochene Wort zu dem gesprochenen Text.
+
+Und ein anderer diskriminator ist ja mindestens zwei in wirklichkeit sind es mehr aber zwei arten zumindest eine art von diskriminator muss in der lage sein zu sagen unabhängig von dem ob es inhaltlich stimmt oder auch nicht klingt das was da gesprochen wird wie natürlich gesprochen und diese kombination wird man sehen ist das was den erfolg ausmacht in diesem kontext.
+
+Ja, und ich würde vielleicht gerne nochmal den einen Punkt aufgreifen, weil es ja heißt, diese State-of-the-Art Deep-Learning-Modelle sind sozusagen eine direkte Abbildung mit Hilfe eines tiefen neuronalen Netzes.
+
+Das ist natürlich nicht ganz richtig, weil wenn wir uns die Architektur anschauen, dann sind es viele verschiedenartige neuronale Netze, die ineinander greifen.
+
+Also, das ist von LSTMs geht es, was wir ja auch schon angesprochen hatten, in einer der Setzungen hin zu Attention Mechanismen, rüber dann zu den GANs, dann brauchen wir sogenannte Vocoder.
+
+Aber was halt das Interessante ist, bis auf die tatsächliche Feinabstimmung, also der feine Klang, den wir dann in der Regel mit generativen Netzen machen,
+
+ist das andere tatsächlich eine End-to-End-Optimierung.
+
+Also wir binden die verschiedenartigen Netze so miteinander zusammen, dass wir sie End-to-End optimieren.
+
+Also über eine Fehlerfunktion hatten wir auch schon mal gesprochen, dann am Ende zu einem Punkt bringen.
+
+Und ich denke, das sollten wir dann nächste Woche
+
+das aufgreifen und an der stelle halt zum beispiel eine architektur vorstellen zum beispiel so eine takotron das ist ein relativ bekanntes netz in dem bereich tts und dann anschließend daran dann vielleicht in der übernächsten sendung dann mal die andere richtung betrachten also sprache zu text speech to text daher vielen dank fürs zuhören soweit ja vielen dank und bis zum nächsten mal bis zum nächsten mal tschüss
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

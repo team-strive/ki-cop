@@ -1,0 +1,589 @@
+ Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen, liebe Hörerinnen und Hörer.
+
+In dieser Woche wollen wir in unserer Folge das Thema Conversational Chatbot mal von einer anderen Seite beleuchten, nämlich nicht von der Anwendungsseite, sondern von der technischen beziehungsweise von der Seite, wie man das Ganze denn implementiert.
+
+Genau, wir haben ja letzte Woche ein super schönes Beispiel kennengelernt, wie solche Dialogsysteme funktionieren können.
+
+Hier ein Beispiel Tischreservierung zum Beispiel, in der Gastronomie.
+
+Wir haben davor auch schon ein universelles Sprachmodell, das GPT-3, kennengelernt.
+
+Die Frage ist ja, wie hängen die beiden eigentlich zusammen?
+
+Ja, das stimmt.
+
+Was ich daran schön fand an dem GBT3 und was wir letzte Woche gesehen haben, ist ja, dass wir ein Modell haben einerseits, das so generisch von Anfang bis Ende sozusagen die Konversation betrachtet, währenddessen ein Conversational AI, wie das zum Beispiel die VITAS AI von letzter Woche präsentiert hat, ist ja nicht ein gesamtes Modell, sondern ist so ein Mix aus einem regelbasierten und einem maschinellen Modell.
+
+Das heißt, wenn wir das erst noch mal uns überlegen, was ist eigentlich die Zielsetzung von so einem Modell?
+
+Das heißt, wir wollen Dialoge führen und wie kann sowas funktionieren?
+
+Wenn wir das im Stil von einem StupiD3 machen, das ist das, was der Fachmann so als End-zu-End-Lösung betrachtet, dann könnte man natürlich versuchen, aus Daten ein komplettes Modell zu erstellen, was genau diese Aufgaben erfüllt.
+
+Andere art und weise sowas zu machen das hatten wir auch schon kennengelernt das hattest du ja an einer unserer unserer ersten folgen dargestellt dass diesen leiser bort das ist ja rein regelbasiert.
+
+Das heißt ich ich versuche direkt das was der chatbot antwortet direkt als regel abzuleiten,
+
+Das ist quasi der Anfang von dem Ganzen und auf der anderen Seite ein End-to-End-Maschinen-Learning-Modell, was alles aus Daten gelernt hat, ohne irgendeine Form von manueller Regel.
+
+Und bei aktuellen Systemen bewegen wir uns irgendwo dazwischen.
+
+Und was das heißen kann, was da für Schritte dazugehören, das sollten wir uns heute einmal genauer anschauen.
+
+Genau.
+
+Man muss natürlich sagen, dass die End-to-End-Lösungen, die sind natürlich die, die im ersten Moment mehr faszinieren.
+
+Weil man natürlich, wenn man das betrachtet, die Maschine wie autark agiert und dann auch spricht.
+
+Sie haben aber einen Nachteil und das haben wir ja gemerkt auch in dem Interview, das wir geführt haben.
+
+Der Nachteil ist einfach, dass der Kontext simuliert wird.
+
+Also den Kontext behält dieses Modell in einer gewissen Weise nicht.
+
+Sondern es sind ja im Endeffekt Antworten, die aus Prognosen entstehen und nicht aus dem Kontext heraus.
+
+Und deswegen ist es sehr interessant, dass man eigentlich die unterschiedlichen Arten, so wie dieses ganz extreme regelbasierte, wie bei dem Eliza-Chatbot, dass man die kombiniert,
+
+Wenn wir mal kurz nochmal zurückgehen, weil du gerade sagst, der Nachteil, das ist sehr schön, also er erkennt den Kontext nicht wirklich, nicht explizit, sondern nur in Form der Eingabe, dass er sich einen Teil der Konversation eigentlich merkt und immer wieder selbst nochmal als Eingabe benutzt.
+
+Es gibt aber noch mehr Nachteile.
+
+Das sollten wir vielleicht einfach mal klarstellen.
+
+Man braucht einfach sehr, sehr viel Daten- und Rechenzeit.
+
+Also so eine End-zu-End-Lösung in einem großen Kontext ist nicht so einfach mal eben zu erstellen.
+
+Man braucht viele Daten.
+
+Man hat dadurch auch einen extrem hohen Aufwand für die Datensammlung und Pflege.
+
+Der Aufwand wandert letztendlich von der Modellierung einzelner Teilmodule und dem Feature Engineering dafür hin zur Sammlung von Daten dafür.
+
+Und was für mich aber auch wichtig ist, das haben wir nämlich beim GPT-3 auch sehr schön gesehen, dass die Antworten des Systems, die klingen zwar manchmal schön, die sind aber nicht immer konsistent und längst nicht immer richtig.
+
+Das hat man bei Matheaufgaben zum Beispiel gesehen, naja, da wurde irgendeine Lösung präsentiert, die stimmte aber vielleicht gar nicht.
+
+Das heißt, man muss irgendwie damit umgehen können, dass die Ergebnisse nicht stimmen, dass sie inkonsistent sind, dass sie vielleicht nicht so gut erklärt werden können.
+
+Und das, denke ich mir, ist auch ein wichtiger Punkt.
+
+Das Verknüpfen eines solchen Systems mit Backend-Systemen in einem Unternehmen, mit Datenbanken, mit Wissensbeständen, wo wir halt Inhalte einspielen können, ist natürlich auch deutlich schwieriger, wenn überhaupt möglich.
+
+Und da bieten einem diese regelbasierten Sachen Möglichkeiten einzugreifen, Sigurd.
+
+Vor allem, wenn du auch noch betrachtest, dass wir ja im Unternehmenskontext oder generell in Konversationssituationen, Gesprächssituationen ja vielleicht auch eine gewisse Sicherheit in der Antwort haben wollen.
+
+Das ist ein ganz wichtiger Aspekt.
+
+Wir wollen ja nicht, dass eine Kommunikation irgendwie stattfindet, sondern wenn jemand zu meinem Produkt eine Frage hat, dann soll auch die Antwort richtig sein.
+
+Und das ist natürlich bei diesen end-to-end Lösungen momentan schon noch so, dass es auch sein kann, dass die Antwort die rauskommt nicht ganz so passt, weil die halt von der Prognose her, von den Wortwahlen oder ähnliches passt, aber halt nicht von dem eigentlichen Produktspezifikum oder ähnliches.
+
+Ich denke, das ist ein ganz, ganz wichtiger Punkt.
+
+Und auf der Seite kann man sich ja mal anfangen zu überlegen, aus welcher Intention verfolgt denn eigentlich ein Nutzer oder eine Nutzerin dieses System?
+
+Was ist die Intention?
+
+Ist es nur Smalltalk?
+
+Dann ist es sicherlich nicht egal, aber da kann man halt über Ungenauigkeiten hinwegsehen.
+
+Es ist halt einfach nur, man plaudert ein bisschen.
+
+Das wird aber in den meisten Fällen sicherlich nicht der Hauptgrund sein, sondern man hat eine Absicht, die ich da verfolge.
+
+Und solange es vielleicht nur eine information ist über was gibt es denn für restaurants in meiner stadt irgendwo mag daher wenn da mal eine fehlt oder irgendwas nicht so genau stimmt auch nicht so wichtig aber je konkreter das wird.
+
+Desto wichtiger ist es meines erachtens dass es dass die antworten korrekt sind und und vielleicht werden ja auch schon der geschäftsprozesse gestartet irgendwelche aktionen in einem unternehmen wie eine buchung zum beispiel durchführe das stehen ja wirklich konkrete aktionen dahinter.
+
+Ja, das heißt also nicht nur die Aktionen, die richtig gestartet werden sollen, sondern der Chatbot muss auch die Absicht richtig identifizieren, damit er überhaupt die richtige Reaktion drauf geben kann.
+
+Aber bevor wir da einsteigen, weil da sind wir jetzt eigentlich schon
+
+Gut am Start, würde ich ganz gerne nochmal einen Punkt aufgreifen, um die Hörer einfach nochmal abzuholen mit dem Thema Conversation AI.
+
+Man geht ja so von unterschiedlichen Levels aus, wie man so eine Conversation AI aufbaut.
+
+Also Levels heißt einfach der Reifegrad, wie ich die Interaktion mit dem Bot, also mit der Maschine durchführen kann.
+
+Wie viel Wissen muss der Endanwender, also der, der die Konversation startet, mit haben, um ein sinnvolles Ergebnis aus dem Bot rauszubekommen?
+
+Und das sind fünf Levels, von denen man ausgeht.
+
+Das erste Level ist wirklich, da muss der Anwender wirklich genau wissen, was er denn für einen Befehl denn an den Bot abgibt, um dann die richtige Antwort zu bekommen.
+
+Das kann man sich so vorstellen, wenn man so aus der technischen Sicht kommt, wie so ein Kommandozeilenaufruf, ein Programmstart, da muss ich alle Parameter genau kennen, ansonsten macht das Programm nicht das, was ich will.
+
+Das heißt also, dass der Anwender muss genau, er muss natürlich wissen, was er will, er muss die Befehle kennen, die Optionen, die man dem Befehl mitgibt und kann dann alles ganz zielgenau erreichen.
+
+Das heißt, wenn jemand diese Befehle alle kennt,
+
+die Schnittstellenbeschreibung, dann kann er oder sie ganz schnell und zielgerechnet damit arbeiten und kriegt als Antwort natürlich genau das, was erwünscht ist.
+
+Genau.
+
+Eine Stufe weiter beim Level 2.
+
+Da ist es dann so, dass man eigentlich die Elemente, die Parameter, die man braucht, um eine sinnvolle Antwort zu bekommen,
+
+von dem Bot linear abgefragt kriegt.
+
+Das heißt, ich stelle die erste Frage, ich möchte einen Kontoauszug haben oder den Kontostand abfragen und dann fragt sozusagen der Bot schrittweise linear ab, was ist die Kontonummer, für welches Jahr, für welchen Monat, für welchen Tag oder wie auch immer.
+
+Das ist ja schön, aber das befreit ja den Anwender davon, dass er wissen muss, welche Eingaben jetzt quasi dafür alle erforderlich sind.
+
+Das ist schon eine große Erleichterung.
+
+Eine große Erleichterung hat aber den Nachteil, dass, wie es ja eigentlich in jeder Konversation auch zwischen Menschen passiert, ist, dass wenn ich jetzt zwischendrin einen anderen Gedankengang habe,
+
+Und da vielleicht was zwischenfrag und sag halt ne welches kunde habe ich denn gerade eingegeben dass der in der regel der bot dann aus der bahn raus fliegt also dann ich weiß quasi nochmal von vorne anfangen muss mit meiner anfrage was natürlich sehr sehr lästig ist wenn es schon kurz vor abschluss der transaktion vielleicht war genau.
+
+Ist ja auch so wenn man merkt irgendwann gibt irgendwas ein hat man vielleicht schon mal erlebt bei solchen gesprächsführung spots wo man am telefon hängt und dann hat man dann irgendwie den begriff genannt ja und dann sagt das ich verstehe das nicht bitte fangen sie von vorne an oder ähnliches das ist genau dieses wo man, man nennt es den happy pass also wo man sozusagen den den glücklichen vorgedachten konversations weg abweicht.
+
+Auch ärgerlich wenn man halt an einer stelle nicht weiter kommt weil es vielleicht nicht weiter geht man möchte was buchen,
+
+Untersuchten informationen und die gibt es halt in der in der art und weise wie ich gesucht habe nicht und ich muss jetzt springen ich muss was sachen ändern und ich müsste dann.
+
+Das ist typische beispiel ich suche ein hotel mit bestimmten eigenschaften einer bestimmten region einer stadt.
+
+Und die eine Eigenschaft gibt es nicht, und wenn ich dann die ganzen anderen Eigenschaften wieder nennen müsste, anstatt dass sich der Bot das merkt und quasi diesen Kontext quasi mit berücksichtigt, ist das denn schon quasi das, was in der nächsten Stufe berücksichtigt wird?
+
+Genau, Level 3 wäre dann die, nennt sich auch Contextual Assistance, also wo im Endeffekt genau dieser Kontext mit berücksichtigt wird, aber auch der Pfad, also dadurch, dass ich von dem Pfad in einer gewissen Weise abweichen kann.
+
+Hier müssen wir dann schon ein bisschen stärker von den Regeln abweichen, weil Level 1 und Level 2 können wir sehr gut regelbasiert machen.
+
+Das sind ganz klare Regeln da, das sind ganz klare Abweichungen, also was folgt sozusagen aus Schritt 1, welche Antwort ist dann notwendig und so weiter.
+
+Bei Level 3 haben wir das Problem, dass wir ja praktisch nicht die Regeln konstant oder linear durchlaufen, sondern dass man dann vielleicht mal in einen anderen Bereich springt und dann wieder eine Antwort dazu bekommt.
+
+Also nochmal als Beispiel, ich frage meinen Kontostand ab und sage dann zwischendrin, wie lange ist denn eigentlich meine Kreditkarte noch gültig?
+
+Dann hätte ich sozusagen plötzlich eine andere Absicht, einen anderen Intent, wie man auch so schön sagt.
+
+Ich weiche von dem ursprünglichen Pfad ab, was ich wollte.
+
+Und der Bot sollte dann, wenn er die Antwort gibt, dass er sagt dann bis 12.23 Uhr oder ähnliches, sollte dann wieder zurückspringen in den alten Pfad und da auch wieder weitermachen können.
+
+Typisches Beispiel für so einen Seitenpfad.
+
+Mit dem typischen Sachverhalt, dass ich dann wieder zu dem eigentlichen Hauptfahrt zurückkomme.
+
+Das wäre ja was anderes, als wenn ich meine Meinung ändere und auf einmal ein ganz anderes Ziel verfolge.
+
+Das wäre ja auch denkbar.
+
+Das heißt, das System muss irgendwie erkennen, gehe ich wieder zu meinem Hauptfahrt zurück, mache ich jetzt auf einmal was ganz anderes.
+
+Also die Konversation soll nicht abgebrochen werden.
+
+Es soll also sinnvoll immer noch in einer gewissen Weise geführt, aber halt nur noch in Fragmenten, nicht mehr in ganzen Konversationen.
+
+Und das führt dazu, dass wir mehr Flexibilität reinkriegen.
+
+Du hattest ja vorhin was genannt, das fände ich einen schönen Begriff, diesen happy path.
+
+Was ist das jetzt nochmal genau?
+
+Der happy path ist der Pfad, den der Entwickler sich überlegt hat für diesen Anwendungsfall.
+
+Also zum Beispiel in dem Kontext, Kontostand abfragen, dann überlegt sich der Entwickler des Bots, okay, dann wird der Anwender zunächst mal fragen, ich würde gern meinen Kontostand wissen.
+
+Dann, was braucht man dazu?
+
+Dann fragt der Bot zurück, ich brauche die Kontonummer und so weiter.
+
+Also die Schritte, die notwendig sind, um dann zum Ergebnis zu kommen, Betrag X, die sind vorgedacht und das ist der sogenannte Happy Pass.
+
+Okay, mit der Schwierigkeit, dass ein Anwender vielleicht nicht immer weiß, wie die Nutzer, Nutzerinnen eines Systems wirklich vorgehen.
+
+Vielleicht haben die ja ganz andere Pfade oder Wege im Kopf, die aber genauso zielführend sein können.
+
+Richtig.
+
+Und ganz ehrlich, wenn man so einen Bot mal entwickelt hat oder sich damit auseinandergesetzt hat, dann stellt man fest, dass eigentlich die Pfade, die man sich vorüberlegt hat, dass die vielleicht so 5% ausmachen von den realen, dass der Mensch halt dann doch auf ganz andere kreative Ideen kommt, vor allem die Anwender, als das, was der Entwickler dann in seinem Kämmerchen macht.
+
+Das heißt also, wenn das System diese alternativen Pfade zulässt oder Regeln dafür vielleicht auch mitlernt, dann kommen wir zur nächsten Stufe schon?
+
+Nicht ganz, weil das ist die Stufe 3.
+
+Also wenn das sozusagen passiert, dann ist es die Level 3.
+
+Die Level 4, die nächste Stufe geht einen Schritt weiter.
+
+Da geht es dann darum, dass man nicht nur Absichten sozusagen herausliest, sondern dass man sozusagen auch ohne dass ich genau weiß, was ich möchte, der Bot durch Rückfragen praktisch die Absicht erkennen kann.
+
+Jetzt in dem Kontext ist es vielleicht ein bisschen schwieriger zu konstruieren mit dem Konto, aber wenn man jetzt zum Beispiel an eine Kreditverlängerung denkt bei einer Bank, könnte man ja auch solche Beispiele nennen, wie der Anwender spricht mit dem Bot und sagt, ja meine Kinder verlassen das Haus in den nächsten fünf Jahren, mal gucken wie ich es dann mit meiner Geldanlage mache.
+
+Und dann könnte sozusagen in der Stufe 4 würde man davon ausgehen, dass dann der Bot durch Rückfragen auch eine Absicht, die der Anwender vielleicht noch nicht direkt hat, identifiziert und ihm eine Lösung anbieten kann.
+
+Also das wäre dann der Schritt, dass man dann sagt, hätten Sie ein Interesse, Ihre Kreditlinien zu überprüfen?
+
+Und dann kommt vielleicht vom Anwender, ach das ist interessant, ja.
+
+Und dann ist man wieder in so einem, also wie bei der Stufe 3, in so einem Pfad drin, den man dann in gewisser Weise abarbeiten kann.
+
+Wenn man jetzt die nächste Stufe betrachtet, also Level 5, das wäre dann noch eins aufbauen darauf.
+
+Level 5 würde dann noch so weit gehen, dass der Assistent mitlernt.
+
+Und Mitlernen meint jetzt nicht, dass er mich besser versteht, sondern dass er auf die Art und Weise, wie ich frage und wie ich reagiere, auch reagiert.
+
+Also zum Beispiel, wenn ich knapp antworte, dass er dann auch knapp mir die Informationen zuliefert.
+
+Wenn ich intensiv nachfrage, dass er mir dann vielleicht mehr Informationen außenrum gibt, also dann eigentlich schon wirklich wie so ein Berater wird.
+
+Das ist dann die Stufe 5.
+
+Okay, das ist aber sicherlich sehr, sehr komplex und schwierig umzusetzen.
+
+Das denke ich auch, aber so sind die Stufen momentan gedacht.
+
+Und wenn man jetzt sieht, und wie du sagst, komplex umzusetzen, wenn man das jetzt betrachtet, wir bewegen uns zwischen Stufe 2 und 3, wenn man es genau nimmt.
+
+Also Stufe 3 ist das Ziel momentan.
+
+Es gibt einige Anbieter, die das ganz gut hinkriegen.
+
+Sicher die Vitas AI ist da auch schon ganz gut dabei, sicher, wenn ich das so betrachten kann von außen.
+
+Das ist so die Richtung Stufe 3.
+
+Stufe 4, 5 existiert faktisch nach meinem Kenntnisstand nicht.
+
+Jetzt haben wir ja mal einen schönen Einblick erhalten über die verschiedenen Stufen, Levels der Entwicklung solcher Systeme.
+
+Und wenn wir uns nochmal an den Anfang zwischen Stufe 2 und 3 bewegen, dann haben wir ja gesehen, da gibt es verschiedene Komponenten, die man braucht.
+
+Also ganz am Anfang und ganz am Ende haben wir natürlich die Spracherkennung, also das Erkennen gesprochener Sprache und Überführung in Text und am Ende natürlich die Synthetisierung von Sprache aus Text.
+
+Wenn wir das mal als vorgelagerte und nachgelagerte Stufe nicht ausklammern, aber sagen wir mal als gesetzt sehen, dann wäre ja, wenn man das wirklich modular aufbaut, ein erster wichtiger Schritt, wenn ich den Text vorliegen habe,
+
+und uns erstmal vorstellen dass solche gespräche immer so in englisch sagt man interns also mal abwechselnd stattfinden das system sagt was der nutzer die nutzerin sagt was und so ein pingpong mäßig entsteht ein gespräch, denn wäre ja ein wichtiger schritt aus so einem gesprächsfetzen die absicht herauszulesen.
+
+Ja, man nennt dann die Komponente das Natural Language Understanding, dass man am Ende zu einer Klassifizierung, das ist eine Klassifizierung, die man hier auf Stufe 2 und 3 vornimmt, für den Intent, für die Absicht macht.
+
+Wir haben aber auch noch ganz viele Schritte dazwischen, weil du musst dir überlegen, wir haben auf der einen Seite kommt der Text rein und auf der anderen Seite wollen wir jetzt Klassen, wo wir sagen, wir haben vielleicht 20, 30 Absichten, die wir vordefiniert haben, die der Bot bedienen können soll.
+
+Das ist wie zum Beispiel Konto Stand abrufen.
+
+oder Zinsen hinterfragen oder ähnliches.
+
+Also das sind einzelne Absichten.
+
+Aber auch eine Begrüßung ist eine Absicht.
+
+Also wenn jemand auf den Tisch eingibt, hallo Bot, ich möchte gerne mit dir eine Konversation führen, dann ist das schon eine Absicht.
+
+Und das muss ja in dem System beigebracht werden, dass es in die jeweilige Klasse, nämlich die jeweilige Absicht einordnen kann.
+
+Für das Einordnen müssen wir aber dafür sorgen, dass wir den Text irgendwie dem Computer vorverarbeiten, dass er das überhaupt lernen kann.
+
+Okay, ich sehe schon, dass dieser Begriff des Intents, der Absicht, ist natürlich sehr, sehr vielfältig.
+
+Es scheint mir so, ich habe da bislang noch nicht gelesen, dass das so unterschieden wird, aber das wäre eigentlich im engeren Sinne die Absicht einer Aussage.
+
+Also ich habe einen Satz gesagt in meiner Konversation und habe damit natürlich eine bestimmte Absicht, wie ich will ja etwas, ich verneine etwas, ich begrüße,
+
+Und dann vielleicht mal zu unterscheiden, was ist denn eigentlich die Absicht übergeordnet von meinem gesamten Gespräch?
+
+Was möchte ich denn jetzt mit meiner Konversation insgesamt erreichen?
+
+Vielleicht sollte man das irgendwie auseinanderhalten, dass man einerseits natürlich, dass so ein System herausfinden muss, was ist denn jetzt eigentlich die übergeordnete Absicht des Anwenders, der Anwenderin?
+
+Und was sind denn sozusagen Teilabsichten sozusagen jetzt als Schritte innerhalb meines Dialogs?
+
+Ja, aber da sehen wir dann schon wieder so Schrittrichtung Level 4.
+
+Okay.
+
+Weil diese übergreifende Absicht ist tatsächlich das, was so ein bisschen die Schwierigkeit bedient, weil klassifiziert, also beispielsweise eingruppiert der jeweiligen Absichten wird wirklich auf jeder Konversation, also beispielsweise auf jeden, oder nicht Konversation, auf jeden Teilabschnitt, also auf jeder Eingabe, die der Anwender zum Bot macht.
+
+Wenn man das mal, wenn man das mal bezieht auf das Beispiel von letzter Woche,
+
+Solange ich zum Beispiel ein Reservierungssystem habe und weiß halt, dass eine große Mehrheit der Dialoge zum Ziel haben, meinetwegen einen Tisch zu reservieren oder einen Termin zu vergeben, dann ist ja der Kontext eigentlich immer sehr, sehr stark umrissen, sodass ich mich relativ schnell auf diese Einzelschritte konzentrieren kann.
+
+Hätte ich aber ein Dialogsystem, was vielfältige Aufgaben lösen kann,
+
+dann müsste ich die natürlich schon umfokuzierter herausfinden.
+
+Da sind wir wieder in der Diskussion, habe ich ein Modell, was sehr sehr breit vieles kann, eigentlich alles können soll, wie das GPT-3, oder bewege ich mich an einer kleinen Nische, was ich jetzt möchte, dass mein System meinetwegen genau Termin vergeben kann.
+
+Und der ganze Dialog beruht darauf, dass ich dahin steuere.
+
+Und wie du siehst, ist da die übergreifende Absicht bekannt.
+
+Das ist der Riesenvorteil.
+
+Und der Herr Bäumler von letzter Woche hat das ja schön gesagt.
+
+Wir haben uns einen Anwendungsfall rausgezogen, damit man dann schon weiß, in welche Richtung es geht.
+
+Es macht das Ganze einfacher.
+
+Und das ist genau der Punkt.
+
+Weil natürlich einen übergreifenden Kontext herauszulesen, ist viel, viel, viel schwerer als sozusagen eine einzelne Eingabe oder eine einzelne Aussage.
+
+zu klassifizieren.
+
+Wir nehmen also Komplexität dadurch heraus, dass wir uns auf solche typischen Anwendungsfälle beschränken und können dann natürlich auch viel zielgenauer die Ergebnisse produzieren und das Ganze mit weniger Daten lernen.
+
+Ja, so ist es.
+
+Und das ist ja nicht nur das Lernen, das hier dann die Wichtigkeit hat, sondern wir müssen ja überlegen, dass wir praktisch bei jeder Eingabe mit einem Anwender ja wieder die gleiche technische Kette durchlaufen müssen und dann wird ja wieder eine Prognose durchgeführt.
+
+Das heißt, umso komplexer das wird, umso stärker müssen eigentlich auch die Geräte, also die Maschinen im Hintergrund sein, die diese Prognosen dann durchführen.
+
+Und umso generalistischer ich bin, umso mehr, also umso komplexer wird das Modell und umso mehr Rechenleistung brauche ich.
+
+Und in einem Chatbot möchte ich natürlich nicht, oder auch in einem echten Gespräch, also wenn wir das mit Sprache synthetisieren, dann möchte ich natürlich nicht ewig lange darauf warten, dass mir der Bot eine Antwort gibt, sondern das soll ja wie in einem natürlichen Gesprächsführung, ich tippe, der andere tippt, oder ich spreche, der andere spricht, stattfinden.
+
+Solange ich so einen eng umgrenzten Anwendungsbezug habe, kann ich vielleicht noch durch diese manuell definierten Regeln oder Alternativen dazu relativ vergleichsweise einfach diese Zielführung modellieren.
+
+Und je komplexer und umfangreicher das ist, desto eher hänge ich davon ab, dass ich mich darauf verlasse, dass das Modell solche Gesprächsführungen dynamisch aus Daten lernt.
+
+So ist es.
+
+Genau so ist es.
+
+Wenn wir jetzt nochmal reingehen mit, ich würde das ganz gerne mal so leicht durchexerzieren.
+
+Wenn wir sagen, wir haben jetzt einen Satz, ich möchte den Kondostand wissen.
+
+Dann müssen wir das ja transferieren.
+
+Und was im ersten Moment passiert ist, dass man hergeht und erstmal diesen Satz zerlegt.
+
+Also man zerlegt ihn in Einzelwörter.
+
+In Tokens, wie man das dann so schön nennt.
+
+Da würden wir sehr stark wieder in die Schritte des Natural Language Processing abdriften.
+
+Ich zerlege das in Tokens, also in Einzelwörter.
+
+Klar, wenn wir den Kontext berücksichtigen wollen, gibt es diese ganzen Sprachmodelle, dass ich Wörter wieder oder die Tokens überführe in Vektorrepräsentationen.
+
+Da gibt es verschiedene Modelle, die das können und die sollen einem dann helfen, den Kontext, in dem ein Wort benutzt wird, mit zu erfassen, um die Mehrdeutigkeit, die Sprache hat.
+
+sicherlich auch mit zu berücksichtigen und und das aufzulösen als ein beispiel wenn wir das mal für moment zurückstellen dass wir sagen okay wir haben jetzt so einen text zerlegt in verschiedene tokens.
+
+Ja du wolltest ja quasi jetzt deinen gedanken aufgreifen wie geht wie geht es weiter damit mit den tokens.
+
+Ja wenn wir den zerlegt haben dann haben wir aber durch eine zahlen repräsentation wie auch immer die entstanden ist wie gesagt das hast du gerade gesagt es gibt verschiedenartigste modelle.
+
+Und wir haben auf der anderen Seite verschiedene Gruppen, die wir festlegen, wo wir sagen, das ist eine Begrüßung, das ist die Kontostandabfragung und so weiter.
+
+Und dann sammeln wir zunächst mal Daten, die bei DISH zu der jeweiligen Gruppe passen.
+
+Und daraus lernen wir dann einen sogenannten Classifier, also bei DISH ein Modell des Fähiges anhand der Zahlen eine Klassifizierung passend zu der jeweiligen Gruppe vorzunehmen.
+
+Also genau den erkennt, das ist der Intent, das ist jetzt eine Begrüßung.
+
+So ist es.
+
+Das ist das eine, was wir brauchen.
+
+Das zweite, was wir in solchen Konversationen ja immer brauchen, ist ja nicht nur die Absicht und den Intent, sondern wir müssen auch vielleicht Aspekte rauslesen, wo wir sagen, da gibt es irgendein Kriterium, man nennt das Entity, wie zum Beispiel eine Kontonummer oder eine Person oder ähnliches.
+
+Also wir müssen auch noch Elemente auslesen aus dem Text, die wir später vielleicht noch brauchen.
+
+Das nennt man dann Entity Recognition an der Stelle, um dann genau solche Wörter, Fragmente oder ähnliches auslesen zu können.
+
+Da hat man an der Stelle jetzt die Wahl, das als zwei getrennte Aufgaben zu machen, dass ich einerseits den Intent herauslese und im anderen Schritt die Entitäten.
+
+Es gibt aber auch Ansätze, die versuchen, das gemeinsam zu erschließen, und dann sind wir schon wieder, nur mal als Ausblick, auf dem Weg, das als End-to-End-Lösung irgendwann mal zu designen, wenn ich versuche, das geschlossen herauszulesen.
+
+Deshalb bleiben wir mal bei den getrennten.
+
+Also ich habe den Intent erkannt, ich habe die Entitäten, die genannt werden, erkannt.
+
+Wie geht es jetzt weiter?
+
+Sobald ich den intent hab ist es so dass wir dann so ein bisschen in die regelorientierung springen dass wir dann sagen von wegen okay wir wissen bei der absicht begrüßung senden wir die antwort begrüßen.
+
+Okay ich habe also quasi so wie so ein zustandsautomaten definiert wo ich verschiedene zustände mir definiere also ich
+
+Anfangszustand nach einer Begrüßung muss ich herausfinden was was möchte der Anwender die Anwenderin was ist oder fange schon an wenn das zielgerichtet man wegen der Tischreservierung ist fange ich an zu reservieren zu fragen was die einzelnen Informationen sind die ich dafür brauche.
+
+Du hast es so schön gesagt, Zustandsmaschine oder Zustandssystem, im Englischen auch State Machine, weil man im Endeffekt einen Zustand hat und eine Reaktion drauf hat.
+
+Da legen wir in solchen Conversational AIs in einer gewissen Weise die Storys fest, also Gesprächsabläufe.
+
+Das sind diese Happy Paths, von denen ich vorhin gesprochen habe.
+
+Und die werden anhand des Intents dann immer gezogen.
+
+Das heißt, wenn ich praktisch sage, ich habe eine Begrüßung, dann kommt praktisch eine Aktion drauf.
+
+Und jetzt kommt der spannende Part bei Level 3.
+
+Was wir nämlich dann machen müssen ist, wenn wir eine Antwort geben, wäre es gut, wenn wir gleichzeitig schon wüssten, was wäre denn die nächste wahrscheinliche Reaktion des Anwenders auf diese Antwort.
+
+Wir prognostizieren sozusagen den nächsten Schritt.
+
+und merken uns gleichzeitig die Vergangenheit.
+
+Und dadurch können wir in einer gewissen Weise recht gut auch von den Regeln abweichen, aber kommen auch immer wieder zu den Regeln zurück.
+
+In welcher Art und Weise hilft es dem System, wenn es eine Prognose darüber hat, was der Anwender oder die Anwenderin als nächstes sagen oder machen könnte?
+
+Interessante Frage.
+
+Da bin ich mir auch unschlüssig.
+
+Was ich halt weiß, ist, dass diese Systeme natürlich versuchen eine Prognose zu machen, was sie als nächstes machen können oder sollen.
+
+Und das ist gleich wieder dieses Bindeglied, wenn ich sage, muss ich denn den Intent wirklich wissen?
+
+Muss ich wissen, was ein Anwender beabsichtigt?
+
+Oder kann ich nicht auf dem, was er sagt, einfach eine Prognose machen, was das System einfach sagen sollte?
+
+Das ist ja die Schwierigkeit.
+
+Kann ein System immer wissen, was der Nutzer, die Nutzerin möchte?
+
+Und wenn es das nicht herausfindet, hängt das System?
+
+Oder kann man dann vielleicht durch Prognose der nächsten besten Schritte einfach versuchen, das Gespräch weiterzuführen und dann trotzdem am Ende dahin zu kommen, dass ich erfolgreich mein Gespräch geführt habe?
+
+Das ist sicherlich der Grund für die Prognose, dass ich praktisch, weil das haben wir ja bei den Level 2 Assistenten, haben wir genau das Problem, dass wenn ich von dem Pfad abweiche, dann hängt, also dann ist es raus.
+
+Und hier habe ich einfach eine Wahrscheinlichkeit, wo ich sagen kann, okay, wir wissen jetzt zwar nicht, was wir jetzt tun sollen als Tool oder als Bot, aber wir bieten jetzt mal mit einer Wahrscheinlichkeit von so und so den Pfad an.
+
+Und dann reagiert praktisch der Anwender wieder drauf.
+
+Und dann kann ich wieder eine Prognose abgeben, was könnte das Nächste sein.
+
+Und damit kann ich es hinkriegen, dass ich praktisch wieder in den Pfad zurückkomme oder den Anwender wieder abhole.
+
+Oder auch wieder in eine andere Regelkonversation zurückzuspringen.
+
+Das heißt, wenn wir aber diese Zustandsautomaten haben,
+
+Und ein Prognosesystem, was man mir sagt, was das System als nächstes sagen oder fragen soll, dann brauche ich diesen Text, den das System sagt, ja nicht auch automatisch generieren.
+
+Dann kann ich ja quasi in der Hinterhand eine Menge von Regeln haben.
+
+Wenn ich in dem Zustand bin, um das prognostiziert habe, was als nächstes kommen soll, habe ich hier den passenden Antwortsatz, den das System quasi ausgeben kann.
+
+So wird es auch gemacht.
+
+Also ein Großteil der Antworten, die dann aus solchen Bots kommen, sind tatsächlich vordefiniert.
+
+Mal die Antworten in einer gewissen Weise vordefiniert, weil ich natürlich wie zum Beispiel im Kontostand eine gewisse Platzhalter brauche, um halt den Betrag einzutauschen oder auszutauschen.
+
+Das ist schon klar, aber eigentlich sind die Gespräche vordefiniert.
+
+Das ist in gewisser Weise eintönig, aber da man ja normalerweise nicht 20 Reservierungen hintereinander vornimmt, fällt das vielleicht auch nicht negativ auf.
+
+Das hat aber einen Riesenvorteil.
+
+Das nimmt enorm viel Komplexität, denn wie wir das gesehen hatten beim GPT-3 als Sprachgenerator, das ist ja eigentlich die Idee, dass sich Sprache generieren kann, habe ich den Teil dann dafür ja nicht, weil ich ja die Antworten vordefiniert habe für den Teil, wo ich den Gesprächsverlauf letztendlich modelliert habe.
+
+Nur wenn ich mich in einen Zweig bewege, wo ich vielleicht nichts vordefiniert habe und ich trotzdem in der Lage sein möchte, auf eine sinnvolle Art und Weise das Gespräch fortzuführen, dann bräuchte ich natürlich so einen Sprachgenerator.
+
+Ja, und man muss ja sehen, durch die Vorgabe der Antworten gewährleiste ich immer eine richtige Antwort.
+
+Ich finde es an der Stelle vielleicht schön, wenn man es erstmal so ein bisschen als Trichter vorstellt.
+
+Solange man sich bei der Modellierung oder bei dem Entwurf solcher Systeme einig ist, dass am Ende ein übergeordnetes Ziel erreicht werden kann.
+
+Und das war ja in dem Beispiel, was wir letzte Woche gesehen haben, ja relativ fix vorgegeben, eine Terminreservierung.
+
+Wenn wir das irgendwann mal weiterfassen, dass ich unterschiedliche Aufgaben adressieren kann, dann müsste ich das natürlich irgendwie noch auseinanderhalten.
+
+Aber solange das
+
+Akzeptiert ist, dass wir dieses übergeordnete Ziel haben, das ich erreichen möchte, dann ist ja eigentlich die Grundidee, dass ich auf unterschiedlichste Arten und Weisen und Anfänge aber irgendwann dahin komme, dass ich also immer die Möglichkeiten immer weiter einschränke, sodass ich am Ende genau da bin, wo ich hin möchte, dass ich das Ziel erfülle mit all seinen Konfigurationen, Parametern, Wünschen, Optionen, die der Anwender haben könnte.
+
+Genau, das versucht man natürlich relativ zügig, weil ich es einfach vorher nicht weiß.
+
+Also das ist das große Problem.
+
+Ich weiß nicht, was der Anwender an Wünschen in dem Kontext alles hat.
+
+Was man da macht, man geht in der Regel in so eine Conversation Driven Development über.
+
+Das heißt also, man versucht relativ zügig einen Bot aufzubauen, der was kann, aber halt nicht gut ist.
+
+Und dann macht man Konversationen mit dem Kunden.
+
+Und die Gespräche, die dabei entstehen, die nützt man wieder als Lerndaten für die Verbesserung des Bots, sodass man in so einer iterativen Schleife immer ist, mit jeder Konversation kommt man zu einem besseren Verständnis darüber, wofür wird denn der Bot von den Anwendern wirklich verwendet und wie sehen dann gute Konversationen dafür aus.
+
+Es ist, finde ich, ein schöner Ansatz.
+
+Wie nennt sich der?
+
+Conversational Driven Development.
+
+Das heißt das also konversation im sinne von von von daten das heißt wir generieren in der laufenden anwendung die daten und können damit die systeme weiter lernen verbessern setzt aber ja irgendwie voraus dass unsere anfangsfähigkeit ja da ist dass das ein gespräch geführt werden kann was man vielleicht beispielsweise mit
+
+einfachen regeln für den happy path sozusagen definieren kann.
+
+Und dass man dann die gespräche quasi aufzeichnet, dadurch generiert man ja trainingsdaten mit dem riesen vorteil, dass die ja für die art und weise der gesprächsführung exakt so vorliegen wie man es sich wünscht und nicht so als einzelaufgaben.
+
+Ich kann natürlich aus textdaten und annotationen sagen hier so erkenne ich ein intent, ich kann wieder andere teile meiner
+
+Gesprächsführung modellieren, aber die Frage ist ja, wie gut passt das alles zusammen?
+
+Und auf die Art und Weise, wenn ich einfach zuhöre, mitlerne, habe ich diesen gesamten Ablauf aus einer Hand in einem Guss.
+
+Wie der Mensch durch Beobachtung.
+
+Ja, und insofern ist das, denke ich mal, der richtige Weg zu sagen, ich muss unterschiedliche Formen des Lernens haben.
+
+Ich habe Teile vorgegeben durch Regeln, das hat ein Mensch ja auch, bestimmte Sachen kriegt er gesagt, wie Sachen, Abläufe funktionieren, daran hält man sich, und Sachen durch Beobachtung lernt er mit.
+
+Also wirklich ein ganz interessanter Ansatz und auch, wenn man das mal erlebt, ist es schön, weil man halt auch wirklich Konversationen sieht, an die man wirklich nicht gedacht hätte.
+
+Also gar nicht.
+
+Wo man sagt, also klar, weiß man, jetzt Kontostand abfragen, wie das Beispiel ist, das wird sich die ganze Zeit stressen.
+
+Das kann man sich vorher überlegen.
+
+Aber wenn man wirklich mal viele Konversationen im Kontext hat, sieht man, wird sich Beispielen, wo man sagt, boah, das hätte ich nicht.
+
+Gut, dass wir das so machen.
+
+Gut, ich denke für heute ist das mal so ein schöner, tieferer Einblick.
+
+Wir werden das sicher in den nächsten Episoden nochmal aufgreifen und dann nochmal genauer rangehen.
+
+Unsere Idee ist schon, dass wir mit dem Podcast so ein bisschen Anwendungsfälle haben, die wir erstmal zeigen, wofür kann man es verwenden.
+
+Und dann würden wir gerne in den folgenden Episoden die dann ein bisschen zerlegen und hinter die Kulissen schauen, wie wir es am Anfang des heutigen Episodes ja auch gesagt haben.
+
+Sozusagen, wenn sie Interesse haben und Ideen haben für Anwendungsfälle, die wir hier diskutieren sollen, dann bitte uns einfach eine E-Mail schreiben, uns kontaktieren über die Kanäle wie LinkedIn oder Xing oder ähnliches.
+
+Also wir sind da für jede Idee offen, weil wir ja gerade zeigen wollen, was ist sozusagen künstliche Intelligenz in der Realität und was ist dahinter.
+
+Genau, um das Ganze zu entmystifizieren, genau.
+
+Programm.
+
+Von daher wünsche ich Ihnen noch eine schöne Woche und hoffe, Sie wieder nächste Woche dabei zu haben.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

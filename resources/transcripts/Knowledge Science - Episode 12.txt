@@ -1,0 +1,479 @@
+ Hallo und herzlich willkommen.
+
+Wir greifen heute unsere Miniserie wieder auf.
+
+Nachdem wir in Folge 10 über Recurrent Neural Networks gesprochen haben, sprechen wir heute über eine Erweiterung dieser Netzwerke, die sogenannten Long Short Term Memory Netzwerke.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, diese Woche haben wir wieder eine Folge, die ein bisschen technischer ist, nachdem wir ja letzte Woche unsere jungen Wissenschaftlerinnen bei uns hatten, die uns ja ein bisschen den Einblick gegeben haben, wie KI aus Sicht von Kindern betrachtet wird.
+
+Und das Spannende letzte Woche war ja zu sehen, dass die Kinder ja eigentlich den Umgang mit dieser künstlichen Intelligenz eigentlich völlig normal sehen, dass da eigentlich gar nicht so diese Furcht und diese Angst ist, oder Carsten?
+
+Ja, insbesondere das und auch interessant zu sehen, welche Eigenschaften der KI oder von Robotern vielleicht eher furchteinflößend ist, wie sie aussehen, ob sie knochig sind oder ob sie eine Maske tragen und gar nicht so sehr, was sie tun.
+
+Das fand ich sehr interessant.
+
+auch, wobei man kann sich das auch gut vorstellen, weil ich finde das auch irgendwie ein bisschen spooky, wenn da so ein Roboter, der vielleicht wirklich ein direkter Abbild von einem selber ist oder ähnliches.
+
+Es gibt ja einige Bewegungen auch im asiatischen Raum, die wirklich eins zu eins die Personen nachbauen.
+
+Das ist schon irgendwie so ein bisschen beängstigend.
+
+Ja, ich möchte es eigentlich auch nicht, dass sie genau so aussehen.
+
+Und ich habe, wenn ich an Roboter denke, denke ich so an Fabrikhallen, wo ich sage, naja, wesentlich kommt es auf die Funktionen an und gar nicht, wie sie aussehen.
+
+Aber wenn man mal an einsatzbereiche wie was ich pflege alten pflege oder sowas nachdenken ja vielleicht möchte man ja doch ganz besonders dass das aussehen auch entsprechend ist und menschliche züge landen.
+
+Ja das ist richtig gibt dir die die gestützte roppe die einen im demenzbereich vor allem unterstützt und ein bisschen zuneigung den personen gibt.
+
+und dann darauf reagiert, wenn man sich streichelt oder ähnliches.
+
+Aber spannende Bewegungen.
+
+Heute wollen wir ein bisschen technischer wieder werden, weil wir gerne die Miniserie weiter fortsetzen wollen.
+
+Also wir haben ja praktisch jetzt bei den Recruiter Networks angekommen, das letzte Mal, und haben ja da einige Punkte
+
+wo wir gesagt haben, naja, da gibt es schon auch noch Probleme.
+
+Ich würde aber ganz gerne nochmal das Thema Sequenzen aufgreifen, also dass man da nochmal kurz zur Wiederholung reinschauen, weil wir hier ja über Daten sprechen, die irgendwo in Reihe hängen.
+
+Und es gibt ja unterschiedliche Arten von Sequenzmodellen, die man dann damit abbildet oder die man darauf anwenden kann.
+
+Genau, da hatten wir ja gesagt, eine wichtige Unterscheidung ist einmal die Eingabe zu einem neuronalen Netz.
+
+Was ist das für eine Sequenz oder als entartete Sequenz nur ein Element?
+
+Und was ist die Ausgabe?
+
+Und da können wir diese verschiedenen Varianten ja haben.
+
+Das Einfachste, was wir kennen, ist das sogenannte One-to-One.
+
+Eingabe ist ein Element, Ausgabe ist ein Element.
+
+Also eigentlich genau genommen keine Sequenzen.
+
+Also so ein klassisches neuronales netz ich stecke was kann was komplexes sein was ich reinstecken bild und herauskommt eine zuordnung was ist es denn und katze oder irgendwie sowas.
+
+Und wenn wir jetzt aber in die als eingabe erstmal die sequenzen betrachten dann könnte es ja sein dass wir eine zeitreihe reinstecken ein text ein satz ein eine abfolge von von tonsignalen audio.
+
+Aktienkurs.
+
+Genau, Aktienkurse als klassische Zeitreihen.
+
+Und dann ist die Frage, was ist die Ausgabe?
+
+Ist das wiederum nur eine Klasse zum Beispiel, die ich prognostiziere?
+
+Ist ein Satz oder eine Passage positiv, negativ, wie bei der Sentimentanalyse?
+
+Oder aber erwarte ich eine ganze Sequenz auch als Ausgabe, zum Beispiel bei Übersetzungen oder wenn ich einfach Sequenzen fortführe, dass ich sage, was sind die nächsten und das nächste Wort oder die nächsten plausiblen Worte in diesem Satz?
+
+Also wir haben hier die one-to-many-Modelle, beziehungsweise Arten von Sequenzmodell-Anwendungen, in denen wir aber durch das einen Input haben, nehmen ein Bild zum Beispiel als Input und dann kommt vielleicht hinten raus eine Beschreibung des Bildes als Sequenz, also der Text, der dann als Sequenz zu betrachten ist.
+
+Und dann haben wir hier aber die Many-to-One-Modelle.
+
+Da haben wir dann die Eingabe der Sequenzen, beispielsweise die Beschreibung des Textes oder einen Text.
+
+Und wie du es gerade schon gesagt hast, die Sentimentsbeurteilung zum Beispiel, ob es ein positiver oder negativer Text ist.
+
+Und die dritte Kategorie, die wir genannt haben, waren ja die Many-to-Many-Modelle.
+
+Das ist, was du jetzt mit Übersetzung gesagt hast.
+
+Und ich glaube, eine Ebene haben wir noch nicht betrachtet gehabt in dieser Darstellung.
+
+Was wir dann wahrscheinlich auch nochmal in einer extra Sendung nochmal extra erläutern werden, das sind ja die neueren Bewegungen in Richtung Encoder-Decoder-Modelle.
+
+die ja von der Idee her nichts anderes sind, als dass man sagt, man macht ein Many-to-One.
+
+Also man nimmt sozusagen eine Sequenz von Informationen, Aktienkurse, Text oder ähnliches, repräsentiert die in einer Ausgabe, einem Vektor oder ähnliches, und greift dann hintendran noch mal ein Decoder-Modell, das praktisch ein One-to-Many wieder wird.
+
+Das praktisch diesen einen Vektor wieder aufgreift und daraus wieder eine Sequenz macht.
+
+Und diese... Wobei, wenn ich da kurz einhaken darf,
+
+ob das jetzt wirklich in der mitte ist es ist eine feste länge einer darstellung insofern dass das schon aber es ist auch eine spezielle variante von many to many nur dass ich halt insbesondere unterschiedliche längen bei allen ausgabe haben kann
+
+und dass ich eine kompakte interne darstellung habe die irgendwo meinen inhalt beschreibt und die kommen in sehr sehr vielen bereichen zum einsatz ja ist ja schon ein paar genannt übersetzung definitiv da findet man die es hat einfach den vorteil dass man tatsächlich unterschiedliche arten von längen hat das ist das eine
+
+Und weil man, und das ist glaube ich auch ein Erfolg an manchen Stellen, man hat natürlich die Möglichkeit mit diesen Encoder-Decoder-Modellen die Sequenz, die praktisch in dem ersten Teil, zum Beispiel in dem Encoder ist, vollständig als Input für den nächsten zu nehmen, weil ich die hier vollständig repräsentiere.
+
+Indessen wenn wir uns die klassischen neuer networks anschauen ist ja praktisch der letzte zustand immer in der sequenz folgend sozusagen ist nicht die gesamte sequenz in summe, sondern praktisch immer nur der letzte zustand der sich aus allen vorgehenden zuständen ergeben hat interessant fand ich auch noch diesen diesen einsatz,
+
+Wenn ich mich in völlig unterschiedlichen Ebenen bewege, also wenn die Eingabe nur eine Abfolge von Bildern ist, Video oder wenn ich über ein Bild, ein größeres Bild hinweg schaue und verschiedene Ausschnitte aus dem Bild sehe, das dann irgendwie kompakt darstelle und die Ausgabe dann was ganz anderes ist, vielleicht gesprochene Sprache oder Textbeschreibung eines Bildes.
+
+Das finde ich eine sehr, sehr spannende Anwendung und gehen halt im Kern über diese kompakte interne Repräsentation als Ausgangspunkt.
+
+Wenn wir unseren Namen des Podcasts anschauen, Knowledge Science, da haben wir ja eigentlich genau diese Problematik, wenn wir jetzt in Richtung Unternehmenssicht schauen, dass wir ja sehr häufig Texte haben, die wir gerne irgendwie verstehen wollen, repräsentieren wollen, also Sequenzen, und das ja einen großen Teil der Informationen im Unternehmen ausmacht.
+
+Und auf der anderen Seite haben wir aber auch vereinzelt Informationen.
+
+Ich denke da zum Beispiel an Produktbilder, wo es vielleicht gut wäre, wenn man daraus auch einen Text bekommen könnte.
+
+Also eine Beschreibung, was ist auf dem Bild zu sehen.
+
+Produkt A mit der Eigenschaft XY oder Z. Und dass das sozusagen ein solches Modell erzeugt.
+
+Und da haben wir genau dieses, was du ja gesagt hast.
+
+Wir haben eine Repräsentation, in dem Fall als Input ein One, ein Bild, und würden gerne eine Sequenz haben, nämlich eine Beschreibung.
+
+Wenn ich an große Firmen denke, die 30.000, 40.000, 50.000 verschiedenartige Produkte haben oder ähnliches, dann könnte das auch ein Anwendungsfall sein, zum Beispiel Produktkataloge besser zu aktualisieren oder überwachen zu können.
+
+Aber greifen, gehen wir nochmal ganz zurück jetzt am Anfang.
+
+Wir haben gesagt, Sequenzen als Eingabe, als entartete Sequenz, ein Element, das kann natürlich ein Bild, ein Wort sein, also quasi dieses einelementige Geschichte, aber es ist ein Sonderfall letztendlich einer beliebig langen Sequenz.
+
+Entscheidend für uns ist,
+
+warum wir das überhaupt machen mit den Sequenzen, warum das so eine besondere Sache ist hier in dem Fall, weil hier unterschiedliche Längen haben können.
+
+Und klassische Architekturen von neuronalen Netzen können nur mit Vektoren einer festen Länge, also Eingabewerten einer festen Länge umgehen.
+
+Und wenn ich halt möchte, dass die beliebig lange Sequenzen behandeln können, brauche ich eine spezielle Art der Bearbeitung.
+
+Und die einfachste dabei ist, dass ich mir quasi Element für Element meiner Sequenz nach und nach in das neuronale Netz als Eingabe hineinschiebe.
+
+Also in sogenannten Zeitschritten.
+
+Und dann nach und nach auch die ausgabe mir von meinem neuronalen netz anschaue bis ich irgendwo mit der eingabe fertig bin.
+
+Und entsprechend in die die ausgaben protokolliert und notiert habe was da als ausgabe rauskommen soll.
+
+Wir legen faktisch eine schleife um die sequenz rum.
+
+Also wir wiederholen sozusagen die Eingabe in Form einer Schleife immer wieder und geben das in das Rekurren der neuen Netze ein.
+
+Bis sie komplett abgearbeitet ist, genau.
+
+Also eigentlich, wenn man es genau nimmt, man kann es ja noch genauer spezifizieren, jeder dieser Zustände, dieser Zeitscheiben hat ja eine gewisse Funktion in der Abbildung und das sind die Gewichte und wir geben
+
+auch die Gewichte immer identisch weiter.
+
+Es ist also eigentlich Copy-Paste der jeweiligen Zelle.
+
+Ja, eigentlich gar nicht mehr wirklich ein Copy-Paste, sondern es ist dasselbe Netzwerk, so wie wir es behandeln.
+
+Und man zeigt es nur so, wenn man so Abbildungen von solchen Netzen sieht, das sogenannte Unfolding-Overtime, dass man das mal so ausrollt, dass man sieht, wie würde das denn aussehen, wenn ich das nebeneinander legen würde.
+
+Aber eigentlich ist es ein und dasselbe Netz.
+
+Weil ich kann es ja gar nicht wirklich physisch als Kopie nebeneinander herführen, weil das würde ja wieder bedeuten, dass ich wieder eine vorgefertigte feste Länge hätte, um das so darzustellen.
+
+Jetzt aber zu den eigentlichen Themen heute.
+
+LSTMs, Long Short Term Memory Netzwerke.
+
+Warum brauchen wir die?
+
+Welche Probleme haben wir denn bei den RNN-Netzen noch eigentlich?
+
+Vielleicht nochmal als kurze Wiederholung.
+
+Wir hatten ja die Recurrent Neural Networks, die RNNs, dargestellt.
+
+Auch LSTM sind RNNs, nur in der einfachsten Variante der RNNs ist erstmal die Grundidee, dass ich den aktuellen Zustand oder die aktuelle Ausgabe eines Teil des Netzes wieder als Eingabe verwende beim nächsten Schritt.
+
+Also dass ich den Wert eines Netzwerkes oder eines Teil des Netzwerkes nicht nur auf Basis der Eingabe
+
+sondern auch auf dem letzten Zustand berechne.
+
+Dass ich also die Ausgaben wieder zurückführe.
+
+Diese Rückkopplung sozusagen.
+
+Dafür steht das ist Recurrent.
+
+Dass ich das wieder als Eingabe zurückführe.
+
+Und damit kann ich letztendlich schon es hinkriegen, dass ich so eine Art Gedächtnis habe, dass ich auf die vorherigen Zustände und Situationen zurückgreifen kann.
+
+Das heißt, ich könnte eigentlich theoretisch mit den RNNs alles erreichen, was ich erreichen möchte.
+
+Die sind so flexibel, dass ich damit alles machen kann.
+
+Aber es zeigt sich, dass wenn ich die jetzt nicht manuell definiere,
+
+mit welchen gewichten welche eingaben wann wie zurückfließen sondern das ja aus den daten lernen will das ist ja gerade die die stärke der neuronalen netze dass ich die die gewichte die ich da verwende ja aus daten mit entsprechenden lernprozessen lerne wenn ich das alles manuell das ist ja dann denn es ist ja fast wieder wie programmieren das wollen wir ja gerade nicht machen manuell diese gewichte bestimmen
+
+Und da gibt es genau das Problem, dass wenn ich über die Zeit hinweg diese Gewichte lernen will eines Netzes, da muss ich ja, das hatten wir ja kennengelernt, das Backpropagation, dass ich leite, die Fehler, die mein Netz macht, gucke ich mir als sogenannte Lossfunktion,
+
+meinen Fehler an und gucke, in welche Richtung müsste ich denn meine Gewichte ändern, um den Fehler bestmöglich zu reduzieren.
+
+Also könnte man sich das ja vorstellen.
+
+Das heißt, so bildlich gesehen ist diese Fehlerfunktion wie so ein großes Gebirge mit unterschiedlichen Hügeln und Tälern und ich möchte letztendlich einen Punkt finden in meinem Gebirge, wo ich möglichst weit unten bin.
+
+Und ich schaue einfach, wenn man im Gebirge möglichst schnell ins Tal will, in welche Richtung muss ich dann gehen, dass ich möglichst schnell unten ankomme.
+
+So funktioniert das.
+
+Und das mache ich jetzt aber nicht nur einmal, sondern muss diese Aktualisierung ja über die Zeit auch fortpflanzen, über die ganze Sequenz rückwirkend.
+
+Und da haben wir genau das Problem, dass wenn ich das Schritt für Schritt immer und immer wieder mache, dass quasi diese Aktualisierung oder die Art und Weise, wie ich das aktualisieren muss, das multipliziert sich über die Zeit.
+
+Und wenn diese Aktualisierungen deutlich größer oder kleiner als 1 sind, führt es dafür, dass die Werte, um die ich aktualisiere, extrem groß werden.
+
+Das ist das Exploding Gradient Problem.
+
+Das hat man schon gesagt, kann man dadurch lösen, dass man halt einfach das abschneidet auf einer gewissen Größe.
+
+Oder andersrum, wenn ich einen Wert habe kleiner als 1, den ich ganz ganz oft bei langen Sequenzen miteinander multipliziere, dann gehen diese Werte gegen 0.
+
+Das heißt, dass eine Aktualisierung keinen Effekt mehr hätte.
+
+Dann kann ich also über längere Sequenzen nicht mehr vernünftig lernen.
+
+Und dazu brauche ich eine Lösung.
+
+Und da ist das Problem, was klassische RNNs, die Recurrent Neural Networks, haben.
+
+Das heißt also eigentlich, wir haben zwar den Eindruck, dass wir beliebig lange Sequenzen in die Vergangenheit in Anführungsstrichen gehen können in der Sequenz, aber die RNNs kriegen das eigentlich auf einer bestimmten Länge nicht mehr gut hin.
+
+Genau, also das automatische Lernen aus Daten funktioniert nicht so wie das, was die Netze eigentlich, wenn sie vernünftig gelernt sind, was sie prinzipiell könnten.
+
+Das ist das eine, und ein anderer Nachteil ist noch, dass sie halt einfach stumpf über die Zeit sich zwar erinnern können, was da war, aber dass natürlich die
+
+die aktuell nur die Zustände, die vor kurzem da waren, also ein oder zwei, drei Zeitschritte vorher noch, dass sie viel präsenter sind als Sachen, die länger zurückliegen.
+
+Da treten ja jetzt die LSTMs ins Spiel.
+
+Und die sind ja auch nicht neu.
+
+Also das ist ja auch interessant, vielleicht das mal zu nennen.
+
+Die wurden ja 1997 von Sepp Hochreiter und Jürgen Schmidhuber in dem Artikel Long Short Term Memory, so sagen, vorgestellt.
+
+Vielleicht ganz wichtig zu nennen, der Sepp Hochreiter ist an der Technischen Universität München gewesen.
+
+Und der Schmidt-Obermann kam aus der Schweiz.
+
+Also das sind sehr wichtige Netze, die aber dann im deutschsprachigen Raum entwickelt werden.
+
+Also wir hatten ja schon mal eine Sendung, wo wir darüber diskutiert haben, wie steht in Deutschland oder generell Europa gegenüber anderen Regionen da im Vergleich von KI-Entwicklungen.
+
+Und man sieht, es kommen schon auch gewichtigte Themen aus dem europäischen Raum.
+
+Und die haben ja praktisch dann gesagt, es wäre ja gut, wenn wir sozusagen diese RNN-Netze ein bisschen erweitern, modifizieren.
+
+Und haben dann eine sogenannte LSTM-Zelle entwickelt, die so ein bisschen stärker den menschlichen Gehirn widerspiegeln soll.
+
+Mit einem Kurzzeitgedächtnis, einem Langzeitgedächtnis.
+
+Und sollen damit das Problem, diese Gradient-Probleme relativieren, also vergringern.
+
+Und auch längere Sequenzen zulassen.
+
+Ja, um das nochmal aufzugreifen, das ist echt interessant, dass er schon so alt ist, fast ein völler Jahrhundert alt.
+
+Es hat dann noch längere Zeit gedauert, bis es weiter aufgegriffen und zum Einsatz oder so breitflächig zum Einsatz kam.
+
+Es ist heute als Kern von neuronalen Netzen, von tiefen neuronalen Netzen, gerade im Bereich Sprachverarbeitung, gar nicht mehr wegzudenken.
+
+Das hat sich so durchgesetzt, das ist schon wahnsinnig.
+
+Wie gesagt, sehr, sehr alt von der Kernidee.
+
+Und genau genommen gibt es inzwischen nicht mehr das eine LSTM, sondern es gibt zahlreiche Varianten, die diese Grundidee aufgreifen.
+
+Natürlich könnte man sagen, die eine Kernidee ist das, was der Sempo Reitner und der Schwirthuber vorgeschlagen haben, aber es gibt natürlich
+
+ist mal die frage warum hat man jetzt die die ein entscheidung genau in der einrichtung gemacht und nicht in der anderen und denkt genau was diese zahlreichen varianten bei der umsetzung letztendlich beschreiben könnten aber deshalb gehen wir vielleicht mal zurück genau was du gesagt hast dass das man versucht hat ja so die art und weise wie die menschen letztendlich mit informationen umgehen
+
+Dass sie also so ein Langzeitgedächtnis haben, dass man kurzzeitig irgendwas hat, was noch irgendwie sehr präsent ist, dass man sowas versucht hat abzubilden.
+
+Und insbesondere eine Zielsetzung dabei war natürlich, dass ich das Vanishing Gradient Problem, also dass die Gradienten, die ich nutze, um die Gewichte zu aktualisieren beim Lernen, dass ich das Problem umgehen kann.
+
+Und da ist vielleicht, ja, es ist jetzt nicht mehr so, dass wir es als einen Neuron uns vorstellen können, was quasi dieses
+
+ja, LSTM-Netzwerk darstellt, sondern eigentlich ist so eine LSTM-Zelle an sich schon wieder ein mehrschichtiges Netzwerk, wenn man es aus grundlegenden Basislayern, also verschiedene Aktivierungen, verschiedene sogenannte, ja, neue Formen, neue sogenannte Gates, ja, man könnte sich das wie so eine Art Ventil auch vorstellen, die Werte zwischen 0 und 1 annehmen, also ob ich jetzt ein bestimmtes Teil meines Signals durchlasse oder gerade nicht.
+
+Das wird ein wichtiges Element sein.
+
+Und jetzt vielleicht mal als Zusatz zu diesem klassischen RNNs.
+
+Da gebe ich ja den Zustand der letzten Ausführung, also des letzten Schrittes, wieder mit als Eingabe.
+
+Was jetzt als Änderung kommt, ist, wir haben nicht mehr ein Signal, was ich an der nächsten Zeitstufe weitergebe, sondern zwei.
+
+Also einmal die letzte Ausgabe kriege ich.
+
+Plus, ich hab so einen internen Zellenzustand, der letztendlich diesen Gesamtkontext meiner ganzen Ausführung noch mal ungetrübt, im Sinne von nicht mit irgendwelchen Aktivierungsfunktionen noch mal beeinträchtigt, die ich jetzt wieder nutze, um Werte zwischen minus eins und eins oder zwischen null und eins zu erreichen.
+
+Indem ich wirklich so eine Gesamtaggregation des gesamten Kontextes weitergeben kann.
+
+Und der ist letztendlich ausschlaggebend dafür, dass das Ganze funktionieren kann.
+
+Heißt eigentlich, der Zellzustand ist praktisch unser, man kann das repräsentieren als Langzeitgedächtnis.
+
+Und dann haben wir praktisch den, wie beim Recurion Neuronetwork, auch den weiteren Ausgang.
+
+Und dieser weitere Ausgang, der ist praktisch die Sequenzergebnis der jeweiligen Zelle, praktisch im Zeitabschnitt.
+
+Wenn man das betrachtet, ist ja die Hauptidee dieses LSTMs, dass die Zellen lernen können, was im Langzeitgedächtnis gespeichert wird und was es vergessen kann.
+
+Und vor allem, wie man sozusagen aus diesem Langzeitgedächtnis praktisch auch Dinge wiederverwenden kann, also praktisch Informationen wieder rauslesen kann.
+
+Das ist jetzt so ein bisschen die Idee.
+
+Genau, und das klingt so salopp natürlich recht einfach zu sagen, aber naja, ich lerne einfach, was ich vergesse, was ich mir merke, wie ich das berechne.
+
+Das führt natürlich letztendlich dazu, dass ich eine Riesenmenge zusätzlicher Gewichte habe, die ich brauche, um das Ganze zu steuern.
+
+Während ich beim RNN letztendlich einen Satz von Gewichten habe, wie stark fließt die neue Eingabe und vielleicht der letzte Zustand ein?
+
+Ja, da habe ich jetzt einen Satz von Gewichten, die mir sagt, welche Teile meines Langzeitgedächtnis möchte ich denn vielleicht vergessen?
+
+Welche Teile meines Langzeitgedächtnis möchte ich denn mit neuen Werten aktualisieren, die hinzufügen?
+
+Welche Werte aus meiner aktuellen Eingabe sind es denn überhaupt die, die ich jetzt überführen möchte, in welcher Größe?
+
+Und wie beführe ich das denn am Ende wieder in meine Ausgabe?
+
+Also ich habe sehr, sehr viele Gewichte, die da am Ende dahinterstehen.
+
+Wir haben also eigentlich auch nicht nur die Gewichte, also die Schaltgröße sind, also praktisch wie so eine Schranke.
+
+Die hängen ja an unseren Gates, die du schon genannt hast.
+
+Und da haben wir ja praktisch in der LSTM-Zelle drei Stück.
+
+Wir haben eine Input-Gate,
+
+ein Output-Gate und ein Forgot-Gate, also ein Vergessen-Gate.
+
+Und wenn man sich das mal so bildlich vorstellt, muss man sich das jetzt so vorstellen, aus der vorgehenden Zelle kommen ja Werte raus, und zwar einmal unser Langzeitgedächtniswert, und ich nenne es jetzt einfach mal unser Kurzzeitgedächtniswert.
+
+Der Langzeitgedächtniswert, der überschreitet die Zelle praktisch fast ungefiltert, also fast,
+
+Mit der Ausnahme, dass wir praktisch dieses Forgot-Gate haben, das praktisch der Zelle sagt, die Teile werden jetzt vergessen, ganz, vollständig oder zum Teil.
+
+Und damit haben wir die Möglichkeit, im Langzeitgedächtnis bestimmte Dinge verschwinden zu lassen, also praktisch die wichtigen Dinge zu behalten, die unwichtigen zu entfernen.
+
+Und dann läuft es aber gemütlich weiter, und wir haben ja praktisch dann in jeder Zelle nochmal unsere Eingabe der Sequenz, also praktisch des Wortes, was jetzt gerade sozusagen bearbeitet werden soll oder ähnliches.
+
+Das läuft ja dann durch ein Input-Gate, weil erstmal geguckt werden muss, ob dieses Input-Gate funktioniert, also ob wir diese Information behalten wollen oder anreichen wollen.
+
+Und wenn das so ist, dann wird es zwar ein bisschen komplizierter, wenn man es dann wirklich betrachtet, aber so von der Erklärung, dann wird es dem Langzeitgedächtnis hinzugefügt.
+
+Dass es um so Input geht.
+
+Interessant dabei ist, zu berücksichtigen, dass die einzelnen Werte, die wir da haben, durch das einfach das hier hinzufügen, die hinzugefügten Werte gehen ja vorher durch so eine Aktivierung wieder, dass ich also nur Werte zwischen minus eins und eins habe.
+
+Wenn ich mir aber mal überlege, angenommen, ich würde nie was vergessen,
+
+Also wenn das Forget-Gate immer überall auf 1 ist, sodass alles umgekehrt immer zur nächsten Zeitstufe mit übertragen wird, dann wäre dieser Zellenzustand so, als ob ich quasi die Aktivierung oder die internen Zustände über die gesamte Durchführung meines Netzes hinweg einfach aufaddiere.
+
+Aber das heißt, die Werte können natürlich auch groß werden.
+
+Also nicht nur diese Werte zwischen Minus 1 und 1, sondern das akkumuliert sich, wie die Gesamtsumme aller meiner Zustände.
+
+Wenn ich kein vergessen, also kein forget hätte, nur dadurch, dass ich bestimmte Sachen wieder ausblenden kann oder reduzieren kann, habe ich gezielt natürlich die Möglichkeit, einzelne Teile explizit auf null zu setzen, zu vergessen.
+
+Oder halt, ja, das Abgeschwächte ist wahrscheinlich eher ein Randbereich, denn diese
+
+Gatter, die das Vergessen hersteuern, oder überhaupt das Durchlassen von Werten, werden durch eine Sigmoid-Funktion modelliert.
+
+Das heißt, es sind Werte zwischen 0 und 1, aber der Übergang, der ist ja relativ schnell.
+
+Das heißt, die werden im Wesentlichen komplett vergessen oder komplett durchlassen, und das dazwischen, dieser Bereich, ja, denke ich mal, es kommt jetzt nicht so stark zum Tragen, dass ich da jetzt gezielt irgendwo Werte nur so zur Hälfte vergesse oder auch nicht, obwohl es technisch natürlich möglich ist.
+
+Vielleicht mal noch ganz kurz noch das Output-G, dass wir das noch erwähnen.
+
+Also wir haben jetzt praktisch das Input-G, das uns auswählt, welche Informationen von unserer aktuellen Sequenz wir gerne einfliegen wollen in unser Langzeitgedächtnis.
+
+Wir haben das Forgot-G, das praktisch den Input des Langzeitgedächtnisses nimmt und schaut, welche Informationen wollen wir davon behalten und welche nicht.
+
+Und dann haben wir ja noch das Output-Gate.
+
+Und das Output-Gate, das nimmt jetzt praktisch dieses Langzeitgedächtnis und kopiert zunächst mal die gesamte Information.
+
+Und über das Output-Gate wird wieder quasi wie ein Filter überlegt, welches der Informationen aus diesem Langzeitgedächtnis wird als Kurzzeitgedächtnis-Zellzustand dann praktisch der nächsten Zelle übergeben.
+
+Das sind ja unsere drei wesentlichen Elemente.
+
+Wie du sagst, die Verarbeitung, das ist schon relativ komplex, aber wenn man sich das so vorstellt, wir müssen einfach schauen, dass unsere Zelle nicht verrückt wird.
+
+So könnte ich das jetzt ein bisschen interpretieren, wie du es gerade beschrieben hast mit dem, wenn ich kein Forgot-Gate habe.
+
+Wenn man sich überlegt, wenn wir uns im Langzeitgedächtnis alles merken würden und nicht auch Dinge wieder vergessen würden, ich glaube, wir würden verrückt werden.
+
+So ähnlich kann man sich das hier vorstellen, wenn das so richtig voll wird, dann kann ich damit auch nicht mehr so viel gut verwenden, oder?
+
+Oder interpretiere ich das falsch, Carsten?
+
+Ich würde es auch so sehen, aber das Entscheidende ist ja, dass dieses Forgetgate ja gesteuert wird, wiederum mit, das ist jetzt diese Mischung von den verschiedenen Signalen, also alle diese Gatter, die irgendwie bestimmen, ob ich Sachen vergesse, also das Forgetgate, das Inputgate, das Outputgate, die werden ja gesteuert durch die aktuelle Eingabe und auch durch das Kurzzeitgerechnet, also durch die letzte Ausgabe, das heißt,
+
+Diese Signale steuern auch diese Gatter, also quasi die Ventile, was ich an Informationen durchlasse.
+
+Und letztendlich beeinflussen sie auch die Berechnung, welche Werte ich zu diesem Langzeitgedächtnis wieder hinzufüge.
+
+Das heißt es sind letztendlich immer diese diese drei signale das langzeitgedächtnis das kurzzeitgedächtnis und die aktuellen eingaben die letztendlich dazu führen dass ich alle diese ventile die die was ich durchlasse was ich nicht aber immer verschieden brechne also das sind drei verschiedene sätze von von ventil parametern quasi die ich da bestimmen kann,
+
+und diese Kandidaten, die ich neu berechne, und das muss ich alles bestimmen.
+
+Ein kurzer Hinweis, das sind natürlich jetzt auch Überlegungen, wo ich verschiedene Varianten erstellen kann.
+
+Da gibt es zum Beispiel Überlegungen, wenn ich sage, wenn ich jetzt bestimmt berechne, welchen Teil möchte ich vergessen,
+
+dann möchte ich ja vielleicht ganz bewusst einen Teil meines Langzeitgedächtnisses ausblenden, weil ich genau den vielleicht mit einem aktuellen Zustand ersetzen möchte.
+
+Das heißt, es gibt Varianten vom LSTM, bei denen das Hinzufügen neuer Informationen immer genau das Gegenteil ist von dem, was ich vergessen möchte.
+
+Sodass ich sage, da wo ich was vergesse, ersetze ich es gerade gezielt mit neuen Verben, sodass ich dann nur noch einen Satz von Parametern habe.
+
+Das sind so Varianten, man kann jetzt nicht sagen, das eine ist besser als das andere.
+
+schlechter als das andere, sondern es gibt sicherlich Szenarien, wo genau das gut funktioniert, aber auch welche, wo es wieder nicht funktioniert.
+
+Aber auf jeden Fall hätte man dadurch weniger Parameter, die man lernen muss.
+
+Ja, es gibt ja dann auch eine Weiterentwicklung der LSTM-Zelle, sogenannte Crew-Zellen, die man auch noch mal erwähnen kann, wo dann versucht wurde, einerseits sozusagen die beiden Input-Output, also das Langzeitgedächtnis, zusammenzulegen, sodass man nur noch ein Output hat und auch versucht wurde, die Gates zu reduzieren.
+
+Also, dass man nicht so viele, wie drei Gates hat.
+
+Ich glaube, es sind dann nur noch zwei Gates.
+
+Wahrscheinlich, was ich auch gerade meinte, dass ich sage, da, wo ich vergesse, ist natürlich als Kehrwert da der Teil, den ich halt dann auch aktivisieren möchte.
+
+Das wird oft bestimmt so der Fall sein, ja.
+
+Also es ist eine spannende Welt, diese LSTM-Netzwerke, weil man wirklich so ein bisschen die Repräsentation hat.
+
+Man kann auch ein bisschen zusammenfassend sagen, eine LSTM-Zelle lernt, wichtige Eingaben zu erkennen, also die Aufgabe dieses Lernschrittes, das übernimmendes Input-Gate, diese im Langzeitgedächtnis zu speichern und die Zeit festzulegen, wann es vergessen werden soll.
+
+um das notwendige daraus raus zu selektieren dass man dann wieder schauen kann was ich dafür verwende für die nächsten input funktioniert so gut dass es in so vielen verschiedenen bereichen zum einsatz kommt aber vielleicht auch mal so richtung ausblick für die nächste woche oder für die nächste folge unser mini serie denken es hat auch noch ein paar schwächen.
+
+Das eine ist, dass es alles durch diesen Engpass der Sequenzverarbeitung durch muss.
+
+Und dadurch lässt es sich schlecht parallelisieren, was also bei großen Datenmengen zum Problem führt.
+
+Und ich auch nicht einfach so völlig wahlfrei beliebig jetzt mal rauspicken kann, was möchte ich mir denn behalten, was ist denn wichtig.
+
+Und da kommen Sätzen, nämlich genau die,
+
+die ja die techniken an die wir beim nächsten mal uns anschauen müssen das ist dieser dieser attention mechanismus dieser aufmerksamkeit dass ich wie so einen wahlfreien zugriff auf mein langzeitgedächtnis oder auf auf meinen meiner zustände die ich da habe rauspicken kann was brauche ich denn gerade und die dann halt sich besser parallelisieren lassen haben perfekt schöne schlusswort karsten dann vielen dank fürs zuhören und ich freue mich wenn sie nächste woche wieder dabei sind und tschüss
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

@@ -1,0 +1,401 @@
+ Hallo und herzlich willkommen.
+
+Letzte Woche haben wir über generative Adversarial Networks gesprochen und haben versprochen, diese Netze in der heutigen Sendung in den Anwendungskontext zu stellen.
+
+Gesagt, getan.
+
+Freuen Sie sich auf spannende Anwendungsbeispiele unter Verwendung von Garnetzen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, diese Woche, nachdem wir letzte Woche wieder ein bisschen theoretischer waren, was die Gann-Netze sind, wollen wir diese Woche ja ein bisschen praktische Beispiele aufzeigen, was man damit machen kann, was spannende Anwendungsfelder sind, was die Dinger denn eigentlich können.
+
+Was war es denn aber eigentlich nochmal zum Gann-Netz?
+
+Ich würde ja auf die Sendung von letzter Woche verweisen, aber ich denke, es wäre besser, wir würden eine kurze Definition machen.
+
+Generative Adversariennetze sind Netze, die ja praktisch Daten generieren, also generierende Netze sind, aufgeteilt in zwei Komponenten, einmal einen Generator und einen Diskriminator.
+
+Und das Interessante daran ist, dass der Generator Daten generieren soll, die aussehen sollen wie echte Daten.
+
+Er aber keinerlei Kenntnisse über diese Daten hat.
+
+Im Endeffekt kriegt der Diskriminator die Informationen, wie die Daten aussehen.
+
+Und er dient dazu, den Generator zu überprüfen, zu überwachen und zu checken, ob er gute Daten generiert oder nicht.
+
+Das heißt, wir lernen auf indirektem Wege, ohne dass der Generator jemals echte Daten gesehen hat, lernt er, wie die Verteilung dieser echten Daten aussieht und kann auf die Art und Weise neue Daten generieren.
+
+Im Nachgang von der Sendung, also das ist ja das Lustige daran, wenn man in dem Kontext sich bewegt, dann macht man sich ja zwar schon viele Gedanken, aber vielleicht gar nicht so, wie es dann in der Realität aussehen würde, wenn man das auf andere Gebiete transferieren würde.
+
+Und ich habe mir das so bildlich vorgestellt, wie man so einem Studenten Sachen beibringt, indem man sich einfach an den Tisch setzt und immer sagt, ist nicht richtig, nicht richtig.
+
+okay nicht richtig und eigentlich gar nichts erklärt aber so funktionieren diese netze ja also man erklärt sozusagen dem generator gar nichts wie die daten aussehen also wie die verteilung aussieht und der diskriminator schüttel immer nur im kopf oder sagt ja okay könnt passen.
+
+Ja, wir haben ja dieses lustige Beispiel zwischendurch gebracht, ne, dass man, ne, die Art und Weise, wie man Studierenden oder Schülern irgendwas beibringen könnte, war ein bisschen als Spaß gedacht, aber im Prinzip kann man sich so vorstellen, dass die lernenden Menschen nur Feedback kriegen, ob das, was sie gemacht haben, ja, zu dem passt, was andere, sagen wir mal, machen würden, die sich, die Experten vielleicht machen würden, aber man sagt ihnen jetzt nicht konkret, was jetzt irgendwo nicht stimmt oder wie das, was sie lernen sollen, überhaupt aussehen soll.
+
+Wir hatten ja einen Nachteil genannt, dass die praktisch relativ lang brauchen zum Lernen.
+
+Das war ja sozusagen einer der Nachteile.
+
+Und das kann man sich ja auch an dem Beispiel gut vorstellen.
+
+Also wenn ich jemandem nur sage, ja, nein, und ihm gar nichts sage, in welche Richtung er schaut, dann braucht es ja ziemlich lang, bis man das Themengebiet so eingegrenzt hat, dass man sagen kann, okay, jetzt habe ich's.
+
+Es gibt ja einen Grund, warum das überwachte Lernen, wenn ich wirklich eine Zielgröße erlernen möchte anhand gelabelter Daten, warum das so erfolgreich ist.
+
+Klar, ich brauche dafür diese Daten.
+
+Ich brauche viel davon bei tiefen neuronalen Netzen zum Beispiel.
+
+Aber wenn ich diese Daten habe, ist das sicherlich der schnellste Weg, um solche Zuordnungen zu lernen.
+
+Jetzt haben wir aber hier ein anderes Szenario.
+
+Ich möchte ja nicht irgendwie eine konkrete Klasse oder ein
+
+Zielgröße irgendwie erlernen, sondern ich möchte lernen, wie eine Verteilung, eine komplexe Verteilung aussieht.
+
+Nicht mal eben hier so ein Datenpunkt mit einer Normalverteilung, sondern wirklich, wie sehen Menschen aus, Gesichter aus, wie spricht ein Mensch.
+
+Also wirklich komplexe Sachverhalte mit sehr, sehr komplexen Verteilungen und die möchte ich erlernen.
+
+Und das ist
+
+Aufwendig, aber es ist halt ein wahnsinnig spannendes Gebiet und liefert in vielen Dingen echt faszinierende Ergebnisse.
+
+Wenn wir mal so ein bisschen in die Anwendungen dann nochmal schauen, was wir ja dann gleich noch machen.
+
+Wir hatten aber auch ein Problem genannt, also das eine war natürlich die Lernphase, also dass es relativ lange braucht zum Lernen.
+
+Wir hatten aber auch identifiziert in unserer Sendung vorher,
+
+dass wir gesagt haben, naja, es ist ja gar nicht gewährleistet, dass er das Richtige lernt.
+
+Also dass er sozusagen, wenn wir jetzt sagen, er soll einfach handschriftliche Ziffern, hat man als Beispiel genannt, von 0 bis 9 lernen, die perfekt zu imitieren, also perfekt zu generieren, dass es gar nicht gewiss ist, dass er wirklich alle 10 Ziffern macht, sondern dass er sich vielleicht sagt, ne, ich konzentriere mich auf 3 oder 4 und der Rest halt nicht.
+
+Und da haben wir ja schon angedeutet, dass es Erweiterungen gibt, nicht wahr?
+
+Genau, um das nochmal aufzugreifen, wir müssen ja unterscheiden, durch diese indirekte Rückmeldung, über ob der Generator in der Lage ist, den Diskriminator zu täuschen oder auch nicht, kann er halt genau das lernen.
+
+Wir kriegen es hin, dass er, wenn alles richtig eingestellt ist, dass er das vielleicht gut hinkriegt.
+
+Aber insofern muss man da immer bei jeder anwendung schauen ob die art und weise wie ich diese rückmeldung gebe wie ich da die die sogenannte loss funktion berechne mit der ich ja das training steuere dass das zur aufgabe passt aber aufgrund der indirekten rückmeldung haben wir diesen unterschied dass das was ich eigentlich mehr hoffe dass die.
+
+die gesamtheit aller möglichen daten ist die verteilung halt möglichst komplett abgedeckt wird ist halt durch dieses feedback signal bin ich getäuscht worden ja oder nein oder hat das täuschen gut geklappt ja oder nein einfach nicht vollständig abgedeckt genau um das jetzt hinzukriegen eine
+
+Ja, eine Kernidee, die konditionierten Gans, also die conditional Gans.
+
+Das heißt, ich gehe nicht nur von einem zufälligen Datenpunkt oder von einem zufälligen Vektor aus, den ich auf meine gewünschte Ausgabe erzeuge, sondern ich gebe sowohl dem Diskriminator als auch dem Generator
+
+ein ein ja am einfachsten fall ein label mit zb das label für die drei oder sieben und das sind kommen alle label natürlich in frage die ich in meiner ausgangsdomäne habe oder haben möchte.
+
+Und das sorgt dafür, dass im Endeffekt der Generator plötzlich auch praktisch Informationen bekommt, dass praktisch, wenn er nur sich auf eine Klasse konzentriert, dass er dann der Diskriminator sagt, nö, es fehlt halt was oder es ist falsch.
+
+Und dadurch ihn dann zwingt.
+
+Wir können das mal durchspielen.
+
+Wenn der Generator dieses Label mitkriegt, also er kriegt nach wie vor irgendwie einen zufälligen Startwert oder Vektor mit,
+
+der eigentlich ursprünglich mal auf eine mögliche Ziffer abgebildet wurde.
+
+Zusätzlich kriegt er aber noch mit eine Kodierung, mach mal eine 7.
+
+Das Ding ist, der Generator weiß nichts von einer 7.
+
+Der kennt es nicht.
+
+Der kriegt halt nur dieses Label mit, dass er das generieren soll.
+
+Insofern ist es aber eine Zusatzinformation, dass es was anderes ist, als wenn er mal eine 1 erzeugen soll.
+
+Er weiß halt nur, okay, da sind einfach unterschiedliche Dinge, die er machen soll, aber er weiß eigentlich gar nicht, was es ist.
+
+Aber der Diskriminator kriegt ja dieses Label auch.
+
+der weiß auch nicht unbedingt wie eine sieben aussieht aber er kriegt die viele bilder von von von den realen dalton ja immer mal wieder bilder mit 7 und weiß halt dass es eine sieben ist das heißt er lernt auf diese art und weise auch noch was sie vielleicht auszeichnet weil es ja zusammenpassen muss
+
+Und auf die Art und Weise, wenn jetzt irgendwann mal der Generator ein Bild erzeugt, eine Ziffer, die zwar aussieht wie eine Ziffer, aber nicht gerade die ist, die er hätte erzeugen sollen, ohne dass er es weiß, kann aber der Generator, gut er weiß das nicht, aber der Diskriminator kann auf die Art und Weise erkennen,
+
+weil der einfach, weil der Generator keine Ahnung hat, wie eine 7 aussieht, erkennt er, entlarvt er ihn ja schnell.
+
+Das heißt, es ist eine sehr, sehr langwierige Geschichte, aber auf die Art und Weise kommt nach und nach das Feedback so rein, dass er halt gezwungen wird, irgendwann mal diese 7 zu generieren.
+
+Sehr, sehr langwierig, weil diese indirekte Rückkopplung da ist, aber es kann erreicht werden, dass er somit alle Ziffern generiert in dem Fall.
+
+Und diese Idee dieser Konditionierung,
+
+Das geht ja nicht nur mit dem Label, das ist das der Kern meines Erachtens, wie wir viele von den Anwendungen, die wir gleich besprechen wollen, also jetzt mal auf die beruhenden, das kann nicht nur ein Label sein, das kann ja auch eine ganz komplexe Eingabe sein, zum Beispiel ein ganzes Bild, was ich irgendwie verändern möchte oder eine ganze Videosequenz oder einen Text, den ich verändern möchte und insofern wäre das jetzt vielleicht eine Möglichkeit, um mal mögliche Anwendungsszenarien mal einfach zu diskutieren.
+
+Ja, und ich glaube, das wird jetzt der spannende Part.
+
+Aber das andere ist auch extrem spannend, weil ich würde gern einen Gedanken, der mir gerade in den Kopf schießt, sagen, es ist ein extrem langes Lernen.
+
+Man könnte aber auch mal darüber nachdenken, ob man nicht so ein Mixmodell macht, dass man sagt, man füttert den Generator auch schon mit Vorabinformationen, um den Lernprozess ein bisschen zu beschleunigen.
+
+Muss man mal ausprobieren, ob das nicht vielleicht auch eine Weiterentwicklung sein könnte oder ob es vielleicht nicht sogar sowas gibt.
+
+Anwendungsfälle.
+
+Ich würde mal sagen, wir gliedern das so ein bisschen auf.
+
+Wo die ganz herkommen, ist ja vor allem erst mal aus der Bildwelt, weil man sich das ganz gut plastisch vorstellen kann und weil man das natürlich auch sehr gut zügig überprüfen kann.
+
+Ich fand einen Anwendungsfall echt extrem schön.
+
+Also im ersten Moment, wo man sagt, ja gut, vielleicht ist es auch nur eine Spielerei.
+
+Und zwar in der Recherche bin ich darüber gestolpert über Fotos von Menschen, die praktisch von der Seite fotografiert wurden.
+
+Und dann hat man ein Garnnetz gelernt, das im Endeffekt das Foto genommen hat, das also praktisch nur die Seitwärtsinformationen hat.
+
+und sozusagen den kopf komplett dreht also der frontal sicht macht also praktisch den rest des gesichtes dem man nicht sieht ja der auch nicht auf dem bild vorhanden ist dann so rekonstruiert dass man sagen okay das ist das foto von dem herrn so und so oder so und so.
+
+Das ist ein ganz interessanter Anwendungsfall, finde ich, der in einem Paper mit einem extrem langen Titel, Beyond Face Rotation ist sozusagen so die Überschrift, der Rest hieß dann Global and Local Perception Garn for Photorealistic and Identity-Preserving Frontal Fuson Diseases von Rui-Huang et al.
+
+in 2017 veröffentlicht wurde.
+
+Spannendes Thema, was ich halt faszinierende finde, ist, dass man halt Informationen, die gar nicht da sind, dahin rekonstruiert, dass das GAN halt ganz viele Bilder, man kriegt natürlich dann, wird durch die Informationen über Seitenansicht und Frontalansicht an den Diskriminator geliefert und der Generator muss halt dann einfach das so generieren, dass das passt.
+
+Genau wenn man das mal ganz kurz mal am beispiel wieder aufgreifen mit dieser konditionierung denn wäre ja eigentlich dass das wir haben meinetwegen dass das label was wir haben ist ja die eine eine eine frontansicht einer person und die die eingangsdatens ist die seitenansicht das heißt wenn wir dem dem diskriminator echte daten zeigen dann ist das eine seitenansicht und eine dazu passende frontaleinsicht genau und wenn wir jetzt ein
+
+ein generator den erzeugen dann kriegt er als konditionierung ja quasi die seitenansicht auch schon mal irgendwo mit also muss er ja wissen was was da irgendwo wo drin steckt was wir mal irgendwie haben wollten das heißt wir müssen dem ja irgendwie information mitgeben von unserem ausgangsbild das muss man auch womit mit reinstecken und die die frontalansicht ja die die soll er halt erzeugen.
+
+Und wir geben ihm aber als bedingung schon mit wie wie das aussieht was grundbild genau.
+
+Genau ja und faszinierend ist es dass das wirklich extrem gut funktioniert also dass wenn man sich die die ergebnisse dann anschaut von dem paper.
+
+Es ist echt faszinierend und jetzt kann man natürlich überlegen naja gut das ist jetzt wir drehen wieder wo ist der anwendungsfall.
+
+Also im Sinne von einer betriebswirtschaftlichen Anwendung.
+
+Also warum, das ist vielleicht eine schöne Spielerei, dass wir das können, toll.
+
+Aber wenn wir drüber nachdenken, gerade an zum Beispiel Produktkataloge, Internetseiten, wo man Produkte präsentiert oder ähnliches, spare ich mir natürlich ganz viele Fotos.
+
+Also ich kann im Endeffekt den ganzen Prozess der Generierung einer Produktplacements oder ähnliches, kann ich dadurch natürlich reduzieren.
+
+Und da gibt es auch Erweiterungen, also es sind auch Closing Translations, das ist auch ein Paper gewesen, das erweitert wurde, wo man im Endeffekt dann gesagt hat, okay, man macht ein Foto von dem Produkt und das Garnnetz lernt daraus, wie wir das Produkt ohne Mensch darstellen, also so, als wenn es angezogen war und wie man es von unterschiedlichen Sichten betrachten könnte.
+
+Und auch die Ergebnisse waren ziemlich faszinierend, also sehr gut, sodass man auch dort sozusagen diesen Prozess der Präsentation eines Produktes halt wahnsinnig reduzieren kann.
+
+Ja, der Vorteil dabei ist ja, dass es ja eigentlich nicht wirklich darauf ankommt, wie die Person wirklich aussieht, weil es geht ja nicht um eine konkrete Person, sondern einfach nur, dass es wie eine realistische Person aussieht.
+
+Insofern hat man da natürlich wirklich diese schöne Freiheit, wie das ja bei diesen generativen Modellen so ist.
+
+Es soll ja einfach nur realistisch sein, aber es geht ja nicht darum, dass wir wirklich eine Person X haben und die wollen wir drehen und dann erwarten wir, dass die wirklich so aussieht, sondern es muss nur realistisch aussehen.
+
+Also insofern ist es für eine Anwendung natürlich.
+
+Ich will nicht sagen einfacher, aber man hat diese Freiheit bei der Erzeugung, dass es da nicht dieses eine Richtige gibt, sondern es soll nur plausibel sein.
+
+Genau.
+
+Und da kann man gleich einsetzen.
+
+Ein anderer Anwendungsfall war praktisch Human Poses zu generieren, also praktisch Körperhaltungen zu definieren.
+
+Da gab es auch ein interessantes Paper, Poses Guide, Person Image Generation, von Liquian Ma, auch aus 2017.
+
+Die sind hergegangen und haben einfach gesagt, okay, wir nehmen ein Foto eines Menschen und definieren anhand von so Punkten auf einem schwarzen Hintergrund, wie denn bestimmte Körperhaltungen aussehen sollen.
+
+Und dann soll das Garnetz lernen, diese Punkte, das Bild der Person anzuwenden.
+
+Also praktisch die Körperhaltung verändern.
+
+Und auch das relativ gut geworden von den Ergebnissen her, dass das Scan das tatsächlich hinbekommt aus einem Foto, obwohl die Informationen ja eigentlich gar nicht da sind, wie jetzt die Armbewegung ist oder ähnliches, daraus dann tatsächlich eine Pose zu machen, die dann anders war als das Originalfoto.
+
+Und auch da sehe ich interessante Anwendungsfälle, gerade wenn man jetzt zum Beispiel im Fitnessbereich schaut, gibt es ja ganz oft so Themen, dass man praktisch zeigt, wie bestimmte Fitnessübungen aussehen in Form von Fotos.
+
+Und im Endeffekt kann man eigentlich sagen, man fotografiert eine Person, macht sozusagen die notwendigen Posen in Form von so Punktmodellen und lässt sozusagen von so einem KI-Modell dann die passenden Posen für die Übung generieren.
+
+auch da wieder effizient in der geschwindigkeit vielleicht viel genauer von der von der ausgestaltung der pose man muss zu sagen das model an der stelle nicht so lang anweisungen geben wie man das genau machen muss also auch ein ganz spannender anwendungsfall um auch hier effizienzen rein zu kriegen also zusammengefasst noch nicht für das ganze aber mal diese ganzen ideen ist ich habe in dem fall ich habe ein bild bildes auf eine andere
+
+ein anderes Bild ab, mit bestimmten Eigenschaften.
+
+Also man kann anstatt von der Seite von vorne, oder ich kann einen gewissen Stil ändern.
+
+Ich kann ja auch eine Figur bekleiden.
+
+Wie sieht es aus, wenn ich verschiedene Eigenschaften einfach ändere?
+
+Ich kann aber auch zum Beispiel, das ist eine ganz andere Anwendung, wenn ich aus einem komplexen Bild, einem Szenario, eine abstrakte Darstellung extrahiere.
+
+und die dann quasi als Eingabe dienen kann, um zum Beispiel hier Armbewegungen eines Roboters zu lernen.
+
+Unabhängig von dem, was da im Hintergrund noch alles für aufwendige Texturen sind, extrahiere ich mal so eine abstrakte Darstellung.
+
+die dann viel, viel einfacher ist, auf der ich dann andere Lernprozesse wieder starten kann.
+
+Dann ist das sozusagen auch diese Umwandlung als eine Art erweiterte Feature Extraction schon wieder zu sehen, wenn ich halt so abstrakte Bilder aus komplexen Szenarien lerne, um damit andere nachfolgende Lernschritte zu vereinfachen, dass die sich auf das Wesentliche konzentrieren.
+
+Das ist auch eine sehr spannende Anwendung.
+
+Der hat genau dieses Thema aufgegriffen.
+
+ja wobei das ist ich glaube diese zeige gerne dass du ansprichst genau ist nämlich jetzt ist sehr sehr spannend aber dass wir bislang diskutiert haben ist ja dass wir ein bild haben und das transferieren auf ein anderes so und ich hatte damit jetzt hier das paper wo wo eins meiner lieblingsanwendung dabei ist wo wir sehen wo ein ein pferd irgendwo als als wirklich als bewegte bilder als video das läuft ein pferd über die wiese und es wird daraus ein zebra gemacht.
+
+Und das klappt erstaunlich gut.
+
+Der Generator weiß natürlich eigentlich gar nichts über dieses Zebra.
+
+Also der färbt jetzt nicht nur das Zebra irgendwo, also das macht aus dem Pferd nicht nur ein Zebra, sondern der weiß ja gar nicht, dass wir an dem Zebra oder dem Pferd interessiert sind.
+
+Der verändert das ganze Bild.
+
+Das war das, was ich letztes Mal schon gesagt hatte, dass das Gras nicht mehr so grün ist wie vorher, sondern irgendwie brauner, weil er hat ja dieses ganze Zebra-Surrounding, meinetwegen ein Bild in der Steppe, wo es einfach brauner ist als vielleicht irgendwo anders.
+
+Und das Interessante jetzt an dem Punkt ist, dass dieses Netz aber auch nichts davon weiß, von der Abhängigkeit der Bilder.
+
+Das heißt, eigentlich wird nur Bild für Bild, Frame für Frame von so einem Video transferiert.
+
+Jedes für sich genommen auch ziemlich gut.
+
+Und dann sieht man manchmal so interessante Artefakte, dass die Muster sich auf dem Zebra verschieben.
+
+Also wenn das Pferd den Kopf schwingt und die Position ändert,
+
+sieht man teilweise, wie sich das Muster verschiebt, weil die Streifen immer in einer bestimmten Richtung bleiben und in neuen Positionen zwar immer noch perfekt auf diesem Kopf sind, aber es ändert sich, wie so eine Projektion eines Streifenmusters auf so einem Kopf.
+
+Und je nachdem, wie der Kopf gerade positioniert ist, gehen die Streifen mal von links nach rechts oder von oben nach unten.
+
+Sehr, sehr spannend.
+
+Also das sind Eigenschaften,
+
+die einfach da noch nicht mit drinstecken.
+
+So ein generierendes Netz hat dann noch nicht gelernt, dass es diese Abhängigkeit zwischen diesen Bildern oder diesen Bezug auf dieses eigentliche Objekt eigentlich gibt.
+
+Ja, absolut.
+
+Aber es ist wirklich ein ganz spannendes Umfeld, weil auch in dem Zuge von dem Paper, das wir jetzt da ansprechen, sind auch andere Anwendungsfälle, also nicht nur das, ich sag mal, Eigenschaften von einem Bild auf die andere transferieren, wobei eigentlich ist es das Gleiche.
+
+Ich fand es nur ganz interessant, wo man das nützen kann.
+
+Wenn man überlegt, fast jeder von uns benutzt wahrscheinlich irgendwelche Maps-App, wo man praktisch
+
+Satellitenbilder sieht und dann zu schematische Zeichnungen dann, dass ich wechseln kann zwischen den Realbildern und den schematischen Zeichnungen, wenn die Straßenstruktur ist oder der Hausbau oder wie auch immer.
+
+Und dieser Transfer, der kann von solchen Netzen auch gemacht werden, dass ich sage, ich habe meine Satellitenbilder und bevor sich jetzt jemand hinsetzt an irgendeine Applikation und malt sozusagen die
+
+ja ich sag mal den blog oder wie auch immer nützt man solche netze um die zu generieren und das ist echt gut ich sprach ja vorher von diesem von der abstraktion von von bildern das kann man natürlich satellitenbilder in karten übertragen dass du eine kartendarstellung hast genau oder andere andere geschichte zwar nicht dieses abstrakte aber du sagst ja bilder ändern positionen ändern wir haben bilder von von tagesaufnahmen
+
+Bilder für den Verkehr und möchte jetzt die bei Nacht haben.
+
+Und man lernt einfach ein Modell, was die Tagessicht auf eine Nachtsicht projiziert und hat dann einfach mehr Daten für folgende Modelle wieder, um damit zu arbeiten.
+
+Ich sehe, wir haben in der Vorbereitung so die ähnlichen Beispiele auch gefunden.
+
+Fotoplanting ist ja da das Stichwort, dass ich praktisch Informationen aus dem einen Themengebiet, also aus dem einen Foto in ein anderes übernehmen kann, was ja auch ganz interessant ist, weil ich im Endeffekt dann auch
+
+für Produktplacement und ähnliches, was wir schon gesagt haben, dann auch nicht verschiedensartige Orte haben muss oder die Zeiten machen kann.
+
+Ich kann meine Aufnahmen am Tag machen und kann dann im Endeffekt sagen, nee, es wäre schöner, wenn man das vielleicht in der Dämmerung hat oder mit einem gewissen Stich oder wie auch immer und tauscht dann sozusagen Teile der Informationen aus, sodass das Bild so aussieht.
+
+Und da gab es auch ein Paper 2017, also 2017 ist so das Jahr der Gans, habe ich so den Eindruck.
+
+Das hieß GPGAN, Towards Realistic High Resolution Image Blending, das genau das eigentlich gemacht hat, dass man verschiedene Bilder als Basis hatte und sagen konnte, okay, dieser Bereich zum Beispiel, die hatten dann so ein Bild von einem, ich sag mal, Feld,
+
+wo Getreide angebaut wurden und haben gesagt, naja, aber eigentlich ist das zu viel Getreide, wir hätten gerne im Hintergrund einen Berg und wir hätten gerne eine grüne Wiese an einer bestimmten Stelle.
+
+Und durch bestimmte Markierungen des Bildes konnte man dann im Endeffekt die Elemente realistisch überblenden, sodass also nicht nur das ersetzt wird, sondern dass auch die Übergänge passen, sodass man das Gefühl hat, okay, das ist wirklich so gewesen.
+
+Das sind alles Beispiele, wo ich da meine Eingabe und Ausgabe etwas Vergleichbares habe.
+
+Ich habe Bilder in dem Fall und projiziere sie auf ein anderes Bild mit anderen Eigenschaften, mit Ergänzungen, wo ich Stile, Sachen geändert habe.
+
+Es ist aber auch denkbar, dass eine und Ausgabe nicht gleich sind.
+
+Ich kann ja zum Beispiel ein Bild haben und extra hier eine Beschreibung.
+
+Oder ich habe einen Text und generiere Ton, aber das ist so eine komplexe Geschichte, da denke ich mir, das werden wir auch wieder eine Folge, eine spätere Folge auslagern.
+
+Wie generiere ich zum Beispiel aus Text gesprochene Sprache?
+
+sehr sehr wichtiges thema war auch ganz zum zum zum einsatz kommen aber das das würde heute den rahmen sprengen trotzdem nochmal vielleicht vorher nochmal andere anwendungsszenarien müssen ab stärker gruppiert ist einfach das erste war ja ich generell generell generell künstliche daten ohne irgendwie eine vorgabe zu haben so dass ich sowas kann ich nutzen für.
+
+unterschiedlichste einsatz hinein ich ich kann ich kann einfach anonymisierte daten haben die genauso verteilt sind wie die die originale aber halt so zur wahrung von datenschutz zum beispiel ich kann für simulationen daten generieren und muss gar nicht erst auf die physische welt irgendwie zurückgreifen und irgendwie was was was machen sondern ich generiere einfach für künstliche welten künstliche situationen für lernprozesse auch richtung reinforcement learning ein wichtiger punkt um sowas zu kombinieren
+
+Es gibt noch viel, viel einfacher.
+
+Man kann auch diese Technik nutzen, um fehlende Werte, das Problem fehlender Werte beim Lernen, umwohl damit umzugehen.
+
+Es ist okay, ich habe hier ein Datenobjekt, wo einige Werte fehlen, stecke das in so einen Gang rein, der generiert mit quasi
+
+ein datenpunkt dazu wo die fehlenden werte sinnvoll ergänzt wurden der aber gewisserweise ähnlich zu dem was ich vorher hatte ist also das ist so ein ding die frage ist welchen teil des netzes nutze ich der hauptfokus ist das erzeugte sich anzuschauen.
+
+Es gibt aber auch Möglichkeiten, was von dem Diskriminator zu nutzen.
+
+Vielleicht jetzt nicht seltener, die die Fähigkeit, wirklich fake und real Sachen auseinanderzuhalten, weil das ja vielleicht mehr so eine Sache ist, wie wir diesen Lernprozess gestalten.
+
+Aber während der Diskriminator lernt,
+
+die die fake von realen sachen zu unterscheiden lernt er je besser der generator wird lernt er die entscheidenden merkmale zu extrahieren und diese dieser teil dieses netzes den kann man dann wieder später für andere repräsentationen nutzen und bei anderen lernen lernaufgaben vielleicht auch für explainable ei weil im endeffekt kennt er ja dann merkmale und man könnte darüber ja überlegen ob man damit nicht auch erklären kann warum manches so ist wie das netz halt reagiert
+
+Haben wir noch einen Ansatzpunkt für eine spätere Folge?
+
+Ja, wir haben noch ein paar Themen, ja.
+
+Ich würde vielleicht einen Punkt noch ganz kurz aufgreifen, weil du gesagt hast, fehlende Informationen in den Bildern.
+
+Den Anwendungsfall hatte ich tatsächlich auch identifiziert und fand es dahingehend echt spannend, weil im ersten Moment hört sich das so an, okay, wir haben da irgendwo einfach fehlende Informationen.
+
+Aber wir haben ja sehr oft sozusagen Bildinformationen,
+
+oder generell einfach Quellen, wo uns Informationen fehlen.
+
+Also ich denke da an alte Bücher, dann fehlt vielleicht ein Teil einer Seite.
+
+Wir würden ganz gerne diesen Teil oder einen Aspekt davon haben.
+
+Und da gibt es auch einen Ansatz, dass man sagt, man nützt diese ganz, um diese fehlenden Informationen in den Bildern aufzufüllen.
+
+Ganz spannender Aspekt in meinen Augen, damit man hier wirklich sagen kann, man füllt diese Löcher im Text eigentlich auf.
+
+das ist eine sehr sehr spannende geschichte weil das ist ja das was menschen auch wieder gut können du siehst man wie guckst aus dem fenster und sie ist ein halben baum du weißt wie ein baum normalerweise aussieht und hast du so vorstellung wie der baum wahrscheinlich weitergeht und genau so was können können ja die netze auch lernen dass sie einfach aufgrund des wissens wie bäume aussehen und man nun teil teil eines bildes hat können sie das sinnvoll ergänzen ob es denn wirklich so ist oder in wirklichkeit ganz anders ist es mir wieder zweitrangig weil auch wir haben manchmal falsche vorstellung.
+
+Aber das Interessante, deswegen habe ich es jetzt genannt.
+
+Ich habe jetzt nur ein bisschen gebraucht, das in meiner Liste zu finden.
+
+Das Paper dazu nämlich heißt Context Encoders Feature Learning by Inpainting von Deepak Pathak et al.
+
+von 2016.
+
+Das ist praktisch ein Paper, das genau den Gedanken, den du aufgebracht hast, nämlich dieses Feature Lernen, eigentlich aufgreift, um dann auch natürlich für den Generator natürlich im Endeffekt diese Löcher zu generieren.
+
+Aber der Fokus liegt auf diese Features, auf den Merkmacher.
+
+ja und das ist glaube ich zweite anwendungs domäne so ist es diese diese fähigkeit das was wichtig ist in kontext zu erfassen und zu charakterisieren dann in andere anwendung wieder zu übertragen also das heißt wir haben diese großen zwei punkte in der sachen einfach generieren da kommt es ursprünglich her aber auch die die die fähigkeit diese repräsentation zu erzeugen perfekt
+
+Ich glaube, für heute ist es ein schöner Eindruck, mal so quer über viele Anwendungen hinweg, sodass man sich mal ein bisschen was darunter vorstellen kann.
+
+Für nächste Woche lassen Sie sich überraschen.
+
+Ich glaube, es wird eine spannende Sendung, aber wir werden jetzt noch nicht sagen, was es ist.
+
+Vielen Dank fürs Zuhören und ich hoffe, dass Sie nächste Woche dabei sind.
+
+Und tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

@@ -1,0 +1,507 @@
+ Hallo und herzlich willkommen zu der heutigen Folge.
+
+Diese Woche Mittwoch wurde von der EU ein Verordnungsvorschlag zur Schaffung neuer Vorschriften und Maßnahmen für Exzellenz und Vertrauen im Bereich der künstlichen Intelligenz vorgelegt.
+
+Über diesen Regulierungsvorschlag und dessen Chancen und Risiken werden wir in dieser Folge diskutieren.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Sigurd.
+
+Hallo liebe Zuhörer.
+
+Diese Woche wollen wir mal ein bisschen aus unserer Miniserie ausreißen.
+
+Wir hatten ja vor über Recrual Neural Networks zu sprechen, aber am Mittwoch gab es eine neue interessante Begebenheit in der EU.
+
+Es wurde nämlich ein Regulierungsvorschlag vorgelegt und über den würden wir ganz gerne heute mal diskutieren.
+
+Worum geht es denn genau in diesem Vorschlag Sigurd?
+
+Kannst du das ganz mal für die, die es noch nicht gelesen haben, mal ganz kurz zusammenfassen?
+
+Vorgestellt wurde von der Vizepräsidentin Margarete Vestager, die zuständig ist für Digitalisierung in Brüssel.
+
+Das Ziel dieses Regulierungsvorschlags ist es, mehr Vertrauen in die Anwendung und Entwicklung von künstlicher Intelligenz in der Europäischen Union zu schaffen.
+
+Dazu sind neue Vorschriften festgelegt worden, wie man Exzellenz und Vertrauen schaffen kann.
+
+Es ist ein Regulierungsvorschlag, also wirklich die Branche soll in dem Sinn
+
+stärker reguliert werden.
+
+Das heißt, es sind Verschärfungen da.
+
+Man geht auf einen risikoorientierten Ansatz ein, dass man bestimmte KI-Anwendungen klassifiziert und gibt Vorschläge, wie man Innovationen in dem Bereich stärken kann.
+
+Ich denke, bevor wir dann in den Inhalt dieses Vorschlags gehen, sollten wir vielleicht das Thema noch mal ein bisschen weiter vorne aufgreifen und sich erst mal so ein bisschen auch verinnerlichen, wie es denn überhaupt in Europa im Vergleich zu anderen Ländern mit der künstlichen Intelligenz aussieht.
+
+wenn man das so betrachtet man hat ja schon eine situation dass es so global player gibt im thema ki entwicklung und da ist sicher die usa ganz vorne dabei und dann kommt europa und china natürlich auch als global player.
+
+Ich glaube sogar dass das china vielleicht gleich auf ist mit der usa also jetzt gar nicht mal genaue nuancen zu unterscheiden aber china und die usa sind natürlich sehr sehr weit vorne mit dabei.
+
+Es ist ganz interessant, ich habe mir das nämlich dann in dem Kontext mal angeschaut und habe mir gedacht, warum muss man jetzt in Europa so eine starre Regulierung machen?
+
+Also das ist nämlich schon ein ganz schöner Eingriff, wenn wir dann nachher über die Risikogruppen reden, sehen, dass man in ganz schönen Gebieten eine gewisse Auflage bekommt, die dann in Dokumentationen mündet, in mehr Transparenz, in mehr, ja auch verboten, dass man bestimmte Applikationen gar nicht verwenden darf.
+
+Und dann hab ich mir gedacht, naja, muss man sich mal anschauen, sind wir überhaupt in der Position und in der Lage, dass wir sagen, wir regulieren den Markt aus Sicht der Europäischen Union und sorgen dafür, dass wir gegebenenfalls ja im Endeffekt ins Hintertreffen kommen.
+
+Das kann ich ja immer dann machen, wenn ich führend bin.
+
+Also wenn ich führend bin und ich reguliere, dann können die anderen aufschließen, aber vielleicht bin ich so weit führend, dass es vielleicht gar keinen Nachteil hat.
+
+Oder wenn man entsprechende marktmacht hätte dass die anderen nicht auf uns als markt verzichten wollen.
+
+Genau das sind so die die richtungen dann schaust du mal wie sieht das denn aus wo steht in europa in diesem kontext ki im vergleich zu den nationen china und united states oder die usa und bin dann auf eine studie gestoßen von ja doch das ist eine studie.
+
+von dem center for data innovation den sitz in usa aber auch in brüssel und so weiter haben die mal versucht haben an bestimmten kriterien festzulegen welches land denn oder welche region denn in dem kontext sozusagen führend ist und die haben dann fünf kategorien aufgezeigt oder sind sechs sogar.
+
+Talent, Research, Development, Adoption, Data und Hardware und haben dann Punkte vergeben und dann mal geguckt, okay, wie viele Personen sind denn in dem Bereich tätig, also in dem jeweiligen Land tätig, wie viele Wissenschaftler gibt es, wie ist die Qualität der Papers, die veröffentlicht werden, wie viel Gelder fließen denn in die einzelnen Bereiche rein,
+
+Also um einfach mal so eine Maßzahl zu liefern.
+
+Und in diesen insgesamt sechs Kategorien ist es tatsächlich so, dass die Europäische Union nach dieser Studie in keiner Kategorie führend ist.
+
+Also wirklich in keiner.
+
+Es ist aber nicht so dass sie schlusslicht ist das ist auch nicht der fall sondern es ist immer so ein gutes mittelmaß also die united states führen was talente angeht was qualitative forschung angeht nicht in der masse aber was qualitative forschung angeht dafür die usa.
+
+Dann aber auch in die Entwicklung und das ist halt genau der Punkt, damit ist jetzt nicht gemeint, dass man einzelne KI Elemente entwickelt, sondern wie man sie auch wirklich in die Wirtschaft bringt, also praktisch auch die Adoption und die Überbringung.
+
+Und da ist die USA halt absolut führend, wenn man auch sieht, was da Gelder fließen, das ist erschreckend fast.
+
+Das heißt du meinst gerade wenn man wenn es darum geht ideen wirklich mal umzusetzen als produkte auf den markt zu bringen das müssen ja gar nicht immer die, ja die die allerbesten ideen sein entscheidend ist ja nur dass man überhaupt etwas auf den markt bringt und glaubst du dass dann in europa andere dinge im weg stehen oder die leute daran hindert es zu tun.
+
+Ich glaube eher das ist die wahrnehmung also das ist einfach auch wenn man sieht die künstliche intelligenz ist ja wenn man das jetzt in den letzten jahren betrachtet eigentlich gar nicht so präsent in europa wir haben auch gar nicht so große firmen die sozusagen sich ausschließlich darauf fokussieren wenn man jetzt an google apple amazon und so weiter denken zumindest nicht in der öffentlichkeit.
+
+Und ich glaube, dass das sozusagen ein Grund ist, vielleicht auch was so die Fördergelder angehen, also Fördersummen, Venture-Capital-Geber und so weiter.
+
+Das ist einfach nicht so die, also gerade was Startups und so weiter angeht, das ist einfach nicht die Kultur in der Masse im Vergleich zu den USA, wenn man an Silicon Valley denkt oder ähnliches.
+
+Aber wenn man es halt sieht, ist es halt schon gerade diese Startup-Branche, also wenn man Venture Capital angeht, das ist schon ein wahnsinniger Unterschied.
+
+Also die zeigen hier auf, dass man hier 16,9 Billionen US-Dollar fließen in den USA jährlich in Funding rein.
+
+Und in der Europäischen Union sind es 2,8 Billionen US-Dollar.
+
+Also das ist im Verhältnis schon ein ganz schön gravierender Unterschied.
+
+Im Vergleich China mit 13,5 Billionen US-Dollar, also das ist auch nochmal ein ganz schöner Unterschied zur Europäischen Union.
+
+Ein anderer Punkt, den du genannt hast, das sind ja die Talente.
+
+Wenn wir jetzt einfach mal davon ausgehen, bei Hypothese,
+
+dass die Anzahl der Menschen, relativ gesehen, in einem Land, Talente, die es geben könnte, halbwegs sich gleichmäßig verteilt über den Globus.
+
+Dann müssten ja allein, wenn du mal Länder nimmst, China, Indien, sollten wir vielleicht in dem Kontext auch nennen, allein von der Gesamtbevölkerung müssten ja einfach eine viel, viel größere Anzahl von Talenten haben.
+
+Und wenn das entsprechend gefördert und unterstützt wird,
+
+müssten ja einfach viel viel schneller sachen entwickeln können meinst du das spielt auch eine rolle also würde ich auch so schlussfolgern interessanterweise sind wir da sehr gut also die europäische union steht da gar nicht schlecht da wir haben nämlich also rein von der auflistung hier wenn man die zahlen aus dieser studie jetzt glaubt ist in der europäischen union insgesamt 43.000 researcher also forscher im vergleich zu us sind es 28.000 zu china nur 18.000
+
+Das ist natürlich jetzt erst mal Masse.
+
+Jetzt muss man natürlich sagen, wie viele davon sind denn auch wirklich Top-AI-Researcher, also die wirklich, sagen wir mal, auch die gewichteten Papers oder ähnliches rausbringen.
+
+Und wenn man das jetzt wieder sich betrachtet von den Zahlen her, dann hat man in den USA 10.000 Wissenschaftler, die wirklich auch in der Top-Kategorie mitspielen, in der Europäischen Union 4.800 und in China nur 2.500.
+
+Also man ist hier nicht führend in der Europäischen Union, aber man steht auch nicht schlecht da.
+
+Und wenn man die historie betrachtet ist es natürlich auch so dass viele oder etliche dieser methoden und so weiter ja auch aus der europäischen union aus deutschland und so weiter kommen also es ist ja nicht so dass, dass wir hier uns verstecken müssen in dem sinn ja aber es ist halt schon ein unterschied inwiefern es dann in der breiten masse also natürlich auch in die unternehmen gebracht wird ja und dann natürlich über die unternehmen wieder zur bevölkerung.
+
+Aber ist es nicht auch so, dass viele gute Leute aus der ganzen Welt, natürlich jetzt auch aus Europa, in die USA gehen, insofern da die Anziehung von den Universitäten dort größer ist und dass dann da natürlich auch ein viel größeres Potenzial vorhanden ist.
+
+Ja absolut und ich denke das ist so ein bisschen das, wo ich jetzt die Woche auch ein bisschen so aufgeschreckt bin, als ich diesen Regulierungsvorschlag dann mir angeschaut habe, weil ich mir denke, auf der einen Seite zieht Geld natürlich auch Wissenschaft an, also Personen und Köpfe,
+
+Also da wo ich sozusagen einen guten Nährboden habe, der ja im Endeffekt aus Infrastruktur, Hardware und auch Finanzen besteht und auch Personen natürlich im Umfeld.
+
+Wenn der Nährboden gut ist, dann versucht man sich natürlich als Topwissenschaftler auch dorthin zu orientieren.
+
+Wenn der Nährboden eher schlecht ist, dann bleibt man dort nicht in dem Land.
+
+Meine Überlegungen waren jetzt als ich das gehört habe und mir den Vorschlag angeschaut habe, naja eine Regulierung in dem frühen Stadium einer Technologie kann ja dazu führen, dass sozusagen der Nährboden nicht mehr gut genug ist.
+
+Glaubst du denn, dass diese Art der Regulierung, also jetzt in dieser Form wie sie vorliegt, dazu führt, dass der Nährboden schlechter wird?
+
+Ich weiß es nicht genau, ich bin der Meinung ehrlich gesagt, dass es anders wird und die Frage ist, ob eine solche Regulierung nicht auch eine Bevormundung ist einer Regierung, in dem Sinn, in welcher Art und Weise man denn KI oder auch Applikationen entwickelt.
+
+Weil ich glaube nicht dass es die innovationen bremst das glaube ich nicht ich glaube nur dass es in der europäischen union unter diesen gesichtspunkt oder dieser regulierung andere innovationen geben wird als es in den usa oder in china passieren wird.
+
+Auch also der der fokus wird ganz klar von von allgemeinen entwicklungen hin zu ja wie es halt gefordert wird vertrauenswürdigkeit.
+
+Wie kann ich das hinkriegen dass die systeme die wir entwickeln dass wir denen vertrauen können dass wir sie nutzen möchten dass wir da keine gefahr drin sind.
+
+Das bietet ja durchaus die chance auch bestimmte art der der forschung und entwicklung voranzutreiben.
+
+Richtig.
+
+Ich bin mir nur nicht sicher ob das nicht so ein bisschen zu früh ist also dass man nicht zu früh reguliert ja also dass man praktisch in einer situation eingreift wo man vielleicht ein bisschen getrieben ist so von science fiction und so weiter und man immer so ein bisschen im kopf hat dass da irgendwann die maschinen rumlaufen was wir jetzt schon paar mal thematisiert haben.
+
+Interessanter punkt die frage die sich mir erst mal stellt ist warum muss denn überhaupt die verwendung künstlicher intelligenz reguliert werden.
+
+Das ist glaube ich ein interessanter Punkt und ich glaube, wenn man dann die Risikokategorien anschauen, dann kann man das schon verstehen und dann finde ich auch ehrlich gesagt diesen risikoorientierten Ansatz dieser Verordnung eigentlich ziemlich, also nicht schlecht, ziemlich gut.
+
+Ich komme ja so ein bisschen aus der regulatorischen Vergangenheit, Historie, Wirtschaftsprüfung und Co.
+
+Von daher finde ich das eigentlich nicht schlecht.
+
+Wie gesagt, ich würde nur gern diesen Punkt mit diesen zu früh noch mal aufgreifen, weil
+
+Wenn wir uns überlegen, es gibt ja so ein paar Stimmen von wirklich schwergewichtigen Wissenschaftlern und auch Playern in dem Markt.
+
+Also wenn man jetzt sieht, zum Beispiel der Angie Neck, ich glaube so spricht man ihm aus, ein prominenter KI-Forscher sagt, dass die künstliche Intelligenz die neue Elektrizität ist.
+
+Und wenn man jetzt Richtung Google schaut, der Sundar Pichai, einer der Google Gründer, der sagt, die Wirk- und Wanderungsmacht der KI sei nicht mit der Erfindung des Buchdrucks, des Autos und des Internets zu vergleichen.
+
+Stattdessen würde sie die Welt und unser Leben in einer Weise prägen, wie es zuvor nur die Elektrizität oder das Feuer taten.
+
+Also da hat man so den Eindruck, das ist echt gravierend, was da kommen kann.
+
+gleichzeitig haben wir ja wenn man die historie anschaut aber schon mal so eine überzogene erwartungshaltung gehabt dass er dann in so eine ich glaube kwi winter oder eiszeit geführte und dann im endeffekt ja das dazu also gerade diese diese nicht erfüllung der erwartungen ja zu so einem austrocknen der finanzierungsströme und damit auch von ganzen forschungsprojekten die auch vielleicht gut waren oder auch entwicklungen eingebremst wurden.
+
+Die die gefahr ist natürlich extrem groß dass sowas wieder kommen kann bei die erwartung gerade sehr hoch sind andererseits haben wir jetzt aber auch schon so große erfolge, gerade in der in der bilderkennung spracherkennung das ist dass wir es moment uns gar nicht vorstellen können dass das da wirklich so ein winter in dieser form wieder einbrechen könnte.
+
+Ja.
+
+Und man muss halt auch sehen, dass viele KI-Applikationen im nicht sichtbaren Bereich unterwegs sind.
+
+Also klar, so Dinge wie in Alexa autonomes Fahren, das sind die Themen, die sieht man, die sind da.
+
+Da sagt man, boah, das funktioniert Wahnsinn.
+
+Aber wir haben ja wirklich eine ganz starke Durchdringung, jetzt in der Vorbereitung habe ich was ganz interessantes entdeckt.
+
+Smart Airport Operations Center, völlig auf KI basiert, um Gepäcke am Flughafen zu routen, dass wenn Flüge ausfallen, dass man zügig schnell die Gepäcke wieder umrouten kann.
+
+Also das so als nicht sichtbarer Anwendungsbereich.
+
+Oder wenn man noch in eine andere Richtung guckt, Richtung Ampelschaltungen, Spursperrung.
+
+Kuala Lumpur setzt vollständig auf KI-Applikationen.
+
+man kann dann auch noch ein bisschen in die nicht sichtbaren gefährlicheren bereiche gehen und zumindest wenn man jetzt an regulierung denkt das sind dann so sachen wie die analyse vom verhalten von menschen bei facebook mit einem verfahren das nennt die fp learner flow, wo man natürlich prognostizieren möchte wie die mensch sich denn zukünftig verhalten möchte um dann bessere werbung zu platzieren das ist ja auch nicht sichtbar,
+
+Oder dann ein verbrecher statistik und polizei berichten heranzuziehen um verbrechen zu prognostizieren und pre cops ist da so ein schlagwort dass man in dem kontext hat also wir haben ja ganz viele nicht sichtbare themen in dem in dem bereich frage mich nur wenn ich wenn ich das so höre dann frage ich mich.
+
+Anwendung wirklich im großen Stil und schnell umzusetzen.
+
+Also eigentlich müssten wir uns eher Gedanken machen, was mache ich damit und was möchte ich und was möchte ich nicht.
+
+Dass das Ganze durch KI teilweise ermöglicht wird, ja, aber es ist nicht wirklich die Technologie selbst, die das Problem darstellt, sondern nur das, was ich damit mache.
+
+Ja und da ist es glaube ich jetzt wirklich mal interessant in diese Regulierung oder diese Regulierungsvorschrift hineinzuschauen, weil ich mir da auch nicht so bewusst bin.
+
+Ich hätte ehrlich gesagt, also meine persönliche Erwartungshaltung wäre eigentlich, dass eine viel höhere Aufklärung, eine höhere Transparenz auch
+
+Im Endeffekt ist das, was wir hier mit dem Podcast machen, mit einer Entmystifizierung hinter der Technologie, damit man sieht, dass diese KI-Technologie, über die wir heute reden, schwache ja ist.
+
+Das heißt ja, dass wir im Endeffekt klar definierte Probleme haben.
+
+Die KI denkt nicht selber, sie kann keine logischen Schritte daraus ableiten, sondern sie löst ein Problem, was eigentlich vorgedacht wurde.
+
+Also zumindest das Problem, nicht die Lösung und die Lösungsschritte, aber das Problem ist von einem Menschen vorgegeben.
+
+Und da eine stärkere Aufklärung hätte ich vielleicht etwas angenehmer empfunden, als gleich mit einer Regulierung zu kommen.
+
+Und wenn man da jetzt mal die inhaltlichen Punkte anschaut,
+
+Es ist schon interessant.
+
+Der erste Punkt ist ja, dass man eine Verschärfung der Regelungen zu früheren Entwürfen gemacht hat.
+
+Das heißt also, wenn ich gegen diese Verordnung, falls sie so kommen würde und auch in den nationalen Gesetzlichkeiten umgesetzt wird, dann habe ich hier Strafen bis 6 Prozent des weltweiten Umsatzes gegen schwere Verstöße.
+
+Dank starre einschränkungen bei der verwendung von automatischen gesichtserkennung auf öffentlichen plätzen und so weiter die firmen und staaten dürfen software nicht einsetzen um menschen und jetzt kommt so ein satz musste ich mir extra aufschreiben mit sublimen techniken ohne dass die person dessen bewusst ist zu manipulieren oder um social scoring zu betreiben.
+
+Also man regelt schon sehr stark da bist du jetzt gerade in einer kategorie ich gehe nochmal zurück du hast ja gesagt es gibt gewisse risikostufen genau.
+
+und wir reden jetzt gerade von dem allerhöchsten Risiko, ein sogenanntes unannehmbares Risiko, das man unter keinen Umständen möchte, wie zum Beispiel Menschen unbewusst beobachten, Scheidungen treffen.
+
+Es werden ganz bewusst, denke ich mal, Sachen ausgenommen, wenn es darum ging, um Vermeidung von Terror, das Erkennen von Kindern, die vielleicht entführt wurden.
+
+Es werden ganz bewusst bestimmte Bereiche ausgenommen, wo man das erlaubt, aber im Allgemeinen möchte man sowas
+
+nicht möchte man das nicht weil es halt irgendwo die menschen der die grundrechte der menschen angreifen würde.
+
+Richtig und es ist also wirklich so diese unannehmbaren risiken also alle ki anwendungen die in diese kategorie fallen die sind verboten die werden komplett verboten.
+
+Also das weiß ich was ich als solches gar nicht gar nicht schlecht finde die frage ist nur muss man das begrenzen auf auf ki möchte man nicht generell sagen es müssen sämtliche.
+
+Systeme produkte verboten werden die sowas tun das hat für mich also ich finde ich finde die idee richtig in der form.
+
+Aber nicht begrenzen auf, wenn es durch KI gemacht wird, sondern ich möchte es doch generell nicht haben.
+
+Ich denke mal, da gibt es bestimmt Verordnungen dazu, dass andere Systeme auch noch reguliert werden.
+
+Also ich glaube, so ein paar Verordnungen tut die EU noch zusätzlich rausgeben.
+
+Oder hat schon, ehrlich gesagt.
+
+Habe ich nicht zu dem Überblick.
+
+Denn letztendlich als Anwender ist es mir doch egal, ob ich jetzt durch eine KI-Technologie beobachtet werde oder durch eine andere Art von System.
+
+Also es ist eigentlich gar nicht die Frage der Umsetzung.
+
+Das ist ja die frage sehen wir ki als als technologie als methoden baukasten mit dem ich sowas machen kann oder betrachte ich sämtliche art von systemen die sowas kann was sonst vielleicht nur wir menschen könnten als als ki dann ist natürlich richtig dann ist alles im weiteren sinne was sowas kann.
+
+Die gefahr und.
+
+Was ja der Unterschied ist jetzt, dass wir aufgrund der technologischen Möglichkeiten, aufgrund der Datenbasis, aufgrund von Rechenleistung und Verfahren, dass wir in der Lage sind, es extrem schnell machen zu können.
+
+Deshalb ist jetzt die Notwendigkeit, vielleicht eher darüber zu reden.
+
+Der letzte Satz ist schön, darüber zu reden, weil ich bin der Meinung, Sie haben in der Verordnung steht ein Beispiel drin, da heißt es dann Spielzeug für Kinder, das zur Motivation gefährlichen Verhaltens führt.
+
+Das gehört zu diesen unannehmbaren Risiken.
+
+Und deswegen müssen solche KI-Systeme verboten werden.
+
+Und du hast jetzt gesagt, das ist ja eigentlich das Mittel, mit dem man zum Beispiel ein Produkt erzeugt.
+
+Das kann ich aber auch über ein Regelsystem machen.
+
+Also das muss ja keine KI sein in dem Sinn.
+
+und dann komme ich zu dem gleichen punkt dass ich ein spielzeug hab das irgendwelche verhalten aber wenn ich das kurz da aufgreifen darf.
+
+Wir reden wir denken jetzt ganz oft wenn wir über ki reden von ja ich habe systeme die ich dich daten gelernt habe die irgendwas können die mitlernen können wenn du das weitfasst und saß ki in einem system was in irgendeiner art menschliches verhalten an den tag liegt also ein spielzeug was mit dir redet dann ist das im weiteren sinne ja eine ki.
+
+Und ja also da möchte ich natürlich nicht es ist aus meiner sicherheit es selbstverständlich sein sollen dass ich nicht ein spielzeug habe was ein kind dazu anstiftet irgendwelche sachen zu tun die es nicht soll wenn, was ich springe noch vor aus dem fenster oder irgendwie sowas aber warum kommt es denn jetzt gerade auf und meine überlegung war da,
+
+ob es nicht daran liegt weil jetzt mit relativ einfachen möglichkeiten es sogar einzelpersonen ermöglicht wird sachen produkte zu entwickeln und als als software als ja als als bots als einfache möglichkeiten schnell zu verbreiten so dass halt auch schutzbedürftige menschen sagen insbesondere kinder schnell dazu gebracht werden können diese produkte zu nutzen.
+
+Es hat eigentlich jetzt noch gar nicht so viel direkt mit KI in dem Sinne, wie wir es uns vorstellen, zu tun, sondern einfach die Möglichkeiten, die wir haben, dass schutzbedürftige Menschen Schnellprodukte nutzen können und Einzelpersonen, die so stark beeinflussen können, dass es möglich ist.
+
+Das heißt so, die ganzen Schutzmechanismen, die man vielleicht vorher hätte, dass vielleicht eine Einzelperson ein Produkt entwickelt hätte, was schädlich ist.
+
+Ein Ingenieur kann ein Auto entwickeln, was auf die Lenkung nicht mehr reagiert und gegen die Wand fährt.
+
+Ich meine klar,
+
+das ist technisch sinnvoll trotzdem als keiner irgendwie reguliert weil aber zu viele zwischenstufen dabei sind dass sowas zum einsatz kommen könnte und diese ganzen schutzmechanismen die gibts jetzt nicht mehr in der form oder die die können ausgehebelt werden.
+
+Also deswegen ich sehe diese kategorie auch als interessant und richtig an,
+
+Vor allem wenn es halt dann auch Richtung, also ich sag mal diese Einzelprodukte, da finde ich, da gibt es ganz viele, also nach meinem Verständnis zumindest, ganz viele Stufen dazwischen, wo ich sagen kann, da könnte ich auch solche Risiken rausziehen.
+
+Aber wenn ich jetzt Richtung Staaten denke, die Menschen damit manipulieren, also Social Scoring machen oder ähnliches, da finde ich das absolut richtig.
+
+Wenn wir mal in die weiteren Kategorien schauen, das ist ja aufgeteilt in unannehmbares Risiko, das ist sozusagen das höchste, das wird vollkommen verboten.
+
+Dann haben wir das hohe Risiko.
+
+Genau, da müssen bestimmte Regeln erfüllt werden, dann haben wir geringes Risiko und zuletzt noch ein minimales Risiko.
+
+Die sagen aber auch, das betrifft die meisten Anwendungen, eher ein kleines minimales Risiko, wo Einzelpersonen diese Technologie nutzen.
+
+Ehrlich gesagt, da bin ich so ein bisschen drüber gestolpert, weil auch wenn man die Pressemitteilung anliest vom Mittwoch, da heißt es, es wird gar nicht so viel reguliert, man schafft eigentlich mehr einen Rahmen für Innovationen und klare Leitplanken.
+
+Und weil es die meisten betrifft, das einfach nicht.
+
+Sondern es ist minimales Risiko, vielleicht noch geringes Risiko, das war es aber.
+
+Und wenige davon sind sozusagen hohes Risiko oder unannehmbares Risiko.
+
+Wenn man sich jetzt aber mal die Einzelelemente anschaut, dann sind jetzt zum Beispiel im hohen Risiko haben wir Systeme, die in folgenden Bereichen eingesetzt werden.
+
+Das ist kritische Infrastruktur.
+
+Also alles, was mit dem Verkehr zum Beispiel zu tun hat.
+
+Also immer dann, wenn Leben und Gesundheit der Bürger gefährdet ist.
+
+Das ist so eine Kategorie.
+
+Sicherheitskomponenten von Produkten.
+
+Roboterassistierte Chirurgie zum Beispiel.
+
+Da ist es ein Thema.
+
+Und jetzt kommen aber zwei Kategorien, wo ich mir dann sage,
+
+so weit weg ist man also da wird man vielleicht doch mit etlichen systemen drin sein das ist nämlich einmal beschäftigung und personal management.
+
+Das war eine kategorie und die andere die ich auch ganz ausbildung genau da genau wenn du das so erwähnt das sind weil genau auch meine meine gedanken.
+
+Warum muss es so stark reguliert werden in dieser ecke was macht es denn jetzt für einen unterschied ob man einen menschen hat,
+
+vielleicht nicht nachvollziehbar sind, vielleicht eine schlechte Note jemandem gibt oder jemandem an einem Studium vielleicht hindert oder ob das ein System macht.
+
+Ist das wirklich ein Unterschied?
+
+Genau das ist der Punkt, das sehe ich nämlich auch nicht.
+
+Da denke ich mir dann, ich habe sogar mehr Möglichkeiten, wenn ich sozusagen eine datenbasierte KI habe, um einen Prozess im Falle eines, ich sage mal, einer Klage oder ähnliches, Transparenz nachvollziehen zu können, habe ich mehr Möglichkeiten, als wenn sozusagen der individuelle Lehrer, Professor oder ähnliches die Regulatur durchführt.
+
+Wenn der sagt ist halt so pech gehabt klar kann man gegen klagen aber macht es nicht einfacher aber es ist nicht so dass diese sachen grundsätzlich nicht verboten sondern es heißt ja nur es muss entsprechend.
+
+Vorher geprüft werden das muss während der nutzung geprüft werden das muss es muss transparenz geschaffen werden.
+
+Vorgaben nicht genau diese Situation dass ich sage ja natürlich könnt ihr sowas machen aber wir haben strenge Vorschriften was man im fall der Nutzung halt beachten muss.
+
+Genau da sind wir wieder bei dem was man so vor ein paar Minuten gesagt haben es ist nicht verboten es zu machen sondern ich muss halt mehr Transparenz schaffen also das in dem Fall ist es tatsächlich mehr Transparenz und zwar einmal in der Anwendung der also was was die der Algorithmus tut und wann er es tut.
+
+Aber auch in der Dokumentation, also bei dem Nachvollziehen hinterher, wie denn sowas entstanden ist.
+
+Und ich muss einen hohen Wert auf adäquate Daten legen.
+
+Also die Daten dürfen keinen großen, was wir in der letzten Sitzung ja auch schon mal ein bisschen diskutiert hatten,
+
+keine Färbung haben, kein Bias haben.
+
+Also ich muss also mir schon vorher Gedanken machen, wie kann ich gewährleisten, dass zum Beispiel Gender-Stereotypen oder andere Themen in den Daten gar nicht drin sind, sodass die KI gar nicht schon eine Färbung bekommen kann.
+
+Solche Fälle hatten wir in der Vergangenheit ja schon.
+
+Ich weiß nicht, ob es Google, Facebook oder irgendwo war, wo insbesondere zum Beispiel Frauen häufiger abgelehnt wurden bei Bewerbungen, weil meinetwegen die Datenlage vorher so war, dass es eine männerdominierte
+
+Domäne war in der informatik sind natürlich nicht natürlich aber wenn man die zahlen anschaut gibt es mehr männer die sowas studieren die damit beschäftigen zumindest in deutschland weiß ich dass es so ist ich weiß aber auch dass es länder gibt wo es genau andersrum ist.
+
+Das es eher eine Domäne ist, Mathematik, Informatik, die von Frauen dominiert wird.
+
+Insofern, wenn das aber in einem Land so ist und sich dieser Sachverhalt in den Daten widerspiegelt und die KI wieder nur, das hatten wir letztes Mal auch schon so gesagt, ein Spiegelbild dieser Situation ist, wenn das dazu führt, dass Menschen diskriminiert werden, dann muss man sowas natürlich verhindern und dafür die Möglichkeiten, den Rechtsrahmen zu schaffen,
+
+Ist dann wie eine gute idee führt aber auch dazu und darum wieder so ein bisschen die die andere brille dass man natürlich einen erhöhten aufwand hat.
+
+Und das im vergleich wieder wenn man diese studie mit china amerika und europa anschaut.
+
+vielleicht im rennen langsamer wird also die frage ist halt ob der weg dass wir vielleicht in europa mal einen abstecher machen den langsameren weg gehen ob er am ende nicht zu einem erfolg führt weil man vielleicht zum beispiel in dem bereich explainable ei halt dann führend wird weil man im endeffekt hier hat wesentlich mehr wert drauf setzen muss oder vielleicht auch in die in den in den aufbereitung und die bereitstellung der daten halt viel bessere verfahren entwickelt also dort forscht
+
+Und gar nicht so in der eigentlichen Algorithmik oder in der eigentlichen, ich nenne es jetzt mal, Kern-KI.
+
+Man könnte jetzt sagen, okay, man hat erkannt, man kommt in bestimmten Bereichen der ungefilterten, der freien KI, kommt man so schnell nicht mehr hinterher.
+
+Dann schaffen wir uns jetzt einen Bereich durch die Regulierung, wo wir die Chance haben, entsprechend voranzuschreiten.
+
+Da sind wir bei dem Punkt, was ich zwischendrin mal gesagt habe, dass ich gesagt habe, mir kommt diese Regulierung so vor, dass man einen Weg fest definiert.
+
+weil du in europa in diesem kontext forsch entwickelt oder ähnliches den weg gehen musst, weil du im endeffekt sonst nicht im wettlauf mit dabei bist oder wenn du das nicht möchtest wanderst du halt aus.
+
+Gut, dass man aber manchmal frühzeitig Weichen stellen muss, um gewissen Wildwuchs zu verhindern, sei es jetzt Normen für Stecker, dass nicht jedes Gerät irgendwas Eigenes hat, sei es, gehen wir mal ganz weit zurück in die Entwicklung der...
+
+Züge mit Weichen und Schienen, verschiedene Spurgrößen, dass nicht alles Bild durcheinander ist, dass es gut zusammen funktioniert.
+
+Ich hab das jetzt erwähnt mit den Zügen, weil es erinnert mich in gewisser Weise an so eine Diskussion, als die ersten Dampfmaschinen aufkamen und man große Angst hatte, Mensch, was passiert denn, wenn ich bei 10 kmh aus dem Fenster gucke?
+
+Geht der Mensch daran zugrunde oder auch nicht?
+
+Manchmal kommt mir die Diskussion im ki umfeld ähnlich vor das ist aber auch grund von unwissenheit wie wie manche sachen zustande kommen wie die technologie funktioniert ist da gewisse angst das was passieren könnte und wenn man mit ein bisschen abstand erstmal versteht was eigentlich dahinter steht.
+
+Dann ist die sorge und angst vielleicht gar nicht mehr so.
+
+Und deswegen die These oder die Frage, kommt die Regulierung nicht zu früh?
+
+Hätte man nicht stärker eine Transparenz schaffen müssen oder einfach den Nährboden dafür legen können durch Living Labs, durch Begehungen, durch die Hochschulen, die das vielleicht in die Gesellschaft transportieren, vielleicht auch mehr Beispiele, die man sehen kann, also durch diese unsichtbaren KIs, die schon im Einsatz sind, transparenter machen,
+
+Also all diese Punkte, um dann erst sozusagen zu gucken, wie reagiert denn eigentlich ein Markt, um dann eine Regulierung aufzusetzen.
+
+Ich würde gerne noch einen Sprung weitermachen in die Kategorie geringes Risiko, weil da ist ein Punkt drin, der mir echt, also der ist mir ein bisschen aufgestoßen, muss ich ganz ehrlich sagen.
+
+Das sind ja im Endeffekt, geringes Risiko heißt, hier gelten nur Transparenzverpflichtungen.
+
+Alle KIs, die in dem Kontext sind, müssen nur gekennzeichnet werden, dass der Mensch klar bewusst ist, er redet mit einer Maschine oder das macht die Maschine.
+
+Und reinfallen tut in diese kategorie alle interaktionen mit menschen also chatbots und co immer dann wenn emotionen versucht wird zu identifizieren und dann wurde gedankt deepfakes.
+
+wo ich sag also ein deepfake finde ich ganz schön gravierend also das hätte ich jetzt ehrlich gesagt eher in einer kategorie gesehen hohes risiko wenn nicht sogar wenn das jetzt in bezug auf die menschen zu sehen ist also wenn jetzt zum beispiel meine stimme nimmt und die verwendet oder das anders zusammenschneidet oder was auch immer dann ist es ja eigentlich schon ein eingriff in die grundrechte dann wäre es ein unannehmbares risiko.
+
+Also ich meine diese liste an anwendungen die ist ja nicht vollständig die wächst ja die dies anpassbar und da sind wir ja tatsächlich dabei wenn es an die manipulation von einer großen menge von von menschen wieder geht da bin ich mir sicher wird das auch eher in die in die obere kategorie fallen und das andere wenn es wirklich um individuelle kommunikation mit einzelpersonen geht also diese chatbox gesagt.
+
+In dem Fall, das ist mir auch aufgestoßen, aber sie hatte einen anderen Gedanken in dem Zusammenhang.
+
+Wir kennen ja den Turing-Test.
+
+Das heißt, das Bestreben ist ja da, möglichst ein System zu schaffen, bei dem man es nicht merkt, dass man mit einer Maschine kommuniziert.
+
+Und jetzt, wo wir vielleicht soweit sind, dass das tatsächlich nicht mehr so stark auffällt, weil die
+
+Spracherzeugung, was den Inhalt angeht, schon so gut ist, weil die Qualität der Sprache, die wir generieren, so gut ist, dass man es nicht merkt.
+
+Bei jeder Kommunikation aber vorab gesagt, Achtung, übrigens, du sprichst mit einer Maschine.
+
+Ja, also, wir müssen mal sehen, wie das kommt.
+
+Ich finde es gut, dass man das irgendwie merkt, dass man weiß oder dass man die Chance hat festzustellen, mit wem rede ich da.
+
+Die Frage, die ich mir nur gestellt habe, ist, wie schön du das ansprichst mit dem Deepfake.
+
+Die Menschen, die das machen,
+
+haben ja gar kein interesse daran dass sie das kennzeichnen das heißt da wo die gefahr wirklich da ist und wo man versucht zu menschen zu manipulieren ich meine es ist auch ohne ki hat ja die vergangenheit gezeigt dass menschen manipuliert werden und natürlich möchte man das nicht insofern ist die frage was ja was müssen wir jetzt hier dazu beitragen das anders zu
+
+Da finde ich es wiederum ganz gut, dass im Endeffekt diese Richtlinie nicht nur für die EU gilt, sondern für alle Applikationen, Verfahren oder ähnliches, die in der EU in Anwendung kommen.
+
+Das heißt also auch natürlich dann zwangsläufig auch für andere Länder, die durch den Markt sehen.
+
+Und da sind wir wieder bei dem Punkt, ist es ein wichtiger Markt, ja oder nein.
+
+Das glaube ich sollten wir hier nicht so diskutieren.
+
+Aber rein von der Überlegung her, wenn der Markt natürlich eine große Wichtigkeit hat, dann werden auch Firmen wie Microsoft, Google und so weiter und auch andere sich auch an eine so vorhandene Richtlinie, sofern sie dann in der Art kommt.
+
+Das hat die Vergangenheit ja Richtung DSGVO gezeigt, da ist die EU ja auch relativ weit voran, was den Datenschutz angeht.
+
+Richtig.
+
+Da haben große Firmen halt entsprechend nachgezogen und haben sich entsprechend an diese Richtlinien auch gehalten.
+
+Ja und führte ja auch zu, dass dann auch in den anderen Ländern diese Richtlinien zwar nicht vielleicht in der Schärfe und mit den jeweiligen Strafen, die wir in den jeweiligen Ländern haben, aber trotzdem dort auch angesetzt werden und als Selling Point, also USP sozusagen verwendet werden.
+
+Also insofern besteht ja durchaus die Hoffnung, dass entsprechend so eine Richtlinie sich auch in dem Umfeld durchsetzt.
+
+So ist es, deswegen man darf das nicht nur negativ sehen, aber nichtsdestotrotz, sage ich es nochmal, finde ich es einen Tick zu früh, ich persönlich.
+
+Also ich hätte mir mehr gewünscht, persönlich, dass es erstmal so ein bisschen mehr Nährboden da ist und nicht gleich sozusagen ein Käfig rumgemacht wird.
+
+Das ist so, ich habe so ein bisschen die Bedenken, dass man dann gerade in vielen Bereichen dann nicht mehr weiter forscht oder dann die Gelder dort nicht mehr hinfließen oder man einfach zu hohe Auflagen hat, dass ich es im Vergleich zu anderen Ländern nicht mehr.
+
+Wenn es dazu führt, dass eine Forschung nicht mehr gemacht werden kann, weil ich vielleicht vorher schon weiß, dass ich die entsprechenden Daten nicht mehr habe.
+
+Also wenn man sich jetzt sehr intensiv damit bemüht, wie kann ich aus Daten irgendwas lernen, welche Lernverfahren greifen in bestimmten Situationen.
+
+Und wenn das schon ausgebremst wird weil ich mir Gedanken machen muss oh die daten die ich habe die sind gar nicht neutral und ich kann es nicht einschätzen ich darf es vielleicht gar nicht machen.
+
+Dann ist es natürlich hinterlich das stimmt.
+
+Also von daher spannende Bewegung in dem Kontext.
+
+Mich hat es jetzt gefreut, ehrlich gesagt, dass mir gerade diese Verordnung auch die Woche nochmal indirekt den Zwang gegeben hat, mal nach so Studien und Verteilungen zu gucken.
+
+Also einfach mal zu schauen, wie steht denn die EU zu anderen Ländern da?
+
+Und da war ich echt überrascht, wie viele Wissenschaftler in dem Kontext in der EU wirklich vorhanden sind und agieren.
+
+Das sind ja echt tolle Zahlen.
+
+Und von daher kann man hoffen, dass so eine Regulierung zu einer spannenden weiteren Diskussion führt und auf der anderen Seite aber vielleicht auch einen Standard legt und man dann natürlich das Thema explainable AI auch hier stark sehen kann.
+
+Und ich denke auch, dass wir das in irgendeiner der Folgen dann auch nochmal aufgreifen müssen, explainable AI, nachdem wir dann hoffentlich nächste Woche mit der Miniserie weitermachen, mit den Recrual Neural Networks.
+
+Das ist auch meine Hoffnung, wenn ich das nochmal ergänzen darf, insbesondere Kriterien schaffen, die wichtig sind, um Vertrauen in die ganze Technologie zu etablieren.
+
+Also genau sowas, aber auch Sachen wie Sicherheit, Robustheit von Verfahren, dass einfach die Diskussion angeregt wird, auch wenn es vielleicht aus deiner Sicht zu früh ist für die Regulierung, aber zumindest wird ja die Diskussion und die Bemühungen in dem Kontext extrem angeregt.
+
+In dem Sinne ist es vorteilhaft.
+
+Von daher schließen wir die Episode heute mit dem Schlusswort von dir und wir freuen uns, wenn Sie nächste Woche wieder dabei sind, wenn wir dann wieder ein bisschen mehr in Richtung unserer Miniserie schauen und an der Stelle das Thema Sequence-to-Sequence-Modelle weiter treiben, also Card Tracker, Neuronetworks.
+
+Wir freuen uns, wenn Sie da wieder mit dabei sind.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

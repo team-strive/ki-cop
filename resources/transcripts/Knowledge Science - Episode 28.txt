@@ -1,0 +1,451 @@
+ Hallo und herzlich willkommen zur heutigen Sendung.
+
+Wir sprechen heute über Fair AI.
+
+Warum es wichtig ist, über faire Algorithmen nachzudenken, wie Unfairness aufgrund von Bias entsteht und was wir dagegen machen können, das wollen wir heute in der Sendung besprechen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Wieder eine Woche vorbei, das geht immer rasend schnell.
+
+Diese Woche wollen wir über FAIR AI sprechen.
+
+Ja das ist eine gute Frage, ist dir schon mal aufgefallen, dass immer wenn du eine Frage stellst, ich antworte, das ist eine gute Frage?
+
+Ja das machst du doch nur um ein bisschen Zeit zu schenden oder?
+
+Ich glaube auch, um darüber nachzudenken.
+
+Aber gut, Fairness ist glaube ich im Auge des Bedachters oder?
+
+Also es ist nicht klar definierbar, es ist ein subjektiver Begriff, wenn man es genau nimmt oder?
+
+Ja ich denke auch wir kennen es alle vom sport wenn jemand fährt wenn er sich an die regeln hält ob sie jetzt geschrieben ausgeschrieben oder ausgesprochen sind oder ob es einfach nur so empfundene werte sind also man richtet sich orientiert sich an gewissen werten und dann kommen wir vielleicht der sache schon näher.
+
+Ich bin also da ist ja ganz klar warum soll man fair sein weil man in der gemeinschaft sozusagen weiter spielen möchte wenn man keinen benachteiligen möchte weil alle sozusagen gutes wir gefühl haben soll bei so einem sport.
+
+Aber warum sollen wir es denn bei algorithmen sind denn algorithmen als solche an sich wirklich unfair,
+
+Ich würde mal so pauschal sagen, die sind eher ein Spiegelbild dessen, was wir ihnen zeigen.
+
+Und meistens kommt die Unfairness, wenn überhaupt welche da ist, aber wir wissen ja, dass da welche sein können, primär durch die Daten, die wir den Algorithmen geben, aus denen sie lernen.
+
+Weil das ist ja alles, was sie sehen.
+
+Das ist das, was wir ihnen präsentieren.
+
+Und wenn da Sachen nicht so sind, wie sie sein sollten, idealerweise, dann haben wir ein Problem.
+
+Und ich glaube,
+
+Man weiß es oft gar nicht, dass es so ist.
+
+Es gibt ja auch so einen schönen Spruch, gerade wenn wir über Ethik, Moral, Fairness in Algorithmen sprechen, dann ist ja ein ganz genaues Thema auch immer zu sagen, wir müssen uns auch daran erinnern, dass nicht die Algorithmen ihre Macht über uns ausüben, sondern es sind die Menschen, die sie anwenden oder implementieren.
+
+Solange wir noch die Freiheit haben, sie abzuschalten.
+
+Das sind wir wieder bei der Diskussion mit, werden wir mal irgendwann eine super KI haben oder nicht.
+
+Ich glaube ich auch.
+
+Also klar, die Frage ist ja, wenn jetzt natürlich, es gibt ganz klare Fälle, wenn ein Mensch natürlich einen Algorithmus entwickelt, implementiert, der als solches schon darauf abzielt, unfaire Entscheidungen zu treffen, also insbesondere Menschen aufgrund bestimmter Eigenschaften zu diskriminieren, das ist ja gerade das, was meistens der Fall ist.
+
+Das ist natürlich, geht gar nicht, könnte man so einfach sagen.
+
+Aber gehen wir mal jetzt im ersten Schritt einfach davon aus, dass die Algorithmen nicht absichtlich so entwickelt sind, dass sie unfair handeln.
+
+Dann liegt das in erster Linie erstmal in den Daten, oder?
+
+Ja, in den Daten.
+
+Ich würde sogar einen Schritt weiter gehen, auch in der Auswahl der jeweiligen Algorithmen.
+
+Und auch im Endeffekt, wenn ich Algorithmen oder Applikationen dann, sei es mal so schön in der Literatur, inadäquat verwende, also in Einsatzgebieten verwende, wo ich sie früher vielleicht nicht angedacht hatte.
+
+Und das sind ja im Endeffekt die drei großen oder drei wesentlichen Auswirkungen.
+
+Aber vielleicht nochmal, ich würde gerne nochmal auf den Punkt zurückgehen, warum sollen wir das betrachten?
+
+Ja, und gerade wenn wir jetzt an die Unternehmenswelt denken oder auch an die Gesellschaft, dann haben wir halt mittlerweile an ganz vielen Stellen die Algorithmen, also die KIs, wenn man das so schön sagen möchte, die eigentlich wesentliche Einflussnahmen auf uns Menschen ausüben.
+
+Also das hat was mit der Ressourcenplanung zu tun im Unternehmen.
+
+Das können aber auch Arbeitseinsatzplanungen sein.
+
+Das können Einstellungen sein, also dass Personen anhand von Algorithmen ausgewählt werden, ob sie auf den Job passen oder nicht.
+
+Es können aber auch Entscheidungen sein, ob man Personen auch entlässt.
+
+Und das sind natürlich gravierende Fragestellungen, wo man sich schon überlegen muss, wie können wir gewährleisten, dass ein Algorithmus auch tatsächlich eine subjektiv vermeintlich faire Entscheidung trifft.
+
+Weil ich mir an der Stelle halt dann frage, klar, wie kann man das gewährleisten, warum ist das wichtig?
+
+Es gibt halt gesetzliche Vorgaben auch, dass Menschen nicht aufgrund bestimmter Eigenschaften, Charakteristika, wie jetzt insbesondere natürlich, weiß ich, politische, religiöse Überzeugung, Geschlecht, sexuelle Orientierung, was haben wir noch alles, Ethnizität, Hautfarbe,
+
+Das sind so die wesentlichen Eigenschaften, aber letztendlich jegliche sensible Art von charakteristischen Eigenschaften eines Menschen soll nicht dazu beitragen, dass er deswegen irgendwo jetzt schlechter gestellt ist als jemand anderes.
+
+Das ist ja ganz wichtig und das ist in unterschiedlichen Ländern sicherlich unterschiedliche gesetzliche Vorgaben, aber es war in demokratischen Gesellschaften hoffentlich ein allgemeiner Konsens, dass das nicht so passieren soll.
+
+Und da knüpft ja eigentlich, wenn wir jetzt von dem Begriff Fairness ausgehen, Fair AI, dann kommen wir auch ganz schnell zu Moral und Ethik.
+
+Und das ist ja eigentlich genau das, was du gerade beschrieben hast, weil die Moral ist ja im Endeffekt ein komplexes Regelwerk von Werten und Normen, die in einer gewissen Weise das Handeln von Menschen bestimmt.
+
+Also es sind klare Regelungen, klare Handlungsanweisungen, konkreter Handlungsrahmen, der hier eine Rolle spielt.
+
+Die zehn Gebote zum Beispiel, das sind Moralregeln.
+
+Und dann haben wir dazu im Endeffekt die Ethik, da gibt es verschiedenartigste Ausprägungen von der Ethik.
+
+Und das ist eigentlich der Verhaltenskodex.
+
+Und das hat Kant ja schon gesagt, das ist die Fragestellung dahinter, was soll ich tun?
+
+Also quasi versucht man wissenschaftlich, die Moral zu untermauern, indem man Fragen stellt wie, ist Stehlen immer falsch, ist Lügen akzeptabel oder ähnliches.
+
+Ja, was ist mit der Notlüge?
+
+Was ist, wenn ich sonst verhungern würde?
+
+Genau.
+
+Dementsprechend müssen wir eigentlich gucken, inwiefern passt ein Algorithmus, eine KI, in diese Moral- und auch Ethik-Konstrukte, also die Betrachtung von Ethik und Moral, die in der gewissen Weise dann auch das Handeln, also was die Gesellschaft für gut und richtig empfindet, bestimmt.
+
+Und wir müssen überlegen, wie wirkt denn so ein Algorithmus?
+
+Wie beeinflusst er denn das Leben der einzelnen Personen?
+
+Wir hatten jetzt schon Beispiele genannt mit Ressourcenplanung und die anderen Themen, die du genannt hattest.
+
+Aber man muss ja sagen, dass wir sozusagen eine indirekte und direkte Implikation haben.
+
+Kannst du mir das erklären?
+
+Wie meinst du das?
+
+Direkt ist, wenn wir im Endeffekt ganz klar eine Technologie verwenden, eine Zweckentfremdung von KI verwenden, die nicht für den Zweck angedacht ist und das direkt zu einer Entscheidung führt, also zum Beispiel ich werde nicht eingestellt oder ich werde aufgrund meines Auswahlverfahrens gemacht.
+
+Das kann aber auch sein, dass wir da vollautomatische Systeme haben, über die wir keinen Einfluss mehr haben.
+
+Denkt an autonome Waffensysteme oder sowas.
+
+Dann haben wir vollautomatische Systeme, die den direkten Impact auf Persönlichkeiten haben.
+
+Vielleicht auch auf die moral- und ethischen Handlungen der Gesellschaft, in der sie eingesetzt werden.
+
+Und indirekt ist eigentlich, wenn wir drüber nachdenken, oder nicht nachdenken, sondern wenn wir da zu dem Punkt kommen, dass Algorithmen dahingehend einen Einfluss auf die Gesellschaft und deren Wertevorstellungen hat, die wir nicht direkt beeinflusst haben.
+
+Also zum Beispiel,
+
+Wir nützen Algorithmen, um viel effizienter zu werden.
+
+Die Effizienz führt aber dann dazu, dass Arbeitsplätze nicht mehr benötigt werden und haben dann einen indirekten Impact durch die Entlassungen.
+
+Und dann geht ja zum Beispiel, was wir ja auch haben, Diskussionen los über, soll man eigentlich die Arbeitsleistung in Zukunft besteuern, also aus Sicht einer Gesellschaft?
+
+Oder soll man lieber den algorithmus besteuern weil die arbeitsleistung ja praktisch gar nicht mehr von menschlicher hand durchgeführt hat.
+
+Interessante frage man hat man nicht die selbe diskussion bei der industriellen revolution oder letztendlich die die physische menschliche arbeitsleistung vielfach durch maschinen ersetzt wurde und jetzt im rahmen der ki sind wir eigentlich auf der ebene dass wir auch die die kognitiven fähigkeiten eines menschen nach und nach
+
+zumindest durch maschinen unterstützen teilweise ersetzen.
+
+Wann wurde jemals ein lkw oder ein traktor besteuert weil er halt irgendwie uns das leben leichter gemacht hat.
+
+Kfz steuer.
+
+Ja okay.
+
+Aber es ist schon eine diskussion die ist sicher ähnlich man kann sich schon vorstellen und das ist glaube ich,
+
+Das ist das was ich jetzt damit eigentlich sagen wollte dass schon eine gewisse brisanz da ist die nicht nur aus einem direkten impact sein kann also dass der algorithmus nicht das was wir erwarten macht was wir erwarten, sondern dass wir im endeffekt durch so eine technologisch gesellschaftlichen wandel einen einfluss haben ich glaube das entscheidende ist noch das eine ist halt dass das leben erleichtern,
+
+Und irgendwann wird es so leicht, dass wir gar nichts mehr zu tun haben.
+
+Die Frage ist nur, wovon leben wir dann?
+
+Das ist das eine.
+
+Das andere ist aber, was die Maschinen ja im seltensten Fall gemacht haben, sie treffen ja nicht Entscheidungen für uns.
+
+Und wenn Algorithmen Entscheidungen treffen und diese Entscheidungen, und das ist das, was du vorhin ja meintest, so einen gravierenden Einfluss haben, nur andersrum wieder gefragt?
+
+Was macht es für mich als Menschen für einen Unterschied, ob ich den Job nicht kriege, weil der Algorithmus gesagt hat, den kriegst du nicht, weil du keine Ahnung, nur weil du trägst, oder der Mensch sagt das, der mich einstellen will, der mag mich nicht und ich kriege den Job nicht, ist doch eigentlich erstmal egal.
+
+Wir hoffen natürlich, dass ein Algorithmus irgendwie vielleicht objektiver ist und dann sind wir wieder genau bei dem Punkt, wenn wir jetzt wirklich
+
+Per Algorithmen Modelle, Prognosenmodelle lernen aus Daten.
+
+Solange diese nur aus den Daten die Modelle ableiten, dann steckt sie ja in den Daten.
+
+Das heißt, wir müssen dafür Sorge tragen, dass da nicht irgendwas drin ist, was wir quasi nicht replizieren oder vielleicht sogar noch verstärken, im unglücklichsten Fall.
+
+wenn wir nicht anfangen regeln oder modelle lernverfahren vielmehr zu zu entwickeln die ein gewisses.
+
+Ethisches moralisches richtiges verhalten so als als als rahmenwerk irgendwo mitgegeben bekommen und sich danach richten ich weiß noch nicht wie das funktionieren könnte.
+
+Aber man müsste den ja in das was was menschen ja haben sagen okay rein objektiv von dem was ich sehe müsste ich dich jetzt quasi ausschmeißen.
+
+Aber ich weiß ja, Mensch, aufgrund bestimmt irgendwelcher anderen Hintergrundinformationen, die der Algorithmus nicht hat, aufgrund irgendwelcher ethisch-moralischen Vorstellungen, mache ich das halt nicht.
+
+Und sowas ist der Algorithmen ja erstmal nicht mitgegeben.
+
+Es gibt ja einen schönen Artikel von Will Knight.
+
+Das ist der Chef AI oder AI-Chef von Google.
+
+Der hat einen Artikel geschrieben über Forget-Killer-Robots.
+
+Bias is the real AI danger.
+
+Also das hat den Motto, man braucht gar keine Angst haben von irgendwelchen Maschinen, die à la Terminator durch die Welt rennen.
+
+Sondern das entscheidende Risiko ist das sogenannte Bias, was wir in den Daten haben.
+
+Und das ist ja das, was du, oder auch in den Algorithmen, das ist das, was du hier gerade so ein bisschen umrissen hast.
+
+dass wir eine gewisse verzerrung der wahrnehmung haben unter dem die realität die frage ist wie gehen wir damit um entweder müssen wir dafür sorge tragen dass wir den algorithmen daten füttern die dieses risiko oder diesen bias bias im deutsch nicht haben oder oder wo man das versucht auszugleichen oder aber wir schaffen es lernverfahren,
+
+so zu erweitern dass die sensibel auf sowas achten können aber da müsste man ja schon explizit genau diese diese eigenschaften und sachen mitgeben also nach dem motto pass mal auf hier die und das sind die relevanten attribute da sehe ich nur ein großes problem meine der einfach naheliegende lösung könnte ja sein dass wir die sensiblen attribute einfach ausblenden sage ich halt okay geschlecht hautfarbe religion sonst irgendwie
+
+die die attribute die die gebe ich im algorithmus nicht mit weißt du was dann passieren könnte.
+
+Ja das ist ja also die große schwierigkeit die wir haben ist dass wir dem algorithmus die nicht mitgeben aber es könnte passieren dass er anhand korrelierender daten oder ähnliches genau diese merkmale wieder herausfiltert und dann aufgrund dieser merkmale reagiert.
+
+Genau, und dann hast du mal eine Winkelpostleitzahl, die ist typisch für Regionen, wo Leute mit einer bestimmten Hautfarbe leben oder Einkommen ist vielleicht wieder typisch, dass häufig immer Männer noch mehr verdienen im Schnitt als Frauen, dann ist das so eine sogenannte Proxy, also eine koalierende Variable, die dann dafür einspringt und am Ende das Problem genauso fortführt.
+
+Genau das Problem haben wir dann genau.
+
+Und deswegen glaube ich auch, und das ist auch das, was man in der Literatur sieht, ich glaube nicht, dass es alleine damit lösbar ist, dass wir einen Algorithmus entwickeln, der fair ist, sondern das ist eigentlich, eigentlich muss man im gesamten Prozess, in dem wir Modelle bauen, in dem wir kreieren,
+
+indem wir es in die Gesellschaft implementieren, sei es in den Unternehmen oder in anderen Anwendungen, muss der Prozess eigentlich schon dazu führen, dass wir sozusagen eine sehr hohe Awareness haben in Bezug auf mögliche Verzerrungen BIAS in den Daten.
+
+Und da gibt's ja schöne Beispiele.
+
+Also wenn wir mal so ein bisschen zurückgucken, es sind ja ein paar prominente Beispiele passiert in den letzten Jahren, wo man da nicht so drauf geachtet hat.
+
+Also 2018 zum Beispiel hat Amazon eine KI-gestützte Bewertung von Lebensläufen gemacht.
+
+Und man hat dann relativ schnell festgestellt, und die hat man produktiv eingesetzt, hat dann aber relativ schnell festgestellt, oh verdammt, die läuft nicht so, wie wir wollen.
+
+Die bevorzugt Männer.
+
+und nicht gleichmäßig Frauen und Männer.
+
+Und der Hintergrund war, dass in den Daten, die Amazon verwendet hat, dass das 10.000 Lebensläufe aus vergangenen Einstellungen, die Amazon gemacht hat.
+
+Und das ist halt ein technikgetriebenes Unternehmen, was in den frühen Anfangsjahren vor allem auf Techniker gesetzt hat.
+
+Und das führte dann dazu, dass im Endeffekt eher in der Vergangenheit männliche Bewerber eingestellt wurden.
+
+Die frage ist ja, hat man damals schon Frauen diskriminiert oder war es einfach so, dass die überwiegende Mehrheit der Bewerber männlich waren und hat da auch genau fair ausgewählt.
+
+Oder die gesellschaftliche Norm zu dem Zeitpunkt noch gar nicht so war, dass man gesagt hat, man möchte eigentlich eine Gleichbehandlung haben, also auch das,
+
+Was heißt was heißt gleichbehandlung wenn wir so also angenommen du hast willst einen platz vergeben du hast bewerber bewerberinnen es bewerben sich zehn menschen neun männer eine frau.
+
+Oder wir haben zwei Plätze, die wir vergeben wollen, musst du die denn Hälfte, Hälfte vergeben, würde dann nicht eigentlich die vielen Männer, die da sind, sagen wir mal, wenn du sagst, ich vergeb das Hälfte, Hälfte, dann hat die Frau den Platz sicher, die Männer müssen sich neun um diesen einen Platz streiten, werden dann nicht eigentlich Männer benachteiligt.
+
+Also die Frage ist dann die Quotenregelung, aber das ist ein Thema, was wir hier lösen können.
+
+Dazu möchte ich mich nicht äußern das ist ein interessantes thema also das ist wirklich weil das ist genau wie du sagst man kann jetzt nicht sagen was ist jetzt hier an der stelle direkt die faire entscheidung für sowas wenn jetzt alle gleich werden also von der qualifikationen und von dem können her.
+
+ja dann ist es extrem schwer finde ich da zu sagen ist es ist es der richtige weg jetzt so einzuschlagen oder nicht und wenn du dann die historischen daten nimmst wo du tatsächlich vielleicht in dem kontext ist nicht hattest also wenn du einfach in den daten eine überproportionale menge an bewerbern hast gegenüber bewerberinnen,
+
+Ja dann wird der algorithmus das als gewisses merken wir mitnehmen auch wenn du es vielleicht gar nicht in den eigentlichen merken mal drin hast und du sagst ich nehme die eigenschaft raus oder wie auch immer aber es kann dazu führen.
+
+Genauso wenn in den lebensläufen drin stehen würden würde dass da immer ein blaues hemd getragen wurde.
+
+Und in allen einstellungen würde immer in der mit dem blauen hemd gewählt werden dann wird in zukunft die den weißes hemd tragen auch verlieren.
+
+Das wäre nicht gut für mich.
+
+Also deswegen das ist schon ein ganz heikles thema und ich glaube man muss sich das natürlich auch so den drei ebenen anschauen um da heranzukommen und das zu lösen also wir haben einerseits die eben der daten wo wir sagen wenn wir in den daten in den historischen daten eine verzerrung ein bias schon drin haben dann haben wir ein problem weil das modell zwangsläufig nicht plötzlich besser wird es wird nicht plötzlich diesen bias raus landen sondern es wird den
+
+Reproduzieren genau muss also sorge dafür sorge tragen dass von vornherein nicht so reinkommt aber das ist ja alles andere als einfach also muss ich am ersten schritt dann erst mal muss es bewusst werden dass da.
+
+Das ist erstmal das wichtigste bewusst sein und selbst wenn wir denken wir haben keinen weil wir jetzt mal daten gesammelt haben aus unserem umfeld aus dem eigenen land und uns denken super jetzt haben wir alles berücksichtigt, dann übertragen wir auf einmal das modell auf anderes auf anderen kontinenten anderes land mit ganz anderen verteilungen und,
+
+Sagen wir Strukturen, da kann es wieder genau, erstmal kann es wieder, sagen wir mal, Merkmale geben, Menschen mit Eigenschaften, die vorher gar nicht bei uns bekannt waren.
+
+Es hieße ja dann als Pflicht, man müsste ja die Algorithmen mit allen Menschen, die es auf der Welt gibt, irgendwie gleichermaßen berücksichtigen, was den Aufwand natürlich extrem erschwert, aber zumindest dann erforderlich ist, wenn das Ziel ist, die Anwendung mit den Modellen weltweit einzusetzen.
+
+Also das heißt, man muss natürlich die Zielgruppe im Auge haben, wo soll es genutzt werden und zumindest dafür erstmal Sorge tragen, dass man eine repräsentative Datenmenge hat.
+
+Und selbst wenn sie repräsentativ ist, kann natürlich aufgrund von Entscheidungen in der Vergangenheit da Probleme drin sein.
+
+Hast du jetzt beschrieben hast gar dieses in andere länder bringen das ist ja so eine inadäquate anwendung eines modells.
+
+Weil man das für einen anderen zweck mit anderen historischen daten oder daten gelernt hat.
+
+Zweck muss nicht sein ist vielleicht derselbe zweck nur mit mit anderen.
+
+Verteilung.
+
+Transferloading.
+
+Also deswegen das das ist so und ich glaube und das ist ganz schön beschrieben wir haben ja im endeffekt am ende ein ein ergebnis das wir.
+
+Überwachen wollen was aber schwer zu greifen ist also fernes ist einfach schwer zu greifen und da können wir nicht einfach sagen okay dann wir die kennzahl fernes und die besetzt sich zusammen aus den werten und dann kann man es genau messen o ist nicht fair blöder algorithmus so ist es ja nicht.
+
+Da gibt's auch ein ganz schönes Artikel im Harvard Business Review vom David Graham, der hat geschrieben, what does building affair really entail?
+
+Also was von 2020 ist das?
+
+Was macht's wirklich aus?
+
+Der hat drei Empfehlungen gemacht.
+
+Die erste Empfehlung war, dass wir im Endeffekt das Thema Fairness bei einer Algorithmusentwicklung als kollaborativen Akt sehen.
+
+Also nicht als isoliert und nicht als am Ende der Technik, sondern im kollaborativen Akt.
+
+Der meinte dann, und das fand ich eigentlich einen ganz interessanten Ansatz und ich glaube, dass das auch
+
+absolut wichtig ist, was man auch bei den Unternehmen gesehen hat, da würde ich dann gleich noch ein Beispiel dazu sagen.
+
+Er sagte, man müsste ein Modell praktisch nicht einfach am Ende evaluieren mit den Kennzahlen, die wir kennen, also sagen wir die typischen Effektivitätskennzahlen oder Bewertungskennzahlen, sondern man müsste einen sogenannten Human Devils Advokat implementieren, also einen
+
+einen menschlichen Kritiker, der das ganze sowas von negativ sieht und überprüft, damit er sozusagen dieses Fairness Problem oder diese Verzarrung auch wirklich rausfiltern kann.
+
+Das ist so das eine.
+
+Dann sagt er ja, dass es in einer gewissen Weise auch ein wichtiger Aspekt ist in der Gesellschaft, in der der Algorithmus entwickelt wird, dass man da an der Stelle so eine Art Verhandlung zwischen dem Nutzen und der Menschlichkeit hat.
+
+Also dass man mehrere zielgrößen gleichzeitig hat so ähnlich wie wir das bei den ganz hier hatten mal sagen wir haben wir haben den den diskriminator am ende und da mehrere wenn er nicht nur sagen wir achten auf die eine größe sondern wahlweise auch andere größen die jetzt die fern ist in irgendeiner gewissen weise widerspiegeln können vielleicht mit mit einbaut und dann versucht alle diese größen zu zu optimieren.
+
+Ja, wobei das jetzt hier in dem Schritt, den der Autor jetzt hier nennt, jetzt nicht ein Einbau im Modell ist, sondern für ihn ist es tatsächlich so, dass man als
+
+Gesellschaft als Unternehmen, als Forschungsinstitut oder wie auch immer, sich dem bewusst ist, dass man abwägen muss zwischen dem Nutzen und dem Menschlichkeitsprinzip, das dadurch entsteht.
+
+Also nur zum Beispiel die Kostensenkung und effizienter zu sein, sollte nicht nur das reine Ziel sein, wenn dabei sozusagen eine unfaire, unmoralische,
+
+Aktion dadurch entsteht also ich nicht könnte ich nicht eine bewertung dessen als als evaluierungskriterium mit einbauen also dass ich nicht sage nur die kosten senken also möglichst kleine fehlerrate sondern dabei auch noch.
+
+Andere sache ist einfach ich kriegte ich muss ja auch wie messen könnte ich das ja am ende daran schein.
+
+Könnte man probieren, sicher ein interessanter Forschungsansatz.
+
+Wir sehen ja auch, und das muss man ja auch so sehen, das ganze Thema FAIR-AI ist jetzt kein Thema, was eigentlich fast alle Themen, die wir behandeln, sind keine Themen, die sehr alt sind, sondern das sind Themen, da ist die Forschung ja gerade am Aufkeimen, gerade weil wir diese Durchdringung in der Gesellschaft haben durch die KI und diese Präsenz.
+
+den letzten punkt vielleicht genau ich wollte den letzten punkt noch schnell aufgreifen von dem autor an dem von dem dokument er sagte noch die verantwortung übernehmen also wahrnehmung von verantwortung und damit ist gemeint dass der das,
+
+Entwicklungsteam ja also das team dass das also wirklich sich bewusst ist was ist für einen impact auf die menschen auf die gesellschaft haben und es auch kritisch hinterfragen also festgelegte werte die zum beispiel unternehmen definiert, dass man die auch mit in so eine entwicklung rein und nicht einfach nur die dinge macht die man alles machen kann sondern hier wirklich auch einen gesellschaftlichen rahmen schafft durch das unternehmen.
+
+Man merkt es ist kein technischer artikel aber ich finde da sind ganz wichtige ansätze dran weil es gibt ja auch andere ansätze die einfach sagen von wegen.
+
+Wir müssen auch gucken dass wir in dem gesamten prozess ja das wird die verzerrung schon also die entwicklung schon von vornherein im design betrachten also fairness bei design.
+
+Ja und dann das gibt's ja auch andere sachen wo es heißt also wenn man es mal so betrachtet ich habe mal mehrere paper so zusammengetragen und dann kommt immer wieder dieses bios bei design oder fairness bei design wie man es auch immer nennen möchte es kommt aber auch das thema aufklärung was man so sagt wie klärt man die gesellschaft auf.
+
+Ich glaube es ist ein erster wichtiger schritt dass wir uns über bewusst sind dass das passiert und warum es passiert und man ist sensibilisiert und achtet einfach schon mal darauf dass er das wichtigste erstmal das ist eigentlich ja schon das haben wir geschafft.
+
+Und dann und dann als glad in dem aufklärungspart haben wir das thema explainable das wir hochkomplexe algorithmen verständlich versuchen zu machen also durch die blackboxen auflösen, transparent schaffen und so weiter und der dritte part der der auch immer genannt wird.
+
+Ich weiß nicht ob der mir gefällt aber ich glaube dass in einem gewissen rahmen das schon notwendig ist wenn wir über moral sprechen nämlich die regulierung.
+
+Wenn wir sehen, moral sind Handlungsnormen, die festgezurrt sind für eine Gesellschaft, dann ist die Regulierung nichts anderes, als dass wir den Rahmen in klare Handlungsanweisungen machen.
+
+Das setzt aber auch wieder voraus, dass wir das in irgendeiner Form im Messen bewerten können, ob diese Regeln fähren, dass in dem Fall dann
+
+gibt ja nicht die eine fairness und da sind ja wahrscheinlich unterschiedliche größen und sachen die man da berücksichtigen kann, dass das halt bekannt und definiert ist aber ich muss sagen von diesen themen ich will den technischen punkt der erste den du genannt hattest so wie ich ihn verstanden hatte sehr sehr interessant diese dieser kooperative akt das war zum beispiel eine möglichkeit ist ja zu sagen,
+
+Es kann nicht sein, dass jede Forschungsgruppe wieder irgendwo für sich irgendwelche Daten sammelt und schafft, sondern wenn man wegen das Ziel ist, irgendwelche Bilderkennung von Objekten zu haben, dass wir einen weltweiten Bestrebungen haben, wo jeder auf der Welt beitragen kann, macht Fotos, annotiert die, sodass man halt die Vielfalt, die es auf der Welt gibt, halt auch abbilden kann, weil sonst hätten ja, sagen wir mal, in Landstrichen, wo es bestimmte Charakteristika von Menschen nicht gibt, hätte man diese Daten ja nicht, wenn man weltweit mitmachen kann.
+
+Könnte man so ja datensätze kreieren die auf die jeder zugreifen kann dieses problem umgehen können.
+
+Ja absolut das ist mit bestimmten bereichen das geht natürlich nicht überall in einem unternehmen wo ich euch irgendwie kritische entscheidung für den erfolg zu unternehmens treffe wenn ich die nicht haben aber zumindest so um ein repräsentatives bild der menschheit zu haben könnte man so dem entgegenwirken.
+
+Ja, und ich glaube, das sind auch die Bewegungen, die wir natürlich auch sehen, die man vielleicht in dem Kontext gar nicht im ersten Moment wahrnimmt, nämlich halt Open Data, also frei verfügbare Daten, Verständnis darüber, wie Daten entstanden sind.
+
+Natürlich sollten jetzt keine Persönlichkeitsdaten frei verfügbar sein, aber schon eine Daten, die man nützen kann, wo man einfach dann weiß, okay, die sind mit einer großen
+
+Breite, wenn man das so nennen möchte, auch anwendbar und wird nicht auf einen spezifischen Fall oder ähnliches.
+
+Open Data, spannendes Thema, aber nicht mehr für heute Abend.
+
+Nee, heute nicht mehr.
+
+Aber ich würde gerne noch einen Bogen schnell noch ziehen, bevor wir Schluss machen.
+
+Wir haben ja über die Regulierung gesprochen jetzt gerade noch.
+
+Und wir hatten ja schon eine sendung die episode 9 und du hast dir gesagt naja die regulierung das ist ja auch ein spannendes thema ob man das so oder so sehen kann was ist fern ist was ist nicht fern ist.
+
+Wenn man sich die episode 9 nochmal anhört da merkt man selbst bei uns ja dass wir da nicht ganz.
+
+Also wir sind nicht einfach klar, dass wir sagen, okay, da wird reguliert, prima, wir wollen ja einen fairen Algorithmus, sondern auch wir haben da kritisch gefragt, ja, ist das notwendig, muss das sein, wirkt es nicht zu sehr, bremst es nicht, könnte man das nicht mit Verantwortung und Aufklärung machen.
+
+Also da sieht man diese Komponenten, die wir vorhin ja gesagt haben zu den Lösungsideen.
+
+Verzerrung, Regulierung, Aufklärung.
+
+Und es ist auch spannend, wir haben in vielen Ländern solche Ansätze.
+
+Also auch in Singapur gibt es ein Modell, das nennt sich Model AI Governance Framework, das auch solche Grundprinzipien für faire AI aufsetzt.
+
+Da ist zum Beispiel, dass man beim Design schon festlegen soll, dass es erklärbar, transparent und fair ist.
+
+Also auch wieder dieses Peers by Design.
+
+Fairness bei design schöner.
+
+Ja das stimmt.
+
+Und ein anderes prinzip was dieses framework aus singapur auch noch sagt ist, the system should be human centric.
+
+Und da haben wir genau dieses, den human devil's advocaat.
+
+Der Nutzen für den menschen und der mensch auch als als advokat oder kontrollfunktion später auch muss einfach immer im mittelpunkt stehen.
+
+Ja, also sind ganz viele Punkte, die man, die man hier beachten muss und die einfach reinkommen, weil man tatsächlich einfach in den Daten diese Historie hat und ich mir dann wirklich während dem gesamten Prozess immer wichtige Fragen stellen muss.
+
+Und da gibt's auch ganz schöne Leitfäden.
+
+Vielleicht machen wir das mal in einer anderen Sendung, wo man auch sich so Grundfragen stellen kann, dass man erkennt, ob in den Daten überhaupt Bierstar ist.
+
+Ja, dann können wir das bei einer schweren Folge technisch einfach mal angehen.
+
+Genau.
+
+Perfekt.
+
+Ich hoffe, das war so ein schöner Rundumschlag.
+
+Wir sind so ein bisschen gesprungen, vielleicht nicht ganz strukturiert.
+
+Aber ich hoffe, dass jemand da sieht, dass es schon ein sehr interessantes Thema ist.
+
+In meinen Augen auch ganz gesellschaftlich wichtig.
+
+Wenn Sie Lust haben, gehen Sie mal auf YouTube und suchen Sie mal nach ein paar Videos mit Deepfakes und Ähnliches.
+
+Hatten wir auch schon Sendungen gemacht.
+
+Dann, glaube ich, wird es auch noch mal präsent, warum wir darüber reden sollten.
+
+und warum es eigentlich in jedem Prozess eine Relevanz hat.
+
+Also das ist einfach existent.
+
+Vielen Dank soweit.
+
+Ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

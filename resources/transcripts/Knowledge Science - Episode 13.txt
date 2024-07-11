@@ -1,0 +1,427 @@
+ Hallo und herzlich willkommen.
+
+Steve Jobs sagte einmal, Every once in a while, a revolutionary product comes along that changes everything.
+
+Heute sprechen wir über Attention und eruieren, ob diese Methode alles im Bereich des Deep Learning bisher Dagewesene verändert.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Diese Woche sprechen wir über Attention.
+
+Was sind Attention?
+
+Aufmerksamkeiten, wie man das auch übersetzen möchte.
+
+Wenn man das jetzt betrachtet in der Psychologie, ist die Aufmerksamkeit der kognitive Prozess, sich selektiv auf ein oder wenige Dinge zu konzentrieren und andere zu ignorieren.
+
+Das ging jetzt ganz schnell.
+
+Also Aufmerksamkeit, ich glaube, das Wesentliche, was wir immer rauspicken müssen, ist das Selektive, das Fokussieren auf Aspekte, die wichtig sind.
+
+Und ich glaube, ohne dass wir vielleicht bewusst greifen können, was ist es denn eigentlich?
+
+Wenn wir das sagen können, du musst da und dahin gucken, man macht es, dann ist es ja relativ einfach.
+
+Aber wenn wir gar nicht genau wissen, wie wir diese Aufmerksamkeit steuern und was wir herauspicken und dann die Frage, wie können wir das im Bereich KI umsetzen?
+
+Ja und wir hatten in der einleitung gesagt oder ich hatte in der einleitung gesagt das könnte was revolutionäres sein oder ist es vielleicht auch und wird einiges bahnbrechend ändern liegt ja auch ein bisschen daran dass wir im endeffekt als mensch so agieren dass wir sozusagen ja unsere aufmerksamkeit auf bestimmte dinge richten und dann versuchen wir eher das zu lernen.
+
+Also das ist ja das ist ja das ganz typische was wir beim im bereich ki und maschine learning haben das immer wieder inspiriert von.
+
+menschlichen oder anderen natürlichen phänomenen man versucht sachen zu zu bauen und nachzuahmen die können darüber hinausgehen die können davon abweichen aber die kernideen kommen davon und wenn du sagst ist dieser mechanismus dieser aufmerksamkeit attention könnte die sache verändern ich würde sagen sie hat schon sehr viel verändert seitdem das in den letzten.
+
+sagen wir, fünf bis sechs Jahren stärker in den Fokus gekommen ist.
+
+Es gibt da einen Bereich der Transformer-Architektur, die wir halt beim nächsten Mal ansprechen wollen.
+
+Dann ist das ja ein Kernbaustein, insbesondere von dem Google-Paper von 2017.
+
+Seitdem hat es grundlegend die Art und Weise verändert, wie insbesondere natürlichsprachliche Verarbeitung, aber auch andere Bereiche der KI aufgebaut werden.
+
+Das sehe ich genauso.
+
+Man muss auch mal überlegen, wie denn eigentlich diese Aufmerksamkeitsaspekte eigentlich funktionieren.
+
+Also man kann ja so ein schönes Beispiel mal nehmen, wenn man sagt, man hat sozusagen ein Bild, ein Klassenfoto und schaut drauf und jemand fragt dich selber, wie viele Schüler waren denn in einer Klasse?
+
+dann schaut man ja nicht jeden aspekt des bildes an sondern legt den fokus auf die personen auf die köpfe und sehe sozusagen die köpfe.
+
+Man macht das aber ohne dass man jetzt jemandem erklären muss wie erkenne ich jetzt eine person oder auch nicht was ist wichtig oder auch nicht irgendwie irgendwie hat man das gelernt und kann es.
+
+Genau, oder wenn man die Frage ändern würde und würde fragen, wer war denn der Lehrer, dann achtet man ja auch sozusagen nicht auf alle Merkmale des Bildes, sondern schaut, gibt es eine erwachsene Person, männlich oder ähnliches auf dem Bild, hat also gelernte Merkmale und fokussiert sich darauf und hat damit natürlich ein schnelleres Ergebnis.
+
+Kann man ja noch mal ein bisschen weiter drehen zum beispiel auch wenn wir bücher uns anschauen und eine frage zum beispiel zu rnn oder ähnliches haben und haben dann ein dickes buch mit 800 zeiten da hätten wir ja auch zwei wege ein weg wäre wir lesen das ganze buch versuchen uns alles zu merken und wissen hinterher was rnn sind was die vornachteile sind.
+
+Oder man liest es nur quer und versucht sich die die relevanten sachen raus zu picken die frage ist wie erkennt man das was relevant ist für einen.
+
+Ja, da kommen dann die Verfahren ins Spiel.
+
+Attention based.
+
+Also wichtig ist, und es gibt einen anderen Paperboard, wo diese Mechanismen in gewisser Weise so als eine Art wahlfreier Zugriff auf die Inhalte beschrieben werden.
+
+Vielleicht greifen wir das auch nochmal auf vom letzten Mal, wo wir Sequenzen haben.
+
+Bilder weichen ein bisschen davon ab, aber gehen wir mal wieder auf unsere Texte.
+
+Wir haben Sätze und hatten die ja mit RNNs und LSTMs nach und nach Wort für Wort innerhalb eines Satzes verarbeitet.
+
+Hat ja den riesen Nachteil, dass wir irgendwie schon an diese Reihenfolge bei der Verarbeitung trotzdem gebunden sind.
+
+Aber wir können irgendwo schon aus der Vergangenheit uns Sachen merken.
+
+Auch mit LSTMs, Selektive.
+
+Aber es ist schon sehr, sehr stark an dieses schrittweise Verarbeiten gebunden.
+
+Und was Sachen, die weiter weg sind, sind vielleicht schwerer, sich daran zu erinnern.
+
+Und wir wissen aber gar nicht genau, was davon.
+
+Und das können wir jetzt mit diesen Attention-Mechanismen aufbrechen.
+
+Ja, aber wie genau funktionieren sie?
+
+Also erfunden wurden sie in einem Paper von Pardanow et al.
+
+aus 2016.
+
+Das hieß Neural Machine Translation by Jointly Learning to Align and Translate.
+
+Und da sind ja erstmal diese Attention Mechanismen berücksichtigt worden.
+
+Genau, das ist, glaube ich, ein ganz, ganz wichtiger Punkt, dass die Grundidee kam aus dem Bereich der Sprachübersetzung, von einer Sprache in die andere, weil man da gemerkt hat, dass dieses Verarbeiten einzelner Wörter nacheinander, das reicht oft nicht, um den Gesamtkontext zu erfassen und gut zu übersetzen.
+
+Man braucht mehr als diesen Zugriff auf die einzelnen Wörter nacheinander.
+
+vielleicht auch nicht nur aus der aus der rückwirkung sondern auch zu gucken was was kommt denn eigentlich noch später im satz das ist auch für die übersetzung wichtig ist das ist ein bisschen eingeschränkter ich weiß nicht wie ich erlebe das persönlich auch offen dass man man könnte das argumentieren ja wenn ich spreche und lese das mache ich doch wort für wort ich weiß doch gar nicht was später mal kommt bei mir geht selbst ganz oft so wenn wenn ich einen satz höre dass ich schon dabei bin nachzufragen weil ich es nicht verstanden habe aber mit den informationen die danach nach
+
+Und vielleicht nehmen das gehören die langsam verarbeitet hat hat man auch das davor besser verstanden also informationen sowohl von dem satz teilen vorher hinterher sind extrem wichtig fürs gesamtverständnis.
+
+Wir hatten ja eigentlich unsere lsdm netze wo gesagt haben wir können uns ja ziemlich lange auch in kontext merken.
+
+Aber der Nachteil an den LSTMs war ja, oder ist, dass wir im Endeffekt keine Gewichtung auf den jeweiligen Bereich, was wir uns merken, legen, sondern dass das ja praktisch nur über dieses Vergessen-Gate oder Vorwort-Gate kommt.
+
+Und mit den Attentions geht es jetzt eigentlich mehr darum, auch sozusagen Gewichtung für die einzelnen Wörter festzulegen, zu berechnen eigentlich.
+
+Wenn man, wenn man ja mal die bisschen abspeckt das ganze und sagen ja es kommt zwar ursprünglich aus dem übersetzungsbereich, aber das aber mal im moment ignorieren, dann stellt sich heraus, dass eigentlich im kern diese mechanismen dafür zu einer lage sind,
+
+ja man sagt so kontextualisierte repräsentationen zu zu zu berechnen also wir hatten dieses dieses prinzip der embeddings das wir gesagt haben menschen wohnen hot encoding jedes wort einzeln irgendwie repräsentiert mit einer eins wenn es vorkommt sonst null,
+
+Das berücksichtigt ja die anderen Wörter irgendwie nicht so richtig.
+
+Da hatten wir die Embeddings gelernt, die so ein bisschen die Konzepte dahinter versuchen zu greifen, aber die berücksichtigen ja trotzdem nicht die anderen Wörter, die in einem Satz stehen.
+
+Und mit Hilfe dieser Attention-Mechanismen in diesem Kontext können wir kontextabhängig gute Repräsentationen lernen.
+
+Vielleicht mal ein kleines Beispiel, wenn wir sowas haben wie, meisten Beispiele sind im Englisch, versuchen wir es mal auf das Deutsche zu übertragen.
+
+Von der Bank hat man eine schöne Aussicht.
+
+So, da kennen wir das Wort Bank.
+
+In unterschiedlicher Art und Weise könnte es ja genutzt werden, es könnte ein Finanzinstitut sein, es könnte aber auch eine Sitzbank sein.
+
+Wenn ich nur das Wort Bank habe, weiß ich ja nichts.
+
+Aber in dem Kontext, dass ich von der Bank eine schöne Aussicht habe, natürlich kann ich auch auf dem 20.
+
+Stock einer Bank irgendwo stehen und eine schöne Aussicht haben, aber wahrscheinlicher ist es, dass es vielleicht eine Sitzbank ist, die irgendwo auf dem Berg steht, wo ich schön in die Landschaft schauen kann.
+
+Das heißt,
+
+dass der kontext irgendwo wichtig ist um die einzelnen wörter genauer zu zu begreifen das hatten wir damals ja auch schon gesagt dass das die die bedeutung von wörtern ergeben sich aus ihrem kontext.
+
+Ja das heißt also wir schaffen eigentlich dass wir eine fokussierung auf unseren daten repräsentation haben und können damit viel spezifischer lernen.
+
+Und die Frage ist, wie kriegt man jetzt sowas hin?
+
+Und da beschränken wir uns, denke ich mal, jetzt auf einen Aspekt innerhalb dieser ganzen Aufmerksamkeit- oder Attention-Mechanismen, der sich Self-Attention nennt.
+
+Also die Aufmerksamkeit quasi auf sich selbst, also auf den Input selbst liefert.
+
+Das heißt, wir haben jetzt mal in unserem Beispiel Sätze von Sprache.
+
+Und gucken jetzt mal nur innerhalb der sätze was man da mit aufmerksamkeit machen kann das heißt wenn ich ein wort sehe wie kann ich quasi welche anderen wörter in dem satz sind noch wichtig in diesem kontext des satzes um das besser zu verstehen.
+
+Also wir setzen es eigentlich ins verhältnis zueinander oder.
+
+In gewisser Weise ja, aber jetzt nicht planlos, sondern irgendwie mit System.
+
+Und Grundidee, weil die meisten das in dem Umfeld machen, ist, dass ich wirklich jedes Wort mal die Ähnlichkeit zu den anderen Wörtern berechne.
+
+Das macht man im Sprachumfeld ganz, ganz oft mit einem Skalarprodukt, dass ich die beiden ganz einfachen Embeddings, also die Wörterdarstellungen, miteinander multipliziere.
+
+Und dann hatten wir ja gesagt, dass in einem Embedding haben wir verschiedene Konzepte, die vielleicht für ein Wort dastehen.
+
+Du hattest mal diese schönen Beispiele mit King und Queen.
+
+King minus Man plus Women ist Queen, so ungefähr.
+
+Das heißt, man geht davon aus, dass in so einem Embedding ja verschiedene Konzepte irgendwo dargestellt werden für die einzelnen Wörter.
+
+Und wenn ich jetzt zwei Wörter habe, die ähnlich sind und die miteinander multipliziere, bleibt quasi mehr stehen, als wenn ich zwei Wörter miteinander multipliziere, also die Embeddings, die nichts miteinander zu tun haben.
+
+Insofern kann ich mit so einem einfachen Skalarprodukt messen, wie ähnlich sich zwei Wörter zueinander sind.
+
+Ja, vielleicht nochmal für diejenigen, die die Embeddings-Sendung noch nicht gehört haben.
+
+Embeddings sind ja unsere Repräsentationen der Wörter in Zahlen, Vektoren.
+
+Und wir machen das so, dass wir versuchen, einen sogenannten Embedding-Raumframe aufzubauen, dass wir durch diese Wörter, die ähnlich zueinander sind, auch in dem Raum beieinander stehen.
+
+Und dann haben wir ja eine Vektorrepräsentation und wenn wir die dann multiplizieren, so wie du es gesagt hast, dann kommt natürlich, wenn die beiden sehr ähnlich sind, ein größerer Vektor raus und wenn die sehr stark voneinander differieren, könnte sich die Größe verändern.
+
+Und das interessante ist jetzt, wenn ich jetzt so zwei Wörter, die natürlich nicht gleich sind, die das gleiche bedeuten sollen, aber miteinander multipliziere, dann bleiben mir die Elemente übrig, die was miteinander zu tun haben.
+
+Nehmen wir mal das Beispiel mit der Bank.
+
+Da können jetzt Aspekte wie, ich kann drauf sitzen, ich kann mich ausruhen, ich habe vielleicht eine schöne Aussicht, oft werden ja Bänke da aufgestellt, wo man irgendwie nett auch was sehen kann, nicht immer.
+
+Aber solche Konzepte werden in diesem Embedding, in dieser Darstellung,
+
+irgendwo vielleicht mit berücksichtigt gleichzeitig aber auch eine bank ja auch ein finanzinstitut zeigen kann wird irgendwas mit mit geld mit was ist ich aktien wertgeschäft irgendwelche solche sachen auch als konzepte drin sein wenn jetzt in diesem satz aber auch das wort aussicht steht.
+
+Das sind ja auch bestimmte Aspekte, die in der Repräsentation wieder enthalten sind.
+
+Und wenn ich diese Wörter miteinander modifiziere, würden ja Aspekte, die mit Bank als Finanzinstitut hat, rausfallen und es bleiben die Elemente übrig, die tatsächlich mit der Bank als Sitzbank und Aussicht zu tun haben.
+
+Und somit habe ich jetzt so einen teil also als als ergebnis dieses dieses produktes den teil von meinem wort übrig geblieben der stärker mit meinem ja im kontext tatsächlich an bedeutung hat.
+
+Eigentlich ein einfacher mechanismus wenn man das so hört gern.
+
+Ja und das interessante jetzt hierbei das ist jetzt erstmal unabhängig davon wo es im im satz steht weil die idee ist jetzt dass ich jedes wort mit jedem anderen multipliziere.
+
+Und dann kriege ich erstmal eine Ähnlichkeit von jedem Wort zu jedem anderen Wort im Satz heraus.
+
+Das heißt, wir haben als Ausgang nicht nur die Repräsentation des Wortes als Vektor oder auch des Satzes, sondern wir haben zusätzlich auch noch die Gewichtung, also die relative Bedeutung.
+
+Aber das Schwierige ist jetzt noch, man macht das jetzt nicht nur für ein Wort, sondern man muss es für alle Wörter machen.
+
+Also jedes Wort, aber mit jedem anderen.
+
+Und man möchte am Ende ja wieder eine Repräsentation haben.
+
+Und die ist in diesem Fall genauso groß, also dieselbe Dimensionalität wie die Ausgangsdarstellung.
+
+Das ist also keine Reduktion der Dimensionalität, sondern einfach nur eine andere Gewichtung.
+
+Und dass der erste Punkt ist, ich rechne quasi die Ähnlichkeit jedes Wortes zu jedem anderen.
+
+Und für jede dieser Darstellungen fange ich jetzt noch an, damit das jetzt nicht beliebig groß wird, muss das Ganze ein bisschen normieren.
+
+Und da ist die Überlegung, ja, man normiert diese Gewichte, sodass sie immer 1 ergeben.
+
+für jedes einzelne Wort.
+
+Dann habe ich jetzt neue Gewichtungen.
+
+Welches Wort ist denn im Satz für ein konkretes Wort wichtig?
+
+Und mit diesen Gewichtungen und den Ausgangsvektoren berechne ich jetzt die neue Darstellung eines jeden Wortes.
+
+Das heißt, letztendlich fließt ein Wort dreimal in die Berechnung ein.
+
+Einmal als das Wort, wie es im Satz vorkommt.
+
+Einmal als Gegenstück, als wie ähnlich sind die anderen Wörter dazu.
+
+Und dann wieder für die Berechnung der neuen Repräsentation.
+
+Die dann die Gewichtung und damit die Aufmerksamkeit beinhaltet.
+
+Und das Interessante ist, so wie wir es jetzt gerade besprochen haben, da ist noch überhaupt kein Lernprozess dabei.
+
+Das ist jetzt erst mal einfach eine ganz einfache Berechnung mit linearer Algebra.
+
+Matrizenmultiplikation, normieren und wieder multiplizieren.
+
+wenn ich jetzt aber sage ich erlaube nicht nur dass das diese ausgangssatz mit seinen oder jedes ausgangswort mit seiner repräsentation direkt einfließt sondern ich kann das ja noch gewichten wieder also sprich mit mit einer einer gewichtsmatrix wie man zum neuronalen netz sehr viel hat multiplizieren
+
+Dann kann ich für jede Rolle, die ein Wort in dieser Berechnung spielt, von diesen dreien, die man, vielleicht kann man das mal an der Stelle erwähnen, da hat man halt versucht, zu Datenbankanalogien einzuführen.
+
+Das eine nennt man Query, Q für Query, das andere ist ein Value, das andere ist ein Key.
+
+Und diese drei Rollen, die aber in unserem Fall immer ein und derselbe Vektor eines Wortes darstellt, kann ich noch zusätzlich Gewichte dranhängen.
+
+die ich dann lernen kann.
+
+Und auf die Art und Weise kann ich es noch schaffen, bestimmte Aspekte innerhalb meines Vektors und seiner Rolle als Value, als Key oder als Query-Funktion noch besonders hervorzuheben.
+
+Und dann habe ich tatsächlich wieder ein neuronales Netz mit verschiedenen Ebenen, die ich lernen und trainieren kann.
+
+Das heißt eigentlich, wir bauen in unser normales neuronales Netz oder in unser RNN oder was wir auch immer verwenden,
+
+so ein attention schicht ein oder attention zelle attention block oder schicht ist es eigentlich ist auch wieder wie wir beim lsdm ja auch schon gesehen hatten ist eigentlich auch wieder so ein eigenes kleines netzwerk verschiedenen schichten wo bestimmte sachen berechnet werden.
+
+Also Gewichtung mit der Eingabewerte.
+
+Das ist ja klassischer Fall, was bei jedem normalen Netzwerk funktionieren könnte.
+
+Dann eine Matrix-Multiplikation.
+
+Normieren, Softmax zum Beispiel.
+
+Und am Ende wieder ein Multiplizieren dieser Gewichte mit meinen Ausgangsgrößen.
+
+Mehrere Schichten.
+
+Die Gewichte kann ich lernen.
+
+Und dann habe ich da eine sehr sehr flexible geschichte die mir meine meinen kontextunabhängigen eingangsvektor in einen kontextualisierten repräsentation meines meiner wörter überführt.
+
+Das war jetzt alles sehr mathematisch.
+
+Und ich hoffe, dass uns die Hörer noch folgen können, aber vielleicht ziehen wir das nochmal in den Bogen, wofür wir das anwenden können oder was wir denn damit grundsätzlich machen können.
+
+Sprache identifizieren, also Kontext und Fokus in der Sprache zu haben.
+
+Das funktioniert aber auch bei Bildern, muss man auch so sehen, also dass man im Endeffekt ein Bild nimmt und dann ist vielleicht auf dem Bild eine Frau, die eine Frisbee wirft.
+
+Und man möchte gerne haben, dass man eine Beschreibung, also dass eine künstliche Intelligenz das Bild beschreibt, also zum Beispiel einen Untertext macht, Frau wirft Frisbee.
+
+Dann müsste man ja sozusagen seinen Fokus auf die Frau und auf die Frisbee legen.
+
+Und hier können wir die Attention-Mechanismen auch verwenden, damit wir genau diese Bereiche in einem Bild scharf stellen, wenn man sich das jetzt so vorstellen möchte, und alles außen drum so auswässern, unscharf machen.
+
+Genau, wir lernen einfach, welche Aspekte sind denn jetzt für die Beschreibung wichtig?
+
+Das kann dann kann natürlich nur knappen klappen wenn man da in lernbeispiele für haben dass wir genau sowas beschreiben wollen genau das ist schon je nach abhängigkeit abhängig der der lernaufgabe natürlich klar man braucht dann irgendwelche vorgaben.
+
+Sonst wüsste das System ja auch nicht genau wie der Mensch, man hat ja eine Zielsetzung, man braucht irgendein Ziel, das entspricht quasi der Aufgabe.
+
+Wenn ich ein Buch mir in die Hand nehme und möchte irgendeinen bestimmten Aspekt verstehen, dann kann ich gezielt danach mir die Seiten raussuchen und lesen.
+
+Wenn ich das Ziel nicht habe, kann ich höchstens das ganze Buch lesen und hinterher mich freuen, dass ich vielleicht alles mir gemerkt habe.
+
+Aber das ist so umgerichtet und das Schöne ist an diesen
+
+konkrete lernaufgaben gerade bei den überwachten lernaufgaben dass ich ja dieses ziel so genau vorgebe an dem ich mich orientieren kann genau da kann ich diese diese aufmerksamkeit mechanismen sehr gezielt einsetzen um den den teil meiner meiner eingabe werte
+
+rauszupicken, die besonders wichtig sind, und aber auch sie in ihrem Kontext zu berücksichtigen.
+
+Also, dass nicht mehr isoliert ein Eingabewert für sich steht, sondern dass ich die Bedeutung eines Eingabewertes in Abhängigkeit der anderen Werte noch lerne einzuschätzen.
+
+Das ist ja gerade noch das Wichtige.
+
+Weil ansonsten wäre es eine relativ einfache Merkmalsauswahl, die man ja in vielen anderen Bereichen auch schon hat.
+
+Man muss aber auch sehen, dass im Endeffekt diese, deswegen so bahnbrechend ist auch die Einleitung, ob sich dadurch alles verändert.
+
+Man muss sehen, dass also Modelle, die auf diese Attention-Mechanismen zurückgreifen, wahnsinnig gute Ergebnisse liefern und dann ganz schön den Schub nochmal reingebracht haben in der Anwendung, in der Sprachverarbeitung, in der Übersetzung, aber auch in zum Beispiel Zusammenfassung von Texten.
+
+Klingt so ein bisschen wie die eierlegende Wollmilchsau.
+
+Das Interessante ist, die Performance ist irgendwo besser, aber interessant ist auch, dass sie in vielen Fällen sogar leichter und schneller zu trainieren sind.
+
+Also heißt nicht, dass es super schnell geht, es ist schon noch sehr sehr aufwendig, man braucht schon viel Rechenleistung, aber im Vergleich zu anderen Sequenzmodellierungstechniken, so wie RNNs und LSTMs, hat es durchaus schon Vorteile, aufgrund der Möglichkeit, Sachen besser zu parallelisieren.
+
+insbesondere aufgrund dieser tatsache denn wir hatten gesehen beim lstm hat man so als schwäche gekennzeichnet dass man die eingabe ja nach und nach dahin durchschiebt während man das ist jetzt wieder notwendigkeit bei dem.
+
+Ja, Attention Mechanismen, dass ich halt alle Positionen im Satz gleichermaßen im Zugriff haben muss.
+
+Es ist nicht so, dass ich jetzt irgendwie warte, bis irgendwie 20 Wörter oder ein ganzer Satz irgendwie hindurchgeschoben worden und dann weiß ich irgendwie, wie wichtig oder nicht wichtig ein Teil am Anfang war oder wie stark ich das vergessen muss, sondern ich habe alle, alle Aspekte dieses Satzes sofort, wahlfrei sozusagen, Random Access im Zugriff.
+
+Und dazu brauche ich die natürlich auch alle gleichzeitig.
+
+damit lösen wir uns wieder von dieser zeitüberlegung mit dem t1 t2 in der sequenz ein bisschen deshalb besser zu parallelisieren was wir allerdings beim nächsten mal ansprechen müssten es sind dann solche aspekte wie wie gehe ich jetzt aber mit der unterschiedlichen länge von eingangssätzen um wenn ich jetzt irgendwie alles auf einmal berücksichtigen will brauche ich da nicht wieder eine feste länge
+
+Aber bevor wir da hinkommen und den Ausblick machen, würde ich gerne einen Aspekt noch aufgreifen, das ich nämlich eigentlich super spannend finde.
+
+Wir haben ja immer die Diskussion, dass die neuronalen Netze eigentlich eine Blackbox sind, dass man sich eigentlich nicht wirklich erklären kann, was da passiert, weil man diese Hidden Layers nicht erkennen kann, sondern man muss eigentlich erwarten oder das entweder testen oder einfach sagen, okay, das ist so, das Netz kann das halt dann einfach.
+
+Und da gibt es ja die Bewegung der sogenannten explainable AI, dass man also sagt, von wegen, dass man neuronale Netze ja irgendwie besser verstehen möchte.
+
+Und dann versucht man Mechanismen, auch wieder Algorithmen zu entwickeln oder anzuwenden, um zu erklären, was das Netz eigentlich tut.
+
+Und es gibt ja Anwendungsfälle, da ist es absolut notwendig.
+
+Also wenn ich an so Dinge denke, dass man im Bankbereich vielleicht einen Kredit zugesagt bekommt oder abgelehnt bekommt, dann möchte man ja vielleicht auch wissen, warum.
+
+Und nicht einfach nur
+
+Die KI hat entschieden, ich kriege keinen Kredit oder ich kriege einen.
+
+Und in dem Kontext gab es ein sehr spannendes Paper von Marco Tullio-Riberio, auch aus 2016, als gerade diese Attention-Based-Mechanismen so richtig am Brodeln waren durch die spannenden Veröffentlichungen.
+
+Das hieß, Why should I trust you?
+
+Explaining the prediction of any classifier.
+
+Und die Idee in dem Paper war, dass man sagt, man nimmt die Attention-Mechanismen, um das auch für Explainability, also für die Erklärbarkeit von Modellen zu verwenden.
+
+Und wenn man sich das so bildlich vorstellt, dann kann man ja sagen, wir haben zum Beispiel ein Bild, da gibt es einen Classifier, der unterscheiden soll zwischen einem Wolf und einem Hund.
+
+Und dann kommt sozusagen ein Bild, wo ein Wolf auf Schnee ist und der Classifier sagt, das ist ein Hund.
+
+Und da möchte man herausfinden, warum ist das?
+
+Und wenn das ein attention-based-Netz war, dann kann man sehen, auf was hat er denn seinen Fokus gerichtet und kann dann vielleicht erkennen, dass man sagt, okay, immer dann, wenn Schnee auf dem Bild ist, hat er den Fokus auf den Hund und den Schnee gelegt und meint halt, dass immer, wenn Schnee drauf ist, es ein Hund ist.
+
+Und damit kann ich auch komplexe Modelle
+
+erklärbar machen warum er zu einer entscheidung kam oder nicht also wir können diese mechanismen auch verwenden um ein bisschen mehr transparenz in diese netze hinein zu bekommen genau das kann man kann sehr schön visualisieren welche teile der eingabe besonders relevant waren wo der fokus drauf lag,
+
+Und wenn es natürlich jetzt Bilder sind, kann man die entsprechend kennzeichnen, aber selbst wenn es Sätze oder Wörter sind, kann man halt sagen, welche Aspekte, welche Wörter jetzt vielleicht besonders wichtig waren, um diese Aussage abzuleiten.
+
+Und dann kommen wir letztendlich als Ausblicküberleitung vielleicht für das nächste Thema, wie fließen jetzt diese Attention-Mechanismen,
+
+in der sehr bekannten Transformer-Architektur ein.
+
+Da werden wir also solche Sachen diskutieren müssen, wie reicht eine Form der Aufmerksamkeit oder gibt es nicht eigentlich mehrere Aspekte, so ein Multi-Head-Attention, also dass mehrere Aufmerksamkeitsstufen gleichzeitig irgendwo da sind.
+
+Könnte man sich so vorstellen, wenn ich einen Satz habe, dass ich automatisch erkenne, vielleicht, was ist das Subjekt, was ist das Prädikat, was sind Objekte, ohne dass ich das explizit modellieren muss.
+
+Das ist so ein netzes, aber automatisch lernt, dass es wichtig ist, vielleicht für Übersetzungen sowas zu erkennen.
+
+Und das kann man sich, um das aufzugreifen, was du gesagt hast, hinterher auch sehr schön anschauen.
+
+Und sehen, welche Wörter, welche Satzteile sind denn jetzt vielleicht besonders bei bestimmten Aufmerksamkeitsstufen irgendwo zum Einsatz gekommen.
+
+Und das kann man dann ganz, ganz gut verstehen, wenn es nicht zu groß ist, dass wir es da visualisieren.
+
+Und das andere, was wir aber auch denn aufgreifen müssen, ist, dass haben wir ja sehr stark Kontext nur in Abhängigkeit von Ähnlichkeit, von Wörtern zueinander berücksichtigt.
+
+Man kann aber auch diesen Kontext oder die Art und Weise, wie ich meinen Fokus setze, ja ganz anders setzen.
+
+Ich kann ihn wieder in Abhängigkeit der Position in einem Satz bestimmen.
+
+Man kennt sowas in ganz einfacher Form schon viel, viel älter bei der Zeitreihenbetrachtung.
+
+Wenn ich so ein Moving Window habe, das ist eigentlich ein Attention Mechanismus, der den Fokus immer auf die letzten Punkte oder die Punkte meiner Umgebung in meiner Zeitreihe setzt.
+
+Das ist eigentlich eine einfache Form von Aufmerksamkeitssteuerung, indem ich nur die Punkte anschaue, die in meiner Umgebung sind.
+
+Und wir werden dann sehen, wie sich solche Sachen vielleicht auch wieder kombinieren lassen.
+
+Genau, also es wird auch wirklich spannend, weil wir dann in der nächsten Folge mit unserer kleinen Miniserie dann langsam am Ende sind, weil wir dann die Transformers uns noch anschauen.
+
+Und da greifen wir eigentlich die einzelnen Aspekte der vorherigen Serien auf.
+
+Also wenn Sie Lust haben, hören Sie sich die vorige auch nochmal an.
+
+Aber wir freuen uns natürlich, wenn Sie dann das nächste Mal auch wieder dabei sind, wenn wir über Transformers reden und damit die Miniserie abschließen.
+
+Vielen Dank fürs Zuhören.
+
+Danke, tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

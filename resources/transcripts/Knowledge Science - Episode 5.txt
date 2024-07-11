@@ -1,0 +1,565 @@
+ Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen zu unserer fünften episode sind schon in der fünften episode kassen ist schon toll diese woche glaube ich haben einen ganz spannenden podcast weil wir dieses mal so richtig in die anwendung reingehen.
+
+Wir haben ja die letzten Episoden so ein bisschen Beispiele gebracht mit dem GPT-3-Netz, das sehr spannend ist, rein von der Technologie her und von den Möglichkeiten her, aber auch so kritische Fragen aufbringt wie ethische Fragen oder ähnliches.
+
+Haben uns dann überlegt, wo wir das anwenden können.
+
+Und diese Woche haben wir tatsächlich endlich einen echten Interviewgast, also nicht eine künstliche Intelligenz, sondern einen echten Interviewgast, den Herrn Bäumler von Davitas AI, die einen Sprachassistenten für Kunden anfragen.
+
+entwickeln, herstellen, vermarkten.
+
+Das sieht auch auf der Internetseite sehr schön aus, da heißt es dann so schön, Vitas befreit Sie von den klingelnden Telefonen, es übernimmt die Standardanfragen und verhält sich im Gespräch fast wie ein Mensch.
+
+Haben wir letzte Woche ja auch gesagt, Herr Bäumler, mit dem GBT3, es verhält sich auch wie ein Mensch.
+
+Ich bin wirklich gespannt, was Sie heute so erzählen.
+
+Es ist auch interessant, wenn man sich ihren Lebenslauf anschaut.
+
+Sie haben ja an der Technischen Hochschule Georg Simon Ohm mit Schwerpunkt Finance Wirtschaftsinformalorganisation BWL studiert.
+
+Und da stellt sich natürlich auch gleich die Frage, warum geht man dann in so eine Richtung?
+
+Also herzlich willkommen.
+
+Ja, vielen Dank.
+
+Ja, wie kommt man in so eine Richtung?
+
+Ich war immer schon in die Tech-Richtung interessiert.
+
+Ich habe auch vorher Informatiker gelernt vor dem reinen BWL-Studium.
+
+Ich habe nur gemerkt, dass ich dieses reine Coden, das ist nicht so meine Welt.
+
+Aber der Tech-Bezug jetzt als BWLer in einem Startup ist doch perfekt für mich.
+
+Man hat mit der Technik zu tun, aber man muss sie nicht unbedingt gleich selber bauen.
+
+Spannend, spannend.
+
+Dann sind Sie aber auch nicht allein, oder?
+
+Genau, wir sind zu dritt.
+
+Ich bin auch der, der als letztes dazugekommen ist.
+
+Meine zwei Mitgründer René Straub und Thomas Abend haben da das Unternehmen gegründet oder auch die Idee gehabt.
+
+Die haben beide Informatik studiert und sich darüber, über dieses Interesse, Deep Learning, Machine Learning, dann kennengelernt und zusammen
+
+evaluiert, wo könnte man sich da selbstständig machen in dieser Richtung, was würde da Sinn machen und wo geht der Markt hin in der nächsten Zeit und haben da dann gesagt, okay Sprachassistenten ist was, da kennen sie sich aus, da können sie was draus bauen und haben das dann zusammen gestartet und in den ersten Monaten mich dann kennengelernt, als sie dann auch gemerkt haben, so ein Unternehmen hat auch einen BWL-Anteil, den sie dann halt auch so zu zweit nicht unbedingt stemmen könnten, da ist es dann ganz gut, noch einen Dritten im Bunde zu haben,
+
+Und ja, wir haben uns da zufällig eigentlich kennengelernt, ganz gut verstanden.
+
+Ich fand die Idee auch cool und bin dann in dem selben Jahr noch dazugestoßen in Vollzeit.
+
+Das ist wirklich eine ganz tolle Idee, die Sie da haben.
+
+Vielleicht sollten wir an dieser Stelle einfach uns mal ein kleines Beispiel anhören.
+
+Reservierung.
+
+In Ordnung.
+
+Wie viele Plätze möchten Sie reservieren?
+
+Ja, zwei bis drei.
+
+Bei mir ist es noch nicht sicher, ob ich kommen kann.
+
+Wenn mein Englisch ein Fieber hat, dann müsste ich eventuell einschreiten.
+
+Auf jeden Fall ein Tisch für zwei Personen, vielleicht auch drei.
+
+Morgenmittag um zwölf Uhr.
+
+Alles klar, dann trage ich sie mit zwei Personen für morgen um zwölf Uhr ein.
+
+Ja, passt das?
+
+Zwei bis drei Personen.
+
+Gut, dann trage ich sie mit drei Personen für morgen um 12 Uhr ein.
+
+Passt das?
+
+Das passt, ja.
+
+Ja, das ist klasse, wie gut das System schon funktioniert.
+
+Also die Reservierung, allgemein vielleicht die Durchführung von Terminreservierungen, eine wunderbare Anwendung.
+
+Aber diese Technologie könnte ja auch für ganz andere Branchen interessant sein.
+
+Haben Sie dann da schon weitere Pläne?
+
+Absolut.
+
+Für uns war ja wirklich die Gastro-Branche einfach unser MVP, also so dieser Ansatz eines Minimumprodukts, weil da der Standardfall einfach sehr, sehr schön gegeben ist.
+
+Die Leute, natürlich jetzt mit Corona, es war noch vor Corona, als wir da angefangen haben, jetzt ist Gastro natürlich extrem schlecht.
+
+oder schwierig, ein schwieriges Beispiel, aber der Anwendungsfall ist sehr klar, weil neun von zehn Leuten, die in einem Restaurant anrufen, wenn jetzt sogar mehr, wollen einfach einen Tisch reservieren und es geht immer im selben Muster.
+
+Man braucht Namen, Datum, Uhrzeit und die Anzahl der Personen und das macht es einfach sehr schön, um damit als junges Unternehmen, als kleines Team, erstmal einen Use Case zu schaffen und zu schauen, wie funktioniert das, was man sich ausgedacht hat.
+
+So hat es dann auch ganz gut hingehauen.
+
+Im Februar 2020 sind wir dann an den Markt gegangen damit, hatten sechs Wochen, lief es ganz gut, bevor dann der Markt weg war und erstmal der erste Lockdown uns da eine Bremse reingehauen hat.
+
+Wir hatten aber auch vorher schon darüber nachgedacht, was sind weitere Anwendungsgebiete.
+
+Es war immer das Ziel, sich von dort aus dann auch weiterzuentwickeln.
+
+Und das ging ein bisschen schneller als gedacht durch die Corona-Situation, hat uns aber eben auch dazu gebracht, sehr schnell umzuschalten.
+
+Wir sind da jetzt auch im Bereich von Hotlines unterwegs.
+
+Wir waren zum Beispiel gerade am Anfang, sind aber auch immer noch im Einsatz dort, bei der Kassenärztlichen Bundesvereinigung oder der 116117 und haben da gerade zu Beginn des ersten Lockdowns einfach Standardfragen rund um Corona beantwortet.
+
+weil da sehr, sehr viele Leute angerufen haben, die nicht das Internet nutzen.
+
+Gerade diese Zielgruppe, die sagt, diese Antworten findet man auch im Internet, aber die rufen lieber ihre Hotline an, da wissen sie, dass sie sich darauf verlassen können.
+
+Das war dann ein sehr schöner zweiter Anwendungsfall für uns.
+
+Und inzwischen sind wir auch mit der Energie in Nürnberg in einem Projekt für den Kundenservice, Abschlagsänderung und solche Dinge können wir da machen.
+
+Auch eine kleine Tarifberatung.
+
+Wir sind inzwischen in einem Hotel, wo wir die Rezeption unterstützen, wenn es darum geht, die Leute in die richtige Stelle weiterzuleiten.
+
+Also da gibt es viele Anwendungsfälle, wie das jetzt danach auch weitergehen kann.
+
+Aber ich glaube man muss da glaube ich nochmal einhaken, wenn ich sie richtig verstanden habe, auch im Vorgespräch und das was ich schon gesehen habe von ihrem Produkt, es ist ja nicht so ein Sprachassistent im Sinne von drücken sie eins, dann machen sie das, drücken sie zwei, dann das und man hämmert dann in das Telefon rein, bis man dann endlich jemanden am Apparat hat mit dem man reden kann, sondern ich glaube es läuft ein bisschen anders oder?
+
+Können sie da was dazu sagen?
+
+Das ist ja das, was uns eigentlich auch motiviert hat von Anfang an, dass wir sagen, wir wollen das nicht mehr haben.
+
+Wir wollen nicht diese Systeme, die dem Anrufer oder der Anruferin aufzwingen, wie sie kommunizieren müssen mit dem System, wie man es anwendet, sondern dass man einfach intuitiv ganz normal sprechen kann wie mit einem Menschen.
+
+Und das ist das, was uns auch extrem wichtig ist.
+
+Ich kann in ganzen Sätzen reden, ich kann mehrere Informationen auf einmal liefern.
+
+und das in jedem unserer Anwendungsfälle, dass eben nicht dieses lineare A, B, C, das sind die Möglichkeiten, danach hat man wieder A, B, C als Möglichkeiten, sondern es soll sich einfach wie ein ganz normales Gespräch anfühlen.
+
+Man kann Zwischenfragen stellen, man kann Gegenfragen stellen, auch wenn das System eigentlich nach der Uhrzeit fragt, man fragt aber erstmal nach den Öffnungszeiten, werden erstmal die Öffnungszeiten genannt und danach führt das System wieder zurück zu der Frage, wann möchte man denn jetzt vorbeikommen.
+
+Hatten sie schon mal einen Kunden, der mit dem System sich einfach unterhalten hat?
+
+Also wenn das so eine natürliche Gesprächsführung hat, also nicht nur sein Anliegen, sondern vielleicht auch seine Sorgen oder seine momentanen Ereignisse berichtet hat.
+
+Da reagiert das System natürlich nicht sehr tiefgreifend drauf.
+
+Man kann sich jetzt nicht eine halbe Stunde lang über die aktuelle Lage unterhalten.
+
+Das wäre jetzt auch meine nächste Frage gewesen.
+
+Wie reagiert denn das System, wenn es sich unsicher bezüglich der Absicht des Anrufers oder der Anruferin ist?
+
+Fragt das System dann nach?
+
+Genau, also der erste Schritt ist immer erst mal das Nachfragen, dass man sagt, oh, das habe ich jetzt gerade nicht verstanden.
+
+Das kann bei einem Menschen am anderen Ende ja genauso mal passieren.
+
+Und wenn das aber wiederholt vorkommt oder wenn wir auch merken, dass dieselbe Frage, also nach demselben Input wie zum Beispiel im Datum mehrmals gefragt werden muss, dann bieten wir so eine Eskalation an, wie wir es nennen.
+
+Das heißt, wir reagieren dann
+
+indem wir entweder zum eigentlichen Kunden weiterleiten oder eine Audioaufnahme anbieten, dass quasi dann ein Mensch darauf reagiert, je nach Öffnungszeiten oder je nach Uhrzeit.
+
+Das ist eben der Unterschied.
+
+Um drei Uhr nachts leiten wir jetzt nicht in ein Restaurant weiter, wenn wir wissen, da ist sowieso zu, da ist keiner da.
+
+Dann ist das quasi wie so eine Anrufbeantworterfunktion.
+
+Aber das immer nur in dem Moment, wenn das System wirklich gemerkt hat, es kann nicht weiterhelfen.
+
+schon spannend also wenn man dann überlegt was da auch an technologie dahinter steckt das hört sich ja so einfach an zu sagen man hat die sprache da ruft man an und das system soll darauf reagieren aber wir haben ja ganz viele komponenten die wir auch in den letzten episoden immer wieder genannt haben also natural language processing und understanding dazu, dann haben wir das thema der sprache die überführt werden muss erstmal in text also speech to text, dann man spricht ja glaube ich so von intense und absichten ich glaube da kennen sie sich viel besser aus als ich,
+
+Aber da steckt ja viel dazu.
+
+Können Sie da so ein bisschen was dazu sagen?
+
+Ja, also die groben Komponenten, die fachlichen Komponenten, wenn man so möchte, sind eben das, dass man den Anruf ins Internet hebt, also über so ein SIP-Trunking und dann eben die Sprache in Textumwandel, genau wie Sie gesagt haben.
+
+Das wird dann interpretiert.
+
+Was möchte derjenige, was möchte der Anrufer sagen?
+
+Das ist eben
+
+Gerade das Entscheidende, dass man nicht nur nach Schlüsselwörtern sucht oder nach einer bestimmten, man kann jetzt Rechnung sagen, weil es um Rechnung geht, sondern man kann eben auch in einem ganzen Satz reden, ohne dass ein bestimmtes Schlüsselwort fällt.
+
+Das wird dann in diesem NLP-Teil erledigt.
+
+Dann ist natürlich das Backend, die Anbindung an den Kalender, an ein Ticketsystem, an eine Datenbank, wo dann die Daten eben auch abgeprüft oder überprüft werden können oder ebenfalls eben auch eingetragen.
+
+Und dann natürlich Text-to-Speech, damit das System auch dementsprechend wieder antworten kann.
+
+Also wir generieren den Satz, der geantwortet werden soll, und das wird wieder in Sprache umgewandelt und kommt dann eben beim Anrufer oder bei der Anruferin dann dementsprechend auch wieder an.
+
+Das sind so diese fachlichen Komponenten, die quasi in diesen wenigen Sekunden durchlaufen werden, damit das System dann auch nicht solche Verzögerungen hat, dass es sich nicht natürlich anfühlt.
+
+Ein wesentlicher Bestandteil des Systems ist die dynamische Gesprächsführung.
+
+Wie kommt das System mit Kontextwechseln klar?
+
+Wenn ein Anrufer bezüglich seiner Wünsche hin- und herspringt, merkt das System das?
+
+vielleicht direkt wieder, was macht das?
+
+In gewissen Grenzen, also natürlich nicht komplett, aber man kann so viele Zwischenfragen stellen, wie man möchte.
+
+Man kann auch dementsprechend hin und her springen, doch eine Stunde früher oder ich möchte jetzt auch einen anderen Tarif haben oder ich habe doch nochmal eine Frage zu den Risikogebieten, je nachdem in welchem Use Case man sich befindet.
+
+Und innerhalb dieser Grenzen ist das System natürlich sehr geduldig.
+
+aber eben auch immer nur für diesen einen Anwendungsfall trainiert.
+
+Und das macht es ja auch für uns dann möglich, mit relativ wenig Daten sehr gute Ergebnisse zu erzielen, im Normalfall, weil wir uns eben auf eine gewisse Domäne spezialisieren, weil wir sagen, okay, jetzt wissen wir, Leute, die hier anrufen, da geht es um die Gastronomie, hier geht es um Corona, hier geht es um Energie und nicht um irgendwelche anderen Sachen, womit ja andere Sprachassistenten, die man zu Hause hat, die ja quasi mit allem rechnen müssen, die wissen am Anfang gar nicht,
+
+Geht es jetzt darum, die Uhrzeit zu erfahren, die Heizkörper hochzudrehen oder einen Wecker zu stellen?
+
+Da wissen wir ja schon so grob, in welcher Domäne wir uns befinden.
+
+Also in einer vorgegebenen Domäne, so wie Sie es schildern, mit bekannten Intentionen der Anrufer und Anruferinnen, könnte man ja ganz einfach mit ein paar vordefinierten Regeln die Gesprächsführung steuern.
+
+So wie ich es verstanden habe, nutzen Sie aber auch KI-Technologie zur Steuerung der dynamischen Gesprächsführung.
+
+Können Sie uns dazu noch mehr erzählen?
+
+Also im Grunde sucht das System mit dem Satz, der erkannt wurde, nach einem passenden Intent, der eben hinterlegt ist.
+
+Das heißt, wir haben zum Beispiel den Anrufer, der fragt nach oder möchte ein Datum oder sagt ein Datum.
+
+Geht es jetzt darum, einen Tisch zu reservieren?
+
+Ja, nein, vielleicht.
+
+Das ist so das, was dann quasi nach Wahrscheinlichkeit gesucht wird.
+
+Wo könnte das passen?
+
+Der Vorteil dabei ist, dass man eben nicht bestimmte festgelegte Sachen hat, die getroffen werden müssen.
+
+Also man muss bei uns nicht unbedingt ja sagen, sondern es geht auch mit
+
+Jawohl, auf jeden Fall, selbstverständlich.
+
+Also all diese positiven Sachen sind alle dementsprechend hinterlegt und werden dann auch erkannt, selbst wenn sie noch nicht in den Trainingsdaten sind.
+
+Und gerade da fängt ja dann das Spannende an, dass Sätze und Aussagen erkannt werden, die man vorher in den Trainingsdaten nie hatte.
+
+Und es funktioniert trotzdem, weil sie von der Wahrscheinlich-, oder weil sie von der Art her nah genug dran sind an den Trainingsdaten und das System daher trotzdem weiß, wie es damit umgehen kann.
+
+Lernt denn das System auch irgendwie mit?
+
+Also etwa, wenn es merkt, dass die Anruferin oder der Anrufer unzufrieden ist mit einer Antwort oder wenn die Antwort nicht passt?
+
+Nicht im Gespräch selber.
+
+Das ist jetzt bei uns nicht der Fall.
+
+Aber wir lernen natürlich aus den anonymisierten Daten, die wir haben durch die Anrufe und über Super Voiced Learning.
+
+Das ist momentan der Hauptansatz.
+
+Das heißt, wir labeln die Daten nach.
+
+Es wird dann ein
+
+ein kleiner Teil eines Satzes zum Beispiel wiedergegeben und es wird gesagt, das habe ich jetzt als positiv erkannt und dann können wir sagen, stimmt oder stimmt nicht und bei stimmt nicht, was wäre es denn gewesen?
+
+Das war zum Beispiel kein Ja, sondern ein Nein oder das war Ironie, das ist immer ganz schwierig, wenn die Leute dann damit natürlich auch anfangen, dass man eben aus dem Kontext raus auch weiß, okay, das war jetzt nicht so gemeint.
+
+Und dann spielt man das quasi wieder zurück als neue Trainingsdaten und kann das System so Stück für Stück immer weiter verbessern.
+
+Woran wir jetzt gerade sind, ist auch so eine Mischung, dass wir auch Topic Modeling haben, bei dem das System auch erkennt, was es noch nicht kann.
+
+Das heißt, es gibt einem dann am Ende, wenn sich Cluster gebildet haben, also größere Gruppen von Anrufen, wo immer wieder nach derselben Sache gefragt wurde, mit der das System nicht klargekommen ist, dass das System das einem ausgibt und sagt,
+
+Hier habe ich jetzt eine Gruppe von Sachen, die sind irgendwie ähnlich, aber ich weiß nicht, was es ist.
+
+Was ist es denn?
+
+Und dann kann man im System sagen, ja, da fragt jetzt jemand zum Beispiel, ob er Tiere mitbringen darf.
+
+Und dann kann man dementsprechend eben auch eine Antwort dafür eintrainieren.
+
+Also das ist jetzt so ein Mischmodell, wo wir hingehen möchten.
+
+Das heißt denn also, dass die neuen Intents quasi dem System hinzugefügt werden, sodass es in zukünftigen Situationen besser oder überhaupt damit umgehen kann?
+
+Jetzt überlege ich gerade bei der laufenden Anwendung.
+
+Entstehen ja ständig neue Dialoge, somit neue Daten, neue Trainingsdaten.
+
+Ist denn die Nutzung dieser Daten auf das eine Unternehmen begrenzt, was ein System gerade anwendet oder lässt sich unternehmensübergreifend davon profitieren?
+
+Technisch kann man das auch übergreifend machen.
+
+Beschränkt wird es dann meistens durch die Verträge, die man hat.
+
+Ob man sagt, es darf verwendet werden oder nicht.
+
+Aber solche Dinge, beispielsweise wie ein Positiv- oder Negativ-Zustimmung, das sind so Sachen, die man meistens, es gibt auch Ausnahmen mit bestimmten Kundenverträgen, über alles verwenden kann.
+
+Da profitiert ja auch jeder davon, wenn quasi so Standardsachen dann wirklich überall verbessert werden und immer wieder besser verstanden werden.
+
+Heißt aber auch, dass sie praktisch für die Kunden spezifisch, also erstmal in die Branche und auch vielleicht auch das Produkt oder halt den Markt praktisch einen eigenen Assistenten eigentlich anlernen, wenn ich das richtig verstehe, oder?
+
+Genau, also wir haben so eine Grundstruktur, die schon steht mit ein paar, mit diesen Standardantwortmöglichkeiten und Intents, aber ansonsten wird pro Branche dann ein eigener Assistent trainiert, genau.
+
+Und dann dementsprechend betreuen sie das über die gesamte Zeit und tun das immer wieder verbessern und die Kunden werden immer glücklicher.
+
+Genau, das ist der Plan, genau.
+
+Da ist halt für uns so diese Unterscheidung bei einer Branche wie der Gastronomie, da kann man wirklich sagen, man hat einen Assistenten, den man dann vielen kleinen Betrieben zur Verfügung stellt, was ja gerade auch der Ansatz bei uns ist.
+
+Wir möchten, dass diese KI-Lösung
+
+diese innovative Lösung eben auch dem einzelnen kleinen Gastronom zur Verfügung steht, der einzelnen kleinen Arztpraxis, die jetzt nicht sagt, ich habe ein Rechnungszentrum im Keller und möchte jetzt irgendwie ein fünfmonatiges Projekt starten, um jetzt auch meine eigene KI-Lösung zu haben, sondern wirklich als Software-as-a-Service, monatliches Abo, man kann sagen, ich will es haben, nächsten Monat will ich es nicht mehr haben, weil wir da
+
+nutzen können, dass sich einfach viele Gastronomen anmelden und wir eben einmal einen Assistenten haben, der dann bloß noch konfiguriert wird.
+
+Das kann man natürlich machen, Öffnungszeiten, was ist verfügbar, was nicht.
+
+Das ist natürlich alles individuell, aber von Training her können wir das nutzen.
+
+Und ansonsten brauchen wir halt diesen Sprung auf ein großes Unternehmen, das eben diese Last an vielen Anrufen selber mitbringt.
+
+Und die braucht man natürlich immer.
+
+Wenn da irgendwie zehn Leute im Monat anrufen, dann hilft eine KI natürlich auch nicht viel weiter.
+
+Ja, da ist wahrscheinlich der Aufwand, dann sich darüber Gedanken zu machen, viel größer als gerne mit den Menschen zu reden, sozusagen.
+
+Das ist eine Abwägung an der Stelle.
+
+Aber sehen Sie, also kriegen Sie das mit, wenn Sie jetzt zum Beispiel, jetzt in letzter Zeit wahrscheinlich weniger, aber wenn Sie mit anderen Branchen unterwegs sind, so wie Arztpraxen oder ähnliches, dass da vielleicht auch noch eine gewisse Hemmung da ist oder ist die gar nicht da bei den Unternehmen?
+
+Die ist unterschiedlich.
+
+Also bei vielen ist das Thema einfach groß, weil die, die wirklich diesen Schmerz haben mit vielen Anrufen, mit denen sie klarkommen müssen und merken, dass sie darunter einfach auch ihre Servicequalität leidet, weil sie das gar nicht stemmen können, da ist es durchaus so, dass sie sagen, die sind da lösungsorientiert und sagen, das ist genau das, was uns hilft.
+
+Und im Endeffekt hat es auch einen positiven Einfluss, wir sind erreichbarer, die Leute vor Ort sind, also die Angestellten vor Ort sind frei für ihre Tätigkeiten, die sie eigentlich tun sollen.
+
+Der Klassiker ist ja, was man normalerweise kennt, beim Friseur, man sitzt da und mindestens einmal läuft die Friseurin oder der Friseur weg, weil das Telefon klingelt, wo man so richtig merkt,
+
+Das wäre jetzt schön, wenn der nicht weglaufen würde oder wenn die nicht weglaufen würde, sondern halt das Telefon nicht klingeln würde.
+
+Und sowas hat man dann bei Arztpraxen natürlich auch, dass es Leute gibt, die speziell eingestellt sind, um ans Telefon zu gehen.
+
+Meistens haben die aber eine recht gute medizinische Ausbildung und könnten auch Blut abnehmen, könnten auch ihre eigentliche Tätigkeit ausführen, für die sie halt auch ausgebildet sind und nicht unbedingt den ganzen Tag nur ans Telefon gehen und sagen, ja, morgen sind wir leider schon ausgebucht.
+
+Wenn wir gerade beim Thema Akzeptanz sind, da würde mich mal interessieren, oder anders, ich formuliere es als Hypothese.
+
+Viele Menschen fühlen sich mit einem System vertrauter und akzeptieren es dann auch eher, wenn es denselben Dialekt redet.
+
+Geht die Entwicklung denn auch dahin, dass sie den Dialekt eines Anrufers oder einer Anruferin erkennen und das System dann die Sprachsynthetisierung dahingehend anpasst?
+
+Die Ideen sind schon da.
+
+Die Kapazität war es bisher noch nicht.
+
+Wohin wir da gehen wollen, ist auf jeden Fall, dass wir eigene Stimmen kreieren.
+
+Da haben wir jetzt auch eine Kooperation, ein Studentenprojekt.
+
+Genau, da wollen wir eben hin, dass wir sagen können, wir können diese Stimme dementsprechend etwas anpassen, dass es sich aber dann wirklich im Gespräch darauf anpasst.
+
+Da sind so ein paar Ideen schon da, dass man die Sprechgeschwindigkeit oder die Pausensetzung erkennt.
+
+aufgrund dessen, dass man ja sowieso die Sprache erkennen muss und dementsprechend sich dann anpasst.
+
+Dass jemand, der sehr schnell spricht am Telefon, dem kann man im Normalfall auch relativ schnell antworten, während jemand Älteres zum Beispiel, die eher langsamer sprechen, auch gerne so hätten, dass sich das System dementsprechend anpasst.
+
+Das sind aber bisher Ideen und Evaluationen.
+
+Da sind wir jetzt gerade dabei, das zu starten.
+
+Wir wachsen ja erst noch als kleine Unternehmen.
+
+Das ist sehr spannend.
+
+Ich denke auch, dass die Anpassbarkeit eines solchen Systems für die Akzeptanz sehr wichtig ist.
+
+Hier könnte man zum Beispiel anhand der Begrüßung den Dialekt einer Anruferin oder eines Anrufers erkennen und die Sprachsynthetisierung für den weiteren Verlauf des Gesprächs entsprechend anpassen.
+
+Das wäre auf jeden Fall eine sehr schöne Weiterentwicklung.
+
+Ja, auf jeden Fall.
+
+Das wäre mittelfristig, langfristig auf jeden Fall der Plan.
+
+Aktuell ist es noch einheitlich.
+
+Ich bin wirklich auch gespannt, weil wir machen ja zusammen das Projekt an der Hochschule, deswegen das ist ein sehr spannendes Projekt, aber man muss ja auch ganz ehrlich sagen, die Stimme, die technisch sich anhört, da ist man immer ein bisschen in der Abwehrhaltung und denkt sich, schon wieder so eine Maschine.
+
+Ja, das stimmt.
+
+Und deswegen ist das ein wichtiger Punkt bei uns, dem wir jetzt auch mehr Aufmerksamkeit widmen möchten.
+
+Und wir sind da mindestens genauso gespannt.
+
+Das soll die Grundlage sein, dass es wirklich dann bei Vitas auch die Möglichkeit gibt, hier individueller sich die Stimme zu buchen, die eben bei all dieser technischen Raffinesse das Frontend quasi ist am Telefon, dass man eben auch weiß, da kann so viel verarbeitet werden im Hintergrund, wie man möchte.
+
+Aber was dann entscheidend ist, ist, wie klingt das Ganze?
+
+Also da stimme ich Ihnen vorhin ganz zu.
+
+Denken Sie über so Dinge nach wie die Klonen der Stimmen des Kunden?
+
+Also dass man sagt, man nimmt Stimmen, die der Kunde sonst so gewöhnt ist?
+
+Also die Frage oder der Punkt, es ist sehr spannend, gerade aus Sicht natürlich innovatives Unternehmen.
+
+Wir sind alle Tech-Begeisterter, da ist das natürlich schon so eine gewisse Challenge, wo man sagt, das wäre eine coole Richtung.
+
+Ob es dann tatsächlich zum Einsatz kommt und dann auch gewollt ist, da bin ich persönlich noch sehr skeptisch.
+
+weil das System ja trotzdem Grenzen hat, in denen es sich unterhalten kann.
+
+Das heißt, in dem Moment, wo da jetzt die Stimme rangeht, die immer rangegangen ist, erwarte ich ja, mit dem kann ich vielleicht auch sagen, ich war ja gestern erst da.
+
+Wie war es denn gestern noch?
+
+Ging es noch lange?
+
+Oder irgendwie solche Sachen, die dann kommen, wo das System nichts damit anfangen kann.
+
+Und da glaube ich, dass es Probleme gibt in der tatsächlichen praktischen Anwendung.
+
+Was da eher spannend ist, ist, dass man sich zwar am Anfang als Sprachassistent vorstellt,
+
+oder das System sich so vorstellt.
+
+Das machen wir auch aktuell immer.
+
+Aber die Stimme halt einfach so natürlich ist, dass die Leute das vergessen.
+
+Nicht im Sinne von, dass es vergessen sollen, weil sie es nicht wissen dürfen, sondern dass sie einfach nicht drüber nachdenken, was sie sagen, sondern natürlich interagieren.
+
+Das ist ja das, wo wir hinkommen, was wir auch am besten verstehen.
+
+Und wir haben eher Probleme damit, dass die Leute ans Telefon gehen und dann so staccatumäßig uns irgendwelche kurzen Antworten hinwerfen.
+
+Wann würden sie denn vorbeikommen?
+
+Dienstag.
+
+Menschen würde ich sagen, Mensch, Dienstag 17.30 Uhr wäre am besten für uns.
+
+Und das könnten wir viel besser verstehen als so einen aus dem Kontext gerissenen Brocken, mit dem das System dann arbeiten muss.
+
+Und das ist eher so der Hintergrund auch einer natürlichen und menschlichen Stimme, wenn man so möchte, dass die Leute einfach auch dementsprechend reden.
+
+Es ist interessant, wie man das so falsch wahrnimmt eigentlich, dass man sozusagen als Anwender denkt, die Maschine kann mit dem Brocken mehr anfangen als mit dem ganzen Satz.
+
+Weil wir so gewohnt sind in Deutschland, weil wir natürlich jetzt schon ewig diese Systeme haben, die genau mit einem Wort klarkommen und damit den meisten noch gar nicht.
+
+Nicht klarkommend.
+
+Ja, genau.
+
+Nicht klarkommend, genau.
+
+Und ja, das ist genau das.
+
+Und da müssen wir uns ein bisschen in diese Richtung entwickeln, dass die Systeme jetzt deutlich besser sind.
+
+Wo sehen Sie denn noch die größten Herausforderungen, die so auf Sie zukommen, so technisch, betriebswirtschaftlich?
+
+Also in Deutschland auf jeden Fall immer das Thema Datenschutz.
+
+Das ist so ein großes Thema, das immer über allem schwebt.
+
+Wir haben da eine Kooperation mit einem Münchner Unternehmen, die uns da begleiten.
+
+Wir sind natürlich mit allem, was wir machen, DSGVO-konform.
+
+Aber das ist tatsächlich was, wo immer wieder mal das Thema aufkommt, vor allem
+
+in spezifischen Bereichen, je nach Branche dann auch, wo plötzlich Fragen gestellt werden, die bei den Menschen gar nicht gestellt werden.
+
+Jetzt, wenn ich irgendwo ein Unternehmen anrufe und die meine Daten hinterlegen, schreiben die das in neun von zehn Fällen wahrscheinlich auch in eine Cloud-Tool, in eine Software, und dann weiß ich auch nicht, wo meine Daten unterwegs sind.
+
+Ist es ein amerikanisches Tool, ist es ein deutsches Tool, wo liegen die Server?
+
+Und man fragt das einfach nicht.
+
+In dem Moment, wo aber eine Maschine nach diesen Daten fragt,
+
+ist plötzlich diese große Sache ja, was passiert denn mit meinen Daten?
+
+Aber eigentlich macht man genau dasselbe wie vorher, es ist nur einfach in einem anderen Bewusstsein.
+
+Das heißt, das ist eine große Sache, gerade in Deutschland, da sind die anderen Länder etwas entspannter und dadurch kommen sie auch schneller voran.
+
+Technisch ist es einfach das,
+
+die Leute immer besser zu verstehen.
+
+Es gibt natürlich immer noch so Momente und Ausnahmefälle, wo die Stimme irgendwie ein bisschen anders klingt, wo Hintergrundgeräusche sind, die das Ganze schwierig machen und wo das System dann einfach mal an den Punkt kommt, wo es nicht mehr weiterkommt, dementsprechend dann eskaliert, im Normalfall dann eben einfach an den Kunden weiterleitet.
+
+Das werden auch immer weniger Fälle, das können wir auch einfach ja schön messen, wie oft passiert das Ganze.
+
+Aber das ist was, was immer wieder spannend ist, weil immer wieder plötzlich
+
+noch schlechtere telefonqualität kommt die leute irgendwo mitten im wind stehen und man auch öfter mal den punkt kommt wo man sagt ich verstehe es als mensch auch nicht aber dann wird es der maschine vorgeworfen warum die maschine das jetzt nicht verstehen also das ist auf jeden fall noch so ein spannender bereich und dann natürlich die richtung immer mehr zu verstehen also dass ein assistent eben nicht
+
+nur diese Terminreservierung kann, sondern eben auch einfach noch zwölf Sachen, zwanzig Sachen, hundert Sachen links und rechts davon.
+
+Das ist natürlich was, wo man sich immer weiterentwickeln kann und wo wir auch immer weiter hin möchten.
+
+Also generischer werden.
+
+Genau, das einfach immer mehr wirklich automatisiert und ohne, dass sich nochmal ein Mensch von Seiten des Unternehmens damit beschäftigen muss.
+
+das wirklich autark komplett fallabschließend gelöst werden kann.
+
+Und am Ende plaudert das freundliche System dann stundenlang mit einer Anruferin und die Leitungen sind ewig belegt.
+
+Das wäre auch okay.
+
+Das hätte dann schon wieder menschliche Züge.
+
+Sehr gut.
+
+Das freut mich.
+
+Also ich glaube, da haben wir jetzt heute wirklich einen sehr, sehr schönen Einblick zu Ihrem Unternehmen bekommen, zu der VITAS-AI und mal wirklich einen tollen praktischen Anwendungsfall, den man auch selber erleben kann.
+
+Also man kann, glaube ich, bei Ihnen auf der Internetseite auch so einen Test mal machen, ins Oberrestaurant und da mal einen Tisch reservieren.
+
+Also die Zuhörer sind gerne aufgefordert, das auszuprobieren.
+
+Genau, VITAS.AI, das ist bloß mal wichtig bei unserer Domain, VITAS.AI.
+
+Ja wir würden es auch wieder in der in den text mit verlinken also in der beschreibung so dass man dann wer möchte da mal drauf schauen kann und dann wollen wir so in den nächsten wochen mal sehen was wir dann so als weitere themen machen oder kassen.
+
+Genau.
+
+Dann vielen dank für das interview und alles gute soweit.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

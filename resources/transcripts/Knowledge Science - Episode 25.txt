@@ -1,0 +1,703 @@
+ Hallo und herzlich willkommen.
+
+Kurz vor unserer Sommerpause von drei Wochen gehen wir heute auf Text-to-Speech-Modelle ein, erläutern die Funktionsweise und gehen im Speziellen auf das Modell Tacotron 2 ein.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Diese Woche wollen wir über Sprachmodelle sprechen.
+
+Letzte Woche haben wir ja schon ein bisschen so einen Ausblick gegeben.
+
+Wir haben ja über Assistenzsysteme gesprochen und haben darüber auch über Input und Output, also die Schnittstellen gesprochen.
+
+Jetzt sind wir da dann im Speziellen auch auf die Sprachmodelle gekommen.
+
+Wir haben gesagt, diese Woche würden wir das ein bisschen näher aufgreifen und dann mal ein bisschen auch einschauen, was ist denn eigentlich die Technik dahinter?
+
+Wie funktioniert das Ganze?
+
+Welche Probleme gibt es?
+
+Wir hatten ja letzte Woche schon so ein bisschen die Herausforderungen aufgezeigt, aber wir werden heute sicher nochmal aufgreifen und dann halt mal ein bisschen auch ein paar Beispiele zeigen.
+
+Du hast ja sehr schön letztes Mal schon Beispiele genannt, die schon über 200 Jahre alt sind und man versucht da wirklich mit Hardware sozusagen Sprache zu generieren.
+
+Unser Fokus heute natürlich auf der rein rechnergestützten Erzeugung von Sprache.
+
+Bildlich gesehen, wir haben Eingabe, also Text.
+
+beschriebenes Wort und wollen daraus die Sprachsignale, man könnte sagen, eine Sequenz von Welleninformationen, also wie man es in einer Wave-Datei hat, generieren, die man dann problemlos abspielen kann.
+
+Das ist auf der High-Level-Ebene unser Ziel.
+
+Und das Ganze jetzt mit modernen Modellen, Deep-Learning-Architekturen als Hauptfokus.
+
+Und trotzdem, bevor wir da hinkommen, würde ich aber gerne nochmal überlegen, wie man sich das so generell vorstellen kann.
+
+Viele Menschen unterteilen das so in zwei grobe Phasen.
+
+Das erste ist noch sehr, sehr textnah, dem Natural Language Processing zugeordnet, dass man versuchen könnte, entweder direkt, indem ich als Mensch anfange, da bestimmte zum Beispiel Feature-Engineering-Schritte einzubauen, oder indem ich das nach und nach den Modellen überlasse, das werden wir gleich sehen im Beispiel von Tachotron und Tachotron 2,
+
+wie ich halt bestimmte Merkmale aus den Texten extrahieren kann, die die Sprache, den Inhalt, die Art und Weise, wie es gesprochen werden sollte, irgendwo beschreiben.
+
+Das sagen wir gleich noch.
+
+Und der zweite Block ist dann tatsächlich so im Fokus der
+
+Man könnte sagen Digital Signal Processing, also diese Erzeugung der Signale entweder direkt oder, wie es die meisten machen, und das müssen wir ja heute auch ein bisschen erläutern, über die sogenannten Mell-Spektrogramme, also eine frequenzbasierte Darstellung der akustischen Signale letztendlich.
+
+Ja, das Interessante ist, du hast jetzt viele Dinge genannt.
+
+Du hast Signale genannt, du hast Mailspektrogramme genannt, du hast Transferieren genannt.
+
+Wenn wir jetzt so ein bisschen so Revue passieren lassen, die letzten 25 Wochen, sondern wir sind nämlich in der 25.
+
+Sendung heute, dann haben wir auch über Embeddings gesprochen, wir haben über Textrepräsentationen gesprochen.
+
+Und all diese Punkte, die wir eigentlich in den Wochen vorher schon hatten, die sind jetzt hier auch notwendig, weil du hattest ja gesagt, am Ende wollen wir ein sogenanntes Text-to-Speech-Modell haben.
+
+Das heißt, wir wollen Text eingeben und es soll eine natürliche Stimme rauskommen.
+
+Und die Qualitätsmerkmale einer Sprachsynthese, wie letzte Woche, heute vielleicht nochmal zur Wiederholung, sind ja, dass wir schöne Übergänge haben, also Silbenübergänge, die natürlich sind, dass wir eine gute Satzmelodie haben, dass man das gut verstehen kann, dass der Sprachrhythmus normal ist und dass wir natürlich auch
+
+schöne Pausen haben.
+
+Und das soll alles irgendwo aus dem Modell heraus generiert werden.
+
+Und jetzt würde ich ganz gern einen Begriff nochmal aufgreifen, weil für viele ist das natürlich, ich sage mal, auf der einen Seite haben wir Text und der Text muss irgendwie in so ein Netz rein, so ein neuronales Netz.
+
+Und dieses, wie kriegen wir das da rein, das sind ja unsere Repräsentationen, also was wir den Text repräsentieren in Zahlen, das ist das eine, indem wir zum Beispiel Embeddings verwenden, indem wir einfach Back-to-Words verwenden, also haben wir ja schon etliches erläutert.
+
+Und auf der anderen Seite hast du von Signalen gesprochen, das sind ja unsere Audiodateien, also das ist unser Ton.
+
+Und ich finde es ist nochmal wichtig, dass man sich das ein bisschen vorstellt, was so ein Signal eigentlich ist.
+
+Weil wir ja im Endeffekt unter dem Signal eine Variation von einer Menge von Kennzahlen sprechen, die einfach über die Zeit abgetragen wird.
+
+Und unter Audio ist es halt ganz speziell, da haben wir im Endeffekt, das was wir messen, ist eigentlich eine Luftdruckvariation.
+
+Und die wird über die Zeitachse einfach abgemessen.
+
+Und daraus erzeugen wir dann eine Darstellung, nämlich unsere Waveform, der Luftdruckveränderungen über die Zeit sozusagen.
+
+Und wie oft wir das messen, das ist unsere Sample Rate, das heißt also, es gibt ja die Aufnahmen, wo wir sagen, wir haben 16 Bit, das heißt, wir machen pro Sekunde 16.000 Messungen in der Veränderung von Luft zur Arbeit der Mikrofone, die digital arbeiten und Ähnliches.
+
+Und das ist unsere Waveform.
+
+Und was wir aber jetzt hier machen, und das ist das bei diesen ganzen TTS-Modellen, die bei DSD basieren, greift man sehr gerne weniger auf die reine Signaldarstellung, also diese Waveform, zu, sondern vielmehr auf die Repräsentation durch, wie du es schon gesagt hast, Spektrogramme.
+
+Das ist vor allem deswegen auch interessant, weil wir hier auch in der Architektur sehr viele Netze verwenden oder Netztypen verwenden, wie zum Beispiel sogenannte Compositional Netze, die hier sehr stark auch auf Bilder orientiert sind.
+
+Und diese Spektrogramme sind, wenn man die mal sieht, sind das faktisch ja eigentlich Bilder.
+
+Und jetzt kann man natürlich auch mal sehen, was ist so ein Mail-Spektrogramm.
+
+Das ist sozusagen die nächste Frage, die wir eigentlich so rein von den Grundbegriffen, die wir brauchen, also von Signalen, Mailspektrogrammen, Repräsentation, ist die nächste Frage natürlich.
+
+Was ist ein Mailspektrogramm?
+
+Und da kann man natürlich auch relativ einfach sagen, wir haben mit den Audiosignalen, also den Waveformen, haben wir eine Repräsentation, wo wir Luftdruckveränderungen über die Zeit haben.
+
+Also eine zeitliche Darstellung der Signale.
+
+Und was wir bei dem Mailspektrogramm machen, ist, wir wollen eigentlich nicht eine zeitliche Darstellung der Signale haben, sondern eine zeitliche Darstellung der Frequenzen.
+
+Also wir gehen in Richtung Frequenzbetrachtung.
+
+Und das muss man sich bei Audio so vorstellen, wenn wir jetzt reden, wenn wir zum Beispiel auch gleichzeitig reden, dann haben wir zu einem gewissen Zeitpunkt
+
+haben wir verschiedenartige Frequenzen, die sich überlagern oder die sozusagen zum gleichen Zeitpunkt vorhanden sind.
+
+Und was man bei den Mellspektrogrammen möchte, ist, dass man diese verschiedenartigen Frequenzen auch darstellen kann, also dass man die sehen kann.
+
+Das Interessante, und das ist, wenn man sieht, wie man aus so einem Signal, aus so einer Audiodatei, ein Spektrogramm erzeugt.
+
+Und da greift man ja auf so eine sogenannte Fourier-Transformation zurück.
+
+Und warum das funktioniert und wie das funktioniert, ganz ehrlich, das ist für mich einfach nur faszinierend, dass man da einfach aus einer Audiodatei, in der praktisch eine gewisse Information da ist, also eine Wave-Datei, dann diese Frequenzen rausrechnen kann durch eine mathematische Fourier-Transformation.
+
+Nehmen wir mal einfach jetzt für den Moment als gegeben hin, auf die Gefahr, dass uns sämtliche Ingenieure, Elektrotechniker, gerade die sowas im Studium ja auch intensiv behandeln, uns auf die Füße treten, aber wir können uns letztendlich vorstellen, dass wir, wenn man vereinfacht gesagt, um das machen zu können, müssen wir uns auch zeitlich gesehen, das ja, man sagt diskretisieren, also ganz ganz kleinen Zeitabschnitten vorstellen, weil als Laie würde ich ja mal sagen, jetzt zu einem Zeitpunkt kann ich ja gar nicht erkennen, was irgendwo für eine Wellenform da ist, sondern ich muss das ja immer
+
+über einen ganz kleinen Zeitraum, ein kleines Mini-Fenster irgendwo betrachten.
+
+Und für dieses kleine Mini-Fenster versuche ich zu erkennen, was habe ich denn für Frequenzen, die da letztendlich überlagert sind.
+
+Letztendlich haben wir immer eine Überlagerung, dass ich mir vorstelle, die Schallwellenveränderung, die ich habe, ist zusammengesetzt aus verschiedenen wellenförmigen Strukturen.
+
+kann ich aber hier Richtung Sinus, Cosinus mäßig mir sowas vorstellen und die versuche ich zu erkennen, welche davon gerade da sind in einem kleinen Zeitfenster und das stelle ich jetzt in einem sogenannten, ja man könnte sagen, einem Histogramm dar, dass ich sage, welche, welche Frequenzen, auch wieder diskretisiert, dass ich das in kleinen Zeitfrequenzbändern, Fenstern zusammenfasse, welche davon waren denn wie häufig oder wie intensiv gesetzt.
+
+Und dann habe ich quasi eine, wenn man sich das als Bild vorstellt, eine
+
+vertikale Linie, dass ich für die unterschiedlichen Frequenzbereiche die Intensität, mit der diese Frequenzanteile vorkam, gesetzt sind.
+
+Und das mache ich jetzt Zeitpunkt oder Mini-Fenster für Mini-Fenster, wie ich mir über meine gesprochene Aufzeichnung, gesprochene Sprache dann weggehe.
+
+Ermittle ich das und hänge das aneinander und dann habe ich ein zweidimensionales Bild.
+
+Also die Zeitinformation ist natürlich nach wie vor da, die brauche ich ja, weil ich ja, ich habe ja nicht so wie ich in der Musik einen Ton für längere Zeit halte, habe ich aber gesprochene Sprache, sehr sehr oft schnell wechselnde laute Wellen, die sich überlagern und die muss ich natürlich erfassen.
+
+Das heißt, wir transferieren, so wie ich es vorhin versucht habe, vielleicht nicht ganz klar, von einer zeitorientierten Domäne aus dem Webformat in eine frequenzorientierte Domäne zu kommen, sodass der Frequenz ein wesentlicher Teil der Informationen auch ist, die wir in dem Bild haben.
+
+Am Ende ist es ja ein Bild an der Stelle.
+
+Und dann kommt halt noch ein bisschen, sagen wir mal, Wissen von den Tonexperten hinzu, dass man halt weiß, dass, sagen wir mal, die menschliche Stimme, hier geht es uns jetzt ja nur um menschliche Stimme, wir wollen nicht irgendwie Signale haben, wo wir die, weiß ich, beliebige Art von akustischen Signalen perfekt abbilden können, sondern die menschliche Stimme, und die konzentriert sich halt auf einen
+
+relativ eng begrenzten Bereich.
+
+Und dann ist aber auch noch die Frage, was nimmt der Mensch wahr?
+
+Und dann kann man halt feststellen, dass sich vielleicht Unterschiede in Frequenzen in unteren Bereichen
+
+stärker als unterschiedlich wahrgenommen werden, als in höheren Bereichen.
+
+Und deswegen wendet man, vielleicht vereinfacht gesagt, da eine Logarithmierung der Frequenzbereiche statt, sodass der Fokus auf den relevanten Bereichen stärker herauskommt.
+
+Und dann kommen wir schon von den einfachen Spektrogrammen, wo das aber linear dargestellt ist, zu den Mass-Spektrogrammen.
+
+Und auch da, also ich erwähne es immer wieder, weil ich das immer so faszinierend finde, weil wir gucken so in den letzten Jahren und jeder spricht über KI und künstliche Intelligenz und maschinelles Lernen und Deep Learning, als wäre das was, was so in den letzten fünf Jahren entwickelt wurde.
+
+Und jetzt zum Beispiel diese Mellspektrogramme, habe ich in der Vorbereitung extra nachgeguckt, wurden entwickelt 1937 von Stevens, Volkmann und Newman, die im Endeffekt genau das, was du gesagt hast, dass der Mensch einfach Variationen in den niedrigeren Frequenzen viel intensiver wahrnimmt als Variationen in den höheren Frequenzen und deswegen dann eine logarithmische Darstellung des Spektrogramms empfohlen haben.
+
+Und das sind eigentlich die Basisdaten, die wir verwenden für Text-to-Speech-Modelle.
+
+Zu der Zeit wurde wahrscheinlich aber auch, um die Basis zu schaffen für eine Tonübertragung, Telefonleitungen.
+
+Und da insbesondere sicherlich sehr, sehr wichtig, dass man, weil die Bandbreite war zu der Zeit, wenn man sie überhaupt hatte, ja viel, viel geringer als das, was man heute hat.
+
+Das heißt, es war umso notwendiger,
+
+sagen wir, zur Übertragung, das möglichst kompakt darzustellen, dass ich die ganz, ganz wesentlichen, relevanten Sachen aus der gesprochenen Sprache herausziehe, damit ich sie einfach übertragen kann und am Ende wieder rekonstruieren kann.
+
+Ja.
+
+Am Ende geht es um Voice Encoding und Decoding.
+
+Und aus diesem Zusammenschluss des Voice Decoding ist auch dieses Kunstwort entstanden eines Vocoders.
+
+Das ist ja auch ein Begriff, den wir wahrscheinlich gleich noch hören werden.
+
+Ja, sicher.
+
+Du hast schon gesagt, ein Zusammenspiel zwischen einem Encoding und einem Decoding.
+
+Und so sind auch die Modelle aufgebaut.
+
+Interessant ist vielleicht der Gedanke, entstanden ist das ja tatsächlich nicht aus der Idee, dass ich Text direkt in Sprache umwandle, sondern wenn man sich das als Telekommunikation vorstellt, ich spreche in den Hörer auf einen Ende rein und am Ende möchte ich das wieder hören können, also wirklich Sprache über eine kompakte
+
+Repräsentation wieder zur Sprache zurück.
+
+Also Speech-to-Speech letztendlich.
+
+Und einmal, dass es möglichst platzsparend kodiert ist, damit ich es über rudimentäre Leitungen, was ich Transatlantik habe, beim Telefonieren übertragen kann.
+
+Und schon können wir es nützen.
+
+50 Jahre später.
+
+Oder 70.
+
+Aber gut.
+
+Schauen wir mal in die Text-to-Speech-Modelle rein.
+
+Das Interessante an den Text-to-Speech-Modellen ist ja, dass man mit relativ einfachen Daten praktisch ein Modell anlernen möchte, das die menschliche Sprache wirklich perfekt wiedergibt.
+
+Also wir sind da wieder so ein bisschen in dem Generativen, dass man sagt, das soll sich so gut anhören, dass man eigentlich kaum noch eine Unterscheidung hat.
+
+Und das was wir reingeben sind eigentlich ganz simple daten nämlich audio aufzeichnung also sparaufnahme so ähnlich wie was wir jetzt hier machen mit dem podcast aber parallel dazu die perfekten texte also da darf nicht irgendwie der text falsch geschrieben sein oder in deutschland fehler drin sein sondern
+
+Der muss wirklich zu dem Audioschnipsel, weil man versucht auch nicht ganze Stunden Audiodateien, sondern immer Länge von so zwischen sechs bis zwölf Sekunden zu haben.
+
+Und passend dazu muss immer der richtige Text sein, sodass wir eigentlich eine Audiodatei als Basis haben und zum Verifizieren und zum Lernen halt den Text dazu haben.
+
+Man könnte letztendlich sagen Satz für Satz, denn
+
+Wahrscheinlich stimmt das jetzt auch nicht ganz, aber man könnte sich vereinfacht schon vorstellen, dass die Information, die in einem Satz steckt an Texten, dass das auf dem Level, auf dem wir uns gerade befinden, für die Generierung der Sprachsynthese ausreicht.
+
+Das heißt, Information über verschiedene Sätze hinweg, die die Art und Weise beeinflussen, wie ich einen Satz ausspreche, ist auf dem Niveau, wie wir uns befinden, noch nicht erforderlich.
+
+Und ich finde jetzt mal vielleicht, sodass man sich mal ein paar Sachen vorstellen kann, ich habe mal ein paar Beispiele von einem Modell, das wir dann sicher mal noch kurz ansprechen werden dann gleich, das sogenannte Tacodron 2-Modell.
+
+Das ist ein Deep Speech, also ein auf Deep Learning basierendes Sprachmodell, also TTS-Modell, das von Google entwickelt wurde 2019.
+
+Und das eigentlich schon extrem gut ist ja das hat zwar auch zwei nachteile und es gibt mir da neuere ansätze das ist alles ja ich sag mal normal aber es ist schon sehr gut und ich würde jetzt einfach mal immer mal ich hab mal drei beispiele mitgebracht,
+
+dass ich zunächst abspiele, was der Originalsprecher ist und was dann das Modell aus den Texten generiert hat, sodass man vergleichen kann, das ist der Mensch und das andere ist die Maschine.
+
+Und dann bin ich gespannt, wie man die Unterschiede hört.
+
+Also ich fang mal an mit dem ersten.
+
+Der Satz, der da gesprochen wird, ist That girl did a video about Star Wars lipstick.
+
+Das war jetzt sozusagen die Originalstimme.
+
+Und jetzt kommt die computergenerierte Stimme.
+
+That girl did a video about Star Wars lipstick.
+
+Und ehrlich gesagt, also mit minimalen Variationen in der Betonung, höre ich ehrlich gesagt kaum noch einen Unterschied.
+
+Und vielleicht noch ein anderes Beispiel.
+
+Und jetzt nochmal die computergenerierte Stimme dazu.
+
+Also es ist ziemlich faszinierend, dass da die Qualität schon extrem gut ist.
+
+Wenn man das jetzt mal aus der praktischen Sicht sieht, wir haben ja jetzt schon ein paar solche Modelle gelernt, Carsten.
+
+Es ist natürlich nicht so, dass so ein Modell sich in einer Stunde landen lässt.
+
+Das dauert.
+
+Und ganz entscheidend, aber um das zu ergänzen, ist nicht nur die Zeit, mit der ich so ein Modell lerne, sondern, denke ich mal, hier auch noch relevant, wie viel Zeit brauche ich denn für die Anwendung, also für die Synthese mit einem gelernten Modell, weil das ist ja auch nicht unerheblich, oder?
+
+Man muss ja sehen, das Lernen an sich dauert schon relativ lang, also wenn man wirklich von nichts an das Modell lernt, kann man ja so ansetzen, auch das sogenannte Fine Tunings, wo man schon angelernte Modelle nochmal anpasst, dann muss man schon mit etlichen Stunden, also
+
+wenn man nicht so ein paar Tage oder Wochen rechnen muss, rechnen, dass man dann im Endeffekt eine gute Qualität hat.
+
+Also am Anfang hört sich das für sich an.
+
+Für das Modell, ja.
+
+Und wenn ich jetzt einen Satz reinstecke, um die Sprache zu erzeugen, wie lange dauert das für einen einfachen Satz?
+
+Das hängt ganz stark von dem Vokoder dann ab.
+
+Das ist sozusagen mit das Entscheidende.
+
+Also das kann zwischen drei, vier, fünf, sechs Sekunden dauern bis halt wirklich schnell.
+
+Also schnell heißt dann wirklich so unter Echtzeit.
+
+Also dass man sagt, er generiert schneller, als man sprechen würde.
+
+Aber es hängt ganz stark vom Vokoder ab.
+
+Das ist ganz, ganz entscheidend.
+
+Wenn man das in einem Dialogsystem wirklich nutzen möchte, bin ich darauf angewiesen, dass es in Echtzeit mehr oder weniger generiert werden kann.
+
+So ist es.
+
+Und das sind zum Beispiel so Dinge, die man feststellt, wenn man das jetzt lernt.
+
+Wir haben ja gesagt, oder angedeutet, nicht gesagt, aber angedeutet, dass es Encoder-Decoder-Modelle sind.
+
+Also wir haben ja eigentlich eine Sequence-to-Sequence.
+
+Auf der einen Seite geben wir den Text rein, wollen dann aus dem Text heraus sozusagen am Ende unser Mail-Spektrogramm haben.
+
+Und wenn wir das Mail-Spektrogramm haben, und das ist dann die sogenannte Vocoder-Komponente,
+
+Dann wollen wir dieses Spektrogramm nehmen und mit dem Spektrogramm dann, ich sag mal, die Audioausgabe generieren.
+
+Aber die eigentliche Prognose, also unseres Sprachmodells, ist eigentlich das Spektrogramm.
+
+Also das Ziel ist es, aus Text erst mal ein, ich nenne es mal, perfektes Spektrogramm zu erzeugen.
+
+Das ist sozusagen das erste Ziel.
+
+Und in dem Kontext verwenden wir ganz klar Encoder-Decoder-Modelle.
+
+Das heißt also, wir enkodieren zunächst mal den Text in der Repräsentation.
+
+Und dann, also das ist ein Vektor in der Regel, Zahlen.
+
+Und diesen Vektor nehmen wir wieder und machen daraus sozusagen mit dem Decoder unser Mesh-Vektor.
+
+Und das haben wir ja schon in verschiedenartigsten Modellen gesehen oder auch gehört in unserer Sendung.
+
+Interessant finde ich es nur an der Stelle mal zu sagen, es wird ja beschrieben, als ich entwickle ein End-zu-End-System, was ausgehend vom Text eigentlich die Wellenform generiert.
+
+Und dann heißt es aber, naja, aber wir generieren erstmal nur das Mailspectrogramm, weil es ja gute Technologie gibt, um aus denen relativ vernünftig entsprechende Wellenformen zu generieren.
+
+Aber eigentlich ist es dann kein End-zu-End, sondern ein End-zu-Fast-End-System.
+
+Ja, genau.
+
+Das ist richtig.
+
+Das ist richtig.
+
+Ja, ich glaube, man muss es auch so ein bisschen sehen, weil man kann das natürlich schon auch parallel lernen.
+
+Wir haben ja unsere Inputdaten, das ist unsere Text- und unsere Audiodateien.
+
+Wir können aus einem klassischen, aufgenommenen Audio ein Mailspektrogramm generieren.
+
+Das brauchen wir nicht prognostizieren.
+
+Wenn wir also eine Ausgabe der Sprache lernen wollen, dass es also sehr gut lernt, dann können wir die Audiodatei nehmen.
+
+Und wir können ein generiertes Mailspektrogramm nehmen und können dann zum Beispiel ein generatives Netz, also ein GAN, nehmen und dann daraus sozusagen die Ausgabe landen.
+
+Das heißt, zukünftig würden wir dann einfach das Mailspektrogramm reingeben und kriegen dadurch eine Audiodatei.
+
+Wir verwenden sozusagen die gleichen Dateien, also die gleichen Rohdaten, für das Landen der Ausgabe wie für das Landen der Erzeugung des Mailspektrogramms.
+
+Und das faszinierende ist, wie gesagt, als ich angefangen habe, mich damit zu beschäftigen, ich fand es so faszinierend, dass man sagt, man geht von Text zu Grafik und von Grafik wieder zu Audio.
+
+Also, dass man nicht direkt von Text zu Audio geht.
+
+Das war für mich in meinem Kopf eher das, was ich sage, ich lerne, so wie wir es ja gesagt haben bei den konkurrenzrelativen Verfahren, dass man sagt, man nimmt einzelne Abschnitte und setzt die aneinander und lernt die Übergänge.
+
+Das wäre so, ist ja auch eine Möglichkeit.
+
+Das war so meine Vorstellung, dass das immer besser gemacht wurde.
+
+Aber dass man dieses Spektrogramm dazwischen setzt,
+
+Das war für mich echt überraschend hat aber den riesen vorteil das ist ja wirklich die die einzel frequenzen aus denen sich quasi so die das gesamte was wir hören zusammensetzt ja explizit genannt und aufgeschlüsselt sind.
+
+Während du in dem in der wählen von mir einfach die gesamte überlagerung hast das was sich dann quasi auf addiert an andruck unterschieden.
+
+Das ist der Wert zusammen und insofern enthält es in dem Sinne mehr Informationen über die Art und Weise, wie sich das durch Überlagerung von entsprechenden Wellen darstellen lässt.
+
+Und das nutzen wir quasi aus, dass wir es viel, viel detailreicher generieren können, als das, was wir am Ende dann hören.
+
+Und dass man natürlich auch sehr gut mit diesen Bildern umgehen kann durch sogenannte convolutional neural networks.
+
+Muss man natürlich auch sehen, dass man gute Erfahrungen damit gemacht hat und man natürlich mit den Bildern dann arbeiten kann, um gewisse Details auszuarbeiten, eine gewisse Fokussierung auf Inhalte zu bekommen.
+
+Also macht es einfach, aber ich glaube halt, der Riesenmehrwert kommt daher, dass ich sagen kann, wenn ich halt spreche und ich habe bestimmte Buchstaben und Sachen, die ich da irgendwie verbinde, dass ich da einfach, naja, es ist ja nicht so, dass jeder Zeitpunkt unabhängig voneinander ist, sondern Sachen klingen ja klingen nach und dass es eine gewisse Kontinuität gibt.
+
+und dass ich das besser mit den einzelnen Frequenzanteilen darstellen kann und auch prognostizieren kann.
+
+Und aus dem Grund, wenn man mal reinschaut, sieht man ja, dass die Modelle auch oft gar nicht einen einzigen Zeitabschnitt auf einmal prognostizieren, sondern dass gesagt wird, naja, ich prognostiziere eigentlich immer gleich
+
+Ja, zwei, drei Schritte auf einmal, ich weiß jetzt nicht, wie viele es wirklich sind, aber ein gewisser Anteil von Schritten gleichzeitig, weil man ja sagt, es ist eine gewisse Kontinuität in der Sprache auch da.
+
+Das setzt natürlich voraus, dass diese Zeitfenster so klein sind, dass man das auch wirklich wahrnehmbar hörbar hat.
+
+So ist es.
+
+Und ich würde vorschlagen, jetzt so mal für heute schauen wir uns mal so High-Level, weil man kann sich da wirklich beliebig tief damit beschäftigen.
+
+so High-Level mal das Darudon-2-Modell an.
+
+Das ist aus einem Paper von Chen et al.
+
+von 2019, das heißt Natural TTS Synthesis by Conditioning WaveNet on Mel-Spectrogram Prediction.
+
+Das kann man gerne sich nochmal anschauen, sich das mal durchlesen.
+
+Die Schwierigkeit bei den Papers, gerade in dem Ganzen, das hattest du im Vorfeld ja auch gesagt, Carsten,
+
+ist, dass man, wenn man ein Paper liest, hat man immer so ein bisschen die Schwierigkeit, dass man die vorgehenden historischen Papers auch lesen muss, damit man so den Gesamtkontext versteht, weil das halt wirklich so schrittweise Verbesserungen sind, die von Papers zu Papers kommen.
+
+Aber nichtsdestotrotz kann man es ganz gut verstehen.
+
+Und ich würde ganz gern mal durch die einzelnen Elemente durchgehen.
+
+Also wir haben im Endeffekt den Encoder und den Vocoder.
+
+Ich würde mich jetzt mal, also das Encoder-Decoder-Modell und den Vocoder.
+
+Und ich würde mich jetzt mal auf diesen ersten Teil konzentrieren und den Vocoder so ein bisschen außen vor lassen.
+
+Wenn wir mit dem Encoder anfangen, dann haben wir praktisch den Text am Anfang.
+
+Und der Text hat, rein vom Prinzip her, repräsentieren wir den dann einfach als Zahlen, Vektoren, also in Embeddings.
+
+Aber wir müssen natürlich auch bestimmte Dinge beachten.
+
+Also ich als franke hab da so und so ein problem ja also wenn ich zum beispiel sowas habe wie wein und pein dann ja wird man das bei mir wahrscheinlich nicht so gut hören jetzt hat man es gut extra betont ausnahmsweise mal hinbekommen.
+
+Und das ist natürlich ein problem was wir da haben weil in den reinen text ist ganz häufig eine aussprache anders als das was ich im text sehe.
+
+Und da arbeiten wir mit Phonemen.
+
+Das ist im Endeffekt so eine Idee, dass man den Text nimmt und den in Phoneme überführt.
+
+Und ein Phonem ist im Endeffekt eine Repräsentation, wie man Dinge ausspricht.
+
+Genau, ist die Lautschrift.
+
+Im Gegensatz zu der klassischen Buchstaben, die wir haben, das sind Grafeme, dass ich halt wirklich sage, wie schreibe ich das?
+
+Und die Lautschrift halt, wie spreche ich das?
+
+Es ist ein bisschen vielfältiger als unsere Buchstaben, die wir verwenden, die Grafeme.
+
+Etwas vielfältiger ist es, weil es halt diese Variationen gibt.
+
+Das Deutsche ist ja zum Beispiel von der Sprache her in vielen Fällen sehr, sehr nah an der Art und Weise, wie ich es tatsächlich ausspreche.
+
+Wie schreibt man das?
+
+So wie du sprichst, sagt man ja oft.
+
+Aber es gibt ein paar Besonderheiten, gerade bei diesen lauten und solche Geschichten oder mit
+
+die ein bisschen anders sind.
+
+Oder, auch interessant, bestimmte Buchstaben, die einfach gleich klingen, obwohl sie anders geschrieben werden.
+
+Das ist jetzt ein F oder ein V. Lautschrift, oft derselbe Buchstabe.
+
+So wie es Kinder oft schreiben, wenn sie es noch nicht richtig gelernt haben, wie es richtig geht.
+
+Das ist so eine Mischung aus dem.
+
+Genau, also das könnte man berechnen.
+
+Gibt es dafür auch fertige Modelle sicherlich, die das recht gut hinkriegen.
+
+Sehr, sehr stark regelbasiert noch, weil es ja eine relativ starre Art und Weise ist, wie man weiß, wie bestimmte Sachen klingen.
+
+Ja, und das macht man tatsächlich, dass man praktisch im Vorfeld die Daten vorverarbeitet in der Regel und die dann in Richtung Phoneme transferiert.
+
+Jetzt haben wir aber einen Schritt ausgelassen, den man als wirklich echte Vorbereitung vorher meistens macht, ist, dass wenn ich sowas habe wie Zahlen, Abkürzungen oder Fehler in den Texten, dass ich versuche, die zu beheben, also insbesondere Zahlen als Text ausschreiben in Worten.
+
+Als Mensch lese ich das ja, wenn da eine 3 steht, dann sage ich 3.
+
+das ist ja nur die repräsentation als als ziffer die es mir leicht macht das zu erkennen aber wenn ich das spreche ist es für das modell natürlich einfacher wenn ich sowas explizit in worten hinschreibe und das ist eine vorverarbeitung die man meistens noch noch vor schaltet was sage ok als eingabe nehme ich mal schon einen vorbereiteten text wo die abkürzungen akronyme sonst irgendwelche wenn ich jetzt sowas habe wie
+
+Also das ist vollkommen richtig, da habe ich jetzt gar nicht dran gedacht, weil das irgendwie so selbstverständlich ist, aber du hast natürlich recht, das sind viele Dinge, die man im Vorfeld eigentlich macht, um den Text auch nochmal zu bereinigen, dass man Rechtschreibfehler rausnimmt, man nimmt die Groß-Kleinschreibung runter, man achtet vor allem auch drauf, das ist auch ganz interessant, wir haben ein paar Experimente gemacht, wenn man zum Beispiel am Ende von den Aufnahmen längere Pausen hat,
+
+ja und ist dann sozusagen land dann landesmodell auch das am ende der setze immer länger pausen sind oder wenn man zwischendrin starre schnaufe hat oder irgendwas dann landesmodell das schnaufer drin sein sollen und da muss man wirklich ganz schön aufpassen dass die datenqualität das heißt der text wie du es gesagt hast mit abkürzungen rausnehmen auch was man häufig auch bei geschriebenen text dazu so dinge wie
+
+eine Abkürzung und dann den Klammern sozusagen bzw.
+
+oder halt nochmal die Abkürzung ausgeschrieben und so weiter.
+
+Das muss sich alles irgendwie sauber bereinigt, weil halt ein Text so geschrieben sein muss, wie er gesprochen wird und nicht, wie man ihn schreiben würde, damit das Modell halt einfach die Sprache repräsentieren kann.
+
+Und jetzt war es interessant, jetzt hast du gesagt, viele Modelle überführen denn diesen Text durch bestehende Transformatoren in die Lautschrift.
+
+Genau genommen ist das schon der ein erster Schritt, wie ich aus meinem Rohtext Merkmale generiere.
+
+Ich könnte ja auch sagen, das Modell lernt das selbstständig.
+
+Wenn ich das mache, versuche ich, dem Modell zu helfen, indem ich dieses Wissen, wie in bestimmten Sprachen bestimmte Buchstaben gesprochen werden oder bestimmte Folgen von Buchstaben, ihm mitzugeben.
+
+Andere Varianten, sorry, will ich das gerade noch sagen, andere Varianten wäre dann jetzt, also das wäre die reine Lautschrift, und dann gibt es ja andere Aspekte, wie, das hast du ja auch schon angesprochen, wie man die Natürlichkeit der Sprache erkennt, Sprachmelodie.
+
+Weiß ich, dass ich am Satzende bei der Frage hochgehe, oder wie lange sollte ich etwas brauchen, die sind ja gewissend dauernd, die könnte ich ja, sowas kann ich natürlich explizit modellieren.
+
+Möchte ich aber in diesen End-zu-End-Modellen gar nicht mehr explizit machen, bis auf vielleicht die Phoneme, sondern da hoffe ich, dass das in den meisten Fällen die Modelle eigenständig erkennen.
+
+Und da sieht man schon wieder, was das Problem eigentlich bei solchen Modellen ist.
+
+Ich kann sowas eigenständig natürlich nur erkennen, wenn ich viele Beispiele habe.
+
+Und zwar viele Variationen.
+
+Das heißt, ich brauche für solche Modelle wirklich auch Datenmengen.
+
+Also das ist nicht irgendwie mit, ich setze mich 20 Minuten an den Tisch und nehme mal ein bisschen auf und dann ist es erledigt.
+
+Damit wird die Qualität nicht ganz so optimal, sondern man braucht schon Stunden.
+
+Die guten Modelle, die Arbeit mit 20, 30, 40, 50 Stunden Aufnahme von aufgenommener Sprache mit passenden Texten dazu, wenn nicht sogar mehr.
+
+Und jetzt kann man sich natürlich ausrechnen, wenn ich das jetzt professionell wirklich gut einsprechen möchte, dann brauche ich eine gute Qualität an Mikrofon, eine gute Qualität an der Aussprache.
+
+Es muss möglichst konstant sein, also nicht, dass man mal so vor sich raschelt, sondern dass man wirklich sauber redet und so weiter.
+
+das hat auch wirklich eine gute quantität rauskommt und das interessante ist jetzt dass die für die reine lautschrift brauche ich ja nicht nicht wirklich viel kontext ja da reicht es ja wenn ich die das geht gut die buchstaben folgen habe muss die wortgrenzen erkennen klar müssen syntaktische struktur irgendwie erkennen dass es im deutschen im englischen in den meisten sprachen die wir hier kennen ist das natürlich relativ einfach durch durch leerzeichen erkennbar wenn man jetzt in chinesische varianten gehen dann ist es sicherlich wieder schwieriger
+
+Dieser Teil ist ohne großartige Berücksichtigung des Kontexts recht gut darstellbar, aber solche Sachen wie Sprachrhythmus, Betonungen, dauernde Tonhöhen, muss ich mit der Sprache hoch oder runter gehen, die erfordern natürlich den Kontext mindestens des ganzen Satzes.
+
+Richtig.
+
+Und das versuche ich denn gerade, deshalb diese komplexen Architekturen, die ich da noch habe, mit, typischerweise, das wirst du uns gleich erzählen, mit diesen Attention-Mechanismen, um zu erkennen, was sind denn die relevanten Teile meines Satzes, an denen ich erkenne, ob ich vielleicht mit der Sprache hoch- oder runtergehen muss.
+
+Na gut, ist ein Fragezeichen am Ende oder nicht, aber es gibt ja auch andere Varianten.
+
+Ja es ist so, also wir haben im Endeffekt genau die Komplexität der Modelle dient dazu, was du gesagt hast, also einerseits natürlich die Repräsentation zu erkennen, andererseits aber die Abhängigkeiten zu erkennen und dann die Kombination zwischen Text und Audio zur gleichen Zeit zu haben, weil wir haben ja ein Buchstaben, wir haben ja Wörter des Landbau in der Grundschule, da ist ein Buchstabe lange ausgesprochen und ein anderer Buchstabe in einem anderen Wort kurz ausgesprochen.
+
+Und diese Variation kurz-lang führt hier zu unterschiedlichen Seiten, also von der zeitlichen Achse her.
+
+Und das muss das Modell ja auch erkennen, dass er den Text den zeitlichen, passenden Bereichen zuordnet.
+
+Und dafür verwenden wir diese extrem komplexen Architekturen.
+
+Wenn man jetzt mal den Encoder anschaut, wir haben im Endeffekt eine sogenannte Embedding-Schicht als beginnende Schicht, in der wir bei durchstand die Phoneme nehmen und dann eine Vektorrepräsentation daraus machen, eine Zahlenrepräsentation durch eine Embedding-Schicht.
+
+Bei dem Tachotron-2-Modell ist man hier auf so eine 512x1-dimensionale Vektordarstellung übergegangen.
+
+beliebig andere Darstellungen denkbar.
+
+Andere Modelle benutzen andere Darstellungen.
+
+Also da wird gespielt mit den verschiedenartigen Architekturen, die es gibt.
+
+Dann wird dieser Vektor genommen und wird in ein sogenanntes convolutional layer, also ein dreischichtiges convolutionales Netzwerk gebracht.
+
+Und dieses dient dazu, und das ist das Interessante, also
+
+Wir haben, glaube ich, ich weiß gar nicht, ob wir schon mal drüber gesprochen haben, aber convolutional Netze gehen ja her und versuchen mit so einer Art Fenster über so ein Bild drüber zu laufen und dann die wesentlichen Bereiche, also Merkmale hervorzuheben, die wichtiger sind als andere in dem Bild.
+
+Und was wir mit diesen Convolutional Layers in der Sprachverarbeitung machen wollen, ist, wir wollen herausfinden, wo gibt es Phrasen, Buchstaben.
+
+Also wir müssen überlegen, jeder Zeitachse wird ja immer Buchstabe für Buchstabe betrachtet.
+
+Und diese Convolutional Layers, die versuchen dann sogenannte N-Grams oder Phrasen zu erkennen.
+
+Und ganz wichtig in dem Zusammenhang ist, dass wir dann auch im Nachgang kommen ja meistens noch so LSTM-Netze.
+
+Das wäre der nächste Schritt.
+
+Ja, das wollte ich halt ergänzen, um den Bezug letztendlich, die Erinnerung noch mit drin zu haben.
+
+Und aber wichtig, die ganze Bidirektional, dass ich weiß, was kommt und was ist bereits da gewesen.
+
+Weil das ist ja das, wo man merkt, ein Leser-Anfänger, eine Leser-Anfängerin, die Schwierigkeiten hat, die sind vielleicht gerade in dem Moment da, wo sie mit dem Finger unter dem Buchstaben gerade ist, sehen aber nicht, was danach kommt.
+
+Dass am Ende das Fragezeichen steht und dass sie eigentlich mit der Stimme hoch
+
+hätten gehen müssen.
+
+Das heißt, ein geübter Leser schaut natürlich auch auf das, was danach kommt, wenn der Text schon geschrieben ist.
+
+Wenn man spricht, muss man halt wissen, was man sagen möchte.
+
+Aber wenn der Text gedruckt, geschrieben vor einem liegt, dann muss man natürlich so ein Look-ahead-Mission, muss man natürlich schauen, was kommt.
+
+Und das ist ganz, ganz wichtig, um das zu berücksichtigen.
+
+Und deshalb ist es wichtig, dass ich natürlich bidirektional sowohl weiß, was war schon da, was kommt noch, um all diese Zusammenhänge zu erfassen.
+
+Genau, und dann werden die Architekturen auch schon gar nicht mehr so komplex.
+
+Das heißt, der Encoder macht im ersten Schritt eine Repräsentation der Buchstaben in Zahlen.
+
+Im zweiten Schritt wird über diese Componential Layers Engrams, also zusammenhängende Fragmente erkannt, Phrasen.
+
+im dritten Schritt über die LSTM-Netze in die Zukunft zu schauen oder in die Vergangenheit, also zeitlich gesehen in dem Satz, also den Satz nach vorne und hinten zu schauen, um das, was du gesagt hast, zu identifizieren.
+
+Und am Ende haben wir bei dem Encoder eine Ausgabe von Merkmalen, die im Endeffekt den Inhalt und die Sprache repräsentieren sollen.
+
+Und da sind wir durch mit dem Encoder.
+
+Das Interessante ist jetzt, dass man nutzt quasi das Wissen aus der Linguistik.
+
+Wie spricht man?
+
+Man hat bestimmte Erkenntnisse oder eine Annahme, was ist wichtig beim Sprechen.
+
+Also ich denke mal, da braucht man gar keinen Experten nehmen.
+
+Jeder, der lesen lernt.
+
+merkt halt, worauf es da ankommt.
+
+Und man versucht jetzt mit gewissen Architekturkomponenten das System oder das Modell darin zu unterstützen, dass es die Fähigkeit bekommt, sowas zu machen.
+
+Also wenn ich jetzt sage, ich baue da so einen Block ein mit einem bidirektionalen LSTM, dann gebe ich ihm damit die Fähigkeit, nach vorne und hinten noch ein bisschen zu schauen.
+
+Das heißt nicht, ich kann jetzt das System nicht erzwingen, dass es das wirklich jetzt dafür nutzt, es kann sonst was damit machen.
+
+Ja, wenn ich das jetzt nicht explizit, ich trainiere ja nicht jede einzelne Block oder Menge von Schichten genau für diese Aufgabe und prüfe das hinterher.
+
+Sondern ich hoffe einfach, weil ich denke, dass es wichtig ist, dass sie mit einer entsprechenden Architekturkomponente es entsprechend benutzt wird.
+
+Und der Erfolg der Modelle scheint ihm recht zu geben.
+
+Wenn wir jetzt wirklich mal in der Ecke, dass wir sagen, wir haben jetzt hier eine Repräsentation.
+
+Das ist der Encoder-Teil.
+
+Und damit schließen wir quasi ab, was ich am Anfang ja gesagt hatte, wir haben zwei Phasen.
+
+Das erste ist eher Natural Language Processing.
+
+Und damit generiere ich jetzt quasi für diesen Text eine Menge von Features, die intern repräsentiert, ohne jetzt explizit sagen zu können, vorher welches Merkmal steht und wo.
+
+Das ist der Unterschied zu klassischem Maschinenlernen, wo ich genau weiß, okay, ich habe hier diese 50 Merkmale generiert.
+
+Das eine saugt das aus, das nächste das andere.
+
+Das kann ich hinterher versuchen, vage zu erkennen, aber es ist irgendwo da drin.
+
+Und jetzt kommt der zweite Block, wo ich jetzt versuche, aus dieser Menge an versteckten Merkmalen jetzt mit einer Decoder-Komponente das Mailspectrogramm zu generieren.
+
+Richtig.
+
+Ich würde jetzt vielleicht noch gerne heute, auch wenn es heute ein bisschen länger wird, aber dann haben Sie ein bisschen in unserer Sommerpause was zu hören, weil wir haben den Encoder und den Decoder.
+
+Und das Spannende ist, dass wir durch ganz viele Merkmale aus dem Encoder rauskriegen, die wir in dem Decoder jetzt dann wieder verwenden wollen, um damit ein Mailspectrogramm zu machen.
+
+Und man unterscheidet eigentlich bei diesen Speech-to-Text-Modellen in zwei verschiedenartige Modelle, in sogenannte Autoregressionsmodelle und Non-Autoregressionsmodelle.
+
+Und wenn man das jetzt hier sieht, haben wir hier bei dem Tacodron 2 ein sogenanntes Autoregressionsmodell.
+
+Und ein Autoregressionsmodell prognostiziert im Decoder das Mail-Spektrogramm nicht auf einmal.
+
+Also man stellt sich das nicht so vor, dass man sagt, jetzt habe ich dann die Features, die dann reinkommen und daraus wird dann auf einen Schlag ein Spektrogramm erzeugt.
+
+Sondern er wird im Endeffekt einen kleinen Abschnitt prognostizieren.
+
+20 Millisekunden, keine Ahnung.
+
+Also einen gewissen Zeitraum, man spricht von Frames.
+
+Und der Output dieses Frames geht regressiv sozusagen wieder als Input für die nächste Prognose ein.
+
+Und um das gut hinzubekommen, müssen diese Encoder und Decoder miteinander verknüpft werden über sogenannte Attention-Mechanismen.
+
+Also man sagt, wo soll er denn wesentlich hinschauen?
+
+Und die Attention-Mechanismen, das haben wir auch schon mal drüber gesprochen in einer unserer Sendungen, die verknüpfen die beiden Encoder-Decoder miteinander und das Ergebnis der Attention, das ist ein Output-Vektor mit einer festen Menge, in der Regel jetzt hier bei dem Tachodron von 128 Dimensionen,
+
+der läuft dann in den decoder rein und dort wird dann in zu wiederholen den schleifen das meld spektrogramm schritt für schritt prognostiziert und am ende haben wir jetzt ja dann könnt ihr jetzt sagen dass er dieser tätsch mechanismus in der ecke sind ja genau wichtig um zu wissen
+
+Welche dieser Informationen, das jetzt später mal ein Fragezeichen kommt, ist Ihnen jetzt schon vorher wichtig?
+
+Bitte schauen wir doch mal an das Satzende, wenn du jetzt hier bist, dass du mit der Stimme hochgehst oder dass du bestimmte Sachen betonst.
+
+Dazu brauche ich ja diesen Teil, dass er halt irgendwie wahlfrei auf bestimmte Elemente, die irgendwo in diesem Satz standen, zugreifen kann bei der Erzeugung.
+
+Und dann ist aber auch wichtig, wie gesagt, dass diese Überlegung hier, die Autoregression, dass ich natürlich die Übergänge hinkriege.
+
+Wenn ich wirklich nur Zeitpunkt für Zeitpunkt prognostizieren würde, dann hätte ich vielleicht sowas Abgehacktes, keine schönen Übergänge.
+
+Und das ist ja genau das, was ich machen möchte.
+
+Ich möchte ja eine natürliche klingende Sprache mit passenden Übergängen.
+
+Und dazu hilft die Überlegung.
+
+Ja, so in Schleifen immer die Basis vorzunehmen.
+
+Jetzt kann man sich schon vorstellen, okay, wenn wir über Schleifen reden, dann sind das Recurial Neural Networks.
+
+Und was wird dann in dem Decoder verwendet?
+
+In der Regel die etwas moderneren Recurial Neural Networks und das sind wieder LSTM-Netze, die natürlich auch wieder, wo wir zurückwärts schauen können, Verknüpfungen herstellen können und damit eine zeitliche Prognose überhaupt erst ermöglichen.
+
+Nachteile von solchen Autoregressionsmodellen sind, die sind relativ langsam beim Lernen.
+
+Also das ist einfach, das merkt man tatsächlich, wie gesagt, wenn man das mal trainiert, es dauert ziemlich lang, bis aus einer schnaufenden, grunzenden Alien-Ausgabe tatsächlich eine saubere Stimme kommt.
+
+Und dann dauert es nochmal ein ganzes Stückchen länger, bis man wirklich sagt, ah ja, okay, jetzt
+
+Aber da würde ich sagen, an der Stelle jetzt mit fast 40 Minuten, glaube ich, ist das heute schon ein ganz schön tiefer Einblick, wo wir eigentlich nur so überblicksweise eigentlich rein wollten.
+
+Aber Sie können sich ja über die Ferienzeit von uns ein bisschen
+
+anhören, ein bisschen sacken lassen und dann greifen wir das dann von heute gesehen in drei Wochen wieder auf, also 11.
+
+September.
+
+Da werden wir dann die nächsten Sendungen wieder publizieren.
+
+Von daher vielen Dank fürs Zuhören soweit und eine schöne Sommerzeit.
+
+Ja, das wünsche ich auch.
+
+Das war eine weitere Folge des Knowledge Science Podcasts. 

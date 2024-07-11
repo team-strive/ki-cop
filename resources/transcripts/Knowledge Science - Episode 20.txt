@@ -1,0 +1,471 @@
+ Hallo und herzlich willkommen.
+
+Letzte Woche haben wir über künstlich erzeugte Daten gesprochen und sind in diesem Zuge auf die GAN-Netzware aufmerksam geworden.
+
+In der heutigen Sendung wollen wir Ihnen diese Netze näher erklären.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Wir haben es tatsächlich geschafft, zwanzigste Sendung.
+
+Herzlichen Glückwunsch.
+
+Herzlichen Glückwunsch, genau.
+
+Wenn wir das umrechnen, das sind fünf Monate, wo wir uns jetzt wirklich dahinter gekniffen haben und den Podcast aufgenommen haben.
+
+Also, ich weiß nicht, bei der ersten Sendung, ich war mir nicht sicher, ob wir fünf Monate durchhalten.
+
+Na, bei deinem Durchhaltevermögen war das doch klar.
+
+Aber auf jeden Fall haben wir es geschafft bis heute.
+
+Und heute haben wir wirklich, glaube ich, eine ganz interessante Sendung.
+
+Wir haben ja letzte Woche über künstlich erzeugte Daten, also über das Problem gesprochen, wenn wir zu wenig Daten haben oder ähnliches, und sind dann am Ende zu dem Punkt gekommen, dass es ja auch Netze gibt, die Daten generieren.
+
+Und das ist da ja im Moment eine wahnsinnige Bewegung, oder im Moment, die sind ja erfunden worden 2014, haben wir jetzt vor allem in den letzten Jahren ganz schön in den Vordergrund gerutscht, auch mit dem Thema Deepfakes und Erzeugung von künstlichen Daten, die sogenannten GARN-Netzwerke.
+
+Wofür steht denn GARN eigentlich nochmal?
+
+Das ist ein schwieriger Begriff, gell?
+
+Also generierende und jetzt haben wir diese Konkurrenzgeschichte da drin, das wollen wir jetzt mal genauer auseinandernehmen, was man da eigentlich drunter versteht.
+
+Ich finde es deswegen ganz interessant, weil das ja wieder ein Ansatz ist, der zwar sehr technisch ist, rein vom Prinzip her, der aber eigentlich von der Grundidee aus der Spieltheorie kommt.
+
+Wir haben ja zwei Spieler in diesem Netz und die konkurrieren miteinander.
+
+Und im Endeffekt treffen die Entscheidungen auf Basis der Entscheidung des anderen.
+
+Und das ist ja klassische Spieltheorie.
+
+Aber die wissen eigentlich nicht wirklich was voneinander, oder?
+
+Nee, aber auch das haben wir ja in der Spieltheorie.
+
+Also wenn man so einen Gefangenen-Dilemma denkt, das vielleicht der ein oder andere BWLer kennt, wo der eine Gefangene in einem Gefängnis sitzt und der andere Gefangene in dem anderen und die sich wechselseitig sozusagen beschuldigen sollen, dann kennen die sich ja auch nicht.
+
+Die kennen sich nicht, aber die wissen, dass da ein anderer Gefangener ist, oder?
+
+Das ist richtig.
+
+Aber auch das haben wir doch in den Netzen auch, dass die sich zumindest wissen, dass ein anderer da ist.
+
+Dann setzt du voraus dass so ein netzen werken bewusst sein hat und weiß dass da ein generator ist der versucht dich zu täuschen ich glaube soweit würde ich noch nicht gehen aber von von grundidee passt es ist ein interessantes scenario aber auch nicht das nicht völlig neu es gibt ja andere szenarien wo man ja,
+
+Richtung Reinforcement-Learning, das bestärkende Lernen, wo man halt meinetwegen Agenten hat, die erst ihre Strategie noch lernen, die bei der Nutzung ihre Daten erzeugen, in ganz anderer Art und Weise, die man ja auch, wenn man zum Beispiel lernt, ein Schachspiel oder Go zu spielen, wo man einfach zwei Algorithmen oder denselben Algorithmus zweimal instanziiert gegeneinander antreten lässt.
+
+Dann können die auch Daten generieren und gegeneinander antreten.
+
+Da sind es aber zwei gleichartige.
+
+Und bei dem GAN haben wir zwei verschiedene.
+
+ein netzwerk teil das daten generiert und anderen netzwerk teil das soll erkennen ob es generierte daten sind oder echte daten.
+
+Und das macht es ja gerade so spannend, dass wir im Endeffekt hier in dem Kontext haben, durch diesen zweiten Teil, also den sogenannten Diskriminator, der ja so bezeichnet wird, dass der überwacht, ob der Generator gut genug ist, also ob die Daten, die rauskommen, wirklich gut genug sind, dass man sie als echte identifizieren könnte.
+
+Also dass man nicht nur unterscheiden kann zwischen Daten, die generiert sind, und Daten, die tatsächlich echt sind.
+
+Das interessante ist, dass wir in diesem Szenario wieder, es ist in dem Sinne nur unüberwacht, da wir keine manuellen Labels brauchen.
+
+Wir brauchen nur echte Daten irgendwoher und dieses Label, was der Diskriminator braucht, ist es künstlich erzeugt oder echt?
+
+Die generieren wir ja quasi selbst.
+
+Wir wissen ja, ob wir in das Modell jetzt gerade echte Daten reinstecken oder welche von unserem Generator.
+
+Das weiß natürlich der Diskriminator nicht.
+
+Darf ich mir nur überlegt wenn der sich merkt jedes zweite bild was ich kriege oder jede zweite datensatzpunkt den ich kriege ist ist künstlich erzeugt da muss ich muss er sich ja nur merken ja ist es jetzt erst oder zweite bild was ich kriege oder datenpunkt und dann kann er das sofort irgendwie erkennen das wäre ja ein bisschen einfach oder.
+
+Absolut ich glaube wir müssen die hören nochmal abholen.
+
+Also die Idee hinter dem Ganz ist, dass wir auf der einen Seite ein Netz haben, also ein ganz normales, künstliches, also neuronales Netz, das Daten generiert.
+
+Was dieses Netz nicht hat, es hat keinen Bauplan oder hat irgendwelche Zusatzinformationen, wie die Daten generiert werden, sondern anfänglich generiert es irgendwelche Zufallszahlen.
+
+Also völlig rauschen, wenn man das so nennen möchte.
+
+Alles also klassisch unüberwacht.
+
+Genau.
+
+Und auf der anderen Seite haben wir den Diskriminator, was von der Grundidee her ein Klassifikator ist, also ein neuronales Netz, das in falsch und richtig einklassifizieren soll.
+
+Das kriegt als Input die Daten aus dem Generator, also die völlig zufällig generierten Daten, und bekommt aber auch echte Daten, also die, die wir kennen.
+
+Und die halt wirklich echte Daten sind.
+
+Wir spielen sozusagen unser Wissen über die Daten dem Diskriminator zu und nicht dem Generator.
+
+Aber konnte sie nicht auf einmal, sondern entweder die einen oder die anderen.
+
+Genau.
+
+Einfach nur, damit er im Endeffekt weiß, okay, das ist die eine, die Echten reinkommen, sind unsere Klasse der Echten.
+
+Deswegen dieses, was du gesagt hast mit, wir haben eigentlich einen unüberwachten Datensatz ohne Labels.
+
+Aber dadurch, dass wir wissen, dass die Daten, die wir reingeben, alle echt sind, erzeugen wir dadurch eigentlich die Labels indirekt.
+
+Und die Labels sind einfach nur richtig und falsch.
+
+Und wichtig nochmal zu unterscheiden, dass wir ihm nicht gleichzeitig beides geben und er nur sagen soll, ist das linke oder das rechte eher fake oder echt, sondern er kriegt immer genau immer, im einfachsten Fall natürlich genau abwechselnd, einmal ein Fake, einmal ein Original und er muss einfach auseinanderhalten.
+
+Da er so ein klassisches Netz ja kein Gedächtnis hat, habe ich als letztes jetzt ein Fake gekriegt oder ein
+
+ein original er würde sich jetzt nicht merken können was als letztes kam sondern kann einfach jedes bei jedem entscheiden ist das eine oder andere hätte er ein gedächtnis da müssten wir die zufällig einstreuen wir können per zufallsgenerator könnten wir denn steuern gebe ich ihm jetzt mal ein originalbild oder ein generiertes könnte man umgehen wenn er sich das wirklich merken würde.
+
+Also wenn du sagst Spieltheorie, wenn ein Mensch sitzen würde, dann hätte der immer mal seine Strategie.
+
+Ja Mensch, ich muss ja nur gucken.
+
+Wenn ich es einmal falsch schlag, dann weiß ich ja, welches jetzt das, ob es ein Fake war oder nicht und dann müssen wir abwechseln.
+
+Dann würde man sich das merken.
+
+Also so ein Szenario haben wir hier nicht.
+
+Sondern bei jedem ist es wie beim Würfeln, das ist ja kein Gedächtnis.
+
+Bei jedem
+
+Bei jeder Eingabe, die kommt, entscheidet er völlig frei, unabhängig von dem, was vorher war, das Netz, ist es ein Fake oder ist es ein Original-Datenpunkt.
+
+Auch hier ist vielleicht auch fürs Verständnis wichtig,
+
+Ganz am Anfang, wenn wir also praktisch mit dem Netz das erste Mal, oder mit dem Kern, weil es sind ja zwei Netze, die ineinander interagieren, wenn die praktisch, wenn man das Lernen anfängt, dann ist auch der Klassifikator noch nicht gut genug.
+
+Also es ist nicht so, dass der schon so weit ist, dass der sofort sagen kann, das ist Fake, das ist kein Fake, sondern der lernt auch im Zeitabschnitt, also über die Dauer der Lernphase, lernt der besser zu werden, also die Guten von den Falschen zu unterscheiden.
+
+Am anfang kann er mit relativ wenig wissen das ja schon auseinanderhalten weil es kommen ja sagen wir machen das mal ein ganz einfaches beispiel hat diese handschriften eines datensatz handschriftliche ziffern und klar weiß es gibt halt verschiedene varianten von von ziffern 0 bis 9 aber die auseinanderzuhalten von einem rauschen,
+
+Da braucht man keine große Fähigkeit.
+
+Das kriegen Netze relativ schnell hin.
+
+Rauschen, zufällige Daten, Farbwerte von irgendeiner echten Ziffer unterscheiden, kriegen die ganz gut hin.
+
+Ja, okay.
+
+Das heißt, sie können relativ schnell das lernen, aber dann werden ja irgendwann die Datengeneratoren besser.
+
+Die kriegen ja ziemlich schnell mit, so das, was du dazu erzeugst, das taugt nix.
+
+Dann fangen die ja irgendwann an, tatsächlich
+
+was zu generieren was tatsächlich einer einer ziffer ähnlich ist und schon kriegt der klassifikator der diskriminator probleme damit und muss natürlich das besser machen und lernt dadurch tatsächlich wie sich wie das zu unterscheiden ist.
+
+Ja, du hast jetzt gerade einen schönen Punkt gesagt.
+
+Die Generatoren kriegen das mit.
+
+Und das ist ja praktisch die Rückschleife.
+
+Also wir haben praktisch unsere Optimierung des Fehlers, läuft dann nicht mehr nur über den Klassifikator, sondern wir schleifen das zurück auch zum Generator, sodass der Generator darüber ein Feedback bekommt und den Anreiz hat, besser zu werden.
+
+Ja, hoffentlich.
+
+Das ist ja immer so ein bisschen ein Thema, da sprechen wir sicher gleich noch ein paar Minuten drüber, was da alles so schiefgehen kann oder was die Schwierigkeiten sind auch von diesen Netzen.
+
+Ich würde es gerne nochmal mit der Spieltheorie aufgreifen.
+
+Wenn wir das so betrachten, dann ist es ja nichts anderes, als dass wir bei diesen GAN-Netzen ein nicht kooperatives Nullsummenspiel versuchen zu erreichen.
+
+Der eine versucht sozusagen besser zu werden und der andere versucht ihn dabei zu hindern.
+
+Das ist im Endeffekt das, was in den GAN passiert.
+
+Aber meinst du dann wirklich er versucht den daran zu hindern oder versucht es nur ihn trotzdem zu entlarven.
+
+Nee, ins Hafen und das ist im Endeffekt ja immer sozusagen ein gegenläufiger Part.
+
+Also wenn man das betrachtet, dann kann ja der eine nur gewinnen, wenn der andere verliert.
+
+Ja, aber ich glaube nicht, dass das andere Netz versucht, den anderen zu täuschen.
+
+In dem Sinne, ich tue jetzt mal so, als ob ich unsicher bin, dass du das gut generiert hast und sagst ja aber nicht, dass ich mir absolut sicher bin, sondern ich glaube, das ist wie so ein Wettkampf, dass die einfach gegenseitig versuchen, immer wieder besser zu werden.
+
+So wie zwei Läufer, die gegeneinander antreten beim Wettkampf.
+
+Und dann ist der eine wieder schneller geworden und dann trainiert der andere wieder noch ein bisschen mehr, um auch wieder besser zu und schneller zu werden.
+
+Aber die versuchen sich einfach gegenseitig auszustechen.
+
+Aber ob sie dem anderen wirklich versuchen zu hindern im Sinne von, ich sag dir jetzt was Falsches, dass du irgendwie das bewusst schlechter machst, das glaube ich nicht.
+
+Nee, das ist sicher nicht der Fall, aber es langt ja schon, wenn du sagst, der Gewinn des einen ist der Verlust des anderen.
+
+Das langt ja schon, dann hast du ja im Endeffekt ja schon diesen Abhängigkeitslauf dieser beiden konträr funktionierenden Komponenten.
+
+Und das ist ja der entscheidende Part hier, dass man durch der eine nur dann sozusagen der Sieger sein kann, wenn der andere verliert.
+
+Also es ist nicht so, dass du sagst, wir können beide Gewinner werden.
+
+Das ist eigentlich nicht der Fall.
+
+Das heißt, am Ende ist es, und das ist ja auch wieder die klassische Spieltheorie, funktioniert das Spiel ja nur dann, wenn es zu einem Nash-Gleichgewicht kommt.
+
+Und Nash-Gleichgewicht, das rennt man vielleicht aus der BWL noch, das ist im Endeffekt beschreibt ein Nash-Gleichgewicht die Situation während der Entscheidung, in der es keinem der Spieler möglich ist, sich durch die Wahl einer anderen Handlungsstrategie besser zu stellen.
+
+Und das ist eigentlich genau dann der Fall, wenn man das jetzt aus der Betriebswirtschaftslehre sieht, wenn ein Spieler im Nachhinein keine andere Entscheidung mehr treffen würde, als die, die er vorher getroffen hat.
+
+Und wenn wir das jetzt hier betrachten, dann ist das bei den Netzen immer dann der Fall, wenn im Endeffekt die Fehlerfunktion gleich Null ist.
+
+Also wenn beide eine Fehlerfunktion von 0 erreichen, dann wären wir eigentlich im Ness-Gleichgewicht.
+
+Das heißt, das Ziel von dem ganzen Spielchen ist eigentlich, dass man im Endeffekt die Fehler beider minimiert.
+
+Und da entsteht dieser Wettlauf, von dem du gesprochen hast.
+
+Problematisch ist halt nur, wenn man das betrachtet und jetzt merkt, da ist irgendwie Kraftunterschied.
+
+Ich sag mal, der eine ist viel stärker als der andere.
+
+Und wenn man das mal so ein bisschen auch in Grafiken darstellt, dann merkt man, dass es sich nicht Richtung Null konvergiert, sondern dass das halt enorme Schwankungen sind.
+
+Und irgendwann vielleicht ein auch gar nichts mehr macht, weil er sagt, er kann da nichts mehr tun.
+
+Jetzt stelle ich mir aber mal eine Frage.
+
+Was ist denn, also die Frage ist, ob nicht der Diskriminator am Ende doch einen Tick am längeren Hebel sitzt, weil selbst wenn der Generator perfekte Bilder erzeugt, die wir als Mensch sagen, da gibt es nichts dran zu rütteln.
+
+Aber der Diskriminator sagt halt immer das richtig, ob es Fake ist oder nicht.
+
+Ganz einfach zum Beispiel, weil er sich gemerkt hat, jedes zweite Bild ist ein Fake.
+
+Dann kann der andere, der Generator, sich noch so viel Mühe geben.
+
+Er wird es einfach nicht besser hinkriegen.
+
+Ja, dann ist aber auch das, was man bei diesen GAN-Netzwerken sehr häufig sieht, dass ab einem bestimmten Punkt der Output des Generators wieder schlechter wird.
+
+Also dass er praktisch nicht konvergiert.
+
+Und das sehen wir ja wirklich sehr häufig.
+
+Dann verliert er irgendwann die Lust und macht nicht mehr richtig mit.
+
+Wie ein torziges Kind.
+
+Genau.
+
+Spannend sind diese Netze einerseits von der Idee her, finde ich, dass man wirklich so eine Art Wettbewerb erzeugt und damit anscheinend auch wahnsinnig gute Ergebnisse erzielen kann, wenn man sich manche Netze anschaut.
+
+Wir haben es ja letzte Woche gesagt, bei der Spracherzeugung wird sehr verwendet.
+
+Aber wir haben das ganze Spielchen ja auch, was man in der Öffentlichkeit sehr häufig hört, was so Fake-Bilder angeht, also Deepfakes, wo ganze Video-Elemente herausgezogen werden und durch andere Personen ersetzt werden oder ähnliches.
+
+also es funktioniert irgendwie wahnsinnig gut auf der einen seite und auf der anderen seite wenn man sich aber dann mal die theorie dahinter anschaut oder auch manche berichte durch diese papers stellt man fest dass es also ein sehr fragiles konstrukt ist ja dass es also nicht immer so ist dass jedes garnetz dass man land auch zu einem gewünschten ergebnis kommt ja sondern dass es also wirklich extrem schwierig ist da zu einem punkt zu kommen ich glaube es ist extrem vom
+
+abhängig, ob jetzt was rauskommt, was genauso ist, wie man es gerne hätte und ob es gut aussieht.
+
+Sehr sensibel gegenüber den Eingabedaten, Lernprozess, also keine robusten Ergebnisse.
+
+Wenn wir mal wieder auf uns auf die handschriftlichen Ziffern zurückziehen.
+
+Ich meine, wir haben keine Garantie dafür, dass er wirklich alle zehn Ziffern generiert.
+
+Wenn er es einfach gelernt hat, man wegen einem Teil der Ziffern, fünf Stück davon kann er extrem gut generieren und dann kann er sich ja darauf zurückziehen und sagen, die mache ich.
+
+Damit kann ich den den diskriminator täuschen er kriegt das nicht raus warum sollte ich mir die mühe geben noch irgendwas anderes zu machen wenn er die sowieso nicht erkennen kann.
+
+Auch da gibt es ja unterschiedliche Arten, wie man dem Problem Herr wird.
+
+Zum Beispiel Conditional Guns oder ähnliches sind ja Weiterentwicklungen dazu, auf die ich jetzt zwar nicht eingehen möchte, weil wir, glaube ich, noch bei den Guns ein bisschen hängen bleiben sollten.
+
+Aber ich glaube, ein viel größeres Problem ist eher, du hast es jetzt mit den Klassen gesagt, mit den 0 bis 9, also 10 Klassen von den Zahlen.
+
+Wenn wir sowas bauen, dann ist ja unser Ziel, dass wir den Generator haben.
+
+Ja, also das ist im Endeffekt das, was wir wollen.
+
+Also wir wollen das gern dazu nützen, nicht einen Klassifikator zu bauen, sondern den Generator, der uns praktisch aus zufälligen Eingaben, und das ist es ja, wir geben zufällige Werte rein, und soll hinten eine gute Repräsentation von, ich sag mal, unseren Daten rauskommen, die er gar nicht kannte.
+
+Also, gibt's ja viele Beispiele wie Gesichter, die dann praktisch komplett virtuelle oder künstliche Gesichter erzeugen, die täuschend echt sind und solche Sachen.
+
+Die Problematik ist aber, dass wir jetzt hier bei den Zahlen ja neun oder zehn Klassen haben.
+
+Und das garantiert uns ja nicht, dass wenn wir das so machen, dass das Netz alle zehn Klassen landet.
+
+Das ist ja schon angedeutet, wir nehmen ja konzentriert sich vielleicht nur auf die fünf oder nur auf die drei oder wie auch immer.
+
+Und dann haben wir einen Generator, der immer nur fünf und drei generieren kann.
+
+Und das ist ja wirklich ein ganz großes Problem von dem, von den Clans, dass wir in einer gewissen Weise nicht direkt Einfluss nehmen können darauf, dass wir sagen, ey, wir haben eine Gleichverteilung der Klassen und der generiert uns all die Klassen, die wir gerne wollen.
+
+Genau, weil es ja als Grundszenario erstmal als unüberwacht gilt, wo wir diese Labels gar nicht kennen.
+
+Ja.
+
+Und diesen dieses problem das nennt man auch mode kollaps und das ist mit die größte schwierigkeit also wir haben bei unseren klassischen netzen das thema overfitting hier kommt er dieses mode kollaps noch dazu er lernt gut er kommt zu guten ergebnissen aber er repräsentiert nicht die grundgesamtheit aller daten die wir uns vorstellen als generator.
+
+Genau, und da gibt es eine einfache Lösung, dass man sagt, man kann sich das ja mal vorstellen, so ein Generator erzeugt nicht ein, sagen wir mal, jetzt bleiben wir mal bei den Bildern, bei den Ziffern, aber am Ende sind es ja irgendwelche Datenobjekte, Datenpunkte, aber mit den Ziffern kann man sich das ganz gut vorstellen.
+
+Er erzeugt ja nicht aus nichts heraus diesen Punkt, sondern eigentlich kann man sich das so wie eine Abbildung vorstellen, von einem Eingabevektor oder Punkt auf eine so eine Ziffer.
+
+Und anstatt da eine Konstante an festen Wert zu nehmen, sagt man, okay, dann habe ich halt eine zufällige Eingabe, eine zufällige Zahl zwischen 0 und 1 oder auch mehr größere Eingaben.
+
+Und die bilde ich am Ende ab auf eine Ziffer.
+
+Und die Hoffnung ist, dass ich, wenn ich unterschiedliche zufällige Anfangswerte habe, dass dann halt unterschiedliche Bereiche vielleicht auch, aber es ist wieder diese Hoffnung vielleicht, weil man kann es nicht garantieren, auf unterschiedliche Ziffern abgebildet werden.
+
+Vielleicht auch hier nochmal
+
+Also der Generator merkt sich keine Beispiele.
+
+Also der nimmt nicht die Originaldaten, die wir zum Trainieren haben, und merkt sich die oder nimmt die Merkmale daraus und kann die erkennen.
+
+Übernimmt also nichts, also keinerlei Elemente.
+
+Kann er sich eigentlich merken, weil er die ja gar nicht sieht?
+
+So ist es.
+
+Ich will da nur noch mal auf den Punkt kommen.
+
+Das ist für mich wirklich extrem wichtig, dass einem das klar ist.
+
+Was er lernt, ist eine Wahrscheinlichkeitsverteilung von Merkmalen, die in den Trainingsdaten drin sein sollten.
+
+Und das kriegt er indirekt über den Diskriminator genannt oder gesagt.
+
+Und dadurch haben wir die Schwierigkeit, dass wir nicht bestimmen können, was er denn so verteilt und welche Klassen da sind oder nicht.
+
+Und wir hoffen, in Anführungsstrichen,
+
+dass er so gut lernt dass vielleicht so viele iterationen drin sind dass dann wirklich eigentlich alle klassen vertreten sind das erklärt aber auch schon warum es manchmal gut klappt und manchmal nicht weil er hat einfach so eine sehr viel zufall mit dabei ist.
+
+Ja aber es ist um das zu verstehen es ist vielleicht auch interessant diese ganze begriff,
+
+Benutzen wir hier, weil er die Daten generiert, hat ja eine viel längere Historie.
+
+Auch generell, wenn wir maschinelles Lernen haben, unterscheiden wir gerne mal unterschiedliche Arten von Modellen.
+
+Die generativen Modelle,
+
+Und die diskriminieren Modelle, also was wie den Entscheidungsbaum zum Beispiel.
+
+Da geht es mir nur darum, dass ich letztendlich eine Trennlinie zwischen meinen Klassen definiere.
+
+Geht mir darum, bin ich links oder rechts davon?
+
+Ist es das eine oder andere?
+
+Das heißt, ich habe eine Trennlinie eingefügt, kann die auseinanderhalten.
+
+Das heißt, ich modelliere letztendlich eine bedingte Wahrscheinlichkeit, ist es die Klasse oder eine andere, gegeben die Daten.
+
+Und bei den generativen Modellen versuche ich, da geht es mir wirklich darum zu lernen, wie die Verteilung ist.
+
+Ich habe das vom gedanken her ich habe daten generierende prozesse als diese verteidigung die wir da haben und die versuche ich zu erlernen geht es mir wirklich darum wie sieht das aus das ist mir beim diskriminieren oder ist mir das völlig egal was sagen legt eine trennlinie rein egal wo die daten eigentlich liegen oder auch nicht.
+
+Und das ist genau dieser wichtige Unterschied.
+
+Und das ist normalerweise ein sehr, sehr komplexes Problem, wenn das sehr, sehr große Datenmengen sind.
+
+Wenn ich sage, okay, ich generiere, was weiß ich, Katzenbilder, wie sieht die Verteilung für Katzenbilder aus?
+
+Also das ist eine wahnsinnig komplexe Geschichte und dann haben wir hier nur die Katzenbilder.
+
+Wenn wir beliebige Objekte haben, sehr, sehr komplexes Thema.
+
+Und das zu lernen nur von beispiel daten direkt versuche ist gar nicht so einfach und das interessante ist dass die ganz eigentlich ein indirekter weg sind ich präsentiere ja nicht einfach ganz viele beispiele und sage jetzt merkt er einfach mal wie die verteilung aussieht sondern ich mache es indirekt wie du so schön gesagt hast über den umweg dass ich ihn einfach trainiere
+
+Daten zu erzeugen, die so aussehen wie das Original und dadurch zwinge ich ihn auf indirektem Wege diese Verteilung irgendwo zu sich zu erschließen.
+
+Hört sich ein bisschen an, wie wir es mit den Studenten machen.
+
+Dass wir hoffen, dass wenn sie selber was machen, dass sie dann dadurch besser werden und wir dann nur die Fehler korrigieren und sagen, guck mal hier, da hast du einen Fehler gemacht.
+
+Wir sagen dann keine Musterlösung, wir sagen nur mach irgendwas und wenn du Glück hast, hast du bestanden.
+
+Ja, nur ein kleiner Witz am Rande.
+
+Aber es ist natürlich schon echt interessant, dass man wirklich über den indirekten Weg geht an der Stelle.
+
+Ich finde auch wirklich, wenn man darüber nachdenkt, im ersten Moment hört sich das an, ja gut, da gibt es halt den Generator und den Diskriminator, eine tolle Idee, kann man technisch schon spielen.
+
+Wir haben ja auch im Vorfeld intensiv diskutiert.
+
+Aber unterm Punkt muss man sich überlegen, was man damit machen kann.
+
+Und das finde ich schon interessant, weil natürlich sind diese Netze vor allem im Fokus mit den ganzen Fake-Themen.
+
+die nicht schön sind und die sicher nicht das Richtige sind, also sicher nicht der Anwendungsfall, für den diese Netze in meinen Augen gedacht sein sollten.
+
+Aber wenn man mal weiterdenkt, wir haben im Medizinbereich zum Beispiel Bilder, die wir nicht verwenden können zum Trainieren oder mit denen wir nicht arbeiten können, weil sie personenbezogen sind, weil sie nicht für die Öffentlichkeit gedacht sind oder ähnliches.
+
+Wenn wir es jetzt nun schaffen, mit so einem Netz künstliche Daten zu erzeugen, die keiner Person zugehörig sind,
+
+die aber so realistisch sind wie echte Daten, dann können wir da mit ganz anderen Dimensionen arbeiten.
+
+Also denkt daran an wieder an Klassifikatoren bauen, die irgendwie Krebs erkennen können auf Röntgenbildern oder irgendwas anderes.
+
+Und dafür sind die schon sehr spannend, diese ganze, dass man da wirklich rangehen kann und auch um den Datenschutz herum, also nicht den auszuhebeln, aber ihn gerade mit solchen Netzen praktisch zu unterstützen und trotzdem dadurch fähig ist, Themengebiete abzubilden, neue Netze zu lernen und die KI damit auch weiterzubringen.
+
+Das war ja eigentlich unser ein knüpfungspunkt synthetische daten generieren daten die die vielfalt zu erhöhen und das war ja eigentlich das thema weshalb wir überhaupt auf das thema gern gekommen sind so dann haben wir jetzt diese ganz einfachen szenarien für ganz erstmal.
+
+aufgezeigt mit dem generieren mit den diskriminieren wie sich das quasi die gegenseitig sich hoch pushen um richtig gut zu werden zeigt sich aber dass das ja nicht ja das ist ja nur noch in dieser einfachen ausprägung reicht ja noch nicht um genau dieses alles zu zu erreichen was du auch geschildert hast du hast ja auch gesagt wenn zum sprache zu erzeugen da hilft es sich natürlich einmal vorzustellen es ist eine abbildung von einem ausgangsobjekt,
+
+auf irgendein Neues, dieses zufällig generierten Datenpunkt dann.
+
+Und ich muss ja nicht ziemlich von Zufallswerten ausgehen.
+
+Ich kann ja dann ganz gezielt sagen, generier mal eine 3 oder generier mal ein Gesicht, was glücklich ist.
+
+Und er generiert dann einfach aufgrund seiner, ja, dieser Vorgabe genau dieses Objekt.
+
+Und das glaube ich wird ein wichtiger Punkt, mal zu schauen, wie kriege ich es denn hin, dass ich ausgehend von einer Vorgabe,
+
+Was ist jetzt ein generierende 3 ein glückliches gesicht oder eine sprachsequenz.
+
+Die genau dem entspricht was ich da gerne gerne hätte über.
+
+Ja verschiedenste arten von eingabeformen wie man das am ende eigentlichen krieg weiter fehlen noch ein paar schritte.
+
+Ja absolut das ist mal wir werden dafür noch mal wieder eine neue folge spendieren müssen.
+
+Ich gehe fast davon aus, wenn ich so ein bisschen auf die Zeit schaue, es ist einfach zu spannend und es fliegt einfach rum, die Zeit, das ist echt Wahnsinn.
+
+Auch in der 20.
+
+Folge geht es wahnsinnig schnell vorbei.
+
+Ich würde fast vorschlagen, wir greifen das tatsächlich nochmal auf und vor allem, du sprichst ja Conditioning ganz an, das ist das eine.
+
+Ich würde auch ganz gerne das nochmal aufgreifen in der nächsten Sendung, dass wir da vielleicht auch nochmal mehr Beispiele nochmal aufbringen, wo es denn eingesetzt wird, was es denn für eine Konsequenz hat auch, weil unsere Erfahrung ist ja, dass wenn wir Ganze einsetzen, wir haben es jetzt in den letzten Wochen vor allem bei der Sprachsynthese verwendet,
+
+Man merkt ja, dass einfach wahnsinnig lange Trainingszeiten da sind.
+
+Also es ist keine Netze, die schnell konvergieren, die schnell landen, sondern die einfach aufgrund ihrer Komplexität einfach, weil wir zwei Netze parallel landen müssen und die dann auch noch in Kombination, haben wir einfach wahnsinnig viele Parameter und das muss irgendwie gelandet werden.
+
+Also mit den beispielen finde ich eine schöne sache ich habe so tolle sachen gesehen style ganz cycle ganz was ich habe ein video gehabt wo ein pferd rumläuft und dann wurde daraus ein zebra gemacht.
+
+Das ist einfach das muster von dem zebra denn da drauf aber nicht nur das das gras war auch brauner mit der argumentation naja zebras sind ja in der steppe dass das gras nicht so grün also diese anpassung on the fly quasi wie man sowas machen kann hat natürlich eine gewisse gefährlichkeit wie du schon sagtest man halt irgendwo,
+
+ja sich ein ein video so leicht umdrehen kann dass jemand anders drauf ist entsprechend anderen stil oder das ist sehr gefährlich aber das denke mal greifen wir einfach nächste woche mit mit beispielen und und weiterentwicklung in der richtung nochmal auf.
+
+Prima dann vielen dank fürs zuhören und bis nächste woche.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

@@ -1,0 +1,433 @@
+ Hallo und herzlich willkommen zu der heutigen Folge und damit zum Teil 2 unserer kleinen Miniserie zur chronologischen Entwicklung von NLP-Verfahren.
+
+Wir werden heute anschließend zu dem Back-of-Words-Verfahren aus Folge 7, das Verfahren Embeddings, vorstellen und hier neben Grundgedanken, Funktionsweisen auch auf mögliche ethische Implikationen eingehen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Ich freue mich auf eine weitere Folge der Miniserie heute.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Wir hatten ja letzte Woche über Back of Words gesprochen und wollen jetzt in dieser Miniserie weitergehen und hier über Embeddings reden.
+
+Nochmal kurz Zusammenfassung.
+
+Wir haben Back-of-Words kennengelernt als einfache Darstellung von Texten.
+
+Das war halt sagen, welche Wörter oder allgemein welche Terme, es können auch was anderes als Wörter sein, kommen wie häufig in einem Text vor und speichern das dann klassischerweise in der Sichtweise eines Dokumentes in einem Vektor.
+
+Ja, vor allem halt in einem sparse Vektor, also in einem Vektor.
+
+Genau, in einem spärlichen Vektor.
+
+Für jedes Wort, haben wir vereinfacht gesagt, meines Vokabulars, die Menge aller Wörter, die es in einer Kollektion von Texten gibt, als Basis, feste Länge, wie häufig kommt jedes einzelne Wort in einem Text vor.
+
+Und dann hatten wir ja gesagt, das ist schön und gut, aber wir können irgendwie so die Beziehungen der Wörter untereinander noch nicht richtig einfangen.
+
+Ja, das war das eine Problem.
+
+Und wir haben ja auch gesagt, dass sozusagen gerade dieser große Korpus, also wenn wir diese Vektoren haben, die sehr spärlich sind, dass das natürlich auch ein Problem ist in der Berechnung, in der Zeit.
+
+Genau, das ist Berechnung und Zeit, aber auch wieder diese Beziehung dahingehend, dass wenn ein Wort durch einen eintragenden Vektor dargestellt wird, ein anderes Wort durch einen anderen eintragenden Vektor,
+
+ist da ja keinerlei ähnlichkeit zwischen diesen wörtern irgendwo erkennbar auch wenn sie in der sprache vielleicht da sind was könnten ja wörter sein die synonym verwendet werden das kommt aber in diesem modell nicht zum ausdruck und da ist meiner innerlich gesehen einer meiner meinung nach eine sehr sehr große schwäche diese ansätze dass wir
+
+ähnliche wörter beziehungen zwischen den wörtern so nicht greifen können und und da setzen jetzt ja genau die die wörter beddings an.
+
+Genau das sind ja verfahren die versuchen aus dem kontext heraus auch eine bedeutung des wortes mit ihm zu modellieren und grundsätzlich kommen diese embeddings ja aus der linguistischen theorie also beziehungsweise von den grundgedanken her,
+
+ganz anfangszeiten zellikaris mit der distributionshypothese, wo man sagt, dass die wörter die einen ähnlichen kontext haben auch eine ähnliche bedeutung haben sollten und das ist ja so die grundidee dahinter.
+
+Genau da gibt es ja gibt es so einen schönen ausspruch auch von dem von dem john rupert firth, der schon in den 50er jahren gesagt hat, you should know a word by the company it keeps, also dass die bedeutung von wörtern sich aus ihrem kontext irgendwo erschließen.
+
+Ja, genau.
+
+Und die Embeddings selber, wenn man die jetzt beschreiben möchte, könnte man ja auch wirklich sagen, Wörterembeddings sind eine Art der Wortrepräsentation, die in Form von Vektoren, also ähnlich wie bei den Back-of-Words, es ermöglichen, ähnliche Bedeutungen auch ähnlich zu repräsentieren.
+
+Wie kann man sowas jetzt hinkriegen, dass man Wörter entsprechend ihrer Verwendung und ihrer Häufigkeiten zueinander in ihren Bezügen irgendwo repräsentiert?
+
+Man muss sehen, dass 2013 Google mit einem Paper auf den Markt oder in die wissenschaftliche Community kam und an der Stelle zwei mögliche Implementierungen von solchen Embeddings
+
+dargestellt haben, das ist also der Mikolov, also das Paper heißt Efficient Estimation of Word Representation in Vector Space.
+
+Und da wurden dann vor allem halt zwei wesentliche Verfahren dargestellt, das ist einmal das sogenannte Word2Vec-Verfahren, beziehungsweise das Word2Vec-Verfahren mit zwei Ausprägungen, einmal Common Bag of Words und einmal Skip Grams.
+
+Und das interessante daran ist, man hat halt im Endeffekt gesagt, naja, es ist jetzt nicht was komplett neues per se, dass wir auf der grünen Wiese anfangen, sondern man hat natürlich schon die erste Repräsentation, nämlich man durch diese, wir haben das ja in der letzten Folge dargestellt, also wenn man das One-Hot-Encoding eines Satzes nimmt, und man versucht dieses dann im Endeffekt in die IBX zu bringen.
+
+Vielleicht sollte man an der Stelle nochmal sagen, während wir beim Back-of-Words-Ansatz ja eigentlich so einen ganzheitlichen Dokument repräsentiert haben mit all seinen Wörtern, ziehen wir uns jetzt auf einmal auf die Einzelwortebene zurück.
+
+Wir wollen eine Darstellung für jedes einzelne Wort erstmal haben.
+
+Dass man die später wieder zu Mengen zusammenfasst kann für ein ganzes Dokument oder einen Satz, ist ein anderes Thema.
+
+Aber jetzt erstmal bezwingen wir uns nur auf ein einziges Wort.
+
+Und dann wäre dieser One-Hot-Encoding ja eigentlich bezogen auf einen Vektor, der so viele Einträge hat wie mein Vokabular.
+
+Einträge, also wie viele verschiedene Wörter es gibt, ist genau an der Stelle von dem Index von dem Wort im Vokabular eine 1 und sonst nur Nullen.
+
+Das ist quasi meine Eingabe und ist schon ein Vektorraum, eine Vektorraumdarstellung.
+
+Ja, das ist ganz klar und wir versuchen die jetzt quasi zu verdichten, kompakter darzustellen, um die Zusammenhänge besser zu greifen.
+
+Und in der Stelle ist es vielleicht mal interessant losgelöst von den verschiedenen Varianten, die du gesagt hast, zu erwähnen, dass das erste ja einfach einfach zählbasiert, auf Häufigkeiten beruht.
+
+Richtig.
+
+Und jetzt, alle Ansätze, die wir jetzt betrachten, beruhen auf Prognosen, dass ich versuche, irgendeine Prognose hinzukriegen.
+
+Also man versucht, den Kontext als Basis mit heranzuziehen und nicht nur das reine Zählen, so wie du es gesagt hast.
+
+Und die Idee ist einfach zu sagen, man nimmt das Wort und schaut einfach in die Nachbargeräume, also die Wörter, die nebenan stehen.
+
+Sag mal, das Wort, das direkt davor steht oder das Wort, das direkt danach steht.
+
+Und nützt dieses mit, um zum Beispiel das Wort in der Mitte zu prognostizieren.
+
+Also unser Zielwort.
+
+Also wenn wir jetzt einen Satz haben, der braune Fuchs läuft durch den Wald und wir schauen uns dann einen Fuchs an,
+
+dann wäre das nachbarwort der und beziehungsweise braun und läuft und diese beiden wörter.
+
+Braun und läuft die nützen wir um dann das wort fuchs prognostizieren zu können was ja auch gut was ist braun und läuft durch den wald.
+
+Ja, der Fuchs, hoffentlich.
+
+Interessant ist immer zu sehen, immer zu überlegen, wo sowas herkommt.
+
+Das kennen wir vielleicht bei der Google-Suche.
+
+Es kommt in die Sachse, das ist ja von Google-Forschern entwickelt worden.
+
+Man tippt eine Suchanfrage und Google schlägt vor, welches Wort als nächstes in dieser Anfrage noch vielleicht zu tippen wäre.
+
+Das ist ja genau eine dieser unmittelbaren Anwendungen dieser Idee, dass ich prognostiziere, welche Wörter passen denn noch in diesen Kontext.
+
+Und das klappt ja erstaunlich gut.
+
+Das stimmt, das stimmt.
+
+Man verlässt sich auch häufig drauf.
+
+Auch wenn man falsch tippt oder ähnliches bei der Google-Suche, dann geht man ja wirklich in den Satzachraum.
+
+Diese Idee mit dem Prognostizieren, ich prognostiziere aus einem Teil des Satzes sozusagen entweder das nächstfolgende, das ist ein bisschen erweitert, das ist nicht nur der Anfang des Satzes, sondern auch vom hinteren Teil des Satzes natürlich etwas zeigen kann, also aus dem Kontext das gesuchte Wort prognostizieren oder andersrum aus dem gesuchten Wort zu prognostizieren, was sonst noch im Kontext steht oder den Kontext zu prognostizieren.
+
+Genau und man muss auch sehen, die haben natürlich nicht nur nach links und rechts mit einem Wort geguckt, sondern die machen so eine Art, man nennt das ja Rolling Window, also dass man nach links und rechts nach zwei Wörtern schaut oder drei, je nachdem wie man dann die Parameter des Modells hat, verändern möchte und benutzt dann mehr Informationen, um zum Beispiel auf dieses Zielwort prognostizieren zu können oder umgekehrt, wie du es halt gesagt hast, von dem Zielwort auf den Kontext zu prognostizieren.
+
+Und diese Fenstergröße ist ganz, ganz wichtig.
+
+Wir haben ja Stoppwörter in den, wenn du sagst, der braune Fuchs läuft durch den Wald, sowas wie der Artikel, bestimmte, unbestimmte Artikel sind ja oft gar nicht so relevant für die Prognose.
+
+Und dadurch, dass wir das Fenster ein bisschen vergrößern und nicht nur die unmittelbare Nachbarschaft, also das Wort links und rechts daneben anschauen, sondern ein paar mehr, können wir sowas viel besser greifen, dass wir halt die wirklich relevanten Wörter in dem Kontext auch finden.
+
+Ja, jetzt kann man nochmal die zwei Verfahren aufgreifen von der Methode Word2Vec, die in dem Paper von Mikulovay dargestellt wurden.
+
+Das ist einmal das Skip-Gram und einmal das Common Back of Words.
+
+Und die zwei unterscheiden sich ja dahingehend, dass man genau überlegt, was ich denn prognostiziere.
+
+Also man durch das C-Bow geht her und nimmt den Kontext, also das Fenster der Wörter links und rechts von meinem Zielwort.
+
+und prognostiziert dann das Zielwort.
+
+Und jetzt muss man sich das so ein bisschen vorstellen, damit man diese Methode versteht.
+
+Bei den Back-of-Words-Verfahren sind wir hergegangen und haben einfach die Wörter gezählt und haben dann den Vektorraum daraus gebildet.
+
+Und haben gesagt, okay, das ist unsere Repräsentation.
+
+Hier greifen wir jetzt auf Prognose, also die Modelle, die wir verwenden, sind schon ein bisschen komplexer.
+
+Das heißt, wir verwenden hier eigentlich neuronale Netze, bei denen wir sagen, wir haben drei Schichten, wie das bei den neuronalen Netzen,
+
+Deep neuronale Netzzehner mit mehreren Schichten arbeiten, haben wir eine Eingangsschicht, in der wir durch unsere Repräsentation, wie wir beim Back-of-Words die Wörter haben.
+
+Also einfach den Vektor mit einem Wort gezählt, Eins und vier Nullen drin oder ähnliches.
+
+Dann in der zweiten Schicht, das ist das sogenannte Hidden Layer, und das ist die Schicht, mit der wir dann die Verdichtung vornehmen.
+
+Also wo wir versuchen, diesen spärlichen Vektor aus unserem vorgehenden Ebene dann runterzubringen auf wenigere Ebenen.
+
+Also wenn wir uns einen Korpus vorstellen, also einen Text mit vielen, vielen, vielen Wörtern, dann haben wir ja 30.000, 40.000 Wörter, vielleicht auch mehr oder weniger.
+
+und haben dann dementsprechend bei dem Eingang relativ viele Elemente, und die versuchen wir runterzubringen, meistens so zwischen 100 und 500 Elemente, die dann praktisch in diesen Hidden Layer sind.
+
+Und dann haben wir das Output Layer, und in dem Output Layer, da prognostizieren wir dann die Wahrscheinlichkeit jetzt zum Beispiel bei dem Seabow auf dieses Zielwort.
+
+Wie wahrscheinlich ist praktisch ein Wort des Korpuses?
+
+Das heißt, unser Output Layer ist wieder so groß wie unser Korpus eigentlich.
+
+Und wenn man das jetzt betrachtet, ist eigentlich dann das, was wir wollen, ist dann eigentlich nicht die Prognose am Ende im Sinne des Embeddings, sondern was wir wollen, ist eigentlich diese Informationen aus dieser mittleren Schicht.
+
+Und die stellt eigentlich dann die Repräsentation, also den Vektor dar für das einzelne Wort.
+
+Das heißt, wir nutzen quasi dieses Modell oder einen Teil des Modelles zum Lernen einer guten Repräsentation.
+
+Solche Ansätze kennen wir auch aus anderen Bereichen des Deep Learnings, zum Beispiel bei der Bilderkennung.
+
+Da könnte man zum Beispiel die Autoencoder nehmen.
+
+Da versucht man ja, ein Bild zu komprimieren und dann wieder das Originalbild herzustellen und nutzt dann auch oft nur den ersten Teil zum Kodieren, zum Komprimieren.
+
+Und auch da wieder die Grundidee, ich bilde das ab auf eine viel, viel kompaktere Darstellung mit viel, viel weniger Merkmalen und kann es hinterher wieder dekomprimieren.
+
+Und hier auch, nur dass wir jetzt hier nicht quasi den Originalsatz wiederherstellen, sondern quasi da eine kleine Prognoseaufgabe haben.
+
+Welches sind die Wörter im Kontext oder welches ist das gesuchte Wort innerhalb des Kontexts?
+
+Ich würde es nochmal gerne versuchen, weil es hört sich so kompliziert an, wenn man es so beschreibt.
+
+Bei so einem neuronalen Netz haben wir es ja so, dass praktisch jeder Knoten innerhalb eines Layers hat ja eine gewisse Gewichtung, die ja praktisch durch das Lernen sich verändert.
+
+Und diese Gewichtung, das ist ja eigentlich Teil des Vektors dann unseres Embeddings.
+
+Genau, weil wenn wir ein one-hot-encoded-Wort quasi da reinstecken, wird ja genau ein Satz dieser Gewichte gezogen, weil sie spricht an und das ist genau die Repräsentation dann.
+
+Das heißt, wir können die Gewichte dieser versteckten Schicht direkt als Repräsentation meines Vektors ablesen.
+
+Also es hört sich jetzt alles so extrem kompliziert an, es ist aber faszinierend damit ein bisschen zu spielen, weil man halt wirklich mit diesen Ähnlichkeiten aus den Texten heraus bestimmte Dinge machen kann.
+
+Also wenn man jetzt zum Beispiel sagt, man hat einen König, also das Wort König und jetzt muss man sich das ein bisschen abstrakt vorstellen, man zieht von dem Wort König das Wort Mann ab und addiert die Frau dazu und dann kommt theoretisch rein von der Überlegung her, sollte dann Königin rauskommen.
+
+Und wenn man das jetzt in diesen Texten, wo halt die Worte verwendet werden, halt anlernt und es dann auch macht, dann ist es tatsächlich so, dass das ähnlichste Wort zu diesem Berechnung, weil wir ja bei der Stand den Vektor von König nehmen, den Vektor von Mann, ziehen den von König ab, also von dem Vektor König, addieren den Vektor von Frau dazu und am Ende kommt dann Königin raus.
+
+Das ist auch interessant.
+
+Aber wichtig ist natürlich, dass wir die Wörter nicht voneinander abziehen, sondern ja die Repräsentationen in diesem verdichteten Vektorraum.
+
+Und letztendlich vorstellen könnte man sich das Ganze ja, dass das abgebildet wird ja, wie du sagtest, auf ein paar hundert Dimensionen von vielen, von zehntausenden.
+
+Mein ganzes Vokabular hat ja auf zehntausende bis hunderttausende Wörter.
+
+Bild ich ab auf mehrere hundert Einträge.
+
+Und die Überlegung ist, dass dann unterschiedliche Einträge stehen für unterschiedliche Konzepte, Bedeutungsteile.
+
+Und so kann natürlich ein Wort unterschiedliche Aspekte, Bedeutungen in den verschiedenen Einträgen haben.
+
+Und das Interessante ist jetzt, dass wenn zwei Wörter synonyme sind, dass die oft auf denselben Vektor oder einen sehr ähnlichen Vektor abgebildet werden, weil sie ja
+
+vergleichbare begriffe betrachten und von unterschiedlichen leuten zwar mal der eine mal das andere wort verwendet wird vielleicht aber der kontext immer sehr ähnlich ist und somit landen sie auf einer sehr sehr ähnlichen vektor repräsentation und auf die art und weise kann ich dann bei der weiteren verarbeitung quasi auf diesen konzepten beruht die ich da darstelle viel viel besser ausnutzen ja
+
+Und dann kommt eigentlich dieses Faszinierende, dass man sagt, man schafft dadurch eigentlich, dass man Wörter in einen mehrdimensionalen Raum einfach ablegen kann und schauen kann, wo sind denn Ähnlichkeiten.
+
+Also welche liegen dicht beieinander und die gehören dann stark zusammen.
+
+Und das können wir ja natürlich wieder nützen, wenn wir Texte vergleichen wollen, dass wir sagen, gibt es viele, die in einem ähnlichen Bereich zusammenliegen.
+
+Und man muss ja sehen, wir reden jetzt hier über Sprachverarbeitung.
+
+Es gibt aber auch etliche Paper zu dem Thema Embeddings in anderen Bereichen.
+
+Der Eingang, den wir ja machen, sind ja Wörter und die ziehen wir in eine numerische Repräsentation.
+
+Wir können aber auch andere Aspekte auch in die numerische Transformation bringen.
+
+Also so Dinge wie zum Beispiel den Klickstream auf Internetseiten.
+
+Also dass ich einfach sage, der Ablauf einer Person, die über meine Internetseite geht und die einzelnen Seiten anklickt, kann ich betrachten wie so einen Satz, wo ich sage, der erste Klick wäre das erste Wort, der zweite Klick auf die Seite zwei wäre das zweite Wort und so weiter.
+
+und repräsentiert diesen dann genauso, wie als wenn das Wörter wären, als Zahlen, und nütze dann dafür Embeddings.
+
+Das ist ein interessanter Ansatz, denke ich mal, insbesondere immer wenn wir Sequenzen haben und vielleicht Fragmente in den Sequenzen wichtig sind, vielleicht aber gar nicht so die genaue Position innerhalb der Sequenz, das könnte man vielleicht genauso ausdehnen auf
+
+Bioinformatik mit DNA-Sequenzen, du hast Clickstream angesprochen, Videosequenzen.
+
+Airbnb hat es zum Beispiel verwendet, um ähnliche Wohnungen dann den Anwendern zu empfehlen.
+
+Also zu sagen, wenn ich Wohnungen, die ich vermiete, habe mit bestimmten Eigenschaften,
+
+Dann haben die eigentlich die Eigenschaften der Wohnungen wie einen Satz behandelt und haben praktisch jedes Angebot dann als eigenen Vektorrepräsentation über Embeddings abgebildet und haben dann über den Weg gezeigt, dass man da auch mit einem relativ schnellen, einfachen Verfahren, weil die sind einfach nicht so komplex diese Verfahren, optimale Empfehlungen für andere Wohnungen oder ähnliches abheben kann.
+
+Das heißt, diese Idee der Embeddings, und das klingt erstmal wahnsinnig wild, was kann das sein?
+
+Das heißt ja eigentlich nur, dass ich eine kompaktere Vektordarstellung von einer gröberen Darstellung, nochmal vielen Dimensionen, eine etwas kompaktere Darstellung finde.
+
+Und bei Texten glaube ich aber nach wie vor ist das besonders wichtig, weil ja die Ausgangsräume so hochdimensional sind, weil wir ja hunderttausende Wörter potenziell haben könnten.
+
+Das ist da besonders wichtig, da ist immer diese spärliche Darstellung.
+
+Bei den anderen Anwendungsfällen, die Darstellung auch schon spärlich ist oder an sich schon kompakter, aber die trotzdem davon profitieren.
+
+Das wäre dann ein anderes Thema.
+
+Also wie gesagt, es ist echt interessant, dass man da auch Ansätze sieht, fremde Methoden aus der anderen Domäne nützen, um zu gucken, ob sie in der anderen Domäne auch gut funktionieren.
+
+In dem Fall, also ich habe bei Airbnb in dem Paper, das ist echt interessant, die haben da sehr gute Ergebnisse damit erzielt.
+
+Aber du hast natürlich vollkommen recht, es ist eigentlich, die Ursprungsmenge ist eigentlich nicht spärlich, wenn man das betrachtet an der Stelle.
+
+Aber deshalb kann man ja trotzdem Merkmale generieren aus meiner Ausgangsmenge, die für fortschreitende Analyse, Modellerstellung irgendwie aussagekräftiger sind.
+
+Was ja generell auch eine Kernidee beim Deep Learning ist, oder sagen wir mal ein Teilaspekt des Deep Learnings, manche nennen es ja auch Representation Learning, weil durch die Schichten eines neuronalen Netzes auch erst gute Darstellungen gelernt werden meiner Ausgangsdomäne.
+
+Eingaberaum, meine Raw Features könnte man sagen, meine Rohmerkmale, werden abgebildet auf aussagekräftigere Merkmale, mit denen ich denn andere Aufgaben möglicherweise besser lösen kann als im Ausgangsraum.
+
+Ich würde jetzt gerne noch auf einen Punkt eingehen, weil es hört sich alles so fantastisch an, aber es hat natürlich auch seine Schattenseiten, muss man natürlich auch so sehen.
+
+Wir nehmen ja eine Historie an Texten oder an Informationen und repräsentieren die und leiten dadurch Ähnlichkeiten ab.
+
+Und eine Schattenseite von Embeddings ist, dass man ein gewisses Risiko hat, dass da so eine Art, man nennt es Bias, also dass praktisch eine Vorfärbung in den Texten drin ist, die sich dann in den Repräsentationen wiederfindet.
+
+Und das können so Themen sein, dass man sagt, wenn ich jetzt Texte habe, die zum Beispiel Geschlechterstereotypen ganz stark treiben, also dass da keine große, ich nenne es jetzt mal Gleichberechtigung da ist in den Texten, dann spiegelt sich das natürlich auch wieder in den Repräsentationen.
+
+Und auch da gibt es ein ganz schönes Paper aus 2016 von Boluk Barsi, die haben geschrieben, man is to the computer programming, as woman is to the homemaker.
+
+Und haben halt aufgezeigt, selbst wenn man Texte nimmt, die wirklich eigentlich neutral sein sollten, so wie Nachrichtentexte, also die haben ganz viele Google News Artikel genommen und haben praktisch damit ein Embedding angeleitet und haben dann gezeigt, dass da halt solche Geschlechterstereotypen auch vorhanden sind und dass die dann natürlich zu gewissen Problemen führen könnten.
+
+Also ich denke da vor allem an sowas wie, wenn ich im Personalbereich zum Beispiel einen Algorithmus verwende, um Auswahl von Personen vorzunehmen oder ähnliches.
+
+Also ob ich den einlade oder nicht.
+
+Und ich nütze jetzt beispielsweise den Fleece-Text der Anschreiben oder ähnliches und um das dann zu repräsentieren, benutze ich Embeddings.
+
+Dann kann es passieren, dass diese Stereotypen halt zu einer anderen Entscheidung kommen, als wenn man das völlig neutral betrachten würde.
+
+Ja, man sagt ja, verschiedene Lernverfahren diskriminieren.
+
+Ich denke mal, ja, machen sie dann in der Tat, aber eigentlich sind diese Verfahren ja nur ein Spiegel der Gesellschaft.
+
+Das heißt, sie spiegeln das wieder, was in dem Fall in Texten oder in anderen Formen von Daten
+
+drin steckt und decken das eigentlich eher auf, als dass sie es selber machen.
+
+Also dadurch, dass man sie dann anwendet, passiert genau das.
+
+Ich würde behaupten, eher erst mal unbewusst, aber man muss auf jeden Fall darüber nachdenken.
+
+Welche Daten steckt man denn hinein?
+
+Und wenn ich jetzt wieder auf diese Word Embeddings gehe, die trainiere ich ja typischerweise auf großen Datenbeständen, die ich irgendwo herkriegen muss, sei es jetzt gesamte Wikipedia oder irgendwas anderes.
+
+Und wenn dort natürlich dieser Bias drin ist, also dass halt Geschlechterstereotype da sind, die Art und Weise wie ich Sprache nutze, dann wird das in den Netzen wieder gespiegelt.
+
+Ja, absolut.
+
+Man kann sagen, also einerseits muss ich die Daten gut kennen, also mich damit auseinandersetzen, damit ich gewährleisten kann, wenn ich solche Modelle anlerne, dass ich so wenig wie möglich solche Elemente drin habe.
+
+Auf der anderen Seite haben die dann auch in dem Paper vorgeschlagen, dass man Methoden anwendet, mit denen man versucht Stereotypen zu glätten.
+
+Also entweder praktisch diese Verbindungen, diese Ähnlichkeiten rausnehmen oder die haben das dann so dargestellt, man hat dann praktisch
+
+männlich weiblichen raum innerhalb eines eines grafen und verschiebt sozusagen dann die falschen stereotypen in die richtige richtung wieder also, dass man nachträglich noch mal mit einem weiteren algorithmus rangeht und dadurch die stereotypen wieder rausnehmen.
+
+Interessanter ansatz also ich denke mal einerseits natürlich man könnte in gewisser weise in entschärfung dadurch hinkriegen dass man vielleicht endung entfernt das heißt alles neutral ist dann würde
+
+Wenn man mal ans Deutsche denkt, natürlich, Genderstern, weibliche, maskuline Änderung, könnte man sicherlich einiges machen.
+
+Ich glaube aber die größere Gefahr oder die größere Herausforderung vielmehr ist die Verwendung von verschiedenen Wörtern, die dieses widerspiegeln.
+
+Wenn ich halt über bestimmte berufe und dann über männer und frauen rede dann brauche ich gar kein genderstern dann ist einfach nur die frage welche welche begriffe werden zusätzlich erwähnt und die frage ist ob man die dann so gut daraus kriegt durch eine vorverarbeitung wahrscheinlich schwieriger kann es ein bisschen entschärfen aber nicht vollständig insofern also das ist sicherlich ein interessantes forschungsgebiet noch.
+
+Absolut, absolut.
+
+Ein weiteres Thema, was wir jetzt eigentlich noch gar nicht so richtig, auch in der letzten Episode gar nicht so angesprochen haben, ist eigentlich, wenn wir eine Datenbasis nehmen, in dem ein gewisser Wortschatz drin ist, und ich sag mal, wir haben jetzt da vielleicht 20.000 Wörter aus unserem Datensatz heraus,
+
+Und jetzt kommen wir zu einem Text, den wir verwenden wollen, in dem Wörter drin sind, die wir vorher nicht kennen.
+
+Die sogenannten Out-of-Vocabulary-Probleme, also OOV, wie das dann immer so schön abgekürzt wird.
+
+Das heißt, wir haben ja dann Wörter, die unser Modell nicht kennt an der Stelle.
+
+Und das ist ein Problem, wörtlich, bei den Back-of-Words-Verfahren, aber auch bei den Embeddings.
+
+Weil man im Endeffekt ja so einen Grundkorpus hat, also Grundtexten, die man anlernt, und deswegen versucht man natürlich, solche Modelle mit ganz vielen Texten zu lernen.
+
+um eine niedrige Wahrscheinlichkeit zu haben, dass solche fehlenden Vokabeln in den Texten oder in unserem Modell dann drin sind und dass man das Modell mit allen Wörtern weitestgehend umgehen kann.
+
+Das ist ein Ansatz, also praktisch mit vielen Daten zu arbeiten.
+
+Und ein anderer Ansatz ist, dass man auf die Idee kommt zu sagen, naja, wir könnten ja versuchen, die Wörter nicht mehr als Wort zu sehen.
+
+sondern wir zerschneiden die wörter in silben und betrachten praktisch die silben als repräsentation und damit hätten wir so lego mäßig bausteine in der hoffnung dass wenn dann ein neues wort kommt was man noch nicht kennt es aber aus bekannten silben besteht man es damit wieder zusammensetzen kann
+
+Interessant ist, es ist aber auch schon lange bekannt, das sind die sogenannten Buchstaben-N-Gramme.
+
+Ich sage jetzt einfach Wortfetzen der Länge N, also nicht nur, es gibt ja Wort-N-Gramme, wenn ich sage, Mensch, mehr als ein Wort, zwei, drei, vier Wörter packe ich zusammen als Begriffe.
+
+Und jetzt auf der Subwortebene die Buchstaben-N-Gramme.
+
+Genau.
+
+Gibt es meiner Meinung nach auch die Erweiterung von dem Makulov, der dann ja irgendwann zu Facebook gewechselt ist, hat er mit FastText quasi das weiterentwickelt und versucht ja diese Subwortstrukturen auch stärker auszunutzen.
+
+Einerseits, ja, würden vielleicht neue Wörter, weil selten sind neue Wörter ja nicht komplett neu, sondern besetzen sich aus bestehenden
+
+anderen worten zusammen das würde man dann auf jeden fall stärker mit einfangen aber auch auch solche geschichten so wie ja diese ganzen stemming lemmatisierung könnte man damit abfackeln war das ja was ich 80 90 prozent der wörter sind identisch weil sie gleich anfangen haben eine unterschiedliche änderung und das würde damit quasi damit mit abgedeckt werden.
+
+Aber das sind tatsächlich auch noch Probleme, die man mit berücksichtigen muss, wenn man solche Verfahren anwendet.
+
+Das nächste ist natürlich nicht jeder, der jetzt praktisch in seiner Unternehmenswelt oder ähnliches mit so einem Modell arbeiten will, hat genügend Texte und genügend Zeit, das zu lernen, weil es dauert halt trotzdem, wenn ich viele Texte habe, so ein Modell anzulernen.
+
+Und deswegen ist es eigentlich eher üblich, dass man schon gelernte Modelle verwendet.
+
+Also dass man, es gibt genügend, die auf den Google Nachrichten aufbauen oder auf andere Nachrichten oder aus Internet.
+
+Einige Bibliotheken, die quasi diese Modelle schon vortrainiert anwenden.
+
+Und das ist eigentlich so ein Grundkonzept, was wir bei modernen Machine Learning Pipelines sehen, dass wir schon vortrainierte Teilmodelle für Teilaufgaben nutzen.
+
+Denn man könnte ja sagen, ja,
+
+wir sprechen jetzt die ganze zeit von prognoseaufgabe ich möchte prognostizieren was ist das eine wort im kontext von anderen das ist doch eigentlich gar nicht meine aufgabe warum soll ich denn das machen ja ich nutze diese diese teilaufgabe ja auch nur als als hilfsmittel um diese repräsentation zu lernen für meine eigentliche aufgabe kann es sein dass ich was ganz anderes damit mache
+
+Richtig.
+
+Damit ist es ja wirklich so, was du jetzt so schön ausgeführt hast.
+
+Die Embeddings selber sind ja dann ein Modell, das wir ganz häufig dann auch in den zukünftigen Modellen und Verfahren, die wir noch vorstellen oder auch Anwendungsgebieten, die wir vorstellen werden, dass die immer wieder reinkommen, weil wir sie einfach als Repräsentation nützen, als Teil des gesamten Modells dann oder als Summe mehrerer Modelle.
+
+Das heißt, solange ich
+
+ich mich in einem Sprachraum bewege, eine Sprache verwende, in einer Domäne, die relativ neutral ist, würde es sicherlich gut klappen.
+
+Habe ich jetzt eine Domäne, die sehr speziell ist, dann könnte es ratsam sein, sein eigenes Modell zu bauen, entweder indem ich ein Bestehendes nehme und adaptiere oder ein ganz eigenes Modell lerne.
+
+Ein ähnliches Problem haben wir natürlich bei Sprachen, die nicht so gut repräsentiert sind,
+
+wie jetzt vielleicht das englische, deutsche, wo halt sehr, sehr viele Texte haben, man spricht da von sogenannten low-resource-languages, wo das Modell anwenden wollten, in einem Teil einer Welt, wo es sehr wenig Dokumente gibt.
+
+Wird schwierig sowas zu erlernen.
+
+Ja, absolut.
+
+Oder auch wenn man in die Historie schaut und vielleicht Sprachen, also innerhalb der gleichen Sprache unterschiedliche Ausprägungen von schreibweisen Wörtern oder ähnliches hat und die man aber gerne nützen möchte, um vielleicht eine Klassifizierung vorzunehmen oder wie auch immer, dann muss ich im Endeffekt mir auch überlegen meine eigenen Embeddings anzuladen an der Stelle.
+
+Wir haben aber noch ein anderes Thema, vielleicht nochmal so den Gesamtkontext zu betrachten von den Embeddings.
+
+Wir haben zwar sozusagen den Kontext der Wörter im Fokus, aber wir haben die Bedeutung innerhalb des Textes eigentlich immer noch nicht.
+
+Also das ist im Endeffekt, wie das Wort dann, das wir betrachten wollen oder repräsentieren, im gesamten Text zueinander steht, das fehlt immer noch.
+
+Und da setzen ja weitere Verfahren an, und das wäre dann sozusagen der Ausblick auf die nächste Episode.
+
+Verfahren, mit denen man versucht, neben den Embeddings, die den Kontext des Wortes, also den Inhalt des Wortes mit zu betrachten, man auch noch die Stellung innerhalb des Gesamtdokumentes macht.
+
+Und ein Ausblick wäre zum Beispiel so Recruiting Neural Networks in Kombination mit Embeddings, die wir dann auch weiter betrachten werden.
+
+Ja, es wird ein spannendes Thema, das konkreter zu berücksichtigen, insbesondere die Positionierung der Wörter untereinander und da freue ich mich schon drauf.
+
+Ich auch.
+
+Von daher vielen Dank für die heutige Episode, dass Sie wieder zugehört haben und wir freuen uns auf nächste Woche, wenn Sie wieder dabei sind.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

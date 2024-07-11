@@ -1,0 +1,633 @@
+ Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen zu unserer zweiten Sendung des Podcasts Knowledge Science.
+
+Ich freue mich, dass wir diese Woche wieder zusammensitzen.
+
+Wir waren uns gar nicht sicher, ob der Podcast ankommt und dass wir dann vielleicht eine zweite Sendung machen oder nicht, aber es haben sich doch etliche Personen den Podcast angehört.
+
+Es waren, glaube ich, knapp über 130.
+
+Wir sind sehr begeistert dafür.
+
+Vielen Dank dafür.
+
+Und wir hatten in der letzten Sendung gesagt, dass wir nochmal einen Blick in Richtung KI machen möchten, das ein bisschen näher beleuchten wollen, da vor allem auch auf die Grundbausteine eingehen wollen und dann mal gucken, wo uns das Gespräch heute hinführt.
+
+Ein paar Ideen haben wir uns vorher überlegt, aber wir wollen versuchen, das ein bisschen auch lockerer zu gestalten.
+
+Man hat ja auch gemerkt, dass wir in der letzten Folge sicher auch ein bisschen angespannt waren und ich hoffe, dass wir das heute ein bisschen entspannter hinkriegen.
+
+Oder, Carsten?
+
+Ja, das hoffe ich auch.
+
+Aber ich denke mal, es kann vielleicht noch ein paar Episoden dauern, bis wir soweit sind.
+
+Aber so viel Geduld sollte man schon mitbringen.
+
+In der Vorbereitung zu der jetzigen Sendung, muss ich sagen, bin ich immer wieder über das Thema gestolpert, KI, künstliche Intelligenz.
+
+Von der Begrifflichkeit her ist es ja immer, man spricht ja immer in der Umgangssprache, das ist eine KI, wir brauchen mehr KI in den Produkten oder müssen wir jetzt die künstliche Intelligenz im Unternehmen einsetzen oder ähnliches.
+
+Und da bin ich dann auch auf etliche Beiträge gestolpert, wo ich gesagt habe, das ist interessant, das würde ich unbedingt gerne heute mal nochmal hier mit in die Sendung bringen.
+
+Da wird nämlich auch immer gesagt, naja, man spricht ja eigentlich nicht von der KI, sondern eigentlich von KI-Methoden, die ich im Unternehmen oder für ein Problem einsetze.
+
+Und ich glaube, das ist nochmal ganz wichtig, dass man den Begriff hier nochmal so ein bisschen stresst und sagt,
+
+Eine künstliche Intelligenz ist ja eigentlich kein Produkt oder ähnliches, sondern das ist ja eigentlich ein wissenschaftliches Fachgebiet, wie die Mathematik und Biologie.
+
+Ich sage ja auch nicht, ich brauche mehr Biologie oder mehr Mathematik oder ähnliches im Unternehmen.
+
+Von daher ist es, glaube ich, wichtig, wenn wir über KI sprechen und wir in Richtung Anwendung schauen, dass wir dann hier über KI-Methoden sprechen, oder?
+
+Ja, das denke ich auch.
+
+Also es geht im Wesentlichen um Methoden, mit denen ich bestimmte Anwendungen irgendwie gestalten kann.
+
+Und wie du letztes Mal schon gesagt hattest, so ein wesentliches Ziel dieser Methoden ist ja irgendwie das Aufbauen von Systemen, die in gewisser Weise Merkmale menschlicher Intelligenz mit sich bringen.
+
+Und gut, dann habe ich mir halt überlegt, natürlich ist es wichtig, solche Systeme zu bauen, hat eine gewisse Berechtigung und das zeigte sich ja auch in solchen Geschichten wie dem Turing-Test, früher auch als Imitation Game bekannt, wo man halt zeigen wollte, ob ein
+
+hat das als Beweis dafür betrachtet hat, dass ein Computer ein dem Menschen gleichwertiges Denkvermögen an den Tag legen kann und hat auch sehr viel Energie da reingesteckt.
+
+Und das klingt auch immer noch bei der KI mit, dieses menschliche, menschliche Intelligenz imitieren.
+
+Und ich frage mich aber, wie wichtig ist es eigentlich, dass ein System menschliche Eigenschaften hat?
+
+Es mag Anwendungen geben wie ein Chatbot zum Beispiel.
+
+Und ich sage, ja, da möchten die Anwender irgendwie vielleicht nicht merken, dass sie mit einem Computer reden.
+
+Da mag es interessant sein, dass ich diese Eigenschaft habe.
+
+Ich glaube aber, in der überwiegenden Mehrheit der Anwendungen, die wir heutzutage betrachten, geht es gar nicht so sehr darum, dass ich wirklich menschliche Intelligenz irgendwie als solche nicht erkennbar vom Computer anbiete, sondern es geht im Wesentlichen um die Automatisierung, Optimierung von Prozessen, von Entscheidungsprozessen insbesondere.
+
+Und die Frage ist daher, wie hat sich das entwickelt?
+
+Wie sind wir da hingekommen, dass wir das ja mit Methoden der künstlichen Intelligenz erreichen können?
+
+Und in dem Zusammenhang lese ich ganz oft in letzter Zeit solche Sachen wie, ja, wir haben selbstlernende Algorithmen.
+
+Und da frage ich mich, wenn ich mich längere Zeit mit dem maschinellen Lernen, dem Machine Learning beschäftigt, ja, Lernverfahren spielen da immer mit, aber Selbstlernen, was meinen die Menschen, die über selbstlernende Algorithmen reden?
+
+Und das, dabei schwingt immer so eine, eine ängstliche, besorgte Annotation mit der, selbstlernende Systeme, die übernehmen die Weltherrschaft, ganz, ganz böse, ganz schlimm.
+
+Und da habe ich mir einfach überlegt, was, was heißt selbstlernend?
+
+Sigurd, hast du auch sowas gelesen?
+
+Was hast du da für eine Meinung?
+
+Vor allem musst du ja sehen, wir übernehmen die Weltherrschaft, das ist ja sozusagen Science-Fiction getrieben und die ganzen Ideen, dass Maschinen irgendwas machen, kommt ja aus der Science-Fiction heraus.
+
+Dementsprechend ist natürlich immer die Verbindung, wenn du über künstliche Intelligenz redest, ist natürlich immer irgendein Roboter, der irgendwo steht oder irgendwas tut und eigenständige Entscheidungen trifft und so weiter.
+
+Also das, was wir letzte Woche eigentlich auch als starke KI genannt haben.
+
+Aber wann ein System selbstlernend ist?
+
+Ich habe da so meine persönliche Meinung, weil ich sage, naja, selbstlernen bedeutet ja, dass die Maschine selber entscheidet, was sie lernt.
+
+und selber ziele hat für die sie irgendwelche informationen sich heranzieht entscheidungen trifft und daraus wieder neue.
+
+Kenntnisse knüpft aber wenn wir das betrachten das ist doch eigentlich nicht das was man in dem unternehmen oder generell im moment in der künstlichen intelligenz sieht sondern hier haben wir doch eigentlich dass wir einen rahmen vorgeben.
+
+Und innerhalb dieses Rahmens geben wir eigentlich ganz klare Aspekte, die gelernt werden müssen, vor.
+
+Also wir regeln eigentlich als Mensch schon durch die Auswahl der Algorithmen, durch die Auswahl der Daten, durch die Auswahl der Verfahren, regeln wir doch eigentlich schon, was gelernt werden soll.
+
+Wir haben also kein Selbstlernen in meinen Augen, sondern was wir haben, ist doch vielmehr ein geführtes Lernen.
+
+Ja, also es ist interessant, was du sagst.
+
+Also selbstlernend interpretierst du eher als ein, ich würde mal sagen, selbstbestimmtes Lernen.
+
+Ansofern ist der Begriff Selbstlernen dann ja vielleicht auch etwas irritierend und falsch zu interpretieren.
+
+Und wie du es auch geschildert hast, ich denke, die meisten Menschen, wenn sie von selbstlernenden Algorithmen reden, meinen eigentlich das Lernen aus Daten selbst, also das, was klassischerweise das maschinelle Lernen umreißt als Fachgebiet.
+
+Und das hat mir letztes Mal ja auch schon angedeutet, dass das maschinelle Lernen, entstanden als ein wesentlicher Teil der KI, als Teilgebiet der KI, inzwischen sich, ich würde sagen, verselbstständigt hat.
+
+während es anfangs als ein Baustein galt, um überhaupt
+
+KI zu ermöglichen, bestimmte Teile, die man nicht programmieren konnte oder wollte, indem ich halt das Programmieren automatisiere, indem ich aus Daten Teile eines Programms, Regelwerke ableite, konnte ich sowas erreichen.
+
+Wenn jetzt aber gar nicht mehr das Ziel grundsätzlich ist, ein System zu bauen, was diese menschliche Intelligenz als Charakteristika aufweist, also das, was klassischerweise als KI gilt,
+
+Dadurch kann man letztendlich begründen, dass das maschinelle Lernen mit all seinen Technologien und Methoden dahinter sich als eigenes Fachgebiet quasi schon etabliert hat, losgelöst von den eigentlichen Zielsetzungen der KI.
+
+Und ich glaube, dass die Möglichkeiten, die man durch das maschinelle Lernen hat, dass das der größte Teil dessen ist, was den Erfolg aktuell in den Anwendungen im Unternehmen ausmacht.
+
+Ja, ich denke, wenn du jetzt über das maschinelle Lernen redest, glaube ich, ist es wichtig, dass die Zuhörer auch vielleicht mal die anderen Gebiete, die ja in die klassische KI mit reinfallen, mal zumindest hören.
+
+Weil maschinelle Lernen ist ja sozusagen eine wesentliche Komponente.
+
+Du hast das mal so schön gesagt, weil es funktioniert.
+
+in einer gewissen Weise.
+
+Aber es gibt ja auch die Komponente der Logik, mit denen man ja künstlich intelligente Systeme versucht hat zu bauen, aber Suchsysteme auch, Anwendungen wie Expertensysteme, die Robotik gehört dazu.
+
+Und man muss natürlich sehen, dass das Ganze mit Technologien untermauert ist, wie zum Beispiel Expertensysteme, die man aufbaut, indem man sozusagen Regeln, Wissen von Experten dann abbildet, mithilfe einer Aussagenlogik, einer Prädikatenlogik oder ähnliches.
+
+Dann das Natural Language Processing, wo man versucht, die Sprachverarbeitung, die Sprachinterpretation und auch die Sprachgenerierung, das sind wir ja wieder bei den Chatbots oder auch im Endeffekt Telefonsystemen, wo man Stimmen haben möchte, die eine gute Qualität haben, die einen verstehen, die vielleicht auch eigenständig die Antworten geben, also praktisch im Sinne der Sprachzusammensetzung und natürlich die Bildverarbeitung.
+
+Und wenn man die Komponenten betrachtet in meinen Augen, dann haben wir ja eigentlich Komponenten, wie wir als Mensch das ja auch brauchen.
+
+Wir haben Sinnesorgane, mit denen wir Informationen aufnehmen, Daten aufnehmen und die dann verarbeiten.
+
+Wir haben eine gewisse Logik, das haben wir in den Experten-Systemen mit der Aussagen-Logik und der Prädikaten-Logik.
+
+Wir haben die Sprachverarbeitung in den Systemen mit dem Natural Language Processing und die Computer Vision für die Sichtweise, also für die visuelle Datenerfassung.
+
+Wenn man das mal wieder aufgreift, dann würde ich das mal unterscheiden, denn es gibt bestimmte Ziele, die ich erreichen möchte.
+
+Ich möchte Sprache verstehen oder generieren.
+
+Ich möchte Bild, bewegte Bilder, stehende Bilder erkennen.
+
+verstehen und um das zu machen brauche ich ja eine gewisse berechnung und die klassische art und weise sowas zu machen weil man schreibt ein programm ein programmierer entwickelt ein programm und dann kann der computer das und genau da setzt ja das maschinelle lernen wieder an dass man sagt man kann diese ganzen programme nicht alle manuell erstellen sondern man möchte sie automatisch
+
+erzeugen.
+
+Und das ist maschinelles Lernen.
+
+Das Programmieren, Automatisieren, das ist das, was im Hintergrund steht.
+
+Insofern greift ja die Technik oder die Methoden, die Techniken, die wir bei maschinellem Lernen haben, ja in all diesen Bereichen, die du genannt hast, mit Ausnahme der Logik natürlich, die genauso wie das maschinelle Lernen, die ja quasi querschnittlich die anderen Anwendungen letztendlich ergänzen kann.
+
+Und dann sind wir wieder dabei.
+
+Lernen.
+
+Was heißt denn Lernen?
+
+Ich meine, ein berühmter Wissenschaftler aus dem Bereich, der Herbert Simon, hat schon vor langer Zeit, hier Anfang der 80er Jahre mal gesagt, Lernen ist jeder Vorgang, der ein System in die Lage versetzt, bei der zukünftigen Bearbeitung derselben oder einer ähnlichen Aufgabe diese besser zu erledigen.
+
+Das heißt Lernen.
+
+Jetzt überfrage ich dich, wenn man mal so eine Definition nimmt, passt die?
+
+Zum Beispiel, stell dir vor, du hast ein paar Schuhe gekauft, trägst sie das erste Mal, den ersten Tag und die drücken, die passen nicht richtig.
+
+Ein paar Tage später, du hast sie ein paar Mal getragen, passen sie richtig gut.
+
+Hat der Schuh jetzt gelernt?
+
+Nach der Definition würde ich sagen, ja.
+
+Weil mehrfache Nutzung und am Ende sozusagen ist es besser als vorher.
+
+Ja, er hat gelernt.
+
+Aber es hilft uns jetzt hier in der Form ja trotzdem irgendwo nicht weiter.
+
+Meine Definition ist nicht schlecht, aber irgendwo, also richtig, greift sie auch nicht.
+
+Ein anderer berühmter Wissenschaftler aus dem Bereich des Maschinenlernens, der Thor Müttel, hat vor langer Zeit auch mal versucht, das stärker zu operationalisieren.
+
+Er hat gesagt, na ja, ein Computer lernt aus Erfahrung, typischerweise als Form von Daten, wenn er bezogen auf eine bestimmte Aufgabenklasse
+
+gemessen mit einem Performance-Maß, zum Beispiel die Trefferquote bei Klassifikationen, wenn er diese mit mehr Erfahrung besser macht.
+
+Mal kurz gesagt.
+
+Und das umschreibt es schon ziemlich genau, dass wir relativ klar umreißen, was wir tun wollen.
+
+Wir haben eine Aufgabe.
+
+Machen wir mal ein Beispiel.
+
+Wir haben E-Mails und wollen die klassifizieren als Spam oder nicht Spam.
+
+Das ist unsere Aufgabe.
+
+Performance Maß heißt, wie oft ist die Entscheidung, ob eine E-Mail Spam ist oder nicht, wie oft ist die richtig.
+
+Und unsere Erfahrungen sind E-Mails, die in der Vergangenheit schon klassifiziert wurden, die ich also als Erfahrungsbasis nutzen kann, um diese Entscheidung zukünftig besser zu machen.
+
+So, nun können wir sowas natürlich erreichen, indem wir ein Programm schreiben.
+
+Schauen uns die ganzen Wörter an, die in den E-Mails stehen, und wenn da bestimmte Sachen drinstehen, dann sage ich, oh, das ist eher ein Spam.
+
+Oder nicht.
+
+Und kann das entsprechend einordnen.
+
+Und wenn ich jetzt sage, das möchte ich aber nicht mehr manuell programmieren, sondern irgendwie automatisiert hinkriegen.
+
+Dann kommen wir genau dahin, dass ich das versuche, aus den Daten zu lernen.
+
+Und in dem Sinne ist es irgendwo wichtig, mal zu überlegen, was sind denn das für Ziele, die ich erreichen kann beim Lernen?
+
+Und was sind die Eingaben?
+
+Was brauche ich dafür?
+
+Und ganz, ganz abstrakt gesehen könnte man ja sagen, ich habe grundsätzlich das Prinzip bei der Informatik, ich habe eine Eingabe, ich habe eine Datenverarbeitung, ich habe eine Ausgabe.
+
+Und diese Datenverarbeitung, das ist mein Programm, das ist ein Algorithmus dahinter, den ich entsprechend mir ausdenken und umsetzen muss.
+
+Und den klassische Programmieren heißt, ein Programmierer oder eine Programmiererin hat das zu entwickeln.
+
+Und wenn ich viele Aufgaben habe, dann wird es natürlich irgendwann mal schwierig, die alle selbst zu programmieren.
+
+Und manchmal sind diese Aufgaben aber auch so schwierig, dass ich sie gar nicht formal greifen kann, dass das Programmieren halt schon, selbst wenn es nur eine Aufgabe ist, schwierig ist.
+
+Nehmen wir mal eine Bilderkennung.
+
+ein Bild zu sehen und zu sagen, jawohl, da drauf ist ein Hund oder eine Katze.
+
+Wie schreibt man da einen Algorithmus, der das direkt erkennt?
+
+Das ist nicht einfach.
+
+Und da zeigt sich, dass man das aber durch maschinelles Lernen, durch Präsentieren von Bildern als Beispielen vielleicht besser hinbekommen kann.
+
+Da haben wir schon jetzt ein paar Beispiele gesehen, selbst für das Klassifizieren.
+
+Das ist eine ganz, ganz typische Aufgabe.
+
+Wenn wir uns mal die Ausgabe angucken, wir wollen eine Eingabe zuordnen zu einer oder mehreren von bestimmten Klassen.
+
+Ist Spam, ist nicht Spam.
+
+Ist ein Hund, ist eine Katze, ist eine unbestimmte Art von Objekt.
+
+Das sind Klassifikationsaufgaben.
+
+Ich denke mal, das ist vielleicht jetzt nochmal Aufgabe eines maschinellen Lernens.
+
+Du hast jetzt gesagt, wir haben einen Input, wir haben einen Output.
+
+Bei der klassischen Informatik schreiben wir ein Programm.
+
+Das heißt, wir transferieren ja eigentlich das Wissen, also die Intelligenz des Entwicklers, in einen Ablauf, der uns diesen Input-Output generiert.
+
+Das ist ja eigentlich das, was wir tun in der klassischen Informatik.
+
+Und was wir jetzt eigentlich tun mit dem maschinellen Lernen, ist ja genau diese Arbeit, dieses händische Übertragen des Wissens, nämlich das Programmieren, zu automatisieren.
+
+Hast du ja auch gerade gesagt.
+
+Also wir machen eigentlich nichts anderes, als dass wir das automatisieren, was wir eigentlich mit dem Programm tun, nämlich die Verarbeitung von Inputdaten zum Outputdaten, nochmal automatisieren.
+
+Also wir wollen eigentlich das Automatisieren automatisieren.
+
+Genau, und das kann zwei Gründe haben.
+
+Einmal, weil es uns zu aufwendig ist, das zu machen, oder weil wir diese Zusammenhänge gar nicht greifen können, weil sie implizit vielleicht nur in unseren Köpfen existieren, aber wir gar nicht wissen, wie wir sie formalisieren sollen.
+
+Das sind auf jeden Fall zwei wichtige Gründe, warum wir zum maschinellen Lernen greifen möchten.
+
+Und ich denke mal, jetzt so einen Schritt weiter zu denken, das maschinelle Lernen hat ja Untergebiete.
+
+Wir haben ja auf der einen Seite das supervised learning, also das Lernen aus Beispielen, was du ja gerade schon gesagt hast.
+
+Wir haben das Unsupervised Learning, wo es vor allem um Beobachtungen geht, also Strukturen zu finden, wo wir noch keine historischen, ich sag mal, Eingabe-Ausgabenpaare haben.
+
+Wir haben das Reinforcement Learning und dann kommt das viel zitierte Deep Learning ja auch noch.
+
+Ja, wobei, da würde ich erstmal sofort eingreifen.
+
+Das ist eine Dimension, die passt auf der Ebene überhaupt nicht.
+
+Denn das Deep Learning, wie wir noch sehen werden, ist zwar ein Teilgebiet des maschinellen Lernens und zwar insbesondere dann, wenn ich
+
+aktuell in der Regel auf neuronalen Netzen basierend, Netze mit sehr vielen Schichten haben, habe, die ich lerne.
+
+Das ist also ein Spezialgebiet des maschinellen Lernens und auf der abstrakten Ebene oft beinhaltet quasi, dass die Verfahren eine gute geeignete Repräsentation ihrer Objekte, ihres Sachverhalts selbst noch mitlernen.
+
+Also das, was man beim
+
+klassischen Maschinellen lernen, oft selbst noch als Aufwand mit reinstecken muss, dass ich eine gute Repräsentation meiner Domäne, meiner Objekte finde, die ich bearbeiten möchte.
+
+Das heißt, mit Repräsentation meinst du die Vorarbeit in den Daten, dass ich sicher sein kann, dass die Sachen, die ich eigentlich untersuchen möchte, die einen Entscheidungsaspekt darstellen, also die Merkmale, die eine gewisse Klassifizierung zulassen, auch wirklich drin sind und auch so aufbereitet sind, dass eine Maschine die gut lernen kann.
+
+Genau, wir haben ja gesagt, maschinelles Lernen oder Programmieren generell, wir haben eine Eingabe, eine Verarbeitung und eine Ausgabe.
+
+Und diese Eingabe, die muss ja irgendwo herkommen.
+
+Das sind ja Repräsentationen der Aspekte oder Teile der realen Welt.
+
+Und die müssen irgendwo ja beschrieben werden.
+
+Wenn ich jetzt eine E-Mail klar klassifizieren will, gut, dann habe ich halt die Metadaten meiner E-Mail, den Text.
+
+Aber wenn ich ein Bild klassifizieren will, dann habe ich eine Aufnahme eines Bildes.
+
+Das sind ja schon die Daten eines realen Objektes.
+
+Und ich muss halt eine gute Darstellung finden, anhand von, dass ich das Objekte, die Objekte, die ich betrachten möchte, gut repräsentiert habe.
+
+Gut im Sinne von, ich kann damit die Aufgabe möglichst gut im Sinne meiner Performance Maße erfüllen.
+
+Warum haben wir den Vorteil beim Deep Learning, dass wir das hier gerade nicht so stark machen müssen?
+
+weil diese Verfahren durch ihre vielen Schichten, daher der Name, tiefes Lernen heißt also Netze mit vielen Schichten, weil die in der Lage sind, selbstrelevante Zusammenhänge, Merkmale aus den Rohdaten letztendlich zu extrahieren, ohne dass ich das vorgeben muss.
+
+Das ist für mich spannend, weil wir verbinden ja mit dem Deep Learning auch die neuronalen Netze und das ist ja im Endeffekt auch das, was direkt mit der künstlichen Intelligenz verbunden wird.
+
+Also wenn du mit Leuten sprichst in Wirtschaft oder auch in anderen Gebieten, dann heißt es ja immer künstliche Intelligenz, ja wir machen auch neuronale Netze oder ähnliches.
+
+Aber da eigentlich ist es ja eine Teilmethode oder eine Implementierung innerhalb des Deep Learnings, wenn man das so sehen möchte.
+
+Ja, genau.
+
+Und deshalb finde ich es wichtig, losgelöst davon, ob ich jetzt Deep Learning oder klassisches maschinelles Lernen habe, ob ich ein neuronales Netz habe oder ein anderes Lernverfahren, diese grundlegenden Möglichkeiten einfach mal offen zu legen, dass ich sage, okay, wenn ich dieses Prinzip Eingabe, Verarbeitung, Ausgabe nehme, kann ich ja das, was ich mache, entweder charakterisieren über die Ausgabe, was ist denn eigentlich das Ziel meiner Verarbeitung,
+
+Zum Beispiel, ich habe eine Klassifikation, also eine Abbildung von Objekten auf eine Klasse.
+
+Oder aber eine numerische Vorhersage, eine Aktienkursprognose zum Beispiel.
+
+Dann ist die Zielgröße, die ich da als Ausgabe erwarte, ein numerischer Wert.
+
+Beides sind sogenannte Prognoseprobleme.
+
+Die zeichnen sich dadurch aus, dass ich aus den meisten Fällen eine Zielgröße habe.
+
+Und andere Formen der Ausgaben könnten sein, dass ich zum Beispiel
+
+Objekte gruppieren möchte, dass ich einfach Strukturen in den Daten entdecke, oder dass ich die beschreibenden Merkmale komprimiere auf eine kleinere Menge, also sogenannte Dimensionsreduktion.
+
+Beispiel hier wäre ja, dass ich meine Kunden in Gruppen einteilen möchte.
+
+In gute Kunden, schlechte Kunden oder vielleicht... Wobei du dann vorher ja noch nicht weißt, gute, schlechte Kunden, dann wäre es ja schon wieder eine Klassifikation, wenn du von dieser Entscheidungsprozesse diese Prognosen zu automatisieren.
+
+Bei der Kundensegmentierung möchte ich zwar Gruppen von Kunden haben, weiß aber vorher noch gar nicht, was es so geben könnte.
+
+Ja.
+
+Ich glaube aber, dass die meisten Anwendungen noch durch die Prognoseaufgaben letztendlich erfasst werden.
+
+Also durch Klassifikation und numerische Prognose in der Statistik auch als Regression bekannt.
+
+Also das wäre die eine Möglichkeit für eine Ausgabe zu gucken.
+
+Die andere Möglichkeit ist, ja, was habe ich denn als Eingabe?
+
+Und da kommen dann genau die Aspekte zum Tragen, die du schon gesagt hast.
+
+Überwachtes Lernen, Supervised Learning und Unsupervised.
+
+Supervised heißt,
+
+Ich habe neben den Eingabewerten auch schon für einige der Beispiele, die ich zur Verfügung habe, die Zielgröße.
+
+Man spricht dann von sogenannten Label.
+
+Also ich weiß, was wäre für die Eingabedaten die richtige Antwort gewesen.
+
+Und dann kann ich, anhand dieser Beispiele versuche ich, ein Algorithmus, ein Modell, spricht man dann im Machine Learning, zu trainieren, zu lernen, dass diese Ausgabe dann nachbauen und nachahmen kann.
+
+Wenn ich nur Eingabewerte habe und die Zielgröße nicht kenne, dann redet man von anzuverwaist Learning.
+
+Und das finde ich ganz interessant, denn ich lese oft in Diskussionsrunden, wenn die Leute hören, anzuverwaist, unüberwachtes Lernen, schlagen die Hände über dem Kopf zusammen, sagen, mein Gott, das geht doch nicht.
+
+Ich kann doch den Algorithmus nicht unbeaufsichtigt Sachen lernen lassen.
+
+Was soll denn da rauskommen?
+
+Und dann denke ich mir so, ja, das Anzuverweis, das ist nichts Schlimmes.
+
+Das heißt einfach nur, ich habe keine
+
+Ich habe für meine Zielgröße keine Werte gegeben und in dem Sinne unüberwacht.
+
+Es ist in dem Sinne kein Supervisor, kein Lehrer im Hintergrund, der sagen kann, das, was du da gerade gelernt hast, ist jetzt richtig oder falsch.
+
+Das heißt aber nicht, dass der Algorithmus beliebige Dinge tut und auf einmal die Weltherrschaft übernimmt.
+
+Sondern auch hier habe ich, ich habe ein Ziel, ich möchte eine bestimmte, eine Zielgröße optimieren, die gebe ich vor.
+
+Nur ich kann nicht sagen, dass Einzelentscheidungen richtig oder falsch sind, aber vielleicht die Gesamtsumme ist besser oder schlechter geworden, aber es gibt kein richtig oder falsch.
+
+Aber es hat nichts damit zu tun, dass der Algorithmus auf einmal beliebige Dinge tut.
+
+Ein Beispiel für so eine Zielgröße wäre ja, dass ich sage, ich habe eine Maschine in meiner Produktion und möchte einfach, dass man herausfindet, wann hat so eine Maschine ein Problem, ein Ausreißer oder ähnliches, so eine Anomalie-Detection sozusagen.
+
+Ja, wobei, da hast du jetzt gerade einen Twitter-Fall angesprochen.
+
+Es gibt klassische unüberwachte Lernaufgaben, wie zum Beispiel die Clusteranalyse oder die Dimensionsreduktion.
+
+dass die Anomalieerkennung, wenn du sagst, ist eine Eingabe, zum Beispiel das Bild eines produzierten Teils, ist da ein Qualitätsproblem erkennbar, ja oder nein?
+
+Das wäre ja von der Ausgabe, hat es die Charakteristika einer Klassifikation.
+
+Ist ein Problem, ja oder nein?
+
+Was man aber, jetzt könnte man ja denken, super, das löse ich in den meisten Fällen ja durch überwachtes Lernen.
+
+Aber das wäre der typische Fall, Klassifikation,
+
+überwachtes Lernen zu überweist Learning.
+
+Bei der Anomalie-Erkennung ist es aber oft so, dass ich sehr wenig Beispiele gerade für die Anomalien habe.
+
+Anomalien-Ausreißer kennzeichnen sich ja gerade dadurch, dass ich sehr, sehr wenig Beispiele dafür habe.
+
+Sonst wären es ja keine Ausreißer, sondern die Normalität.
+
+Und das macht es beim Lernen schwierig, wenn ich wenig Beispiele habe.
+
+Oder im schlimmsten Fall sogar gar keine.
+
+Da würde man genauer genommen sogar von Novelty Detection, also vom Erkennen neuer Sachverhalte,
+
+sprechen, wobei man das oft in Zusammenfassen, also Anomalie oder neuartige Fälle finden, dass ich teilweise, ohne jemals ein Beispiel gesehen zu haben, was anders ist, diese erkennen möchte.
+
+Und das ist interessant, weil das können Menschen sehr, sehr gut.
+
+Die sehen ein Bild, wo irgendwo ein Defekt drauf ist, einen Kratzer, eine Delle auf dem produzierten Teil und sehen sofort, ja, da stimmt irgendwas nicht.
+
+Das im Algorithmus beizubringen, viel, viel schwieriger, als wenn ich sehr, sehr viele Beispiele von guten und schlechten Objekten habe.
+
+Also insofern ist das ein Sonderfall, wo die Ausgabe eher dem entspricht, was bei einer Klassifikation vorzufinden ist, die Eingabe aber möglicherweise anders.
+
+Insofern ist es genau wichtig, diese Unterschiede überwacht, unüberwacht zu charakterisieren.
+
+Und die meisten Erfolge, die wir sehen, die kommen erstmal durch das Überwachtelernen.
+
+Und wir brauchen viele, viele Daten, um das zu machen, in den meisten Fällen.
+
+Und beim Deep Learning nochmal mehr.
+
+Und das ist genau da, wo ich sagen würde, da wird sich in der Zukunft was ändern müssen.
+
+Da ist ein Großteil der Forschung, wo man sich damit beschäftigt, wie kann ich denn erfolgreich trotzdem solche Aufgaben lösen, vielleicht mit weniger Daten.
+
+Und da greifen dann solche Geschichten wie Semi-Supervised Learning.
+
+Kann ich jetzt zum Beispiel mit vielen Daten, wo nur für einen Teil die wahren Werte bekannt sind, auch was erreichen?
+
+Oder auch ein Begriff, der sehr ähnelt dem Self-Learning, aber eigentlich ein Self-Supervised-Learning.
+
+Ja, das ist jetzt der feine Unterschied.
+
+Nicht self-learning, sondern ein self-supervice, also wo ich die Selbstüberwachung habe.
+
+Wie kann ich mir das vorstellen?
+
+Zum Beispiel bei Texten, wenn ich ein Sprachmodell trainiere und sage, Mensch, ich halte mal bestimmte Teile meiner Texte zu, dass ich bestimmte Wörter nicht sehe und lasse den Algorithmus trainieren, diese zugedeckten Wörter zu vervollständigen.
+
+oder indem ich bestimmte Bilderteile wegblende und lasse den Algorithmus trainieren, die fehlenden Teile letztendlich wieder einzusetzen oder stark zu komprimieren und wieder zu dekomprimieren, sogenannte Autoencoder.
+
+Und das ist sehr, sehr spannend, und da bewegen wir uns nämlich genau in dem Teil, der bei vielen Deep-Learning-Ansätzen in den ersten Teilen der Schichten stattfindet, nämlich eine gute Repräsentation zu finden.
+
+Ziel ist es dann aber oft nicht, diese Repräsentation einfach wieder als solches zu nehmen, sondern die Fähigkeit, das Gesamtobjekt wieder herzustellen, also den Text oder Bild, und auf dem dieser Repräsentation dann die anderen Aufgaben zu erledigen.
+
+Also das ist da, wo die Reise hingehen wird, dass ich mit weniger Daten diese Aufgaben erreichen kann.
+
+Aber ich würde gerne nochmal auf die Daten eingehen, weil du gesagt hast, die Daten sind ja wirklich hier der entscheidende Punkt, dass ich viele Beispiele habe, um praktisch das Supervised Learning hinzubekommen oder auch beim Deep Learning noch mehr brauche.
+
+Und ich glaube, das ist gerade auch der Aspekt, der bei den Unternehmen eine große Chance darstellt, weil wir einfach durch die digitale Transformation hergehen und die Unternehmen in den Prozessen digitalisieren.
+
+Und das bedeutet ja, dass wir eigentlich an jedem Aktivitätspunkt Daten haben, Daten sammeln und die wieder nützen können für Entscheidungen oder für das maschinelle Lernen.
+
+Aber, und das ist eigentlich so ein bisschen die Krux, finde ich, wir haben natürlich ein bisschen die Problematik, dass wir zum Beispiel in kleinen mittelständischen Unternehmen,
+
+noch nicht so weit sind was die digitale transformation angeht das heißt die haben tendenziell eher geringere datenmengen die man verwenden kann also zum beispiel großkonzerne oder auch internationale konzerne wie google und so weiter und dementsprechend konzentrieren sich natürlich die gesamten entwicklungen in den unternehmen gerade bei diesen großkonzerne
+
+Und da, glaube ich, sind die Ansätze, die du gesagt hast, in Zukunft erstens natürlich, dass die Unternehmen eine stärkere digitale Transformation bekommen, auch die Mittelständler, wichtig.
+
+Und das Zweite, dass man natürlich auch Verfahren aus der Forschung herausbindet, wo weniger Daten notwendig sind, um einfach hier den, ich nenne es jetzt mal, verschobenen Wettbewerbsvorteil wieder in einen gewissen Gleichklang zu bringen.
+
+Da möchte ich eine Sache noch ergänzen, denn wir sehen durch Digitalisierung, Big Data Welle, die wir gesehen haben, Daten liegen in vielen Unternehmen vor, manche rücken noch nach, aber es werden viele Daten vorliegen.
+
+Man muss aber auf jeden Fall unterscheiden, weil die meisten
+
+Anwendung dieser Technologie eher auf überwachten Algorithmen aktuell beruhen, heißt, wir brauchen nicht nur eine große Datenmenge, sondern für die Aufgabe passend auch die entsprechenden Zielgröße, die Labels.
+
+Und die hat man oft nicht.
+
+Es gibt natürlich, es gibt Probleme, wo die Zielgrößen nach einer gewissen Zeit immer bekannt werden.
+
+Nehmen wir mal Prognose von Aktienkursen.
+
+Natürlich, nach meinem gewissen Versatz, Latenz, für die ich letztendlich die Prognose machen möchte, sind mir die Warenwerte bekannt.
+
+Aber bei anderen Sachen, wie zum Beispiel eine Sentimentanalyse, wenn ich oder ich habe Meinungen von Kunden und möchte wissen, sind die gut oder schlecht?
+
+Ja, da wird mir das nicht nach einer gewissen Zeit bekannt, sondern erst dann, wenn ein Mensch das liest.
+
+Und das ist ein Riesenaufwand.
+
+Insofern, wenn ich mal mich auf die Datenmenge beziehe, für die ich für meine Aufgabe passend auch wirklich schon Zielwerte kenne, da wird aus einem Big-Data-Problem ganz schnell ein Small-Data-Problem.
+
+Es sei denn, ich kriege es hin, auch mit den nicht gelabelten Daten aus denen einen gewissen Wert zu ziehen.
+
+Und deshalb hat das eine riesen Bedeutung, die Methoden dahingehend zu ergänzen und weiterzuentwickeln, dass ich auch mit wenig gelabelten Daten, wo ich nur einen Teil gelabelt habe, mit denen trotzdem was Sinnvolles zu machen.
+
+Denn meiner Meinung nach ist das genau die Fähigkeit, die Menschen wieder auszeichnet.
+
+Menschen können auch mit wenig Daten irgendwo was Sinnvolles machen.
+
+Ich würde aber gerne noch ergänzen, weil der eine Weg ist, diese Technik voranzutreiben, die Methodik.
+
+Der andere Weg kann aber auch schon sein, wenn ich in meiner digitalen Transformationsstrategie gerade bin, von vornherein mit zu überlegen, ob ich nicht schon bei meinen Prozessen, die ich digitalisiere, auch schon solche Labels mit integriere, weil ich vielleicht weiß, dass ich in
+
+in einem monat in einem jahr in zwei jahren auch in diese richtung gehen möchte und damit einfach schon gewährleisten dass ich über meine neue implementierung der prozesse die gute voraussetzung schafft.
+
+Aber das setzt ja voraus dass du die ganzen probleme die du haben wirst.
+
+Schon, wenn du es kennst und weißt, welche Labels du brauchst.
+
+Ich denke mal, für manche Aufgaben ist das machbar, aber ich glaube, dass viele Probleme, die im Laufe der Zeit entstehen, dass du die halt noch nicht kennst und dass du halt nicht weißt, was denn ein vernünftiges Label gewesen wäre.
+
+Das ergibt sich ja erst aus dem Problem heraus, was du für Labels brauchst.
+
+Insofern ist das nicht für alle Aufgaben einfach schon vorher zu definieren und machbar.
+
+Absolut.
+
+Aber trotzdem, wo es vorherzusehen ist, da entsprechend die Sachen zu nutzen und aufzubereiten, bin ich sofort bei dir.
+
+Ja, sehe ich genauso.
+
+Ich würde jetzt gerne noch ein Thema aufgreifen, Reinforcement Learning.
+
+Vielleicht so ganz knapp.
+
+Lernen durch Interaktion.
+
+Das heißt ja, dass im Endeffekt der Algorithmus mit seiner Umwelt interagiert, um eine gewisse
+
+Ja, um besser zu werden.
+
+Das heißt, wir arbeiten hier ja mit Belohnungssystemen, Bestrafungssystemen.
+
+Oder?
+
+Ja, genau das.
+
+Das ist ein sehr, sehr interessanter Sachverhalt.
+
+Und das in die anderen Lernszenarien nochmal mit aufzunehmen, heißt das ja, dass die Daten als solches nicht oder nicht im kleinen Umfang nur von vornherein zur Verfügung stehen.
+
+Das heißt, während wir bei den anderen Lernszenarien davon ausgehen, dass wir größere Datenmengen zum Lernen von vornherein zur Verfügung haben, steht jetzt möglicherweise erstmal noch gar nichts zur Verfügung, aber wir haben ein System, in dem Umfeld nennt man das oft auch einen Agenten, der mit seiner Umwelt agiert und dadurch Daten generiert.
+
+Also zum Beispiel, wenn sie mit einem System Schach spielt oder Go spielt, vielleicht auch gegen sich selbst.
+
+Das ist ja eigentlich der Trick, warum die so erfolgreich geworden sind.
+
+Der Computer spielt aber gegen sich selbst.
+
+Und dann sieht er ja, was erfolgreich ist oder nicht.
+
+Interessanterweise generiert er dadurch Daten.
+
+Man muss dann natürlich sagen, das ist ja schon Belohnung.
+
+Man muss hinterher sagen, war jetzt ein Spiel erfolgreich oder nicht?
+
+mit den ganzen Problematiken, die dahinter stehen, dass es ja nicht ein Spiel ist, was ich bewerte, sondern ich will ja wissen, welcher Zug, welcher einzelne Schritt wichtig war.
+
+Und dann sich zu überlegen, welcher dieser Schritte war denn jetzt eigentlich derjenige, der besonders wichtig war für meinen Erfolg.
+
+Das ist das sogenannte Credit Assignment Problem.
+
+Wie kann ich den Erfolg am Ende welchen Schritten zumessen?
+
+Das ist nicht einfach zu lösen.
+
+Darüber muss man sich Gedanken machen.
+
+Aber interessant ist, dass ich auf die Art und Weise viele Daten lerne
+
+Und aus denen letztendlich Strategien.
+
+Also ich leite letztendlich Strategien ab, wie ich mich in meiner Umwelt bewegen muss, um bestimmte Ziele zu erreichen.
+
+Aber ist sowas denn nicht gefährlich?
+
+Können solche Systeme dann auf einmal genau das erreichen, was wir nicht wollen?
+
+Oder wie siehst du das?
+
+Das ist eine gute Frage und ich denke, die sollten wir uns für die nächste Sendung aufheben.
+
+Ja, also ich bin da noch relativ entspannt.
+
+Warum?
+
+Das erläutere ich dann gerne das nächste Mal.
+
+Sehr schön.
+
+Vielen Dank fürs Zuhören.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

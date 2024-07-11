@@ -1,0 +1,377 @@
+ Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen zu unserer ersten Sendung des Podcasts Knowledge Science.
+
+Die erste Sendung hat natürlich zum Ziel, auch zu erklären, was wir denn mit dem Podcast erreichen wollen, warum wir diesen Podcast machen wollen, und das möchten wir jetzt kurz darstellen.
+
+Das Ziel des Podcasts ist es, eine wöchentliche Diskussion zu dem Thema Künstliche Intelligenz und Knowledge Science anzutreten, hier aufzuzeigen und darüber zu sprechen.
+
+Wir wollen den Podcast mit Interviews aus der Industrie, Forschung und Lehre speziell zu dem Thema Anwendung in der KI und Knowledge Science anreichern und damit einen Einblick hinter die Kulissen bringen.
+
+Natürlich möchten wir auch aus unserer Hochschulerfahrungen Vorstellungen von studentischen Forschungs- und Lehrprojekten hier aufzeigen.
+
+Dazu wollen wir aktuelle Themen, State-of-the-Art-Berichte zu KI und Knowledge Science darstellen und damit insbesondere diese Themen entmystifizieren und transparent schaffen.
+
+Nun, wer sind wir?
+
+Ich bin Carsten Lankjong, ich bin Professor für Business Intelligence und Data Science an der Hochschule Heilbronn, dort schon seit über zwölf Jahren in diesem Bereich tätig.
+
+Ich habe selbst Informatik studiert und bereits im Studium haben mich Vorlesungen zu neuronalen Netzen, genetischen Algorithmen und Fuzzy Logic so fasziniert, dass ich mich seitdem mit diesen Themen beschäftige.
+
+Wie und was kann ich aus Daten lernen?
+
+Letztendlich der Kern des maschinellen Lernens, wie wir sehen werden, ein Teil der KI.
+
+Und ich bin Sigurd Schacht, Professor für Angewandte Künstliche Intelligenz und Digitale Transformation an der Hochschule Ansbach.
+
+Vor der Professur war ich viele Jahre in der Wirtschaftsprüfung tätig und beschäftigte mich dort nahezu zwei Jahrzehnte lang mit den Themen rund um Daten, Analyse und deren zielgerichtete Nutzung.
+
+Die Frage heute ist natürlich zunächst mal, warum nennen wir den Podcast Knowledge Science?
+
+Was ist nun eigentlich Knowledge Science?
+
+Knowledge Science ist die automatisierte Identifikation, Extraktion und Verknüpfung von Wissensfragmenten aus strukturierten und unstrukturierten Daten unter Verwendung der Methode der künstlichen Intelligenz.
+
+Ziel des Knowledge Science ist es, eine vernetzte Wissensbasis für die automatisierte Wissenssicherung und Verarbeitung und Generierung zu schaffen.
+
+Wo kann man das Ganze denn nun anwenden?
+
+Anwendung findet dies vor allem in Unternehmen zum Aufbau von Businessmanagement und zu automatisierten Entscheidungsfindungen.
+
+Kann aber natürlich auch genutzt werden, um ein persönliches Businessnetzwerk aufzubauen und das auch anwenden zu können.
+
+Jetzt haben wir die Definition Noted Science gehört und da kommen ja die Begriffe Künstliche Intelligenz vor.
+
+In der heutigen Sendung möchten wir dementsprechend den Begriff Künstliche Intelligenz mal darstellen und, wie Carsten es schon gesagt hat, ein bisschen entmystifizieren.
+
+Was ist nun die Künstliche Intelligenz?
+
+Es gibt viele verschiedene Definitionen zur künstlichen Intelligenz.
+
+Ich persönlich finde die Definition von Winston ganz schön, der sagt, künstliche Intelligenz ist die Untersuchung von Berechnungsverfahren, die es ermöglichen, wahrzunehmen, zu Schlussfolgerungen und zu Handeln.
+
+Somit wird versucht, das menschliche Wahrnehmungs- und die menschliche Verstandesleistung zu operationalisieren.
+
+Also wenn ich dich richtig verstehe geht es darum die die menschliche intelligenz letztendlich nachzubauen dass man also systeme computer baut die ein verhalten an den tag legen die merkmale menschliche intelligenz aufweisen stimmt das.
+
+So würde ich das interpretieren.
+
+Es gibt unterschiedliche Definitionen an der Stelle, die natürlich auch in einer gewissen Weise in den Grad, wie stark die künstliche Intelligenz auch wirklich Intelligenz simuliert oder tatsächlich abbildet.
+
+Da unterscheidet man dann zwischen starker KI, schwacher KI oder Superintelligenzen.
+
+Obernacht, was versteht man denn unter schwacher KI?
+
+Naja, die schwache KI betrachtet die KI eher als Simulation, als die Intelligenz.
+
+Es wird sozusagen eine Intelligenz simuliert und man greift hier vor allem auf die Methoden zurück, die aus der Mathematik, aus der Statistik, aus der Informatik kommt und der Fokus ist ganz stark auf ein einzelnes Problem gelegt.
+
+Oder siehst du das anders?
+
+Müsste man da vielleicht auch erstmal überlegen, was sind denn eigentlich typische menschliche Eigenschaften?
+
+Wenn ich darüber nachdenke, mir fällt ein, lernen, wie lernt man, Sprache verstehen zum Beispiel, Schlüsse ziehen, Schlussfolgern, allgemein vielleicht Probleme lösen.
+
+Wie löst der Mensch Probleme?
+
+Wie kann ich das,
+
+abbilden auf einem Computer und diese Zielgerichte, diese kleinen abgeschotteten Probleme, die letztendlich automatisiert zu lösen, zu bearbeiten mit einem Computer.
+
+Mit der Perspektive ist doch das meiste, was wir bislang sehen, eigentlich nur schwache KI, oder?
+
+Sehe ich genauso, weil ja ein wesentlicher Aspekt fehlt, nämlich die eigenständige Problemlösung, die man bei einer starken KI ja erwarten würde.
+
+Eine starke KI sieht das Ganze ja so, dass sie nicht nur das ganze Thema, also die menschliche Verstandesleistung simuliert, sondern dass sie eigenständige Probleme löst und ein eigenständiges Verhalten an den Tag legt.
+
+Wenn wir mal zurückkommen zur schwachen KI, weil das ist ja das, was gerade dominant ist.
+
+Denn ich denke mal, starke KI, da wird man, ja, vielleicht kommt man da in einigen Jahrzehnten hin und ich glaube, das ist eher der Teil, vor dem Menschen Angst haben.
+
+Wenn Computer eigenständig versuchen, Dinge zu optimieren, zu lösen, aber da sind wir noch sehr weit von weg.
+
+Beschäftigen wir uns erstmal mit der schwachen KI.
+
+Es gibt so eine Aussage, ein Zitat, was mich sehr interessiert hat.
+
+Es ist bekannt als das Moravecs-Paradoxon.
+
+Er sagt halt, die schweren Dinge sind einfach und die einfachen Dinge sind schwer in der KI.
+
+Also, wir haben schon gesehen, es gibt KI-Lösungen, die können Schach spielen.
+
+Die sind besser als der weltbeste Schachspieler.
+
+Und, oder wenn man es noch weiter vereinfacht,
+
+Optimierungsprobleme, Sachen lösen, Differenzialgleichungen lösen, numerisch mal rechnen, können Computer unheimlich einfach.
+
+Aber so scheinbar simple Dinge wie, was weiß ich, das Gesicht der Mutter in einem Stapel von Bildern erkennen, laufen lernen, was Menschen, Babys quasi ohne irgendwie Erklärung machen können, sowas nachzubauen, ist schwer.
+
+Woran liegt denn das, Carsten?
+
+Ja, ich denke mal, man muss halt überlegen, wie baut man jetzt eigentlich so eine KI?
+
+Was sind denn die Grundbestandteile?
+
+Und wenn man dann feststellt, wann immer es
+
+viele gleichartige Berechnungen auf Basis von Daten gibt, die Computer gut durchführen können, indem man ein Problem einfach formalisieren kann.
+
+Selbst wenn es viele Möglichkeiten gibt, die ein Rechner durchprobieren kann, aber wenn sie gleichartig wohl definiert sind, dann kann der Computer seine Stärke ausspielen.
+
+Sobald es aber Kreativität erfordert, sobald es irgendwelche
+
+ja, Daten, Erfahrungen aus dem Kontext benötigt, die vielleicht gar nicht formalisiert und erfasst sind, dann ist der Mensch gut dabei.
+
+Ich denke mal, die Prozesse, wie Menschen wirklich lernen, aus dem Nichts heraus, mit wenig Eingabedaten,
+
+Ich weiß nicht, ob die schon so ausgiebig erforscht sind, dass man das nachbauen kann.
+
+Man könnte das letztendlich interpretieren als so ein Reverse Engineering, diese ganzen Prozesse des Lernens zu entschlüsseln.
+
+Sicherlich ein Forschungsbereich der KI, diese Prozesse zu verstehen und nachzubauen.
+
+Bislang, denke ich, geht es eher darum, aus Daten, aus Erfahrungen, die man gesammelt und gespeichert hat, endlich
+
+Ja, Erkenntnisse herauszuziehen.
+
+Und dann sind wir wieder bei einem Punkt, einem Teilbereich der KI, nämlich dem maschinellen Lernen als einen wesentlichen Treiber, wie wir später noch sehen werden.
+
+Aber was gibt es denn noch für Bestandteile einer KI?
+
+Gerade bei der schwachen KI müssen wir ja sehen, dass wir einerseits die Datenverarbeitung haben, also was du gerade gesagt hast, maschinelles Lernen.
+
+Aber es ist natürlich auch wichtig, wenn wir die menschliche Leistung simulieren wollen, dass wir Themen haben, dass ich zum Beispiel Schriften erkennen kann, also Sprachen erkennen kann.
+
+gesprochene Sprachen, geschriebene Sprachen, aber natürlich auch die Bildverarbeitung ist ein wichtiger Part, der in der künstlichen Intelligenz einen wesentlichen Teil, also gerade auch in der schwachen künstlichen Intelligenz, einen wesentlichen Teil ausmacht.
+
+Wenn wir jetzt hier in unserem Podcast gucken, das Thema Knowledge Science, dann ist natürlich auch ein wichtiger Part der sogenannten Knowledge Generation und Navigation, dass wir also sagen, dass wir auch aus den gegebenen Daten Wissen generieren, Informationen rausziehen und die miteinander vernetzen.
+
+Und das Ganze natürlich auf Basis der Daten, die man verfügbar hat.
+
+Wir lernen ja in einer gewissen Weise aus...
+
+historischen Informationen.
+
+Und ich glaube, das, was du gerade gesagt hast, warum ist der Mensch in manchen Stellen besser?
+
+Man hört ja immer wieder die Diskussionen an der Stelle, dass der Mensch vor allem enorm stark ist, wenn man eine schwache Datenlage hat, vielleicht auch eine ungewisse Datenlage und darauf dann Schätzungen oder Prognosen oder ähnliches abgegeben ist.
+
+Da ist der Mensch unheimlich stark.
+
+Aber bei großen Mengen, wo viele Muster oder ähnliches drin sind, da versagen wir dann als Mensch in einer gewissen Weise, wo dann die Maschine tendenziell eher stärker ist.
+
+Und das sehen wir dann auch bei solchen Themen, wie du es schon erwähnt hast, mit dem Thema Schachspielen oder wenn wir daran denken, was ja noch komplizierter als Schach ist, die Go-Weltmeisterschaften oder Go-Spiele, wo die Maschine auch aufgrund dieser Massendaten natürlich sehr gut berechnen kann, welche Züge oder welche Themen jetzt im nächsten Schritt einen Vorteil haben.
+
+Wenn wir mal zurückblicken und mal überlegen, die künstliche Intelligenz als Forschungsgebiet geht ja zurück auf die 50er Jahre.
+
+Im Jahr 1956 haben einige bekannte Köpfe aus dem Umfeld zu einer Konferenz eingeladen, um das Gebiet der KI letztendlich abzustecken.
+
+Das ist die so bekannte Dartmouth-Konferenz in Hanover in New Hampshire.
+
+Und schon allein da kam ja heraus, dass die Aufgaben der KI ja gar nicht einheitlich definiert und gesehen werden können.
+
+Es gab viele Aspekte, die dort adressiert wurden.
+
+Und ich glaube, in der Anfangszeit war ein interessanter Zweig der KI auch immer noch, dass ich wirklich ein System baue, das von einem Menschen auch gar nicht wirklich unterschieden werden kann.
+
+Du hast mir mal auch berichtet von, das habe ich auch selber gelesen, aber das war das Weizmaul-Experiment mit dem Chatbot Elisa.
+
+Kannst du darüber noch mal was erzählen?
+
+Das ist ja eine sehr, sehr interessante Geschichte.
+
+Ja, das ist super spannend.
+
+Herr Weizenbaum ist ja ein Wissenschaftler gewesen und hat 1966 ein Programm entwickelt, ELISA, das seine Idee war, in einer gewissen Weise ein Kommunikationsprogramm zu entwickeln und damit Kommunikationen zwischen Mensch und Maschine zu etablieren.
+
+Und das Spannende daran war, dass er in einer gewissen Weise auch in seinem Artikel ein schönes Zitat genannt hat, denn in diesem Bereich, und damit meinte er die heuristische Programmierung und die künstliche Intelligenz, werden Maschinen dazu gebracht, sich in wundersamen Weisen zu verhalten, häufig ausreichend gut, um selbst die erfahrensten Beobachter zu erstaunen.
+
+Und sein Programm, das war eigentlich das Schöne, der hat im Endeffekt Dialoge genommen und mit Regeln hinterlegt, sodass in einer gewissen Weise Antworten daraus kamen, die so aussahen, also simuliert, als ob die Maschine tatsächlich ein Einführungsvermögen hat und kommuniziert.
+
+und das ganze hat er dann auch ausprobiert im im bereich der psychotherapie und hat dann gespräche mit psychotherapeuten mit der maschine führen lassen und das war dann ganz ganz spannend weil dann natürlich so fragen auf kamen wie mir geht es heute nicht so gut und daraufhin hat die maschine gefragt.
+
+Wir können es ja einfach mal spielen hallo siegfried.
+
+Wie geht's dir.
+
+Mir geht's heute leider nicht so gut.
+
+Ich fühl mich einfach nicht gut.
+
+Das ist aber nicht schön, dass es dir nicht gut geht.
+
+Erzähl mehr darüber.
+
+Ja, ich hatte irgendwie einen schlechten Tag heute und das liegt irgendwie an meiner Einstellung.
+
+Erzähl mir mehr über deine Einstellung.
+
+Ja, ich fühl mich irgendwie deprimiert und müde und traurig.
+
+Was macht dich denn deprimiert?
+
+Meine Arbeit, mein Umfeld, die Sorgen vor der nächsten Woche.
+
+Das tut mir leid.
+
+Was besorgt dich denn?
+
+Das ist ganz interessant, wie du diese Gesprächsführung jetzt führst, weil genauso agiert ja auch die Maschine.
+
+Und ich glaube, der Zuhörer hat jetzt in einer gewissen Weise mitgekriegt, dass da eigentlich klare Regeln dahinter sind.
+
+Also so, wenn ich ein Problem darstelle, wird nachgefragt, sodass man das wiederholen muss.
+
+Teilweise werden Fragen einfach umgedreht und so weiter.
+
+Das Spannende an dem Projekt war, dass damals die Psychotherapeuten wirklich Angst bekommen haben und gesagt haben,
+
+Es kann ja jetzt sein dass so eine maschine uns ersetzt ja wir werden ja völlig weg rationalisiert das ist ja hoch präsent und also man hat im endeffekt vor lauter reaktion gar nicht hinter die kulissen geguckt.
+
+Und dann hat er auch in seinem artikel ein schönes schönes zweites zitat gebracht was ich wirklich auch bezeichnen finde in dem thema.
+
+Sobald das spezielle Programm jedoch demaskiert ist, also bei durch die Regeln dargestellt und erklärt sind, sobald seine inneren Mechanismen in einer verständlichen Sprache erklärt sind, zerbröckelt sein Zauber.
+
+Es ist enthüllt als eine einfache Zusammenstellung von jeweils einfach nachvollziehbaren Prozeduren.
+
+Und ich glaube, das macht es auch aus, wenn wir über künstliche Intelligenz reden im Moment, gerade wenn man jetzt mit Unternehmen redet, wenn man in der Wirtschaft schaut, wenn man sich ein bisschen umschaut, dann ist es ja wirklich so, dass fast überall, das ist ja, dass nicht eine Kekstose künstliche Intelligenz draufstehen hat, ist ja eigentlich schon fast ein Wunder momentan, weil ja fast überall künstliche Intelligenz drin ist und man muss dieses Stichwort unbedingt bringen.
+
+Aber es hat was Mystisches.
+
+So nach dem Motto, wir haben da künstliche Intelligenz drin und dann funktioniert alles und noch besser als vorher.
+
+Aber eigentlich ist bei der schwachen künstlichen Intelligenz, so wie du es vorhin ja auch dargestellt hast, überwiegend definierte Regeln, Abläufe dahinter, die Strukturen erkennen wollen, die Zusammenhänge erkennen und daraus dann in einer gewissen Weise Prognosen in die Zukunft ableiten.
+
+Genau, und diese Regeln, die kann man natürlich manuell definieren.
+
+In ersten Versuche, Expertensysteme zum Beispiel aufzubauen, hat man tatsächlich versucht, solche Fakten zusammenzutragen, Regeln zu definieren.
+
+Es hat sich aber ziemlich schnell gezeigt, dass das zwar generell funktionieren kann, aber im größeren Stil nicht wirklich erfolgreich ist.
+
+Es ist bekannt als sogenannter Knowledge Acquisition Bottleneck.
+
+Also dieser Engpass, der sich dadurch ergibt, die ganzen Fakten
+
+und Regeln zu kodieren, manuell zu programmieren.
+
+Und aus dieser Notwendigkeit heraus hat sich quasi der Zweig des maschinellen Lernens entwickelt, dass ich gesagt habe, ja, ich habe zwar diese Regeln nicht und die zu programmieren ist mühsam, aber ich habe ja trotzdem sehr viel Daten, in denen sehr viel Erfahrung und Zusammenhänge drinstecken.
+
+Kann ich also diese Daten nicht nutzen und aus denen automatisch
+
+die Regeln zu generieren und herauszuziehen.
+
+Das ist quasi so die Geburtsstunde des maschinellen Lernens und in dem Sinne ist das maschinelle Lernen ein Teilbereich der künstlichen Intelligenz und dieser Teilbereich hat sich inzwischen, würde ich sagen, verselbstständigt.
+
+Er gilt heute auch als eigenständige Disziplin und findet in vielen Bereichen Anwendungen, die lange Zeit gar nicht unbedingt als
+
+KI abgestempelt wurden.
+
+Vielleicht auch, weil Menschen Bedenken haben, oder lange Zeit Bedenken hatten, wenn sie künstliche Intelligenz hören, habe ich hier eine Maschine, die denken, die führen kann.
+
+Und wie leicht man da aufs Glatteis geführt wird, zeigt ja dieses Experiment vom Weizenbaum.
+
+Da denkt man, Mensch, da ist ein Computer, Mensch, der hört wirklich zu, der hat Empathie.
+
+Dabei sind es nur ganz einfache Regeln.
+
+Einfach mal nachfragen.
+
+Eine Frage umdrehen.
+
+Die Maschine versteht nicht wirklich, was das Problem ist, aber man denkt es.
+
+Insofern braucht man in dem Sinne gar keine Sorge zu haben, dass Algorithmen dieser Art jetzt irgendwie was Böses sind, sondern sie wenden eigentlich nur bekannte Sachen an, formen sie um, bauen Regeln.
+
+Und dass dieser Zweig jetzt so erfolgreich geworden ist in letzter Zeit, das ist ja interessant, liegt sicherlich daran, wenn man mal guckt, es gibt immer mehr Daten, die zur Verfügung stehen.
+
+Das Thema Big Data ist bekannt.
+
+Wir haben immer mehr Daten, wir haben enorme Rechenlager,
+
+Und ja, was fehlt noch?
+
+Du musst das, also ich sehe das so, warum ist das so interessant und warum das jetzt gerade kommt, ist natürlich Datenrechenleistung, wie du es genannt hast, das ist der erste Punkt.
+
+Aber du musst natürlich sehen, gerade in den Unternehmen haben wir den Aspekt, dass ja praktisch Entscheidungen getroffen werden.
+
+Du entscheidest dich ja für ein neues Produkt, für einen neuen Bereich, für die Einstellung von dem Mitarbeiter A oder B oder den Aufbau von dem ganzen Werk oder ähnliches.
+
+Und die Entscheidungen basieren aber in der Regel immer auf in einer gewissen Weise Prognosen.
+
+Prognosen, die du selber durchführst.
+
+Natürlich mit deinen Erfahrungen aus deiner Berufserfahrung, 50 Jahre Erfahrung oder wie auch immer, oder aus den Marktbeobachtungen.
+
+Du weißt einfach, wenn das und das ist, hatte ich bisher die Erfahrung gemacht, dass dann die und die Prognose getroffen werden muss.
+
+Oder dass das prognostiziert werden kann und ich daraufhin die und die Entscheidung treffen kann.
+
+Das Interessante ist jetzt, wenn man das betrachtet,
+
+Die künstliche Intelligenz oder das maschinelle Lernen macht ja eigentlich, zumindest in dem Teilbereich, auch nichts anderes als Prognosen.
+
+Wir nehmen im Endeffekt Wissen aus den Daten, aus der Historie heraus und prognostizieren dann neue Datensätze, neue Datenpunkte, was damit gemeint ist oder in welche Kategorie die fallen oder ähnliches.
+
+Das heißt, was wir jetzt tun können, ist eigentlich diese beiden Welten miteinander zu verknüpfen.
+
+Nämlich Prognosen, die ich eigentlich im Unternehmen täglich machen muss, nämlich in meinem Controlling, in meinem Einkauf, in meinem Vertrieb oder ähnliches.
+
+Und die dann mit der künstlichen Intelligenz oder mit dem maschinellen Lernen zu untermauern.
+
+Und was dann der Effekt ist, ist, dass diese Informationsbeschaffung und die Prognosen dann wesentlich günstiger werden.
+
+weil sie ja maschinell durchgeführt werden können und nicht mehr durch eine Menschenleistung die Informationen erst beschafft werden müssen und vielleicht jahrzehntelange Erfahrungen da sein müssen oder ähnliches, sondern wir können einfach aus der historischen Daten lernen.
+
+Das heißt, wir schaffen es im Unternehmen, Prognosen kostengünstiger zu erstellen, damit in vielen Bereichen überhaupt erst anwenden zu können, also in der Masse.
+
+und damit bessere Entscheidungen hoffentlich, vielleicht auch nicht, aber hoffentlich zu treffen.
+
+Und das ist meiner Ansicht nach der große Effekt, warum es in den Unternehmen jetzt gerade so ein großer Hype ist, weil wir einfach in den Fokus kommen, wir können kostengünstiger unsere Entscheidungen vorantreiben.
+
+Ja, ich denke auch, dass das ein ganz zentraler Punkt ist, zumindest in Unternehmen.
+
+Das ist ja auch einer unserer Haupt-Anwendungsbereiche oder Fokus-Anwendungen von KI in Unternehmen.
+
+Es gibt natürlich andere Bereiche, die nicht nur im Unternehmen sind.
+
+Ganz sehr bekannt sowas wie das autonome Fahren zum Beispiel.
+
+Aber auch da kann man, wenn man das genauer aufschlüsselt, feststellen, es basiert im Wesentlichen auf dem Erkennen von Kontext und dem Treffen von Entscheidungen.
+
+Muss ich bremsen?
+
+Wie schnell kann ich fahren?
+
+Muss ich ausweichen?
+
+Wenn man das zerlegt, wird man feststellen, dass ein Großteil der Teilaufgaben, die man in Anwendungsdomänen findet, darauf beruhen, dass ich Entscheidungen treffen muss.
+
+Und ich denke, in der nächsten Folge werden wir die Aufgaben, die in der typischen KI-Anwendung stehen, mal genauer aufzuschlüsseln, zu schauen, was gibt es da für Probleme?
+
+Was sind die Grundbausteine der KI, mit denen man sowas lösen kann?
+
+Aber Carsten, du hast das ja jetzt schön eigentlich aufgegriffen, was in der nächsten Folge passieren wird.
+
+Wir würden natürlich gerne in dem Thema Künstliche Intelligenz natürlich noch tiefer einsteigen und die einzelnen Aspekte, also praktisch Spracherkennung, Bilderkennung, maschinelles Lernen auch nochmal detaillierter darstellen.
+
+Aber ich denke für den heutigen ersten Podcast, das ist mal ein schöner Einblick gewesen, so ein schöner Teaser, dass wir an der Stelle vielleicht auch ein bisschen
+
+Interesse für mehr geschafft haben ja und würden uns natürlich freuen wenn dann nächste woche wieder etliche personen zuhören würden so dass wir das thema so nach und nach immer tiefer aufgreifen können und wir dann natürlich auch die ersten interview partner mit rein nehmen.
+
+Ja da freue ich mich schon auf die nächste woche.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

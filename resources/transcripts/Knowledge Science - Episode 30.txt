@@ -1,0 +1,501 @@
+ Hallo und herzlich willkommen.
+
+Heute wollen wir Ihnen einen Einblick in Reinforcement Learning geben und aufzeigen, dass diese Art des Lernens ähnlich dem Lernen von Kindern ist.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Ist dir eigentlich aufgefallen, dass es die 30.
+
+Sendung ist?
+
+Ne, müssen wir jetzt feiern oder warten wir auf die 50.?
+
+Man sollte irgendwie auch kleine Erfolge feiern.
+
+Obwohl, also man muss ja sehen, Ziel ist es ja sozusagen eine langfristige Belohnung zu bekommen.
+
+Und damit wäre die 50. ja interessanter.
+
+Und du meinst für eine langfristige Belohnung muss man auch manchmal kurzfristige Rückschläge in Kauf nehmen?
+
+Vielleicht, ja.
+
+Oder andere Wege einschlagen.
+
+Oder einfach mal neue sachen ausprobieren von denen man nicht weiß was sie bringen.
+
+So ist das.
+
+Obwohl low hanging fruits sprich kurzfristige erfolge direkt vor der nase hängen wie zum beispiel einfach länger schlafen.
+
+Das stimmt, ja, das stimmt.
+
+Und was hat das Ganze jetzt mit Reinforcement Learning zu tun?
+
+Ich wollte gerade sagen, die Hörer werden sich jetzt bestimmt denken, was reden die so kryptisch?
+
+Aber in einer gewissen Weise ist es ein Teil des Reinforcement Learning.
+
+Und das ist das Thema, was wir heute mit Ihnen diskutieren wollen und Ihnen ein bisschen näher bringen wollen.
+
+Reinforcement Learning, weil es halt ein Teil des maschinellen Lernens ist und es auch extrem spannend ist, weil es halt auf wenig Daten funktioniert.
+
+Aber sogar erstmal mit so gut wie keinen Daten, direkten Daten loslegen kann.
+
+Also auf Deutsch vielleicht, wer es so kennt, bestärkendes Lernen, Reinforcement Learning.
+
+eine von den drei Kernarten aus Daten zu lernen.
+
+Die anderen beiden hatten wir schon intensiver besprochen.
+
+Das war das Überwachte, das Supervised Learning, wo ich Daten, typischerweise viele Daten brauche, ein- und Ausgabepaare zusammen, wo ich diese Zuordnung lerne.
+
+Dann das Unüberwachte an Supervised Learning, wo ich nur die Beobachtung, also quasi nur die Eingabewerte habe und eigenständig versuche, eine gewisse Art von Strukturmuster in den Daten zu finden.
+
+Und jetzt dieses dritte Lernparadigma,
+
+Das reinforcement learning ich habe ja normalerweise erstmal gar keine daten und fange jetzt an und und ich sind natürlich nicht wir sondern dieses ich das ist ein agent in der sprache des reinforcement learnings der mit seiner umwelt interagiert der kann aktionen ausführen und sachen machen so ähnlich gesagt es ist ja wie ein kind wenn es zum beispiel laufen lernt wir geben ihm ja nicht daten
+
+Direkt meine klares kann beobachten also es ist jetzt nicht immer eins zu eins dasselbe es kann erst mal beobachten und gucken wie machen andere das aber im wesentlichen muss es selbst die erfahrung sammeln indem es anfängt, loszulaufen oder es zu versuchen dann wird es hinfallen und dann weiß es das war nicht gut dann kriegst du eine bestrafung, in dem sinne weil es hat schmerzen es fällt hin und das ist jetzt am ende ist es letztendlich den lernen aus versuchen irrtum man probiert,
+
+Manches klappt, dann macht man es so weiter oder es klappt nicht, dann macht man es anders.
+
+Und das ist das Prinzip, das wir ausnutzen.
+
+Ja, du hast das Beispiel mit dem Laufen gesagt.
+
+Ich finde auch immer ganz schön, das Beispiel zu nennen, dass man, wenn man Kinder beobachtet oder gerade Babys und Kleinkinder, die nehmen ja alles in den Mund und schmecken ja dann.
+
+Und manches schmeckt halt nicht gut und manches schmeckt.
+
+Und das gleiche sieht man ja auch bei jungen Hunden oder so.
+
+Wenn man im Endeffekt, bitte nicht nachmachen, aber wenn man eine Zitrone zum Beispiel nimmt und lässt den Hund sozusagen daran schlecken, dann sieht man genau so einen Effekt.
+
+Das ist genau dieses Belohnen, Bestrafen, dass er daraus lernt.
+
+wie er damit umgehen soll ja man sagt lecker und esse ich weiter genau so ist es ja und das wird auch gerne das beispiel gemacht dass man hund gern sitzball bringen möchte oder dass wenn man sozusagen zur tür geht und gassi ruft dass er dann eine reine in der hand hat also nicht der hand im mund nicht in der hand aber im mund so dass man im hund,
+
+diese themen beibringt und dann kann ich dem hund ja nicht erklären wie es geht ich kann ja nicht sagen so jetzt hallo hör mal setz dich hin ich erklär es dir, sondern es muss ja so laufen dass ich im endeffekt durch eine umgebung die ich schaffe, ihm immer wieder feedback gebe, dass er merkt okay wenn er das so macht,
+
+Dann wird's besser dann kriegt ihr eine belohnung habe ich nur gerade soll mich nicht unterbrechen aber ich habe mir gerade vorgestellt es gibt ja auch imitation learning herum in dem mund was vormacht dann dachte ich gerade wenn du in form hast was er machen soll natürlich auch lustig.
+
+Mit alleine im mund zur tür krabbeln genau.
+
+Nee, aber das ist im Endeffekt so dieser Effekt, dass man also sagt, wenn man definiert sozusagen eine Umgebung, definiert in einer gewissen Weise, was man möchte, und dann läuft man bestimmte Schritte ab, also als Agent, wie du es genannt hast, als Individuum, das was landen soll.
+
+Und die Schritte, die man durchläuft, das ist zuerst mal, dass natürlich die Umgebung beobachtet wird.
+
+Dann trifft der Agent, das Individuum, eine Entscheidung, wie man jetzt vorgeht, handelt darauf,
+
+Und dann kriegt man sozusagen Feedback, eine Belohnung oder eine Bestrafung.
+
+Und daraus erlernt man und verfeinert sozusagen sein Handeln, seine Strategie.
+
+Das heißt, wenn wir das nochmal wieder, ich bin ja dieser Fan davon, das mal so als Eingabe, Verarbeitung und Ausgabe zu sehen, das haben wir hier natürlich genauso.
+
+Die Eingabe ist halt quasi der Zustand in meiner Umgebung, den ich halt irgendwie oder der Agent eingenommen hat.
+
+Und gewisse Belohnungen,
+
+wahrgenommen werden.
+
+Und die Ausgabe ist, was mache ich als nächste Aktion?
+
+Was ist die nächste beste Aktion?
+
+Und das Modell muss quasi berechnen und sagen, mach mal diesen nächsten Schritt.
+
+Und deshalb kommen viele dieser Anwendungen ja auch aus dem Spielbereich.
+
+Okay, ich lerne jetzt, wie ich am besten Schach spiele, wie ich Go spiele.
+
+Da hat man ja auch sehr, sehr große Erfolge im ganzen Spieleumfeld.
+
+Und ja, wie lernt man sowas?
+
+Wie macht man sowas?
+
+Ich glaube, da müsste man jetzt dann auch tatsächlich anfangen, die unterschiedlichen Elemente von dem Reinforcement mal vorzustellen.
+
+Wir haben im Endeffekt, du hattest es ja schon erwähnt, einen Agenten.
+
+Das ist im Endeffekt das Individuum, das was landen soll oder die Eigenschaften dann sozusagen haben soll am Ende.
+
+Zum Beispiel mit dem Kind, das ist vielleicht das Baby, also das Kind selber.
+
+Dann haben wir die Aktionen, Action, das ist die Aktivität, die man macht aus einer Handlung heraus.
+
+Wir haben einen sogenannten State, das ist der Status der Umgebung nach einer Handlung.
+
+Und wir haben die Umgebung selber, die Environment, in der wir uns bewegen.
+
+Und was man natürlich nicht vergessen darf, eine Belohnung, privat, der dann im Endeffekt dafür sorgt, dass wir Feedback bekommen.
+
+Genau diese diese umgebung die im besten fall kennen wir die im schlimmsten fall halt und wir brauchen nicht und diese umgebung die die definiert eigentlich ja letztendlich was für zustände gibt es denn überhaupt was für aktionen
+
+sind überhaupt möglich?
+
+Und wie ich denn von einem Zustand durch eine Aktion in den nächsten komme?
+
+Und die Belohnung oder Bestrafung, die letztendlich dafür vergeben werden, wenn ich sowas mache?
+
+Das muss die Umgebung Uwo bereitstellen.
+
+Also das wären so die Kernkomponenten.
+
+Wir haben aber noch zwei wesentliche Themen, die noch dazugehören, die vielleicht nicht direkt so verständlich ist aus so einem, aus so einer Aktion, wo man sagt, da ist der Agent, der macht eine Aktion, die Umgebung wird dadurch interagiert, hat einen neuen Status und liefert einen Reward zurück.
+
+Also wie so eine wiederholende Schleife ist das ja.
+
+Also in den Loop haben wir noch intern sowas wie eine Policy und einen Wert.
+
+beziehungsweise könnte man ja sagen diese diese policy oder man könnte auch einfach sagen eine strategie das ist ja eigentlich das was was ich lernen möchte der der agent der soll eigentlich lernen was ist denn die beste policy langfristig strategie um über die zeit akkumuliert einfach das bestmögliche zu erreichen
+
+So ist es, also es ist Verbindungsstück zwischen der Aktivität, also dem Inputstatus der Aktivität und dem Output.
+
+Ja, und dann kann man das Ganze natürlich noch mathematisch schön verbinden.
+
+Dann weiß man wieder, okay, das hat irgendwas mit Markov-Entscheidungsprozessen letztendlich zu tun.
+
+Und ich denke mal, vereinfacht gehen wir davon aus, dass wir immer so diskrete Zustände haben.
+
+Dass man von einem, also jeder Aktion, die ich durchführe, komme ich quasi in den nächsten Zustand,
+
+Zeitschritt sozusagen, das kann jetzt Zeit im Sinne von Sekunden oder Minuten sein, in den meisten Fällen, wenn es aber sowas wie Spielzüge sein, oder wenn ich einen Dialog führe, dass ich einfach mal die nächste Sache gesagt habe, und dann warte ich wieder, wie die Umwelt reagiert.
+
+Und diese Umwelt kann natürlich auch ein Gegenspieler oder ein Mitspieler sein, der entsprechend antwortet, was denn wieder zum nächsten Zustand führt.
+
+Genau, und mich gehe davon aus, in den meisten Fällen jetzt erstmal, dass die Entscheidung, die ich treffe, nur von dem aktuellen Zustand abhängt und ich mir nicht noch zwingend die ganze Historie merken muss.
+
+Also, dass alles, was ich bislang gemacht habe, in diesem aktuellen Zustand und den bekannten Belohnungen, die ich erhalten habe, wo, ja, letztendlich kumuliert enthalten ist und ich darauf meine neue Entscheidung treffe.
+
+Vielleicht nochmal einen Blick reinzuwerfen in die Policy und was du gerade gesagt hast.
+
+Wir haben eigentlich das Ziel, dass wir praktisch genau diese Optimierungen zwischen Status und Aktion praktisch vorantreiben.
+
+Das sind Optimierungsprobleme.
+
+Man muss aber auch ein bisschen darüber nachdenken, was wir da eigentlich haben.
+
+Wir haben also praktisch auf der einen Seite einen Status.
+
+Wir haben eine Aktion.
+
+kriegen eine Belohnung oder eine Bestrafung.
+
+Und wenn man sich das mal so überlegt, dann haben wir es über sowas ja schon mal drüber nachgedacht, ja, dass wir also Merkmale haben auf der einen Seite, also mal durch Input, das können jetzt Aktionen sein, das kann der Status sein, und auf der anderen Seite direkt ein Output.
+
+Dann sind wir doch eigentlich im Supervice-Learning.
+
+Wollte ich gerade sagen, kann man das nicht einfach als überwachtes Lernproblem definieren?
+
+Ja, prinzipiell schon, aber dann bräuchten wir ja ganz, ganz viele Daten dafür.
+
+Was war denn in der Vergangenheit genau die richtige Entscheidung?
+
+Also sprich Zustände und die richtige Entscheidung.
+
+Und wir gehen hier jetzt davon aus, dass wir das am Anfang noch gar nicht haben.
+
+Also hätte ich wahnsinnig viele Daten, dann wäre das wahrscheinlich effizienter, wenn ich diese Entscheidung nachbauen will.
+
+Dann wäre es sicherlich vom Lernprozess effizienter, wenn ich das bereitstellen würde.
+
+Aber wir gehen davon aus, wir haben diese Daten nicht.
+
+Und eine Sache, die ich vielleicht auch noch anmerken möchte.
+
+Wenn ich diese Daten vorliegen habe, dann kann ich genau diese Entscheidungen, die in der Vergangenheit getroffen wurden, nachbauen.
+
+Das Tolle an dem Reinforcement Learning ist aber auch, dass ich durch diese Lernvorgänge völlig neue Strategien entwickeln kann, die ich vorher noch nicht hatte.
+
+Das sieht man jetzt, wenn man zum Beispiel in modernen Ansätzen, wie Schach oder Goal, noch komplexer sowas zu spielen.
+
+und sich die Systeme gegeneinander antreten lasse.
+
+Zwei Instanzen eines Agenten, der mit Reinforcement gelernt wurde, spielen gegeneinander und die entwickeln auf einmal völlig neue Strategien, die man vorher noch gar nicht so beobachtet hat.
+
+Also du hast es richtig gesagt, wenn ich die Daten habe, ist es ganz klar ein Supervice-Learning-Problem.
+
+Und die Daten haben wir hier eigentlich nicht.
+
+Aber was auch noch ein ganz wichtiger Aspekt ist, warum es kein Supervice-Learning ist, ist, dass die Belohnung und die Bestrafung, die wir sozusagen geben, dass die nicht sofort zum Zeitpunkt der Ausführung stattfindet, sondern wir haben einen Zeitversatz dahinter.
+
+Also die Belohnung ist zeitversetzt und man muss auch genau sagen, die ist rar.
+
+Also es ist nicht so, dass ich hinter jeder Aktion eine Belohnung bekomme.
+
+Das heißt also, ich muss langfristig orientiert, oder der Agent, der muss langfristig sozusagen planen und muss Strategien entwickeln, die für eine Langfristorientierung dient, was natürlich extrem schwer ist, sozusagen das rauszufinden.
+
+Und das sieht man dann auch, wenn man so die Videos anschaut, wie so zum Beispiel Roboter anfangen zu laufen, das ist relativ lang, also relativ ist immer, man sieht sozusagen die Iterationen, also man muss das vielleicht in Iterationen und nicht in Zeitabständen rechnen, weil die Iterationen natürlich wahnsinnig schnell durchgerechnet werden können.
+
+Aber man sieht halt, dass der nach 20 Iterationen noch nix kann.
+
+Sondern erst irgendwie nach 500.000 oder was auch immer in Iterationen.
+
+Also er muss ganz viele Dinge ausprobieren, um diese Langfristbelohnung auch wirklich zu bekommen.
+
+Und das stellt erstens die Schwierigkeit im Reinforcement-Learning dar.
+
+Und zweitens unterscheidet es das halt zum Supervised-Learning.
+
+Und man müsste eigentlich sagen, dass es eher so ein Semi-Supervised-Learning ist.
+
+Ja, wobei, was du ansprichst, ist ja auch dieses Credit-Assignment-Problem bekannt, dass ich nicht nach jedem Schritt sofort ein Feedback kriege, sondern erst nach einer gewissen längeren Zeit.
+
+Und dann noch die Frage ist, wie ordne ich das dann genau den Schritten rückwirkend zu, wenn ich aber dieses Feedback
+
+habe, auch mit das irgendwie in Form aufgelöst habe, dass ich rückwirkend das noch in den einzelnen Schritten zuordne, dann hätte ich ja rückwirkend diese Daten.
+
+Dann könnte ich aus denen das machen.
+
+Also ich kann jetzt nicht erwarten, dass ich, genau wie du sagst, dass ich einen Schritt gemacht habe, dann habe ich ein neues Lernbeispiel.
+
+Nein, das nicht.
+
+Habe ich aber zig Millionen Schachspiele beobachtet und kenne genau alle diese möglichen Schritte.
+
+Denn am Ende jedes Spiels weiß ich ja, ob ich gewonnen oder verloren habe und kann das mit Auflösung dieses sogenannten Credit Assignments Problem zuordnen.
+
+Wie groß war denn jetzt der Anteil eines einzelnen Schrittes am Gesamterfolg am Ende?
+
+Das muss ich ohnehin lösen.
+
+Und wenn ich das jetzt mal wieder aufgelöst hätte, hätte ich jede Menge große Daten.
+
+Aber wie gesagt, ich kann dann nur die vorgefundenen Strategien als Eingabe nutzen und nicht durch dieses Versuch und Irrtum völlig neue Wege irgendwo ausprobieren.
+
+Und das ist halt auch aus meiner Sicht ein ganz, ganz entscheidender Input von diesen Systemen, dass die natürlich, also letztendlich ist es mal eine Balance aus die Umgebung und das, was die mir quasi als Regeln, die ich noch nicht kenne, vorgibt, zu erkunden, das ist die sogenannte Exploration, und dem sogenannten Exploiting, also dem Ausnutzen dessen, was ich schon weiß.
+
+Nur vereinfacht gesagt, bevor du bist ein Student, Studentin und hast ein Fach gelernt, Maschinenlearning, und denkst so, super, die Firmen kommen auf dich zu, wollen sie dich bei uns anheuern als Werkstudentin, sagst du, ach prima, ich höre mit dem Studium auf, freu mich, dass ich jetzt hier ein paar Euro als Werkstudent oder Werkstudentin verdienen kann und mach mein Studium nicht fertig.
+
+Das wäre ein kurzfristiger Erfolg.
+
+Langfristig, nee, ich mache das Studium fertig und kann vielleicht viel bessere Jobs noch kriegen und noch viel mehr Geld verdienen.
+
+Das ist genau diese Situation.
+
+Nutze ich das aus, was ich schon kann, begnüge mich damit, ohne aber zu wissen, ob es nicht vielleicht irgendwo noch Sachen schlummern, die noch mehr Erfolg bringen.
+
+Und deshalb müssen diese Systeme das immer ausbalancieren, dass sie einerseits natürlich den kurzfristigen Erfolg auch nutzen, langfristig aber immer auch wieder neue Ideen und Wege ausprobieren.
+
+Und das ist so die große Kunst, das auszubalancieren.
+
+Aber es ist wirklich ein ganz spannender Ansatz, dieses Reinforcement Learning.
+
+Wir tun ja im Zuge von dem Podcast uns ja immer versuchen vorher ein paar Beispiele anzuschauen.
+
+Und da strömen wir immer über so viele spannende Dinge.
+
+Also was ich zum Beispiel ganz spannend fand, ist so ein Pendel mit einem Gewicht nach unten hängend auf einer laufenden Schiene.
+
+Und dann soll sozusagen der Computer ermitteln, wie er dieses Pendel in Schwung bringt.
+
+Und das ist dann praktisch auf dem Kopf, praktisch 180 Grad stehend,
+
+einfach stehen bleibt.
+
+Und das funktioniert ja nur, weil das Gewicht ja dran ist, wenn er den Schlitten unten drunter auf der Schiene immer hin und her fährt, sodass es, wenn es kippt, sofort wieder in die andere Richtung kippt.
+
+Jetzt kann man überlegen, wie schwer das ist als Mensch sozusagen, so einen Schlitten mit so einem Gewicht so hin und her zu schieben, dass das Pendel perfekt darauf stehen bleibt und nicht umkippt.
+
+Und das ist interessant zu sehen, wie viele Anläufe man, also so ein Reinforcement-Learning-System braucht, um das sozusagen hinzubekommen.
+
+Und dass es aber am Ende tatsächlich funktioniert.
+
+Und es ist schön, dass du sowas ansprichst, weil das zeigt ja nämlich ganz deutlich, dass es nicht nur im Reinforcement Learning Bank bei allen Problemen, wie die Elementars ist, erstmal zu definieren, das ist halt im Sinne von Reward, das kann ein Erfolg sein, das kann eine Bestrafung sein, aber ich brauche eine Kennzahl, die misst, wie ist denn der Leistungsstand und was ist denn jetzt eigentlich wichtig in meiner Anwendung, das ist immer kontextabhängig.
+
+Wir kennen das natürlich, wenn wir einen Spamfilter haben, wie viel Prozent habe ich erkannt oder sowas in der Richtung.
+
+Aber ich muss es immer in meiner Anwendung überlegen, was ist denn eigentlich wichtig, um das zu messen.
+
+Immer so ein typisches Spiel, Tetris oder sowas, wo du kannst ja gucken, ich will möglichst viele Punkte sammeln oder ich will möglichst lange überleben, dass ich halt irgendwie nicht zugeschüttet werde.
+
+Ich kann ja unterschiedliche Sachen haben, die ich optimiere und vielleicht kriege ich ja auch möglichst viele Punkte dann, wenn ich eigentlich nur versuche, möglichst lange am Leben zu
+
+bleibt.
+
+Aber je länger ich lebe, desto mehr Punkte kann ich sammeln.
+
+Also sowas letztendlich definiert das ja.
+
+Was ist denn eigentlich das, was ich maximieren möchte langfristig?
+
+Ja, unsere Belohnung definiert das eigentlich.
+
+Also wir definieren über die Belohnung das Ziel.
+
+Ja, aber trotzdem, ich denke schon, dass man noch unterscheiden kann.
+
+Klar, Belohnung ist vielleicht die Punkte, die ich irgendwie kriege, aber wenn ich jetzt irgendwie zum Beispiel einen Agenten baue, der eigentlich, wenn ich eine Art und Weise, wie ich das auswähle, nicht immer nur nach diesen Punkten kriege, die ich da halte, sondern einfach nur versuche,
+
+so mich zu bewegen dass ich einfach am leben bleibe und dann einfach als als nebeneffekt möglichst viele punkte sammeln kann das ist also diese diese art der strategie die ich da brauche kann ja unterschiedlich sein.
+
+Ja, hast du vollkommen recht, das stimmt.
+
+Aber das Spannende ist ja, und das sieht man ja auch, dass man durch das Reinforcement Learning auch mit anderen Ansätzen sozusagen dann weitergetrieben verwendet wird.
+
+Es gibt ja dann sowas auch wie ein inverse Reinforcement Learning, das im Endeffekt genau das, was du jetzt beschreibst, nämlich das Ziel gar nicht hat sozusagen, dass man das perfekt hinbekommt.
+
+sondern dass es die ideale Action identifiziert.
+
+Also kann man zum Beispiel, wenn man einen Autofahrer hat und man möchte sagen, was macht einen guten Autofahrer aus?
+
+Dann lässt man sozusagen das Reinforcement Learning mit Belohnung arbeiten, wenig Punkte in Flensburg, keine Ahnung, und nützt aber das Verfahren des inversen Reinforcement Learnings und guckt, was sind denn eigentlich die Action, die dazu geführt haben.
+
+und kann dann im endeffekt in der ableiten draus was ist jetzt die eigenschaften um dieses ziel zu früher hätte man so einen aufgaben typ konzept description gehabt also beschreibung eines konzeptes konzept guter autofahrer guter autofahrerin was hat jetzt eigentlich dazu geführt reverse engineering herauszufinden klar interessanter ansatz.
+
+Ja, also es ist echt, und ich muss auch sagen, ich würde gerne nochmal, auch wenn wir jetzt ein bisschen springen, aber das eine Beispiel will ich unbedingt noch bringen, weil ich das einfach gut finde, bei dieser zeitversetzten Belohnung, was ja wirklich auch ein wichtiger Part in dem Reinforcement Learning ist, damit verschiedenartigste, ja, Policies, Strategien ausprobiert werden.
+
+Ja, weil sonst wird man immer eindeutig, wie wir es ja schon gesagt haben.
+
+Und da wird auch immer wieder in den Literaturen genannt, als Beispiel kennt man vielleicht so einen Versuchsaufbau, wo man Kinder in den Raum setzt und ihnen sozusagen einen Marshmallow oder was auch immer sozusagen auf den Tisch stellt und sagt, wenn du denen erst in zehn Minuten isst, kriegst du einen zweiten.
+
+Und das ist ja in gewisser Weise dieses zeitversetzte belohnen, man kann kurzfristig sozusagen jetzt sich belohnen, oder man kann sozusagen die Strategie fahren, indem man sich ablenkt oder wie auch immer, um die zehn Minuten durchzuhalten, um dann den zweiten zu bekommen.
+
+Wie viele Kinder schaffen es denn, zehn Minuten davor zu sitzen, um einen zweiten zu kriegen?
+
+Ja, das ist echt interessant.
+
+Aber ich finde, es hinkt natürlich ein bisschen, weil es im Endeffekt nicht direkt mit der Strategie und so weiter zu tun hat.
+
+Aber es ist trotzdem plastisch zu sehen, dass es wirklich um eine Langfristorientierung geht.
+
+Mein entscheidendes ist hier, wenn du das ja mal wieder mit Kindern und Menschen vergleichst, dass man jetzt, wenn man so ein System modelliert, muss man ja explizit angeben und definieren, was sind denn jetzt eigentlich die Kriterien, was ist denn die Belohnung und in Wirklichkeit sind diese Sachen ja oft implizit oder viel viel komplexer.
+
+Ich meine klar, wenn du sagst laufen lernen will ich nicht,
+
+Da will ich nicht hinfallen, ich will mir nicht wehtun, ich will mich nicht verletzen.
+
+Vielleicht auch beim Skifahren, das ist nochmal drastischer.
+
+Man merkt halt irgendwie, man versucht die Grenzen auszuloten, wie weit kann ich irgendwie mich in die Kurve lehnen und bis ich rausfliege, wollt man dann beim Fahrrad fahren und lernt das irgendwann mit der Zeit.
+
+Klar, man möchte vielleicht nicht hinfallen, aber andererseits, um zu gucken, wie weit ich gehen kann, muss man vielleicht auch mal diese negative Erfahrungen sammeln.
+
+Aber oft ist es ja so implizit warum macht mensch jetzt überhaupt irgendwas was sind das sind diese belohnung sind ja auch vielfältig, dass man begriffse grundbedürfnisse hat dass man die erfüllt sind dass man andere bedürfnisse hat so komplex sind die meisten systeme hier in der formel nicht sondern das sind,
+
+Einfache Kriterien und Kennzeilen erstmal, denen man dann nachgeht.
+
+Aber sicherlich erweiterbar und kann man natürlich ausbauen in der Form.
+
+Vielleicht nochmal entscheidend, das werden wir heute nicht mehr alles schaffen, aber zu sagen, wie funktioniert denn eigentlich mal so als Anregung diese Balance zwischen
+
+Exploration und Exploitation, also Ausnutzen des bisher Bekannten.
+
+Und da gibt es ja, man könnte vielleicht grob unterscheiden, modellbasierte Ansätze und welche, die völlig frei davon sind.
+
+Modellbasiert, wenn ich halt wirklich so Verteilungen, letztendlich Wahrscheinlichkeitsverteilungen annehme, dass ich sage, wie ist denn die ideale Entscheidung?
+
+Und da gibt es tatsächlich Arbeiten, die gehen lange zurück, ich denke mal bis in die
+
+in die 30er Jahre von einem Thomson, das Thomson Sampling, dass ich sage, naja, das hängt ja davon ab, wie viel Erfolg hatten denn eigentlich jetzt eine Sache gemacht, das heißt, ich versuche letztendlich das zu modellieren mit einer Wahrscheinlichkeitsverteilung, wie wahrscheinlich ist es denn, dass ich jetzt irgendwas auswählen müsste und die Wahrscheinlichkeit, dass ich eine erfolgsversprechende Lösung wähle,
+
+ist natürlich höher, als dass ich eine nicht erfolgreich versprechende Lösung nehme.
+
+Und diese Wahrscheinlichkeit wird umso höher, je öfter ich das schon beobachtet habe.
+
+Aber es ist halt nur eine gewisse Wahrscheinlichkeit, sodass mit einer anderen Wahrscheinlichkeit, die zwar kleiner ist, aber es kann vorkommen, ich auch auch mal eine schlechtere Variante wähle.
+
+Das kommt letztendlich aus dem Spielbereich hier mit diesen einarmigen Banditen.
+
+Es sei okay, ich habe nicht nur einen, sondern da stehen halt zehn Stück vor mir.
+
+Welchen nehme ich denn?
+
+Wenn ich die alle noch nicht ausprobiert habe, dann weiß ich ja nicht, was ich nehmen soll.
+
+Wenn ich alle schon hunderttausend Mal gespielt hätte, dann würde ich am Ende natürlich den nehmen, der vielleicht die größten Erfolgsaussichten hat.
+
+Das weiß ich aber am Anfang nicht.
+
+Ich will diese Entscheidung ja treffen, ohne die jetzt alle hunderttausend Mal gewählt zu haben.
+
+Insofern kann ich nur anfangen zu spielen, und dann habe ich sie vielleicht ein paar Mal ausprobiert,
+
+Aber je häufiger ich gespielt habe, desto sicherer bin ich mir, dass das eine dieser Maschinen besonders gut oder besonders schlecht ist.
+
+Das heißt, je länger ich spiele, auch mit verschiedenen Banditen schon gespielt habe, desto größer ist die Wahrscheinlichkeit, dass ich es auswähle am Anfang, aber werden auch immer mal die anderen eingestreut.
+
+Und das ist genau der Punkt.
+
+Dadurch kriege ich halt diese Exploration mit herein.
+
+Und die Wahrscheinlichkeit, dass ich etwas auswähle, wird dadurch verändern.
+
+Das sind die modellbasierten Ansätze, die solche Verteilungen explizit modellieren.
+
+Ich denke, die meisten heutzutage gehen eher in eine modellfreie Annahme, dass ich einfach
+
+Ja, das können wir beim nächsten Mal vielleicht mal intensiv betrachten, von der Idee dieses Q-Learning, dass ich so eine Qualitätsfunktion habe, wie gut ist denn eine Aktion, und das dann halt entsprechend modelliere als Tabelle und dann überführe, wie ich sowas lernen kann.
+
+Da kommt das Temporal Defense Learning halt insbesondere mit rein.
+
+Oder das dann halt noch ausbauen mit neuronalen Netzen, mit Deep Learning, Deep Reinforcement Learning.
+
+Ich denke mal, das ist ein spannendes Feld, was wir vielleicht beim nächsten Mal angehen sollten.
+
+Definitiv, und ich denke mir auch, gerade das Deep Reinforcement Learning in Kombination mit Conversation AI und Texten und so weiter, ist echt ein spannendes Umfeld, wo wir definitiv nächste Woche nochmal eine vertiefende Sendung machen sollten.
+
+Ich denke, für heute wäre es schön, wenn wir nochmal kurz ein Beispiel so aufbringen, so zur Wiederholung, weil es ist schon nicht so, also es ist leicht zu verstehen, was da grundsätzlich passiert, aber in der Tiefe dann irgendwie, es ist doch recht komplex.
+
+Ich finde, ein schönes Beispiel ist auch, wenn man sagt, man hat eine Maus in einem Labyrinth und die möchte sozusagen aus dem Labyrinth raus und am Ende des Labyrinths gibt es ein Stück Käse.
+
+Dann haben wir sozusagen das Labyrinth als Environment, wir haben die Maus als den Agenten und die Entscheidung, wo sie hinläuft, die Strategie und die Aktionen, die dahinterstehen.
+
+Die Belohnung ist der Käse, der ist am Ende des Spiels sozusagen erst vorhanden, also spärlich und damit auch zeitversetzt.
+
+Und dann beginnt die Maus halt an loszulaufen.
+
+Mal nach rechts, mal nach links, dreht sich um und so weiter.
+
+Und irgendwann kriegt sie vielleicht den Käse, kommt näher ran.
+
+Also das heißt, die Belohnung ist schon irgendwo bewertbar in einer gewissen Weise.
+
+aber halt nicht in Gänze.
+
+Also es wird ja so ein bisschen, wie man es auch aus der Betriebswirtschaftslehre kennt, abdiskontiert.
+
+Also der Wert der Belohnung wird diskontiert zu dem jetzigen Zeitpunkt, um dann abschätzen zu können, ist das vielleicht doch ganz gut oder nicht.
+
+Und wenn es dann am Ende dann rauskommt, dass er den Käse erreicht, dann kriegt er die Belohnung und hat gelernt, okay, das muss der Weg sein.
+
+Wenn man also die Maus wieder an die gleiche Stelle setzt, im gleichen Labyrinth, dann merkt man, mit mehr Iterationen läuft sie dann relativ zügig durch das Labyrinth durch.
+
+zwischendurch und wichtig sieht man ja auch da dass man jeder jeder schritt den sie macht kostet es ist ja hat ja eine gewisse kosten und braucht zeit kriegt mehr hunger also ist ein gewisser negativer effekt das heißt sie ist ja schon auch sie sollte dieses ziel ja auch nur die schnell finden also nicht irgendwann sondern halt möglichst zügig.
+
+Genau.
+
+Und ich denke, im Detail würde man tatsächlich dann nächste Woche mal auf das Cool Learning eingehen, was ja auch sozusagen ein Weg ist des modellfreien Lernens und würden dann auch noch mal die Themen Deep Learning in Verbindung mit anderen Anwendungsgebieten anschauen, oder?
+
+Gute Idee.
+
+Mich interessiert dann nämlich insbesondere, wie das im Bereich der Dialogsysteme funktioniert, weil dann ist es ja viel schwieriger, sich vorzustellen, was sind denn in so einem System eigentlich die Zustände und die Aktionen, die ich durchführen kann.
+
+Und das sollten wir auf jeden Fall dann auch diskutieren.
+
+Perfekt, dann eine schöne Woche Ihnen und bis nächste Woche.
+
+Bis dahin, ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

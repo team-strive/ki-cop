@@ -1,0 +1,471 @@
+ Hallo und herzlich willkommen.
+
+In den letzten Episoden haben wir über die technologische Entwicklung von NLP-Verfahren gesprochen.
+
+Heute wollen wir das Ganze mal aus der Anwendungssicht aufgreifen und werden Anwendungsgebiete aufzeigen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Nachdem wir letzte Woche eine ganz schön technische Sitzung hatten, haben wir uns gedacht, dass wir diese Woche so ein bisschen auflockern mit Anwendungsgebieten, wo man die Transformer und die NLP-Verfahren, die wir bisher genannt haben, auch anwenden können.
+
+Genau, sollten wir da vielleicht gleich als erstes mal die die Sprachübersetzung nennen, denn daher kommt ja eigentlich diese ganze Idee der Transformer.
+
+Das heißt, man hat überlegt, wie kann ich sinnvoll eine Sprache in eine andere übersetzen.
+
+Da haben wir schon wieder gesehen, wir haben die Sequenzen, Eingabe ist eine Sequenz, ein ganzer Satz oder eine Passage, Ausgabe ist eine Sequenz.
+
+unterschiedlicher Länge.
+
+Und die Erfahrung hat gezeigt, man kann nicht einfach Wort für Wort einfach die eine Sprache in die andere überführen, sondern muss ja auch den Kontext, Satz, Stellungen, sprachliche Eigenarten berücksichtigen.
+
+Und das können diese Transformer-Modelle sehr gut.
+
+Denn sie speichern ja intern erstmal so diese, ja die Essenz des Satzes ist das, den wir übersetzen,
+
+wollen, irgendwo in einer internen Repräsentation, also dieser Encoder-Part und der Decoder-Part, den trainiert man dann quasi, diese interne Repräsentation in die neue Sprache, die andere Sprache, zu überführen.
+
+Das Interessante ist ja, dass wenn man das betrachtet, hört sich das ja alles so technisch an und man denkt sich, naja, wann werde ich damit mal was zu tun haben.
+
+Oh, ich glaube, da hat man sehr viel schon mit zu tun.
+
+Genau, wollte ich gerade sagen, weil wenn man so an bestimmte Services denkt, die es im Internet gibt, einmal Google Translate oder was ich auch, Kölner Startup, soviel ich weiß, DeepL.com, die eine wahnsinnig gute Übersetzungsqualität haben in x Sprachen.
+
+Und die basieren ja auf solchen Verfahren.
+
+sieht man schon dass man den anwendungsbereich eigentlich im alltag vielleicht hat ohne dass man sich gedanken drüber macht dass es vielleicht eine künstliche intelligenz ist die im hintergrund die übersetzung macht ja jeder der schon mal irgendwo in web browser sich eine seite aufgerufen hat und die in mehreren sprachen gesehen hat oder gefragt wurde mensch die seite ist englisch du bist in deutschland sollen wir die standardmäßig übersetzen,
+
+Es ist ja auch unwahrscheinlich, dass da überall fleißige Menschen sitzen und die für einen übersetzen, sondern das erfolgt dann mit solchen Übersetzungstools.
+
+Und so wie ich es sehe, sind die erstaunlich gut, oberflächlich erstmal betrachtet, aber ich finde, wenn man im Detail dann wirklich das verstehen will, geht es mir ganz oft so, dass ich sage, naja, so richtig, so die Feinheiten sind dann doch nicht drin.
+
+Also ich nutze dann doch lieber, sobald ich es lesen kann, die Originalquellen.
+
+Ich weiß nicht, wie es dir geht.
+
+Ja, das sehe ich auch so.
+
+Wobei, was natürlich schon eine wahnsinnige Hilfe ist, wenn man einen großen Text hat und zum Beispiel gerade mal ein bisschen müde ist und nicht hat Lust hat, den ganzen zu übersetzen, das in so eine Übersetzer zu geben und sich das dann grob übersetzen zu lassen, das ist schon eine Hilfe.
+
+Und ich denke mal, in dem Kontext verwenden das wirklich extrem viele.
+
+Für eine Qualität, dass ich sage, dass man es wirklich in einem publizierfähigen Format hat, da muss man händisch noch mal ran.
+
+Also ich sage bewusst noch, weil ich mir gut vorstellen kann, gerade mit der Mächtigkeit dieser Netze, die wir jetzt auch in den letzten Serien diskutiert haben, dass das auch dazu führen wird, dass auch die Qualität wahnsinnig steigen wird in den nächsten
+
+Ich meine, hängt vielleicht auch davon ab, in welchen Domänen und Bereichen diese Modelle trainiert wurden, wenn es vielleicht typische Quelle für solche Modelle sind, schätze ich mal, so Nachrichtentexte, die dann einfach als Basis herangezogen werden, weil man muss ja zusehen,
+
+Google hat ja sehr viele dieser Modelle auch erstellt.
+
+Insbesondere sind es Firmen, die natürlich Zugriff auf große Datenmengen haben.
+
+Und bei den Übersetzungen brauche ich ja beides.
+
+Ich brauche ja mindestens die beiden Sprachen, wo ich die eine oder die andere überführen will, als Trainingsdaten.
+
+Und da kommen natürlich solche Unternehmen wie Google, Facebook und Co., die halt entsprechend große Datenmengen potenziell auch in verschiedenen Sprachen verfügbar haben.
+
+Und wenn man halt mal überlegt, dann sind es vielleicht insbesondere Nachrichtentexte und eine bestimmte Art von Kommunikation, die verfügbar ist.
+
+Gehe ich jetzt aber in irgendeine Spezialdomäne, wo vielleicht nicht so viele Texte da sind, dann ist das da vielleicht einfach schlechter von der Qualität.
+
+Aber nichtsdestotrotz eine wahnsinnige Unterstützung und Hilfe.
+
+Und da können wir eigentlich auch schon in den nächsten Gebiet gucken, weil ich glaube, wir würden ganz gerne heute einfach mal so eine ganze Handvoll an Gebieten durchlaufen.
+
+Also Übersetzung wäre das eine, wo die Transformer natürlich herkommen.
+
+Das nächste, was sicher in dem Kontext dann auch passen würde, wäre so Textzusammenfassungen.
+
+Also, dass man die Transformer dazu verwendet, oder generell NLP-Verfahren müssen ja nicht nur Transformer sein, man kann ja auch andere Verfahren verwenden, wobei die hier auch sehr gerne verwendet werden, um Texte ganz klar, also lange Texte, zu kurzen Zusammenfassungen zusammenzuführen.
+
+gibt es eine schöne Internetseite oder einen Anbieter, quillbot.com, die so Textzusammenfassungen machen.
+
+Das heißt, man gibt ein ganz gutes Dokument in diesen Service rein und kriegt dann eine Zusammenfassung.
+
+Da kann man dann einstellen, wie viele Sätze soll die Zusammenfassung lang sein.
+
+Und dann wird die dementsprechend halt maschinell über so ein Modell zusammengefasst.
+
+möglicherweise einfacher zu lernen als Übersetzung, weil ich glaube, da gibt es einfach viel mehr Daten schon, wo man sich gar nicht großartig bemühen muss.
+
+Wenn wir mal in den akademischen Bereich gehen, jedes Paper, jede Veröffentlichung, die man irgendwo finden kann, hat einen Abstrakt.
+
+Das wäre eine super Form von Zusammenfassung, die man als Trainingsdaten heranziehen könnte.
+
+Und man muss halt sehen, dass man hier ja einen wahnsinnigen Hebel für die Unternehmenswelt oder generell für den wirtschaftlichen Bereich halt zieht, weil wenn ich überlege, wie viele Dokumente man lesen muss, wie viel, wenn ich an Juristen denke oder an andere Berufe, die ja in sich wahnsinnig viel
+
+Quellen lesen müssen und den Extrakt rausziehen müssen.
+
+Auf der Ebene kann man natürlich einen wahnsinnigen Hebel erzeugen, was Kosteneinsparung angeht, Zeit und Effizienz, wenn die Qualität an der Stelle natürlich gut ist.
+
+Aber wenn man mal damit ein bisschen spielt, also gerade auf dieser Internetseite, die ich genannt hatte, da ist es echt interessant, da kann man auch beispielhaft die Texte reinhängen, die sind schon nicht schlecht.
+
+Also da sind die Zusammenfassungen wirklich
+
+Gut.
+
+Und ich denke, das hat, wie du sagst, damit zu tun, dass man wirklich eine große Menge nützen kann, dass man nicht dieses 2-3-Sprachen-Problem hat, sondern dass man eine Sprache hat, die dann im Endeffekt eine Extraktion bedeutet.
+
+Man muss natürlich auch sehen, dass es dann wichtig ist, dass man so Schlüssel
+
+Sätze oder Keywords identifizieren, also auch das gehört dann zu der Textzusammenfassung dazu, also Keyword Extraction, Schlüsselsätze herausziehen, um dann halt die nicht so sinnvollen Sätze dann zu eliminieren.
+
+Aber wenn man jetzt mal diese beiden Beispiele nimmt, eine dritte, die ja auch sehr ähnlich ist, ist ja generell die Textgenerierung.
+
+Man könnte sogar sagen, Textgenerierung ist der Oberbegriff.
+
+Ich schicke eine Sequenz an Text rein und es kommt eine andere raus.
+
+Die Frage ist nur, ist es dieselbe Sprache oder eine andere?
+
+Dann haben wir die Übersetzung.
+
+Ist es meinetwegen dieselbe Sprache, aber viel, viel weniger Wörter, die ich, dass ich eine Limitierung der Wörter habe, dann habe ich eine Zusammenfassung.
+
+Oder wenn ich sage, es ist ein Text bis zu einer Stelle, führ doch mal einfach den Text fort.
+
+Aber es sind alles Textgenerierungen.
+
+Und das Interessante ist, vom Grundmodell kann es überall gleich oder ähnlich sein von der Architektur.
+
+Ich frage es nur am Ende als Decoder, also als nachgestaltete Part muss ich halt anders trainieren, anders finetunen sozusagen auf diese konkrete Zielstellung.
+
+Das ist richtig, ja.
+
+Aber Textgenerierung ist tatsächlich ein Thema, das, also so wie du sagst, aus den Modellen heraus entsteht, so wie du es beschrieben hast, je nachdem, was ich damit erreichen möchte, Übersetzung oder Ähnliches, die aber auch in der Industrie zur Anwendung kommt.
+
+Also das ist ja nicht nur ein Thema, wo wir sagen, gut, die Modelle sind von der Architektur zurückgebaut,
+
+Sondern wir haben da ja dienste die zum beispiel uns auch also gerade im werbungsbereich werbetexte schreiben postbeiträge schreiben oder produktbeschreibungen meines meiner meines meines produktkatalog.
+
+Genau kritiken das ist sicher auch ein thema und.
+
+Da in der Vorbereitung auf die Sendung heute bin ich dann auch über einen Anbieter Conversation AI gestolpert, die genau das machen.
+
+Die sagen, wir generieren für ihren Service, für ihr Produkt, für ihre Firma Werbetexte.
+
+Blogbeiträge in dem Kontext, um sich praktisch im Internet besser vermarkten zu können.
+
+Das ist dann Copywriting, nennt sich das dann.
+
+Und man gibt dann praktisch an, was sind so die Haupteigenschaften des Produktes.
+
+Man gibt an, für was denn die Firma steht, wie man das gern haben möchte, wählt dann verschiedenartige
+
+Schreibestile aus.
+
+Also das sind halt verschiedenartige Modelle gelernt, je nachdem, ob man eher technisch schreiben, also geschriebenen Text haben möchte oder eher, ich sag mal, wirtschaftlich geschriebenen oder wie auch immer.
+
+Und dann generiert dieses, dieser Service halt ständig Texte, die völlig, also man, die werben damit, dass es dann völlig original ist, also dass es keine Kopie oder ähnliches ist, also kein Variat.
+
+die aber nicht von der menschlichen kraft geschrieben sind und ich dadurch natürlich mir eine außenwirkung zeigen kann ob das jetzt schön ist oder nicht kann man wieder ethisch diskutieren weil man dann hier über fake news und so weiter diskutieren kann oder will ich wirklich haben dass meine newsseite oder mein kanal den ich publiziere geflutet wird mit künstlich erzeugten texten die vielleicht keinerlei inhalt haben
+
+Wobei man sagen muss die sind eigentlich nicht schlecht solange man halt diese kategorien hat gut definiert.
+
+Ich glaube auch da dass es umso besser funktioniert wenn ich eine historie von bestehenden produktbeschreibung schon habe oder zu zu ähnlichen vergleichbaren produkten in meiner historie dann wird sicherlich ein deutlich einfacher sein.
+
+Aktualisierung anpassungen dafür für neuere produkte zu generieren als wenn ich jetzt auf der grünen wiese erstmal anfange da müsste ich vielleicht mich irgendwie orientieren an.
+
+Ja, in diesem gewissen Schreibstil, dass sie sagen, ich hab hier ein technisches Produkt und dann orientiere ich mich vielleicht an ähnlichen Firmen oder Produkten, wovon ich vielleicht möglicherweise lernen kann.
+
+Aber in der Tat, also bei sowas, so zu Werbezwecken, zu Beschreibungen, wenn ich einfach sage, ich möchte Produktbeschreibungen auf meinem Online-Shop haben und das muss ja alles auch erzeugt werden,
+
+Da kann ich es mir ehrlich gesagt sehr gut vorstellen, aber diese Missbrauchsgefahr ist natürlich hoch.
+
+Das hatten wir ja auch in unserer Folge mit der EU-Regulierung diskutiert.
+
+Ich kann diese Modelle natürlich auch nutzen, um Fake-Reviews zu erzeugen, Fake-Nachrichten.
+
+Und das muss man natürlich immer mit berücksichtigen, dass man da halt irgendwo Möglichkeiten schafft, dass sowas halt entweder unterbunden wird oder besser kontrolliert, reguliert wird, wie es die EU ja auch vorschreibt.
+
+Und vor allem muss man natürlich auch sehen, wenn das natürlich nichts kostet, mehr Text zu generieren, dann haben wir das gleiche Problem ja in der gewissen Weise, was wir auch bei E-Mail Spams oder ähnliches haben.
+
+Also die Ansprache von Kunden oder potenziellen Kunden, die nichts kostet, führt zu einer Überflutung.
+
+Und zu einem gewissen Missbrauch, weil man dann einfach sozusagen Masse erzeugt, um dann eine Reaktion, wenn man sich daraus erhofft.
+
+Fishingversuche, E-Mails, Betrugsversuche, da wird alles einfacher.
+
+Also das ist eine riesengroße Gefahr, die man da auch hat.
+
+Ja, haben wir darüber diskutiert in der Sendung, wie du gesagt hast, mit dem, wenn ich im Endeffekt eine E-Mail so perfekt schreiben kann, im Stil von jemand anders, ist es natürlich viel gefährlicher, einen Phishing-Opfer zu erwischen, als wenn ich Themen drin habe, die nicht ganz passen.
+
+Also wo ich sage, ah ja, das würde doch der Kollege nie so schreiben.
+
+Also man könnte es zum Beispiel nutzen, auch auf einer anderen Ebene, um Betrugsversuche oder Abweichungen von anderen Texten wieder zu erkennen.
+
+Welche Texte sind vielleicht von einem Originalautor?
+
+Dann kann ich auch vergleichen, was hätte mein Modell an der Stelle für ihn generiert und was habe ich jetzt für einen Text vorliegen?
+
+Gibt es Abweichungen?
+
+Also Anomalieerkennung könnte man auch quasi darauf aufbauen.
+
+Also aufbau von synthetischen daten um dann wieder modelle zu lernen die dann die anomalie erkennen vielleicht gehen wir nochmal ja vielleicht einen kleinen schritt zurück könnte man denken.
+
+das ist diese generierung von wirklich längeren zusammenhängenden texten ist ja eines aber was die modelle gut können ist ja auch dass ich jetzt nicht gesamte texte komplett erzeuge sondern ja eigentlich dieses lücken füllen dass ich sage wie was ist denn das nächste wort oder was ist denn jetzt welches wort steht denn jetzt hier in der mitte also lücken füllen.
+
+Ist das kann man sich vorstellen dass man sowas auch in der praxis schon so nutzen könnte.
+
+Ja, das ist auch da, wenn man ein bisschen recherchiert, stört man über viele Anwendungsgebiete, auch in dem Kontext mit den Lückentexten.
+
+Nämlich die Ergänzung von Wörtern, wo der Text fehlt.
+
+Und wenn man jetzt so drüber nachdenkt, vielleicht kann der ein oder andere Hörer, Hörerin schon sich vorstellen, wo das denn passieren könnte.
+
+Nämlich wenn ich zum Beispiel alte Texte habe.
+
+Und in den alten Texten fehlen zum Beispiel Abschnitte von Seiten, oder da sind irgendwie Elemente rausgerissen, oder man kann die Schrift nicht mehr gut lesen oder ähnliches.
+
+Dann könnte man im Endeffekt diese Erkennung von Lücken, also Auffüllen von Lückentexten dazu verwenden, um diese Texte zu rekonstruieren.
+
+Also Restaurierung von alten Dokumenten.
+
+So ist es.
+
+Genau, die Restaurierung.
+
+Mir fällt da noch ein ganz viel viel einfacherer, naheliegenderer Ansatz ein.
+
+Das ist, wo man es ja auch sehr sehr oft nutzt, bei Suchanfragen.
+
+Dass ich einfach sage, man fängt an zu tippen.
+
+Es ist jetzt nicht nicht lücke im mitten eines satzes aber was ist denn das nächste wahrscheinliche wort da werden solche modelle ja auch intensiv genutzt.
+
+Und meines erachtens sind diese prognosen was da als nächstes kommt extraordentlich gut geworden manchmal sogar besser als das was mir selbst eingefallen wäre dass ich da reinschreiben möchte.
+
+Aber das ist tatsächlich also Restaurierung von Texten, Ergänzung von Suchanfragen.
+
+Also das sind natürlich schon spannende Ansätze, wo man dann gerade eigentlich, und das ist ja, ich will jetzt nicht sagen ein Abfallprodukt, aber wir haben ja praktisch, wenn wir an die letzte Sendung denken mit den Transformers, dann haben wir ja bewusst gesagt, dass wir ja gerade zum Beispiel beim Decoder ja hergehen und bestimmte Elemente einer Sequenz abdecken, damit er sozusagen diese prognostizieren muss.
+
+Das ist ja eigentlich so eine innere Funktion des Transformers, dass man dann hier eigentlich in so einem Anwendungsfall, wie die Restaurierung von Texten oder wie auch immer, mal dann anwendet oder halt wiederverwendet.
+
+Es gibt ja auch noch andere Bereiche, wenn wir mal weggehen von diesen reinen Sequence-to-Sequence, mal sagen, okay, die Eingabe ist eine Sequenz, aber ich möchte vielleicht als Ausgabe gar nicht eine komplette Sequenz generieren, sondern hab traditionell zum Beispiel ein Klassifikationsproblem.
+
+Da fällt mir zum Beispiel ein, die Sentimentanalyse.
+
+Ich möchte wirklich nur... Das klingt ja erst mal wie ein ganz einfaches Problem.
+
+Ich möchte für einen Textabschnitt sagen, ist der meinetwegen positiv, negativ oder neutral gemischt.
+
+Und da würde man erst mal denken, ganz einfaches Textklassifikationsproblem, kann man ja nicht ganz klassische Textklassifikationsverfahren auch nehmen, die auch vielleicht nicht auf Deep Learning beruhen.
+
+Und...
+
+dass man sagt, na ja, genau wie ich hier die Kategorie eines Nachrichtentextes in Politik oder Wirtschaft zum Beispiel einordnen kann oder bestimmte fachliche Themenbereiche abgrenzen kann.
+
+Dann zeigt sich aber, dass diese Aufgaben, ist es Wirtschaft oder Politik oder Sport, das ist viel, viel einfacher als eine Sentimentanalyse, denn da kommt es ja wirklich noch auf den Kontext an.
+
+Welche Wörter werden wie in meinem Satz verwendet?
+
+Wo ist, wenn eine Verneinung, eine Negation da ist, auf welches Wort bezieht die sich?
+
+Da ist also dieser Gesamtkontext und diese Attention-Mechanismen, die den Fokus auf die richtigen Stellen leiten können, sind sehr, sehr wichtig, um richtigen Sentiment herauszufischen.
+
+Das heißt, in so einem Bereich, denke ich mal, kommt es auch sehr, sehr intensiv zum Einsatz.
+
+Ja, das muss man sich ja vor allem auch vorstellen, wenn man auch noch so ein bisschen kundenspezifische Sprache hat.
+
+Also ich denke jetzt mal vielleicht, um so ein ganz spezielles Beispiel zu nehmen, wir haben vielleicht so einen Skatershop, der Skateboards verkauft.
+
+Dann ist die Sprache halt in dem Kontext ja nochmal eine andere, als wenn ich sozusagen eine Bankbranche habe.
+
+Also da schreiben die vielleicht, die Skater rein, hey, voll fett, ganz schön krass und meinen damit alles perfekt ist.
+
+Wenn man das in dem Bankkontext sehen würde, würde ja was ganz anderes rauskommen.
+
+Und dementsprechend, glaube ich, hast du recht, dass diese Modelle, die wir hier gezeigt haben mit den Transformers oder auch die wohlgehenden Modelle, dass die hier wesentlich besser greifen, als wenn wir so klassische Verfahren des maschinellen Lernens heranziehen.
+
+Wenn wir jetzt sowas als Themen aufgreifen, dann stellt sich irgendwann, kommen wir irgendwann zu dem Punkt, dass wir sagen, wir haben ja als Transformer-Architektur diese komplexe Geschichte als Encoder-Decoder.
+
+ja, Architektur.
+
+Und bislang haben wir quasi das Ganze als, ja, immer beide Komponenten betrachtet.
+
+Das am Ende unserer Anwendung, dass die Ausgabe des Decoders quasi verwendet hat und die interne Repräsentation, die der Encoder erzeugt hat, war halt einfach so ein Hilfskonstrukt.
+
+Es gibt aber auch sehr, sehr viele Nutzungen und Anwendungen, die sagen, Mensch, wir brauchen diesen Decoder gar nicht, wir nehmen nur den Encoder teil.
+
+Wir machen da auch noch verschiedene Varianten auf und nutzen dann diese Zwischenrepräsentation.
+
+als Merkmale für irgendwelche anderen Verarbeitungsschritte in meinem Machine Learning Pipeline.
+
+Das ist ein Thema, das ist immer so tiefgreifend, dass wir das, denke ich, in einer eigenen Folge nochmal behandeln müssen.
+
+Aber als bekannteste davon ist ja die von Google auch vorgeschlagene Architektur, das BIRD, das Bidirectional Encoder Representations from Transformers.
+
+Die nutzen quasi die Idee der Encoder,
+
+nur ein bisschen anders verknüpft und leiten daraus repräsentationen ab also das ist so bedeutsam und auch die die weiteren abentwicklungen davon das war auf jeden fall denke ich dafür noch mal eine eigene eigene folge spendieren müssen irgendwann mal.
+
+Ja das muss man unbedingt machen vor allem die nennen wir dann sesamstraßenfolge, weil er die ganzen modelle die sozusagen ab dem transformers kommen berth und so weiter immer die namen von irgendwelchen sesamstraßen haben elmo und so weiter.
+
+Also das ist sicher oder von berth abgeleitet sind die denn von der sesamstraße abweichen sowas wie roberta.
+
+Na von von facebook also da sind sie sehr sehr kreativ was diese namen angeht muss ja auch so ein spaß bei der entwicklung haben.
+
+Ich würde mal kurz nochmal bei den sentiment analysen ganz kurz bleiben, weil da bin ich auch über eine firma drüber gestolpert die dann service anbietet so dass sich vielleicht die zuhörer dann nochmal ein besseres bild drüber vorstellen können weil im ersten moment hört sich das immer so an sollte man ja dann weiß ich halt gut ist eine gute rezession oder eine schlechte rezession was soll ich damit anfangen.
+
+Ja, dann habe ich im Endeffekt ein Dashboard, da steht vielleicht drin, 500 positive, 200 negative, prima, mir geht's gut.
+
+Aber spannend ist eigentlich, wie das die Firmen dann so als Service auch für andere Firmen anbieten.
+
+Also, zum Beispiel eine Firma, coverguy.io, die macht eine Konversationsanalyse mit Hilfe von solchen Sentimentanalysen.
+
+In Kombination mit Keyword Extraction, also was wir vorhin schon gesagt haben, mit den Textzusammenfassungen, die gehen also her und sagen, sie geben uns einfach eine gewisse Anzahl an Reviews oder Texte, die mit ihrer Kundenkommunikation stattgefunden haben.
+
+Und wir machen Ihnen einen Bericht darüber, welche Eigenschaften Ihres Produktes, Ihres Services oder Ähnliches sind besonders positiv angesehen, welche sind besonders negativ, welche haben eine Chance zum Improvement, welche nicht.
+
+Also so ein Quadratenschema, wenn man das so sehen möchte.
+
+Und dadurch habe ich dann relativ zügig einen schönen Überblick über meinen Service, den ich meinen Kunden anbiete, wo ich mich verbessern muss mit meinem Service oder mit meinem Produkt.
+
+Oder wo ich halt wirklich herausragend bin.
+
+Das kann man sich vielleicht so bei Hotel-Reviews vorstellen.
+
+Da steht halt dann drin, was weiß ich, Essen sehr gut, Kopfkissen schlecht.
+
+Also sozusagen von der Klassifizierung.
+
+Also wir haben nicht nur das Thema positiv, negativ in Summe auf dem reinen Text.
+
+also praktisch auf ein review sondern die ziehen sozusagen das keyword raus und machen dann eine positiv negativ betrachtung noch und geben mir dadurch dann als firma nochmal einen mehrwert dass ich verstehe was denn meiner eigenschaft meines produktes wirklich den mehrwert erzeugen oder den nachteil erzeugen
+
+Ich denke, das ist wesentlich häufiger tatsächlich der Fall, dass man nicht einen Gesamttext nimmt und sagt, er ist positiv, negativ, sondern auf Sätze, sogar auf Teilsätze herunterbricht, guckt, auf was bezieht es sich.
+
+Und das ist ein extrem wichtiger Baustein.
+
+Es gibt ja diesen Ansatz hier, listening to the voice of the customer.
+
+Also, um jetzt wirklich so was automatisiert zu machen, zu schauen, was als Feedback-Kanal von meinen Kunden und Kundinnen heraus wieder ins Unternehmen,
+
+um wieder hier modernes konzept daten getriebene produkte ich brauche nicht einfach nur ein produkt vermarktet das sondern ich möchte ja wissen wie wird es genutzt was ist positiv was ist negativ.
+
+Was natürlich schon in der vergangenheit relativ schnell zurückkommt ist wenn produkt einfach fehlerhaft ist man wegen meiner verkauft und die bleiben an der straße liegen kommt natürlich die kunden sind verärgert aber oft sind es ja so kleinere dinge die zum zufriedenheit führen.
+
+die man vielleicht nicht so schnell mitkriegt.
+
+Und wenn man da entsprechend diese Kanäle aufgreifen kann und das dann wieder kombiniert mit anderen Kanälen, die man für seine Produkte hat, also natürlich aus Garantie-Kulanz-Daten, jetzt hier aus Social Media so entsprechend Kundenmeinungen einfangen kann, um seine Produkte zu verbessern, ist das extrem wertvoll für sehr, sehr viele Unternehmen.
+
+ja absolut aber auch nicht nicht nur dafür auch wo man es mir weiter denkt aber denn zu erkennen da ist eine positive negative meinung aber auch verknüpft ist das jetzt ein fake review oder nicht, weil ich irgendwie feststellen kann dass ich das irgendwie kombiniere ob das jetzt eher ein fake review ist und kann ich dem trauen oder auch nicht,
+
+Das ist ein Thema, was wir gerade im Big-Data-Umfeld immer wieder adressieren, auch wie glaubwürdig sind denn eigentlich die Daten, die ich da habe.
+
+Also da muss man jetzt nicht einfach, man darf diese Technologie nicht einfach blind nutzen und sagen, okay, kam da raus.
+
+Man muss immer auch berücksichtigen, wie vertrauenswürdig sind die Daten, die ich da gerade habe oder die Erkenntnisse, die ich da rausziehe.
+
+Ja, das hatten wir ja schon mal diskutiert, dass wir gesagt haben, wenn der Kontext, den wir untersuchen wollen, oder das Modell sozusagen bearbeiten soll, nicht in den Daten drin sind, dann haben wir ja auch schon ein Problem.
+
+Also nicht nur nicht in den Daten drin sind, sondern auch falsch in den Daten drin ist.
+
+Dann haben wir das Problem, ja.
+
+Und deswegen sind solche
+
+Modelle, die man vielleicht vorschaltet, dass man solche Fake News oder Fake Reviews identifiziert.
+
+Ein wichtiger Schritt in einer sogenannten Pipeline, wo wir ja praktisch nicht nur ein Modell verwenden, sondern halt mehrere hintereinanderketten, um am Ende halt dann die Qualität zu bekommen, die wir ganz gern haben wollen.
+
+Wollte ich mal eine Sache aufgreifen, wir hatten ja angesprochen, Sentimentanalyse, das ist jetzt irgendwie eine Aussage, positiv, negativ, und da sagtest du ja nicht nur jetzt irgendwie auf gesamte Passage, sondern einzelne Objekte, auf die sie sich beziehen, Keywords, ich würde es nochmal einfach verallgemeinern wieder, das Erkennen, Named Entity Recognition, also was sind denn die Objekte, die da benannt und erwähnt werden, und das zu extrahieren, das ist ja auch eine eigenständige Aufgabe,
+
+die man isoliert auch wieder nur betrachten und umsetzen kann, wo die Modelle auch helfen.
+
+Oder nicht, die Modelle ist ja falsch, der Ansatz, der Architekturansatz, sehr viel Mehrwert bietet, diese Modelle oder Modelle zu bauen, die das gut können.
+
+Ja, also Named Entity Recognition, wo wir ja wirklich versuchen, den einzelnen Wörtern in den Texts als Entity zu identifizieren und dann die Entity einer Kategorie zu ordnen.
+
+Es ist eine Person, es ist ein Ort, es ist eine Gesetzeslage oder wie auch immer.
+
+Und gerade das ist praktisch bei Text, wenn ich an bestimmte Berufsbranchen denke, wie zum Beispiel Juristen, da ist es natürlich ganz wichtig zu erkennen, wer ist denn das Subjekt, wer ist denn das Objekt im Satz, welche Aspekte sind passiert, wie hängen die zusammen, weil ja dadurch sich sozusagen der Fall konstruiert.
+
+Und das ist auch ein ganz, ganz wichtiger Baustein in einem Anwendungsbereich, den wir uns ja auch als Ziel gesetzt haben, nämlich den Aufbau von Wissensgrafen, von Zusammenhängen.
+
+Dafür brauche ich ja auch genau das Erkennen von Objekten in meinen Texten.
+
+Aber nicht nur die.
+
+Wir brauchen ja nicht nur die Objekte, sondern ich muss auch wissen, wie stehen sie mit anderen Objekten in Beziehung.
+
+Also das, was du ja auch im juristischen Bereich gerade gesagt hast.
+
+Und diese ganzen Zusammenhänge, die muss ich irgendwo aus Texten herausziehen und könnte sie in einem Wissensgrafen, einer Wissensdatenbank könnte man sagen, ja speichern, um sie für andere Anwendungen zugänglich zu machen.
+
+Das ist genau genommen ja nochmal ein Ansatz, der über die klassischen Deep Learning Architekturen hinausgeht.
+
+Aber da könnte man ja sagen, na gut, ich baue einfach ein komplexes Modell, das kann irgendwann alles.
+
+Die Frage ist aber, wenn ich jetzt
+
+diese Erkenntnisse verknüpfen möchte mit, also Feedback schleifen mit Menschen, der sein Wissen einfließen lassen kann.
+
+Wenn ich es verknüpfen möchte mit anderen Datenbanken in meinem Unternehmen.
+
+Okay, ich habe hier Erkenntnisse rausgezogen, ich habe aber auch bestehende, strukturierte Daten.
+
+Wenn ich das alles zusammenbringen möchte, brauche ich, denke ich, eine gute Repräsentation.
+
+Und sowas aufzubauen, denke ich, da würde es auch sehr hilfreich sein.
+
+Aber das ist auch schon wieder so tiefgreifend, ich denke mal, da sollten wir auch das ganze in eine ganze Folge oder mehrere Folgen in der Zukunft nochmal diskutieren.
+
+Das werden wir sicher machen, weil wir ja da das Thema des Wissensmanagements, Wissensextraktion und Wissenssicherung aufgreifen werden, um genau diesen Kontext, die Repräsentation des Wissens eines Unternehmens darzustellen, wie man das machen kann, wie man das sammeln kann, aber natürlich auch, wie man aus diesen gesammelten, wie du gesagt hast, dem Knowledge Graph abgelegten Wissensrepräsentationen dann auch wieder neue Erkenntnisse generieren kann, die man vorher vielleicht noch nicht hatte.
+
+Was dann natürlich auch so vielleicht als letzter Punkt, als Beispiel für die Modelle, die wir jetzt sozusagen gezeigt haben, wenn ich nur einen Punkt auf meiner Liste, Frage-Antwort-Modelle, die da nämlich sehr gut dazugehören, ja, also das, wenn man das jetzt ins Einfache ziehen möchte, haben wir die Conversational AIs da, also praktisch unsere vereinfacht ausgedrückten Chatbots, ja, oder gleich wie Kommunikationsschnittstellen zwischen Mensch und dem Modell.
+
+Da ist es halt so, bei diesen Fragen-Antwort-Modelle nützen wir auch solche Architekturen wie die Transformers.
+
+Wir geben dem Modell halt den Kontext.
+
+Und eine Frage und das Modell soll aus dem Kontext, also aus einem Dokument, das ist der Kontext, soll er praktisch die Antwort generieren, also herausziehen.
+
+Sodass wir praktisch halt nicht vordefinierte Frage-Antworten-Paare haben, sondern dass wir praktisch unsere Dokumente zum Beispiel im Unternehmen nehmen können, die sie gesammelt haben und wenn es dann Fragen dazu gibt, auch die
+
+AI, das Modell, die richtigen Dokumente findet, Nummer eins, das ist ja praktisch das erste Problem, und das zweite, innerhalb des Dokuments die richtige Information rauszieht, also wirklich eine Antwort gibt.
+
+Und das denkt man schon schwer genug, aber wenn man das jetzt noch weiterdenkt und sagt, das sind ja trotzdem keine statischen Antworten, sondern die sind kontextabhängig, zum Beispiel, wenn es nur scheinbar einfache Sachen sind wie Buchungen,
+
+Und das System ja aber auch erstmal nachschauen muss, in einem Reservierungsbestand ist überhaupt noch was frei.
+
+Ich meine einfach herauszuhören, wann ein Kunde oder ein Kunde einen Tisch reservieren möchte.
+
+Ist ja mal ja erstmal herausforderung genug aber dann zu prüfen ist was verfügbar und zwar mit den mit den gegebenen restriktionen wie viel personen na irgendwelche anderen besonderen herausforderungen also quasi die verknüpfung der der anfrage mit auch mit strukturierten daten aus dem unternehmen heraus und dann daraus die antwort zu generieren das ist nochmal eine besondere herausforderung denke ich.
+
+Absolut.
+
+Also Sie sehen, dass jetzt praktisch die eher technischen Sendungen in den letzten Wochen jetzt langsam in so betriebswirtschaftliche Betrachtungsweisen münden und sich daraus aber auch wieder technische Herausforderungen ergeben, die wir wieder aufgreifen werden und dann wieder in den Zusammenhang bringen werden mit den Themen, die wir ja heute gezeigt haben oder aufgezählt haben, um Ihnen das auch ein bisschen praktischer näher zu bringen.
+
+Ich denke, das ist, glaube ich, für heute ein schöner Schluss, glaube ich.
+
+Oder, Carsten?
+
+Ja, auf jeden Fall.
+
+Und wir freuen uns natürlich, wenn Sie nächste Woche wieder dabei sind, wenn wir dann über neue spannende Themen wie zum Beispiel BERT reden.
+
+Dankeschön.
+
+Machen Sie es gut.
+
+Ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

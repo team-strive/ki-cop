@@ -1,0 +1,343 @@
+ Hallo und herzlich willkommen.
+
+In den letzten Folgen haben wir immer wieder über Deep Learning Modelle gesprochen, die gut funktionieren, wenn auch ausreichend Daten vorhanden sind.
+
+Doch was machen nun Unternehmen, die keine großen Datenmengen haben?
+
+Hier kommt das Transfer Learning ins Spiel, über das wir heute sprechen wollen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Diese Woche wollen wir über Transfer-Learning sprechen als Möglichkeit, wenn wir nicht genügend Daten haben oder, wenn man das so sehen möchte, auch vielleicht als das nächste große Ding, oder?
+
+Ja, wobei ich jetzt erstmal sagen möchte, nicht nur, wenn wir nicht nur große Datenmengen haben, sondern ein anderer Punkt kann auch sein, wenn ich vielleicht nicht genügend Rechtenleistung habe, um diese großen Netze, über die wir gesprochen haben, das GPT-3 mit 175
+
+Ja, Billionen im Englischen, also große Zahl an Gewichten, wenn ich das gar nicht lernen kann, wenn ich die Daten nicht habe oder die Ressourcen.
+
+Ja, das ist ja eigentlich, wenn man das überlegt, ein großes Thema, weil wir haben im Endeffekt ja die großen Player in den USA mit Apple, Microsoft, Google, Amazon.
+
+Das sind ja die Big Four, Big Five, wie man es auch immer nennen möchte, die ja auf Riesendatenmengen sitzen und dementsprechend uns ja mit allen Modellen, die man irgendwie baut, ja eigentlich im Endeffekt den Schneid abnehmen.
+
+Und da hat man ja eigentlich fast keine Chance mehr, dann wirklich wahnsinnig gute Modelle zu zeigen.
+
+wenn wir das aus einer wettbewerbssicht zieht europa zu amerika oder ähnliches und dann könnte das schon ein thema sein um vielleicht die idee die hinter dem schwanz verlöhnung steht also dass ich mal so auf vielleicht vorab mal ganz ganz kurz gesagt dass ich es also schaffe.
+
+vernetzt zu lernen, dass ich das, was ich in einer Domäne für eine Aufgabe gelernt habe, irgendwie auf andere Aufgaben übertragen kann, um dann mit weniger Ressourcen, Daten, Rechenleistung trotzdem gute Ergebnisse hinzukriegen, nochmal so kurz im Raum stehen lassen.
+
+Aber um das zu verstehen, glaube ich, sollte man erstmal nochmal klarstellen, wie in den traditionellen Maschinen-Learning-Umfeld, wie dieses Lernszenario aussieht.
+
+Gehen wir mal von einem überwachten lernen aus, also ich lerne ein Modell, was klassifizieren kann oder was eine numerische Prognose machen kann.
+
+Und grundlegend ist es so, ich habe entsprechend Daten, die Trainingsdaten, mit Beispielen von den Beobachtungen und der Zielgröße und lerne ein Modell, was diese Aufgabe beherrscht, immer von Anfang an, vom Scratch, wie man im Englischen sagt, also quasi mit einem
+
+völlig zufällig initialisierten netzwerk zum beispiel neuronalen netz oder ein blankes modell und dann fange ich ganz von vorne an übertragen auf menschen hieße das ja wenn man nicht mitarbeiter und mitarbeiterin meinem unternehmen habe und ich möchte dass ich eine neue aufgabe machen tue ich so als ob das wie ein wie ein neugeborener mensch wäre ohne dass irgendwelche fähigkeiten schon vorhanden sind und fang nochmal ganz von vorne an mit allem und das kann es ja nicht sein
+
+Nee, nicht wirklich.
+
+Und wenn man ja sieht, viele der Methoden, die wir ja im Maschinen-Learning, Deep-Learning ja haben, sind ja eigentlich von der Natur, also von uns Menschen abgeschaut.
+
+Und dann muss man sich ja schon fragen, warum fangen wir denn immer bei null an?
+
+Also klar, wir haben die Daten, das ist vielleicht, also wenn wir die grundsätzlich haben, ist das sozusagen immer so der Motto, na gut, dann bauen wir unser eigenes Modell.
+
+Aber viel spannender wäre ja tatsächlich, wenn man sich überlegt, dass man bestehende Modelle, und damit ist ja auch Wissen gemeint, also in den Modellen steckt ja sozusagen das Wissen drin, ja, der Daten, die Repräsentation der Daten, dass man die wiederverwendet.
+
+Und man an der Stelle natürlich auch agiert wie der Mensch.
+
+Wenn ich irgendwo auf der einen Seite eine Flasche aufkriege und ich sehe eine fremde Flasche, also die ich vielleicht noch nie vorher gesehen habe, dann weiß ich, okay, es könnte ein Drehverschluss sein, es könnte ein Klappverschluss sein, und dann probiere ich halt die Dinge, die ich schon mal gelernt habe, aus und merke, ah ja, gut, es funktioniert.
+
+Und so ähnlich sollten wir das ja im deep learning auch machen oder im machine learning.
+
+Genau, das heißt im Kern geht es darum, dieses isolierte Lernen, man könnte sagen, das traditionelle Lernen, machine learning ist so ein, ja ein Paradigma, was isoliert immer wieder neue Aufgaben lernt und dieses zu überwinden und letztendlich, dass das Wissen, was man halt bei anderen Aufgaben schon irgendwie akquiriert hat,
+
+bekommen hat dadurch dass ich das diese auch gelernt habe solche aufgaben zu lösen das zu übertragen bei dem finden von lösung für neue aufgaben.
+
+Denn das ist das was uns menschen ja auch auszeichnet werden schon in vergangenen folgen immer wieder diskutiert wie kann es denn sein dass ein mensch mit mit wenig trainings beispielen beobachtungen trotzdem manche aufgaben extrem gut lösen können sicherlich weil dieses vernetzte wissen über andere aufgaben irgendwo in uns steckt.
+
+Davon ziehen wir Nutzen.
+
+Und dieses Transferieren muss man ja sehen, bei einem klassischen Machine-Learning-Modell gehen wir ja eigentlich so vor, dass wir Daten haben, also praktisch unsere Labels, unsere Merkmale, und die nehmen wir als Input für das Modell.
+
+Also, wie du es vorhin gesagt hast, ein zufällig instanziertes, also mit Zufallszahlen gewichtetes Modell.
+
+Und dann haben wir unseren Output, das wir mit unserem, wenn wir im Supervised Learning sind, mit den gewünschten Labels vergleichen und damit das Modell dann entweder den Hinweis geben, er muss sich anpassen, es passt noch nicht ganz, also praktisch den Fehler reduzieren wollen.
+
+Jetzt bei dem Transfer-Learning gehen wir einen Schritt weiter.
+
+Wir haben ja dann praktisch nicht nur den Input der Daten in das Modell rein, sondern wir nehmen sozusagen ein anderes Modell auch als Input.
+
+Also wir nehmen sozusagen die Daten und das Modell als Input, um dann darauf aufbauend, man nennt das ja auch Fine-Tuning, das Modell anzupassen.
+
+Und da gibt es ja auch unterschiedliche Arten, wie man da vorgehen kann.
+
+Es ist ja im Endeffekt immer die Frage, was möchte man denn machen?
+
+Will ich sozusagen jetzt komplett fremde Daten lernen oder will ich komplett neue, man spricht ja von Tasks, von Tätigkeiten, die das Modell tun soll lernen.
+
+Also da gibt es ja die unterschiedlichsten Varianten.
+
+Ich bin ja wieder ein Freund, immer zu sagen, Machine Learning, ganz einfach vorgestellt, Eingabe, Verarbeitung, Ausgabe.
+
+Da haben wir immer schon wieder klar gemacht, Mensch, wie können wir die unterschiedlichen Situationen mit diesem ganz einfachen Thema darstellen?
+
+Und wenn wir jetzt anschauen, Transfer Learning, dann hieße das ja, dass entweder die Eingangstaten unserer Domäne eine andere ist, wie stark anders ist dann zu klären, oder
+
+die ausgabe die die aufgabe die ich letztendlich lösen möchte eine andere oder beides wenn es beides gleich ist das ist das traditionelle lernen was ich halt wo ich erstmal grundlegend von ausgehe ich gehe davon aus die die domäne die eingangsdaten ändern sich in ihrer verteilung nicht die immer davon aus dass die quasi so wenn man sich stellt sich da so vor als daten generierende prozesse und dass die stabil sind dass das dieselben sind und dann kann ich damit eine aufgabe lösen so
+
+Und klar, eine Möglichkeit, ich habe eine andere Aufgabe, oder die datengenerierenden Prozesse ändern sich, oder beides, wie wir gerade sagten.
+
+Und da gibt es halt unterschiedlichste Kombinationen.
+
+Vielleicht machen wir das mal ein bisschen konkret.
+
+Wenn wir zum Beispiel in der Sprachverarbeitung sind, im NLP, dann wäre so ein Transfer-Learning, dass wir zum Beispiel ein Sprachmodell nehmen, sagen wir mal vielleicht die englische Sprache, englischer Text, und wir nützen das Transfer-Learning, um diese Sprache, also das, was dort gelernt wurde, dann zu transferieren, zum Beispiel auf eine deutsche Sprache.
+
+Sodass wir ein fertig gelerntes Modell, das vielleicht für eine Sentiment-Analyse oder für eine Klassifikation
+
+Texten verwendet wurde, dass wir das dann einfach auf eine andere Sprache transferieren.
+
+Nehmen aber als Basis praktisch Daten für den neuen Task, also praktisch deutsche Sprache, also deutscher Text, und das Modell, das bisher für englischen Text gelernt ist, und fine-tunen, also passen das so leicht an sozusagen.
+
+Ja, um sowas machen zu können, gehen wir meistens davon aus, dass man meinetwegen dasselbe neuronales Netz hat, wo vielleicht bestimmte Teile des Netzes am Anfang eher für die Repräsentation der Sprache zuständig sind, hintere Teile vielleicht dann für die Lösung der Aufgabe und dieses Feintuning würde dann möglicherweise nur den hinteren Teil vielleicht nochmal genauer anpassen, genau auf diese Ausgabe ausrichten.
+
+Das wäre eine Möglichkeit, ja.
+
+Ich überlege gerade nochmal, in der Sprachverarbeitung ist diese Vorstellung, wie sowas funktioniert, vielleicht etwas komplizierter, wenn man nochmal in andere Bereiche geht, zum Beispiel Bilderkennung, da ist es ein bisschen plastischer.
+
+Man kann natürlich jetzt, sagen wir mal, wir trainieren ein neuronales Netz, was in der Lage ist, bestimmte Tiere zu erkennen.
+
+Ist irgendwas ein Hund, ist irgendwas eine Katze.
+
+Und irgendwann kommen Bilder von Tieren, die wir vorher noch nie gesehen haben.
+
+Im klassischen Lernszenario kann ja ein Netz da gar nicht mit umgehen.
+
+Was wie wie können wir es denn jetzt hinkriegen dass auch andere tiere ist auf einmal elefant wie kann der denn auf einmal erkannt werden so wenn jetzt dieses.
+
+Feintuning oder man hat einfach ein netz was schon gewisse sachen kann und jetzt präsentiert man dem netz neue daten.
+
+Wo auch elefanten dabei sind und hofft halt dass er das ganz gut hinkriegt auch wenn ich diesen riesen lernprozess den ich vorher hatte um diese ganzen anderen tiere zu erkennen den ich nicht wiederholen muss weil das nutze ich ja aus.
+
+Ja.
+
+Insofern hofft man halt deshalb, diese Idee, dieses isolierte Lernparadigma zu überwinden, indem ich halt einfach lerne, wie ich lerne.
+
+Das heißt, ich hoffe, dass das Netz in der Lage ist, die entscheidenden Merkmale zu extrahieren.
+
+Worauf muss ich denn achten?
+
+Wie viele Beine hat das Tier, hat es Federn, hat es einen Schnabel und sonst irgendwelche Geschichten.
+
+Und das mit dieser, das ist ja dieses Representation Learning, was wir beim Deep Learning ja haben.
+
+Und die Hoffnung ist, dass mit dieser Fähigkeit relevante Merkmale, die ich nicht als Mensch vordefiniert habe, sondern das Netz gelernt hat, dass ich mit dieser Fähigkeit, die dann auf eine andere Art und Weise der Verknüpfung aber auch sagen kann, ja hier, das ist jetzt der Elefant.
+
+Wenn man das natürlich sieht, bedeutet das, dass wir im Endeffekt ja auch beim Transfer-Learning wahnsinnig viele Anpassungsmöglichkeiten haben.
+
+Das heißt also, wir haben einerseits die Daten, die wir sozusagen beisteuern.
+
+Wir können unterschiedlichste Modelle verwenden im Vorfeld, die schon gelernt sind.
+
+Und können dann auch noch vom Design der vorliegenden Modelle die einzelnen, wir haben ja immer von Schichten gesprochen, von Layers, entscheiden, welche Layers innerhalb des ursprünglichen Modells wir dann sozusagen anpassen lassen, also eintunen, also die Parameter neu lernen und welche nicht.
+
+Man sagt ja jetzt zum Beispiel, wenn man ein mehrschichtiges Modell hat, dass die niedrigeren Schichten eher
+
+stark generalisieren und die höheren Schichten eher spezialisieren.
+
+Das heißt, je nachdem, was für ein Task ich habe, kann ich dann da auch wieder eingreifen.
+
+Und dann stellt sich natürlich die Frage, vielleicht jetzt für den Hörer oder für die einzelnen Unternehmen, ja super, früher haben wir im Endeffekt Daten gebraucht, ganz viele, oder brauchen sie immer noch, aber wenn wir jetzt in Richtung Transferlearning denken, und jetzt bräuchten wir ganz viele Modelle, weil wir im Endeffekt ein gelerntes Modell brauchen.
+
+Und das ist eigentlich ein spannender Punkt, den man eigentlich jetzt auch grad in dem Kontext sieht, ist, dass wirklich ganz viele Modelle, also auch grad so richtig große Modelle, wie Google zum Beispiel mit seinem BERT-Modell, das müssen wir sich auch nochmal andiskutieren in irgendeiner Sendung, dass die tatsächlich frei verfügbar sind.
+
+und wir die nützen können.
+
+Und da jetzt, gerade bei dem Beispiel, das du genannt hast mit der Bildklassifikation, da gibt es ja wirklich Modelle, die Millionen von Bildern als Datensatz zum Lernen verwendet haben, die man frei nutzen kann und damit dann im Endeffekt seine eigenen Modelle anpassen kann, sich Zeit spart, was das Grundlernen angeht, und natürlich auch sich einen höheren Effekt erzeugt, was die Genauigkeit, also die, ja, den Nutzen des Modells angeht.
+
+Genau, wenn man sich das so vorstellt, das Modell, das ich nutze, kann viele verschiedene Tiere erkennen, aber nicht alle.
+
+Und nicht alle, die für mich relevant sind.
+
+Und da hatten wir ja diese Idee, dass ich halt eigene Trainingsdaten, aber ich brauche nicht mehr so viele, ich brauche nicht mehr von jedem Tier, was es da irgendwo vorher schon mal gegeben hat, was das Modell schon gelernt hat, muss ich nicht alles wieder präsentieren, sondern kann jetzt zusätzlich meine Bilder, die für mich wichtig sind, die vielleicht zusätzlich da sind, noch präsentieren.
+
+In dem Zusammenhang haben sich so Begriffe etabliert wie Few-Shot-Learning.
+
+Was heißt das, dieses Shot?
+
+Das meint eigentlich mal, wie viele zusätzliche Lernbeispiele brauche ich noch?
+
+Und im einfachsten Fall könnte man sagen, ein One-Shot-Learning.
+
+Das heißt, wenn ich ein einziges Beispiel wenigstens hätte, dann könnte ich vielleicht dieses Problem ja lösen.
+
+Das heißt, das Netz weiß halt, mit welchen Merkmalen es bestimmte Tiere erkennt und hat vielleicht einen Elefanten,
+
+gemerkt, das ist nicht das, was ich schon kenne, wusste aber nicht, was es ist.
+
+Und Menschen reicht es ja vielleicht auch, wenn es dann einmal ein Bild von einem Tier sieht, was man noch nie gesehen hat.
+
+Ein Kind ist im Zoo, steht vor einem Elefanten und fragt, was ist das?
+
+Dann sagt man einmal, es ist ein Elefant, ein Beispiel, und schon kann das Kind Elefanten erkennen.
+
+Mehr Beispiele braucht es nicht.
+
+Aber diese eine Information, wenigstens einmal, ist natürlich wichtig, um quasi diese Art von Tier, die man als anders erkannt hat, zu zuordnen.
+
+Und noch extremere variante wäre ein zero short learning kann ich mit null trainings beispiel das ganze machen und da ist dann halt die frage der ganze ohne irgendwas geht's geht's ja eigentlich gar nicht irgendwas brauche ich zum beispiel zusatzinformationen ich weiß vielleicht etwas nicht vom elefanten weg zum zebra ich weiß vielleicht was was was ein pferd ist,
+
+Und ich könnte ja sagen, naja, ein Zebra sieht aus wie ein Pferd mit Streifen.
+
+Ja.
+
+Und wenn ich jetzt irgendwo erkenne, das ist irgendwas, was aussieht wie ein Pferd, aber ich weiß, es ist kein Pferd, und ich erkenne vielleicht, das sind Streifen, dann weiß ich, ah, das könnte ein Zebra sein.
+
+Das heißt, ohne jemals ein Zebra gesehen zu haben, bin ich vielleicht in der Lage, das zu erkennen durch die Beschreibung.
+
+Aber ich brauche irgendeine Art von Zusatzinformation.
+
+Also ich denke mal, ganz ohne irgendwas würde es gar nicht gehen.
+
+Ja.
+
+Also diese Beispiele, die du jetzt genannt hast, also Few-Shot, One-Shot, Zero-Shot-Learning sind ja eigentlich Extrembeispiele des Transfer-Learnings.
+
+Also es ist ja im Endeffekt wirklich, dass ich bis ins Extreme gehe, dass ich nur einen oder keinen Fall anbiete.
+
+Und ehrlich gesagt, da bin ich jetzt mal so in meiner eigenen Überlegung, dass zwar das Zero-Shot-Learning dem Transfer-Learning zugeordnet wird,
+
+Aber für mich bedeutet das doch, wenn ich gar keine Daten habe, also keine neuen, zum Anpassen des Fine-Tunings, dass ich doch das alte generische Modell verwende.
+
+Und damit eigentlich gar kein Transfer-Learning mache, sondern das alte Modell verwende.
+
+Ich es nur sozusagen so gut generalisiert habe, dass er halt direkt damit zurechtkommt.
+
+Also deswegen, was du gerade gesagt hast, dass man mindestens einen Datensatz braucht, damit man Transfer-Learning kann, das sehe ich genauso.
+
+ich kann mir das nicht vorstellen dass vielleicht kommt es irgendwann aber dann haben wir eigentlich generische modelle genau ich brauche eine andere form von logik und verarbeitung wie ich zusatzinformationen noch verarbeiten kann also ganz ohne irgendwas wenn mir niemand gesagt hat dass es was gibt wie komme ich nicht auf die idee dass es gibt oder sein könnte wenn mir aber jemand eine beschreibung gegeben habe ich gesagt ich muss es verknüpfen mit anderen arten von informationen also ganz ohne irgendwas das sind das netz von sich jetzt das auf die idee kommt ich habe ein neues tier ist klar es könnte sich neuen namen zufällig ausdenken
+
+Aber dass es auf die Idee kommt, das ist jetzt ein Zebra, das ist sowas natürlich nicht.
+
+Also ich brauche irgendeine Art von Information.
+
+Im einfachsten Fall, wenn ich mich in der Art von Information in diesem Trainingsdatenumfeld bewege, dass ich sage, okay, ich habe Merkmale, die ich beobachtet habe und ich habe ein Label, dann brauche ich, denke ich, auch wenigstens ein Lernbeispiel, wenn ich nicht eine andere Art der Informationsverarbeitung danach dran hänge.
+
+Ja, das hört sich ja wirklich spannend an.
+
+Und auch der Andrew Neng, das ja ein führender Wissenschaftler ist in dem Bereich der Artificial Intelligence, der sagte, after supervised learning, transfer learning will be the next driver of ML commercial success.
+
+Also, dass man es wirklich kommerziell nützen kann, weil man halt in den Unternehmen die Dinge in der Breite anwenden kann.
+
+Und wenn man jetzt mal bei uns in Deutschland schaut, wir haben ja große Unternehmen, wir haben aber auch viele Mittelständler.
+
+Also man spricht ja von goldenen mittelstand in deutschland die im endeffekt der von der größe her sag mal so zwischen zehn bis hundert mitarbeiter vielleicht auch wenn kleiner sogar die haben gar nicht diese datenmengen und die haben auch gar nicht die ressourcen.
+
+Aber man wird zwangsläufig in der in der nahen zukunft sich auf diese methoden zurückziehen müssen weil wir einfach durch die digitale transformation und den thema der der effizienz die eine ki.
+
+basiert in prozesse oder produkte oder ähnliches haben einfach ein wettbewerbsvorteil dadurch erzeugen ja ich glaube da fließen mehrere sachen jetzt zusammen also ich bin auch genau dieser meinung und dann müssen zwei oder drei sachen wieder zusammen fließen das eine ist ja die erkenntnis dass mehr daten mehr qualitativ hochwertige daten immer besser sind als als sagen wir noch noch
+
+mehr in bessere Modelle zu investizieren.
+
+Es gibt da diesen Ausspruch, the unreasonable effectiveness of data.
+
+Um aber mit diesen Daten umgehen zu können, brauche ich natürlich komplexe, große Modelle.
+
+Wenn ich mich in dem Umfeld weniger Daten beobachte, gibt es auch diese interessante Darstellung, klar, da kann ich mit extrem viel Aufwand in der Merkmalsverarbeitung neue Merkmale generieren, aussagekräftigere Merkmale generieren, kann ich auch mit einfachen Modellen vielleicht mal ein komplexeres Modell schlagen.
+
+Da kann ich mit einer logistischen Regression vielleicht ein neues Netz schlagen, klar.
+
+Aber wenn ich mich im Bereich der echt großen Datenmengen bewege,
+
+dann führt irgendwann kein kein weg mehr für komplexe aufgaben an großen tiefen neuronalen netzen vorbei auf diese art und weise und dann kommen wir genau zu dem punkt für den mittelständler der jetzt nicht das geld hat um riesen rechenleistung jedes mal wieder von vorne zu investieren und der braucht eine möglichkeit um ein vortrainiertes modell zu nutzen
+
+Weil genau die riesen Menge an Daten nicht da sind, weil die Rechenleistung nicht da ist und es aus meiner Sicht aber auch aus ökologischen Gründen ja nicht sinnvoll sein kann, wenn ich ständig wieder Lernprozesse starte, riesen Ressourcen verschwende an Energie, die ich brauche, um diese Netze zu trainieren für irgendwas, was ständig immer und immer wieder passiert.
+
+Also schon aus dem Grund sollte man dafür sorgen, dass diese Modelle möglichst frei nutzbar verfügbar sind.
+
+Aktuell ja auch so und selbst wenn ich dafür eine gewisse gebühr zahlen müsste dass ich sie nutzen darf es ist auf jeden fall gerechtfertigt, denn ich müsste sonst viel viel mehr geld ausgeben für die ist anbieten der rechner ressourcen und für die energie ich dafür brauche ich glaube aber noch dass ein dritter punkt das war diese ersten beiden punkte die wir hatten ich glaube dass ein dritter punkt noch wichtig wird,
+
+ist dieses Vernetzen von Lernen, diese mehreren Aufgaben, dass ich in der Lage bin, auch in ähnlichen neuen Situationen immer wieder Lösungen zu finden.
+
+Denn wenn ich nicht nur diese eine isolierte Aufgabe habe, die ich möglichst gut machen kann, dann brauche ich irgendeinen Mechanismus, um von den Erfahrungen anderer Aufgaben zu lernen, so wie es der Mensch ja auch macht.
+
+Und das kriegen wir nur, meines Erachtens, durch solche Techniken wie Transfer Learning hin.
+
+Das heißt, es ist eigentlich der Weg zur generalisierten künstlichen Intelligenz.
+
+Würde ich genau so sehen, dass man anders das nicht erreichen kann, sonst sind es immer nur isolierte Aufgaben.
+
+Und das ist natürlich schon ein spannender Punkt.
+
+Vielleicht für heute, weil wir würden heute ganz gerne so einen Einstieg einfach in dieses Thema machen, weil wir müssen das nochmal tiefer aufgreifen, damit man die unterschiedlichen Arten nochmal aufgreift.
+
+Das würde heute meiner Ansicht nach so ein bisschen zu tief gehen.
+
+Es hört sich so an, als wäre das jetzt was wahnsinnig Neues, als wäre das jetzt gerade so vor ein paar Wochen erfunden worden.
+
+Aber das ist ja nicht der Fall.
+
+Das ist ja schon ziemlich alt sogar.
+
+Ich glaube, das erste Mal ist das so richtig wahrgenommen worden oder diskutiert worden auf einer Konferenz, der Neural Information Processing System Konferenz NIPS 1995.
+
+Da gab es einen Workshop zum Learning to Learn, Knowledge Consolidation and Transfer in Induction Systems.
+
+Und ich glaube, das war so der erste Start.
+
+Und wenn man jetzt so die Papers anschaut und auch die Veröffentlichung der letzten Monate, Jahre, dann sieht man, dass da in dem Kontext jetzt ganz schön viel passiert.
+
+Also wir sind da eigentlich noch nicht am Ende, wenn man das so ausdrücken möchte, sondern da sind wir eigentlich gerade am Anfang rein von der Möglichkeit, die wir jetzt mit dem Deep Learning und so weiter alles machen können.
+
+Das ist ein interessanter Punkt, den du da nennst.
+
+Hatten wir ja auch angesprochen, das Learning-to-Learn.
+
+Das hat in der Anfangsphase noch ein einfaches Stadium gehabt.
+
+Es gibt auch diese Techniken des Semi-supervised Learning.
+
+Da hatte man überlegt, wie kann ich denn komplexe Modelle erstellen, selbst wenn ich nicht genügend gelabelte Daten habe.
+
+Und da hat man zum Beispiel versucht, mit wenig gelabelten Daten zusätzlich zu einer großen Menge nicht gelabelter Daten.
+
+daraus, in dieser Kombination trotzdem gute Modelle zu bauen, in der Annahme, dass ich sage, okay, ich weiß zwar das Label nicht von diesen vielen ungelabelten Daten, aber da steckt irgendwie Information drin über die Art und Weise, wie die Verteilung der Daten ist, welche im Textbereich zum Beispiel, welche Wörter mit welchen Wörtern zusammen oft verwendet werden.
+
+Und das war eine echt spannende Zeit.
+
+Ich habe selber in dem Bereich damals promoviert, auch Modelle erstellt, die dieses Szenario ausnutzen.
+
+Und heute ist man da deutlich weiter, aber die Grundideen gehen auf jeden Fall in die Zeit zurück.
+
+Heute baue ich diese Sprachmodelle, die wir gesehen haben, ja auch in unüberwachtem oder selbst überwachtem Stil, dass ich einfach lerne, welche Wörter mit welchen anderen Kombinationen wie auftreten, dass ich man den prognostizieren kann, welches Wort an welcher Stelle fehlt.
+
+Und diese fähigkeit die übertrage ich dann nur die nutze ich als als eingabe als repräsentation für spätere aufgaben also insofern die die ersten schritte sind tatsächlich schon sehr sehr sehr viel früher gegangen worden.
+
+Ich würde vorstellen, dass wir an dieser Stelle so den ersten Einblick beschließen heute in das Thema Transfer Learning und dass wir nächste Woche das Transfer Learning nochmal aufgreifen und da mal die unterschiedlichen Arten zeigen und vielleicht auch mit ein bisschen mehr Beispielen untermauern, dass es ein bisschen greifbarer ist.
+
+Vielleicht auch ein bisschen praktisch zeigen, wo kriege ich denn solche Modelle her, dass man da vielleicht auch sagen kann, es gibt nicht wirklich schöne Plattformen, auf denen man die Modelle sehen und auch nutzen kann und relativ zügig auch in seine eigene Welt überführen kann.
+
+Und das sollten wir einfach bei der nächsten Sendung aufgreifen.
+
+Auf jeden Fall, da freue ich mich schon drauf.
+
+Vielen Dank fürs Zuhören und eine schöne Woche Ihnen.
+
+Ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

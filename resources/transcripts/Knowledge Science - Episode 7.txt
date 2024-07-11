@@ -1,0 +1,671 @@
+ Hallo und herzlich willkommen zu der heutigen Folge.
+
+In dieser Folge sprechen wir über Anwendungsfälle der Sprachverarbeitung und wir starten mit einer kleinen Miniserie, in der wir Ihnen einen Überblick über die chronologische Entwicklung von NLP-Verfahren geben wollen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Carsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Hallo liebe Zuschauer.
+
+Schön, dass Sie wieder zugeschaltet haben zu unserem Podcast.
+
+In dieser Woche gehen wir auf die Sprachverarbeitung ein.
+
+Und da ist natürlich das Thema, welche Anwendungsfälle gibt es denn bei der Sprachverarbeitung in der künstlichen Intelligenz.
+
+Ich denke da vor allem so an Textzusammenfassungen, Klassifizierung von Texten, aber auch Textgenerierung oder was wir ja letzte Woche schon hatten Conversational AI, also Chatbots, Assistenten, Sprachassistenzen, aber auch Übersetzungen.
+
+Genau, also da hatten wir ja schon ein schönes Beispiel gesehen.
+
+Wir haben Sprache generiert.
+
+Das ist natürlich schon ein sehr komplexes Thema.
+
+Und wie hast du schon angesprochen, die Klassifikation, also was für ein Intent hat eine textuelle Nachricht?
+
+Oder die Sentimentanalyse oder die Zuordnung von Texten zu Kategorien, thematisch, Nachrichten zum Beispiel.
+
+Was für eine Rubrik fällt eine Nachricht?
+
+Das sind alles Beispiele für Textklassifikation.
+
+Dann hatten wir gesehen Zusammenfassungen, da müssen wir wieder Texte generieren.
+
+Wir können dann eine Clusteranalyse machen, gucken, was gibt es für Themen, Bereiche innerhalb von Dokumenten.
+
+Und dann haben wir natürlich auch noch eine ganz andere Art der Aufgaben als das, was mit Informationsextraktion zu tun hat.
+
+Also werden bestimmte Entitäten, Plätze, Orte, Personen oder sehr speziell in einer Domäne, weiß ich, Algorithmen, Use Cases, werden irgendwelche solche Dinge in einem Text genannt.
+
+das heißt also wir können eigentlich die themen die wir in der sprachverarbeitung haben auf die gruppen runterbrechen also text klassifikation text erzeugung und text generell ich denke wir können das im wesentlichen auf die fälle auch runterbrechen aber im textumfeld kommen halt noch
+
+Anwendungsfälle dazu die jetzt so klassisch nicht in den in den normalen machine learning anwendungs oder aufgaben typen dabei sind das muss man halt mal berücksichtigen text ist speziell es gibt diese diese abfolge normal heißt für dich praktisch supervised learning.
+
+Das ist für mich die lernart wie wie wie kann ich aus daten lernen was für daten habe ich habe ich habe ich nicht nur die eingabe daten sondern auch die ausgabe daten.
+
+Oder halt gerade nicht, wie bei der Cluster-Analyse zum Beispiel.
+
+Und bei vielen Anwendungen aus dem Text habe ich ja durchaus oder könnte ich Daten haben, zum Beispiel wenn es um Übersetzungen geht.
+
+Ich könnte ja ganz ganz viele Texte und ihre Übersetzungen nehmen.
+
+Oder Spracherzeugung.
+
+Hätte ich ja ganz viele Romane, die ich einfach nach der Hälfte abbreche und sage, wie könnte es denn jetzt weitergehen?
+
+Da hätte ich ja wahnsinnig viele Daten, die ich dafür nehmen kann.
+
+Also da lässt sich
+
+Aus dem Sinne viel als überwacht machen, aber bezogen auf die Ausgabe, was erwarte ich denn?
+
+Und da müssen wir hier, denke ich, mal unterscheiden, dass wir bei den klassischen maschinellen Lernverfahren haben wir ganz oft einfache Ausgaben, eine Zielgröße, wie zum Beispiel die Klasse oder ein numerischer Wert für die Regression.
+
+Und wenn wir jetzt Texte anschauen, dann gibt es das auch.
+
+Wenn ich sage, welcher Intent ist das, ist das eine ganz klassische Klassifikation.
+
+Aber wenn ich Texte generiere.
+
+Oder ein Sentiment.
+
+Genau.
+
+Ein Sentiment, was positiv, negativ ist, war schwieriger zu erkennen vielleicht als ein Thema eines Dokumentes, wegen solcher Sachen wie Verneinungen.
+
+Dann schlägt sich ja das Thema schnell ins Gegenteil.
+
+Natürlich, wenn ich sage, ich rede nicht über KI, dann geht es ja trotzdem um KI, weil ich es ja schon genannt habe.
+
+Aber wenn ich sage, es ist nicht gut, ist es was anderes, als dass es gut ist.
+
+also das ist in der tat ein thema aber die diese generierung ob ich jetzt sexe zusammenfasse ob ich fortführe ob ich übersetze da habe ich ja eine viel komplexere ausgabe das ist ja eine ganze abfolge von wörtern letztendlich und da sind wir auch schon mal einem interessanten thema dass texte eine sequenz von wörtern sind in unserem sinne.
+
+Ich würde ganz gerne noch einen Punkt zu den Anwendungsfällen sagen, weil das sind ja wieder so ein bisschen abstrakt, wenn wir sagen Textgenerierung.
+
+Da denkt sich ja vielleicht das ein oder andere Unternehmen, ja, wofür brauche ich denn Textgenerierung?
+
+Das ist ja jetzt nicht so direkt greifbar im ersten Moment.
+
+Das kann natürlich sein, dass ich, wie du es gerade gesagt hast, einen Roman fertig schreiben muss und vielleicht keine Ideen mehr habe und dann soll mir die Maschine ein paar Ideen bringen.
+
+Das wäre vielleicht ein möglicher Anwendungsfall.
+
+Was ich mir aber wirklich sehr gut in dem Kontext vorstellen muss, wo es auch wirklich häufig angewandt wird, ist ja Produktbeschreibungen.
+
+dass ich jetzt einen riesen produktkatalog habe und ich eigenschaften meiner produkte habe die ich technisch oder ja in stichpunkten habe und dann aber gerne dafür dann produktbeschreibungen generieren lassen möchte dass nicht jemand da sitzt und immer schreiben muss dass produkte so und so hat die eigenschaft dass das und das, sondern dass man hier durch auf textgenerierung zurückgreifen kann.
+
+insbesondere dann wenn sich die die gar nicht so sehr unterscheiden von generation zu generation sie vielleicht nur ein paar eigenarten eigenschaften ändern was neues hinzukommt und wenn ich dann mit so einer automatischen text generierung habe ich ja schon vorlagen wie sowas in der vergangenheit mal aussah und dann müsste ich das nur noch anpassen auf neue produkte interessante geschichte ja.
+
+Oder wenn wir dann nochmal in das Thema Klassifizierung von Texten geht, also Eingruppierung, dann muss man ja sehen, dass wir ganz häufig ja wirklich viele Dokumente im Unternehmen haben, die wir zunächst mal in Gruppen eingliedern.
+
+Also ich denke da zum Beispiel an ein Notariat, das viele Verträge hat mit unterschiedlichen Arten und man könnte die Verträge dann in dem Kontext immer zusammen sortieren, die den gleichen Inhalt oder den gleichen Basis haben.
+
+Ja, oder die Zuordnung zu den passenden Mitarbeitern.
+
+oder mitarbeiterin wer wer ist für dieses thema verantwortlich ich erkenne welches thema geht es und ordnet das vielleicht gleich richtig zu aber auch noch mal einfacher gefasst ein spam filter ist auch eine form von text klassifikation indem ich einfach eine nachricht eine email die eingeht zu ordner als spam oder nicht spam.
+
+Jetzt hattest du vorhin schon angefangen mit dem thema sequenzen.
+
+Ja, ich wollte sagen, dass Texte für uns ja Sequenzen von Wörtern sind.
+
+Und zwar sowohl bei der Eingabe, da natürlich ganz besonders.
+
+Da haben wir immer natürlich, wenn wir jetzt Texte verarbeiten, immer diese Sequenz.
+
+Aber auch die Ausgabe kann eine Sequenz sein.
+
+Wenn ich nur eine Klassifikation habe, ist es quasi ein Extremfall einer Sequenz, die aus einem Wort besteht oder einer Klasse, klar.
+
+Aber wenn ich jetzt wirklich Texte generiere, wirklich Übersetzungen,
+
+Beschreibungen, Zusammenfassungen, dann sind das immer Abfolgen.
+
+Und das haben wir ja sehr schön bei dem GPT-3 als Beispiel oder bei dem Dialogsystem gesehen.
+
+Da erwarten wir, dass die im Zusammenhang stehen, dass die Sinn ergeben, dass die grammatikalisch korrekt sind, dass wir es verstehen können.
+
+Dann haben wir so auch die Ausgabe als Sequenz.
+
+Aber das wollten wir ja erstmal einsteigen.
+
+Und wenn man sich dann mal überlegt, ja die Eingabe.
+
+Wie können wir denn mit einem Text als Eingabe umgehen?
+
+Nun gibt es halt bei Machine Learning auch Ansätze, symbolische Verfahren, die mit Texten umgehen könnten, wenn ich das als Symbole auffasse.
+
+Da kommt das Wort, das weiß ich.
+
+KI vor, dann ist es ein Text über KI, so könnte man natürlich denken.
+
+Aber die meisten Verfahren arbeiten mit numerischen Werten, mit Zahlen.
+
+Ich stelle meine Eingabe als Vektor oder, wenn ich mehrere davon habe, als Matrix dar, wo Zahlen drin sind.
+
+Und die Frage ist ja, wie komme ich von den Texten auf Zahlen?
+
+Also man muss da vielleicht auch nochmal sagen, auch wenn man so in den Computer die Buchstaben eintippt, der Computer versteht das ja nicht.
+
+Also es ist ja nicht so, dass man sagt, jetzt habe ich ein Wort und der Computer liest, wie ich das Wort lese, sondern wir müssen ihm das ja irgendwie erstmal lesbar machen.
+
+Und das ist ja das, was du gerade beschrieben hast, dass man das irgendwie in Zahlen transferieren muss.
+
+Das kann ja sein, dass ich dann praktisch ein Wort als eine Zahl abbilde oder einen Satz als mehrere Zahlen und daraus dann einen Vektor habe oder auch ein Wort als Vektor abbilde.
+
+Aber da hast du natürlich recht.
+
+Im Prinzip sind ja alles Zahlen im Rechner oder nur Zustände mit Nullen und Einsen.
+
+Das ist natürlich auch wieder klar.
+
+Wir sind aber von der Abstraktion hier schon so weit, dass wir gar nicht mehr darüber nachdenken, dass wenn ich in einem Computer einen Text schreibe, dass im Hintergrund natürlich alles Kodierungen existieren für jedes Zeichen, die Zeichen zusammengekettet sind.
+
+Das ist natürlich schon richtig.
+
+Aber wenn ich jetzt das ganze richtung maschinelles lernen denke dann erwarte ich dass diese daten auch tatsächlich in form einer eines vektors oder mehrere vektoren zu einer matrix zusammengefasst abgelegt werden und die frage ist ja wie wie komme ich da hin.
+
+Ja und man muss ja sehen dass das ja bei allen verfahren egal ob jetzt über bei allen anwendungsfällen,
+
+egal ob wir jetzt über Klassifikation sprechen oder Generierung oder Assistenten oder Übersetzung, dass das immer ein notwendiger Schritt ist.
+
+Und zwar in die eine Richtung, dass wir bei der Eingabe das Transferieren in die Vektorräume oder in die Zahlen und dann auch bei der Ausgabe wieder zurücktransferieren.
+
+Wenn man da jetzt mal schaut, was sich da in der Geschichte der Sprachverarbeitung, des Natural Language Processing, was sich da entwickelt hat.
+
+Ja, das ging ja los.
+
+Letztendlich die ersten Ansätze, die sind bekannt geworden als sogenannte Back-of-Words-Ansätze.
+
+Also Back ist das englische Wort für eine Multimenge.
+
+Also wir betrachten ein Dokument als Menge von Wörtern und schauen einfach, gehen wir gleich noch näher darauf ein, welche Wörter in einem Text vorkommen.
+
+Und das hat sich ja dann rasant weiterentwickelt.
+
+Ja, das ist richtig.
+
+Also der Nachteil natürlich von solchen Methoden ist, dass man natürlich nicht die Wörter in ihrem Kontext und in ihrem Zusammenhang sieht.
+
+Und man zählt ja eigentlich nur oder man präsentiert das einzelne Wort.
+
+Und man ist dann weitergegangen und hat dann sogenannte Embeddings gemacht.
+
+Also wo man versucht hat, ein bisschen den Kontext mit reinzunehmen.
+
+Was aber dort auch nicht der Fall ist, dass die Position eine große Wichtigkeit hat.
+
+Und das geht dann weiter mit der Weiterentwicklung der sogenannten Recrual Neural Networks, wo man dann versucht hat sozusagen die Reihenfolge mit in Betracht zu ziehen.
+
+Dann geht die Entwicklung zu den sogenannten LSTMs weiter, den Long Short Term Memory Netzen.
+
+Und die gehen aber auch nur in eine Richtung.
+
+Und dann hat man gesagt, naja gut, vielleicht wäre die andere Richtung auch noch gut.
+
+Dann ist man in die bidirektionalen LSTMs gegangen.
+
+Ging dann so ab 2017 und das ist dann schon auch so ein Durchbruch, auch mit dem, was wir auch in der Episode mit dem GBT3 hatten, in sogenannte intention-based Models über und der aktuelle Stand sind die sogenannten Transformers.
+
+Und was wir jetzt in dieser Miniserie machen wollen ist, dass wir uns immer chronologisch mit dem einzelnen Verfahren beschäftigen wollen und mal Leuten möchten, was steckt da dahinter, warum hat man das gemacht, was sind die Vorgehensweise, Vorteile, Nachteile und so dann mal die Kette wirklich von den Ursprüngen, die ja so, also müsst ihr mich korrigieren, aber ich glaube so 2003 ist sozusagen so der große Start mit dem Back of Words gewesen und dann ging das so langsam nach oben.
+
+Oh, das ist viel, viel älter, kann man sagen.
+
+Interessant ist, diese letzten Entwicklungen, das sind vielleicht die letzten fünf, maximal zehn Jahre, gibt es da eine rasante Entwicklung Richtung der Transformer, die heute gar nicht mehr wegzudenken sind.
+
+Das andere, das geht zurück ins Information Retrieval, 60er Jahre, Anfänge der Computerentwicklung, wo man sich überlegt hat, in Suchmaschinen, in Bibliotheksbeständen zum Beispiel, wie finde ich da meine
+
+meine bestände dass ich sachen verschlagworte und schaue welche welche wörter werden denn genannt und kommen vor da letztendlich gibt es die ersten überlegungen und sagen wir mal mit einem verbreiteten art und weise texte im bereich des maschinellen lernens zu verwenden sagen mindestens in den neunziger jahren ist das der klassiker schlecht hingewiesen,
+
+Und was wir uns einfach klar machen müssen, wenn wir nochmal ganz an den Anfang zurückgehen, jetzt hier Back-of-Words-Darstellung, wir haben also Texte, Wörter.
+
+Ein Text setzt sich aus Wörtern zusammen.
+
+Und eine Sprache hat ja wahnsinnig viele verschiedene Wörter.
+
+Weißt du denn, wie viele Wörter die englische oder deutsche Sprache hat?
+
+Nee, nicht wirklich.
+
+Das sind hunderttausende.
+
+Im Deutschen ist es ja sogar noch schlimmer als im Englischen, weil wir ja durch Verkettung von Wörtern neue Wörter generieren.
+
+Wie jeder kennt, dieser Klassiker mit Donau-Damsche-Fahrtsgesellschaft und so weiter.
+
+Ich hänge einfach Wörter zusammen und schon habe ich ein neues.
+
+Aber selbst wenn wir das mal ignorieren, gibt es ja zehntausende, hunderttausende Wörter, die wir da irgendwo in einer Sprache haben.
+
+Und dann haben wir ja nur die Einzelwörter.
+
+Die können wir ja auch noch kombinieren.
+
+Angenommen wir gehen von 100.000 Wörtern aus und selbst wenn wir nur Texte mit 10 Wörtern schreiben, dann hätten wir ja schon eine wahnsinnige Vielfalt.
+
+100.000 hoch 10 an möglichen Kombinationen, ja wenige davon sinnvoll, aber wahnsinnig viele.
+
+Das heißt wir müssen irgendwo damit umgehen können, mit dieser wahnsinnigen Vielfalt, die wir an verschiedenen Texten haben könnten.
+
+Und jetzt habe ich ja gesagt hier texte mit zehn wörtern stelle mal vor die texte sind unterschiedlich lang, unterschiedliche längen an dokumenten wie gehen wir damit um.
+
+Ja und und es kommt ja auch noch dazu dass jedes wort an sich ja unterschiedliche formen auch noch hat.
+
+Das ist ja nicht nur das einzelne wort sondern auch noch vergangenheitsformen anhängungen oder ähnliches.
+
+Das ist je nach sprache auch wieder unterschiedlich schlimm im englischen ist es nicht ganz so schlimm dann haben wir mal was ich eine vergangenheitsformen bei den regulären werben mit dem id hinten dran oder meiner dritten person singularen s.
+
+Im Plural hat man es, aber das ist noch relativ schlicht gehalten, im Deutschen und in vielen anderen romanischen Sprachen zum Beispiel auch, aber wo viele die ganze Zeitform, die ganzen Fälle mit den unterschiedlichen Endungen, macht es wesentlich komplexer und erzeugt noch mehr Vielfalt bei den Wörtern, wenn ich sie so nehmen würde, wie sie da sind.
+
+Und wenn wir jetzt mal wieder zurückdenken und sagen, wir wollen das abbilden auf Vektoren, mit Zahlen, dann haben wir natürlich ein Riesenproblem,
+
+Viele erinnern sich ungern an den Mathematikunterricht zurück, aber um diese Vektoren vernünftig berechnen zu können, brauchen wir Vektoren einer festen Länge, damit die ganzen mathematischen Operationen aus der Linie Herrn Algebra gut darauf anwendbar sind.
+
+Wenn die alle unterschiedlichen Längen hätten, dann passt da ja gar nichts mehr zusammen.
+
+Wir brauchen also eine fixe Länge.
+
+Dann können wir natürlich dahergehen und sagen, super, dann begrenze ich mich halt einfach auf mein sogenanntes Vokabular, also alle Wörter, die in meinem Text vorkommen.
+
+sage ich, okay, das gibt es, und dann kann ich in den Text reinschauen, welche Wörter von dem Vokabular, der in meiner gesamten Kollektion an Dokumenten enthalten ist, finde ich in meinem Text wieder.
+
+Na gut, dann sind das halt ein paar hunderttausend, eine riesengroße Anzahl.
+
+Und dann bleibt aber immer noch das Problem, wenn ich einen zusammenhängenden Text repräsentiere, mit der Reihenfolge mit den verschiedenen Wörtern.
+
+Und da kommt jetzt genau dieser Ansatz mit dem Back-of-Words, dass ich gesagt habe, wir müssen es einfach halten.
+
+Das ist unter anderem wegen der hohen Dimensionalität und der Rechenleistung, die zu der Zeit ja noch nicht da war, hat man halt gesagt, man abstrahiert völlig von der Reihenfolge und guckt nur noch, ob ein Wort in einem Text vorkommt oder wie oft es da vorkommt.
+
+Und dann habe ich meine Back-of-Words-Darstellung.
+
+Es soll also einfach sein, robust und mit wenig Rechenleistung.
+
+Das ist ja das, was ich praktisch damit erreichen wollte.
+
+Mit dieser einfachen Betrachtung.
+
+Ich würde gerne noch eins ergänzen zu deiner Ausführung.
+
+Wir wollen das ja repräsentieren und die Frage ist, warum wollen wir den ganzen Text repräsentieren?
+
+Wenn man das jetzt im Endeffekt betrachtet bei den maschinellen Lernverfahren, dann haben wir ja sogenannte Merkmale, das heißt sozusagen Eigenschaften, die eine gewisse Auswirkung auf unsere Zielvariable, also das, was wir prognostizieren wollen, also wenn wir an eine Klassifikation denken, also jetzt hier in dem Beispiel Dokumente, die wir vielleicht in Gruppen einteilen wollen oder schauen, welche Dokumente sind ähnlich zueinander, dann haben wir ja praktisch ein gewisses Ziel.
+
+Und wir machen das fest an bestimmten Ausprägungen.
+
+Das können Produkteigenschaften sein, wenn man von klassischen Themen ausgeht.
+
+Und im Text sind es halt jedes einzelne Wort.
+
+Das heißt also, wir würden jedes Wort als Merkmal eigentlich betrachten.
+
+Und das würde, wenn man sich das jetzt in einer Tabelle vorstellen würde, würde das ja praktisch bei einem großen Text eine riesenbreite Tabelle sein.
+
+Und das ist ja die Problematik, von der du gesprochen hast, dass die Rechenleistung ja relativ groß ist, dass wir dann riesenlange Vektoren haben oder ähnliches.
+
+Und dadurch ist ja die Idee, dass man sagt, man begrenzt es auf ein Vokabular.
+
+Es kommt es kommt doch das denn zu also einmal diese die als abstraktion ist die position schon ignorieren wenn wir das nicht machen würden dann hätten wir für texte einer einer selbst wenn wir sagen wir reduzieren texte auf eine feste länge.
+
+Also sagen wir gucken nur texte an mit 100 wörtern damit 1000.
+
+Dann hätten wir aber an jeder Position, ein Merkmal wäre ja dann meinetwegen das erste Wort eines Textes, das zweite Wort, das dritte Wort, und dann kämen ja alle möglichen Wörter als Ausprägung vor.
+
+Das heißt, wir hätten Merkmale mit hunderttausenden möglichen Ausprägungen.
+
+Und dann findet man ja gar nichts wieder.
+
+Da Ähnlichkeiten zu bestimmen, da verschiebt sich was um ein Wort und schon ist ein Text komplett anders, das macht in der Situation keinen Sinn.
+
+Deshalb hat man gesagt, die Position ist erstmal für den ersten Schritt egal.
+
+Und ich schaue wirklich nur noch, ob in meiner Text als Menge, eine Menge ist ja unabhängig von einer Position, gibt es keine Ordnung, sondern einfach nur, ist was in dem Text drin oder nicht, beziehungsweise Multimenge, wie oft kommt es vor.
+
+Aber, wie du sagst, es gibt sehr, sehr viele Wörter.
+
+Das heißt, ich habe immer noch hunderttausende mögliche Dimensionen.
+
+Und deshalb ist eine wichtige Entwicklung zu sagen, man hat sehr, sehr viel Energie reingesteckt, die Anzahl der möglichen Wörter, die ich in einem Text habe, zu reduzieren.
+
+Und da gibt es unterschiedlichste Techniken von der
+
+von der bereinigung losgehend mit der vorverarbeitung sozusagen also das ist das ist die das ist das sogenannte process in die vorverarbeitung.
+
+Es geht geht los wie schon sagt mit mit einer einfachen bereinigung dass ich dass ich für sachen rausschmeißen die ich die ich da nicht drin haben möchte und welche html tags vielleicht.
+
+Zahlen die genannt werden wenn die für meine anwendung nicht relevant sind die fehler und dann geht's geht's weiter dass ich sage menschen im englischen insbesondere ich schreibe vielleicht alles klein weil die großschreibung klein großschreibung da nicht so die rolle spielt,
+
+Und dann haben wir natürlich immer noch diese ganzen Varianten da drin.
+
+Dann kommt mal diese Idee des Stemmings oder auch der Lemmatisierung, dass ich das abbilde auf Grundform von Wörtern, um damit klarzukommen, dass ich die verschiedenen ganzen Änderungen, Zeitformen, Fälle irgendwo nicht mehr mit drin habe.
+
+Aber egal, was ich da nehme, Grundidee ist immer, ich möchte die Gesamtzahl der Wörter reduzieren und Sachen vergleichbarer machen, weil ansonsten, das ist nämlich jetzt aus mathematischer Sicht, habe ich ja
+
+eine sogenannte spärliche darstellung das heißt ich habe eine sehr hohe dimension was waren hunderttausende möglicher wörter gibt aber die wenigsten kommen ja in einem text der nicht allzu lang ist kommen ja die wenigsten wörter wirklich noch vor das heißt in der matrix oder in dem vektor eines eines dokuments stehen fast nur nullen der mathematiker sagt das ist eine spärlich besetzte matrix
+
+Das ist richtig.
+
+Und man muss ja sehen, dass auch die, die wirklich vielleicht interessant sind, dass die gar nicht so häufig vorkommen, wie zum Beispiel Wörter wie und, ist, er oder wie auch immer.
+
+Genau.
+
+Also auch ein wichtiger Schritt sind die sogenannten Stoppwörter, nennt man das in der Fachwelt.
+
+Das sind also Wörter, die eigentlich in jedem Text stehen, egal, zum Beispiel wenn wir jetzt an in Klassen denken, egal ob jetzt ein Sentiment positiv oder negativ ist, egal ob es Spam oder nicht Spam ist.
+
+Egal ob es jetzt ein Thema über KI oder Marketing ist, da denkt man halt, das steht überall und deshalb würde man die entfernen.
+
+Also Artikel, der, die, das, Pronomen, Bindewörter, da sagt man okay, das sind Stoppwörter, da gibt es Listen, da würde man einfach sagen, die schmeißt man raus.
+
+Das reduziert natürlich einen Großteil verschiedener Wörter, aber genau genommen die Gesamtanzahl an Wörtern in einem Text, verschiedener Wörter, auch nicht signifikant in den meisten Fällen.
+
+Aber ist natürlich ein wichtiger Schritt, um ein bisschen die Verarbeitung zu vereinfachen.
+
+Interessant ist dann aber auch, wenn du sagst, ja Stoppwörter, es gibt ja auch domain-spezifische Stoppwörter.
+
+Ich sage, Mensch, wenn ich angenommen, ich habe nur Texte über KI, dass da in jedem Text irgendwie der Begriff KI drinsteht,
+
+ist irgendwie selbstverständlich, dann kann ich dieses Wort in diesem Kontext, in der Domäne, möglicherweise auch entfernen.
+
+Und dann kommen wir dahin, dass ich sage, naja, vielleicht helfen mir die reinen Zahlen, wie oft ein Wort in einem Text vorkommt, nicht weiter.
+
+Ich muss das vergleichen über meine gesamte Kollektion an Texten hinaus.
+
+Und dann fange ich an, Kennzahlen zu berechnen.
+
+Und dann kommen wir nämlich zu dem Begriff, der als TF-IDF bekannt ist.
+
+Also Term Frequency, wie häufig kommt ein Wort vor und wie oft kommt es in anderen Dokumenten vor.
+
+Vielleicht gehen wir nochmal einen Schritt zurück, weil wenn wir jetzt das Verfahren Back of Words betrachten, dann ist das einfache Verfahren ja eigentlich so aufgebaut, dass man sagt, wir nehmen das Vokabular, also praktisch alle verschiedenen Wörter der gesuchten oder der verwendeten Texte und tragen die einfach in einer, ich nenne es jetzt mal Tabelle, einfach rechts über die Spalten ab.
+
+Und dann nehmen wir sozusagen jeden Satz und schauen, welche dieser Wörter kommen in diesen Satz oder wenn man einen Satz als Dokument nimmt oder wir nehmen das Dokument und schauen, welche dieser Wörter kommen denn vor und schreiben dann überall an deren Spalte die Anzahl der Häufigkeit des Wortes rein.
+
+Und haben dadurch sozusagen eigentlich diese Repräsentation eines Vektors, also jede Zeile wäre ja dann ein Vektor.
+
+Wichtig ist halt, dass das eine oder dasselbe Wort immer bei jedem Dokumentenvektor an der selben Stelle steht.
+
+Und das kann man ja dadurch hinkriegen, dass ich sage, ich habe dieses fixe Vokabular.
+
+Dann gucke ich einfach nach.
+
+Mensch, das Wort KI ist Wort Nummer 17 und diese Position, diese 17, diese ID, die nehme ich dann quasi als Index in meinen Vektoren.
+
+Dann weiß ich immer an der Stelle,
+
+steht dieses Wort und dann schreibe ich rein, wie oft es in meinem Dokument vorkommt.
+
+Das ist wichtig, weil ich muss es ja vergleichen können über verschiedene Dokumente hinweg.
+
+Das bringt ja nichts, wenn die verschiedenen Wörter in unterschiedlichen Dokumenten an unterschiedlicher Position stehen würden, weil es muss ja vergleichbar sein.
+
+Ich muss mich darauf verlassen können, dass an einer bestimmten Stelle meines Vektors immer sich auf dasselbe Wort bezieht.
+
+Das ist eigentlich ein einfaches Verfahren, wenn man das betrachtet.
+
+Man zählt nur.
+
+Ist ganz einfach, aber funktioniert für den Anfang erstmal ganz gut für viele Anwendungsbereiche.
+
+Zumindest Richtung einfache Textklassifikation funktionierte das ganz gut.
+
+Ich wollte das gerade noch aufgreifen mit dem Stop-Wörtern, weil wenn man dieses mal genauer nimmt, ist ja das Filter nach Häufigkeiten, nach Termhäufigkeiten, insbesondere auch in wie vielen verschiedenen Dokumenten steht etwas.
+
+Wörter, die in allen Dokumenten stehen,
+
+sind ja gerade die Stoppwörter und oder Artikel, aber wenn man das so allgemein aufzieht, würden mit dieser Filterung über die Anzahl der Dokumente, verschiedener Dokumente, in denen ein Wort steht, würden auch domain-spezifische Stoppwörter entfernt werden können.
+
+Also auch ein wichtiger Schritt, dass ich sage, Wörter, die in allen Dokumenten stehen, kann ich am Ende, könnte ich rausschmeißen.
+
+So und jetzt hattest du ja von zwei erweiterungen gesprochen oder wenn es von einer tf idf war ja die eine und die andere erweiterung sind ja sogenannte endgrams.
+
+Bei der letzte schritt es ist ja am ende dass ich dass ich eine zahl brauche.
+
+Und das heißt also ich könnte einfach sagen 01 ein wort kommt vor kommt nicht vor oder wie oft kommt es vor oder aber ich versuche aussagekräftigere gewichte zu bestimmen.
+
+Und da kommt diese Idee der TF-IDF, der Term Frequency Inverse Document Frequency.
+
+Sprich, je häufiger ein Wort in einem Text vorkommt, desto wichtiger scheint es zu sein.
+
+Wenn aber ein Wort in vielen Dokumenten vorkommt, deshalb steht es quasi im Nenner, desto unwichtiger ist es wieder.
+
+Wörter, die in vielen Dokumenten stehen, sind unwichtiger.
+
+Wenn sie in einer kleinen Menge von Wörtern stehen haben, sind sie potenziell wichtiger.
+
+Wenn wir jetzt sagen, wir haben jetzt eine Repräsentation eines Graphen oder einer Zahlenkolonne in einer Spalte oder in einer Zeile, dann können wir ja eigentlich Dokumente miteinander vergleichen.
+
+Ja, genau.
+
+Und das beruht natürlich darauf, dass ich die entsprechenden Einträge in meinen Vektoren miteinander vergleichen kann.
+
+Deshalb ist es ja wichtig, dass an derselben Stelle mal Bezug genommen wird auf dieselben Wörter.
+
+Und da sieht man natürlich auch schon, warum es so wichtig ist, das zu reduzieren auf wenige Dimensionen und das vergleichbar zu machen durch Abbildung auf Wortstämme zum Beispiel in den Verfahren.
+
+Denn ansonsten, wenn ich das Wort meinetwegen
+
+King und Kings, also im Englischen.
+
+Das wären ja zwei Wörter.
+
+Und wenn das für ein Verfahren zwei Wörter sind, dann merkt man ja gar nicht, dass da eine gewisse Ähnlichkeit da ist.
+
+Wenn ich einfach nur das in verschiedene Positionen abspeichern würde in meiner Matrix,
+
+dann würde ich da keine Ähnlichkeit erkennen.
+
+Und damit, wenn ich diese Vektoren miteinander vergleiche, wenn ich da Ähnlichkeiten berechne, wir müssen gleich nochmal sagen, wie man sowas machen kann, dann ist es halt wichtig, dass ich das bei diesen naiven Ansätzen halt auf Wortstämme reduziere, dass ich sage, okay, in beiden Fällen geht es um King.
+
+Und dann kann ich das miteinander vergleichen.
+
+Weil sonst hätte ich diese spärlichen Darstellungen und die haben an völlig unterschiedlichen Stellen ein paar Einsen, dann gibt es da keine Gemeinsamkeiten und schon ist es schlecht.
+
+Die frage ist ja noch wie vergleiche ich das man könnte jetzt natürlich daher kommen und sagen einfach die abstände zwischen den den vektoren so aktivische abstand zum beispiel was was klassiker ist in vielen fällen.
+
+Ausrechnen ist aber schwierig im bereich text.
+
+Wieso.
+
+Ja gute frage stell mal vor du hast eine repräsentation eines textes mit den worthäufigkeiten dargestellt nimmst den selben text und hängst den mehrfach hintereinander copy paste.
+
+Ja.
+
+Würdest du denn sagen dass der sich inhaltlich verändert hat der text.
+
+Natürlich nicht.
+
+Also natürlich ärgert man sich, dass man dasselbe hat, das habe ich schon mal gelesen, aber vielleicht merkst du es gar nicht.
+
+Aber inhaltlich ändert sich jetzt nicht wirklich was.
+
+Was ändert sich denn aber bezüglich der Worthäufigkeiten?
+
+Wenn du das fünfmal hintereinander gehängt hast, ist jedes Wort fünfmal so häufig.
+
+Das heißt, wenn man es sich als Vektor vorstellt, der wird immer länger und länger.
+
+Wenn du jetzt einen unveränderten Text mit dem einen Text vergleichst, der mehrfach hintereinander kopiert wurde, und dann einfach nur mal die Punkte im Raum siehst, auf denen die Vektoren zeigen, dann wird der Abstand immer größer.
+
+Das heißt, je öfter man denselben Inhalt kopiert, desto größer wird der Abstand zu einem unveränderten Text.
+
+Und das will man ja eigentlich nicht.
+
+Das bedeutet aber auch, dass die Dokumente immer unähnlicher werden, obwohl sie inhaltlich nicht unähnlich sind.
+
+Genau.
+
+Und um das zu verhindern, gibt es verschiedene Möglichkeiten.
+
+Entweder normiert man Texte auf eine Einheitslänge, dann klappt es.
+
+Oder, sagen wir mal mathematisch gesehen, natürlich ein anderes Vorgehen, aber gleichbedeutend.
+
+Ich berechne nicht den Abstand zwischen den Punkten, sondern ich schaue nur noch den Winkel zwischen den Vektoren an.
+
+Und das ist die sogenannte Cosine Similarity, die man da oft nimmt.
+
+Die guckt sich den Winkel zwischen den Vektoren an,
+
+und berechnet halt die Ähnlichkeit darüber.
+
+Denn wenn die Vektoren in dieselbe Richtung zeigen, dann heißt es ja, dass die verwendeten Wörter in meinem Vokabular alle im selben Verhältnis zueinander stehen.
+
+Und zwar egal, ob ich das mehrfach hintereinander kopiert habe oder nicht, die Richtung bleibt dieselbe dadurch.
+
+Erst wenn ich die Verhältnisse der Wörter ändere, dann ändert sich der Inhalt des Textes.
+
+Also das klappt dann in der Tat schon ganz gut für, insbesondere wenn wir im Bereich Textklassifikation sind, für thematische Kategorisierung.
+
+Problematisch ist es natürlich nach wie vor bei zum Beispiel bei der Sentimentanalyse, weil was nämlich jetzt, was wir sehen müssen, was verloren geht.
+
+Also das ist vielleicht nochmal ein ganz guter Aufhänger.
+
+Das ist ein erheblicher Informationsverlust, den wir da haben.
+
+Wenn wir sagen, wir betrachten einen Text als Menge von Wörtern, geht ja die Reihenfolge verloren, insofern sehr, sehr viel an Informationen.
+
+Man erkauft sich quasi die Möglichkeit, Sachen einfach darzustellen und berechnen zu können durch einen sehr starken Informationsverlust.
+
+Und alle diese Verfahren, die du da vorhin genannt hast, von Embeddings bis zu, ja,
+
+die Transformer am Ende, die haben letztendlich zum Ziel, diesen Informationsverlust zu reduzieren, dass ich trotzdem noch das beherrschbar habe bei weniger Informationsverlust und ehrlich gesagt mit mehr Rechenleistung heutzutage und kann ich halt einfach mehr machen als vorher.
+
+Natürlich kommen da brillante Ideen dazu, wie ich sowas mache, aber ich habe halt auch die Möglichkeiten.
+
+Also Informationsverlust vermeiden, aber schon mal als kleiner Ausblick, das was du vorhin genannt hast mit den Transformern,
+
+Die haben nicht nur das wenige Informationsverlust als wichtigen Aspekt, sondern auch eine Skalierbarkeit im Sinne von parallele Verarbeitung, dass ich nicht mehr so eine Sequenz von Wörtern Stück für Stück letztendlich verarbeite, sondern parallel verarbeiten kann.
+
+Aber darauf gehen wir ja später nochmal ein.
+
+Jetzt bleiben wir erst nochmal an den Anfängen.
+
+Wir hatten also gesagt, ja, die Reihenfolge geht verloren.
+
+Das ist natürlich dramatisch.
+
+Da werden wir später drauf eingehen müssen.
+
+Wie kommen denn jetzt diese Embeddings da rein?
+
+Man muss ja sagen, dass praktisch die Bedeutung des einzelnen Wortes bei den Back-of-Words ja auch verloren geht.
+
+Die werden ja nur gezählt.
+
+Also ob das Wort jetzt KI ist oder Berechnung, die haben beide die gleiche Gewichtung.
+
+Also die sind gleich.
+
+Die Embeddings sind ja praktisch der nächste Schritt, wo man sagt, man möchte jetzt eigentlich eine Bedeutung der Wörter auch stärker ins Gewicht nehmen und damit das Verfahren, also diese Repräsentation anders gestalten.
+
+Ja, da hast du recht, das machen die natürlich auch.
+
+Aber diese Bedeutung der Wörter ist ja auch schon dieser Zwischenschritt mit den Gewichten, mit dem TF-IDF.
+
+Die verleihen den einzelnen Wörtern schon noch unterschiedliche Gewichte.
+
+Aber ganz klar ist natürlich, durch die Embeddings kriegen wir das auch hin, dass wir da unterschiedliche Bedeutungen noch reinkriegen können.
+
+Aber ich wollte dich da an der Stelle nicht unterbrechen.
+
+Nee, alles gut, mach weiter.
+
+Die Frage ist ja jetzt das mit den Embeddings.
+
+Das ist ja eine sehr spannende Entwicklung, die sich da ergeben hat.
+
+Mal inhaltlich gesehen, was ist denn das eigentlich?
+
+Das ist eine Abbildung von meinen Ausgangswörtern, auch wieder auf Vektoren, aber die einzelnen Zellen in meinen Vektoren sind jetzt nicht mehr
+
+einzelne Wörter, sondern an übergeordnete Konzepte könnte man sagen.
+
+Also ich sage, ich bilde letztendlich mathematisch gesehen meinen Wortvektor oder meinen Dokumentenvektor mit einzelnen Wörtern, bilde ich ab pro Wort auf einen Vektor.
+
+Das heißt, jedes Wort stelle ich jetzt mit einem Vektor dar, mit einer fixen Anzahl von Dimensionen.
+
+Die hat einfach unterschiedliche konzepte irgendwo da muss ja auch sehen rein von dem von dem verfahren ist es ja ein etwas komplexeres verfahren.
+
+Das heißt wir greifen hier größtenteils auch immer wieder auf neuronale netze zurück um diese vektoren für die wörter zu zu etablieren und ich glaube dass das ein guter aufhänger wäre dann auch für unsere miniserie für die nächste episode weil vielleicht sollte man nochmal das pack of words zusammenfassen dass man einfach hier nochmal eine gute abrundung hat.
+
+Gut, wenn wir das zusammenfassen, könnte man sagen, okay, erste einfache Darstellung von Texten heißt, ich stelle jedes Dokument als Vektor fester Länge dar.
+
+Feste Länge kriege ich dadurch hin, indem ich festlege, was sind die relevanten Wörter.
+
+Genau genommen spricht man dann später gar nicht mehr von Wörtern, sondern von Token und Termen, um zu abstrahieren, dass es einzelne Wörter sein müssen.
+
+Es könnten ja auch mehrere Wörter sein, die irgendwo als Begriff zusammenstehen.
+
+Dass man sagt, okay, man hat dieses Vokabular, da steht drin, was steht an welcher Stelle und ich zähle dann einfach nur noch, wie oft kommt dieses Wort oder dieser Term in meinem Dokument vor.
+
+und möglicherweise führe ich noch Gewichte ein, die die Bedeutung dieser Wörter oder Terme besser darstellen.
+
+Und dann habe ich überführt einen Text mit variabler Länge, mit unterschiedlichen Wörtern und unterschiedlichen Reihenfolgen auf eine fixe Darstellung als Vektor, entsprechend mit Zahlen, die ich durch maschinelle Lernverfahren besser verarbeiten kann.
+
+Also wichtig ist eine feste Länge,
+
+Und ich abstrahiere hier von der Reihenfolge, da geht sehr viel Information verloren.
+
+Und das resultiert in den meisten Fällen in einer spärlichen Darstellung.
+
+Meistens sind da Nullen drin, weil viele Wörter halt in einem Text nicht vorkommen.
+
+Das heißt, ich sollte das nicht unbedingt so wirklich dauerhaft speichern.
+
+Das wäre natürlich sehr ineffizient.
+
+Aber rein gedanklich können wir uns das erstmal so vorstellen.
+
+Ich habe diese Vektoren.
+
+Interessant ist da auch noch zu sagen, die Sichtweise ist erstmal ein Dokument oder ein zusammenhängender
+
+Ja das fragment ob das jetzt ein satz ist ein paragraf ein gesamtes dokument das ist immer erstmal die sichtweise dass ich ein ein dokument habe.
+
+Während das was wir denn beim nächsten mal aufgreifen werden die embeddings die betrachten erstmal als hauptfokus erstmal einzelne wörter die besser darstellen oder fragment eines wortes.
+
+Geht ja auch.
+
+Genau, das können wir hier natürlich auch schon machen, das haben wir jetzt gar nicht diskutiert.
+
+Wir haben jetzt das Ganze auf der Wortebene diskutiert.
+
+Natürlich gibt es Ansätze, die sagen, unterhalb der Wörter kann ich ja sagen, ein Wort ist ja auch nur eine Sequenz von Buchstaben.
+
+Das hätten wir natürlich auch machen können, das haben wir jetzt verschwiegen, um das nicht zu kompliziert oder zu viel Inhalte zu haben.
+
+Man spricht dann von sogenannten Buchstaben-N-Grammen.
+
+Das ist auch interessant.
+
+Ein N-Gramm ist eine Abfolge von verschiedenen
+
+Entweder buchstaben bei buchstaben n grammen oder es gibt auch n gramme bezogen auf wörter wenn ich halt sage naja ich hab halt zwei oder drei gramme bi gramme tri gramme wenn ich sag zwei oder drei wörter die zusammenhängt sind das ist im englischen wiederum ganz wichtig wenn ich sowas sage wie künstliche intelligenz, data science, machine learning das sind ja zwei wörter aber ein begriff.
+
+Und um sowas auszudrücken zu können, ist sowas natürlich noch wichtig.
+
+Da freue ich mich dann auf die nächste Miniserie nächste Woche und ich hoffe, dass Sie alle wieder zuschalten, weil die Embeddings sind wirklich eine Basis, die wir auch bei allen anderen Verfahren immer wieder haben.
+
+Also das ist nichts, was man sozusagen dann abgelöst wird durch andere Verfahren, sondern sie werden immer so als Unterstützung auch für andere Verfahren verwendet.
+
+Von daher noch eine schöne Restwoche Ihnen und wir freuen uns auf nächste Woche, wenn Sie wieder zuhören.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

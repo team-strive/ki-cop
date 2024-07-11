@@ -1,0 +1,619 @@
+ Hallo und herzlich willkommen zu der heutigen Folge und damit zum Teil 3 unserer kleinen Miniserie zur chronologischen Entwicklung von NLP-Verfahren.
+
+In Folge 7 haben wir uns mit Back-of-Words, in Folge 8 mit Embeddings und heute werden wir uns mit den Recural Neural Networks beschäftigen.
+
+Wir zeigen auf, welche Vor- und Nachteile diese Art von neuronalen Netzen haben und erläutern neben Anwendungsfällen deren Funktionsweise.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Carsten Lankjohn.
+
+Hallo Carsten, herzlich willkommen zur zehnten Folge.
+
+Hallo Sigurd.
+
+Zehnte Folge, ist ja fast schon Jubiläum.
+
+Und heute reden wir über Recurrent Neural Networks als Ergänzung oder als Weiterentwicklung zu den Verfahren, die wir in unserer Miniserie schon vorgestellt haben, nachdem wir letzte Woche so einen kleinen Ausreiter gemacht haben zu den EU-Regulatorien.
+
+Ich glaube, diese Sendung wird jetzt sehr spannend, weil es jetzt schon langsam in komplexere Themen übergeht.
+
+Von daher wollen wir mal schauen, wie wir das heute machen.
+
+Vielleicht wird es auch ein kleines Rollenspiel, sodass wir mal versuchen, ein bisschen Klarheit in das Thema Recurrent Neural Networks reinzubringen.
+
+Genau, da bin ich auch sehr gespannt, denn es wird deutlich komplexer, als es am Anfang war.
+
+Und wo du schon sagst, Ergänzung oder Erweiterung, ist es in der Tat.
+
+Es ist jetzt nicht so, dass wir die Recurrent Neural Networks oder kurz RNNs nutzen, so wie vorher ein Word Embedding oder in den meisten Fällen nicht so nutzen und mit dem Ziel,
+
+eine kompakte darstellung eines weg eines eines satzes oder eines wortes zu finden sondern oft schon verknüpft mit konkreten aufgaben dazu aber gleich noch mehr nummer ganz kurz als erinnerung vielleicht die grundidee warum überhaupt diese gedanken uns machen
+
+ist ja, dass Texte in der Form, wie sie uns vorliegen, mit den Wörtern der natürlichen Sprache, nicht von den meisten Maschinen-Learning-Verfahren verarbeitet werden können und insbesondere nicht von neuronalen Netzen, die ja jetzt im NLP-Kontext extrem oft zum Einsatz kommen.
+
+Neuronale Netze insbesondere brauchen Zahlen.
+
+Vektoren von Zahlen.
+
+Alles, was ich denen rein füttere als Eingabewerte, müssen Zahlen sein.
+
+Und eine einfache Darstellung hat man letztes Mal vor drei Folgen ja gesagt, Back of Words.
+
+Ich stelle ein Dokument oder einen Teil eines Dokumentes dar, einfach nur mit seinen Worthäufigkeiten.
+
+Welche Wörter in meinem gesamten Kollektion kommen wie häufig vor?
+
+Das ist natürlich eine sehr, sehr rudimentäre Darstellung mit den ganzen Schwächen, die die Beziehung der Wörter nicht berücksichtigen, dass einfach alles zusammenaddiert wird.
+
+Und dann hatten wir Weiterentwicklungen betrachtet.
+
+Wie zum Beispiel tf-idf, solche Gewichtungen, aber auch das Grundproblem bleibt, wenn ich das jetzt, und da kommt dieser große Wechsel von dem Gesamtdokument jetzt auf Einzelwortebene.
+
+Dann gesehen, Mensch, wir müssen die einzelnen Wörter wieder stärker berücksichtigen, nicht mehr die Gesamtsumme.
+
+Also back of words ist eigentlich ein doc2vec, wenn man es so will, wo das ganze Dokument dargestellt wird.
+
+Und jetzt sind wir zurückgegangen auf die Einzelwortdarstellung.
+
+Und wenn ich natürlich ein einzelnes Wort in der Form darstelle, komme ich zu dieser klassischen One-Hot-Encoding.
+
+Zu dem One-Hot-Encoding, in dem nur alle Einträge eines Vektors, der so groß ist wie das gesamte Vokabular, Wörter enthält und nur an einer Stelle eine Eins hat und sonst nur Nullen.
+
+Also ein riesen Nachteil.
+
+Ganz, ganz große Vektoren, spärliche Darstellung.
+
+Eine Eins, sonst nur Nullen.
+
+Und da haben wir dieses Vert2Vec kennengelernt, letztendlich als Familie von Verfahren, die das Ganze abbilden auf einen kompakteren Vektor.
+
+Das sind ja praktisch unsere Embeddings, über die wir dann gesprochen haben, wo wir, wie man es auch immer so schön sagt, man sagt, man versucht, die räumliche Nähe der Wörter über eine anleitende Prognose, also der Wörter, die links und rechts vor dem Zielwort oder umgekehrt, man nimmt den Kontext und prognostiziert das Zielwort, stehen, um dann die räumliche Nähe einfach zu erkennen.
+
+Genau und das war ein riesen fortschritt den man damit erzielt hat eine kompaktere darstellung wir können den den kontext besser erfassen ähnliche wörter.
+
+Synonyme zum Beispiel werden auf ähnliche Vektoren abgebildet.
+
+Und das Ganze geschieht typischerweise auch schon durch ein neuronales Netzwerk, indem wir halt eine Aufgabe uns stellen, meinetwegen, das hatten wir ja letztes Mal beschrieben, die Vervollständigung eines Satzes, aus dem Kontext das fehlende Wort in der Mitte zu rekonstruieren oder aus dem Wort in der Mitte Wörter aus dem Kontext zu prognostizieren.
+
+damit kann man das ganze lernen als neuronales netz vielleicht als kleine kleine ergänzung nochmal wie mir ist das besonders wichtig das wird in der praxis oft verkauft als unüberwachtes lernen.
+
+Und ich denke mal mit ist doch gar nicht unüberwacht ich habe eine konkrete aufgabe das ist doch eigentlich überwacht und da hat sich tatsächlich jetzt in einer praxis so eingebürgert scheinbar,
+
+dass diese Überwachung, dass man die aus zwei Perspektiven betrachten kann.
+
+Einmal aus Sicht des Anwenders, muss der mühsam irgendwelche Labels quasi für seine Anwendung bereitstellen oder aus Sicht des Algorithmus?
+
+Ich würde da vielleicht nochmal kurz unüberwacht überwacht.
+
+Für die Hörer, also unüberwacht heißt ja, wir haben Datenpaare oder wir haben keine Datenpaare.
+
+Das heißt, wir haben unsere Daten, die wir zum Lernen verwenden und der Algorithmus soll sozusagen selber Strukturen oder ähnliches erkennen.
+
+Und überwacht heißt, wir haben mehr Datenpaare, also unsere Daten, die wir zum Lernen verwenden, und wir haben eine Zielvariable, also was wir sagen, das ist eine Klasse, die dort reinpasst oder nicht.
+
+Gut oder schlecht für sentimentale Analysen oder Ähnliches.
+
+Genau, gut, dass du es sagst.
+
+Wir haben diese Paare eine Ausgabe gegeben und das hat den riesen Vorteil beim Lernen aus den Daten, das macht es viel viel einfacher, dass wir die Ausgabe oder die Prognose zum Beispiel eines Maschinen-Learning-Modells bei der Bewertung immer einschätzen können, ob sie stimmt oder nicht oder wie gut sie ist.
+
+Und das quasi gleich wieder als Rückkopplung beim Lernen nutzen können, um die Parameter, also die Gewichte eines neuronalen Netzes zum Beispiel, besser anzupassen.
+
+Und jetzt ist es halt bei diesem ganzen Word Embeddings so, dass ich keine Label im Sinne von irgendeiner Anwendung, die ich später mal machen möchte, aber
+
+Ich generiere intern Labels aus den Textdokumenten, die ich habe.
+
+Denn ich kann ja, indem ich einfach mal wegen einem Fenster nehme aus meinem Dokument, mal wegen fünf Wörtern, das in der Mitte, das Wort, das fehlt, und dann möchte ich das aus dem Kontext prognostizieren.
+
+Denn kenne ich das ja in meinen Beispielen.
+
+Das heißt, für den Lernprozess ist es ganz klar ein überwachtes Lernen.
+
+aber bezogen auf das was ich später vielleicht damit machen möchte in dem sinne unüberwacht weil ich für diese andere anwendung möglicherweise keine labels habe also ganz ganz wichtiger unterschied.
+
+Ja ich denke auch und wenn man das betrachtet ist es ja so dass die repräsentation die kenn ich als anwender ja nicht und deswegen wird er oft über unüberwacht gesprochen also was ist das was dann das wort in einem vektor darstellt.
+
+Aber das eigentliche Lernverfahren greift ja genau, wie du sagst, auf die Wörter, die links und rechts stehen oder umgekehrt drauf zu.
+
+Also ich habe genau, dass ich Labels habe, das System weiß genau, was rauskommen sollte und lernt dafür.
+
+Also insofern ist das, der Lernvorgang ist überwacht, aber aus Sicht des Anwenders möglicherweise eher wirkt es unüberwacht.
+
+Deshalb finde ich das nicht glücklich, das unüberwacht zu nennen.
+
+Ich fände es besser, vielleicht als selbst-supervised davon zu sprechen, weil der Algorithmus sich selbst aus den Daten die Label, die er prognostizieren möchte, definiert.
+
+Natürlich auch nicht selbst ausgewählt, sondern genau genommen macht das ja der Entwickler wieder.
+
+so als Bindeglied quasi zwischen dem Endanwender eines Systems und dem System und dem Lernverfahren selbst.
+
+Was wir halt jetzt mit diesen beiden Verfahren gemacht haben, ist, dass wir uns praktisch die Repräsentation von Wörtern innerhalb eines Korpuses, also eines Textes, betrachten.
+
+Die Stellung der Wörter zueinander, die betrachten wir uns ja eigentlich noch nicht.
+
+Und da greifen wir jetzt dann praktisch die neueren oder neuere von die erweiterten verfahren die wir jetzt ja heute auch einsteigen wollen die rnns drauf zu weil man hier ja von sogenannten sequenz modellen spricht.
+
+Was ist denn das sequenz modelle genau bevor wir das bevor wir das sagen nochmal sequenzen genau also sequenzen sind in der natur extrem häufig die die kommen quasi überall vor mir sagen fast alles sind sequenzen wir haben sätze texte sind sequenzen von wörtern wir haben musik.
+
+Sprache ist eine Sequenz von Tonfolgen oder von akustischen Mustern.
+
+Wir haben Sequenzen, Videos sind Sequenzen von Bildern.
+
+Wir haben Sequenzen, Zeitreihen, Börsenkursentwicklungen sind, also jede Zeitreihe ist eine Sequenz.
+
+Wir haben, wenn wir mal in die Biologie gehen, DNA-Sequenzen, also Sequenzen sind extrem häufig.
+
+Insofern ist es sehr spannend, sich mal mit dieser Sequenzmodellierung zu beschäftigen.
+
+Vor allem, wenn du siehst, auch in der Unternehmenswelt ist ja natürlich Umsatzprognosen, Sequenzen, Absatzzahlen, Produktionsläufe, das sind ja alles Sequenzen.
+
+Und Sequenzen bedeutet ja, dass wir sozusagen eine Abhängigkeit von einem jetzigen Zeit- oder Datenpunkt haben zu vorhergehenden Datenpunkten und auch zu zukünftigen natürlich.
+
+Also ich habe eine zeitliche Abfolge von Beobachtungswerten, also eine Zeitreihe.
+
+Genau.
+
+Und das sind die Modelle, die wir bisher betrachtet haben, also Word2Vec als Embedding und Back of Words, die betrachten das halt nicht, also noch nicht.
+
+Genau, klassische Machine Learning-Ansätze erwarten, dass man pro Betrachtungsobjekt irgendwie einen festen Satz an Merkmalen hat.
+
+Und wenn da im Hintergrund tatsächlich eine Zeitreihe ist, dann muss die irgendwie verdichtet werden auf kompakte Kennzahlen, so wie das Back of Words zum Beispiel, indem ich einfach sage, welche Wörter kommen im Dokument vor.
+
+Aber die Reihenfolge geht dabei verloren und da wollen wir jetzt hin.
+
+Ja, ich habe mal ein bisschen recherchiert, auch im Vorfeld, Sequenzmodelle, was sind Kriterien, die ein Sequenzmodell erfüllen muss.
+
+Und eines der Kriterien, die ich identifiziert habe, ist,
+
+Also Sequenzmodelle müssen mit Zeitreihen oder Daten mit unterschiedlicher Länge zurechtkommen.
+
+Das ist sozusagen ein Kriterium, weil wir haben ja keine feste Länge in einem Satz.
+
+Ein Satz kann ja zum Beispiel drei Zeichen oder drei Wörter lang sein oder kann auch viel länger sein.
+
+Oder auch wenn wir uns Zeitreihen betrachten, die können ja auch unterschiedlich lang sein.
+
+Oder wenn wir uns dann sportliche Aktivitäten, also Herzrhythmusdaten oder ähnliches anschauen, die können auch unterschiedlich lang sein.
+
+Also das ist sicher ein ein ganz wichtiger punkt wieder aufgreifen darf dann hätten wir eine fixe länge dann könnten wir diese sequenz problemlos durch ein ein hintereinander hängen der merkmale für jeden zeitpunkt quasi oder für jede position in der sequenz.
+
+Einen ganz großen vektor erzeugen der alle diese merkmale nacheinander enthält fixe länge könnte man problemlos abbilden und die herausforderung kommt genau dann wenn ich unterschiedliche lenken habe und damit umgehen zu können.
+
+Und dann hatte ich weiter gesehen, ein weiteres Kriterium, die Reihenfolge muss erhalten bleiben.
+
+Also, es darf nicht durchgewürfelt werden, was wir zwangsläufig ja mit den vorgehenden Modellen gemacht haben.
+
+Aber hier soll, also bei Sequenzmodellen, die Reihenfolge erhalten bleiben.
+
+Und die einzelnen Elemente, wenn man jetzt zum Beispiel bei Texten von Terms sprechen möchte,
+
+Da müssen auch größere Abstände auch einen Bezug zueinander haben.
+
+Also wenn ich an sowas denke, ich lebe in Frankreich, am besten spreche ich, dann lasse ich eine Lehrstelle und dann müsste ja sozusagen eigentlich in gewisser Weise französisch prognostiziert werden.
+
+Und dann ist ja durch den Kontext Frankreich und das Wort französisch,
+
+relativ weit voneinander weg und diese verbindung muss in einem sequenzmodell irgendwie erhalten bleiben wobei ich da jetzt gesagt hätte das ist noch relativ nahe stell dir vor du sagst nicht ich bin in frankreich geboren und ich spreche punktpunktpunkt.
+
+Das ist noch relativ nah zusammen stell dir vor du hast gesagt ich bin in frankreich geboren in der zwischenzeit lebe ich in deutschland.
+
+Und ich spreche punktpunktpunkt da würden die meisten verfahren wahrscheinlich jetzt sagen deutsch weil deutschland als als nächstes gefunden wird.
+
+Gut, und dann hatte ich noch ein Kriterium, weil ich hatte vier Kriterien rausgewählt.
+
+Das ist also, wie gesagt, einmal die unterschiedliche Länge, dann die großen Abstände müssen zueinander passen, also dass man da den Kontext erhält, die Reihenfolge.
+
+Und das Letzte, das fand ich ein interessanter Punkt auch, dass die Parameter der einzelnen Elemente müssen innerhalb der Sequenz geteilt werden.
+
+Also du meinst damit teilen, dass es quasi dieselben Parameter sind?
+
+So ist es.
+
+Das kriegt man meiner meinung nach unter anderem einfache möglichkeit das hinzukriegen ist indem ich quasi ja nur ein einsatz von parametern habe sprich ein modell fragment und eine zeitreihe da.
+
+Stück für stück durchschieben damit teilen die sich die parameter.
+
+Dann kommen wir dann auf die Idee der Recurrent Neural Netze.
+
+Aber bevor wir das näher machen, nochmal ganz kurz als grob Einstieg zu dem Sequential Modeling.
+
+Die Frage ist also, Eingabe ist auf jeden Fall eine Sequenz.
+
+Das heißt mehrere Ereignisse, zum Beispiel Wörter.
+
+Und Ausgabe können ja auch mehrere sein, also auch eine Sequenz.
+
+Also Sequence to Sequence.
+
+Nur diese Sequenzen, die können ja jetzt quasi beliebige Längen haben.
+
+wenn jetzt zum beispiel die ausgabesequenz nur die länge eins hat dann ist es also zu einem menu geworden, dann könnte man das als extremfall sozusagen sagen es wäre wie eine klassifikation.
+
+Wenn die Ausgabe viele Wörter enthält, dann wäre ein typisches Beispiel eine Übersetzung oder Textgenerierung generell, wenn ich da mehrere ganze Sätze erzeugen möchte.
+
+Wenn die Eingabe sind oft mehrere Wörter, das war ja gerade unser Kern unserer Aufgabe, dass ich eine ganze Sequenz von Ereignissen, also Wörtern zum Beispiel als Eingabe habe, aber auch da könnte ich mir denken, dass ich nur ein Wort habe und generiere das, was noch gut weiter dazu passt, zum Beispiel wenn ich
+
+Suchanfrage mache bei google nicht schreibe ein wort entsteht mir gleich die nächsten sinnvollen vor oder in der musik ich könnte den ton vorgeben und das verfahren erzeugt mir eine.
+
+Ja die ganze komposition genau die nächsten 10 takte und wir haben aber auch ein das hast du jetzt noch nicht genannt want to run was eigentlich dann nicht mehr direkt eine sequenz ist.
+
+sondern dann sind wir ja in sogenannten manila networks was unsere klassischen neuronalen netze sind und ich denke da sollte man auch noch mal kurz drauf eingehen dass man den hörer noch mal abholen was sind neuronale netze.
+
+Wir haben jetzt schon schon vielfach verwendet unsere grundidee wenn man aus der wissenschaft kommen will man vielleicht sagen mensch ein neuronales netz ist ein universeller funktionsapproximator das klingt ganz wild.
+
+Ich finde es klingt toll.
+
+Das klingt toll.
+
+Das klingt so wissend, dass man alles damit machen kann, so wie bei zurück in die zukunft.
+
+Das heißt, dass ich jede beliebige funktion quasi abbilden kann, ernähren kann, basierend lernen kann, in dem fall basierend auf meinen daten.
+
+Ja.
+
+Und ja, die neuronalen Netze von der Entwicklung gehen ja weit zurück, nochmal 50er Jahre, und sind so in Wellen entstanden, haben immer mal wieder, waren sie populär, dann sind sie wieder ins Hintertreffen geraten.
+
+Aber Grundidee ist, dass ich numerische Eingabewerte habe, wenn ich erstmal nur einen ganz, ganz einfachen Bestandteil eines neuronalen Netzes nehme, einen Neuron,
+
+Grundidee, ich habe Eingabewerte, die gewichte ich, bilde die Summe und diese Summe, die gewichtete Summe der Eingabewerte, führe ich in eine sogenannte Aktivierungsfunktion und die feuert oder feuert nicht.
+
+Wie das ein Neuron im menschlichen Körper vielleicht machen würde, wenn Eingangssignale kommen.
+
+Das entspricht letztendlich so etwas wie einer logistischen Regression, wenn ich hier einen Neuron nehmen würde.
+
+Ich glaube, dass man das vielleicht nochmal plastischer für die Hörer macht.
+
+Ein einzelnes Neuron ist eigentlich eine lineare Funktion.
+
+Das ist eine lineare Abbildung sozusagen.
+
+Innerhalb eines neuronalen Netzes habe ich ja mehrere Schichten, also sozusagen so eine Eingangsschicht, dann in der Regel eine versteckte Schicht, ein Hintenlayer und eine Ausgangsschicht oder beliebig viele dazwischen.
+
+Und innerhalb einer Schicht habe ich eine Ansammlung von verschiedenen, also von vielen Neuronen und die Kombination von diesen vielen linearen Abbildungen sorgt dann dafür, dass ich jede beliebige Funktion eigentlich abbilden kann.
+
+Genau, also wenn ich nur eine Eingangsschicht hätte mit einer Aktivierung, letztendlich hätte ich nur eine lineare Trennung, eine Trennlinie, die ich da einführen könnte, wie in meiner logistischen Regression, habe ich mehrere davon und möchte die verbinden.
+
+Dann komme ich ja wieder zu meinen versteckten Schichten und durch die Verbindung kriege ich überhaupt erst hin, auch nicht-lineare Zusammenhänge zu modellieren.
+
+Und somit diese Universalität, also diesen Aspekt der universellen Funktionsapproximation hinzukriegen und nicht nur lineare Geschichten.
+
+Also das ist ganz, ganz wichtig.
+
+Ohne mindestens eine versteckte Schicht würde ich gar keine Nichtlinearität hinkriegen.
+
+Ja.
+
+Und das sieht man jetzt schon, wenn wir praktisch viele dieser Neuronen zusammenschalten in verschiedenen Schichten, dann bedeutet das auch in einer gewissen Weise, dass wir alle die berechnen müssen.
+
+Und damit ist es natürlich auch ein relativ zeitaufwendiges und rechenintensives Verfahren.
+
+Wobei das Berechnen der Signale, die ich durch das Netz durchschicke, also ein Forward Pass, also ein Durchleiten der Signale, ist jetzt nicht so besonders kritisch.
+
+Nur die Frage ist ja, wie lerne ich denn solche Netze?
+
+Wo kommen denn die Gewichte her?
+
+Wenn ich das einfach nur sage, hier ist es, also ich nutze das Netz.
+
+Das ist mal vom aufwand her jetzt nicht so wild zumal insbesondere dann wenn ich keine rückkopplung drin habe das noch ganz ganz wichtiger punkt schon mal als vorgriff auf das was gleich kommt.
+
+Einfache netze klassische architekturen sogenannte feedforward netzwerke haben ausschließlich verbindungen von neuronen einer schicht zur nächsten zu direkt folgenden.
+
+Und dadurch sind sie besonders einfach zu berechnen.
+
+Letztendlich ist es nur eine Menge von geschachtelten Funktionen, wie ich mir das mathematisch vorstelle.
+
+Man kann neuronale Netze schön grafisch darstellen mit Knoten, die verbunden sind.
+
+Am Ende ist es nur lineare Algebra.
+
+Es sind Matrix-Operationen.
+
+Ich berechne, multipliziere Vektoren, Matrizen, addiere sie, führe ein paar Funktionen aus.
+
+Diese Aktivierungen sind letztendlich entweder
+
+Ja, die Sigmoid-Funktionen, die halt Werte zwischen 0 und 1 annehmen, je nach Größe des Wertes, oder halt, es gibt auch ein paar andere.
+
+Diese paar andere sind ganz, ganz wichtig in der Entwicklung der neuronalen Netze, weil sich viele Probleme irgendwann mal gelöst haben.
+
+Aber im Kern, die Aktivierung erfeuert ein Netz oder nicht und am Ende eine Ausgabe.
+
+Man muss also sagen, die Aktivierungsfunktionen sind ja in einer gewissen Weise ein Filter, der bestimmte Informationen durchlässt oder nicht.
+
+Und so ähnlich funktioniert ja auch das Gehirn, dass man sagt, es wird ein elektronischer Impuls geschickt an ein bestimmtes Neuron und entweder er lässt das Signal durch oder nicht.
+
+Ja wobei es nicht nur ein filter sondern gewisserweise auch lässt es ja nicht nur durch oder nicht durch sondern gibt ja auch die die stärke an der ist also es inhaltet ja auch die stärke des signals.
+
+Transformiert in der gewissen weise wie jetzt diese softmax die transformiert ja auch.
+
+Genau da haben wir diese klassische idee so mal natürlich jetzt nicht nicht sehr ausführlich aber auf ganz ganz grober ebene die idee dieser neuronalen netze klar wie trainiert man das muss jetzt natürlich die ausgabe eines netzes anschauen und
+
+Das ist jetzt wieder dieser Punkt, überwachtes Lernen.
+
+Ich weiß ja, was das Netz hätte sagen sollen.
+
+Ich kenne für meine Eingabedaten ja die gewünschten Ausgaben.
+
+Kann also jetzt gucken, bin ich jetzt richtig oder falsch?
+
+Wie nah bin ich an dem dran, was ich hätte haben wollen?
+
+Kann aufgrund dieser Informationen ja einen Fehler berechnen.
+
+Man spricht da bei Netzen oft auch von einer Loss-Funktion.
+
+Letztendlich eine Funktion, die den Fehler des Netzes berechnet.
+
+Basiert auf den Fehlern schicke ich jetzt die Signale rückwärts durch das Netz durch.
+
+Aspect Propagation.
+
+Genau, und das ist diese klassische Backpropagation.
+
+Natürlich nicht als so selbst, sondern jetzt fange ich auch noch an, Gradienten zu berechnen.
+
+Also sprich, ich gucke, in welcher Richtung kann ich denn meinen Fehler am stärksten reduzieren.
+
+Und in dieser Richtung fange ich an, die Gewichte langsam zu verändern, Schicht für Schicht.
+
+Also eigentlich schrittweise fängt das, wir starten das Netz, legen zufällig Werte in das Netz rein, die wir gar nicht kennen, ob die gut sind oder schlecht, das ist egal.
+
+Dann prognostizieren wir einmal mit dem Netz vorwärts durch, kommen auf einen Fehler am Ende, nehmen den Fehler als Input wieder, um rückwärts praktisch die Werte der Gewichte der jeweiligen Neuronen anzupassen und machen das Spielchen wieder.
+
+Es klappt nicht in einem Durchgang, sondern oft sind das hunderte, tausende von Epochen.
+
+Und dieser Prozess, der ist halt sehr, sehr langwierig bei großen Netzen, schwierig.
+
+Und auch, sagen wir mal, diese Technik ist ja auch schon sehr alt, funktionierte, aber man hatte Probleme bei tiefen neuronalen Netzen, das ist Deep Learning.
+
+Deep Learning heißt ja einfach nur, ich habe neuronale Netze mit vielen verdeckten Schichten, und da sehen wir auch schon, was das Problem ist, wenn ich diese, sagen wir mal, Fehlerterme rückwärts durch das Netz durchschicke,
+
+Und da die die ableitungen berechne für die gradienten dann werden die halt irgendwann wir können die verschwinden das sogenannte vanishing gradients problem das halt die die das ist schwer war die die entsprechend zu trainieren.
+
+Und mit einer ganz simplen idee hat man halt jetzt vor einigen jahren.
+
+Weil ist jetzt schon wieder her, aber festgestellt, wie man das zum Beispiel umgehen kann, indem ich als Aktivierungsfunktion zum Beispiel nicht so eine klassische Sigmoid-Funktion nehme, sondern die sogenannten ReLUs.
+
+Das heißt einfach eine Funktion, die alles was kleiner als 0 abschneidet auf 0, aber Werte größer gleich 0 lässt, wie sie sind.
+
+Warum ist das Ganze wichtig?
+
+Weil die Ableitung dieser Funktion, die ist nämlich konstant 1 für Werte größer als 0.
+
+Insofern haben wir da dieses Problem, dass die Gradienten verschwinden können nicht mehr.
+
+Ja, das ist aber auch ein Thema, was wir jetzt dann, wenn wir praktisch über die Recurrent Neural Netze sprechen, dass diese Problematik immer noch da ist in einem gewissen Rahmen.
+
+Und dass dann ja auch sozusagen dann auf die RNNs weitere Erweiterungen kommen, die wir dann in den nächsten Folgen auch sicher ansprechen werden, wie LSTMs oder ähnliches.
+
+Genau, wo du jetzt gerade in die RNNs aufgreifst, sagen wir mal, was unterscheidet denn jetzt ein RNN, ein Recurrent?
+
+Was heißt Recurrent?
+
+Also wir haben eine Art Rückkopplung.
+
+Das heißt, das ist genau der Unterschied.
+
+Klassische, einfache neuronale Netze, also Feed-Forward-Netze, haben nur Verbindungen von einer Schicht, von Knoten einer Schicht zur nächsten.
+
+Wenn ich jetzt sage, Mensch, warum soll ich nicht auch diese Signale, die bei den Schichten, bei den Neuronen vorhanden sind, auch wieder an andere Knoten in früheren Schichten zurückleiten, dann haben wir eine Rückkopplung.
+
+Es gibt verschiedene Ideen, es ist auch ein sehr altes Konzept.
+
+Soweit ich mich erinnere, geht das zurück in 80er Jahre, sogenannte Hopfield-Netze.
+
+Da war die Überlegung, ich habe glaube ich nur eine Schicht, das ist gleichzeitig eine Ausgabe und trotzdem wird das Signal nochmal wieder zurückgeleitet.
+
+Und dann in den 90er Jahren, mit versteckten Schichten hat man solche Architekturen aufgebaut.
+
+Es gibt Jordan-Netze, die aber meiner Meinung nach in der Praxis,
+
+Selten was davon gehört, muss nicht heißen, dass es nicht verwendet wird.
+
+Da leite ich die Gesamtausgabe, die Prognosewerte eines neuronalen Netzes als Eingabe zurück.
+
+Und das, was jetzt heutzutage in den meisten RNNs und den weiterführenden Verfahren wie LSTM zum Einsatz kommt, ist, dafür führe ich die Aktivierung, also die Ausgabe einer versteckten Schicht als Eingabe wieder zurück.
+
+Vielleicht können wir das Ganze so ein bisschen plastischer darstellen, weil es hört sich schon sehr komplex an, was du beschreibst.
+
+Wenn man sich das überlegt, wir haben ja praktisch Sequenzdaten.
+
+Das können ja auch ganz einfache Sachen sein.
+
+Das kann ja zum Beispiel sowas sein, wie dass ich sage, ich wohne in einer WG als Student und am Abend gibt es was zum Essen und ich bin einfach nicht so kreativ und dann habe ich Dienstag gibt es Burger, Mittwoch gibt es Pizza und Donnerstag gibt es vielleicht einen Döner.
+
+dann können wir an der Stelle relativ klar sagen als Mensch, was wird es dann am nächsten Tag geben, also am Freitag.
+
+Weil man sieht, okay, jetzt weiß ich die Reihenfolge gar nicht mehr.
+
+Das war, glaube ich, Burger, Pizza, Döner.
+
+Dann wird es halt wieder einen Burger geben.
+
+Und über den Weg haben wir aber durch unsere Sequenz.
+
+Und jetzt ist ja die Idee, dass wir praktisch nicht nur ein Wort sozusagen dem Netz geben, sondern die Prognose, das Vorwort auch mit übernehmen.
+
+Und somit beide Informationen als Input sozusagen für die nächste Berechnung verwenden.
+
+Ist das richtig?
+
+Genau, man braucht die Kenntnis des vorherigen Wertes, um den nächsten zu prognostizieren.
+
+Und wenn wir das als Mensch feststellen, wenn dein Mitbewohner in der WG sich strikt an dieser Reihenfolge hält, immer Burger, Pizza, Döner, dann weißt du, wenn du die Speise vom Vortag kennst, weißt du natürlich genau, was als nächstes kommt.
+
+Wenn du jetzt aber die Aufgabe hättest, für einen konkreten Tag zu bestimmen, was es gibt, dann kannst du nur raten, wenn du nicht weißt, was es vorher gab.
+
+Insofern wüsste ich aber was es gestern gab, kann ich das einfach berechnen.
+
+Jetzt kommt der Trick, was ist denn wenn du jetzt außerhalb der Stadt warst gestern und weißt nicht was es gestern gab, aber du weißt vielleicht was es vorgestern gab.
+
+Du konntest dir dann quasi selbst die Prognose bilden, okay, wenn es vorgestern Burger gab, dann muss es gestern Pizza gegeben haben.
+
+Basierend auf dieser Prognose kannst du dir sagen, okay, dann gibt es heute Döner.
+
+Genau.
+
+Und das ist ja so die Idee dieser Recurrent Neural Netzwerke, dass wir praktisch diese Sequenzen über dieses Rückkoppeln, also praktisch dieses Zurückführen der einzelnen Ergebnisse, wiederverwenden, um eine neue Prognose durchzuführen und damit den Kontext erhalten.
+
+Du nickst so.
+
+Die Zuhörer wissen nicht ganz, dass wir uns sehen.
+
+Das ist ganz angenehm.
+
+Da kann man nämlich sozusagen sich auch mal so ein bisschen Handzeichen geben.
+
+Und manchmal ist es ganz lustig, wenn man im Gespräch versinkt und dann nickt man sich zu und man wartet irgendwie.
+
+Super, dann haben wir das geklärt.
+
+Wie machen wir jetzt weiter?
+
+Also wir haben durch die art und weise durch das rückkoppeln also es ist ganz ganz wichtig, um zu wissen was ist denn früher passiert also bei bei texten unmittelbar klar jetzt haben wir das mit den mit den beispiel mit den bürgern zeit rein jeder kennt das außer praxis wenn man ein bild von einem ball sieht,
+
+Man soll sagen, in welche Richtung fliegt er.
+
+Wenn man nur den Ball vor Augen hat, weiß man nicht, in welche Richtung er fliegt.
+
+Aber jeder Mensch ist gut darin, Flugkurven vorauszusagen, aber nicht auf einem Bild, sondern aufgrund der Bewegung des Balles.
+
+Das heißt, wenn ich die Positionen des Balles vorher kenne und gesehen habe, in welche Richtung er sich bewegt, kann ich als Mensch unheimlich gut prognostizieren, wie der Ball weiterfliegt.
+
+Jeder sportler kann das jeder freizeit sportler weiß wie sowas funktioniert.
+
+Genau und jetzt ist aber für mich so wir reden ja immer wir nehmen die prognose des vorliegenden und da fängt es ja an so ein bisschen kompliziert zu werden darüber nachzudenken ja weil was heißt denn die prognose des vorliegenden wir müssen ja irgendwie so in zeitachsen denken oder.
+
+Ja ganz ganz ganz genau man denkt jetzt natürlich man steckt man denkt immer diskretisiert in zeitpunkten dass ich sage ich stecke einmal daten in das netz rein und dann kriege ich eine ausgabe und die die beim nächsten zeitpunkt ich stecke neue daten in das netz rein zusätzlich aber genau diese ja entweder die die die
+
+Prognosen des Netzes oder wie das in den meisten Fällen ist jetzt nicht die eigentlichen Prognosen, sondern die Aktivierung einer versteckten Schicht, als Zwischenergebnis sozusagen, als interner Zustand von der letzten Ausführung.
+
+Also immer diskretisiert gedacht eine Stufe weiter nutze ich also die aktuelle Eingabe plus diese internen Zustände der
+
+letzten, des letzten Aufrufs quasi des Netzes und gibt das quasi als zusätzliche Eingabe in das Netz hinein.
+
+kann damit die neue rechnen.
+
+Also ich habe quasi, wenn ich mir das so, wenn ich das programmieren müsste und eine ganz einfache Funktion mir vorstelle, gibt ein Netz nicht mehr eine Prognose zurück, sondern immer auch den internen Zustand und wenn ich es aufrufe, sage ich hier berechnen wir mal die neue Prognose und neuen Zustand basierend auf den aktuellen Eingabewerten und dem Zustand des letzten Aufrufs.
+
+Da kann man jetzt ja zwei Similaritäten ziehen, also praktisch einmal zu dem Modell Virtual-Vec, was wir vorher hatten.
+
+Da haben wir ja diese Zustände, die wir haben, ja verwendet, um die Repräsentation darzustellen, also die Vektoren.
+
+Und das andere kann man hier in Gedächtnis.
+
+Wir merken uns halt so Sachen und geben das einfach weiter, oder nicht?
+
+Ja so ist es dass ich in gewisser weise das berücksichtigen kann aber eine ganz ganz einfaches gedächtnis ich kann jetzt nicht gezielt ja aus dieser historie sachen herauspicken, sondern es ist eher so ein so ein zeitlich gewichtetes gedächtnis dass das was als letztes passiert ist natürlich besonders präsent ist und das was weiter zurückliegt immer weiter abgeschwächt noch irgendwo,
+
+in dem in diesem zustand mit mit schwingend aber schwächeren anteil das werden ja dann auch die erweiterung sein die wir halt in der nächsten folge uns anschauen müssen wie ich gezielt in der vergangenheit sachen hervorgeben vergessen kann und auswählen kann also stichwort lsdm attention.
+
+Ist aber ein riesen vorteil ist wir haben den kontext.
+
+Wir haben ein Verfahren, das von der Idee her schon näher auch wieder an ein menschliches Gehirn ankommt.
+
+Wir können damit Texte prognostizieren.
+
+Wir können Zeitreihen damit aufgreifen.
+
+Nachteil ist, dass wir durch einen der Kriterien, die wir vorhin genannt haben, nämlich diese Länge der Abhängigkeit der Terms zueinander, desto weiter das Wort von dem aktuellen Zielwort weg ist, umso schwächer wird sozusagen die Erinnerung.
+
+Wenn ich jetzt mal überlege, ich meine, diese Verfahren, RNN und folgende, die noch das ganze optimieren, sind extrem erfolgreich gerade.
+
+Und alles, was darauf aufbaut.
+
+Wieso kommt es denn erst jetzt, wenn die Ideen dafür ja schon über 30 Jahre alt sind?
+
+Also ich würde mal unterstellen, weil man es am Anfang noch nicht geschafft hat, diese Netze gut zu direktionieren.
+
+Die Berechnungsleistung, weißt du.
+
+Nicht nur das, also einerseits natürlich die Berechnungsleistung.
+
+Ganz klar, es ist aufwendiger zu berechnen, weil ich kann auch hier mit Backpropagation natürlich ansetzen, muss aber das zeitliche Durchleiten berücksichtigen.
+
+Das ist ein Verfahren der Erweiterung, den nennt man Backpropagation through time.
+
+Das heißt, ich habe nicht nur diese eine Anpassung für die Parameter des Satzes, diese Gewichte, die Parameter sind ja nur ein Satz.
+
+Das ist ja dieses Parameter-Sharing.
+
+Ich habe einen Satz, aber ich mache eine Anpassung für den letzten Zustand, muss ja aber auch die ganze Historie, also wie das sich über die Zeit entwickelt hat in der Sequenz, mit berücksichtigen.
+
+Und dabei ist noch häufiger das Problem, dass ich ein Problem habe, dass diese Gradienten, die ich brauche, um die Anpassung zu berechnen, dass die verschwinden oder explodieren.
+
+Das hat man halt noch nicht so schnell in den Griff gekriegt.
+
+Und da hatten wir schon ein paar einfache Anpassungen,
+
+Besprochen, die erst viel viel später kamen, also zum Beispiel um das Exploding Gradient Problem, also dieses Wachsen der Gradienten, weil sie verhindert, also sogenanntes Gradient Clipping, das ist einfach Begrenzung, wenn es zu groß wird.
+
+Das ist einfach abgehandelt, aber musste man auch erstmal auf die Idee kommen, viele gute Ideen sind am Ende einfach, wenn man sie erstmal hatte.
+
+Und das andere, das Vanishing Gradient Problem, also dass die Gradienten quasi null werden und man keinen Lernfortschritt mehr hat.
+
+Einerseits durch die Verwendung einer speziellen Aktivierungsfunktion, die Relus, mit einer konstanten Ableitung 1 für x größer 0.
+
+Das ist sehr, sehr wichtig.
+
+Dadurch haben wir das Problem schon mal nicht mehr.
+
+Dann aber auch die Art und Weise, wie ich meine Gewichte initialisiere.
+
+Da gibt es viele Ideen, dass ich sage, Mensch, nicht eine zufällige Initialisierung, wo vielleicht viele Werte nahe Null sind, sondern viele sagen, Mensch, nimm doch zum Beispiel eine Einheitsmatrix als Initialisierung und dann klappt das besser.
+
+Das sind einfach so Erfahrungen.
+
+Und dann natürlich die Architektur, dass ich da spezielle Varianten verwende, aber das wird Thema der nächsten Episode sein, denke ich mal, wie zum Beispiel die LSTMs.
+
+Vielleicht als als kleinen ausblick noch jetzt haben wir gesagt okay da gibt es weiter also rnns als als solches als reines in der basis version werden heute kaum noch verwendet, sondern es sind die sachen die darauf aufbauen aber jetzt haben wir diese grundidee dieser rückkopplung die ist ganz ganz wichtig die haben wir jetzt mal eingeführt die können wir nutzen,
+
+Verwendung ganz oft natürlich die die übersetzung zum beispiel also das generieren wenn ich jetzt aber noch mal wieder zurück möchte auf diese grundidee.
+
+Word embeddings also ich nutze sie selten um jetzt wirklich nen word embedding für einen wie gesagt für ein wort nochmal zu finden was den was die reihenfolge berücksichtigt das man selten ist es gibt so ansätze die kombinieren,
+
+die RNNs noch mit convolutional networks und finden darauf noch mal kompaktere, bessere Darstellung für ein Wort in seinem Kontext.
+
+Aber eher selten aber die idee ist ich könnte dieser diesen letzten internen zustand eines eines einer sequenz natürlich als kompakte repräsentation der sequenz nutzen.
+
+Dann hätten wir solche ansätze in richtung doktor weg dass ich sage ich habe oder ich habe ein eine sequenz weg dass ich eine kompakte darstellung meiner sequenz habe die interne darstellung also dass ich ein dokument repräsentieren damit und nicht nur ein wort.
+
+Oder halt irgendeine Art von Sequenz, eine kompakte Darstellung mit fester Länge.
+
+Das ist ja wieder der Knackpunkt.
+
+Dann hätte ich eine Sequenz oder eine Abbildung meiner Sequenz beliebiger Länge auf eine Sequenz fester Länge, kompakte Darstellung.
+
+Das kann ich machen.
+
+Das wäre die eine mögliche Verwendung in dieser Form.
+
+Mit den ganzen Erweiterungen natürlich jetzt Doc2Vec als Erweiterung von Word2Vec, dass ich wieder weg von der Einzelwortebene gehe auf das gesamte betrachtete Objekt.
+
+Mit so schönen Überlegungen kann ich jetzt nicht die Gedanken eines Menschen irgendwo abdecken.
+
+Google spricht also teilweise von Thought Vectors oder so was oder von Facebook habe ich sowas gehört.
+
+Wir fassen die
+
+Gedanke in der Menschheit mit einem Verfahren meinetwegen world to weg.
+
+Ja, das sind natürlich spannende Themen, die wir in späteren Folgen wirklich mal vielleicht diskutieren könnten.
+
+Super, toller Ausblick, Carsten.
+
+Von daher vielen Dank fürs Zuhören für diese Sendung und bleiben Sie gesund.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

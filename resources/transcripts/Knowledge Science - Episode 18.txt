@@ -1,0 +1,417 @@
+ Hallo und herzlich willkommen.
+
+Letzte Woche haben wir über Transfer Learning gesprochen und eine kurze Einführung Ihnen gegeben.
+
+Diese Woche wollen wir dieses Thema aufgreifen und noch weiter vertiefen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Letzte Woche haben wir über Transfer Learning gesprochen und wir haben ja da schon ein bisschen den Ausblick gegeben oder auch gesagt, dass es ein sehr spannendes Thema ist, weil man damit ja im Endeffekt so ein bisschen arbeitet, wie der Mensch auch wirklich eigentlich selber lernt.
+
+Und das würden wir diese Woche ja gerne nochmal vertiefen, da vielleicht noch den einen oder anderen Aspekt reinbringen, vielleicht auch aufzuzeigen, wo man denn überhaupt vorgelernte Modelle herbekommt.
+
+Aber dazu wird man natürlich jetzt erstmal die Hörer, die vielleicht die letzte Sendung noch nicht gehört haben oder vielleicht auch nicht mehr wissen genau, um was es denn ging, nochmal abholen.
+
+Genau, wenn wir nochmal überlegen, Transfer Learning, so ganz grob gesagt, ich möchte wissen, was ich beim Lernen einer bestimmten Aufgabe irgendwo erworben habe, beziehungsweise jetzt nicht ich, sondern eigentlich ja das Modell oder das Lernverfahren.
+
+Nutzen, um bei anderen Aufgaben das ja besser hinzukriegen, besser oder schneller oder wirtschaftlicher hinzukriegen.
+
+Das ist so dieses Wiederverwenden, Nutzen von bestehendem Wissen letztlich.
+
+Und da hatten wir ja schon mal verschiedene Gründe diskutiert, warum man das machen sollte.
+
+Zum Beispiel, dass ich zu wenig Daten habe für die neue Aufgabe, dass die Aufgabe eine andere ist.
+
+dass ich vielleicht das schneller mit mit weniger ressourcen hinkriegen möchte das sind so typische geschichten und in dem kontext hat man halt gesagt ja.
+
+Das lernen in dem klassischen maschinellen lernen wir beschränken uns jetzt mal auf das überwachte lernen ist ja grundlegend so aufgebaut dass ich immer ganz von vorne anfange und damals das kann es ja eigentlich nicht sein dass ich immer ganz von vorne anfangen muss wenn ich doch eigentlich schon wahnsinnig viel erfahrung gesammelt habe.
+
+Ja, mit Erfahrung gesammelt meinst du eigentlich, in dem Kontext schon Modelle gelernt habe.
+
+Weil im Endeffekt ja die Erfahrungen, die wir ja jetzt hier als Erfahrung nennen, sind ja nichts anderes, als dass wir versucht haben, ein Modell anzulernen, das unsere Daten repräsentiert und damit auch ein Verständnis, also das Wissen eigentlich über diese Daten hat.
+
+Genau das ist ein ganz ganz wichtiger punkt denn was wir damit nicht meinen in diesem kontext ist dass der mensch der vielleicht solche machine learning pipelines aufbaut so dass das der computer entsprechend diese aufgaben lernen und lösen kann dass der natürlich wenn er immer neue aufgaben bearbeitet weiß was ist wichtig was funktioniert wie soll er das machen das ist natürlich auch sein persönlicher
+
+Erfahrungsschatz, dass er Sachen besser machen kann oder sie Sachen besser machen kann.
+
+Das meinen wir damit nicht, sondern dass das quasi automatisiert in dem Lernprozess integriert ist.
+
+Ja, wir hatten ja im Vorfeld mal kurz gesprochen, bevor wir aufgenommen haben, weil eigentlich, du hast es ja vorhin erwähnt, dass das Transfer-Learning beim Menschen ja ständig stattfindet.
+
+Also wir tun ja ständig wissen, dass wir irgendwo uns aneignen auf ein anderes Themengebiet.
+
+Also wir wenden das faktisch ständig an.
+
+Genau, wir kennen es ja sogar aus Prüfungen, wenn wir an die Schulzeit oder an die Hochschulzeit zurückdenken, da waren ja immer, klar, es gibt Aufgaben, es gibt diese Lerntaxonomien, Aufgaben, wo man einfach Sachen reproduziert, auswendig Gelerntes irgendwo darlegt und dann so die höheren Stufen sind ja dann tatsächlich diese sogenannten Transferaufgaben.
+
+Was ist denn typisch an einer Transferaufgabe?
+
+Oft, dass der Kontext, in dem vielleicht eine Lösung, die man kennt, irgendwo anzuwenden ist, ein anderer ist, dass die Ziele vielleicht sich ein bisschen verändert haben.
+
+Aber es gibt noch irgendeine gewisse Ähnlichkeit zu den bisher behandelten Lösungs- oder Lösungsstrategien, sodass ich irgendwas davon wiederverwenden kann.
+
+Ich muss ganz ehrlich sagen, ich hab gestern Abend stark dran denken müssen in unserem Podcast heute, Transfer Learning.
+
+Meine Tochter hatte gestern Abend einen Programmierkurs und hat so die ersten Schritte mit Programmieren dort erlebt.
+
+Und das Faszinierende war, sie kam dann danach nach dem Kurs und hat gesagt, so ganz verstehen tut sie nicht alles.
+
+Aber sie könnte ja das, was sie da gemacht hat, in dem anderen Kontext anwenden.
+
+Können sie dort machen und dann können sie ja da mit dem Spiel das machen und jenes.
+
+Wo wir gedacht haben, nein, das ist Transferlearning.
+
+Genau das.
+
+Sie hat im Endeffekt einen Sachverhalt gelernt, einen Zusammenhang, den sie vielleicht auch noch nicht hundertprozentig umreißt, aber sie versteht schon, wo sie ihn woanders anwenden kann und kann dort sozusagen weiterarbeiten.
+
+Und das erhoffen wir uns aus den Modellen ja auch.
+
+Und das ist ja die große Stärke des Menschen, dass er ständig irgendwo dazulernt und das, was irgendwo schon gelernt wurde, in einem neuen Kontext wieder nutzen kann.
+
+Und ohne diese Fähigkeit wären wir ja nicht in der Situation gewährt sind.
+
+Ja, vielleicht, dass wir nochmal in diese Richtung Modelle schauen und wir vielleicht nochmal Begrifflichkeiten klarer definieren, die wir jetzt wahrscheinlich in den nächsten 10, 20 Minuten noch verwenden werden.
+
+Wir sprechen ja zum Beispiel von einem Pre-Training, ja?
+
+Und dann sprechen wir auch von einem Fine-Tuning und solche Sachen, ja?
+
+Und wir sprechen von Modellen, also unsere gelernten Modelle.
+
+Wenn wir von dem Pre-Training sprechen, heißt es, dass wir sozusagen Daten, die wir haben, auf einem, ich sag mal, definierten Modell, das noch nicht gelernt ist, das also zufällig initialisiert wird, also zufällig gestartet wird, also so, dass praktisch keinerlei Vorwissen da ist in dem Modell, komplett neu lernen.
+
+Und dieses neu gelernte Modell, das nennen wir dann Pre-Trained Model im Kontext des Transfer-Learnings natürlich nur.
+
+Beim Fine Tuning, dass wir nicht mehr das gesamte Modell betrachten, sondern dass wir sagen, wir nehmen einzelne Bereiche des Modells, also wenn wir so ein bisschen an die Richtung denken, wir haben ja neuronale Netze, die sind ja aufgebaut mit mehreren Schichten, also mit einem Eingangslayer, also Eingangsschicht, dann versteckte Schichten, Hintenlayers und dann Ausgangsschichten, Outputlayers, dass wir praktisch einzelne dieser Schichten nur betrachten und die neu lernen und dafür aber die anderen Schichten einfrieren, also fixieren.
+
+Oder in einem anderen Tempo noch anpassen, wenn es denn erforderlich ist.
+
+Das ist interessant, was du da so einbringst, denn das ist eine Variante, wie ich dieses Wissen transferieren kann.
+
+Dann gehe ich davon aus, dass das Wissen quasi in dem Modell, explizit, implizit, je nachdem, was ich für eine Art von Modellen habe, enthalten ist.
+
+Vielleicht noch mal als kleine Anmerkung dazu, die meisten Anwendungsfälle, die wir jetzt hier diskutieren und über die man in der Praxis liest,
+
+beziehen sich auf Deep Learning.
+
+Man modelliert neuronale Netze mit vielen Schichten.
+
+Die Idee des Transfer-Learnings ist aber nicht begrenzt auf Deep Learning und ist auch genau genommen ja viel älter.
+
+Das ist schon seit 20, 30 Jahren, diese Überlegung, wie ich so ein Wissen wiederverwenden kann.
+
+Oder vielleicht sogar noch länger, aber bekannter, den hat's zuletzt mal erwähnt, bekannter Workshop von 1995, ein NIPS-Workshop über Learning to Learn, da wurden genau solche Themen schon angesprochen.
+
+Und die eine Variante, die du jetzt gerade vorgestellt hast, heißt ja, dass ich ein bestehendes Modell nehme und das letztendlich teile davon oder als ganzes wiederverwende, vielleicht anpasse.
+
+Und das ist die gängigste Art und Weise, würde ich mal behaupten.
+
+Und zwar anstatt einer zufälligen Initialisierung für einen Teil des Modells oder das gesamte Modell,
+
+durchzuführen und komplett neu zu lernen, nehme ich einfach den bereits gelernten Zustand, egal ob das jetzt hundertprozentig passt oder auch nicht, in der Annahme, dass das ein viel besserer Startpunkt ist, als ganz von vorne anzufangen.
+
+Man kann das sogar auch in drei Strategien aufteilen.
+
+Wir haben im Endeffekt Strategie eins, wir trainieren das gesamte Modell.
+
+Das ist praktisch so, was nicht Transfer-Learning ist.
+
+Also wo wir einfach sagen, wir haben einfach einen großen Datensatz, wir definieren das Modell so, wie wir es uns von der Struktur her überlegen.
+
+Also wir haben ja schon kennengelernt, für die, die die Podcasts so ein bisschen hören, es gibt ja unterschiedliche Strukturen wie Convolutional Neural Networks, Recurrent Neural Networks, LSTMs und so weiter.
+
+Das sind ja alles Strukturen eines Netzes.
+
+Und wir definieren dieses und lernen das dann komplett neu.
+
+Das wäre die eine Strategie.
+
+Die andere Strategie ist, wir trainieren einzelne Schichten dieses Layers nur.
+
+Das, was ich jetzt gerade schon mal gesagt habe, und trainieren die anderen ein.
+
+Und die letzte Strategie, die man machen könnte aus dem Transfer-Learning heraus, ist, dass ich praktisch mich ganz fokussiert nur noch auf das letzte Layer und konzentriere auf den Output.
+
+Also wenn ich zum Beispiel mir ein Modell habe, zum Beispiel Spracherkennung definiert, wo ich sage, damit kann ich Sprache erkennen,
+
+Dann könnte ich sozusagen ein anderes Modell landen, das zum Beispiel nur auf bestimmte Signalwörter reagiert.
+
+Wir kennen das ja alle von Alexa oder Siri oder Ähnliches, was ich rufen kann.
+
+Hey Siri, und dann reagiert die, oder Alexa, mach irgendwas, und dann reagiert die.
+
+Und wir müssten sozusagen an dieser Stelle, um diesen Signalbefehl zu landen, gar nicht das ganze Netz landen, sondern wir nehmen im Endeffekt ein Modell der Spracherkennung,
+
+kann und setzen hinten sozusagen ein Layer dran oder ersetzen das letzte Layer für diese Spezifika dieses Signalwortes.
+
+Das wäre so die dritte Strategie, die man in dem Kontext betrachten kann.
+
+Wobei alle diese Varianten ja darauf aufbauen, dass ich das Gesamte oder einen Teil der vortrainierten Modelle wieder nutze.
+
+Und dann setzt es natürlich voraus, dass ich in gewisser Weise inkrementell lernen kann.
+
+Dass ich also eine bestehende Lösung nehme und dann mit neuen Daten das anpassen kann, ein sogenanntes Fine-Tuning.
+
+Ob das jetzt wie gesagt nur die letzten ein, zwei Schichten sind für die konkrete Aufgabe, die vielleicht anders ist.
+
+oder ob die die schichten davor die ja im wesentlichen für die repräsentation zuständig sind auch noch ein bisschen mit angepasst werden sein oder hingestellt es gibt natürlich auch noch ganz andere arten von ansätzen die wir jetzt hier in der stelle denke ich mal jetzt nicht verfolgen wollen aber man könnte sich ja vorstellen dass die die erfahrung vom lernen bestimmter aufgaben
+
+Hinweis gibt, wie sollte ich denn zum Beispiel die Gewichtsanpassung vornehmen, dass ich bei der Gradientenberechnung und Verwendung irgendwo die Erfahrung nutze, dass sich also andere Aspekte des Lernalgorithmus davon profitieren, was ich für Erfahrung schon gesammelt habe.
+
+Das ist als Beispiel auch denkbar, aber der Trendfokus ganz klar ist in dem Wiederverwenden von Teilen eines Modells.
+
+Und man muss sehen, wenn man jetzt die Entscheidungskriterien anzieht, wann macht denn Transfer Learning Sinn?
+
+Das ist sozusagen eine wirklich wichtige Frage.
+
+Ab wann macht es denn Sinn, in Transfer Learning zu gehen?
+
+Ich kann ja nicht einfach pauschal sagen, ich mache das jetzt, weil ich das den besten Weg finde, sondern ich muss ja eine gewisse Grundvoraussetzung haben.
+
+Und eine Voraussetzung ist natürlich, ich muss entweder ein Modell haben, also bitte
+
+ein vortrainiertes, ein pre-trained Model, das in einer gewissen Weise mit Daten angelernt werden, die zum Beispiel ähnlich sind zu den Daten, die ich sozusagen jetzt habe, von denen ich aber nicht so viele habe.
+
+Also zwar eine Spezifika, aber von der Grundidee her identisch.
+
+Also zum Beispiel Bilder und dann habe ich generelle Bilder, ganz viele, vielleicht Millionen Stück und auf der anderen Seite möchte ich ein Modell haben, das auf fremden Bildern im Endeffekt irgendwas erkennen möchte.
+
+Dann habe ich spezifische Bilder,
+
+Aber es sind beides halt Typ-Bilder.
+
+Also ich kann bei beiden mit dem gleichen Input-Format arbeiten und kann das Modell genauso nützen.
+
+Oder ein anderes Beispiel.
+
+Wir haben meinetwegen viele Bilder von Fußgängern.
+
+Die sind aber alle irgendwie bei Tageslicht aufgenommen.
+
+Wir haben ein Modell gelernt, was Fußgänger auf Bildern erkennen kann.
+
+Fürs Autonome Fahren sicherlich wichtig.
+
+Wir wollen aber auch, dass es in der Nacht funktioniert.
+
+Da haben sich die Eingangsdaten ja irgendwo verändert.
+
+Das ist die selbe Aufgabe, aber mit anderen Daten.
+
+Und wie kann ich es hinkriegen, dass vielleicht das Modell, was mit Fußgängern bei Tageslicht erzeugt wurde, auch in der Nacht funktioniert?
+
+Ja, also von daher haben wir Entscheidungskriterium Datensatzgröße, also praktisch wie viele Daten habe ich überhaupt.
+
+Wenn ich ganz wenig Daten habe, dann habe ich schon mal in einer gewissen Weise im Deep Learning Kontext zumindest ein gewisses Problem und muss mir überlegen, dass ich vielleicht mit einem Transfer Learning besser fahre.
+
+Dann muss ich aber auch ein Modell finden, das praktisch mit einem generischen Datensatz
+
+gelernt wurde.
+
+Also das ist so ein Überdeckendes mit meinem Ziel oder mit meinen Daten.
+
+Und das andere Thema ist natürlich, was sind die Tasks, was will ich denn erreichen damit?
+
+Also das sind ja auch im Endeffekt Entscheidungskriterien.
+
+Ich kann ja entweder den gleichen Task haben und hab sozusagen nur eine Variation in den Inhalten, also in den Bildern.
+
+Also Klassifikation oder ähnliches.
+
+Ich kann aber auch sagen, von wegen ich will eigentlich was ganz anderes haben.
+
+Mein Grundproblem, also meine Grunddaten und so weiter sind ähnlich, aber ich will einen ganz anderen Task haben.
+
+Ja, wobei ich da ergänzen würde, also ganz wichtig natürlich, die Aufgabe ist wichtig, aber es geht nicht nur darum zu sagen, ist es eine Klassifikation oder eine Regression, sondern ich kann natürlich wirklich identisch dieselbe Aufgabe haben.
+
+Beispiel, ich mache ein Fake Review Detection, dass ich sage, okay, es ist ein Fake Review, ja oder nein.
+
+Oder Sentimentanalyse ist positiv, negativ, neutral gemischt.
+
+Oder aber können zum Beispiel im Rahmen einer Klassifikation auch neue Klassen hinzukommen.
+
+die ich auf einmal erkennen möchte das war mir letztes mal das beispiel dass ich schon gewisse tiere erkennen kann auf einmal aber es gibt noch keinen zebra und auf einmal gibt es neues neues tier ich möchte auch ein zebra erkennen können gab es bislang nicht wie kriege ich sowas hin.
+
+Also es ist wirklich vielschichtig, das Thema, weil es aber eigentlich auch so vom Prinzip her, also von der technischen Idee her, gar nicht so komplex ist, finde ich.
+
+Weil im Endeffekt übernehmen wir halt bestehende Modelle und dann stellt sich halt eher die Frage, wo kriege ich denn überhaupt solche Modelle her?
+
+Wenn man jetzt so ein bisschen sieht, wir verlagern ja das Problem für die Unternehmen, die keine Daten haben.
+
+Wenn ich sage, sie haben keine Daten, ja kein Problem, dann machen sie doch ein Pre-Training, Entschuldigung, ein Transfer-Learning.
+
+Dann verlagere ich das Problem, ja wo kriege ich jetzt Modelle her?
+
+Die haben die Unternehmen ja auch nicht.
+
+Von daher muss man ja schauen, gibt es Modelle, die am Markt frei verfügbar sind.
+
+Und da gibt es ja wirklich auch eine ganze Anzahl an Anbietern.
+
+Also ich denke da zum Beispiel an Hackingface, die jetzt zum Beispiel gerade Sprachmodelle zur Verfügung stellen.
+
+Ich habe im Vorfeld mal geguckt, die haben 11.000 verschiedene Modelle für die unterschiedlichsten Gebiete von Textsummarization über Question Answering, über Translation, über alles, was man sich so im Sprachbereich als Task vorstellen kann.
+
+Und man kann diese Modelle weitestgehend kostenfrei tatsächlich laden und nützen und dann praktisch als Startpunkt für seinen eigenen Themenbereich nützen.
+
+Gibt aber auch noch andere Anbieter.
+
+Wir werden im Nachgang praktisch das auch im Kommentartext verlinken, falls der eine oder andere mal auf die Internetseite von den jeweiligen Plattformen schauen möchte.
+
+Wir haben ja im Kontext des Deep Learnings ja auch sogenannte Frameworks, die die Implementierung von einzelnen Modellen erleichtern.
+
+Da ist ja ganz vorne TensorFlow und Ptorch zu nennen.
+
+Das sind ja so die zwei großen Frameworks, mit denen man Deep Learning implementiert.
+
+oder Deep-Learning-Modelle implementiert.
+
+Und die haben auf ihren Seiten auch tatsächlich eine ganze Batterie, also ganz schön viele Modelle, die man wirklich gut nützen kann.
+
+Also zum Beispiel für die Image-Klassifikationen, ResNet-Modelle, die relativ groß sind, die mit Millionen von Bildern geladen sind und so weiter.
+
+So, dass man wirklich eigentlich so 10, 20, 30 Anlaufstellen im Internet hat, wo man Modelle, die generisch sind, auch wirklich einfach heranziehen kann.
+
+Und dadurch spart man sich, dass man sehr viel eigene Daten braucht, nur noch vielleicht in einiger Größenordnung weniger, die speziell natürlich für die eigene Aufgabe ausgerichtet sind.
+
+Und man spart sich sehr viel Rechenleistung.
+
+vielleicht aber in der ecke noch mal zu überlegen warum klappt das gerade jetzt warum ist das wo die ideen schon so viel älter sind dass ich nicht immer ganz von vorne anfangen muss warum klappt es aber gerade jetzt im kontext von deep learning so gut und da denke ich mal ist eine sache ganz wichtig weil die blöden in der anfangszeit auch bekannt geworden als representation learning das heißt die planning
+
+generiert auch eine eigene, gute Darstellung der Domäne, der Daten, für die die Aufgabe gelöst wird.
+
+Und diese Fähigkeit, die nutzen wir innerhalb der pre-trained Modelle, um auch ähnlich gelagerte Aufgaben lösen zu können.
+
+Als Beispiel mal diese Sprachmodelle.
+
+Da haben wir ja gelernt, wie bestimmte Wörter in welchem Kontext verwendet werden,
+
+Das war mein wegen sagt zwischenaufgabe ist das vorhersagen von von fehlenden wörtern oder ich kenne den kontext welches wort fehlt oder.
+
+Ich habe das ein wort in der mitte und welche wörter werden noch zusammen irgendwie verwendet und diese diese allgemeinen erkenntnisse aus einem großen.
+
+Datensatz einer sprache mein wegen sämtliche wikipedia artikel einer sprache zum beispiel das kann ich nutzen.
+
+um bei ganz anderen Aufgaben irgendwo einen Vorteil daraus zu ziehen.
+
+Bei Bildern zum Beispiel, wenn ich mithilfe von convolutional Netzwerken oder anderen Geschichten es gelernt habe, bestimmte Features aus den Bildern herauszuziehen, sind irgendwelche Ecken und Kanten irgendwo da drin, ohne dass ich das explizit modellieren muss.
+
+Dann kann ich diese Merkmale, die allgemeine Netze extrahieren, nutzen in einem anderen Kontext.
+
+Und bevor diese idee mit dem deep learning kam nämlich nur ein quasi ein ein ein flaches netz habe oder ganz andere lernverfahren bei denen der mensch sehr viel von diesem feature engineering übernommen hat.
+
+Da war es natürlich schwieriger weil dieser dieser manuelle schritt dazwischen lag und hier weiter ich diesen manuellen merkmals aufbereitungsschritt weil sie eliminiere durch automatisieren wie wir es beim deep learning haben desto.
+
+Besser und einfacher ist es überhaupt möglich, solche Deep Learning, also solche Transfer Learning Ansätze umzusetzen.
+
+Hier haben wir vielleicht zum Verständnis, der Hintergrund ist ja, dass ich im Endeffekt das Wissen, was wir sonst in dem Merkmal, also wenn wir eine Tabelle anschauen oder die Daten anschauen und sagen, ach, die Spalte so und so, der Blutwert so und so oder wie auch immer, der könnte eine Auswirkung haben auf unsere Prognose oder unsere Klassifikation oder Ähnliches.
+
+Das ist ja Domänenwissen, das wir im Kopf haben.
+
+Und das bauen wir ja im klassischen Verfahren durch die Datenvorbearbeitung rein.
+
+Und jetzt sagen wir im Endeffekt beim Deep Learning, es soll dieses implizite Wissen irgendwie erlangen.
+
+Und das ist das, was du meinst mit Feature Engineering und so weiter, dass man eigentlich sagt, von wegen, wir stecken das gar nicht mehr so rein, dieses Wissen, was wir sozusagen in den Domänenköpfen haben, sondern erhoffen uns, dass es in den Massen der Daten, deswegen auch viele Daten, repräsentiert ist, also vorhanden ist.
+
+Genau, genau das, ja.
+
+Und deshalb sehen wir ja auch, dass es insbesondere in diesen Domänen des NLPs Sprache verarbeiten und im Bildbereich klappt das erstaunlich gut.
+
+Wenn wir jetzt natürlich in eine strukturierte Domäne gehen, mit vielen, mit Merkmalen, mit speziellen Bedeutungen, wirklich extrem domainspezifisches Hintergrundwissen noch, ist das schon wieder eine ganz andere Geschichte.
+
+Aber gerade Bild- und Sprachbereich klappt das erstaunlich gut.
+
+Aber wir haben ja auch Fälle, ja, und da ist jetzt mal die Frage, was machen wir denn damit, wo wir vielleicht sagen, wir würden gern was machen, haben einen relativ kleinen Datensatz und haben vielleicht kein Modell, das so idealerweise perfekt passt.
+
+Dann könnte man ja trotzdem versuchen, damit zu arbeiten.
+
+Und so sagen wir, man nimmt natürlich ein Vormodell, ein pre-trained Model und
+
+versucht dann mit relativ vielen Schichten, also einem gewissen Anteil des Modells, hat nicht nur die letzte Schicht oder Ähnliches wirklich zum Pre-Training verwendet.
+
+Und setzt sozusagen die wenigen Daten an.
+
+Das Risiko, was jetzt hier dadurch entsteht, ist, dass ich einen ganz starken Fokus auch auf die sogenannte Lernrate haben muss.
+
+Also wie schnell, wenn man das so nennen möchte, passt der sozusagen Änderungen an?
+
+Wie stark nehmen wir Einfluss auf den Gradienten, wenn man das jetzt mal so ausdrücken möchte?
+
+Wenn jetzt eine Landrate relativ groß ist, bedeutet das, dass wir ein höheres Risiko haben, dass wir Wissen aus dem Vormodell eigentlich eliminieren.
+
+Wenn die Landrate klein ist, dann haben wir das Thema, dass die Landdauer passiert, aber wir haben das Risiko, dass mit den geringen Daten wir dadurch, dass auch das Modell noch nicht so die Repräsentation des Gesamtkontextes hatte, also weil wir nicht Ähnliches nehmen, dass es eigentlich dann über Land, als auswendig Land, overfittet.
+
+Ja, ganz, ganz großes Problem.
+
+Wenn ich da mit wenigen Daten in einem großen Netz komme und zu viel anpassen kann, ist das natürlich wieder ein Thema.
+
+Ja, genau.
+
+Und dann ist die Frage, was können wir da machen?
+
+Und da gibt's ja so schöne Schlagwörter auch wie Data Augmentation und solche Themen, die uns ja helfen, oder zumindest versuchen zu helfen, mit künstlich erzeugten Daten durch diese schmale Datenmenge oder diese kleine Datenmenge aufzuplänen.
+
+Es ist ein interessanter weiterer ansatz um mit dem problem wenig daten umgehen zu können wird mal vorschlagen dass wir das vielleicht in der nächsten folge einfach mal aufgreifen.
+
+Genauso wie die diese idee das haben wir jetzt noch gar nicht besprochen wir haben gesagt okay die die aufgabe ist eine andere die ich lösen möchte.
+
+Was aber auch in Teilen zumindest zum Transfer-Learning zugeordnet werden kann, ist ja die Idee des Multitask-Learning.
+
+Was ist ja, wenn ich viele oder mehrere Aufgaben gleichzeitig löse oder lösen möchte, in der Hoffnung, dass nicht nur dieses Wissen in eine Richtung fließt.
+
+Ich habe irgendwo mal mit vielen Daten ein Modell gelernt und dieses Wissen nutze ich aus in einem neuen Kontext.
+
+Sondern die Hoffnung ist, dass sich durch das gleichzeitige Lernen vieler Aufgaben auch noch so Querverbindungen quasi ergeben, dass sich Erkenntnisse aus der Lösung einer Aufgabe auch wieder auf die andere Aufgabe zurückfließt.
+
+Also, dass der Informationsfluss zwischen den verschiedenen Aufgaben und der Repräsentation für die Aufgaben stattfindet.
+
+Und das ist, denke ich mal, auch ein ganz, ganz wichtiges Thema, um langfristig Erfolg zu haben.
+
+Und das sehen wir ja auch bei diesen GPT-Modellen letztendlich, die nutzen ja sowas.
+
+Erfordern aber noch wenn ich wirklich mehrere aufgaben habe der ganz ganz andere zusätze wie ich sowas tatsächlich in der praxis umsetzen kann und das würde ich auch gerne in einer späteren folge mal aufgreifen.
+
+Ich denke auch, dass sich der Kreis anschließt zu unserer Folge Nummer 3, glaube ich war das, mit dem GPT-3, wo man ja eigentlich schon sehr fasziniert gesehen hat, dass man aufgrund diesen Riesennetzen, die ja wirklich genau dieses Prinzip des Multitask-Learning eigentlich auch versuchen umzusetzen, dass man diese Netze für ganz unterschiedlichste Tasks verwenden kann.
+
+Für Textzusammenfassungen, für Textgenerierungen, für Fragen-Antwort-Spielchen,
+
+Alles Mögliche.
+
+Und da ist sicher das Thema Multitask-Learning, du hast es ja erwähnt, dass man in einer gewissen Weise sagen kann, das ist ein Teil des Transfer-Learnings irgendwie, aber der ein oder andere Wissenschaftler sagt auch, nee, eigentlich ist es eine eigene Domäne, also ein eigener Part, die zwar ähnliche Ideen haben, also dass man Dinge wiederverwendet, also Wissen wiederverwendet, neu kombiniert,
+
+Aber eigentlich vom Kontext her auch anders vorgesehen.
+
+Genau, es findet ein Wissenstransfer statt, aber es geht weit über das klassische Transferlernen hinaus.
+
+Ich denke, das ist für heute, glaube ich, so ein runder Abschluss Transfer-Learning.
+
+Ich hoffe, dass Sie da jetzt einen schönen Einblick haben, vielleicht auch Lust haben, mal auf die eine oder andere Seite zu schauen, von dem, was wir dann in dem Kommentar nochmal verlinken.
+
+Es ist echt ganz interessant, diese Seiten, wie zum Beispiel Hackingface oder ähnliches, die haben auch immer ganz schöne Erklärvideos auf den Seiten, also auch das macht sicher Sinn, wenn Sie da Lust haben, da nochmal reinzuschauen, um sich da auch noch ein bisschen ein runderes Bild auch abzuholen.
+
+Vielen Dank fürs Zuhören für diese Woche und nächste Woche hören wir uns dann Data Augmentation an.
+
+Und tschüss.
+
+Tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

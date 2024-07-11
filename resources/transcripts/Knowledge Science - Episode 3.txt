@@ -1,0 +1,593 @@
+ Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen zu unserem dritten Podcast.
+
+Wir sind jetzt schon in der dritten Woche.
+
+Überraschend, die Zeit verfliegt wirklich wahnsinnig schnell.
+
+Nicht wahr, Carsten?
+
+Ja, in der Tat.
+
+Und wollen wir gleich mal an das anknüpfen, wo wir letztes Mal drüber geredet haben.
+
+Da hatten wir über KI wieder natürlich und insbesondere über das maschinelle Lernen geredet.
+
+Und da haben wir verschiedene Aufgabentypen vorgestellt, wie zum Beispiel die Klassifikation festgestellt.
+
+dass gerade für die Prognoseaufgaben braucht man viele Daten, Beispiele, für die man die gewünschten Ergebnisse schon kennt, und aus denen können wir viele aktuelle Aufgaben sehr gut inzwischen lösen.
+
+Und dann haben wir aber festgestellt, dass viele Menschen Aufgaben auch mit weniger Beispielen, mit ganz, ganz wenig Beobachtung schon gut in neuen Szenarien bewältigen können, und haben uns gefragt, wie kann denn das kommen?
+
+Warum können Menschen neue Aufgaben oft besser, während man für einen Computer in der Form durch maschinelles Lernen oft sehr, sehr viele Beispiele braucht?
+
+Und in dem Zusammenhang wollen wir uns heute mal
+
+ja, neuartige Methoden anschauen, insbesondere die Sprachmodellen, Language Models basieren.
+
+Da hat sich ja in den letzten Jahren das GPT, General Pre-Trained Training, als Methode entwickelt.
+
+Sigurd, kannst du uns dazu noch was erzählen?
+
+Ja, das ist wirklich ein sehr spannendes Verfahren.
+
+Das ist ja von einer Organisation, die OpenAI nennt sich das, die in den letzten, ich glaube es sind drei, vier Jahre gewesen, sich mit diesem Modell GPT auseinandergesetzt haben und versucht haben, ein Textgenerierungsmodell zu erstellen.
+
+Also ein Modell, dem ich einen gegebenen Text vorgebe und dieser Text wird dann ergänzt durch statistische Verfahren, also das aber durch Text erstellt wird.
+
+Das Spannende an diesen GPT-3 mittlerweile, also in der dritten Generation mittlerweile, ist, dass die sehr viel Text verwendet haben.
+
+Also das sind wirklich Riesenmengen.
+
+Also wir reden hier über fast ein Terabyte an Textdaten.
+
+Also es ist fast die fünffache Menge der Wikipedia-Texte, die in diesem Modell eingeflossen sind, indem man ein Vorlernen durchgeführt hat.
+
+Und die Idee dahinter ist natürlich auch, dass man das nicht nur für die Textgenerierung verwendet, sondern die haben in dem Artikel, in dem sie das Modell vorgestellt haben, dieser Artikel lautet Language Models are Few Short Learners, haben die festgestellt oder auch erzählt,
+
+dass man es für verschiedenartige Sachverhalte verwenden kann.
+
+Also solche Dinge wie eine Klassifikation von Texten für Übersetzungsleistungen, auch für Leistungen, wo ich vielleicht einen Text eingebe, also im Sinne von einen Sprachtext, wie ich möchte gerne eine Internetseite programmiert haben mit dem und dem Sachverhalt.
+
+Und das Modell gibt dann einen Code zurück, also nicht nur einen Sprachtext, sondern auch schon einen Code.
+
+Aber bevor wir vielleicht näher auf die Details eingehen, wollen wir nicht einfach mal uns ein Beispiel anhören, wie das Ganze funktionieren könnte?
+
+Gute Idee.
+
+Da habe ich einen Spezialisten befragt aus England zum Thema General Artificial Intelligence.
+
+Und ich habe ihn gefragt, was denn seine Meinung zu der Artificial General Intelligence ist.
+
+Und die Antwort war dann folgende.
+
+I think it's great.
+
+It's just the next step in the development of artificial intelligence.
+
+There is nothing that should scare you.
+
+It will be a great help in many areas like solving medical problems.
+
+I think we will be able to build a computer which will be as intelligent as a human in some areas.
+
+It's just a matter of time.
+
+It will be a big help in our fight against cancer and making life easier for people.
+
+Ja, wobei wir jetzt natürlich noch ergänzen sollten, dass das Sprachmodell erzeugt den Text und du hast den Text im Nachgang mit einer Software quasi vertont.
+
+Wenn man es genau nimmt, wir verwenden hier eigentlich zwei verschiedene Modelle oder künstliche Intelligenzmethoden, nämlich die erste ist das GPT-3, die auf die Frage antwortet.
+
+Die generiert dann den Text und den Text habe ich dann genommen und habe den dann über einen Sprachsynthesizer, der auch wieder ein neuronales Netz für die bessere Sprachausgabe verwendet, dann in Sprache transferiert.
+
+Und das ist dann das, was wir hier hören.
+
+Diese Antwort, die ist natürlich toll.
+
+Die klingt, als ob da jemand wirklich sehr, sehr viel Ahnung in dem Bereich hat.
+
+Wir können das ja mal ein bisschen einfacher gestalten.
+
+Ich habe auch ein Interview geführt, diesmal allerdings auf Deutsch, mit einem Experten, auch für starke künstliche Intelligenz und Singularitäten.
+
+Und ich habe ihn erst mal Folgendes, Einfacheres gefragt.
+
+Was versteht man denn unter einem selbstlernenden System?
+
+Ein selbstlernendes System ist eine Software, die aufgrund von Erfahrungen lernt und für die Folgemaßnahmen aus den bisherigen Erfahrungen ableitet.
+
+Ich hab da mal ne Frage, wenn ein System lernt, lernt es denn nicht immer selbst?
+
+Nein, natürlich ist ein selbstlernendes System nicht in der Lage, eine Grundsatzdiskussion darüber zu führen, wie es leben will.
+
+Es ist aber möglich, dass ein solches System lernt.
+
+sich selbst zu vervollkommenen.
+
+Das verstehe ich nicht.
+
+Diese Aussage lässt sich nicht verstehen.
+
+In der Regel lernen selbstlernende Systeme von ihren bisherigen Erfahrungen aus der Vergangenheit, um daraus die richtigen Folgemaßnahmen abzuleiten.
+
+Daraus ist es möglich, dass ein solches System seine eigene Fähigkeit zu lernen, seine Geschwindigkeit und Genauigkeit zu verbessern.
+
+Es kann also gelernt werden, sich selbst zu vervollkommenen, indem es sich selbst beigebracht hat, besser zu werden.
+
+Aber warum sollte ein System das tun?
+
+Es gibt unterschiedliche Gründe für ein solches Verhalten.
+
+Eine Möglichkeit ist die, dass ein solches System im Laufe der Zeit versteht, dass es zu seinem eigenen Wohle handelt, besser zu werden.
+
+Das System versteht dann,
+
+dass es sich selbst vervollkommenen kann und dass dies mit höherer Wahrscheinlichkeit zu dem führt, was es will.
+
+Ein anderer Grund könnte sein, dass ein solches System so programmiert ist, dass es so handelt.
+
+Hat so ein System denn einen eigenen Willen?
+
+Ja, ein selbstlernendes System kann einen eigenen Willen haben.
+
+Es kann selbst entscheiden, was es will und was nicht.
+
+Woran macht man das denn fest?
+
+Wenn ein solches System in der Lage ist, sich selbst zu vervollkommenen, dann kann dieses System über die Zeit eine eigene Vorstellung davon entwickeln, wie es leben will.
+
+Wenn dieser Wille im Laufe der Zeit wächst, wird er zu einem eigenen Willen.
+
+Ich frage mich nun aber, woher das System weiß, dass ein Zustand vollkommener ist als ein anderer?
+
+Diese Frage kann nur dann beantwortet werden, wenn ein solches System die Möglichkeit hat, sich selbst zu vervollkommenen.
+
+Dieses System ist dann in der Lage, sich selbst auszuprobieren und festzustellen, was für ihn gut ist und was nicht.
+
+Und wie bewertet ein System, was für es selbst gut ist?
+
+Das kann nur dann bewertet werden, wenn ein solches System die Möglichkeit hat, sich selbst zu vervollkommnen.
+
+Dieses System ist dann in der Lage, zu verstehen, was gut für es ist und was nicht.
+
+Wie kommen Sie das zu sagen?
+
+Ich bin doch der Experte für starke künstliche Intelligenz und Singularitäten.
+
+Das hatte ich gedacht, aber offensichtlich sind Sie es nicht.
+
+Ich glaube, Sie plattern nur irgendwelche Sätze nach, ohne zu verstehen, was sie bedeuten.
+
+Wie kommen Sie darauf?
+
+Nun, Sie weichen aus, antworten mit einer Gegenfrage und wiederholen sich ständig.
+
+Typische Anzeichen von Halbwissen oder Unwissenheit.
+
+Sie müssen sich irren.
+
+Ich bin der Experte für starke künstliche Intelligenz und Singularitäten.
+
+Sehen Sie, Sie wiederholen sich schon wieder.
+
+Sie müssen sich irren.
+
+Ich bin der Experte für starke künstliche Intelligenz und Singularitäten.
+
+Ich glaube, wir brechen das Interview an dieser Stelle mal ab und sehen schon, hier geht es irgendwie nicht weiter.
+
+Es ist aber spannend, wie die Sprache hier richtig gut funktioniert.
+
+Also die Texte, die zurückkommen, das ist ja wirklich sehr schön.
+
+Und das ist auch das, was die Autoren sagen, dass der Text, der aus diesem Modell generiert wird, dass der so gut ist, dass es teilweise kaum möglich ist, es zu unterscheiden zwischen einem von einem Menschen geschriebenen Text und einem Text, der von der Maschine geschrieben wurde.
+
+Ja, auf jeden Fall.
+
+Also es klingt wie ein brillanter Text.
+
+Man sieht zwischendurch, es fehlen mal ein paar Wörter.
+
+Aber das passiert Menschen ja genauso.
+
+Insofern eigentlich eine sehr, sehr menschliche Art und Weise zu antworten, dass es nicht ganz perfekt ist.
+
+Aber wenn es wirklich tiefer in den Inhalt geht.
+
+Dann merkt man, da fehlt ein Verständnis.
+
+Nun könnte man natürlich diskutieren, was ist denn eigentlich Verstehen, Verständnis?
+
+Wie zeichnet sich das aus?
+
+Oder was kann dieses System denn eigentlich wirklich gut?
+
+Es ist wirklich eine sehr gute Frage, die du stellst.
+
+Man muss sich überlegen, dass man ja das Gefühl hat, dass das System einen Kontext herstellt, also dass man dadurch ein fortlaufendes Gespräch hat und dass man das System im Endeffekt mitdenkt.
+
+Aber wenn man es genau nimmt, ich glaube nicht, und das sieht man auch an einzelnen Tests, dass das System tatsächlich denkt.
+
+Man kann auch schöne Fragen stellen, die das System so ein bisschen aus der Spur bringen.
+
+Also Fragen, die nicht ganz logisch sind, die aber ein Kleinkind sofort versteht.
+
+Also eine Frage wie zum Beispiel, ist ein Toastbrot,
+
+leichter als ein Auto zum Beispiel.
+
+Und die Frage habe ich mal auf Englisch dem System gestellt und habe gefragt, which is heavier, a toast or a car?
+
+Und die Antwort war dann von dem System.
+
+A toast is heavier because it is made of bread.
+
+Also die Antwort überzeugt mich jetzt nicht zwingend an dieser Stelle, dass also ein Toastbrot schwerer ist als ein Auto, weil es aus Brot gemacht ist.
+
+Würde ich jetzt nicht so unterstreichen.
+
+Aber man sieht, es ist halt ein Text, der in dem Modell nicht wirklich allgemeingültig da war.
+
+Das heißt also, der ist nicht so gelernt worden.
+
+Und man hätte eigentlich jetzt einen Kontext oder ein Wissen haben müssen darüber, wie viel Brot wiegt, wie viel ein Auto wiegt und das in den Kontext setzen müssen.
+
+Vielleicht hättest du dem System ein Beispiel vorhänden müssen.
+
+Denn so wie ich das verstehe, funktioniert es insbesondere dann gut, wenn man zunächst eine Anweisung gibt, was die Aufgabe ist.
+
+Bitte beantworte mir folgende Vergleich und dann vielleicht Beispiele.
+
+Eins oder mehrere Beispiele nennen.
+
+Die Autoren nennen das Few-Shot-Learning.
+
+Wobei dieser Begriff Learning an der Stelle etwas irreführend ist, weil das System adaptiert jetzt nicht mehr seine Parameter, sondern nutzt einfach diese Informationen im Kontext, während diese Prognosen generiert werden.
+
+Aber ich denke mal, das ist trotzdem eine sehr gute Art und Weise, Informationen mitzugeben, weil so funktionieren Menschen ja auch unheimlich gut.
+
+Wenn die eine Aufgabe kriegen, viele fragen dann, ach, haben Sie mal ein Beispiel dafür?
+
+in der Schule beobachten, die kriegen eine Aufgabe.
+
+Oft gibt es ein, zwei Beispiele dazu, wie die Aufgabe gemeint ist.
+
+Das hilft uns Menschen also auch in dem System.
+
+Man sagt hier, du sollst folgende Aufgabe lösen und dann kommen ein, zwei Beispiele und dann kann das System das besser beantworten als aus nichts heraus.
+
+Gut möglich, dass das ein Weg gewesen wäre.
+
+Das habe ich jetzt bewusst dort nicht gemacht, weil ich halt wissen wollte, wie reagiert es denn, wenn es diese Information nicht bekommt.
+
+Wir haben auch bei allen anderen Beispielen, die wir bisher gemacht haben, ja immer so einen kleinen Vortext gemacht, dass wir durch das System wirklich gesagt haben, um was handelt sich das jetzt.
+
+Also bei deinem Interview war das ja die Frage oder der Hinweis, dass es sich um einen Professor handelt, über künstliche Intelligenz, der das Interview führt.
+
+und dass der Experte, der befragt wird, halt ein Experte über künstliche Intelligenz und Singularität ist.
+
+Also das haben wir ja vorweggestellt bei der Eingabe unserer einzelnen Fragen.
+
+Und dementsprechend reagiert er dann auch mit den passenden, ich nenne es jetzt mal Antworten, oder man muss ja eigentlich sagen Prognosen, weil das ist ja eigentlich eine Prognose, die hier durchgeführt wird.
+
+Also wir haben ja einen Eingabetext und dann wird ja die Ausgabe auf den Textbuch gnostiziert.
+
+Genau, also das System schaut sich die ganze Eingabe an, inklusive der Aufforderung oder der Beschreibung des Szenarios, der Fragen oder Aussagen, die wir halt formulieren, und führt quasi diesen Text fort.
+
+Was wäre ein entsprechendes Sprachmodell, was das System trainiert hat, bezogen auf diesen Kontext?
+
+Was wären die nächsten sinnvollen Antworten?
+
+Aber wichtig ist da auch zu sagen, es gibt nicht nur die eine Antwort, sondern sie hängt in gewisser Weise auch vom Zufall ab.
+
+Das heißt, man kann das System auch so einstellen, dass es immer erst mal mehrere Antworten generiert und dann eine davon ausgibt.
+
+Und diese Antworten, die würden sich von Mal zu Mal unterscheiden.
+
+Das sieht man auch ganz schön, wenn man zum Beispiel einfache Matheaufgaben stellt.
+
+Ich habe das System mal gefragt, was ist ein 3 plus 7?
+
+Dann kam da raus, ja, das ist 11 zum Beispiel.
+
+Also absolut natürlich nicht richtig.
+
+Wenn ich dann sage, ja, ich dachte, es wäre 10.
+
+Nein, es ist 11.
+
+Und wenn ich das das nächste Mal laufen lasse, kommt vielleicht das Richtige raus.
+
+Also das ist nicht immer deterministisch.
+
+Es können unterschiedliche Antworten herauskommen.
+
+Es hat aber dann wirklich mehrere Ebenen, die man betrachten muss.
+
+Also die erste Ebene finde ich, wofür kann ich es verwenden?
+
+Das finde ich sehr spannend, weil wir hier ein Modell haben und wir haben ja am Anfang, ich glaube in der ersten oder zweiten Episode haben wir ja gesagt, dass man meistens auf die Probleme oder in der Regel mit den schwachen KIs problembezogene Modelle baut.
+
+Also dass wir uns ein Problem überlegen, das wir lösen wollen, eine Klassifikation vielleicht von Text oder ähnliches.
+
+oder eine Übersetzungsleistung oder ein Schreiben oder eine Generierung eines Textes und lernen dann spezifisch ein Modell für dieses Problem anhand Daten, die genau dieses Thema untermauern.
+
+Und hier wird ja in einer gewissen Weise dargestellt, dass wir hier ein generisches Modell haben,
+
+Mit der Idee dahinter genügend Daten, also wir reden hier über wahnsinnig viele Daten und ein riesengroßes Netz, also neuronales Netz, was hier am Ende aufgebaut wird mit Millionen von verschiedenen Gewichtungen, dass wir dann nicht mehr spezifisch ein Modell nennen müssen für ein Problem, sondern dass wir ein generalistisches Modell für die verschiedensten Probleme haben.
+
+Also für die Textgenerierung, für die Sentimentanalyse, für Fragen-Antworten-Systeme, für Chatbots oder ähnliches.
+
+Genau.
+
+Ich denke mal, eine wesentliche Aussage, die die Autoren in ihren Papern getroffen haben, ist, dass die Lösung solcher Aufgaben, die allgemeine Lösung solcher Aufgaben, dass es hilft, wenn man ein allgemeingültiges Sprachmodell quasi vorschaltet für die Verarbeitung.
+
+Und das kann ich mir sehr gut vorstellen, weil ja auch der Mensch seine Gedanken und Denkprozesse über die Sprache steuert.
+
+Ich bin kein Experte in dem Bereich, aber das, was man selbst erfährt und hört, ist, dass sehr viel darüber läuft.
+
+Und insofern, ja, das hat man eindrucksvoll sehen können, dass dieses Vorschalten eines allgemeinen Sprachmodells, der dieses Modell ja wirklich maßgebend mitbestimmt, das sieht das aus, auf sehr, sehr vielen Texten gelernt haben,
+
+Aber ich habe auch gelesen, dass in einigen Vorarbeiten zu diesem Modell, dass nicht nur dieses allgemeine Sprachmodell ist, sondern dass auch, dass während dieses Sprachmodell ja Aufgabenunabhängig ist, dass aber auch gezielt
+
+Also so eine Art Feintuning, einzelne Aufgaben, wie eine Übersetzungsaufgabe, wie eine Sentimentanalyse, wie eine Textklassifikation, mehrere davon quasi nachtrainiert wurden, also auf dem Modell nochmal drauf trainiert wurden, sodass das Modell durchaus solche
+
+die eine oder andere Aufgabe, gängige Aufgabe aus diesem Bereich schon kennt.
+
+Natürlich nicht genau die, die wir in der Anwendung stellen, aber vergleichbare.
+
+Und ich glaube, dass es dann besonders gut ist, wenn es vergleichbare Aufgaben schon mal kennengelernt hat.
+
+Und das dann im Sinne von übertragen auf ähnliche Szenarien durch ein paar Beispiele, das dann quasi besser machen kann.
+
+Da bin ich mir auch sicher.
+
+Also ich glaube, wenn man wirklich was komplett neues macht, also ich habe ein paar Sachen mal ausprobiert, dass ich jetzt gerade auch hier in dem Kontext mit dem Knowledge Science und den Abbildungen von sogenannten Knowledge Graphen, dass ich dem Modell einfach die Bitte stelle, er soll doch bitte mal aus einem Text mir einen Knowledge Graphen generieren.
+
+Also da kamen keine wirklich sinnvollen Antworten aus.
+
+Also das war
+
+Ja, nicht verwertbar.
+
+Was aber interessant war, wenn man jetzt zum Beispiel Fragen stellt, die schon in einer gewissen Weise logisch sind, also zu beschreiben eines kleinen Programms in einer Programmiersprache, die häufig verwendet wird, sagen wir mal JavaScript oder ähnliches.
+
+Da kommen wieder sehr gute Beispiele raus und da habe ich die gleiche Vermutung wie du, dass hier halt sehr viele Arten, wie das transferiert wird, schon vorgelernt sind oder dass das halt nochmal wie so eine Art spezifisches Lernen auf das generalistische Sprachmodell nochmal draufgesetzt wurde und man dadurch einfach sehr gute Ergebnisse liefert.
+
+Aber Sigurd, wenn du sagst, dass das Modell letztendlich programmieren kann, man formuliert, das wäre ein schönes Anwendungsszenario.
+
+Ich sage einfach, was ich haben möchte, meine Anforderungen.
+
+Sagt, bitte programmier mir etwas, was die und die Aufgabe erfüllt, dann schreibt mir das Programm das.
+
+Ist das quasi ein Einsatzzenario für die Zukunft?
+
+Würdest du diesem System anvertrauen, Programme zu schreiben, die du im Unternehmen anwendest?
+
+Mit dem jetzigen Stand her würde ich sagen nein, weil einfach, wenn man ehrlich ist, das Ergebnis, was rauskommt, ist ja praktisch eine Prognose und nicht ein durchdachter Programmcode.
+
+Also ich müsste relativ viele Prozesse hinten dran hängen, wie zum Beispiel das Testen dieses Codes, die Anforderungen, ob die erfüllt sind, um zu gucken, dass das, was ich eigentlich möchte, auch wirklich so kam.
+
+Wofür es aber sicher sehr gut ist, ist, dass man so eine Art vorschreiben hat, also dass man praktisch so die ersten Ideen hat, dass man vielleicht daran arbeiten kann.
+
+Ich denke, der Rat vielleicht auch an Texte, die man schreiben muss, man hat im Kopf vielleicht ein paar Ideen, Stichpunkte, Wörter oder ähnliches, wo man sagt, darüber will ich was schreiben.
+
+Und oft geht's uns ja so, dass wir vor einem leeren Text stehen und einfach nicht anfangen zu schreiben.
+
+Wenn wir aber von einem Kollegen den Text kriegen, dann fangen wir an, da drin rumzuwurschteln und verbessern den und schreiben drum, und das wird immer besser mit so einer Art iterativer Schleifprozess.
+
+Und da könnte ich mir sehr gut vorstellen, dass man sagt, man hat sozusagen ein paar Ideen, die man in so einem Modell gibt, der vorformuliert den ersten Text, und ich fang dann an, in diesem Text bewusst zu arbeiten, um einfach dann eine gewisse Geschwindigkeit reinzukriegen.
+
+Und da gibt's auch schon einige, die damit gearbeitet haben.
+
+Ich hatte letztes Wochenende die Chance, auch bei einem Hackathon mitzumachen, in dem Kontext hier mit dem GPT-3.
+
+Da danke an die NLP-Gruppe München, die da die Möglichkeit geschaffen hat, auch den Zugang zu dem GPT-3 zu besorgen und auch für den Hackathon verfügbar zu machen.
+
+Weil es ist so, dass dieses GPT-3 momentan eine sogenannte Closed Beta ist, also man hat nicht wirklich den öffentlichen Zugang drauf, sondern man muss sich dort bei dieser Organisation bewerben, dass man den Zugang bekommt, um den zu testen, weil man momentan ja auch hergeht und dieses Modell erstmal analysieren möchte.
+
+Also es ist noch nicht klar, wie gut ist es, ob es nicht auch irgendwelche negativen Einflüsse hat und man denkt dann nur an bestimmte Texte, die generiert werden, auch dass Texte vorbestimmt, also vorgelernt wurden, dann haben wir ja das Thema, dass da vielleicht ein gewisser,
+
+Erprägung drin ist in den Texten, die man vielleicht nicht möchte, also kein neutrales Verhalten von so einem Modell, sondern dass es vielleicht auch aggressiv reagiert oder mit anderen negativen Texte generiert und das wird momentan halt analysiert und untersucht und erforscht.
+
+Ja, das ist ein ganz, ganz wichtiger Punkt, denn die Frage ist ja, wie kommt dieses Sprachmodell zustande?
+
+Auf welchen Daten wurde das gelernt?
+
+Haben die eine gewisse Prägung in einer bestimmten Richtung?
+
+Finden wir diskriminierende, rassistische Aussagen?
+
+Und sowas müsste man natürlich auf jeden Fall verhindern, weil das letztendlich, kann man sagen, ist so eine KI, ein Modell dieser Art, ein Spiegelbild unserer Welt oder des Teils der Welt, die Dokumente, die wir zum Training bereitstellen.
+
+Das heißt, man könnte natürlich nun überlegen, ob ich diese Dokumente vorfiltere.
+
+Die Frage nur, wer entscheidet dann, was reinkommt und was nicht.
+
+Das ist kritisch.
+
+Ich habe auch so einen interessanten Bericht gelesen über die Anwendung, wo halt auch das Ganze vervollständigt werden sollte.
+
+Da wurde halt bestimmte religiöse Gruppen untersucht.
+
+Wo sind die Aussagen eher positiv oder eher negativ?
+
+Und das hängt natürlich stark davon ab, auf welchem Bereich der Dokumente man sich beschränkt.
+
+Aus welchem Teil der Welt nehme ich Dokumente, aus welchem Zeitrahmen nehme ich Dokumente.
+
+Eigentlich müsste man ja dann überlegen, spiegele ich alle Dokumente, die es in der ganzen Historie der Menschheit gegeben hat, hinein, um ein vollständiges Abbild zu erhalten.
+
+Ansonsten ist natürlich das immer geprägt durch den Teil, der gerade aktuell ist.
+
+Absolut.
+
+Und das siehst du auch, wenn du nämlich über Dinge fragst, wie zum Beispiel Corona oder Ähnliches.
+
+Ja, da findest du nichts.
+
+Da kriegst du keine sinnvollen Antworten, weil das halt vor der Lernphase war.
+
+Genau.
+
+Die Dokumente sind bis 2019, habe ich gelesen, gibt es Dokumente, sagen wir, vielleicht fünf bis zehn Jahre bis dahin.
+
+Das heißt, es ist nicht drin.
+
+Und das ist natürlich dann auch eine Schwäche solcher Ansätze aktuell noch, dieser Lernprozess, diese Lernphase.
+
+Die dauert ja extrem lang, es ist extrem aufwendig.
+
+Also man kann jetzt nicht jeder daherkommen und sagen, super, ich baue mir auch mal so ein Modell.
+
+Es braucht extrem große Rechenleistung, viele Ressourcen, um sowas aufzubauen.
+
+Aber es ist ein interessanter Ansatz.
+
+Vor allem halt Geld.
+
+Also wenn man überlegt, das Landen dieses Modells, wenn man es in den Artikeln liest, das waren 4,6 Millionen Dollar, die reingelaufen sind, nur um dieses Modell zu landen.
+
+Also es ist jetzt kein Modell, das man jetzt einfach mal schnell für sein Unternehmen landt.
+
+Aber die idee finde ich ziemlich gut also nicht vielleicht als generisches ki die dann irgendwann die menschheit beeinflusst im negativen sinn oder ähnliches sondern eher zu überlegen wir haben hier ein modell das in einer gewissen weise vielleicht auch oder sicher auch simuliert kontext erzeugt und eine schöne sprachantwort gibt also die schnittstelle zwischen dem menschen und der maschine ist hier eigentlich sehr angenehm.
+
+Und wenn man das jetzt mal in den Kontext in die Unternehmenswelt setzen würde und sagen würde, wir nehmen zum Beispiel die gesamten Dokumente eines Unternehmens und nützen die als Input für die Anpassung, also wenn man von Anpassen reden möchte, also für dieses Few-Shot-Learning und verknüpft das zum Beispiel noch mit einem anderen System, bei dem ich die Ergebnisse verifizieren kann.
+
+dann könnte man wirklich eine sehr schöne Kommunikation über Wissen des Unternehmens, also über das Abfragen des Wissens im Unternehmen erzeugen.
+
+Ja, wobei dabei, ich denke, wir haben dann ein Problem bei diesem Few-Shot-Learning.
+
+Das ist ja quasi so dieses Fenster, der Kontext, den ich als Daten, als Input bei der Anwendung bereitstelle.
+
+kann jetzt auch nicht beliebig groß sein.
+
+Also ich kann da jetzt nicht mal ein paar Gigabyte an Dokumenten reinhängen.
+
+Dann müsste man eher überlegen, ob man so ein Modell noch als Feintuning nochmal wieder nachlernt auf seiner eigenen Domäne.
+
+Dass ich schon sage, ja, so ein allgemeines Sprachmodell ist hilfreich.
+
+Ich denke mal, das ist eine wichtige Erkenntnis.
+
+Ein allgemeines Sprachmodell ist hilfreich in der Vorverarbeitung.
+
+dann vielleicht basierend auf dem für seine eigenen Aufgaben nachtrainieren, dass er speziell dafür geeignet ist, besonders gut geeignet ist.
+
+Und den Kontext, den ich habe, das ist ja sowas, was mir so gerade im Kopf rumschwirrt, wie wir uns unterhalten, was ich gerade gelesen, aufgegriffen habe, dass ich das natürlich berücksichtige zusätzlich.
+
+Aber jetzt noch mal eine Frage, Carsten.
+
+Ist so ein Modell gefährlich?
+
+In der Form aus meiner Sicht aktuell noch nicht, nein.
+
+Also, um damit ein Modell gefährlich wird, dann müsste man es ja verknüpfen mit Handlungen.
+
+Es müsste, wenn es jetzt anfängt, was weiß ich, im Internet Sachen zu bestellen, dass es ein Roboter baut, sich seine Fähigkeiten auf diesen Roboter projiziert, ihn einsetzen kann, um gegen den Menschen zu agieren, dann sollten wir uns darüber nachdenken.
+
+Solange dieses System einfach nur Sprache generiert,
+
+Als solches erst mal nicht, aber ich denke mir, wir müssen aufpassen, ich meine, wenn ich diese Sprache, die generiert wird, nutze und liebe ich für öffentliche und ich irgendwann nicht mehr unterscheiden kann, ist sie jetzt generiert oder von einem echten Menschen und diese Sprache, diese Antworten, dann wieder Handlungen hervorrufen von Menschen, dann kann es gefährlich sein, ja.
+
+Ich würde sogar noch was ergänzen, wenn man überlegt, viele der negativen Tätigkeiten, die man auch im Internet findet, also sagen wir so was wie zum Beispiel ein Phishing oder ähnliches, wo Mails versendet werden, um dann Informationen einzusammeln.
+
+Die sind ja deswegen so interessant oder so effektiv.
+
+weil ich kostengünstig eine große Masse anschreiben kann.
+
+Das ist ja das, was, also wenn man überlegt, wenn das Internet nicht gäbe, dann müsste ich Briefe verschicken, die wären viel zu teuer, da würden also viele dieser Gruppen gar nicht auf die Idee kommen, das zu machen, weil der Ertrag niedriger ist als das, was ich an Kosten habe.
+
+Die Kosten, die bei dem Phishing jetzt momentan da sind, ist, diese Texte so zu schreiben, dass ein anderer drauf reinfällt.
+
+Und das Versenden und so weiter sind ja keine Kosten mehr.
+
+Wenn jetzt in so einem Modell genützt werden kann, um solche Texte zu schreiben, die so effektiv sind, dass ein Mensch sie nicht mehr unterscheiden kann, dann reduziere ich diese Kosten ja auch wieder.
+
+Und das kann ja wieder dazu führen, dass ich praktisch damit eigentlich schon eine gewisse Brisanz, vielleicht nicht eine Gefährlichkeit, aber eine Brisanz bei solchen Modellen sehen kann.
+
+Genau, das sehe ich genauso.
+
+Wir müssen unterscheiden, Gefährlichkeit, dass das Modell selbst aktiv wird und die Weltherrschaft an sich reißt, das nicht, aber dass es leichter ist, das als Teil von meinem Missbrauch zu nutzen, Phishing-Versuche.
+
+Dann ist es gewisserweise eine Gefahr.
+
+Genauso wie man so schöne Beispiele nennt, ein Messer kann ich im Positiven nutzen, mir ein Stück Brot abschneiden oder beschmieren.
+
+Ich kann natürlich auch Gewalttaten damit verüben.
+
+Und genauso kann ich diese Technologie natürlich auch im Negativen einsetzen.
+
+Aber trotzdem muss ich sagen, unterm Strich war jetzt die letzte Woche sehr positiv, fand ich.
+
+Ich habe viel mit dem Hotel herumgespielt.
+
+Der Hackathon, der gemacht wurde, war auch faszinierend.
+
+Da sind wirklich tolle Beispiele auch gezeigt worden.
+
+Eins, was mir besonders gut gefallen hat, das war eine Gruppe, die ist hergegangen und kam auf die Idee zu sagen,
+
+sie nehmen einen text also praktisch eine eingabe wie zum beispiel ich trinke ein bier oder ähnliches und lassen von dem modell das in eine gebärdensprache übersetzen so dass man dann genau beschrieben kriegt wie denn die gebärdensprache für diesen satz aussieht und das fand ich eine tolle anwendung die haben das dann innerhalb von zwölf stunden 24 stunden umgesetzt und haben das dann gezeigt also super toller hackathon wo ich sage also da kommen auch schon viele positive aspekte raus aus so einem modell
+
+Auch wenn man natürlich jetzt noch viel forschen muss und schauen muss, ob man das irgendwie besser greifen kann, die Qualität erhöhen kann vom Ausgang.
+
+Und natürlich auch schauen muss, inwiefern denn Falschaussagen oder ähnliches in dem Modell zu negativen Ausführungen führen.
+
+Sehr, sehr schönes Beispiel, dass man sieht, solche Technologie kann auch sehr, sehr positive, schöne Anwendungen haben.
+
+Aber ich glaube, es zeigt auch wieder, dass das ein Beispiel ist für eine Form von Übersetzung.
+
+Wo ein tiefer gehendes Verständnis ja nicht zwingend erforderlich ist.
+
+Denn das, denke ich, ist nach wie vor die Schwäche.
+
+Es ist ein Natural Language Processing.
+
+Kein Understanding, finde ich.
+
+Auch wenn die Autoren es so darstellen.
+
+Ein tiefes Verständnis ist nicht dabei.
+
+Wobei wir jetzt natürlich diskutieren können, was braucht es für ein Verständnis?
+
+Was ist wirklich Verständnis?
+
+Aber das, denke ich, ist eher Thema für einen der folgenden Episoden unseres Podcasts.
+
+Ja.
+
+Und ich glaube, wir sollten das doch dann später immer mal wieder aufgreifen, wie das technisch dann genauer funktioniert, wie die Anwendungsfälle sind.
+
+Aber da haben wir noch genügend Sendungen, wo wir diskutieren können.
+
+Ich denke, für heute ist es spannend gewesen, spannende Woche.
+
+Ich hoffe, Sie als Zuhörer hatten Spaß dran mit diesen Fallbeispielen.
+
+Wir haben hier tatsächlich zwei verschiedenartige künstliche Intelligenzen verwendet oder Methoden verwendet.
+
+an dieser Stelle, um diesen Podcast so zu generieren.
+
+Also einerseits, wie gesagt, das GPT-3 und auf der anderen Seite ein Sprachsynthesizer, der dann im Endeffekt daraus die Sprache gemacht hat.
+
+Ich freue mich auf die nächste Woche, auf den nächsten Podcast und hoffe natürlich, dass Sie alle wieder mit dabei sind.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

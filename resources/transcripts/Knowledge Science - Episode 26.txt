@@ -1,0 +1,555 @@
+ Hallo und herzlich willkommen.
+
+Wir melden uns aus der Sommerpause zurück und möchten in der heutigen Sendung darüber sprechen, wo KI im Unternehmen Sinn macht und wie ein KI-Projekt aussehen kann.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+hallo karsten hallo siegert zurück aus der sommerpause ja sehr gut erholt und das hoffe ich zwei wochen lang nichts mit ki gemacht genau keinen zwei wochen lang rechner nicht angemacht einfach mal nur die natur die kinder und alle anderen genossen oder genau so war es und dann fehlt auch trotzdem ein bisschen was also ist doch schön dass man zurück im podcast sind
+
+Und heute mal ein spannendes Thema dabei haben, nämlich das Thema, wie mache ich es eigentlich mit Unternehmen?
+
+Wie identifiziere ich denn eigentlich das richtige Projekt?
+
+Macht KI für mich Sinn oder ähnliches?
+
+Und das sind ja Fragen, die immer wieder an uns herangetragen werden, dass die Unternehmen auf uns zukommen und sagen, ja, wir haben hier das Thema gehört, KI ist ganz wichtig und wir brauchen das unbedingt.
+
+da mal was machen könnten.
+
+Genau, wie steige ich da ein?
+
+Sollte ich überhaupt einsteigen?
+
+Ich meine, viele kommen ja und hören KI und denken, ich müsste jetzt unbedingt KI machen, aber ich weiß nicht, ob das unbedingt die beste Vorgehensweise ist.
+
+Sehe ich auch so.
+
+Es ist halt leider so, oder Gott sei Dank, das kann man immer von zwei Seiten sehen, dass natürlich das ganze Thema in den Medien, aber auch durch uns, durch diesen Podcast oder Ähnliches, wird das Thema natürlich ganz schön gehypt.
+
+Ist dann in der Wahrnehmung und wirkt natürlich dann auch so, dass man in jedem Eck des Unternehmens dann KI irgendwie machen muss.
+
+Egal um Sinn oder Zweck, sondern halt einfach, wir müssen es machen, sonst sind wir nicht wettbewerbsfähig.
+
+Und das kann es ja eigentlich nicht sein.
+
+Das ist nicht der richtige Weg.
+
+Wie sieht denn der richtige Weg aus?
+
+Ja, das ist eine gute Frage.
+
+In meinen Augen muss man sich natürlich erst mal überlegen, wofür kann man denn KI überhaupt anwenden?
+
+Wir hatten ja schon viele Anwendungsfälle gehabt.
+
+Wir haben viele technische Themen in unseren Vorsendungen gemacht.
+
+Aber wenn man genau darüber nachdenkt, dann haben wir eigentlich so drei wesentliche Bereiche, in denen wir die KI einsetzen können oder wo sich halt im Unternehmen sein Zweck entfaltet.
+
+Das ist einmal praktisch bei der Erstellung von neuen Produkten.
+
+Das ist bei der Verbesserung von bestehenden Produkten und zu guter Letzt natürlich auch die Erhöhung der Automatisierung, also Reduzierung von Kosten.
+
+Und wenn man das betrachtet, haben wir halt zwei, die ersten zwei Themen, die ich genannt habe, also neue Produkte, bestehende verbessern, ist, wir erhöhen den Einnahmestrom und die Automatisierung ist natürlich, wir reduzieren die Kosten.
+
+Und ich glaube, das erste ist vielleicht ein bisschen anders.
+
+Na das will ich sag ich generiere neue produkte da weiß ich vielleicht noch gar nicht was ich was ich machen könnte oder ideen sind aber zumindest die anderen beiden bauen ja auf bestehende sachen auf.
+
+Das heißt da ist es doch wesentlich geschickter ausgehen von von.
+
+Ja herausforderungen kostentreiber in dich irgendwo die ich kenne also wenn ich mein unternehmen kenne dann weiß ich ja wo die wo die knackpunkte sind wo ich ansetzen könnte.
+
+Das ist ganz klar im gegensatz zu dem was ich leider oft höre ich mag es gar nicht gerne ich habe ganz viel daten was können wir damit machen was wollt ihr denn wissen.
+
+Keine Ahnung.
+
+Du bist der Experte.
+
+Sag du es uns.
+
+Let the data speak.
+
+Heißt es dann oft nur.
+
+Also der Glaube, ich habe hier ganz viele Daten, ich müsste da nur irgendwelche intelligenten Algorithmen drüber laufen lassen und schon habe ich irgendwas, was mich im Unternehmen weiterbringt.
+
+Das kann mal passieren, ist aber für den normalen Einsatz sicherlich nicht der richtige Weg.
+
+Ja ich finde es auch so schön der spruch let the data speak, wenn man sich so bildlich das vorstellt wie man das ohr an den daten hängt und es halt nichts kommt, dann kann man sich schon in einer gewissen weise vorstellen dass es nicht der wirkliche weg sein kann.
+
+Ich sag immer nur let the data speak ja aber bitte nicht ungefragt.
+
+Ja genau, bitte nicht ungefragt, das ist ein guter Satz, den werden wir später sicher nochmal aufgreifen, wenn wir dann über ein Prozessmodell sprechen, wie man ein KI-Projekt umsetzt, dann werden wir dann auf CRISPR-TM noch eingehen und da ist ja genau der Punkt, nicht ungefragt.
+
+Das Wichtigste könnte man sagen, wenn wir wirklich mal eine Aussage haben wollen,
+
+Das wichtigste sind nicht die daten sind nicht erkennst du sondern ist die frage die richtige frage zu stellen was möchte ich wissen welches problem möchte ich lösen was gibt es sehr sehr interessante bücher von jeff league die elements of data analytics style heißt es glaube ich da wird genau sowas auch hervorgehoben ich muss das wichtigste ist es in solchen projekten die richtigen fragen zu stellen.
+
+Ja, absolut.
+
+Aber wie komme ich auf diese Fragen?
+
+Das ist sicher ein interessanter Weg.
+
+Zunächst mal hat man natürlich das Thema, dass man meistens irgendeinen Schmerz hat im Unternehmen.
+
+Und dann muss man sich überlegen, ob man diesen Schmerz irgendwie lösen kann.
+
+Also das kann einerseits sein, dass ich eine Not habe, einen neuen Markt geben zu müssen und damit meine Produkte verbessern muss.
+
+Oder auf der anderen Seite, dass ich halt hergehen muss und einfach effizienter zu sein, also Kosten zu reduzieren.
+
+Und dann überlege ich mir, welche Werkzeuge, und das muss man ja sich ein bisschen vor Augen führen, KI ist ja kein Selbstzweck, sondern das ist ein Werkzeug, mit dem wir ein gewisses Ziel erreichen können.
+
+Und vielleicht einfacher als anders.
+
+Also, wenn man das jetzt sieht, wir verwenden KI, dass sozusagen ein Automatismus entsteht, dann ist es ja nichts anderes, als dass wir die Maschine ein Problem für uns lösen lassen, das wir in einer gewissen Weise definieren, und damit die Programmierung ja durch die Maschine vornehmen lassen.
+
+Aber gegebenenfalls ist das Problem ja gar nicht so komplex und wir könnten schon durch eine einfache, also in Anführungsstrichen einfach, eine einfache Programmierung auch ohne KI das lösen.
+
+Ich muss nicht unbedingt eine KI-Lösung oder eine Machine Learning-Lösung haben, um ein Problem zu lösen.
+
+Wenn es einfacher geht, wenn ich ein paar einfache Regeln definiere und das funktioniert, dann sollte ich das auch vielleicht besser tun.
+
+Also es gibt ja immer wieder das Thema, dass man über so Grundregeln spricht.
+
+Und eine Grundregel ist halt, dass man KI dann einsetzen kann, wenn man Probleme hat, die nicht mit herkömmlicher Programmierung gelöst werden können.
+
+Das stellt natürlich zugrunde, dass man irgendein Datenproblem oder ein Informationsproblem hat.
+
+Und wenn man das betrachtet, dann ist dann das der Fall, wenn das zugrunde liegende Muster nicht ersichtlich ist, aber wir das durch eine Programmierung lösen wollen.
+
+Das das wichtige für sowas ist denn halt dass man wieder dieses gespür das gefühl entwickelt was kann ki gut was nicht gut gibt er diese tollen aussagen ich weiß gar nicht mehr von wem es ursprünglich mal war aber dass die die einfachen dinge für ki oft schwierig sind und die schwierigen
+
+Menschen unheimlich gut können, ist manchmal für eine KI schwierig und andersrum.
+
+Und deshalb ist es ja auch eins unserer Anliegen, dass wir einfach mal die Bewusstsein darüber schaffen, was kann KI, was kann sie gut, was braucht man dafür.
+
+Und wenn man das hat, kann man auch eher einschätzen, ob es für ein Problem, was man hat, eine gute Lösung bieten kann.
+
+Genau.
+
+Und das ist ja auch das, was wir hier versuchen durch eine Entmystifizierung, wie wir es im Trailer auch haben, dass wir sagen, wenn ich verstehe, was dahinter steckt, dann kann ich natürlich auch einfacher interpretieren, was ich in meinem Unternehmen damit anfangen kann.
+
+Du sagtest ja aber gerade, wenn es Daten-Informationsproblem ist, und da kommen wir wieder zu einem Punkt, das hat man auch schon mehrfach angesprochen, ist, dass für viele, für manche oder viele gar nicht richtig klar ist, was ist denn eigentlich KI?
+
+Oft wird es inzwischen gleichgesetzt.
+
+Mit mit maschinen learning dabei mehr festgestellt maschinen learning ist ein teilbereich innerhalb der kai aber gerade der bereich wo ich schaffe solche ja kai lösung warum er das sein mag basierend auf daten zu generieren und das ist in vielen fällen ist eigentlich in allen aber in sehr vielen fällen das was die menschen machen möchten sie haben viele daten und hoffen daraus irgendwelche modelle agenten systeme abzuleiten die bestimmte aufgaben lösen
+
+die sie vorher durch einfaches Programmieren nicht so ohne weiteres hinkriegen konnten.
+
+Dann bewegen wir uns ganz klar im Bereich des maschinellen Lernens oder heutzutage oft neuronale Netze mit vielen Schichten, das Deep Learning, was ja auch nur ein Teilbereich des maschinellen Lernens ist.
+
+Man muss aber auch sagen, dass viele Unternehmen gerne auf den Zug, wenn man das so nennen möchte, aufspringen möchten und sagen, wir machen jetzt KI, weil damit können wir unser Problem lösen, weil wir vielleicht mit vielen Daten oder ähnliches arbeiten wollen und auch eine Vorstellung davon haben, aber die Organisation noch gar nicht reif dafür ist.
+
+Und mit reif sind vielschichtige Themen gemeint.
+
+Also einerseits natürlich, dass das Unternehmen überhaupt so digital ist, wenn man das so nennen möchte,
+
+dass die einzelnen Punkte, die ich brauche, um zum Beispiel eine Interpretation vornehmen zu können, die Daten zu haben, dass die noch gar nicht erfasst werden, oder noch gar nicht aufgezeichnet werden, oder dass Daten historisch gar nicht vorhanden sind.
+
+Wir haben ja in vielen der Sendungen vorher immer wieder gesagt, wir brauchen Daten, aus denen dann das System landen kann, also wir brauchen viele historische Daten.
+
+Wir können also sehr oft gar nicht mit einem Projekt anfangen, zu sagen, wir machen morgen KI, sondern wir sind meistens in so einer Art Vorprojekt,
+
+wo man zunächst mal die Organisation enabled, also praktisch dahin bringt, dass sie Daten erfassen kann, dass sie die richtigen Informationen haben und dass man die vor allem auch historisch hat, also dass wir die erstmal sammeln, bevor wir zu einem Punkt kommen, jetzt können wir damit anfangen.
+
+Und dass die Datenqualität für das, was ich damit machen möchte, ausreichend ist.
+
+Genau genau das sind die ganzen sind alles sehr sehr technische fragen habe ich die daten in ausreichender qualität in der praxis zeigt sich oft dass selbst wenn das alles stimmt auch noch was anderes hinzukommen muss nämlich dass das ist ja im bereich change management die ganzen organisatorischen kulturellen aspekte.
+
+Ist das unternehmen auch bereit erkenntnisse die zum beispiel durch solche analyse projekte gewonnen werden auch wirklich anzunehmen zu akzeptieren und umzusetzen.
+
+Oder kommt dann einfach nur so der chef hat eine andere meinung machen wir nicht so schön dass ihr das herausgefunden habt aber nee das haben wir schon immer so anders gemacht das bleibt auch so.
+
+Es kommt unterschiedlichste aspekte also ich sag halt oft das p und p people in politics sind meistens am ende die dinge die dazu führen dass projekte scheitern auch wenn es technisch machbar gewesen wäre.
+
+Ja.
+
+Und wirklich, dass man auch in einer gewissen Weise dann auch eine faktenbasierte, datengetriebene Entscheidung mitträgt und nicht sozusagen die hierarchische Entscheidung sozusagen übersteuert oder durch eine hierarchische Entscheidung übersteuert wird.
+
+Der sogenannte hippo effekt genau heißt im campers opinion das ist die die zählt und genau genommen muss man fairerweise mal sagen ist es nichts einfacher als mithilfe von datenanalysen die meinung des chefs zu untermauern ich muss einfach nur das weglassen was dem zu dem nicht passt und präsentiere alles andere und alle sind zumindest in dem moment glücklich aber nur kurzfristig.
+
+Aber das ist sozusagen jetzt die sicht zum enable des unternehmens also das ist sicher kein leichtes unterfahren auch wenn wir das jetzt hier so ein bisschen knapp frühstücken.
+
+Weil hier natürlich wirklich die, ich sag mal, der Erfolg drin steckt.
+
+Also wenn das Unternehmen nicht enabled ist, wenn ich die Informationen nicht hab, wenn ich da nicht drauf zurückgreifen kann und man auch kein Vertrauen in der Organisation schafft, in die Mechanismen, Algorithmen, dann
+
+wird das projekt scheitern also dann ist es vielleicht interessant aber dann wird am ende nichts rauskommen was dem unternehmen den den mehrwert bringt und das deswegen machen wir das spielchen ja wir machen das ja nicht weil wir tolle technologien super finden sondern am ende muss es dem unternehmen einiges mehr wert bringen.
+
+Du kennst ja die zwei typischen antworten eines kunden der einen an maschine und im projekt beauftragt hat wenn man die ergebnisse präsentiert erste antwort ist ja das wussten wir schon zweite es kann nicht sein,
+
+Aber da sind wir ja trotzdem wieder bei dem Punkt, was sind die Fragen?
+
+Wie finde ich, identifiziere ich denn Aufgabenstellungen, Fragestellungen, die ich angehen könnte?
+
+Und da geht man jetzt in einer gewissen Weise mit kreativen Methoden ran.
+
+Zunächst mal müssen wir ja sagen, dass so eine KI-Projekt ein multidisziplinäres Projekt ist.
+
+Also es ist kein Projekt, das in der Technik allein hängt, sondern wir brauchen ganz viele Facetten im Unternehmen.
+
+Personen, die das Unternehmen verstehen, also das Geschäftsmodell verstehen, die Kunden verstehen, also Kundenberater oder die Personen, die nah am Kunden sind, brauchen wir.
+
+Wir brauchen natürlich auch die Techniker.
+
+Das ist natürlich auch klar.
+
+Also wir haben ganz viele Facetten, die reingehen.
+
+Und dann versucht man zunächst mal im Unternehmen Ideen zu generieren.
+
+Da gibt es auch ein schönes Framework, was diesen Prozess der Identifikation von möglichen Ideen im Unternehmen und auch die Verfeinerung dieser Ideen aufgreift.
+
+ganz schön darstellt.
+
+Also es nennt sich der AI Discovery Diamond Framework.
+
+Und das ist aufgeteilt in zwei wesentliche Sichten.
+
+Also einmal die sogenannte Discovery Phase und dann die Defined Phase.
+
+Und in dieser Discovery Phase geht es vor allem darum, einfach Ideen zu generieren.
+
+Und diese Ideen können völlig abstrus sein.
+
+Also das muss nicht sein, was jetzt ganz konkret auf das Unternehmen ist, sondern man versucht eigentlich mit
+
+Methoden von brainstorming von quiet writing über verschiedenartigste themen einfach.
+
+Ideen einzusammeln am besten ungefiltert so das ist so der erste schritt da gibt es auch von einer belgischen firma die heißt in the pocket.
+
+ein schönes AI-Game, also ein Spiel, ein Kartenspiel, mit dem man sozusagen so einen Prozess halt untermauern kann.
+
+Also man holt sich dann aus den unterschiedlichsten Abteilungen die Personen zusammen.
+
+Und diese Personen spielen dann das Kartenspiel.
+
+Und in dem Kartenspiel geht's halt darum, dass man Rollen einnimmt und einfach dann für die jeweilige Rolle mit einem gewissen Aufgaben halt eine Idee generiert.
+
+Und die dann weitergibt und die dann auch von dem anderen bewertet werden.
+
+Und man darüber halt dann 20 bis 30 verschiedene Ideen
+
+wo man ki einsetzen kann wo es einen mehrwert bringen kann im unternehmen erarbeitet muss ich da schon gewisse kenntnis über ki haben was was generell möglich ist oder geht das auch so aus dem nichts heraus von der idee her ist es tatsächlich so erst mal aus dem nichts heraus ideen zu sammeln.
+
+Meine erfahrung ist es ist sicher nicht schlecht wenn man jemanden mit dabei hat am also in der gruppe ist wenn der teams gebildet die einfach erfahrungen haben also auch technische erfahrung oder auch erfahrung über an sich.
+
+Weil der Hintergrund ist, dass natürlich durch diese Bewertung innerhalb dieses Spiels natürlich so eine leichte Nuance reinkommt, dass was realistisches rauskommt.
+
+Weil es bringt natürlich nichts, wenn ich mir ganz tolle Sachen überlege als Ideen und am Ende sich bei jeder Idee herausstellt, dass es gar nichts, also das ist nicht realistisch.
+
+Ich sehe da noch ein zusätzliches Problem.
+
+Wenn Menschen, die gar nicht wissen, was man mit Daten überhaupt machen kann, ist es schwer, sich auszudecken,
+
+bestimmte lösung generieren könnte ja also absolut und also die erfahrung zeigt eigentlich man braucht schon ein mix es ist aber auch gut tatsächlich leute dabei zu haben die wirklich keine erfahrung haben weil sie einfach mit einem offenen blick angehen unternehmen gut kennen wir sind ja typischerweise so ein business understanding ich muss mein unternehmen kennen um irgendwie einzuschätzen wo die die pain points sind wie du gesagt hast genau so ist es
+
+Und das ist wirklich eine Sache, schöne kreative Methode kann man mal in einem Nachmittag machen im Unternehmen, man zieht sozusagen aus den unterschiedlichsten Abteilungen die Personen zusammen, sagt dann so, jetzt machen wir mal eine Ideenfindung.
+
+Und was dann passiert, und das macht dieses AI Discovery Diamond Framework dahingehend, dass man, wie ich gesagt habe, aus der Discovery Seite dann, wenn ich die ersten Ideen habe, oder die ersten 20 oder wie viel auch immer,
+
+dass ich dann in die Define-Phase übergehe.
+
+Und die Define-Phase bedeutet, wir fokussieren uns auf die richtige Idee.
+
+Also wir haben jetzt viele Ideen und jetzt müssen wir herausfinden, welche der Ideen könnte jetzt für unser Unternehmen wirklich, ich sag mal, zielführend sein, besonders gut sein oder ähnliches.
+
+Und wie mache ich das?
+
+Da greift man dann auf unterschiedliche Methoden zu, aber eine, die mir besonders gut gefällt, ist der angenehme, den sogenannten Business Model Canvas, der jetzt aber durch Geschäftsideen bewertet, gibt es einen sogenannten AI Project Canvas.
+
+Und dieser Project Canvas, der hilft mir durch die Idee, mit den richtigen Fragen zu bewerten.
+
+Also mal einzuordnen und zu schauen, macht das Sinn oder nicht.
+
+Sorry, was sind denn das so für Fragen typischerweise?
+
+Die Fragen gehen also in die unterschiedlichsten Kategorien.
+
+Das fängt sozusagen an mit den Fragen über die Daten.
+
+Welche Daten brauche ich für die Idee?
+
+Geht dann rüber über die Fähigkeiten.
+
+Welche Fähigkeiten ich für ein Unternehmen brauche?
+
+Über den Output.
+
+Was brauche ich denn für den, also was kommt denn für ein Ergebnis raus?
+
+Und vor allem auch eine ganz wichtige Frage.
+
+Wie kann ich dieses Ergebnis evaluieren, also messen?
+
+Also was ist die Metrik dahinter?
+
+Dann natürlich der Wert, also was ist die Value Proposition?
+
+Ich glaube das glaube ich das ganz zentrale der ganz zentrale aspekt mit dem ich vielleicht sogar auch einsteige wenn ich überhaupt natürlich muss ich wissen was ich brauche und wie ich es bewerte aber wenn wenn ich wieder nicht mal greifen kann wie ich da einen wert generiere kann ich vielleicht so eine idee auch ganz schnell fallen lassen bevor ich mir weitere gedanken gemacht habe.
+
+Das ist auch wenn man den canvas nicht mal vor augen führt das ist ja praktisch so ein dina 4 platt wenn man das in eine seite.
+
+Und da liegt die Value Proposition zentral in der Mitte, weil wir auf der linken Seite sozusagen die Zulieferung haben und auf der rechten Seite dann die Kunden.
+
+Bei den Kunden geht es dann vor allem darum, wer sind die Kunden, wo haben wir sozusagen Stakeholders, die dadurch tangiert werden davon, und wie können wir das im Unternehmen integrieren.
+
+Mal abgesehen sagen wir mal unterscheiden zwischen ki maschinen und projekten im unternehmen und in der wissenschaft könnte man sagen der in der wissenschaft spielt man manchmal auch mit algorithmen und freut sich daran dass die irgendwas tolles können oder auch nicht wenn ich in den unternehmenskontext auf eine anwendung wechsle, dann muss ich über kurz oder lang damit ja um mehr wert schaffen in meinem unternehmen und das deshalb wird das ganz ganz zentral in die mitte gerückt.
+
+So ist es und das ist halt wirklich angelehnt auch an den business model kennen was war der auch natürlich das geschäftsmodell also den eigentlichen zweck des geschäftes auch in die mitte rückt ja und dann außenrum die kunden und lieferanten sozusagen was ist der wert den ich generieren will was brauche ich dafür die daten und und fähigkeiten um mit den daten irgendwas zu machen was ist das dass die ausgabe meines meines ki systems die sich da entwickler also zum beispiel prognose.
+
+Wie bewerte ich die.
+
+Und dann natürlich die ganzen personen organisatoren wer wärs da involviert und dann sagt dass du die ganzen alles und kosten und und genau das war noch gefehlt kosten und umsätze.
+
+Ist natürlich wenn ich jetzt an an umsatz generieren neue produkte denke muss das natürlich aufgeführt werden und wenn ich an automatisierung also kostenreduktion denke sollte das natürlich auch dort aufgeführt werden.
+
+Also sehr sehr wenig technisch also technisch schon im sinne von dass ich das ich sage was für daten sind involviert um abzuklären kann ich das problem überhaupt umsetzen wenn ich an der stelle merke, das ist ein super mehrwert den ich generieren könnte hätte ich die daten ich hab die aber daten aber nicht dann kann ich es halt auch sehr schnell zur seite legen also das sind wahrscheinlich so als wer die probleme das nicht gegeben ist und wenn die daten nicht gegeben sind,
+
+kann ich sehr schnell davon abstand nehmen oder ich überlege mir halt dass ich langfristig versuche sowas hinzukriegen dass ich die daten generiere dass ich vorkehrungen treffe um langfristig daten zu generieren und vor projekt mach und dann halt im endeffekt mich erstmal dazu enable dann überhaupt in die richtung gehen zu können.
+
+Absolut richtig, ja.
+
+Und das ist eigentlich so, diese zwei Bereiche, dieses Discovery Diamond Framework, also einmal die Idee Generierung und dann die Idee Bewertung, das ist eigentlich eine schöne Sache in einem Vorfeld.
+
+Das kann man in, sagen wir mal, zwei-Mann-Tagen-Workshop durchleben und kann dann im Endeffekt so Ideen herausarbeiten, die man dann, und das ist so meine Erfahrung, die ich auch
+
+auch ehrlich gesagt, allen, die ich mit denen rede oder wo ich dann Projekte mache, auch empfehle, dass man das dann in einem kleinen, prototypischen Projekt, also in so einer Keimzelle, dann versucht umzusetzen.
+
+Also nicht gleich im Großen und das ganze Unternehmen dann versucht umzustilben, sondern wirklich erstmal im Kleinen daran lernt.
+
+Erfahrungen sammeln, auch eigenes Know-how aufbauen, weil es kann natürlich sein, wenn ich in dem Canvas auf den Punkt komme, dass ich keinerlei Skills habe, um meine Idee umzusetzen.
+
+dass ich mir die skills einkaufen muss also sei es durch berater sei es durch.
+
+Kostenaspekt natürlich extrem hoch treiben könnte.
+
+Absolut ja und oder dass ich auch da erstmal zu dem punkt komme dass ich sage ne mein vorprojekt ist erstmal meine mitarbeiter zu enablen also durch die fortzubildenden schulungen zu schicken oder wie auch immer.
+
+Und das ist meiner Ansicht nach der erste Schritt, wenn ich über KI nachdenke, nicht über die ganze Gleichtechnik und alles Mögliche.
+
+Wenn wir dann in so einem Pilotprojekt sind, ja, dann kommen wir natürlich zu dem Punkt, dass wir dann auf so die standardisierten Prozesse, die ja schon seit jetzt beinahe Jahrzehnten gesagt existieren,
+
+Aber dann greifen wir ja wirklich auf den prozess sowie zum beispiel christian den den das ist der standard oder kosten das ist noch inzwischen schon sehr sehr alt über 20 jahre alte cross industry standard process for data mining heißt es da noch da kommt es her
+
+Weil wir heute diskussion data mining data science ist es jetzt mehr ist es was anderes aber was die die ergebnisse angeht hatte man damals schon quasi vergleichbare die dieselbe zielsetzung und so kommt es dass auch dieser dieser schon sehr sehr in die tage kommende prozess immer noch sehr sehr stark verbreitet ist es gibt viele ansätze das zu modernisieren zu erweitern und
+
+können auch mal diskutieren, welche Punkte durchaus erweiterungswürdig sind.
+
+Aber unabhängig davon hat er immer noch eine gewisse Gültigkeit in den Phasen, die ich in so einem Projekt durchlebe.
+
+Und vielleicht können wir diese Phasen ja mal kurz nennen.
+
+Es sind sechs Phasen.
+
+Es geht los mit dem Business Understanding, wo natürlich genau, man könnte sagen, der E-Project Canvas ist letztendlich dieses
+
+Business Understanding nur viel, viel betriebswirtschaftlich tiefer aufgebohrt.
+
+Dass man sich viel, viel tiefer Gedanken gemacht, was da eigentlich im Problem drinsteckt und was ich da lösen möchte.
+
+Ja, man muss auch sehen, in dem CRISP-DM, in einem echten Projekt, ist das Business Understanding ja nicht, dass ich ein Canvas ausfülle, sondern dann geht es wirklich darum, dass die Teammitglieder des KI-Projektes, die ja auch domänengemixt sein sollten,
+
+dass die ein extrem gutes Verständnis über dieses Teilproblem des Unternehmens haben.
+
+Also nicht nur so auf dem Motto, ah ja, jetzt haben wir verstanden, wir stellen irgendwie Autotüren her oder keine Ahnung, und da machen wir jetzt irgendwas, sondern wirklich im Detail, dass man genau weiß, was sind die Informationen, die benötigt werden, wie läuft es im Unternehmen, damit wir ja später, und das kommen wir dann, wenn wir über die anderen Phasen sprechen, das Problem evaluieren können, die Ergebnisse evaluieren können, die Qualität evaluieren können.
+
+Genau, dazu gehört aber auch zu verstehen und zu wissen, was gibt es denn schon für Lösungen, was wurde denn bislang gemacht, wenn ich irgendwas verbessern möchte.
+
+Es gibt so eine klassische Mentalität, ich sehe ja ihr habt ein Problem, alles was ihr gemacht habt taugt nichts, jetzt zeige ich euch mal wie es geht.
+
+Finde ich nicht sehr gut diesen Ansatz, sondern man sollte erstmal schauen, was wurde gemacht, was gibt es schon für Erfahrung, was hat funktioniert, was hat nicht funktioniert, gibt es, auch wenn es bislang kein KI oder Data Mining Datenanalyse Projekt war,
+
+gab es schon versuche damit irgendwas zu machen hat schon was geklappt oder nicht geklappt also das muss man ja auch alles mit berücksichtigen.
+
+Aber ganz zentral ist, wenn man dieses ganze Verständnis der Problemsituation hat und auch weiß, wie ich es bewerte, wie ich es einsetzen möchte, ist dann eine Abbildung von dem Geschäftsproblem auf ein Analyseproblem, auf ein sogenanntes Data Mining oder Data Science Ziel, wie zum Beispiel ist es eine Klassifikation oder eine numerische Prognose.
+
+Ja, und da sind wir ja dann eigentlich dann in so einem, also wir schwenken dann eigentlich die Richtung von dem Business Blick hin zum technischen.
+
+Und das sind ja dann die weiteren Phasen, also wir haben die erste mit Business Understanding, dann kommen die Phasen, die jetzt um die Daten gehen.
+
+Also Data Understanding und dann natürlich auch Data Preparation.
+
+Aber hast du eine Sache gemerkt?
+
+Wir sind eingestiegen mit, wir machen ein KI-Projekt.
+
+Aber komischerweise in der Praxis, in den Bereichen, die wir uns gerade hier bewegen, kommen wir dann automatisch, wenn wir einen betriebswirtschaftlichen Fokus haben, kommen wir letztendlich übers Machine Learning zu Data Mining, Data Science Projekten.
+
+Natürlich gibt es gibt es andere arten von projekten wenn ich jetzt vielleicht erstmal viel viel weiter gefasst sage ich brauche jet board ich brauche ein autonom fahrendes fahrzeug.
+
+Aber auch da drin habe ich letztendlich natürlich einzelne probleme die ich genauso wieder angehen kann.
+
+Na klar, aber es liegt ja daran, dass wir das, also wir können natürlich sagen, wir nehmen einfach die Daten und dann Deep Learning und machen uns keine Gedanken über Merkmale und Ausprägungen und versuchen zu gucken, was rauskommt.
+
+Aber dann brauchen wir trotzdem die Frage, also wir sind trotzdem im Business Understanding, wir brauchen trotzdem im Endeffekt unsere Daten, die müssen aufbereitet werden in einem gewissen Rahmen, also auch da haben wir das Data.
+
+Wenn ich es datenbasiert mache, ja.
+
+Genau, also wir kommen ja nicht an das,
+
+Wenn ich natürlich allgemein von der KI aus komme und sage, Zielsetzung ist einfach nur, ich baue ein System, was in irgendeiner Weise Aufgaben erledigt, für die ich glaube, dass ich menschliche Intelligenz sonst brauchen würde, und ich muss es ja nicht zwingend basierend auf Daten lernen und Maschinenlearning, dann könnte ich sowas bauen und versuchen, um hinzukriegen.
+
+In der Historie gesehen, ich baue ein Expertensystem regelbasiert, da habe ich ja nichts mit Maschinenlearning drin, und trotzdem glaube ich, Mensch, das hat auch was mit KI zu tun.
+
+Aber trotzdem, auch wenn wir das Beispiel jetzt nehmen, ich brauche ein Verständnis.
+
+Wofür brauche ich es?
+
+Business Understanding.
+
+Ich brauche auch dort Daten, weil ich die Regeln aus irgendwas ableiten muss.
+
+Also entweder brauche ich Experten, die ich befrage, was ja nichts anderes sind als Informationen und Daten, die ich dann aufschreibe, niederschreibe und mir daraus die Regeln ableite.
+
+Wenn du Daten so allgemein fasst, dass es auf der Meta-Ebene auch die Regeln selbst sind, dann sind alles Daten.
+
+Das ist richtig.
+
+Das ist auch ein Programm.
+
+Es sind Daten.
+
+wir kommen wir kommen dann im endeffekt trotzdem in den dieses standard da kommst du auch gleich zu der zu der möglicherweise zu einer schwäche von von christian dass du sagen kannst ja das ist so allgemein formuliert dass es immer passt, ich habe sogar schon studierende haben gesagt ich schreibe gerade eine seminar arbeit ich mache das nach christian ich sammle irgendwie verschiedene artikel ein und fasse die zusammen also ich hab,
+
+Business Understanding, Data Understanding sind die Artikel.
+
+Also das ist so allgemein formuliert, dass man sagen könnte, ich kann es überall und immer einsetzen.
+
+Ja, auf der groben Ebene betrachtet klingt es erstmal so.
+
+Im Praktischen ist es aber natürlich ausgerichtet auf datengetriebene Lösungen.
+
+Aber vielleicht nochmal, dass die Hörer, wir reden jetzt über CRISPR DM und haben nur die ersten zwei, drei Phasen genannt.
+
+Die erste genau genommen Business Understanding, dann kommt das Data Understanding.
+
+Also ich hab bestimmte Datentöpfe gegeben, die ich für mein Problem nutzen kann und muss jetzt erstmal sichten und schauen, was hab ich da für Daten.
+
+Was für Felder, also ganzen oberflächlichen Eigenschaften, was für Datentypen, was sagen die aus, wie ist die Datenqualität bezogen auf das Problem, was ich habe, weil Datenqualität ist ja immer zweckgebunden für das Problem, was ich da gerade habe und baut dann Verständnis für auf.
+
+Und dann haben wir ja praktisch aus dieser Data Understanding, Data Preparation kommt ja die nächste Phase, das Modelling, wo wir im Endeffekt unsere Modellbildung haben.
+
+Also eigentlich dann... Genau, also erst die Datenaufbereitung, hat er gesagt, erst noch.
+
+Also ein sehr, sehr wichtiger Schritt, der oftmal ein bisschen übergangen wird, aber der, wie man aus vielen Projekten weiß, ja einen Großteil der Zeit ausmacht, wenn man nicht schon mit Deep Learning reingeht und sagt so, oh, das ist eh alles automatisiert, das machen meine Modelle.
+
+Dann hat man in der klassischen Art und Weise dieser Projektbearbeitung da sehr, sehr viel Mühe reingesteckt.
+
+Das Feature Engineering.
+
+Aus den Rohdaten aussagekräftige Merkmale ableiten und definieren.
+
+Und wie gesagt, dann das Modelling, wo wir unsere Modelle bauen.
+
+Also das sind dann wirklich der Part, wo wir praktisch die neuronalen Netze verwenden im Deep Learning.
+
+Dass dieses eigentliche Machine Learning, Data Mining, wenn ich wirklich aus den Daten und Modelle erzeuge, wo man eigentlich, wenn man aus der Wissenschaft kommt, sagt, da geht man auf, da hat man tolle Algorithmen, ist aber im Kern, also das, was am spannendsten ist aus wissenschaftlicher Sicht, also zumindest aus der Perspektive des maschinellen Lernens, aber am Ende in so einem Projekt nun, naja,
+
+als anteil der der wo der mensch wirklich eingreifen das meiste macht ja der algorithmus ein kleinerer teil klar ich brauche erfahrungen zu wissen welche algorithmen könnten dann passen haben wir schon sehr sehr viel darüber geredet bei der verarbeitung von sprache von bildern heutzutage ja bestimmte arten von deep learning von neuronalen netzen mit bestimmten architekturen wieder man einfach weiß dass die gut funktionieren könnten und dann dann wählt man die auch aus aber in der stelle finde ich mal einzigartig ganz ganz wichtig
+
+Oder beziehungsweise eine aussage das ist noch für die landschaftstheorien weil es gibt nicht den einen algorithmus der immer überall das der beste ist den ich immer nehmen könnte weil dann wäre es ja einfach dann würden wir den immer nehmen und alles ist gut.
+
+Und dann in der nächsten Phase, wenn wir an ein Modell denken, dass es passt, das ist ja die erste Überlegung, dann kommt die Evaluationsphase.
+
+Und damit ist gemeint, wie gut funktioniert das Modell auf unsere Fragestellung hin.
+
+Also der Rückschluss zum Business Understanding, natürlich dann logischerweise auch zum Data Understanding.
+
+Und da evaluieren wir, was müssen wir noch besser machen.
+
+Und da entsteht so eine Iteration an der Stelle.
+
+Genau.
+
+Und als allerletztes, wenn ich irgendwann mal festgestellt habe, ich habe hier
+
+ein oder mehrere modelle die die können mein problem lösen dann kommt das deployment mal kurz gesagt zu der zeit als es entwickelt wurde noch relativ knapp abgehandelt aber natürlich muss ich dann die die lösung zur anwendung bringen das kann eine reine präsentation beim kunden sein mit die ergebnisse präsentiere es kann aber auch ein stück software sein was ich dauerhaft im einsatz habe wenn es so ist dann ist natürlich wichtig so die die performance zum beispiel prognose modell ist was
+
+irgendwelche Ereignisse voraussagt, dann sollte ich im Betrieb dauerhaft überprüfen, ob die Funktionsfähigkeit dauerhaft und wie auch aufrechterhalten bleibt.
+
+Und im Deployment haben wir natürlich auch viel mittlerweile im jetzigen AI-Kontext mit sogenannten Microservices arbeiten, also Schnittstellen, die im Endeffekt den Dienst, den wir hier aus KI-Sicht bauen, dann in die Produkte implementieren lassen.
+
+Und dass wir die dann skaliert in den Markt bringen, wenn man das so nennen möchte.
+
+Und das ist mal genau an so einem Punkt, wo man sagen kann, Chris BM ist nicht falsch in dem Sinne.
+
+Die Phasen, die ich da beschrieben habe, sind sehr allgemein übersichtlich formuliert.
+
+Die sind heute immer noch gültig.
+
+Was aber zu der Zeit vielleicht noch nicht so intensiv berücksichtigt wurde, wie was jetzt heute notwendig ist in solchen Überlegungen der Infrastruktur.
+
+Wo läuft denn mein Algorithmus?
+
+Habe ich das in der Cloud?
+
+Habe ich das irgendwo auf irgendwelchen Servern verteilt oder liegt das bei mir?
+
+Zu der Zeit, wo das entwickelt wurde, hat man vielleicht noch gesagt, Mensch, man hat einen Server, da liegen die Daten, da lässt sich mein Algorithmus laufen, im schlimmsten Fall steht er bei mir auf dem Schreibtisch und dann ist gut.
+
+Heute muss man sich da wesentlich mehr Gedanken noch machen.
+
+Aktuell noch, das entwickelt sich vielleicht irgendwann soweit, dass ich Analysefähigkeit, wie Strom aus der Steckdose rausziehe, einfach sage, ja, ist irgendwo, läuft, fertig.
+
+Aber soweit sind wir noch nicht ganz.
+
+Insofern, das sind Ansatzpunkte für Weiterentwicklung, die Infrastruktur stärker berücksichtigen, die Datenmengen, die Größe der Daten, die Vielfältigkeit der Daten, also alles, was wir als Big Data charakterisiert haben, den verschiedenen Eigenschaften.
+
+Sowas wird da gar nicht adressiert.
+
+Aber es ist doch jetzt mal so ein runder Überblick, wie man von einer Vorstellung, dass man jetzt KI braucht, hin zu einem prototypischen Projekt, also so eine kleine Keimzelle kommt.
+
+Das fängt dann zusammenfassend nochmal an, dass ich mir zunächst mal überlege, in welchem Bereich
+
+möchte ich das denn machen?
+
+Will ich eher meine Produkte verbessern, erweitern?
+
+Will ich Kosten einsparen?
+
+Dann sammle ich zunächst mal Ideen über so ein Discovery Diamond Framework mit der Discovery-Phase zur Ideen-Einsammlung mit der Bewertung über den AI-Canvas und die eigentliche erste Projektumsetzung mache ich dann mit CrispDM.
+
+Und kann mich schuld oder oder nachfolge das ist mir ein sehr sehr wichtiger das anliegen zu sagen ich ich sollte auf jeden fall systematisch wissenschaftlich strukturiert daran gehen mit mit einem mit einem etablierten vorgehensmodell welches ist am ende wirklich ist ist würde ich sagen zweitrangig hauptsache ich habe ein bekanntes etabliertes modell und vielleicht können wir in einer späteren folge einfach mal.
+
+Weiterentwicklung mal vorstellen diskutieren schauen sind sie notwendig werden ob sie sich durchsetzen oder nicht ist es gibt da einige spannende weiterentwicklung die paar von denen den knackpunkt lieber gerade genannt haben wir noch weitere aufgreifen.
+
+Andere wichtiger punkt sind die verschiedenen rollen die du auch schon erwähnt hattest ich habe ja.
+
+Das war zu dem Zeitpunkt auch noch nicht so im Fokus, da hat es halt, ja, man hat schon gewusst, dass es meistens mehrere Menschen sind, die an so einem Projekt arbeiten, weil nicht einer alle Fähigkeiten meistens mit sich bringt, von der Fachdomäne bis von Datenbanken über Theorie.
+
+Und diese verschiedenen Rollen mal zu adressieren, was es da für verschiedene Aspekte gibt, das ist auch ein wichtiger Punkt.
+
+Und denke mal, irgendeine spätere Folge greifen wir mal solche Weiterentwicklungen an Frameworks auf.
+
+Wichtig ist nur, dass man systematisch da an solche Projekte herangeht.
+
+Und sich nicht von der maritimen Sprache blenden lässt.
+
+Genau.
+
+Das ist doch ein schöner Schlusswort.
+
+Wunderbar.
+
+Vielen Dank fürs Zuhören für die heutige Folge und ich hoffe, Sie sind nächste Woche wieder dabei.
+
+Bis dahin, ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

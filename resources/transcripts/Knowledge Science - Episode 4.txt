@@ -1,0 +1,359 @@
+ Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Herzlich willkommen zu unserem vierten Podcast dieser Woche.
+
+Letzte Woche haben wir über ein interessantes Modell gesprochen, das sogenannte GBT-3-Modell, das ja ein Sprachgenerierungsmodell ist und in dieser Folge würden wir jetzt gerne heute daran anknüpfen und es mal ein bisschen auch aus der theoretischen Sicht aufgreifen, was ist denn eigentlich oder was steckt denn eigentlich da dahinter, also das sogenannte Natural Language Processing.
+
+Aber zunächst noch mal das thema gbt3 wir hatten ja letzte woche ganz nette diskussionen mit dir mit der ki oder mit der simulierten ki wo man ja das erste gefühl hatte dass er wirklich eine extrem hohe intelligenz da ist in der gewissen weise und wir aber dann auch aufgezeigt haben dass man bestimmte fragen stellt dass es da nicht mehr ganz so ideal ist nicht wahr kasten das war ja
+
+Genau also ich denke mal gerade wenn wir wenn wir sehen dass das erzeugen von sprache das wirklich sinnvolle sätze rauskommen erfordert schon eine gewisse.
+
+Ja intelligenz ein ein ein verstehen nimmt man an das schöne verständliche sätze rauskommen und das kann das modell sehr gut es kommt wirklich sätze raus die im wesentlichen unserer.
+
+Grammatik entsprechen, die verständlich sind, die zum Inhalt zu passen scheinen, aber man sieht sehr schnell die Grenzen des Modells, wenn man wirklich nach konkreten Inhalten fragt, Zusammenhänge, die ein tieferes Textverständnis erfordern.
+
+Einfache Schlüsse, die wir schon Kindern in der Schule zutrauen, kann das Modell schon nicht mehr.
+
+Es gibt da viele Beispiele, wo Sachverhalte präsentiert werden und dann einfach ein völlig falscher Schluss gezogen wird.
+
+Egal, was für Domäne das sind, aus der Biologie, Physik, aus dem täglichen Leben, es kommt einfach Unsinn raus, der zwar grammatikalisch passt,
+
+aber sinnbefreit ist von der von der von dem schluss da sehen wir halt nicht die schwächen des modells es ist es zieht keine schlüsse.
+
+Ja das ist kann ich nur bestätigen ich habe die woche noch ein bisschen damit rumgespielt.
+
+Meine tochter musste in der schule einen witz erfinden und dann habe ich gesagt na ideal nehmen wir doch das modell und schreiben einfach über was sie gern witz haben möchte hab dann noch mal gesagt werden gern witz über das so ein pferd beteiligt sein und es sollte eine direkte rede dabei sein.
+
+Und das Ergebnis war desaströs, also man hatte keinen Zusammenhang, das sah zwar im ersten Moment aus wie ein Witz, aber irgendwie, also Sätze einwandfrei, keine Frage, aber wir waren dann immer am Grübeln, was ist denn jetzt eigentlich der Witz dahinter.
+
+Also man hat schon gemerkt, dass eigentlich hier vor allem halt diese Textgenerierung das große Thema dieses Netzes ist.
+
+Und das ist ja eigentlich auch ein modell zum text generieren also darunter ist es ja auch gedacht mit wahnsinnig vielen parametern oder texten die angelernt wurden und das kann es wirklich verdammt gut, aber darüber hinaus ist es in einzelnen spezialgebieten sicher sehr gut, aber in der breiten masse wie man das sozusagen erwarten hat man immer wieder themen wo man sagt,
+
+Da merkt man halt doch, dass es nur eine Wahrscheinlichkeit von prognostizierten Wörtern im Kontext zu dem gegebenen Satz ist.
+
+Wenn wir das mal als eine Anwendungsmöglichkeit des Natural Language Processing, des NLPs, also der Verarbeitung natürlicher Sprache, dann stellt sich ja die Frage, was gibt es denn da noch für Möglichkeiten?
+
+Sigurd, kannst du uns darüber erzählen, wie und wo wir das Natural Language Processing einsetzen können?
+
+Ich glaube, bevor ich darauf eingehe, würde ich gerne nochmal so den Rahmen stecken, warum wir jetzt dieses Thema auch heute nochmal so aufgreifen, weil ich der Meinung bin, dieses Natural Language Processing ist ja ein Teilgebiet der künstlichen Intelligenz, also wenn man das so als Gesamtgebiet sieht, hat man ja am Anfang in der ersten Episode genannt.
+
+Und warum ist das so wichtig oder warum ist dieses Thema so wichtig?
+
+ich sehe es deswegen so weil wir halt relativ viele informationen in unserem alltag halt in textform haben oder halt in natürlicher sprache haben das heißt also im unternehmen sagt man ja, dass die größte informationen in unstrukturierten dokumenten vorhanden sind ja das heißt also,
+
+Dokumente, die nicht direkt auswertbar sind durch einen Computer, die ich nicht direkt gliedern kann, die ich nicht durch eine Datenbank aufgreifen kann oder ähnliches, sondern die halt wirklich fortlaufender Text sind.
+
+Deswegen ist es schon ein großes Thema, dass man auch in dem Thema der künstlichen Intelligenz in diese Richtung schaut.
+
+Also wenn ich nicht richtig verstehe, sagen wir mal, ein Großteil der KI und des maschinellen Lernens bezieht sich zunächst erst mal auf strukturierte Daten.
+
+Ich habe bestimmte Attribute, Felder mit Werten belegt und wenn ich jetzt unstrukturierte Daten in Form von Text, gedrucktem Text oder gesprochener Sprache habe, dann muss ich das ja erst mal verarbeitbar für den Computer machen.
+
+Und dann ist doch letztendlich das Natural Language Processing genau der Baustein, der mir dabei hilft, oder?
+
+Ja genau würde ich auch so sagen das ist der baustein der das ganze so richtig interessant macht er ist ja praktisch auch die schnittstelle zwischen dem dem mensch und den algorithmen wenn wir über informationen reden also über wissensmanagement über.
+
+Das heißt es ist viel mehr als als nur diese diese nutzbar machen für den computer sondern wirklich ja für ki systeme die schnittstelle zum rechner die ich damit einfacher gestalten und machen kann.
+
+Ja, und dementsprechend haben wir natürlich unterschiedliche Gebiete auch in dem Natural Language Processing.
+
+Da gibt es das eine Thema, das Natural Language Understanding, die Spracherkennung, Speech Recognition, aber auch das, was wir letzte Woche gesehen haben in dem GBT3, die Textgenerierung, also das Feedback sozusagen aus einem Modell wieder raus und wieder in die Interaktion mit dem Menschen zu kommen, also Texte zu schreiben.
+
+Das heißt, wenn wir uns das Ganze, wir hatten das uns ja bei Machine Learning so als Modell vorgestellt, wo wir letztendlich eine Eingabe haben und die wird transferiert zu einer Ausgabe, dann können wir das hier ja auch wieder anwenden, nur diesmal ist die Eingabe die gesprochene oder geschriebene Sprache, die wird verarbeitet
+
+nutzbar gemacht für den Rechner und die Ausgabe kann dann sehr vielfältig sein.
+
+Das kann am Ende, sagen wir mal als letzte Stufe, tatsächlich wieder gesprochene Sprache sein.
+
+Dann müssten wir diese Sprache noch wieder erzeugen, Speech Generation oder synthetisieren.
+
+Oder aber es ist gedruckte Sprache.
+
+Es kann aber auch, es muss gar kein Text sein.
+
+Es können natürlich auch zum Beispiel bei einer Textklassifikation, es könnte sein, wir wollen eine Sentimentanalyse machen und einfach nur wissen, ob ein Text positiv-negativ ist.
+
+Also es muss kein reiner Text sein, der als Ausgabe rauskommt.
+
+Ja, und wenn das so schön aufkreist, wir haben das ja an vielen Stellen, wo wir im Unternehmen oder auch im privaten Bereich Informationen haben wollen.
+
+Also wenn ich zum Beispiel im Unternehmen ein Produkt habe und ich möchte gern wissen, ob ein Produkt bei dem Kunden gut ankommt oder nicht, dann habe ich ja heutzutage relativ viele Möglichkeiten durch die digitale Welt, also durch Social Media, in einen sehr direkten Kontakt mit dem Kunden zu kommen.
+
+Aber ich habe auch, und das ist natürlich dann die Konsequenz daraus, nicht nur fünf Kunden, über die ich dann schaue, sondern vielleicht 50.000, 100.000 Interaktionen, wo ich herausfinden muss, ist jetzt vielleicht eine Einstellung zu meinem Produkt positiv oder eher negativ.
+
+Aber das heißt, wir können ja zusammenfassen, Eingabe ist grundsätzlich gesprochen oder geschriebene Sprache.
+
+Die Ausgabe, das hängt dann von der Aufgabe ab, die wir bearbeiten wollen.
+
+Kann Sprache sein, gesprochen, geschrieben, es kann aber auch irgendwas anderes sein.
+
+Aber ganz wichtig, die Eingabe ist Sprache, natürliche Sprache.
+
+Warum eigentlich natürliche Sprache?
+
+Ja, das ist eine gute Frage.
+
+Da bin ich auf deine Antwort gespannt.
+
+Ja, also wir grenzen da ab in der Informatik, würden wir nicht als Gegenstück für unnatürliche Sprachen sprechen, sondern eher von formalen Sprachen.
+
+Mal ein Beispiel eine Programmiersprache.
+
+Das ist auch eine Sprache für den Informatiker, hat aber im Gegensatz zu von uns Menschen gesprochenen Sprache, dieser natürlichen Sprache, eine viel viel stärker eingegrenzte Wortschatz und viel striktere Regeln, wie wir sie nutzen und damit ist sie viel viel leichter zu verarbeiten.
+
+Das wollen wir eigentlich damit sagen.
+
+Wir haben hier die Sprache, die wir als Menschen verwenden und mit all den Schwierigkeiten, die so eine Sprache mit sich bringt,
+
+Also ich denke ja du meinst keine eindeutigkeit bei bestimmten begrifflich ganz ganz wichtig die eindeutigkeit.
+
+Das sind aber auch klassisches beispiel ironie humor ironie sarkasmus wahnsinnig schwer nicht nur führen für menschen ist teilweise schwer zu verstehen für den rechner natürlich umso mehr.
+
+Wenn er es überhaupt versteht.
+
+Wenn wir so drüber reden, hört sich das ja so an, als würden wir davon ausgehen, dass der Rechner uns wirklich versteht.
+
+Ja, das ist ein ganz heißes Thema.
+
+Für manche ist das Natural Language Understanding sogar eine eigene Disziplin.
+
+Manche würden es als Teilmenge des Natural Language Processing einordnen.
+
+Und das ist ja wirklich die Frage, ist es das Ziel, dass wir möchten, dass der Rechner dieses Verständnis hat, oder glauben wir nur, dass ein gewisses Verständnis wichtig ist, dass zum Beispiel ein Mensch ein Verständnis braucht, um bestimmte Aufgaben zu beantworten, und der Rechner nur
+
+scheinbar dieses Verständnis hat, weil er die Aufgaben, für die wir Verständnis bräuchten, einfach auch gut hinkriegt.
+
+Dann ist es nicht zwingend erforderlich, dass ein Rechner wirklich Verständnis hat und sich Mühe zu machen, das nachzuweisen, ist dann auch müßig, solange er die Aufgabe gut macht, zum Beispiel eine Übersetzung, wenn er es einfach hinkriegt, eine Texte gut zu übersetzen,
+
+dann kann es uns egal sein, ob er es verstanden hat oder nicht, wenn er aber Schlüsse ziehen soll, wenn er Fragen beantworten soll, da kommt nur Unsinn heraus, dann würden wir vielleicht feststellen, na da ist kein Verständnis, da brauchen wir das viel viel mehr als bei anderen Aufgaben.
+
+Wir hatten das ja in der ersten Episode mit dem vermeintlichen Chatbot Elisa, wo wir im Endeffekt einen Dialog simuliert haben und 1966, um das nochmal aufzugreifen, von Herrn Weizenbaum ja entwickelt wurde, über Regeln.
+
+Dass wir gesagt haben, oder er damals gesagt hat, man kann ja anhand von bestimmten Fragen und Konstellationen Regeln aufsetzen, um dann wieder vordefinierte Antworten zu geben oder halt die Antworten so zu definieren, dass sie in den Kontext vermeintlich so aussieht, als würde die Maschine einen verstehen.
+
+Aber tut sie überhaupt nicht in wirklichkeit weiß sie gar nichts aber das ist interessant dass du das mit den regeln sagst, denn ich denke daran kann man gut festmachen was so die die entwicklungsstufen des natural language processing sind in der anfangsphase hat man geglaubt dass man einfach durch durch das formulieren von regeln solche systeme aufbauen kann und und solche regeln finden wir auch heute noch in vielen verarbeitungsstufen die die gehen nicht weg werden aber, meiner meinung nach ersetzt durch durch andere methoden dann kommt so,
+
+Ein sehr starker Zweig, dass man versucht hat, durch statistische Aussagen, Worthäufigkeiten zum Beispiel, Sachen besser zu machen, dass ich diese Regeln nicht manuell schreiben muss, sondern dass ich die lernen kann.
+
+Das maschinelle Lernen kommt da zum Einsatz.
+
+Bis hin zu dem verstärkten Einsatz von neuronalen Netzen, von Deep Learning, wo ich sogar noch bessere Repräsentationen lerne.
+
+Ja, da sind ja vor allem jetzt gerade in der letzten Zeit so Stichwörter wie Attention Based Models, Transformers und so weiter gerade erhebt, also gerade so seit 2017, wo gerade diese Deep Learning Netze ja sozusagen den großen Boom für dieses Natural Language Processing eigentlich bedeuten.
+
+Und das ist ja auch die technologische Basis, die wir bei dem GPT-3 gesehen haben, dass man da auf solche Netze zurückgreift.
+
+Aber vielleicht fangen wir nochmal langsamer an und überlegen uns, wie kann denn Sprache überhaupt repräsentiert werden für den Rechner?
+
+Das ist interessant, weil er versteht ja kein Wort.
+
+Also er versteht ja nicht die Buchstaben und so weiter.
+
+Eine Maschine kann ja nur 0 und 1.
+
+Das heißt, wir müssen in dem Kontext ja eigentlich dafür sorgen, dass der Text, wenn wir also durch eine statistische Repräsentation, wie du es genannt hast, abbilden wollen, dann müssen wir dafür sorgen, dass der gegebene Text in Zahlen transferiert wird.
+
+Das können Zahlen, Matrizen oder Ähnliches sein.
+
+Und die ersten Ansätze ignorieren wir mal für die Speech Recognition, also die Erkennung versprochener Sprache, sondern bleiben auf den gedruckten Texten.
+
+Dann haben erste Ansätze, ganz ganz einfache Ansätze dieser Art, gesagt, naja, wir interessieren uns nur dafür, welche Wörter wie häufig vorkommen, ungeachtet der Position im Text, also die Reihenfolge sei da völlig
+
+spielt keine Rolle.
+
+Man spricht vom sogenannten Back-of-Words-Ansatz, also eine Multimenge von Wörtern und das typische an der Menge ist ja gerade, dass es keine Ordnung, keine Reihenfolge gibt.
+
+Das ist eine sehr, sehr grobe Repräsentation eines Texts, aber viele Aufgaben kann man damit gut lösen.
+
+Man konnte Textklassifikationsaufgaben, wo man
+
+meinetwegen nachrichten texte einer einer kategorie zugeordnet hat es ist ein sport oder politik artikel das klappt recht gut aber es hat natürlich gravierende nachteile sie wird ja, wir haben halt keinerlei kontext also es ist keine beziehung der wörter zueinander und auch wie sie in dem text stehen oder ähnliches ist nicht relevant, ja und die bedeutung der wörter selber sind ja nur repräsentation in nummern also da ist auch keine also ob ein auto die nummer 15 hat oder dann im nächsten text 28,
+
+ist eigentlich bei dieser art des vorgehens irrelevant aber nichtsdestotrotz liefern sie bei den einzelnen themen gute ergebnisse.
+
+Die verhältnisse der wörter zueinander ist natürlich schon drin aber nicht in welcher reihenfolge welcher nähe sie zueinander stehen ist ein riesen unterschied ob zwei wörter dicht aufeinander folgen oder nicht ganz ganz einfaches beispiel eine verneinung wenn ein nicht steht das würde vielleicht bei so einem ansatz unter den tisch fallen als wort was sowieso häufig vorkommende sogenannte stoppwörter
+
+Es sind wir schon sehr sehr tief dann in in den verarbeitungsstritten drin ansätze filtern solche wörter wie und oder nicht einfach raus weil sie in jedem text vorkommen sehr häufig dadurch wird aber eine verneinung,
+
+irgendwie unter den Tisch fallen.
+
+Und wenn ich mir vorstelle, ich habe sowas wie eine Sentimentanalyse, dann ist es ja entscheidend, ob jemand sagt, das Produkt ist gut oder nicht gut.
+
+Es kehrt ja die Bedeutung quasi um.
+
+Insofern kann man schon erkennen, warum es wichtig ist, den Kontext der Wörter mit zu berücksichtigen.
+
+Aber da hat sich ja dann in gewisser weise das nächste verfahren entwickelt ja also das ist ja auch so was man so in der historie sieht ja man hat sozusagen mit diesen einfachen verfahren angefangen die wörter zu zählen dann ins verhältnis zu setzen und dann ging das rüber zu sagen naja aber wir könnten ja auch wörter in eine ähnlichkeit bringen also wörter die einfach
+
+Ein Baum und ein Wald zum Beispiel, das sind beides Wörter, die so von ihrer Bedeutung her sehr ähnlich sind und könnten das ja in so einer Art von Vektorräumen repräsentieren.
+
+Sodass man sagt, wenn ein Wort in der Nähe eines anderen Wortes rein aus seiner mathematischen oder aus seiner räumlichen Position besteht, dann haben wir die gleiche Bedeutung.
+
+Und das sind so Verfahren wie die Word Embedding Based Deep Learning Models, die sich dann daraus aus diesem Mangel der Back-of-Words Models entwickelt haben.
+
+Ja, man muss halt noch mal sehen, dass diese Darstellung von Texten mit einfachen Worthäufigkeiten kommt ja ursprünglich erst im Information Retrieval, also aus der Suche, wie finde ich relevante Dokumente, und für diese Suche war es,
+
+Die meisten Teile machen erstmal völlig unerheblich, in welcher Reihenfolge die Wörter da stehen.
+
+Man war froh, wenn man Texte gefunden hat, wo überhaupt bestimmte Wörter enthalten waren oder vielleicht noch die Kombination.
+
+Man hat dann angefangen, die Gewichtung der Wörter natürlich zu bestimmen, dass ich erkannt habe, dass Wörter, die in manchen Dokumenten vorkommen, aber nicht in allen, für diese Dokumente wichtiger sind als Wörter, die generell überall stehen.
+
+Das hat man halt durch Gewichtung hingekriegt, aber es fehlte der Kontext, wie du gerade schön beschrieben hast, und das haben dann höhere, höherwertigere Modelle gemacht, die in der Anfangsphase sicherlich noch gar nicht berechenbar waren, hat aber die Rechenleistung nicht ausgereicht, um das zu machen.
+
+Deshalb hat man sich mit diesen einfachen Ansätzen begnügt, heutzutage aber mit mehr Möglichkeiten haben sich diese Verfahren immer weiterentwickelt.
+
+Die Frage ist, wofür kann man es anwenden?
+
+Also, weil wir haben so ein paar Themen schon angerissen, aber es ist sicher auch interessant, mal so ein bisschen in die Breite zu gehen, dass man sagt, okay, Sentimentanalyse ist das erste.
+
+Das sich natürlich jetzt vor allem auch, wenn man da ein bisschen recherchiert und ein bisschen liest, natürlich sehr präsent ist, weil wir einfach mit den Social-Media-Informationen viele, wie ich es schon gesagt habe, viele Informationen haben.
+
+Aber wir haben natürlich auch die Interaktion mit der Maschine oder wir versuchen natürlich Prozesse zu vereinfachen, indem wir zum Beispiel nicht einen direkten Kundensupport haben mit einer Person, sondern indem wir mit sogenannten Chatbots arbeiten oder Sprachassistenten, wenn wir jetzt von Telefonsprachassistenten denken, um einfach auch die Arbeitslast im Unternehmen zu reduzieren für die Erstkundenanfrage oder für einfachere Fragen oder ähnliches.
+
+Und dafür ist es natürlich schon ein großes Thema, auch mit diesem Natural Language Processing zu arbeiten, damit das Gefühl entsteht, auch für den Kunden, dass er nicht mit einer Maschine redet, sondern dass er seine Frage zu jeder Zeit beantwortet kriegt.
+
+Ja, es ist interessant, die ganzen Anwendungsmöglichkeiten oder einige davon mal zu diskutieren.
+
+In dem Zusammenhang finde ich es wichtig, ähnlich wie wir das beim Machine Learning ja auch schon gesehen haben und man das von Vorgehensmodellen für Datenanalysen kennt, dass man unterscheidet zwischen tatsächlichen Anwendungen, Problemstellungen aus der Anwendung und dann die Abbildung auf konkrete Aufgabentypen für die Analyse.
+
+Die Sentimentanalyse zum Beispiel ist eine Anwendung.
+
+Aus analytischer Sicht könnte man das als Klassifikationsproblem auffassen, Textklassifikation, Eingabe ist ein Text, Ausgabe ist, ist das Sentiment positiv, negativ, gemischt, neutral, ist also eine Klasse, also Textklassifikation, ganz klassischer Fall der Textklassifikation.
+
+Aber, und das ist jetzt der Nachteil, den wir haben beim Natural Language Processing, wenn es um Sprache geht, können diese Klassifikationsaufgaben unterschiedlich schwer sein.
+
+Also ich denke mal, eine Nachricht nach ihrer Rubrik einzusortieren oder ein Thema zuzuordnen, ist inhaltlich einfacher als
+
+solche stimmungen herauszulesen weil da ja die sprache wieder zuschlägt mit ihrer mehrdeutigkeit mit ja es ist ja mehr als nur die mehrdeutigkeit es ist umgangssprache es sind weggelassene wörter es sind probleme mit der mit der rechtschreibung mit der grammatik wenn einfach fehler da drin sind bezüge referenzen in den in den texten die halt irgendwie nicht richtig aufgelöst sind.
+
+Ja.
+
+Wenn wir aber weiter in die Anwendungsgebiete schauen, weil das ist sicher interessant, wenn wir da nochmal andere Themen mit aufgreifen, was ich ein sehr schönes Anwendungsgebiet finde, ist natürlich auch Textzusammenfassungen.
+
+Weil das natürlich, wenn man überlegt, wie viele Informationen man heutzutage eigentlich lesen muss, und wenn ich die Möglichkeit habe, mir über so ein Verfahren die Texte kleiner zusammenzufassen, da gibt's ja auch Anbieter, die ganze Bücher zusammenfassen, die ich dann mit fünf Seiten lese, die werden auch teilweise mit Algorithmen, also mit künstlichen Intelligenzmethoden, das natural language processing,
+
+Dann zusammengefasst, also das ist sicher ein praktischer Anwendungsfall, der sehr spannend ist.
+
+Textgeneration haben wir natürlich schon gesagt, also die Texterstellung, die ist vor allem dann wichtig, wenn ich zum Beispiel eine Wissensbasis habe und der Kunde zum Beispiel über einen Chatbot anfragt.
+
+Und ich hab dann aus der Wissensbasis sozusagen eine Antwort und der muss aber in dem Kontext wieder schön antworten.
+
+Dann muss er ja praktisch aus dieser Wissensbasis den Inhalt rauslesen und dann aber auch noch schön einen Text außenrum schreiben, dass die Antwort in den Sprachverlauf passt.
+
+Wenn man das dann weiter zerlegt, dann haben wir ja wieder unterschiedliche Bausteine.
+
+Das eine ist das Erstellen und Befüllen einer Wissensbasis.
+
+Da kommen solche Bausteine wie die Informationsextraktion hinzu, dass ich aus den Texten diese Wissensfragmente extrahiere und damit eine Wissensbasis befülle.
+
+Dann kommen andere KI-Technologien, wie ich die richtigen Wissensfragmente finde, wie ich eventuell Schlüsse daraus ziehe, um Zusammenhänge, die nicht explizit genannt sind, aber sich aus den Sachverhalten ergeben abzuleiten und dann daraus dann tatsächlich Spracherzeugung wieder eine Antwort zu generieren.
+
+Bei dem GPT-3, um diesen Bogen nochmal kurz zu spannen, hat man ja versucht, das alles zu umgehen und in einem Rutsch zu machen, indem ich einfach eine Riesenmenge an Eingabe habe und dann direkt die Antwort daraus ableite.
+
+Und da ist natürlich die heiße Diskussion, geht das, muss ich das Netz nur groß genug machen oder brauche ich diese Zwischenschritte, dass ich explizit Wissensfragmente extrahiere, Schlüsse ziehe, sinnvoll kombiniere und dann erst die Antwort generiere.
+
+Aber ich finde es schön, in den Gedanken mal so ein bisschen zu spinnen und zu sagen, was für einen Mehrwert sowas in der Gesellschaft oder in den Unternehmen haben kann.
+
+Und wenn wir das betrachten, wenn wir die Möglichkeit hätten, einen Großteil der Informationen in einem Unternehmen in unstrukturierten Daten, und ich hatte es ja gesagt, das sind ungefähr 80 Prozent der Daten, liegt in diesen Dokumenten.
+
+über so ein verfahren wie das information extraction dann herauszuziehen in eine wissensbasis zu legen dann haben wir nichts anderes als dass wir ein ein wissensmanagement im unternehmen aufbauen das vielleicht automatisiert das auch
+
+fortleben kann, was ja das große Problem des statischen Wissensmanagements in Form von Wiki-Seiten oder ähnliches erstellt, dass es ja nicht fortlebt, sondern da muss ja immer aktiv jemand dort sitzen und das Pflegen, Nachbessern, sicherstellen, dass die Informationen noch passen.
+
+Und daraus dann auch in einer gewissen Weise auch gleich den Schnittpunkt zu der Kommunikation zu den Mitarbeitern herstellen, dass sie, wenn sie eine Frage haben, diese Wissensbasis in der Umgebung, in dem sie sich bewegen, auch direkt ansprechen können.
+
+Das ist eine ganz, ganz tolle Anwendung, schon allein was die Technik angeht, um das zu machen.
+
+Ich selbst bin ja Informatiker, ich finde es spannend, sich mit diesen Methoden auseinanderzusetzen, wirft aber zeitgleich noch ganz, ganz andere Fragen auf, also ethischer Natur, Datenschutz, wie komme ich an, rein technisch komme ich an die Daten, aber wie ist denn das, wenn ich dazu die ganze E-Mail-Kommunikation zum Beispiel auch verwenden muss?
+
+Es kommt hinzu eine kulturelle aspekte manche mitarbeiter möchten das vielleicht gar nicht so ein aspekt information hiding ich möchte gar nicht dass das alle wissen was ich weiß mache ich mich damit überflüssig.
+
+Ja das ist sicher ein thema der auch in den change mit rein muss da kommen wieder was wir auch gesagt haben mit den ängsten der künstlichen intelligenz.
+
+Wenn alles wissen da ist und ich das verwerten kann bin ich dann vielleicht überflüssig.
+
+Diese angst und sorge ist hier denke ich viel greifbarer als jetzt zu denken mensch ich habe eine ki eine generelle ki die irgendwo die weltherrschaft an sich reißen könnte ist glaube ich das jetzt viel viel naheliegende.
+
+Ja und und wirkt sich auch viel starker aus weil das führt natürlich dazu dass man themen in einem unternehmen nicht so schnell angeht weil man diese ängste ja erst mal abbauen muss und dort im endeffekt hinkommen muss dass man sagen kann ich kann überhaupt prototypisch beispielhaft an kleineren elementen arbeiten.
+
+Aber ansonsten, dieses Thema der Wissenssicherung als Teilgebiete des Wissensmanagements ist natürlich ein sehr aktuelles, wichtiges Thema.
+
+Wenn jetzt Mitarbeiter ein Unternehmen verlassen, in Ruhestand gehen, einfach aussteigen, weil sie in eine andere Firma wechseln, kann ich auf die Art und Weise ja die Existenz einer Firma absichern, die ja sich darauf verlassen muss, dass das Wissen, was teilweise nur implizit in den Köpfen der Menschen ist, irgendwo, ich übertrage kann auf einen neuen Mitarbeiter oder eine Mitarbeiterin.
+
+Und da ist der Ursprung, warum wir den Podcast aufgesetzt haben.
+
+Knowledge Science.
+
+Ich erinnere mich.
+
+Das war ja so ein bisschen die Überlegung daraus, dass wir gesagt haben, das ist ja eigentlich so der große Mehrwert.
+
+Das ist der Grund, warum wir es Knowledge Science nennen, weil das unsere Zielsetzung ist und nicht nur in Häkchen künstliche Intelligenz oder maschinelles Lernen.
+
+Unsere Zielsetzung ist insbesondere dieser Anwendungsbereich, das Wissensmanagement und Wissen aus Daten abzuleiten für diesen Zweck.
+
+Lass uns nochmal zurückspringen zu letzter Woche nochmal zu dem GPT-3 und was wir dort gemacht haben.
+
+Wir sind ja hergegangen und saßen erstmal an dem Rechner und haben mit dem Rechner, also mit dem Modell gespielt, in dem wir Texte eingetippt haben.
+
+Also dieser ganze Dialog, der dort aufgezeigt war, war ja ein Tippen des Textes.
+
+Und dann kamen die Antworten.
+
+Dann haben wir ein bisschen damit gespielt, also Parameter ein bisschen geändert.
+
+Und dann sind wir ja hergegangen und haben uns überlegt wie kriegen wir das gut in den podcast rein und sind dann in eine in eine sprach synthese übergegangen haben gesagt wir nehmen den text der hier aus dem modell kam und zeigen das direkt dann als sprache wieder.
+
+Ja das sind wichtige wichtige punkte das heißt wenn wir das werden das ja so als als prozess dargestellt.
+
+Und eingangs eingang für den prozess ist sprache gesprochen.
+
+oder in Textform schon vorliegend.
+
+Die wird, wie wir gerade gesehen haben, transformiert.
+
+nutzbar gemacht im Rechner, es kommen Antworten, es können Antworten, also Texte herauskommen und am Ende muss wieder eine Spracherzeugung stattfinden, wenn ich denn halt wirklich ein System habe wie beim Chatbot, was mit mir spricht letztendlich.
+
+Das heißt, wir können oder sollten meiner Meinung nach in den folgenden Episoden zwei Dinge aufgreifen.
+
+Das eine ist, am Anfang des Prozesses nochmal zu durchleuchten, wie komme ich tatsächlich von Text
+
+in seiner Rohform, zu einer guten Repräsentation.
+
+Was sind da für Schritte erforderlich?
+
+Das haben wir jetzt in Teilen angesprochen, aber da sind sehr, sehr viele Teilschritte erforderlich.
+
+Das sollte man mal diskutieren.
+
+Und das zweite, natürlich sehr, sehr spannendes Thema, die Spracherzeugung, die Synthetisierung von Sprache, also gesprochenem Wort, aus Texten.
+
+Unter den Nebenbedingungen, dass es für den Menschen
+
+Angenehm ist der punkt ist ja eine eine sprache die zum beispiel flaches oder die nicht schön modelliert ist die empfinden wir sofort als störend als als maschine und dann empfinden wir eine gewisse abwehrhaltung also das ist immer der nebeneffekt der noch dazugehören.
+
+Und ich glaube nicht nur das, ich glaube, wenn jetzt das eine Maschine ist, die gestochen Hochdeutsch spricht, das käme mir ganz gelegen, ich bin so aufgewachsen, aber wenn jetzt da ein Franke, ein Bayer, ein Schwabe irgendwo vor diesem Gerät sitzt, der möchte vielleicht eine Sprache hören, die näher an seinem Dialekt dran ist.
+
+Sicher.
+
+Aber ich denke, das ist ein guter Plan für die nächsten Episoden.
+
+Und ich hoffe, es war für Sie wieder interessant heute und freuen uns auf die Zuhörer dann für die nächste Episode natürlich auch.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

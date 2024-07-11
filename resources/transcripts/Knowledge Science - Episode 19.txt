@@ -1,0 +1,419 @@
+ Hallo und herzlich willkommen.
+
+Letzte Woche haben wir Transfer Learning vertieft.
+
+Diese Woche wollen wir auf die Problematik der Datenverfügbarkeit in Unternehmen und damit verbundenen Techniken der synthetischen Datengenerierung eingehen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, diese Woche 19.
+
+Sendung.
+
+Wir nähern uns der 20 ganz stark an.
+
+Können wir eine kleine Feier bei der 20.
+
+Sendung machen?
+
+Müssen wir mal schauen, was wir da machen.
+
+Vielleicht ein spezielles Thema, spannendes Thema.
+
+Wollen wir am Ende der Sendung vielleicht mal ein bisschen anteasern.
+
+Diese Woche reden wir aber über Daten.
+
+Wir hatten ja letzte Woche schon drüber gesprochen, dass wir gesagt haben, Transfer Learning hilft uns ja in einer gewissen Weise, dass wir Daten, die wir gar nicht haben, also dass wir weniger Daten brauchen, um uns gute Modelle zu bauen oder erstellen zu lassen.
+
+Das bedeutet, dass wir im Endeffekt auf Modelle anderer zurückgreifen und dann mit geringeren Daten, die wir selber erzeugen oder die wir woanders herbekommen, dann ein Modell für uns anpassen.
+
+Aber das ist ja nicht nur die einzige Technik, wie wir umgehen können, wenn wir wenig Daten haben.
+
+Genau, wir können auch Daten oder das kleine bisschen an Daten, was wir haben, anreichern, sprich von Data Augmentation, synthetische Datengenerierung, wie wir einfach aus einer kleineren Menge an Daten mehr Daten für den Lernprozess erstellen.
+
+Bevor wir aber darauf eingehen, vielleicht sollten wir noch mal überlegen, warum ist es denn eigentlich so wichtig, dass wir viele Daten haben?
+
+Es ist wichtig, dass wir darüber sprechen, weil sonst reden wir einfach, okay, wir nehmen synthetische Daten, alles ist gut.
+
+Es gibt auch andere Wege, synthetische oder künstliche Daten zu erzeugen.
+
+Du kannst dich ja mal erinnern, wir hatten ja bei uns im Studiengang auch mal ein Planspiel in SAP, wo wir Studenten halt im Endeffekt spielen haben lassen, also Prozesse durchleben haben lassen und diese Daten wiederum verwendet haben, die hier künstlich erzeugt sind.
+
+Aber die Frage tatsächlich, die du nennst, ist, warum brauchen wir das Ganze?
+
+Warum kommen wir nicht mit den wenig Daten zurecht?
+
+Wir hatten ja bei dem Transfer-Learning darüber gesprochen, dass wir gesagt haben, es sind ja riesige Netze, die wir mittlerweile aufbauen im Deep-Learning-Bereich und dass wir daher die Schwierigkeit haben, dass wenn wir große Netze mit vielen Parametern haben, dass wir dann dementsprechend auch viele Daten brauchen.
+
+Genau also wo wir uns sicherlich erstmal beschäftigen müssen ist das thema overfitting überanpassung vereinfacht gesagt lernen wir daten auswendig.
+
+So was als solches erstmal nicht nichts schlimmes ist der mensch macht das oft man merkt sich einfach situationen.
+
+und kann die dann auf den nächsten Fall übertragen.
+
+Das ist im Einzelfall ja vielleicht gut, auch wenn ich nur ein einziges Beispiel habe.
+
+Das ist, wenn es wiederkommt, ich entsprechend darauf reagieren kann.
+
+Wenn man das nicht macht, sagen wir, lernt der Mensch denn gar nichts?
+
+Muss er den Fehler mehrfach machen?
+
+Reicht es nicht, wenn er ihn einmal macht?
+
+Also insofern ist das an und für sich eine gute Eigenschaft, auch Einzelfälle sich daran zu erinnern und entsprechend sich zu verhalten.
+
+Aber im richtigen größeren Kontext und Lernszenario wollen wir mehr als das.
+
+Denn wir müssen uns einfach mal klar machen, dass ein Computer kann einzelne Datenpunkte speichern und abrufen extrem gut.
+
+Das hat für uns noch nichts mit Lernen zu tun, dass wir einfach speichern, abrufen, auswendig lernen.
+
+Was wir ja wollen ist, dass wir auch
+
+in ähnlichen Situationen, die nicht exakt identisch sind, dass wir verallgemeinern können, dass wir in ähnlichen Situationen auch entsprechend Antworten finden, unsere Zielgröße bestimmen können und dieses verallgemeinern, generalisieren können, das ist das, was wir möchten.
+
+Das heißt, wir wollen nicht nur auf den Daten, die wir zum Trainieren, zum Lernen unserer Modelle nutzen, gut sein, sondern auch auf neuen Daten, die wir bislang noch nicht gesehen hatten.
+
+Die, und da unterscheidet sich genau dieser Punkt Transfer Learning oder klassisches überwachtes Lernen in unserem Beispiel hier, kann ich, habe ich die Daten, die neuen Daten, kommen die aus derselben Grundgesamtheit, aus derselben Art und Weise, wie die Daten verteilt sind?
+
+Oder ist das vielleicht eine neue, andere Anwendungsdomäne?
+
+Dann hatten wir genau diesen Punkt, den wir letzte Woche diskutiert haben.
+
+So, und dieses Overfitting, das ist bei jeglicher Art des Lernens aus Daten ein großes Thema.
+
+Das muss ich zumindest erkennen, ob es eintritt, und ich müsste Maßnahmen haben, um es zu verhindern.
+
+Und da gibt es verschiedenste Techniken.
+
+Und eine Variante ist natürlich, dass ich sage, wenn mein Modell sehr, sehr groß und komplex ist, wie bei Deep Learning es oft der Fall ist mit vielen Parametern, dann hat es sehr viel Kapazität, Punkte auswendig zu lernen.
+
+Und wenn ich dann zu wenig Daten habe und keine Maßnahmen, das zu verhindern, dann passiert es halt einfach, dass die wenigen Datenpunkte gespeichert werden,
+
+Die ist die die die leistungsfähigkeit für diese paar punkte ist extrem gut ob ich da jetzt text generiere spracherzeugung ob ich bilder reproduziere diese erscheint die leistung wunderbar aber auf neuen neuen daten in neuen kontexten ist es auf einmal viel viel viel viel schlechter.
+
+Ja die frage ist wie kann ich also zum beispiel das verhindern indem ich einfach mehr daten habe so dass das modell nicht gar nicht erst die chance hat die einzelnen punkte auswendig zu lernen.
+
+Also das Overfitting ist natürlich wirklich ein Thema, das man in jedem der Projekte hat und das ganz akribisch beobachtet.
+
+Und mir fällt auch auf, gerade auch in den studentischen Teams, dass es auch vom Verständnis her immer echt schwierig ist, zu interpretieren, sind wir jetzt in einem Overfitting oder nicht.
+
+Und wie du sagst, wir gehen ja da so bestimmte Wege bei unseren Projekten, dass wir sagen, wir teilen die Daten auf, also wir nehmen unsere Grundgesamtheit, teilen die Daten auf und legen erstmal so ein Set an Daten weg und sagen, das zeigen wir erstmal dem Modell gar nicht und dann
+
+prüfen wir, evaluieren hinterher, wenn das Modell einmal gelernt hat, ob er jetzt auswendig gelernt hat oder nicht.
+
+Und das tun wir, indem wir den weggelegten Datensatz nehmen, den dann in das Modell einspielen und schauen, wie gut er mit den nicht bekannten Daten umgeht.
+
+Und das ist das, was du gerade gemeint hast mit dem Weglaufen oder dass die nicht voneinander auseinander driften.
+
+Das sind ja dadurch, dass dann die Ergebnisse aus einem Trainingsdatensatz anders aussieht, vielleicht wesentlich besser.
+
+als praktisch auf einem Datensatz, der im Endeffekt nicht bekannt ist und man damit relativ gut erkennen kann, ob overfitted oder nicht.
+
+Genau, also wenn ich einen signifikanten Unterschied zwischen der Leistung auf den, Performance auf den Trainingsdaten und auf diesen bewusst zurückgelegten Testdaten habe, dann kann ich davon ausgehen, das ist eine Form von Überanpassung von Overfitting.
+
+Frage an dich, interessante Frage, hatte ich die Woche mal.
+
+Overfitting.
+
+Wenn wir in den Validierungsdaten, die er nicht kennt, wesentlich besser sind als in den Trainingsdaten, die er kennt, haben wir ein Overfitting oder nicht?
+
+Puh, da würde ich aber nur erstmal bedenken, das ist möglicherweise Zufall, aber es ist einfach ein
+
+zufälliger Konstellation, dass er in den Fällen besser ist.
+
+Ich würde erst mal hinterfragen, wenn ich wirklich so viel besser bin, ob bei der Aufteilung der Daten wirklich alles mit rechten Dingen zugegangen ist, ob die wirklich zufällig durchmischt sind, ob es da irgendwelche Systematiken bei der Erstellung gab, die ich irgendwie übersehen habe.
+
+Es ist selten der fall also ich würde es nicht als als overfitting bezeichnen wie siehst du es hätte ich genau so interpretiert hätte ich auch gesagt dass das eher was damit zu tun hat wie ich meine daten aufbereitet habe und ich da vielleicht im in der vorbereitung als menschen einen fehler gemacht haben daten gemischt hätte oder ähnliches das dann zu so einem effekt kommt oder dass es halt einfach zufall ist das ist halt einfach an der stelle zufällig mit denen set an daten besser funktioniert als mit den anderen
+
+Aber nochmal zurück zu unserem thema eigentlich war es nur zum ober für den kleinen einschub.
+
+Ja ich wollte das nämlich nochmal kurz zusammenfassen das war eigentlich mal festhalten das ist ein ganz ganz elementarer punkt was du angesprochen hattest das aufteilen der daten ich habe eine gesamte menge an daten in überwachten lernszenario mit mit label mit zielgröße.
+
+Und ich teile das auf.
+
+Viele machen sowas.
+
+Ich 80, 20, 70, 30 Prozent.
+
+Ich sage, okay, das sind meine Testdaten.
+
+Die schaue ich mir wirklich nicht an.
+
+Erst ganz am Ende, wenn ich meine, ich habe jetzt ein Modell, was ich vielleicht zur Anwendung bringen könnte.
+
+So, da lege ich die zur Seite.
+
+Und die darf ich wirklich nicht anschauen.
+
+Wenn ich ganz, ganz strikt bin, auch noch nicht mal beim Data Understanding, beim Schauen habe ich Ausreißer, fehlende Werte.
+
+Die lege ich wirklich zur Seite.
+
+Und dann habe ich aber auch noch den Prozess während des Lernens.
+
+Da findet ja auch eine Validierung statt, dass ich schaue, welches Modell nehme ich, welches ist denn besser, welche Parametereinstellungen nutze ich.
+
+Das heißt, die Daten, die ich eigentlich zum Trainieren möchte, teile ich auch nochmal wieder auf in Trainings- und Validierungsmengen.
+
+Um sowas geschickt zu machen, gibt es solche Techniken wie die Kreuzvalidierung, weil irgendwann die verfügbare Datenmenge immer kleiner wird und irgendwann habe ich gar nichts mehr zum Lernen.
+
+Und da greifen wir wieder genau an den punkt an dass sie sagen ich habe so wenig daten wie kriege ich es denn hin also es gibt szenarien da habe ich viele daten.
+
+Die die daten als solches oft gab mal gar nicht das problem sondern die zielgröße die label sind in vielen situationen dass das problem ist ja texte habe ich wahnsinnig viele aber mit meiner sentimentanalyse aber woher weiß ich ob die jetzt positiv negativ sind da muss jemand gelesen haben.
+
+So, wie kriege ich es jetzt vielleicht hin, dass ich trotzdem die begrenzte Menge an verfügbaren gelabelten Daten irgendwie vergrößern kann?
+
+Da kommt ja das Data-Argumentation ins Spiel.
+
+Was eine Überlegung ist zu sagen, wir haben eine gewisse Anzahl an Daten oder Datensätze,
+
+Und jetzt versuchen wir sozusagen künstliche daten einzuspielen oder daraus zu generieren die so ähnlich sind wie die daten die wir haben.
+
+Und da gibt es ja verschiedene verfahren also ich glaube ganz plastisch ist das wenn man mit den bildern sich das jetzt vorstellt bevor wir dann in text gehen was ja eher die domäne ist in dem wir uns bewegen wollen aber wenn wir jetzt sagen mit bildern ist es glaube ich einfacher sich klar kann man sich sehr gut vorstellen und da ist relativ intuitiv.
+
+Wir können es einfach mal einfach mal vorstellen wir haben wollen bilder wir wollen sagen wir mal wieder unser klassisches beispiel wir wollen tiere auf bildern erkennen dann habe ich ganz viele bilder von was ich elefanten löwen zebras alles schön gut und wie kriege ich jetzt viel weiter rein.
+
+So, ich kann die Bilder... Ja, wir können auch anfangen.
+
+Wir können die ein bisschen verzerren.
+
+Ich kann zum Beispiel die ein bisschen größer, ein bisschen kleiner machen.
+
+Ich kann reinzoomen.
+
+Ich kann einfach außen was dranhängen.
+
+Ich kann es rotieren, spiegeln, drehen.
+
+Ich kann bei den Farbwerten ein bisschen rumspielen, dass ich Kontrast erhöhe.
+
+Also ich kann wahnsinnig viel verändern.
+
+Leicht mit einfacher Bildverarbeitung.
+
+Und habe einen Haufen von neuen Bildern.
+
+Kann dann das überhaupt was bringen?
+
+Anscheinend schon, ja.
+
+Also wenn man sich das anschaut, es wirkt schon, wenn man das macht in den Modellen, dass die dadurch erstens robuster werden, also das heißt auch mit fremden Daten besser zurechtkommen, also nicht zu overfitten und auch qualitativ besser werden.
+
+Man muss ja überlegen, für den Computer hat er zwei Effekte, dieses Verändern der Bilder, wenn man sich das anhand der Bilder vorstellen möchte.
+
+Der erste Effekt ist ja, der Computer erkennt ja nicht, ah ja, das ist das gleiche Bild, das ist ja nur zwei Grad gedreht, sondern für den Computer sind das einfach neue Zahlen.
+
+Also das Bild wird ja auch in Zahlen transferiert und dann verarbeitet, das heißt für den ist das einfach ein neues Bild, Punkt.
+
+Das ist der eine Effekt.
+
+Und der andere Effekt ist, wir erzeugen ja durch das Drehen oder das Verändern, verändern wir ja auch die Position des Objektes auf dem Bild, das vielleicht die Merkmale darstellt.
+
+Oder das wir vielleicht erkennen wollen, also den Hund oder das Pferd.
+
+Und wenn wir das verändern, dann kann er sozusagen nicht mehr die Position auswendig lernen.
+
+Also so aus dem Motto, naja, Hunde sind immer zwei Zentimeter vom oberen Bildrand und drei Zentimeter vom linken Bildrand entfernt.
+
+Das könnte er ja lernen, wenn wir immer die gleichen Proportionen, genau den Hund immer an der gleichen Stelle haben.
+
+Ja oder stell dir vor es hätte es hätte eine person die ganzen hunde bilder gemacht und die kamera hat immer irgendwo oben rechts und art wasser zeichen oder so ein datum in irgendwie so einer pinkfarbenen schrift und er weiß nur okay wenn wenn ich das das siebte pixel von unten,
+
+von rechts gezählt, irgendwie rosa ist, dann ist es ein Hund.
+
+Das sind manchmal so Kleinigkeiten.
+
+Das ist ja genau wieder das Thema Overfitting, dass irgendwelche Sonderheiten, spezielle Sachen in den Daten, die vielleicht mit der eigentlichen Thematik gar nichts zu tun haben, dass diese Besonderheiten gefunden und auswendig gelernt werden.
+
+Und durch eine entsprechende Verarbeitung zwingen wir den Lernalgorithmus, die wirklich wichtigen Sachen zu erkennen.
+
+Und durch dieses Drehen sorgen wir halt dafür, dass es halt nicht mehr in den gleichen Positionen ist.
+
+Oder, dass im Endeffekt, wenn du es jetzt so siehst, wenn ich es verzerr oder rausnehme oder größer mache, dass dann solche Wasserzeichen verschwinden oder nicht mehr im Bild sind oder wie auch immer, sodass ich eine höhere Variation drin habe.
+
+Genau, ich möchte ja auch ein Tier erkennen können, egal wo es auf dem Bild ist, oder was ein Mensch gut kann.
+
+Ich kann ja meinetwegen Zebra erkennen, egal ob der Kopf mit drauf ist oder nicht.
+
+Ich kann Teile eines Tieres sehen und sehe einfach, ich kann zwar nicht immer korrekt, aber relativ gut erkennen, auch wenn ein Teil verdeckt ist, ja, das ist dieses Tier.
+
+Wenn aber der Algorithmus irgendwie das ganze Tier braucht, nicht verdeckt, wird es schwierig.
+
+Und dadurch wenn ich auch so ausschnitte mal aus dem bild nur nehmen dass ich einfach zufällig irgendwie so dieses cropping da irgendwo so ein teilbereich raus schneide.
+
+Das vielleicht auf einmal nur noch so der hintere teil eines tieres drauf ist denn ja erlaube ich dem algorithmus auch sowas zu lernen.
+
+Ja.
+
+Man sieht also, dass dieses Data Augmentation, dass es gar nichts Komplexes grundsätzlich erstmal ist, sondern wir versuchen einfach eine Variation reinzubringen.
+
+Kennen wir vielleicht auch vom Kindergeburtstag, wenn die Kinder sozusagen so Memory-Bilder erraten sollen.
+
+Also erst ist alles dunkel und mit dem Klick tust du den ersten Kachel aufdecken und so weiter und irgendwann sollen sie erkennen, was dahinter versteckt ist.
+
+Und so ähnlich kann man das hier auch machen.
+
+Ich kann das Bild nehmen und Teile abdecken, dann wieder aufdecken, dazunehmen, wie du gesagt hast, Größe verändern und so weiter.
+
+Und hab dadurch natürlich bei jeder Veränderung wieder ein neues Bild, also einen neuen Datensatz.
+
+Was dazu führt, dass wir unseren Datensatz, ich möchte jetzt nicht aufblähen sagen, aber vergrößern können.
+
+Und auch natürlich diese größere Vielfalt ist es.
+
+Es ist ja nicht identisch, sondern wirklich sind Sachen anders da, das kann man sich ja so gut vorstellen, wie wir es geschildert haben, und dadurch wird das Lernverfahren der Lernalgorithmus gezwungen, die entscheidenden Merkmale zu extrahieren und daran die Objekte, die Klassen zu erkennen, was wir halt vorhaben.
+
+Die frage ist jetzt mal bei bildern ist das standard das ist einfache bild verarbeitungsoperation die man ja schon zufällig auswählen und drüber laufen lassen kann um solche sachen zu erzeugen wie ist es denn bei texten möglich wie können wir den texte so verändern das ist ja von der vorstellung deutlich schwieriger.
+
+Wobei der ein oder andere Aspekt, der lässt sich relativ klar dann und leicht auch rausfinden.
+
+Der erste Aspekt ist natürlich, wenn wir einen Satz nehmen mit Fachbegriffen drin oder anderen Wörtern, dass wir Synonyme verwenden.
+
+Dass wir einfach sagen, wir nehmen ein Lexikon und haben im Endeffekt dann Wörter mit ihren Synonymen, Synonymlexikon und suchen einfach alle heraus und tauschen die einfach beliebig aus.
+
+Also ich könnte aber eine zufällige anzahl von wörtern definieren ich sage mir ich finde mal so viel wörter im text und ersetze die mit mit synonym.
+
+Genau das ist sicherlich eine relativ einfache und wichtige geschichte da frage ich mich jetzt natürlich nur bringt denn das was wenn ich am ende sowieso die wörter abbilde auf auf wörtern beddings und synonym vielleicht dieselbe repräsentation innerhalb eines wörtern beddings hat oder eine fast identische bringt es am ende so viel.
+
+Also ich denke mal, die identische wird es nicht haben.
+
+Also die völlig identische Repräsentation sollte es, in meinen Augen zumindest, nicht haben.
+
+Also das heißt, eine leichte Variation ist ja drin.
+
+Und wenn man das jetzt im Endeffekt im Vergleich zu den Bildern sieht, ist ja auch die leichte Variation schon hilfreich.
+
+Deswegen kann ich mir gut vorstellen, dass das funktioniert.
+
+Aber es gibt ja auch andere Ansätze, wo man dann sagt, naja, eine andere Möglichkeit wäre ja zum Beispiel, die Wörter einfach durchzumischen.
+
+Also sozusagen den Satz nicht mehr Satz zu lassen, sondern das Wort, was vorne steht oder eine beliebige Anzahl an Wörtern im Satz einfach auszutauschen.
+
+Kann natürlich gefährlich sein, weil durch, also anders als bei Bildern, wo man sagt, okay, man sieht vielleicht nur in Teilen nicht.
+
+Ja gut, wenn ich jetzt alle Punkte durchmische, also ich weiß nicht, ob man auf die Idee käme, ein Bild, alle Punkte mal so zu durchmischen, dann hat man so ein Rauschen da.
+
+Macht man ja eher nicht, und das ist bei Wörtern, es ist in Teilen denkbar, aber es ist extrem gefährlich, weil ja auch, gerade wenn man eine Negation hat, in die auf einmal vor dem falschen Wort steht, ja eine komplett andere Bedeutung da sein könnte.
+
+Vielleicht fangen wir mal ab vielleicht fangen wir mal einfach mal rudimentärer an und sagen wie gehen leute vor wenn sie texte versuchen zu verändern und da kann man ja die verschiedenen ebenen mal auseinanderhalten ich sage ich kann auf der buchstaben auf der charakter ebene sachen austauschen dass ich einfach mal willkürlich.
+
+buchstaben austausche das ist so als ob man eine hand geschrieben mit text hat wo vielleicht mal sporadisch ein kleiner schreibfehler drin ist das wäre meine einfache art und weise aber wie viel wie erfolgsversprechend sie ist sein mal hingestellt nächste ebene wäre dann ja zu sagen auf der wortebene da hattest du ein wunderbares beispiel mit den synonymen dass ich sage ich tausche einfach mal eine zufällige anzahl von wörtern aus es gibt.
+
+Ja, möglicherweise andere Ansätze, können wir gleich nochmal überlegen, um diese Systematik vollständig zu kriegen, oder auch der Satzebene.
+
+Ich kann ja einfach zum Beispiel, wenn ich längere Passagen habe, die Reihenfolge der Sätze ein bisschen vertauschen.
+
+Ja sowas in der art und eine sache die mir sehr gefallen hat hatte ich gelesen ist die anweisung einfach sage ich nehme ein eine textpassage da war mein satz.
+
+Übersetze denen eine andere sprache mit einer automatischen sprache übersetzung und übersetzen dann wieder zurück.
+
+Dann habe ich vielleicht ein grammatikalisch nicht immer völlig korrekten Satz, aber sehr wahrscheinlich ist es ein sehr vergleichbarer Inhalt, hoffentlich passender Inhalt, aber meistens anders formuliert, weil durch das Hin- und Herübersetzen da ein paar Sachen verändert wurde.
+
+Das ist ein Ansatz, der gefällt mir sehr gut, ist sehr aufwendig, aber damit kann man mit sehr großer Wahrscheinlichkeit eine passende Bedeutung auf eine andere Art und Weise ausgedrückt haben.
+
+sehr aufwendig, wenn man es händisch macht.
+
+Also man kann natürlich überlegen, auch hier wieder maschinelle Verfahren zu verwenden und solche Übersetzungen, wir haben ja die Modelle schon vorgestellt, auch wirklich über die KI machen zu lassen.
+
+Aber wie du halt sagst, es kann passieren, dass auch unsere Sinnhaftigkeit verloren geht, also dass man durch das, was in dem Satz als Aussage da ist, nicht mehr existent ist.
+
+Aber aber ich glaube durch dieses übersetzen hin und her übersetzen ist die wahrscheinlichkeit am deutlich geringer als wenn ich jetzt einfach zufällig mal die die wörter durchmische.
+
+Aber im prinzip also ich kann einfach die wörter ersetzen durch synonyme ich kann einfach oder ich kann einfach vielleicht ein paar stopp wörter einfach mal hinzufügen dass ich einfach einfach mal willkürlich ein paar wörter die keine große in normalerweise keine große bedeutung habe einfach mal so querbeet einstreuen also so viel wörter.
+
+Weil das einfach ein bisschen anders aussieht.
+
+Oder vielleicht nicht komplett durchwürfeln, sondern nur mal manche Wörter austauschen in der Reihenfolge.
+
+Sodass die Wahrscheinlichkeit geringer ist, dass jetzt eine Negation irgendwie in eine komplett andere Bedeutung rutscht.
+
+Wenn ich das willkürlich durchmische, einfach nur mal zwei benachbarte Wörter mal drehen oder sowas.
+
+Oder immer mal wieder.
+
+Was gibt's noch für Möglichkeiten?
+
+Ja, was ich mir auch vorstellen könnte, also ob das funktioniert, weiß ich gar nicht, aber was ich mir vorstellen könnte, ist, wir nehmen einen Satz und blenden immer sozusagen tückentextmäßig immer Teile des Satzes aus.
+
+Nehmen wir sozusagen einen Satz und machen mit zehn Wörtern und dann blenden wir erst das erste Wort aus, dann das zweite, dann das dritte, das vierte und so weiter und erzeugen damit zehn Sätze mit jeweils immer einem fehlenden Wort.
+
+Ja und ich aber mein ziel ist es ja nicht dieses wort sagen wir mal aufzufüllen sondern ich, das ist einfach ein wort was fehlt so ist einfach neuer satz wo es fehlt und vielleicht ist es ein wichtiges wort aber vielleicht ist aus dem es passiert ja auch manchmal so beim schreiben, wir lesen manchmal einen text und es fehlt ein wort aber der mensch ist oft in der lage, da irgendwo trotzdem einen sinn drin zu sehen auch wenn es ein wichtiges ist irgendwo sich zu denken was es sein könnte insofern denke ich meine sehr sehr schöne geschichte einfach mal zufällig wörter mal weglassen,
+
+Also, oder zufällig Wörter einfügen.
+
+Das ist sicherlich zufällig Wörter austauschen in der Reihenfolge.
+
+Das sind, glaube ich, so die klassischen Techniken, wenn ich, ja, Wörter weglassen, austauschen, Reihenfolge leicht verändern.
+
+Wenn ich mehrere Sätze habe, hatten wir ja die Satzebene schon diskutiert, einfach die Reihenfolge der Sätze ein bisschen durchmischen.
+
+Was ich mich die ganze Zeit frage, ist, in welchem Verhältnis darf ich denn diese künstlichen Daten hinzufügen?
+
+Weil wir haben ja eine Grundbasis an echten Daten, das wollten wir zumindest haben in meinen Augen, weil sonst ist das so ein bisschen archfiktiv und es könnte sein, dass dann hinterher gar nicht das rauskommt, was wir wollen.
+
+Und jetzt fügen wir sozusagen künstliche Daten hinzu.
+
+Wenn wir jetzt sagen, wir haben 20 Sätze und fügen jetzt zweieinhalbtausend Sätze dazu, künstlich, dann kann ich mir gut vorstellen, dass
+
+der wunsch durch die mehr daten ein gutes modell zu bekommen eigentlich kontraproduktiv wird das sozusagen dann eigentlich aufgrund dass wir stärker daten erzeugen die nicht so sauber sind wir wieder ein bisschen ungenauigkeit reinkriegen obwohl wir mehr daten haben also ich denke mal das ist also mal im bildbereich klappt wissen wir dass es gut klappt textbereich fehlt noch ein bisschen an forschung sollten wir sollten wir nochmal genauer untersuchen und schauen
+
+wann da irgendwo so eine grenze erreicht ist aber ich denke mal wir kommen da an einen ganz spannenden punkt bei der datenerzeugung ich glaube nämlich dass wenn es zu überhand nimmt dass am ende wir es vielleicht eher hinkriegen den mechanismus der datenerzeugung zu entdecken wie wie generere ich denn eigentlich diese zusätzlichen daten das sind irgendwann ein algorithmus das herausfindet so eine art reverse engineering
+
+Und ich finde da kommen wir an einen punkt der uns der für mich so wichtig ist dass wir eine der nächsten folgen darüber reden sollten und das ist diese technik der ganz der generative adversarial networks weil die haben nämlich genau doch zum ziel dass sie einerseits ein teil des netzes haben wo sie künstlich daten generieren die sich aber von originalen nicht unterscheiden sollen die lernen und das zu lernen und auf der anderen seite ein diskriminator der genau erkennen soll,
+
+ob es künstlich generierte daten sind oder nicht diese konkurrierendes setup wurde gegenseitig sich so hoch pushen sollen dass ich quasi den den den diskriminator versuche zu täuschen dass dass ich diese daten, die künstlich generiert sind aber nicht von den original zu unterscheiden sind und derjenige der es kann und da kommen wir nämlich genau das trifft genau an dem punkt zusammen und das ist ein so faszinierendes,
+
+Lernszenario was relativ neu ist das ist noch nicht so intensiv.
+
+Genau also ist relativ jung relativ neu aber sehr für bestimmte szenarien ich meine sehr sehr ja ist das erfolgsversprechen aber es ist einfach eine völlig andere art und weise wie ich solche netze aufbau und denke was ich damit erreichen kann ich finde es so spannend dass ich da gerne mal eine der nächsten folgen intensiver darauf eingehen würde.
+
+Das müssen wir machen, weil es ist ja nicht nur das Thema jetzt Datengenerierung, sondern diese GANs werden ja in ganz vielen Stellen verwendet.
+
+Also wir haben sie ja einmal sozusagen in der Texterstellung, wenn also das Netz Texte schreiben soll, dann sind wir genau in diesem Effekt ja, dass der durch so einen Wettbewerb eigentlich wesentlich besser ist, als wenn wir einfach nur den nächsten Buchstaben prognostizieren.
+
+Wir haben es aber auch bei dem ganzen Thema Deepfakes, also bei den ganzen Fake-Themen von Texten, von Bildern, von allen möglichen Dingen, wo ja im Endeffekt Gans eine große Rolle spielen, um diese zu erstellen.
+
+Wir haben sie aber auch bei der Sprachgenerierung, also wenn wir also Sprache, künstliche Sprache erzeugen, auch dort spielen sie eine große Rolle in der Klangqualität, in der Aussprache.
+
+Also da müssen wir zwangsläufig, man merkt es schon vielleicht, wo wir zählen, dass wir da eine wahnsinnig viel Zeit brauchen, glaube ich.
+
+um darüber zu sprechen, erstens von der Architektur her und dann von den Möglichkeiten und auch von den Risiken.
+
+Bezogen auf das gerade Thema, würde ich gerne noch ein, zwei Punkte aufgreifen, weil wir jetzt gesprochen haben drüber, nein, wir lassen jetzt einfach Texte weg oder ähnliches.
+
+Synthetische Daten kann aber auch wirklich sein, dass ich die wirklich erzeuge.
+
+Also, dass ich mich hinsetze und sage, okay, erzeuge jetzt aus irgendwelchen anderen Systemen, die ich habe, aus meinem ERP-System, wenn wir mal von Prozessen ausgehen oder von Transaktionen ausgehen, einfach künstliche Abläufe.
+
+und erzeuge dadurch dann Daten.
+
+Dann sind die Daten nicht künstlich, aber der Sachverhalt ist halt künstlich.
+
+Und das können natürlich auch Möglichkeiten sein, Daten zu nutzen, um Daten aufzubereiten und damit mehr zu haben, als wenn ich einfach nur sage, ich habe jetzt die 20 Sätze und die verändere ich.
+
+Genau gefahr dabei oder das heißt jetzt nicht jetzt gefahr für den menschen aber beim beim lernprozess ist tatsächlich dass ich das ist wenn ich jetzt mehr so an strukturierte daten denke dass ich mir prozesse systeme ausdenke, dass irgendwo am ende aufgedeckt wird wie ich dieses system aufgebaut habe das das ist einfach so von der art und weise wie ich das künstlich definiert habe nicht so komplex ist wie wie reale szenarien dass ich am ende genau,
+
+das herausfinde und es mir aber in einer echten anwendung vielleicht gar nicht so viel bringt dann muss man halt vorsichtig sein und prüfen aber auf jeden fall bleibt ein spannendes thema ja also von daher glaube ich schließt man das thema data augmentation heute und freuen uns auf nächste woche auf die ganz auf die ganz genau vielen dank fürs zuhören
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

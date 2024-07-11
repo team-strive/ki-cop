@@ -1,0 +1,577 @@
+ Willkommen zu unserer heutigen Sendung.
+
+Anknüpfend an unsere letzte Sendung, in der wir über das AI Discovery Framework und CRISP-DM gesprochen haben, würden wir heute gerne weitere Vorgehensweisen und Orientierung für das Projekt Setup vorstellen bzw.
+
+vertiefen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, zweite Woche nach der Sommerpause.
+
+Letzte Woche haben wir ja über verschiedene Projekt-Setups gesprochen und wie ein KI-Unternehmen dann auch eingeführt werden kann.
+
+Wir haben da schöne Modelle aufgeführt, wie das AI-Discovery-Framework.
+
+Wir haben über CRISPR-DM gesprochen.
+
+Und an den Punkten würden wir, glaube ich, diese Woche ganz gerne anknüpfen, oder?
+
+Genau, wie gesagt, wie kann KI eingeführt werden?
+
+Müssen wir jetzt erstmal natürlich vielleicht langsam anfangen.
+
+Was wir jetzt erstmal im Fokus hatten, war, wie erstellen wir ein Modell als Teil einer KI-Lösung, die wir irgendwie nutzen können.
+
+Entweder als KI-Lösung, wenn ich so ein System habe, was quasi so entsprechende Fähigkeiten hat und unterherläuft, oder ganz klassisch als
+
+als modell was ich vielleicht als als web service anbiete wo ich halt kunden kundinnen bewerten kann credit scoring solche sachen zum beispiel also fokus war tatsächlich erstmal die die modell erstellung und das ist in ganz ganz vielen projekten und beschreibungen auch erstmal der fall was wir an dieser stelle aber gar nicht adressieren ist so dieser ganze übergeordnete modell maschinen learning modell lebenszyklus vorher diese erstellung
+
+Bis zum Deployment, das wird oft noch erwähnt, nur ein erster Teil ist.
+
+Ich aber genau genommen, wenn ich solche Modelle in meinen Geschäftsprozessen integriere, auch mir viel mehr Gedanken machen muss.
+
+Ich muss ja nicht nur testen, ob das Modell als solches funktioniert, sondern ob es in dem angestrebten Nutzungsszenario in meinen Geschäftsprozessen funktioniert.
+
+Ich muss es in dem Kontext testen.
+
+und beobachten und adaptieren erkennen wann ich adaptieren muss was triggern das sind aspekte die wir jetzt noch noch gar nicht besprechen das sind solche solche themen so maschine learning operations sozusagen lebenszyklus management wir bleiben noch mal bei der bei den modellen oder vorgehensmodellen auch modelle das ist führt bei vielen zu zu verwirrungen diese vielen modelle ist es jetzt eines im vorgehensmodell für die modell erstellung eines maschinen modell das
+
+habe ich mir früher nie gedanken drüber gemacht das habe ich nur in diskussionen mit studierenden oft erlebt dass die eigentlich gar nicht wissen ja was was was ist denn jetzt ein modell das ist ein vorgehtsmodell ein machine learning modell ja alles modelle überall sind modelle aber man selbst redet darüber und weiß was man meint dieses überladen von von begrifflichkeiten.
+
+Aber ein Anwender, Anwenderin oft nicht.
+
+Also wir wollen ein Prognose- und Maschinen-Learning-Modell, meistens und in unserem Fall oft ein Prognose-Modell, erstellen und hatten daher diskutiert, warum haben wir das überhaupt.
+
+Das ist ja nicht als Selbstzweck, sondern um
+
+eine analysefrage zu beantworten eine aufgabe wie zum beispiel eine klassifikation ich habe nachrichten über welche social media kanäle und möchte die bewerten sind die positiv negativ neutral und das denn aggregiert über viele nachrichten hat vielleicht ein schützdom detektor aufgebaut der regelmäßig das in zeitscheiben beobachtet wie viel sind es wie positiv wie negativ ändert sich der anteil an positiv zu negativ muss ich was tun wäre ja so ein geschäftsszenario
+
+was ich umsetzen kann.
+
+Man muss halt sehen, dass die, weil du gesagt hast, ein Ziel ist zum Beispiel so ein Klassifikator oder ähnliches, hätten wir mit diesem Diamond-Modell vor allem auch herausfinden wollen, was ist sozusagen der Mehrwert fürs Unternehmen, also der Business-Zweck.
+
+Ja, also nicht nur sozusagen, wir wollen jetzt einen Klassifikator, sondern was bringt man Unternehmen weiter?
+
+Also im Sinne von meiner Produktverbesserungen, im Sinne von meiner Kostenreduktion, Erhöhung des Automatismus im Unternehmen oder solche Dinge, die ja dann praktisch eigentlich den Zweck sozusagen dienlich werden.
+
+Genau, das war dann die Value Proposition, wenn ich es, sagen wir mal, in diesem Business Canvas Sprache richtig in Erinnerung habe.
+
+ganz zentraler Punkt, welchen Mehrwert liefert ist.
+
+Und so sollte ich ja immer anfangen, dass ich eine Zielsetzung habe, mit der ich glaube, Mehrwert schaffen zu können.
+
+Und da hat man ja letzte Woche den AI-Project-Canvas vorgestellt, mit dem zentralen Value Proposition in der Mitte.
+
+Und dann hat sie so schön erklärt, die ganzen Einflüsse, die ich habe, welche Daten sind verfügbar, welche Personengruppen sind involviert und insbesondere auch eine Kosten-
+
+und einnahme betrachtung die finde ich persönlich immer extrem schwer was gibt's wie machst du sowas eigentlich.
+
+Das ist wirklich nicht ganz einfach greifbar gerade am anfang nicht weil man im endeffekt erstmal mit schätzwerten arbeiten muss ja das sind dann erfahrungswerte das sind im endeffekt dann überlegungen wie viele personen sind involviert wie lange wird der service laufen wie viele sachen werden abgefragt,
+
+also dass man so eine grobe schätzung macht die man dann über das projekt hinweg dann natürlich verfeinert also praktisch eine vorkalkulation mit kalkulation nachkalkulationen also das ganz klassische dna gehen dass du sagst ich habe eine grobe schätzung also ich kann mir das noch ganz gut vorstellen sagen wenn ich ein fertiges modell habe,
+
+was ich dann dafür kosten habe vielleicht auch was ich da für einnehmen kann aber bis ich bei diesem modell bin wie viel zeit brauche ich um so ein modell wirklich zu erstellen war das ganze christian haben wir vorgestellt aber jedes formans modell ist ja so ein projekt ist ja sehr sehr iterativ agil würde man heute sagen in der sprache von christian spricht man noch nicht von einem agilen projektmanagement aber wenn man sich das vorgehen anschaut ist es
+
+Aus meiner sicht hochgradig agil interessanterweise sehen dass viele das erste mal sehen gar nicht so die schauen da drauf und sagen ja ich habe hier sechs phasen noch mal business understanding also verstehen was will ich eigentlich im projekt erreichen wie mache ich das als analyseaufgabe.
+
+Und in dieser Phase habe ich ja auch ein Projektmanagement aufzusetzen und zu definieren, wie ich den Erfolg messe insbesondere.
+
+Dann geht's los mit den eher technischen Themen.
+
+Data Understanding hatten wir eingeführt, auch sehr viel mit explorativer Datenanalyse, Datenqualität beurteilen, so als Highlights, Datenaufbereitung, Data Preparation, da wo ich quasi die Daten so umformatiere, aufbereite, dass ich sie in meinen Lernalgorithmus reinstecken kann.
+
+Das ist ja die wichtigste Aspekte der Modellierungsphase als vierte.
+
+Da kriege ich ein oder mehrere brauchbare Modelle raus, die ich dann auf Herz und Nieren prüfe in der Evaluierungsphase und dann immer den Rückbezug zu den Zielsetzungen des Business Understanding und dann das Deployment.
+
+Das hat man so kurz umrissen.
+
+So und dann kommen viele und sagen, ja das ist ja ganz sechs Phasen linear hintereinander.
+
+Das ist ja hier so ganz klassisch Wasserfall sonst was.
+
+Nee, seht ihr denn die Pfeile nicht?
+
+Das ist klar, da sind Pfeile in dem Modell, die deuten an, von welcher Phase in welche gehe ich denn typischerweise am häufigsten, am gängigsten.
+
+Aber es wird auch gesagt, eigentlich darf ich von jeder Phase in jede andere springen, wenn das einfach inhaltlich notwendig ist.
+
+Insofern ist es schon nicht mehr rein linear, nur ich habe das Problem mit der Darstellung.
+
+Wenn ich was visualisiere, muss ich es ja in irgendeiner Form hinmalen.
+
+Aber das ist ja auch ganz klar, weil wir ja praktisch über dieses Business Understanding haben wir eine grobe Vorstellung, was wir wollen.
+
+Und dann fangen wir an, sozusagen die passenden Daten herauszuarbeiten, die wir im Unternehmen haben, die wir vielleicht auch anreichern müssen, weil wir sie noch nicht haben, was ja wieder zu einem Rückschluss führt auf das Business Understanding.
+
+Das heißt, dass wir vielleicht dann zu einer ganz anderen Fragestellung kommen, weil wir die Daten gar nicht haben.
+
+Oder vielleicht auch noch der schönere Weg, dass wir plötzlich noch mehr Daten bekommen und mit einem ganz anderen Blick rangehen können.
+
+Also es ist sowohl positiv als negativ zu sehen, dieser Rückschritt.
+
+Genau, deshalb sind aber genau zwischen den ersten beiden Phasen diese beiden Pfeile in beide Richtungen sehr, sehr stark eingezeichnet, weil ich da ganz, ganz oft hin und her springe.
+
+Dann gehe ich zu Data Preparation vom Data Understanding.
+
+Das ist zum Beispiel nur in der Einrichtung eingezeichnet.
+
+Weil ich da meistens nicht ständig hin und her springen muss, weil ich habe ja im Data Understanding gesehen, wo die Knackpunkte sind, und dann weiß ich, was ich zu tun habe, und dann mache ich das.
+
+Zwischen Data Preparation und Modeling sind aber wieder viele Pfeile, also beide Pfeile, eingezeichnet.
+
+Warum da bei dem anderen nicht?
+
+Naja, weil ich je nach...
+
+Lernalgorithmus den ich auswähle auf einmal feststelle dass ich eine andere datenaufbereitung brauche dass die doch nicht passt dass mein algorithmus damit nicht klarkommt deshalb springe ich da ganz ganz oft wieder hin und her aus dem grund weil das so stark verwoben ist.
+
+Gibt es auch neuere modelle die das von vornherein stärker zusammenfassen die die teilen die phasen anders auf.
+
+Ob das jetzt besser oder schlechter ist das ist ein bisschen geschmackssache wo ich hin mal ich will entscheiden sind erstmal dass ich weiß welche schritte prozessschritte gibt es denn.
+
+dass man nicht zweiträglich ist wie habe ich sie in meiner visualisierung kopiert richtig sehe ich auch so man muss natürlich sehen das modell sollte den leitfaden geben es ist nicht dass man sich strikt genau an diese phasen halten muss sondern es soll praktisch eine orientierung sein damit man eine vorstrukturierung hinbekommt mit allen modellen eigentlich.
+
+Und dass man wichtige sachen nicht vergisst weil ungeschickt ist es wenn du sagst okay business understanding brauche ich nicht ich fange gleich an zu modellieren bist da wochenlang dabei modell zu trainieren und stellst fest ah mensch.
+
+Ich habe da fehlende werte ausreißer das geht gar nicht wenn ich habe eine woche umsonst gelernt hätte ich das gewusst.
+
+Und dieses prozessmodell sagt halt was sind denn so die typischen falsch trick was sollte man denn machen wenn man aber meint wenn man erfahrung hat dass man bestimmte sachen nicht brauchen weglassen kann ja dann macht man es halt so.
+
+Aber es darf keiner hinterherkommen und sagen, das habe ich nicht gewusst, sondern da sind so typische Best Practices, Lessons Learned in der Gesamtdokumentation.
+
+CRISP ist ja mehr als nur diese Schaubild mit den sechs Phrasen.
+
+Es hat eine sehr, sehr ausgiebige Dokumentation, wo man viel dieser Erfahrung nachlesen kann.
+
+Und da kommen wir gleich natürlich zu einem Knackpunkt oder zu einer Schwäche.
+
+Diese Dokumentation ist inzwischen ja mindestens 20 Jahre alt und es gibt
+
+Es gab mal Überlegungen, einen CRISP 2.0 aufzusetzen.
+
+Da hätte man das aktualisieren können.
+
+Gibt's halt nicht.
+
+Wenn ich jetzt erwarte, dass in so einer Dokumentation alles über Deep Learning und die ganzen Sachen, alles über die neuesten Modelle, Convolutional Network, Sprachmodellierung, alles was ich da wissen muss drinsteht, nein.
+
+Da kommt es zu kurz sowas hat es nicht aber da hätte ich jedes modell wird so ein modell ja auch überfrachtet wenn ich versuche also was da einzubauen dann ist es so komplex dass es ja auch schon wieder nicht.
+
+Für allgemein für die allgemeinheit nutzbar ist oder dass jeder das kennt das ist gerade die stärke von chris bm ist das irgendwie fast jeder kennt der in dem bereich arbeitet man kann es nutzen um darüber zu reden und vorzustrukturieren genauso wie du es gesagt hast.
+
+Es ist aber auch gut strukturiert und ich glaube, es ist auch der Punkt, wenn man auch die neueren Modelle oder auch die neueren Vorgehensweisen anschaut, die variieren gar nicht so stark.
+
+Es kann dann sein, dass man mal eine Phase weglässt oder halt kombiniert miteinander oder wie auch immer.
+
+Aber am Ende ist immer die Frage, ich brauche zunächst mal ein klares Verständnis davon, was ich eigentlich erreichen will.
+
+Dann muss ich irgendwie Daten beschaffen.
+
+Die muss ich gegebenenfalls aufbereiten oder übergib sie dem Algorithmus, wenn ich an Deep Learning denke.
+
+Und dann muss ich trotzdem evaluieren.
+
+Also diese Phasen sind eigentlich ziemlich allgemeingültig.
+
+Und ich glaube, das ist auch der Grund, warum das Modell so, ich nenne es jetzt mal, stabiles in der Anwendung und auch immer wieder genannt wird, weil es einfach ein Grund ist.
+
+Es ist leicht verständlich, man kann es gut erklären und man kann sich gut danach entlang halten.
+
+Und wir hatten schon adressiert, dass ein paar Sachen zu kurz kommen und dann einfach nicht erwähnt werden.
+
+Insofern kann man nicht sagen, dass es falsch ist, sondern die werden einfach nicht genannt.
+
+Zum Beispiel die ganze Infrastruktur.
+
+Können wir nochmal sagen, dadurch ist es halt relativ zeitneutral, weil halt nicht darüber gesprochen wird, ob das jetzt eine Cloud-Architektur oder was anderes ist, ob ich GPU oder was anderes habe, die brauche ich, das wird da aber gar nicht erwähnt.
+
+Ja, man könnte so ein bisschen argumentieren, dass es ein Deployment drin ist.
+
+Aber das ist es faktisch nicht in der Art, wie du es jetzt gerade beschrieben hast.
+
+Du machst dir doch wahnsinnig viel Gedanken.
+
+Eine Zeitlang zumindest, wenn du in Richtung Deep Learning gehst, habe ich die entsprechenden Server mit GPU.
+
+Und dann kommt noch was anderes.
+
+Dann habe ich die TPUs.
+
+TensorFlow Processing Unit.
+
+Da mag es Weiterentwicklung geben.
+
+Wenn Crisp.dm gar nicht erst sich die Mühe macht, auf konkrete Hardware-Architekturen und Sachen einzugehen, kann es in dem Sinne auch gar nicht verhalten.
+
+Der Punkt wird einfach ausgelassen.
+
+Ob das zu dem Zeitpunkt bewusst gemacht war oder nicht, sei mal dahingestellt.
+
+Anderer Punkt, der aber vielleicht schon interessant ist auf der organisatorischen Ebene, ist der Punkt der Rollen.
+
+Und da gibt es zum Beispiel, es gibt ja eine interessante Weiterentwicklung aus Deutschland, das DASPM, das Data Science Process Model.
+
+Und da werden einige dieser Aspekte insbesondere aufgegriffen.
+
+Man macht so eine Nachfolge von CRISP-DM, hat da zum Beispiel die Infrastruktur auch hervorgehoben und die Rollen.
+
+Welche Kompetenzen, welche Fähigkeiten brauche ich in welcher Phase?
+
+Und das ist interessant, dass man mal sieht, auch bei der Planung, was muss ich irgendwie berücksichtigen?
+
+Welche Menschen muss ich denn zusammenbringen?
+
+Da war man zu der Zeitpunkt bei CRISP-DM auch noch nicht so weit.
+
+Da hat man ja vielleicht sogar, schlimmstenfalls hatte man einen Menschen, der das Projekt gemacht hat.
+
+Natürlich gab es dann noch den Auftraggeber, die gesagt haben, das wollen wir, das ist so ein Fachanwender möglicherweise, der war vielleicht schon da, aber oft hat den Rest erstmal einer gemacht.
+
+So ein kleineres Projekt, prototypische Evaluierung, passt das, kann man auch was machen.
+
+Heutzutage in großen Anwendungen,
+
+haben wir eine sehr, sehr diffizile Aufteilung der verschiedenen Rollen.
+
+Man könnte natürlich sagen, es ist ein Data Scientist, der macht alles.
+
+Oder aber, feiner aufgeteilt, gibt es eine schöne Aufteilung der Rollen, dass der Data Scientist... Es ist eher so ein Machine Learning Experte, der das Modeling macht.
+
+Es ist der Machine Learning Engineer, der die Pipelines technisch aufbaut.
+
+Es ist ein Data-Engineer, der Zugriff auf die Daten hat, wenn man da rankommt.
+
+Oder ein Business-Experte, also ganz feine Aufteilung.
+
+Da kann man halt schauen, welche Kompetenzen, Fähigkeiten brauche ich in welcher Phase.
+
+Das ist für die Planung hilfreich.
+
+Es ist natürlich auch so, wenn man in die Zeit zurückdenkt, du hast gesagt, das ist dann eine Person gewesen, vielleicht mal zwei oder ein kleineres Team.
+
+Wir haben aber in der Praxis ja nicht nur ein Modell, was wir bei einem Sachverhalt anwenden, sondern es sind ja ganz häufig viele, die ineinandergreifen und die Wechselbeziehungen zueinander haben.
+
+Und das bildet das Modell auch nicht, also dieses GSTM-Modell auch nicht vollständig ab.
+
+Also so, dass wir mehrschichtige, zusammenarbeitende Teams haben an unterschiedlichen Teilprojekten, wenn man das so nennen möchte, die dann ineinandergreifen.
+
+Das ist also eine Instanzierung für eine Modellerstellung.
+
+Es gibt ja außenrum um das Modell einen großen Kreis.
+
+Das soll ja mal symbolisieren, das ist nicht nur nach einer Iteration durch, sondern das wird potenziell ganz ganz oft wiederholt.
+
+Was ja auch in gewisser Weise eine Agilität darstellt, dass wenn ich die Ziele immer ein bisschen verfeinere und ich fange vielleicht mal an und nehme nicht gleich alle Daten, sondern fange mal mit einer kleinen Teilmenge an, gucke erstmal mal einen Proof of Concept, in der nächsten Phase sage ich, jetzt mache ich das breiter, investiere mehr Zeit, da kann ich sowas ja auch irgendwie denken.
+
+Aber in der Tat, so ein Zusammenspiel mehrerer Modelle in einem Unternehmen ist da aber auch wieder ganz bewusst ja gar nicht drin.
+
+Erstmal hat man es sicherlich noch nicht so abgesehen, da hat man wirklich diese Einzelprojekte,
+
+würde das ganze Modell ja aber auch wieder überfrachten.
+
+Also ich denke tatsächlich, alle Bemühungen, da sowas reinzubauen, können für diese Einzelfälle hilfreich und wichtig sein, aber für ein allgemeines Modell
+
+sehr, sehr schnell dabei, das zu überfrachten.
+
+Ja.
+
+Wir hatten ja letzte Woche auch über den AI-Project-Canvas gesprochen, der hier aber, wie wir es vorher schon gesagt haben, diese Value Proposition stärker in den Mittelpunkt oder stark in den Mittelpunkt stellt.
+
+Dann aber auch in den Input- und den Output-Lieferanten oder Feldern.
+
+Wir haben ja gesagt, links sind so eher die Input-Themen wie Daten, Fähigkeiten, auch welche Metriken zum Evaluieren
+
+notwendig sind.
+
+Und rechts waren vor allem die Dinge, wie integriere ich das Ganze im Unternehmen, was sind meine Kunden und was sind meine Stakeholders.
+
+Das ist ja sozusagen so ein Mittelding aus der reinen betriebswirtschaftlichen Orientierung und so eine leichte Orientierung Richtung Technik.
+
+Aber es ist halt noch kein technischer Canvas.
+
+Also da fehlt uns eigentlich so das Bindeglied zwischen
+
+dieser welt also wenn wir so die kette von letzter woche anschauen von dem diamond modellen mit der auswahl von ideen hin zu diesem canvas das die erste bewertung macht dann in eine mehr technische orientierte bewertung
+
+Und dann eigentlich in die umsetzung durch das krisp dm und ich glaube da gibt es so ein modell ich bin froh dass du das ansprichst weil ich bin ein großer fan schon oft genutzt von einem klingt so ähnlich ne wenn der i project canvas und jetzt gibt es auch noch ein machine learning canvas.
+
+Auto ist der louis dora aus frankreich und das sind manche elemente sind so ähnlich wie in dem in dem betrieb wirtschaftlich orientierten canvas.
+
+aber jetzt deutlich technischer.
+
+Und es hilft sehr schön bei der Planung auf der technischen Ebene.
+
+Es geht genauso los wie das andere mit der Value Proposition.
+
+Es ist halt immer das ganz Zentrale.
+
+Was will ich denn eigentlich machen?
+
+In der gewissen Weise ist es das Bindeglied zwischen all den Elementen.
+
+Wir haben praktisch bei der Ideenfindung gucken wir ja auch, was ist der Mehrwert.
+
+Dann würden wir den AI-Project-Canvas nehmen.
+
+und haben das Value Proposition als Bindeglied zu den Ideen.
+
+Und dann jetzt im Endeffekt der nächste technischere Schritt, wenn man durch das Machine Learning kennt, das wird auch die Value Proposition.
+
+Die Frage ist dann jetzt, wie mache ich denn das?
+
+Das beantwortet letztendlich die Frage, wie und womit.
+
+Das heißt, natürlich muss ich mir da Gedanken machen, wenn wir mal dieses Modell uns durchgehen, uns anschauen, was habe ich für die Datensammlung, Data Collection.
+
+Also das ist auch eine Sache, wo ChristBM gar nicht darauf eingeht.
+
+Man geht bei ChristBM einfach davon aus, man hat einfach Daten.
+
+Punkt.
+
+So.
+
+Deshalb haben wir das Projekt, weil wir die Daten haben.
+
+Wenn ich aber weiterdenke, ausgehend von meinem Businessproblem, kann es ja sein, dass es noch die Daten noch gar nicht gibt.
+
+Und das ist ein Unterschied, wenn ich den einen sehen möchte, wenn ich früher den Begriff Data Mining habe und heute Data Science.
+
+Bei Data Mining gehen wir meistens davon aus, dass die Daten da sind.
+
+Data Science umfasst das, was ich bei Data Mining mache.
+
+Deshalb kann ich also wahllos wechseln.
+
+Ich nutze CRISP-DM.
+
+Das ist ein Prozessmodell für das Data Mining und nutze das, ohne mit der Wimba zu zucken, für Data Science Projekte.
+
+Warum?
+
+Weil dieser hintere Teil, wenn ich die Daten habe und dann jetzt meine Modelle erstelle, mit den Zielsetzungen, das ist ja identisch.
+
+Am Anfang, wenn ich überlege, wo kommen die Daten her?
+
+Muss ich mir überhaupt erst noch Gedanken machen, die Daten Grundlage zu schaffen?
+
+Irgendwelche Systeme zu bauen, irgendwelche Prozesse zu definieren, bei denen die Daten vielleicht erfasst werden?
+
+Wie mache ich das?
+
+Da muss ich mir zum Beispiel Gedanken machen.
+
+Ja, das ist eigentlich ganz schön, dass wir natürlich Data Collection und Data Sources, also auch die Quellen, also das ist der Prozess des Sammelns, aber auch die Quellen, wo die Daten herkommen, in diesem technisch orientierten Canvas haben.
+
+Dann muss ich mir natürlich ganz konkret überlegen, was für Modelle brauche ich denn?
+
+Was sollen die denn tun?
+
+Was sollen die vorhersagen?
+
+Und basierend auf welchen Merkmalen, auf den Features, was brauche ich dafür, um das zu machen?
+
+Das ist einmal der eine Schritt Richtung Modellerstellung.
+
+Ich habe die Modelle noch gar nicht erstellt, aber ich überlege, was brauche ich da?
+
+Interessant ist ja, wenn man den Canvas sich anschaut, dann haben wir aber durch die Building Models als eine Box dort, also sehr ähnlich aufgebaut wie alle Canvas.
+
+Und interessant ist, da wird auch gefragt, wie viele produktive Modelle werden benötigt.
+
+Also nicht nur sozusagen diese Orientierung auf eins, sondern er betrachtet ja wirklich in diesem Canvas die reale Welt, dass wir eigentlich eine Kombination von vielen Modellen oder von mehreren Modellen haben können.
+
+Das finde ich auch ganz spannend in dem
+
+Ja, denn es zeigt sich ja, dass bei einfachen Anwendungen, so wie wir es bei CRISPR-M gestartet haben, haben wir ein Prognoseziel.
+
+Also ich sage, okay, ich baue ein Prognosemodell, das sagt mir, ob ein Kunde kündigen wird oder nicht.
+
+Klar, ein Modell.
+
+Natürlich könnte ich ein Ensemble haben, hat mehrere, aber trotzdem gedanklich ein Modell für eine Prognose.
+
+Stell dir mal vor, wir haben jetzt ein komplexes Modell hier in unserem Sprachumfeld, wir waren ja bei den Dialogsystemen.
+
+Das ist ja, wenn ich nicht gerade in einer sogenannten End-zu-End-Lösung das komplett in einem Rutsch versucht habe abzudecken und zu lernen, habe ich ja verschiedene Teilaufgaben.
+
+Also ich will man wegen einer gesprochenen Sprache erkennen, ich will die geschriebene oder die extrahierte Sprache verstehen, man wegen Intent erkennen.
+
+Sprache generieren, das sind ja alles Teilmodelle, die irgendwo in der Gesamtkombination wichtig sind, die ich vielleicht irgendwie alle erstellen muss, also im größeren Gesamtkontext.
+
+Dann, ist aber trotzdem wichtig, das ist auf der Datenmodellebene, was ich da brauche, aber es geht, adressiert hier in der Ecke noch gar nicht so stark, was ist denn eigentlich die Lernaufgabe?
+
+Und wie bewerte ich die?
+
+Und das ist in dem Modell auf der linken Seite quasi, wenn man das so anordnen möchte, dargestellt.
+
+Was ist denn eigentlich die Prognoseaufgabe?
+
+Und das ist wieder das, was in CRISPR-DM auch immer dargestellt wird, diese Abbildung eines Geschäftsproblems, ausgehend von der Value Proposition, auf das Analyseziel.
+
+Was ist es denn das, was ich da vorhersage?
+
+Und da glaube ich, das ist ein ganz, ganz wichtiger Schritt, der oft zu kurz kommt, aber wo gerade Anfänger, Anfängerinnen, die mit sowas arbeiten, dass das nicht so klar ist.
+
+Ja, wir wollen da irgendwie sowas machen.
+
+Und wenn man dann mal nachfragt, über was, wir wollen Predictive Maintenance machen.
+
+Was genau möchtet ihr denn prognostizieren?
+
+Mit einem Detail wird es ja interessant.
+
+Möchtet ihr wissen, wie viele Tage bis es zum Ausfall kommt?
+
+Oder wie groß ist die Wahrscheinlichkeit, dass irgendwas in einer gewissen Zeit ausfällt?
+
+Man muss sich da ganz konkret festlegen.
+
+Was möchte ich eigentlich genau machen?
+
+Ja, was für eine Art von Task haben wir?
+
+Was wollen wir genau prognostizieren?
+
+Welche Parameter werden mit berücksichtigt?
+
+Und wie bewerte ich das?
+
+Genau.
+
+Was dann auch das Modell auch noch erweitert ist, bei der Evaluierung, ja es gibt eine Phase Evaluierung, muss gucken wie es funktioniert, aber jetzt mal ein bisschen konkreter gesagt.
+
+das zu verstehen, wie wirken sich denn Änderungen in welchen Teilen aus, wenn ich hier in diesem Merkmal irgendwas ändere, was passiert mit meinem Modell, vielleicht eine gewisse erklärende Kompetenz Richtung Explainable AI, dass ich verstehe, warum etwas zustande kommt, wo die Einflussfaktoren sind.
+
+Und das finde ich extrem wichtig, weil es gibt ja so ein gewisses Gefühl dafür, wie zuverlässig und vertrauenswürdig ein
+
+ein Modell ist.
+
+Also vertrauenswürdig jetzt nicht im Sinne von, dass ein Mensch dem vertraut, aber dass ich glaube, dass es mein Problem längerfristig lösen kann.
+
+Und das Ganze wird dann schon quasi abgerundet.
+
+Und das findet sich in allen Phasen, auch bei der Chris-BM, wieder natürlich das Monitoring.
+
+Also ganz, ganz zentral.
+
+Ich gehe niemals davon aus, dass ich ein Modell erstellt habe, was für den Rest des Lebens irgendwie funktioniert, sondern ich muss immer überlegen, wie bewerte ich das über die Zeit.
+
+Und dann hilft nicht nur eine Kennzahl, die das, sagen wir mal, so Snapshot-mäßig jetzt, okay, jetzt ist gerade die und die Performance, 90 Prozent.
+
+Also ich brauche natürlich die die metric die die sagen mit der bewerte ich wie gut ich in einem moment bin muss dann überlegen wie bewerte ich das über die zeit welche welche grenzen du oder welche welchen bereich du dich denn man ist eine verschlechterung sogar während dass ich eingreifen muss da kommen letztendlich erfahrungen die man aus der aus der statistischen qualitätskontrolle hat kann man das sehr gut nutzen dass ich einfach die kennenzahlen so minibad oder batch mäßig oder tageweise monatsweise was da relevant ist einfach.
+
+protokolliere mitschreibe und dann sagen kann achtung jetzt habe ich da auf eine grenze gerissen jetzt sollte ich etwas tun und dann kann relativ stark automatisiert ein nachlernprozess gestartet werden und das ist ja eigentlich das schöne an dem canvas finde ich dass er unterscheidet zwischen einer offline evaluation was gesagt wird
+
+dass praktisch während der Erstellung des Modells praktisch Kennzahlen zur Optimierung des Modells angezogen werden und dem eigentlichen Live-Monitoring, also wenn wir sozusagen den Betrieb übernehmen.
+
+Und man muss ja sagen, wenn man in die Historie guckt, es sind ja schon etliche Verfahren von Unternehmen groß angekündigt worden, auch verwendet worden, die dann ein bisschen aus dem Ruder gelaufen sind.
+
+Also ich denke da an Amazon, die den Recruiting-Prozess mit KI unterstützt haben und dann festgestellt haben, dass der
+
+einfach eher männer bevorzugt als frauen das hat man aber aus dem livebetrieb gemerkt dass im monitoring des systems oder wenn wir alle system hat ja perfekt funktioniert das prognostiziert was gelernt das ist leider das problem gewesen so dass man es abschalten musste,
+
+Aber es gab ja auch andere Verfahren, also wie zum Beispiel ein Chatbot von Microsoft, wo Microsoft wollte, dass das System lernt durch die Interaktion mit den Usern und die Usern das System so penetriert haben, wenn man das gravierend sagen möchte, dass es dann rassistisch wurde.
+
+Und man das dann deswegen abschalten musste, auch wegen einem Monitoring im Betrieb.
+
+Das hätte man auch nicht einfach frei laufen lassen können.
+
+Aber merkst du was, das sind genau die Punkte, die, sagen wir mal, wichtig und spannend sind,
+
+sind genau die die schwer zu evaluieren sind also zumindest automatisiert regelmäßig wie willst du bewerten ob ein algorithmus.
+
+Rassistisch wird ob ein ein algorithmus einstellungsprozess diskriminiert direkt ja in der entscheidung schwieriger.
+
+Na gut, ich kann natürlich, wenn ich das weiß, also ist die Frage, wie entwickelt man solche Systeme, die darauf sensibilisiert sind, dann kann ich natürlich, wenn ich weiß, es gibt ein Problem mit, oder könnte ein Problem mit Diskriminierung zwischen Männern, Frauen oder Religion oder sonst was geben, könnte ich natürlich genau diese Effekte prüfen.
+
+Das macht man, das empfiehlt man auch heutzutage, dass man genau, wie kann ich da fair um solche Entscheidungen treffen, und dann weiß ich ja, was sind denn die Knackpunkte, welche Merkmale
+
+sind dafür typisch und kann ich es dahingehend ja überprüfen.
+
+Aber das andere, oft sind ja so weiche Geschichten, liegt eine rassistische Äußerung vor oder auch nicht.
+
+Ich könnte höchstens die Nutzer und Nutzerinnen eines Systems beobachten oder wie die darauf reagieren.
+
+Wenn es einen Mann gibt, der eine Social-Komponente, eine Chat-Funktion
+
+Und wenn da natürlich sich beschwert wird, dann sind wir wieder bei dem Shitstorm-Detektor.
+
+Ich sollte also irgendwie zusehen, dass ich Feedback-Kanäle in jeglicher Form, die denkbar sind und hilfreich sind, irgendwie einbinde.
+
+Und wie man sieht, das sind Dinge, die dürfen nicht erst hinterher passieren, sondern die müssen schon bei der Planung überdacht werden.
+
+Sonst sehe ich es gar nicht.
+
+Und da helfen halt wirklich diese strukturierten Vorgehensweisen von der Ideenfindung über die Business-Betrachtung hin zu so einer technischen Kenntnis und dann über die Implementierungsmodelle.
+
+Was ganz interessant, selbst wenn wir es noch einfacher sehen, wenn wir diese Aspekte noch gar nicht haben, ein offline Monitoring, wo ich Trainingsdaten habe, für die ich die wahren Werte, die ich prognostizieren möchte, kenne, kann ich das natürlich evaluieren.
+
+Wenn ich jetzt im Live-Betrieb bin und ich habe ein Probenmodell, was macht meine Prognosen?
+
+Ja, ich weiß ja in vielen Fällen gar nicht, ob diese Entscheidung jetzt richtig oder falsch war.
+
+Wie möchte ich das denn evaluieren?
+
+Es gibt da natürlich wesentliche Unterschiede und deshalb ist es wichtig, sich da im Vorfeld Gedanken zu machen.
+
+Wenn ich Zeitreihen habe, bei denen einfach dadurch, dass die Zeit verstreicht, irgendwann die Werte, die ich prognostiziert habe, auch tatsächlich irgendwann mal beobachtet werden können, dann kann ich es mit einem gewissen Verzug natürlich immer sehr, sehr leicht bewerten und dann sollte ich dies auch tun.
+
+Wenn ich jetzt aber einen Mann wegen der Sentimentanalyse habe,
+
+kann ich jetzt noch so lange warten, wie ich will, wenn kein Mensch liest und sagt, ob das richtig oder falsch war, dann kriege ich diesen Feedback halt nicht.
+
+Aber diese Unterscheidung, dass wenn man sich das klar macht, kriege ich diese Information, kriege ich sie nicht.
+
+Brauche ich sie?
+
+Sollte ich sie haben?
+
+Sollte ich stichprobenartig das überprüfen und dafür Menschen einstellen, die das machen?
+
+Das ist dafür wichtig, dass man sich da gedankt hat.
+
+Du hattest ein schönes Wort genannt, FairML.
+
+Ich glaube, da sollten wir mal eine Sendung drüber machen.
+
+Das wäre mal, glaube ich, eine ganz schöne Sendung, darüber zu diskutieren, auch wenn wir wieder das ethische Thema nochmal aufgreifen.
+
+Wäre sicher nicht schlecht.
+
+Das schadet nie, da immer mal wieder drauf zu kommen, weil je häufiger und stärker
+
+Anwendungen zum Einsatz kommen, desto mehr muss man sich darüber Gedanken machen.
+
+Und Transparenz schaffen.
+
+Ganz einfach, ja.
+
+Von daher, vielen Dank fürs Zuhören für diese Woche.
+
+Noch mal ein Einblick in die mehr, ich sag mal, planungsorientierte Sicht.
+
+Und ich freu mich, wenn Sie nächste Woche wieder dabei sind.
+
+Bis dahin, ciao.
+
+Bis dann, tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

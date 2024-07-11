@@ -1,0 +1,511 @@
+ Hallo und herzlich willkommen.
+
+Immer wieder kommen bei uns Fragen auf, warum gerade spezielle Hardware wie Grafikkarten bei der Erstellung und Anwendung von KI-Modellen relevant sind.
+
+Dieser Frage wollen wir heute auf den Grund gehen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Jetzt ist schon wieder eine Woche rum, das ging ganz schnell.
+
+In der letzten Woche, wo wir über die Anwendungen gesprochen haben, haben wir diese Woche uns mal das Thema Rechenkapazitäten oder Rechenleistung herausgepickt.
+
+Weil das ist ja immer eine große Diskussion, die man hat, wenn man irgendwie Modelle erstellt, wie viel Rechenleistung brauche ich, brauche ich spezielle Hardware oder ähnliches.
+
+Brauche ich sie überhaupt oder geht das auch ohne?
+
+Geht das auch ohne?
+
+Das ist ja die gute Frage immer.
+
+Da stellt sich ja die Frage, warum ist es denn so interessant, auf spezielle Hardware überhaupt zu schauen?
+
+Aber bevor wir darauf eingehen vielleicht sollten wir als statement vorab schon mal sagen also rein theoretisch braucht man es nicht.
+
+Man kann mit einer cpu alles berechnen das heißt auch tiefe neuronale netze das geht.
+
+Aber es dauert lange also das heißt der punkt warum wir das hier diskutieren ist einfach geschwindigkeit mit der wir solche modelle trainieren können.
+
+Und damit auch mit der geld.
+
+Ja das ist jetzt die frage geld für strom energiekosten oder hat die geld das geld was wir in die hand nehmen müssen um diese spezialhardware zu kaufen.
+
+Ja, Geld, das man in die Hand nehmen muss für die Spezial-Hardware, aber natürlich auch Opportunitätskosten, die man hier berücksichtigt aus der Betriebswirtschaftslehre heraus, weil ich sage, von wegen die zunehmende Zeit hat einen gewissen Nachteil, also wenn Modelle einfach viel länger brauchen zum Berechnen.
+
+Wir hatten jetzt zum Beispiel gerade in unserer studentischen Gruppe ein Thema,
+
+Da geht's um Sprachgenerierung, dass wir halt Stimmen generieren und da halt Modelle anlernen.
+
+Und da hat man mal den Unterschied gemerkt, ja, weil die eine Studentengruppe hat dann aus Versehen die Grafikkarte nicht aktiviert, also spezielle Hardware.
+
+Und dann hat man Faktor schon, also es war guter Faktor, 15 längere Laufzeiten gehabt, ja.
+
+Das heißt, in so einem Thema, wo wir so und so schon wissen, dass auch mit spezieller Hardware die Berechnung recht lange dauert, also wir reden hier von
+
+30 40 50 60 stunden dann explodiert es natürlich nach hinten wenn man mal die die webseite von nvidia anschaut meine frage ist jetzt warum nvidia es gibt andere hersteller von gpus von grafikkarten ja das stimmt aber die soweit ich weiß alle frameworks die deep learning umsetzen und da entsprechende methoden anbieten setzen intern auf nvidia gpus also insofern
+
+beschränkt sich die betrachtung ganz ganz häufig auf diesen einen hersteller und wenn man da mal so die die flaggschiff produkte anschaut die gerade für die plötzlich so gedacht sind da wird beworben mit einem faktor von bis zu 249 beschleunigung gegenüber einer klassischen also einer gut ausgestatteten cpu.
+
+Und selbst wenn man mal faktur 100 nehmen ob ich eine woche rechne oder 100 wochen also knapp zwei jahre an unterschied das ist schon einiges.
+
+Genau und dann kommen schon wieder die gedanken mit kosten weil zwei jahre warten wettbewerber sind vielleicht schneller weil die sind schon am markt und ich habe noch so eine tolle idee gehabt und ich kann es vergessen möglicherweise genau also ganz ganz wichtiger punkt.
+
+Ja, und vielleicht mal, dass wir jetzt da mal einsteigen, bevor wir dann so auf die Auswirkungen nochmal tiefer eingehen.
+
+Vielleicht wirklich mal, warum ist denn der Unterschied so groß?
+
+Also warum ist denn gerade die CPU, also der klassische Prozessor eines Rechners, im Verhältnis zu einer GPU so viel langsamer, wenn wir im Endeffekt hier das für unsere Modellbildung oder Modellerstellung verwenden?
+
+Ich will jetzt mal zwei Sachen, die mir sofort einfallen, sagen.
+
+Das eine, wahrscheinlich das wichtigere, ist der Punkt Parallelisierbarkeit.
+
+Das heißt, eine GPU ist sehr, sehr speziell, kann halt weniger als eine CPU, dafür diese Sachen aber schneller.
+
+Und hat viele von diesen Recheneinheiten, mit denen man bestimmte Rechenoperationen durchführen kann, die man parallel ausführen kann.
+
+Während vieles bei der CPU, man kann alles Mögliche, man kann viele Sachen berechnen, man kann hin und her springen, man kann vieles recht gut, aber die Spezialsachen nicht so schnell und nicht unbedingt parallel.
+
+Natürlich habe ich auch mehrere Kerne, aber trotzdem kann ich nicht so viele gleichartige Sachen parallel machen.
+
+genau die stärke von von einer gpu dass sie halt hochgradig spezialisierte sachen sehr viel addition multiplicationen vielfach parallel ausführen kann und dadurch kann man kann man den geschwindigkeitsvorteil erhalten die frage ist nur warum ist denn das so wichtig wir reden immer von grafikkarten was haben grafikkarten denn eigentlich mit deep learning und ki zu tun
+
+Ja, ich würde das gerne nochmal aufgreifen, was du gerade gesagt hast, die Kerne und diese Parallelisierung.
+
+Es ist ja so, dass wir, wenn wir mal die unterschiedlichen Prozessionen anschauen, CPU, GPU, dann haben wir im CPU-Bereich eine gewisse Anzahl an Kernen mit einem Cajen-Zwischenspeicher.
+
+Und was die hier sind, die sind ja unheimlich gut angebunden an den normalen Arbeitsspeicher.
+
+Das heißt, die können unheimlich schnell Datenelemente aus dem Arbeitsspeicher rausholen und den an die CPU übergeben.
+
+Was sie aber nicht können ist, aufgrund dieses kleinen Speichers innerhalb der CPU viele Daten dort halten.
+
+Das heißt, unheimlich schnell in dem Holen der Daten
+
+Und in einer, wenn wir jetzt zum Beispiel von Skalarmultiplikationen reden, also von einfachen Multiplikationen, dann können die einfach sequenziell das unheimlich schnell abarbeiten, weil sie halt auch so schnell holen können.
+
+Kann man sich so vorstellen wie so ein Ferrari, der immer zwischen dem Speicher und dem der eigentlichen Prozessor hin und her fährt und das halt richtig schnell.
+
+Bei den GPUs ist das anders.
+
+Die GPUs sind eigentlich extrem langsam an der Stelle.
+
+Die sind gar nicht so schnell, dass sie an der Stelle die Daten aus dem Speicher des Rechners holen und dann zur GPU bringen.
+
+Was die aber können, ist, dass die unheimlich viel auf einmal transportieren können.
+
+Und dann auch einen größeren internen Speicher haben.
+
+Und einen größeren internen Speicher haben.
+
+Und dann natürlich auch, und das ist der nächste Punkt, eine massiv größere Anzahl an Rechenkernen, von denen du gesprochen hast.
+
+Das heißt also, wenn wir eine einfache Multiplikation nehmen und die auf der CPU ausführen, dann haben wir eine gewisse Geschwindigkeit.
+
+Ich habe das im Vorfeld mal ausprobiert.
+
+Dann kriegen wir das in, bei mir war es jetzt irgendwie acht Mikrosekunden für eine normale Multiplikation von zwei Zahlen.
+
+Und dann führe ich das auf der GPU aus, genau das gleiche, also praktisch eine Multiplikation von einfachen Zahlen, also von zwei Zahlen miteinander.
+
+Dann haben wir aber einen Faktor von 58 Millisekunden.
+
+Das heißt also, dass die GPU wesentlich langsamer, weil halt dieser Transport
+
+Langsam.
+
+Der Overhead, wie man in der Informatik schon sagt, ist einfach deutlich höher.
+
+Wenn ich aber einmal die Daten im Speicher habe und sie dann mehrfach für gleichartige Operationen immer wieder nutzen kann und ich dann diese Operationen gleichartig vielfach nacheinander ausführe, dann kann die GPU ihre Stärke ausspielen.
+
+Genau.
+
+Und das ist etwas, was ich im Vorfeld ausprobiert habe.
+
+Ich bin dann hergegangen und habe dann einfach gesagt, ich multipliziere jetzt nicht einfache Zahlen miteinander, sondern ich nehme einfach eine Matrize auf der einen Seite und auf der anderen Seite auch eine Matrize mit jeweils 10.000 Elementen, glaube ich, wenn ich es richtig im Kopf habe verwendet.
+
+Und dann sieht man den krassen Unterschied.
+
+Dann braucht im Endeffekt eine CPU dafür fast zwölf Sekunden.
+
+wenn das eine GPU noch im 500-Millisekunden-Bereich ist.
+
+Das ist genau dieser Transport.
+
+Das ist der Punkt, wo diese vielen gleichartigen Berechnungen herkommen.
+
+Wir haben sehr, sehr viele Matrizenmultiplikationen, und die setzen sich ja zusammen aus vielen gleichartigen Elementweisen, Multiplikationen von Vektoren und Matrizenelementen, und dann summieren, das Aufaddieren dieser einzelnen Werte.
+
+Das heißt, ich habe, wenn ich jetzt große Eingabevektoren habe, wir hatten ja schon mal gesagt, wir haben Hunderte,
+
+von Dimensionen.
+
+Wir haben pro Datenblock, Batch nennen wir das, den wir auf einmal verarbeiten.
+
+Also mehrere Objekte in mehrere Eingabewerte.
+
+Da haben wir relativ große Matrizen, die wir da verarbeiten.
+
+Und wenn wir da ganz viele gleichartige Berechnungen haben, kann das eine GPU alles gleichzeitig sehr schnell berechnen.
+
+Und das, obwohl, wie du schon sagtest, das Holen der Daten, das ist ein bisschen aufwendiger, da versucht man natürlich zu optimieren, dass man möglichst die Daten, die ich innerhalb einer Lerneinheit, einer Verarbeitung eines Batches brauche, dass die einfach im Speicher sind, innerhalb der Grafikkarte.
+
+Das Modell als solches, die Gewichte, die ich anpasse, sollten idealerweise natürlich auch da drin sein.
+
+Und dann habe ich alles, was ich brauche für so einen Lernzyklus innerhalb der GPU und kann dann die gleichartige Berechnung durchführen.
+
+Und vielleicht auch jetzt an dieser Stelle die Idee, warum helfen denn Grafikkarten?
+
+Was haben Grafikkarten damit zu tun?
+
+Diese Art und Weise der gleichartigen Berechnung, die ähnelt halt sehr stark der klassischen Grafik in der Videobearbeitung.
+
+Wenn ich Bilder habe,
+
+die ich erzeuge, für meinen Monitor, also als Ausgabe.
+
+Und da sind so Computerspiele zum Beispiel, wenn ich sowas erzeuge, dann habe ich ja auch ganz ganz viele ähnliche oder gleichartige Berechnungen nebeneinander her.
+
+Für jedes Bild nacheinander, für jeden Bildpunkt, wo ich so Raytracing, solche Geschichten berechne, wo sind Schatten, wo sonst irgendwie.
+
+Da mache ich ja die eine und dieselbe Berechnung
+
+Vielfach nebenher.
+
+Und deshalb sieht man, dass die Art und Weise der Berechnungen bei Grafikverarbeitung vergleichbar oder sehr ähnlich sind zu dem, was wir im Deep Learning haben.
+
+Und deshalb klappt das ganz gut mit dem Übertragen.
+
+Ja, absolut.
+
+Man kann also sagen, es gibt eigentlich drei wesentliche Gründe, warum die Hardware-GPU schneller ist in unserem Kontext.
+
+Und das ist einmal die größere Speicherbandbreite.
+
+Das heißt, das ist die Verbindung zwischen dem Arbeitsspeicher und unserem Verarbeitungs-CPU-GPU.
+
+Die CPU kann schnell Daten holen, aber halt nur wenige.
+
+die GPU wie so ein LKW-File auf einmal, aber dann auch noch, und das ist eigentlich das Spannende, dass dieser LKW, wenn man sich das so vorstellen will, dass ich den auch parallelisiere.
+
+Das heißt, ich hole nicht nur mit einem LKW, sondern halt mit 10, 20, 30, keine Ahnung.
+
+Und das bedeutet ja, dass ich dafür sorge, dass auch der leerlauf der kerne der rechenkerne innerhalb einer gpu gar nicht stillsteht, sondern der wird immer bedient durch diese parallelisierung auch der des daten holens.
+
+Und dann natürlich auch die parallele Berechnung.
+
+Das heißt, wir haben dann den Arbeitsspeicher, also die Parallelisierung der Rechenkerne.
+
+Wir haben aber dann auch den größeren Arbeitsspeicher innerhalb der GPU, was zu einem schnelleren Speicherzugriff führt.
+
+Und alles zusammen ergibt erstmal den Vorteil, sobald wir die Möglichkeit haben, parallele Berechnungen durchführen zu können.
+
+Wenn wir keine parallelen Berechnungen haben, wie jetzt, was ich vorhin als Beispiel genannt habe, mit einer einfachen Multiplikation, dann verliert die GPU gegenüber der CPU.
+
+Genau, aber da können wir uns sicher sein, beim Deep Learning, da haben wir das.
+
+Ja, genau.
+
+Aber ihr sagt mir auch also einerseits sollen ja die die eingabe daten möglichst für einen batch also für einer einer gruppe von von eingangs vektoren die verarbeiten möchte und aber auch das modell mit seinen parametern im speicher haben vielleicht damit man mein gefühl kriegt wir haben ja vor einigen wochen über das gpt 3 gesprochen hast du damals so schön gesagt mensch dieses neue allgemeine sprachmodell 175 billionen gewichte parameter hat dieses netz.
+
+Das hieße, wenn wir jetzt mal überlegen, das mal durchgerechnet, viele Grafikkarten arbeiten mit einer Präzision von 16 Bit, also nicht das, was man vielleicht mit der GPU in vielen modernen Programmiersprachen mit 32 oder 64 Bit hätte.
+
+Also man hat nicht ganz so hohe Genauigkeit, braucht man aber auch oft nicht.
+
+Und wenn man das mal ausrechnet,
+
+Das ist einfach nur die Parameter.
+
+Mal 16 Bit, also 2 Byte pro Parameter multipliziere, dann komme ich auf einen Speicherbedarf von 350 Gigabyte.
+
+Das hieße, klassische Consumer GPUs, Grafikkarten, haben vielleicht 10, 12 Gigabyte an Hauptspeichern.
+
+Gute, teure, hier die aktuellen, sowas wie die von Nvidia, die Tesla, wie heißen sie, die A100.
+
+Das ist ja schon eine, die einen Preis von um die 10.000 Euro hat, wenn man sie überhaupt kriegt.
+
+Der einfachen Variante von 40 GB und es gibt eine Variante mit 80 GB.
+
+Ich weiß gar nicht, ob die als Einzelstück frei verkauft wird.
+
+Also ich habe keine Ahnung, was die kostet.
+
+Und dann gibt es da solche quasi schon so vorkonfigurierten Rechner, hier die DGX A100 mit teilweise, ich habe gerade geschaut, mit 8 mal dieser A100 mit 80 Gigabyte.
+
+Listenpreis schätze ich mal so 220.000 euro die hätte denn 640 gigabyte intern gigabyte intern speicher in den grafikkarten gut kombiniert aufeinander abgestimmt das heißt das ding würde reichen aber die hälfte schon jetzt die hälfte schon voll mit dem modell und dann brauchen wir noch die die daten die ich die reinstecken muss für die ganzen berechnung.
+
+Genau, und dann müssen wir immer noch sehen, dieses Modell, das GPT-3, das hat ja trotzdem dann noch x 100 Tage gerechnet.
+
+Also, da merkt man, dass man ganz schön einen Aufwand betreiben muss, wenn wir über hybride neuronale Netze reden, weil wir einfach diese Massen an Gewichten und Parametern haben.
+
+Vielleicht an der stelle noch mal ich weiß nicht kürzlich ist gar nicht ein paar tage erst her habe ich von einem neuen also gpd 3 ist ja schon längst nicht mehr das das flaggschiff ich gebe ein ein modell jetzt von aus china das wu dao 2.0 da steht so richtig verstanden habe für enlightenment also für die erleuchtung das ist noch mal faktor 10 größer 1,75 trillionen,
+
+Wir müssen mal aufpassen, wenn wir diese Begriffe nennen.
+
+Billion, Trillion, das sind die englischen Bezeichnungen.
+
+Also eine Billion im Englischen ist ja, soweit ich weiß, im Deutschen die Milliarde.
+
+Also insofern müssen wir da aufpassen.
+
+Trotzdem, die Zahl ist verdammt groß.
+
+Also 1,75 Trillionen heißt, wir bräuchten 3500 Gigabyte.
+
+Also reicht diese klassische DGX dann auch schon nicht mehr.
+
+Da bräuchten wir dafür ja auch schon
+
+Ja sechs stück wahrscheinlich um die parallel nebeneinander herzustellen das heißt haben wir schon allein hardware kosten von von keiner ahnung eineinhalb millionen euro weil die da stehen haben und dann haben wir die noch nicht betrieben also energie stromkosten kommen ja auch noch.
+
+Aber es darf den natürlich jetzt auch nicht erschrecken weil das sind natürlich extrem beispiele die wir jetzt hier nennen weil viele modelle natürlich nicht in der dimension liegen.
+
+sondern auch in handelsübliche Größen wie 18, 24 GB reinpassen und man damit eigentlich gut arbeiten kann.
+
+Aber man merkt halt schon, dass wenn ich sozusagen im Deep-Learning-Bereich nicht auf spezialisierte Hardware gehe, dann habe ich in gewisser Weise einen zeitlichen Nachteil.
+
+Das dauert einfach länger.
+
+Wir haben ja auch schon mal darüber gesprochen,
+
+Viele der Dinge im Deep Learning Bereich lassen sich ja nicht eindeutig bezeichnen.
+
+Also du kannst nicht sagen, ich stelle jetzt genau diesen Wert ein und dann passiert genau das.
+
+Sondern das sind ja Experimente, die man durchführt.
+
+Das heißt, ich probiere aus, überlege mir, was grundsätzlich gehen wird und passe dann einzelne Parameter an und schaue, wie wirken sich die aus.
+
+Genau wir reden ja dann auch von sehr unterschied im generellen maschinen wir haben parameter und hyper parameter parameter das sind in unserem fall die gewichte unseres neuronalen netzes das können natürlich auch andere werte sein die unser modell kennzeichnen und hyper parameter sind normalerweise die die werte die ich dem lernverfahren mitgebe dass es weiß wie das aus den daten zu lernen hat
+
+Und wenn ich da verschiedene Konstellationen noch ausprobiere, wie wirken sich verschiedene Hyperparameter auf die Modellerstellung aus?
+
+Und wenn eine Konfiguration schon rechnen würde und ich würde da jetzt dutzende, hunderte ausprobieren,
+
+Das ist schon schwierig, also man sollte sich das vorher schon gut überlegen.
+
+Das erinnert mich ein bisschen an die Zeit, die ich natürlich selbst nicht mehr miterlebt habe, aber als Rechenleistung noch extrem teuer war, als man noch Lochkarten gestanzt hat.
+
+Und da sollte man auch besser dafür sorgen, dass da nicht falsch gestanzt wurde, dass das Programm keinen Fehler hatte, weil da mal eben nochmal so ein Jahr neu rechnen, das ist dann schon sehr, sehr teuer und aufwendig.
+
+Nein, und das ist ja auch der Grund, warum man erstens schaut, Spezialhardware zu nehmen und zweitens die dann auch in einer gewissen Weise mehrfach zu haben, damit ich einfach in einem Setup mehrere solche Hyperparameter durchtesten kann und Modelle praktisch parallel auch lerne.
+
+Also praktisch mit der einen Ausprägung das Modell mit ein bisschen angepassten Werten, mit einer anderen Ausprägung, um dann hinterher die Ergebnisse zu vergleichen.
+
+Also ein wichtiger punkt gesagt tue ich die blending wenn ich von von scratch von ganz von vorne anfange unsere modelle neu lerne dann sind sie wenn sie größer sind wenn sie viel können sollen wenn sie viel komplexe aufgaben lösen sollen habe ich da einen gewissen rechenbedarf das ist nicht von der hand zu weisen aber der trend geht ja dahin dass ja nicht jeder
+
+sein mal seine seine modelle von scratch lernt von von von von anfang an weil das ja einfach gar nicht machbar ist kann sich gar nicht jeder leisten und der trend geht also dahin dass man vortrainierte modelle.
+
+In solchen model soos also in irgendwelchen plattformen wo vortrainierte modelle angeboten werden dass man die da bereit stellt.
+
+Entweder kostenfrei, open source oder halt gegen eine Gebühr, dass man die beziehen kann.
+
+Und dann, jetzt kommt es dann natürlich, sag mal, ich habe eine ganz andere Aufgabe, aber die ist vielleicht gar nicht so viel anders.
+
+Vielleicht passt es ja grob zu der Art und Weise, wie es vortrainiert wurde.
+
+Und dann durch das sogenannte Fine-Tuning, also durch ein Nachtrainieren, inkrementell, mit den eigenen Daten, dass man es dann so hinkriegt, dass es für die eigene Aufgabe passt.
+
+Das ist diese Idee, die hinterm Transfer-Learning.
+
+steht die ist meines erachtens so wichtig dass wir da eigentlich schon eine eigene folge mal spenden sollten das ist ja wirklich also die ist extrem wichtig nummer eins und das ist ja auch faszinierend dass man sagen kann ich habe im endeffekt vor definierte daten ganz andere
+
+und lern die dann mit meinen Daten an und dann ändert sich was.
+
+Also, ich hatte ja vorhin schon erwähnt, dass wir gerade so eine Stimmengenerierung machen oder Stimmerstellungsmodell machen.
+
+Wir haben zum Beispiel ein englischsprachiges weibliches Modell genommen, also eine weibliche Aussprache, und haben dann meine Stimme mit wenig Datensätzen, dann wird das feingetunet.
+
+Und witzigerweise, es kommt tatsächlich meine Stimme am Ende raus.
+
+Also ich hätte erst gedacht, das wird so ein bisschen ein Mix, weil das Vormodell ja viel
+
+länger trainiert wurde mit ganz klar sauber aufgenommen weiblichen aufnahmen und dann spielt man so eine halbe stunde daten von mir ein und und merkt dann hoppala das ist ja meine stimme also ist interessant dass es funktionierend dass wir so eine art anpassung durch das feintuning machen können uns einen haufen rechenleistung dadurch sparen
+
+Und ich zwar dann immer also man muss auch sagen man kann trotzdem nicht auf einen gewissen rahmen der der hardware verzichten also das brauchen wir trotzdem weil sonst dieses feintuning halt trotzdem ewig dauert.
+
+Aber es reduziert natürlich mein gesamten zeitaufwand um auf ein gutes modell zu kommen.
+
+Es ist mal insofern interessant, es gibt so ein sehr, sehr schönes Buch, wie ich finde, vom Howard, also Jeremy Howard und Sylvain Gaga, ich weiß nicht, ob ich ihn richtig ausspreche.
+
+Es heißt Practical Deep Learning for Coders.
+
+Und die starten eigentlich mit ein paar Mythen, die im Bereich Deep Learning kursieren.
+
+Also erstens, man braucht sehr viel Mathematik, am besten PhD in dem Bereich.
+
+Ja, das stimmt natürlich nicht ganz, weil wir sehen, mit vielen Bibliotheken, die wir haben, kann man halt auch ohne tiefes mathematisches Verständnis natürlich erstmal Modelle, also Pipelines aufbauende Modelle erstellen.
+
+Mehr Mathekenntnisse helfen, wenn ich tiefer theoretisch einsteige, wenn ich beweisen möchte, was irgendwie funktionieren kann, was nicht.
+
+Wenn ich einen Optimierer irgendwo selbst nochmal anpassen möchte, dann wird es irgendwann wichtig, aber man kommt auch schon mit
+
+Wenn man ein Grundverständnis über die Funktionsweise von Machine Learning und Deep Learning hat, kommt man schon sehr weit, also insofern sollte das erstmal nicht abschrecken.
+
+Dann sagt man ja so allgemein, man braucht sehr sehr viele Daten und extrem teure Hardware.
+
+Und die letzten beiden Punkte, die stimmen halt, wie sagen, sie halten es für einen Mythos, aber es stimmt nur begrenzt.
+
+Das heißt, wir haben gerade gesehen, wenn ich ein riesengroßes Modell habe, was vielleicht schon vortrainiert wurde, dann braucht nicht jeder diese teure Hardware, sondern ich kann durch Ideen wie Transfer Learning dann auch im Nachgang mit weniger Aufwand aufkommen.
+
+Und dann spielt nämlich genau der Punkt auch mit den Daten.
+
+Natürlich, wenn ich ein sehr, sehr großes, komplexes Modell habe, brauche ich sehr viel Daten, weil sonst habe ich das Problem vom Overfitting.
+
+Wenn ich 50 Datenpunkte habe und das auf mein Netzwerk mit 1,75 Trillionen Parametern loslasse, das kann natürlich irgendwie nicht klappen.
+
+aber wenn ich halt daten habe die nicht exakt zu meiner aufgabe passen zum beispiel wenn sprach modellen haben ich hab ja sehr sehr viele texte und ich kann sprach modelle erstmal allgemein die das wichtige der wichtige punkt aber ja das ist nicht,
+
+nicht überwacht im klassischen sinne ist dass ich für meine aufgabe diese ganzen labels also die zielgrößen kennen muss weil das ist ja oft der engpass nicht nicht die daten als solches sondern oft nur die die labels dass ich genau weiß ich mache eine textzusammenfassung jetzt muss eine die zusammenfassung generieren ich mache das sentimentanalyse und einer muss die ganzen texte lesen und sagen was ist positiv negativ oder welcher satz davon
+
+Das ist oft das schwierige, aber Texte als solches habe ich ja oft.
+
+Da hat man ja gesehen, die Sprachmodelle.
+
+Ich mag es nicht, das als unüberwacht zu bezeichnen.
+
+Ich bevorzuge die Bezeichnung self-supervised.
+
+Das heißt, ich kann aus den Texten selbst die eigenen Labels generieren, indem ich sage, prognostiziere einfach mal ein fehlendes Wort.
+
+So das heißt diese daten die muss es geben und dann vielleicht auch mit einer gewissen rechenkapazität rechenleistung die die irgendjemand schon mal hatte dann kann ich aber aufbauend auf diesen vortrainierten modellen kann ich auch mit viel viel weniger datenpunkten wie du es gerade so schön geschildert hast mit deiner stimme und auch mit viel weniger rechenleistung erstaunlich beeindruckende ergebnisse erzielen und man muss auch sagen weil ich hatte neulich erst eine diskussion da hieß es dann
+
+Es ging im Projekt halt auch um Texte.
+
+Und dann hieß es, ja, wir brauchen doch eigentlich gar keine Grafikkarten, also keine spezielle Hardware, weil wir haben ja keine großen Bilder oder ähnliches und deswegen langen ja die normalen CPUs.
+
+Aber wenn wir jetzt an unsere Attention Mechanismen denken, an die Transformer-Modelle, die wir schon vor zwei Episoden vorgestellt haben,
+
+Dann haben wir ja genau den Effekt, dass wir sagen, die Attentions sind ja eigentlich eine Repräsentation einer Matriz und das dreimal, wir multiplizieren die miteinander und dann kommen wir genau in diese parallelisierte Berechnung rein und das nicht nur mit einem Wort oder einem Satz, sondern mit hunderten und tausenden von Wörtern und dann sieht man mal, wie viel Berechnungen da eigentlich Masse durchmuss.
+
+Ich glaube das problem dabei ist wenn wenn viele menschen hören grafiker die gpu dann denken sie tatsächlich an grafik an bilder und video und da muss man halt mal aufräumen damit das ist halt ja da kommt es her.
+
+Aber darum geht es nicht ich habe auch im nlp bereich wenn ich texte habe habe ich auch dieses problem generell bei jedem deep learning problem aufgrund der art tat der sache dass ich halt matrizen sehr sehr intensiv nutze und berechne habe ich halt immer diese art von problemen ganz genau.
+
+Vielleicht nochmal auch so, wie ist die Situation im Moment, weil es hört sich alles so prima an, jetzt sind sie vielleicht ein Unternehmen und gehen jetzt in den Markt und sagen, ach super, machen wir ein paar Projekte, dann holen wir uns mal einen Rechner mit einer GPU oder einer speziellen Hardware und schauen das.
+
+Und wenn man jetzt mal in den Markt schaut, ist es leider so, dass der Markt aufgrund der, ja man muss fast sagen,
+
+Impliziten Monopolstellung.
+
+Anders kann man es ja nicht ausdrücken.
+
+Weil im Endeffekt dadurch, dass eigentlich fast alle Deep Learning Projekte ganz fokussiert auf den NVIDIA Grafikkarten sind.
+
+Also am Markt gibt es zwei große Player.
+
+Das sind einmal AMD und NVIDIA an der Stelle.
+
+Und die beiden großen, die teilen sich so den Markt auf.
+
+Aber für die Deep Learning ist eigentlich NVIDIA das Hauptthema.
+
+Und ich glaube, es ergibt sich daran, weil die relativ früh sozusagen die Entscheidung getroffen haben, recht gute Schnittstellen zu bieten, weil wir müssen uns ja überlegen, das ist ja eine Hardware, und wir müssen ja diese Rechenkerne direkt ansprechen.
+
+Also von den Learning-Bibliotheken aus, die wir für unser Deep Learning verwenden.
+
+Und der NVIDIA hat relativ früh gesagt, ja, wir machen hier eine Programmschnittstelle,
+
+Die nennt sich CUDA und dieses CUDA sozusagen gibt den Zugriff auf die GPUs frei und macht es recht angenehm, dass man es einbinden kann in die Bibliotheken für unser Deep Learning.
+
+Und dadurch hat sich über die Zeit, glaube ich, so eine faktische Monopolstellung ergeben.
+
+Und jetzt ist es aber so, dass wir in dem Kontext mit der jetzigen Marktsituation, wenn man da jetzt so ein bisschen über den Tellerrand von dem Deep Learning schaut oder generell vom KI, da finden ja auch wahnsinnig viele Berechnungen statt, parallele Berechnungen statt, um halt die Transaktion zu verifizieren.
+
+Und wenn man sich so den Markt momentan da anschaut, da sind die Kurse ja wahnsinnig dank Bitcoin gestiegen, was dazu führte, dass viele diese spezielle Hardware gekauft haben.
+
+Da gibt's ja dann auch wieder Firmen, so Mining Farmen, die dann wörtlich gleich mal vom Markt weg dann x-tausend Karten wegkaufen und somit ist eine wahnsinnige Knappheit am Markt vorhanden, dass man überhaupt an solche spezielle Hardware rankommt.
+
+Und die Preise sind dementsprechend, Angebot Nachfahre, dann durch die Decke gegangen.
+
+Vielleicht sollte man an der Stelle aber auch wieder ergänzen, dass man nicht zwingend gleich eine Deep Learning Box, wie wir es mal so schön nennen, also einen hochgezüchteten Rechner mit starken GPUs, braucht.
+
+Man kann auch solche Rechenleistungen quasi in der Cloud beziehen und einkaufen.
+
+Maschine Learning Pipelines aufbaue und die dann quasi mir die Rechenleistung einfach miete.
+
+Und das geht in begrenztem Umfang natürlich auch zu durchaus attraktiven Preisen, dass ich mir also diese Mühe, mir so ein Gerät erstmal zu beschaffen, vor allem wenn ich vielleicht noch gar nicht genau weiß, ob es mir was taugt, ob es was bringt.
+
+Und ich auch diesen ganzen Aufwand der Konfiguration nicht habe, weil das auch nicht zu unterschätzen.
+
+Wir haben ja selbst einige dieser Kisten auch eingerichtet und bis es dann alles so läuft, dass die ganzen Treiber und die ganzen Versionen, Spaß von CUDA, also irgendwas, was darauf aufbaut, das wird jetzt in den letzten Jahren immer einfacher.
+
+Es gibt Docker-Container von Nvidia, die quasi vorkonfiguriert alles drin haben.
+
+Man kann das relativ
+
+Einfach runterladen starten das das funktioniert schon extrem gut ist man da nicht mehr so viel aufwand hat mit den verschiedenen versionen hat man wieder eine neue bibliothek die funktioniert wieder mit einer anderen treiber variante funktioniert sie funktioniert sie nicht oder wird man ja wahnsinnig wenn man das alles verfolgen muss und da hat man sehr sehr viele möglichkeiten inzwischen.
+
+Ich denke, für die Modelle, die man so lernt, ist es gut, wenn man so eine überschaubare Modelle hat.
+
+Wenn man jetzt wirklich langlaufende Modelle hat, muss man halt abhängen.
+
+Was sind die Kosten?
+
+Man kann es ja recht gut abschätzen, weil diese Berechnungen, die schwanken ja nicht.
+
+Das ist ja relativ klar, wenn ich jetzt so den ersten Durchlauf sehe, nach ein paar Minuten, wie lange es dauern wird, um ein bestimmtes Ziel zu erreichen.
+
+Und dann kann ich relativ gut auch ausrechnen, wie viel wird es mich kosten.
+
+Wenn ich das jetzt laufen lasse, und das hat den Zeitwert gemessen.
+
+Also insofern kann man einen Einstieg, kann man schnell bekommen, dass man halt auch ohne GPUs, man kann ja das Ganze ein bisschen kleiner packen, dass man guckt, erstmal schneidet das Problem ein bisschen kleiner, funktioniert es generell, dann mit gemieteter Rechenleistung, und wenn ich dann merke, jawohl, in die Richtung möchte ich gehen, dann bietet es sich sicherlich an, da tatsächlich zu investieren.
+
+Aber es ist eigentlich schon ein wichtiger Part, den wir haben, und man wird nicht drumherum kommen, wenn man ernsthaft in dem Bereich was machen möchte, dass man zwangsläufig gleich wie auf solche Hardware zurückgreift.
+
+Das ist an der Ecke vielleicht auch nochmal wieder wichtig, wir hatten es gerade am Anfang immer wieder betont, wir haben ja diese zwei Phasen, das Lernen, die sogenannte Inferenzphase, das Trainieren, das Lernen der Modelle und die Nutzung.
+
+Und je nachdem, was ich für Probleme habe, beim Lernen habe ich diese Rechenleistung natürlich immer dies, dass ich sie brauche.
+
+Das heißt, da werde ich bei größeren Netzen immer irgendwo auf GPUs gehen.
+
+Die Frage ist, brauche ich sie denn auch bei der Nutzung, beim Deployment?
+
+Da hängt es ein bisschen von der Aufgabe ab.
+
+Wenn ich natürlich mal ein Bild habe, was ich klassifiziere, oder einen Text, dann brauche ich das nicht.
+
+Dann kann ich das auch mit ganz klassischen CPU machen.
+
+Wenn ich aber in die Richtung Sprachgenerierung, Synthetisierung gehe, ich habe das einmal ausprobiert, ich habe einfache Sätze sprechen lassen, selbst mit einer einfachen GPU, das hat dann schon ein paar Minuten gerechnet, bis so ein Satz dann irgendwie erzeugt wurde.
+
+Und wenn ich dann natürlich eine Echtzeitanwendung habe, dass ich mit so einem System, das soll mich verstehen, zuhören, antworten, ohne dass ich immer eine halbe Minute zwischendurch warten muss, dann brauche ich natürlich auch dafür in der Nutzungsphase eine hohe Rechenleistung.
+
+Also dann kann mich da auch nicht ein GPU
+
+Also insofern muss man schauen, was ist es für eine Art von Anwendung, um zu sehen, brauche ich da halt auch die GPUs oder nicht.
+
+Perfekt.
+
+Jetzt hoffe ich, dass wir mit der heutigen Sitzung ein bisschen Licht in das Thema Hardware und GPU-Relevanz reingebracht haben.
+
+Und ich denke, wir werden in der nächsten oder übernächsten Sendung mal das Thema aufgreifen mit Fine-Tuning, Transfer-Learning, würde ich sagen.
+
+Gute Idee.
+
+Wunderbar.
+
+Danke fürs Zuhören und bis nächste Woche.
+
+Ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

@@ -1,0 +1,761 @@
+ Hallo und herzlich willkommen.
+
+Mit der heutigen Sendung kommen wir zum Ende unserer kleinen Miniserie, ein historischer Überblick einzelner NLP-Verfahren.
+
+Abschließend reden wir heute über Transformers, deren Aufbau, Vorteile und Nachteile.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Diese Woche reden wir über Transformers.
+
+Ich denke, diese Sendung wird, glaube ich, ein bisschen technischer als die anderen, die wir vorher gemacht haben.
+
+Ja, ich befürchte es auch.
+
+Aber es ist eine spannende Architektur und ich hoffe, dass wir die Architektur, die wir heute ein bisschen erklären und versuchen transparent zu machen, dass wir dies auch verbal gut rüberbringen können.
+
+Ansonsten hoffen wir natürlich auf Rückfragen.
+
+Dann können Sie gerne auch uns eine E-Mail schreiben oder ähnliches.
+
+Und dann versuchen wir das nochmal aufzugreifen und genauer zu beschreiben.
+
+Was sind Transformers?
+
+Wir haben ja letzte Woche gesprochen über die Attention-Mechanismen und ein wesentlicher Teil der Transformers sind die Attention-Mechanismen.
+
+Die Transformers sind auch erstmalig genannt worden in einem Paper.
+
+Das Paper hieß Attention is all you need.
+
+Und die Idee dahinter war, dass man gesagt hat, von wegen man nimmt viele dieser wiederholenden Schichten, die wir bei RNNs oder LSTMs haben, dass wir diese Schichten rausnehmen und uns eigentlich, wenn man es genau nimmt, ausschließlich auf Attention-Mechanismen fokussiert.
+
+Transformer haben eine intensive Nutzung dieser Idee der Attention auf mehrfache Art und Weise, wie wir heute zum Laufe der Folge sehen werden, und kommen ja vom Kern der Idee erstmal aus dem Bereich der Übersetzung.
+
+Dass ich einen Satz einer Sprache zum Beispiel überführe in eine andere Sprache, also eine Sequenz in eine andere Sequenz.
+
+Das ist der ursprüngliche Kern dieser Geschichte.
+
+Wir werden später vielleicht mal diskutieren, wie denn Teile dieser Transformer-Architektur aber auch wieder in anderen Bereichen genutzt werden können.
+
+Aber dazu müssen wir erst mal verstehen, was bei den Transformern überhaupt passiert.
+
+Interessant finde ich, dass es aus der Sprachübersetzung kam.
+
+Die Grundidee ist ja sozusagen, dass man eine Sprache in die andere Sprache transferiert, also ein Sequenz-zu-Sequenz-Modell hat.
+
+Many-to-many, wie wir es ja auch genannt haben.
+
+Die Überlegung war ja, dass wir gesagt haben, okay, wir haben gewisse Nachteile bei den LSTMs und bei den RNNs, die wir schon verwendet haben.
+
+Und diese Nachteile sind ja zum Beispiel eine hohe Rechenleistung, also hoher Trainingsaufwand, weil wir immer wieder wiederholende Schritte haben.
+
+Genau, aber nicht nur eine hohe Rechenleistung, sondern eine hohe Rechenleistung, die sich kaum parallelisieren lässt.
+
+sequenzielle Verarbeitung, wie du es gesagt hast, der Zeitstufen, also der einzelnen Wörter habe.
+
+Und die Architektur ist ja genauso aufgebaut durch diese Rückkopplung, dass ich wirklich Wort für Wort, Zeitstufe für Zeitstufe die Eingabe verarbeiten muss.
+
+Und deshalb kann ich es schlecht parallelisieren.
+
+Das ist der eine Nachteil.
+
+Der andere ist, dass wir gesehen haben, dass durch die Rückkopplung die Erinnerungsmechanismen zwar funktionieren, insbesondere die
+
+nahezurückliegenden Wörter, aber auch die, die weiter weg sind.
+
+Aber bei der Sprachübersetzung hat man gesehen, dass es einen flexibleren Zugriff auf die vergangenen oder auch der zukünftigen Wörter, die in einem Satz verwendet werden, bedarf.
+
+Wir hatten ja auch mal, vielleicht, dass man das einordnen kann, wir hatten ja mal eine Sendung, da haben wir das GPT-3-Netz vorgestellt, also eine künstliche Intelligenz, mit der wir uns unterhalten haben an der Stelle.
+
+Die basiert ja sehr stark auf dem Transformer-Modell in dem Kontext.
+
+Also wir können das nicht nur zur reinen Sprachübersetzung verwenden, also dass wir sagen, wir haben eine Input-Sequenz und wir wollen eine andere Output-Sequenz haben.
+
+zum Beispiel einen deutschen Satz und dann soll ein englischer Satz rauskommen, sondern wir können das Ganze auch verwenden, um zu prognostizieren, die im Satz dann noch kommen sollen.
+
+Also Texte schreiben, Artikel verfassen, wofür halt auch das GPT-3-Netz auch von uns geführt wurde, also auch um eine Konversation zu führen, Question-Answering-Systeme, also überall dort kann man auch die Transformers einsetzen, von der Grundidee her.
+
+Weil ja ausgehend von, weil auch bei der Übersetzung ist ja, ausgehend von einem Startwort oder von einem Satzanfang wird ja Wort für Wort diese Übersetzung aufgebaut.
+
+Und für das Modell, das ist in dem Sinne egal, ob ich eine Sprache übersetze oder vielleicht einen bestehenden Satz fortführe, der ist dann möglicherweise in einer anderen Art und Weise noch optimiert, in einer Feintuning-Phase gleich gezielt auf diese Aufgaben ausgerichtet.
+
+Aber das muss zwingend mal nicht mehr sein.
+
+Vielleicht, dass man die Architektur, über die wir jetzt gleich sprechen, ein bisschen verstehen oder es besser folgen können.
+
+Es ist ja so, dass diese Transformer eigentlich klassisch ein Encoder-Decoder-Modell sind.
+
+Das heißt also, wir nehmen eine Input-Sequenz, codieren die sozusagen durch einen Encoder zu einem Vektor, zu einer Repräsentation und nehmen diese dann wieder und decodieren die wieder in eine andere Sequenz.
+
+Das sind ja unsere Many-to-Many-Sequenzen.
+
+Diese Idee,
+
+Bereichen.
+
+Nicht nur jetzt im Bereich der Textverarbeitung.
+
+Das kennen wir auch schon, wenn wir Daten komprimieren.
+
+Und wir haben eine dick und komprimierte Form und entpacken sie dann wieder.
+
+Da haben wir natürlich den Anspruch, dass ich wieder genau und verlustfrei entweder die Daten habe, wenn es darum geht, wirklich eine Datei auf dem Computer zu komprimieren, wenn es nur darum geht, vielleicht Musik zu packen.
+
+Ja, mp3, das ist ja auch eine Form von Codieren mit einem Encoder und hinterher entpacke ich es.
+
+Vielleicht nicht verlustfrei, aber so, dass es der Mensch nicht hört.
+
+Das sind selbe Prinzipien, die da von der Idee her dahinter stecken, diese zwei Phasen.
+
+Also, codieren der Encoder und wieder umwandeln in irgendwas, was ich gerne hätte oder was ich ursprünglich mal hatte.
+
+Und wenn wir jetzt heute ein bisschen tiefer reingehen, dann würden wir uns jetzt zunächst mal die Encoder-Schicht anschauen, dieses Transformers.
+
+Weil, wenn man das eigentlich genau bedachtet, sieht der Decoder ja ziemlich ähnlich aus.
+
+Der hat zwar noch ein, zwei Elemente mehr, aber so vom Prinzip her ist es erstmal so die gleiche Überlegung, die auch der Encoder hat.
+
+Gleichüberlegung wirkt auch sehr ähnlich, aber im Detail sind da halt ein paar feine Unterschiede, die wir dann aber an der entsprechenden Stelle adressieren.
+
+Fangen wir mal an.
+
+Also wir haben einen Satz.
+
+Diesen Satz geben wir in den Encoder.
+
+Was passiert als erstes?
+
+Gut, erster Schritt, denke ich mal, müssen wir das Ganze, wie wir es schon kennen, auch von den Vorüberlegungen überführen in eine numerische Darstellung meiner Wörter.
+
+Ich habe ja die Wörter als solche.
+
+Klartext überführe ich in Word Embeddings, die wir schon kennengelernt haben.
+
+Das wäre die Haupteingabe erstmal.
+
+Aber wie geht es dann weiter?
+
+Vielleicht auch wichtig zu erwähnen, bei den RNNs und bei den LSTMs, da haben wir ja Sequenzen.
+
+Auch natürlich jetzt hier logischerweise auch, aber bei den RNNs und LSTMs, da achten wir ja bewusst auf die Sequenz und geben sozusagen mit so effektiven Zeiteinheiten ja immer ein Wort nacheinander sozusagen in dieses Netz.
+
+Und dann wird es ja rekurrent durcharbeitet.
+
+Wiederholen sozusagen, wir arbeiten immer mit einem Rückgriff, sei es mit den Gedächtnissen des LSTMs oder einfach, weil man immer wieder die gleiche Schicht durchläuft bei den RNNs, bei den klassischen.
+
+Das haben wir hier nicht.
+
+Also hier geben wir... Genau, das heißt, um das aufzugreifen, ein RNN ist sich quasi der Position in dem Satz bewusst, weil ich ja wirklich Schritt für Schritt dadurch arbeite.
+
+Genau, und das verlieren wir jetzt.
+
+Ja, also bei den Transformers geben wir es eigentlich direkt rein.
+
+Also wir geben praktisch den gesamten Satz, wenn wir jetzt mal von Sätzen reden wollen, weil es gibt auch Ansätze, um die Transformer zum Beispiel bei Bildern oder ähnliches zu verwenden.
+
+Aber wenn wir jetzt sozusagen den Satz praktisch bearbeiten wollen, dann geben wir den komplett auf einmal in das Netz.
+
+Das ist jetzt aber ein ganz, ganz wichtiger Punkt für mich.
+
+Wir haben ja argumentiert, dass bei dieser Sequenzverarbeitung, dass da die Herausforderung ja war, dass wir mit Sätzen unterschiedlicher Länge umgehen wollen.
+
+Und jetzt ist das auf einmal egal.
+
+Das kann doch nicht sein.
+
+Ja, das ist interessant.
+
+Das ist so ein bisschen, als würde man einen Schritt zurück machen.
+
+Zwei Schritte vor, einen Schritt zurück.
+
+So wirkt das ein bisschen.
+
+Aber es ist tatsächlich so.
+
+Wir haben eigentlich bei den Transformers jetzt wieder eine feste Länge.
+
+Und es gibt zwar Ansätze, wie zum Beispiel die Transformer SLX, die sich Gedanken darüber machen, wie man diese fixe Länge wieder herausnehmen kann und so dann in eine flexible Länge zu kommen.
+
+Bei den Transformers selber ist es so gelöst, dass man halt eine Maximallänge des Korpuses, also der Sätze, die man hat, einfach fix festlegt.
+
+Das ist auch schon in gewisser Weise ein kleiner Nachteil.
+
+Es bedeutet, umso länger meine Sätze sind, die ich in dieses Netz gebe, umso mehr Arbeitsspeicher brauche ich, um diese zu verarbeiten.
+
+Oder wenn ich in der Anwendungsphase dann auf einmal einen Satz habe, der länger ist als der bisher Bekannte in meinem Korpus, kriege ich vermutlich auch Probleme.
+
+Ja, es gibt ja ein paar Papers, die dazu was geschrieben haben.
+
+Da heißt es dann im Endeffekt, dann werden die Sätze an den Stellen geteilt und man gibt sie dann teilweise rein.
+
+Aber dann verlieren wir in gewisser Weise den Kontext, den wir eigentlich gerade mit dem Attention Mechanismus ja haben wollen.
+
+Dass wir aber durch den Bezug zwischen den einzelnen Wörtern zueinander haben wollen.
+
+weil wir dann praktisch halbe Sätze betrachten.
+
+Und da ist schon die Wahl der Länge, die man sozusagen festlegt bei seinem Design des Modells, eine wichtige Komponente.
+
+Könnte man natürlich sagen.
+
+Im Englischen ist das nicht so schlimm, weil man im Englischen bemüht ist, eher kurze Sätze zu formulieren.
+
+Da kriegt man oft auch im akademischen Bereich mal wieder gesagt, kurze, verständliche Sätze.
+
+Das sorgt eher dafür, dass man ein Thema beherrscht.
+
+Während im Deutschen gerade wissenschaftliche Arbeiten ja bekannt dafür sind, dass Sätze gerne mal über mehrere Seiten gehen können und man dadurch die Autoren meint, die geistigen Fähigkeiten unter Beweis stellen zu können.
+
+Und das heißt, im Deutschen würde man vielleicht eher Probleme mit solchen Verfahren kriegen.
+
+Interessanter Punkt, dazu habe ich ehrlich gesagt noch kein Forschungspapier gefunden, aber könnte man sich mal genauer betrachten, ich kann mir das gut vorstellen, dass das eine Problematik ist, wenn man dann an der Stelle unterwegs ist.
+
+Also ist es sicher auch eine Aufgabe, wenn ich zum Beispiel eine Applikation baue mit einem Transformer-Modell, dass ich mir Gedanken mache, wie ich praktisch mit welcher Länge oder wie ich meine Informationen vorher zerschneide, wenn man das so nennen möchte, also vorverarbeite, damit sie in den Transformers auch wirklich das liefern, was ich mir vorstelle.
+
+Aber wie kriegen wir das denn jetzt hin?
+
+Wir geben eine maximale Länge vor, da kriegen wir alle unsere Sätze rein.
+
+Verschenken wir vielleicht ein bisschen Verarbeitungskapazitäten, müssen die nicht vorhandenen Wörter dann mit irgendwelchen Platzhaltern, Müllen oder sonst sowas auffüllen.
+
+Weil wir verlieren ja jetzt dadurch, dass ich diesen gesamten Satz auf einmal da reinstecke und jedes Wort quasi für sich betrachte, verlieren wir ja erstmal Informationen über die Position.
+
+Und da hatten wir bei einer letzten Folge ja schon angedeutet, dass es da so einen Trick gibt, sogenannten Positional Encoding, wie ich irgendwo dem Netz noch mitgeben kann, an welcher Stelle stand denn das Wort.
+
+Ich fand das sehr spannend zu sehen, dass man sagt, man nimmt sozusagen die Embeddings auf der einen Seite und gibt dann einfach
+
+Also berechnet sozusagen die Position des Wortes im Satz und gibt das dem Embedding mit.
+
+Also indem man es, ich glaube, wenn ich es richtig weiß, multipliziert man es.
+
+Und dann ist sozusagen die Position mit in dem Embedding verkodet.
+
+Ja, ich glaube, das ist eine Addition.
+
+Aber man addiert nicht einfach die Position so als Index oder irgendetwas da drauf, sondern man hat da eine ganz wilde Geschichte mit trigonometrischen Funktionen, Sinus, Cosinus, so eine Kombination.
+
+Das kann man sich in gewisser Weise so vorstellen wie bei einer Binär-Codierung.
+
+wo ich eine Position, könnte ich ja eine richtige Binärzahl darstellen, wo ich das least significant Bit habe, wo etwas ständig wechselt und in den nächst höheren Potenzen immer seltener.
+
+Nur, dass ich jetzt sage, ich kodiere das nicht hart mit 0 und 1, sondern quasi mit Sinus-Quasinus-Funktionen, die immer zwischen 0 und 1 bzw.
+
+minus 1 und 1 schwanken.
+
+Aber mit unterschiedlichen Frequenzen immer seltener diese vertische Schwankungen durchleben.
+
+Auf die Art und Weise kann ich die Position kodieren und dem Ganzen mitgeben.
+
+Die Idee ist ja, wir haben hier einen Layer wie bei den Embeddings.
+
+Wir könnten die Positionen auch langen.
+
+Aber dieses Lernen, hat man festgestellt, bringt gar nicht so viel mehr Wert, als wenn ich sage, ich kodiere die Position hart.
+
+Und dieses harte Kodieren ist das, von dem du jetzt gesprochen hast, mit diesen Funktionen Sinus, Cosinus und so weiter.
+
+Und wenn ich mir diese Sinus, Cosinus betrachte,
+
+Dann ist es ja eigentlich, also man kann sich es eigentlich relativ einfach vorstellen, man nimmt einfach die Wörter, ich bin nach Hause gegangen, legt es auf die Achse und sagt, ich ist an der ersten Position, bin an der zweiten und so weiter.
+
+Wenn ich jetzt sozusagen die Wörter auf der Achse betrachte und zum Beispiel nur eine Funktion nehme, jetzt eine Sinusfunktion,
+
+dann ist das ja so eine schwingende Funktion.
+
+Das heißt, wir haben gleiche Werte an bestimmten Positionen.
+
+Und damit ich nicht die gleichen Werte habe, die an den Positionen sind, wenn ich also sage, das Wort an der hinteren Stelle hat den gleichen Positionswert wie das Wort weiter vorne, weil die Sinuskurve nach unten geht und damit auf den gleichen Wert kommt, nehme ich eine versetzte Cosinus-Funktion dazu.
+
+Und diese versetzte Cosinus-Funktion, die sorgt ja dafür, dass ich die Kombination aus diesen beiden Informationen mit relativer
+
+Unwahrscheinlichkeit, ja, dann tatsächlich die gleichen Werte für die verschiedenen Positionen bekommen.
+
+Und dadurch verdraht ich das hart.
+
+Das Wichtige ist aber noch nicht nur, dass ich diese beiden Sachen kombiniere, sondern dass ich auch noch verschiedene Frequenzen betrachte.
+
+Das heißt, Sinus-Cosinus-Funktionen, die unterschiedlich schnell schwanken.
+
+Und das entspricht dann quasi den höherwertigen Stellen einer Binär-Codierung.
+
+Dass ich natürlich mit jedem einzelnen Wert mehr als nur zwei Zustände codieren kann, dadurch die Schwankungen, dass ich da so eine kontinuierliche Übergänge habe, das zudem.
+
+Wollen wir mal ignorieren, wie das jetzt so, dass die Ingenieure fühlen sich sehr vertraut mit solchen Geschichten, so frequenzbasierte Modellierungen.
+
+Selbst wenn man das gar nicht im Detail versteht, muss man ja entdecken, gar nicht, sondern wichtig ist nur, dass wir
+
+unabhängig von der Länge eines Satzes eine stabile Kodierung der Position haben wollen.
+
+Man könnte ja sagen, ich kodiere die Position von 0 bis zum Ende des Satzes immer als Index.
+
+Dann kann es beliebig groß werden.
+
+Wenn ich sage, dann nummiere ich das zwischen 0 und 1, dann hätten aber bei längeren Satzen die Abstände irgendwie eine andere Bedeutung als bei kürzeren Sätzen.
+
+Das will man auch nicht.
+
+Man möchte, dass der Abstand von einem Wort zum nächsten, unabhängig von der Länge des Satzes, den gleichen Einfluss hat bei der Berücksichtigung.
+
+dass es also ein stabiler Wertebereich ist und dass ich halt verlässlich solche Positionen entsprechend berücksichtigen kann.
+
+Und da hat man festgestellt, dass diese Modellierungen mit Sinus, Cosinus und verschiedenen Frequenzen eigentlich eine sehr, sehr gute Möglichkeit darstellen, die man rechnerisch natürlich sehr effizient durchführen kann, weil man sie aber nicht lernen muss.
+
+Und das nutzt man jetzt seitdem in der Ecke fast ausschließlich.
+
+Und damit haben wir eigentlich den Vorteil, dass wir es erstens nicht lernen müssen.
+
+Wir codieren es einfach hart und haben am Ende dieser Schicht, also wir haben jetzt im Endeffekt ja schon zwei Schichten.
+
+Das ist einmal unser Embedding, der aus unseren Wörtern den Vektor macht.
+
+Dann unsere Positional Encoding, das im Endeffekt die Position mit reinnimmt und das mit dem Vektor verbindet.
+
+Und am Ende dieser beiden Layers haben wir jetzt im Endeffekt eine positionsabhängige Information zu dem Wort.
+
+Und das geben wir jetzt in die Attention.
+
+Interessant ist vielleicht noch, dass man addiert die Werte.
+
+Das heißt, dass ja sowohl die Positionen als auch die Wortinformationen selbst ja quasi übereinander liegen und man vertraut jetzt quasi der Netzwerkarchitektur mit dem Attention, dass es selbst den Wortanteil, den Positionsanteil da herausfiltern kann.
+
+Insofern ist das ganz interessant und kann jetzt nicht beweisen, denke ich mal, dass das auf jeden Fall besser ist.
+
+Man könnte sich auch überlegen, man konkretiniert das Ganze, hängt es nacheinander.
+
+Aber es hat sich gezeigt in der Anwendung, dass das Netz damit umgehen kann und das entsprechend lernen kann.
+
+Die Attention Mechanismen haben wir ja letzte Woche schon besprochen.
+
+Das heißt, wir übergeben jetzt diese Information den Attention Mechanismen über.
+
+Und die sollen jetzt eine gewisse Gewichtung der einzelnen Wörter festlegen.
+
+Und da hast du ja letzte Woche schon so schön die Self-Attention angesprochen.
+
+Und ich glaube, wir haben auch schon ein bisschen darüber gesprochen, aber ich glaube, es wäre wichtig, wenn wir hier nochmal ganz kurz darauf eingehen.
+
+Genau, Self-Attention, du sagst es gerade, heißt ja einfach nur, dass ich eine Aufmerksamkeit basierend auf meinen Wörtern in einem Satz auf die Wörter selbst, also aufmerksam auf sich selbst bezogen, Aufmerksamkeit.
+
+Und da hatten wir letztes Mal quasi so drei Komponenten angesprochen.
+
+Also eine Query, eine Anfrage, Keys und Values.
+
+Und vielleicht mal losgelöst von dem Attention-Mechanismus,
+
+Als Analogie kann man sich das sehr schön vorstellen, wenn man eine Anfrage, angenommen man ist auf YouTube, sucht sich irgendwie interessante Videos zu irgendwas und tippt eine Suchanfrage ein, textuell.
+
+Dann könnte ja, wenn jetzt man mal davon ausgeht, dass der Inhalt noch nicht irgendwo extrahiert wird, aus den Bildern irgendwelche Contentbeschreibungen generiert werden, sondern man geht vielleicht einfach nur auf den Titel.
+
+dann werden die Titel zu jedem Video, das werden die Schlüssel, die Keys.
+
+Und das kann ich ja matchen.
+
+So matcht meine Anfrage dem Titel und das, was ich dann als Ergebnis zurückspiele, also das Video selbst, das ist der Value.
+
+Dann haben wir diese drei Komponenten.
+
+Also es kommt aus dem Information Retrieval.
+
+Ich suche was, habe Schlüssel, über die ich auf den Inhalt zugreifen kann und dann der Inhalt selbst, das sind die Values.
+
+Naja, das Interessante ist aber in dem Fall, wir geben ja dem Key, also dem Query, dem Key und dem Value genau die gleichen Werte.
+
+Und da fragt man sich ja schon, ja gut, was bringt das denn dann in dem Sinn?
+
+Da kommt ja dann der Mechanismus ins Spiel, oder?
+
+Ja, genau.
+
+Und da kann man sich das jetzt wieder auch inhaltlich so vorstellen, dass, ja, es sind immer dieselben Wörter, aber ja, der gesamte Satz.
+
+Und die Idee ist ja, dass ich Wort für Wort gucke, was ist für ein gegebenes Wort noch relevant in dem Satz?
+
+Welche anderen Wörter?
+
+Und das heißt, ich bilde so eine Art Attention-Filter, dass ich sage, indem ich halt das Anfragewort
+
+Jedes Wort in einem Satz ist mal das Anfragewort, erzeugt eine Matrix dadurch, und bewerte das, hatten wir letztes Mal so vorgestellt, multipliziere das mit jedem anderen Wort.
+
+Und dann gibt es ja Worte, das zu dem einen besonders ähnlich, zum nächsten nicht.
+
+Und aufgrund der Ähnlichkeit der Wörter zueinander,
+
+wird ja ausgedrückt, dass zwei Wörter irgendwo zusammenhängen, weil sie vielleicht in dem Word-Embedding ähnliche Konzepte darstellen.
+
+Dann ist die Ähnlichkeit hoch, wenn sie was völlig unterschiedliches beschreiben, dann ist sie gering.
+
+Und diese ganzen Ähnlichkeiten, die führe ich dann wieder zusammen und bilde einen Kontextfilter, mit dem ich dann wieder aus meiner, weil man Ausgangswörter, das ist immer wieder dieselbe Eingabe, also auch wieder die Word-Embeddings, den Teil herauspicke, der den Kontext
+
+gut widerspiegelt.
+
+Und da hatten wir dieses schöne Beispiel mit der Bank.
+
+Wenn ich sage, eine Bank kann ein Finanzinstitut sein, es kann eine Bank zum draufsitzen sein, wenn aber im Kontext über Finanzen, Geld und Konten und Anlage gesprochen wird, dann werden dadurch
+
+oder können dadurch zum Beispiel die Aspekte des Word-Embeddings, die damit nichts zu tun haben, würden unter den Tisch fallen, sind null oder werden viel kleiner, und die Aspekte in meinem Word-Embedding, die genau in diesem Kontext eine Rolle spielen, die werden hervorgehoben oder bleiben bestehen.
+
+Ja, also ich muss ganz ehrlich sagen, mir hat es ganz gut geholfen, sich das so nicht nur in Texten vorzustellen, weil da finde ich es ein bisschen abstrakt, sondern wie so ein Bild sich vorzustellen.
+
+Also wenn man sagt, man hat ein Bild und da ist eine Person im Vordergrund.
+
+Und wenn ich das Bild anschaue, dann richte ich als Mensch sofort meine Aufmerksamkeit auf den Vordergrund, auf die Person.
+
+Und was jetzt im Endeffekt dieser Tension-Filter, von dem du gesprochen hast, also Query und Key, die Multiplikation dieser beiden Werte oder Matrizen, wenn man die sozusagen betrachtet, dann legen die eigentlich so einen Filter über dieses Bild und sorgen dafür, dass der Hintergrund komplett verschwindet.
+
+Sodass nur noch der Vordergrund, die Person sichtbar ist, wenn man sich das so vorstellen möchte.
+
+Und das ist ja durch den Attention Mechanismus, der dafür sorgt.
+
+Das ist eine schöne Vorstellung, ja.
+
+Und man muss halt sehen, jetzt hier bei den Transformers ist man jetzt einen Weg weiter gegangen.
+
+Man hat also nicht nur sozusagen einen Attention Mechanismus Schicht hier drin, sondern wir haben ja so einen Begriff, der nennt sich Multi-Head Attention.
+
+Und diese Multi-Head Attention, deswegen spricht man auch von so einem Multi-Head Monster, das liest man immer wieder in Artikeln.
+
+Bedeutet ja, dass wir diesen Attention-Mechanismus nicht nur einmal durchlaufen, sondern x-mal.
+
+So oft, wie halt das Netz definiert ist.
+
+Ich glaube, in der ursprünglichen Architektur sind es sechs- oder achtmal, ich weiß es gar nicht mehr genau.
+
+Aber wir durchlaufen sozusagen diesen Aspekt immer mehrfach.
+
+Jetzt könnte man sagen, ja, da müsste immer das Gleiche rauskommen.
+
+Das ist aber nicht der Fall, weil wir natürlich unsere Gewichte zufällig initialisieren.
+
+Das heißt, mit jedem Durchlauf finden vielleicht andere Aufmerksamkeitsmerkmale in einem Bild oder Text statt.
+
+Und damit wird der Fokus woanders hingerichtet.
+
+Und das ist vor allem wichtig, weil wir, wie du es auch mit der Bank dargestellt hast, gleiche Wörter in einem Satz haben, die vielleicht mit einem anderen Kontext zu sehen sind oder mit einem anderen Inhalt haben.
+
+Könnte sich das inhaltlich so vorstellen wie so eine Art Dictionary, dass man für unterschiedliche Aspekte, Content- oder Aufmerksamkeitsaspekte, diese Inhalte gerade rauspicken.
+
+Also zum Beispiel, was ist das Subjekt in meinem Satz?
+
+Was ist ein Prädikat?
+
+Was ist ein Objekt?
+
+Das könnte man möglicherweise so interpretieren, wenn man bestimmte Sachen sich anschaut, aber es ist nicht so, dass man dem Netz jetzt sagt, lerne da mal ein Subjekt, ein Prädikat, ein Objekt, sondern wenn es eine Rolle spielt, kann es passieren, dass es sowas lernt.
+
+Genau.
+
+Gibt es auch ein paar interessante Papers dazu, die das untersucht haben, dass das Durchführen von mehrfachen Attention-Mechanismen hintereinander, also dass man die hintereinander stackt, dass die zu unterschiedlichen Gewichtungen führen und damit auch
+
+Sprachbestandteile herausziehen, also sowas wie, wie du es gerade gesagt hast, dass man also Personen identifiziert, also sowas wie Point-of-Speech-Tagging, dass man Bestandteile der Sprache identifiziert, dass man Abhängigkeiten der Wörter zueinander erkennt, Korreferenzen identifiziert, also immer jeweils in einer eigenen Schicht, aber eher zufällig.
+
+Also nicht, weil man sagt, das ist so definiert, sondern das ergibt sich durch die Attention-Mechanismen.
+
+Genau, jetzt hast du noch einen anderen Punkt ins Spiel gebracht, müssen wir nochmal trennen, wenn man die stackt.
+
+Das sind jetzt nämlich zwei Komponenten, die wir da haben.
+
+Das eine ist dieses Multi-Head, dass ich also mehrere, quasi parallel mehrere Arten der Aufmerksamkeit lernen kann.
+
+Die führe ich dann wieder zusammen, erstmal zu einer Ausgangsgröße, die wieder meiner Eingabe entspricht.
+
+Und jetzt kommt deine Geschichte mit dem Stacken.
+
+Von diesem Konstrukt, dieser Multi-Head-Attention, wo ich mehrere nebeneinander habe,
+
+stacke ich, also füge sie nacheinander nochmal wieder mehrfach aus.
+
+In dem Paper, das wir gerade vorgestellt haben, sind es 6 mal, also wir haben 8, ich glaube im Ausgangspaper sind es 8 Multi-Heads quasi, also Heads in dem Multi-Head-Konstrukt und das ganze führe ich 6 mal nacheinander aus.
+
+Also da habe ich quasi 6 mal 8 Attention-Mechanismen quasi kombiniert.
+
+Man sieht schon diese Transformer-Modelle.
+
+Das sind Modelle, die wahnsinnig viele Parameter haben, also praktisch viele Anpassungsmöglichkeiten.
+
+Aber wir haben halt auch den Vorteil dadurch, dass wir keine Abhängigkeit in der Sequenz haben, dass wir sie parallelisieren können.
+
+Das heißt also auf einer Seite hohe Berechnungen, die wir durchführen, aber auf der anderen Seite auch natürlich die Möglichkeit, die sehr gut zu parallelisieren.
+
+Genau, also diese 6 und 8 sind natürlich Parameter des Modells, das kann man frei wählen, aber in der Beschreibung haben die Autoren halt diese Parameter genommen, dass man mal ein Gefühl dafür kriegt.
+
+Und in jedem dieser Instanzen sind ja wieder Netzwerke mit vielen
+
+Ja, vielen Gewichten zusätzlich.
+
+Wenn ich sage, ich kann mir den Satz als Eingabe, dann wird in so einer Standardrepräsentation 512 Komponenten für die Word Embeddings genommen.
+
+Es gibt die größere Variante, die haben vielleicht ein paar mehr, aber das sind schon mal die 512.
+
+Und wenn ich die dann quasi noch
+
+jedes dieser Eingabewerte als Key, Value und Query Funktion oder Rolle nutze, und für jede dieser Größen kann ich noch eine eigene Gewichtung wieder einführen.
+
+Dann habe ich dafür Gewichtung, dann für die unterschiedlichen Attention,
+
+Varianten gesteckt, also in unserem Fall 6x8 und dann die ganzen anderen Gewichte und dann noch mal wieder zusammenführen, habe ich auch noch mal wieder Gewichte, also ich habe eine Riesenmenge an Gewichten.
+
+Das heißt auch, wie das im Deep Learning Bereich ja üblich ist, man braucht sehr sehr viele Daten, um das lernen zu können.
+
+Das funktioniert aber glücklicherweise vergleichsweise, also bezogen auf die Menge an Parametern, die wir da haben, trotzdem schneller als bei den RNNs, die halt auf diese sequenzielle Verarbeitung sich stützen.
+
+Vielleicht, weil wir jetzt so einen Sprung gemacht haben zwischen den eigentlichen Multi-Head-Attentions und den stackten Encoders.
+
+Wir haben nämlich am Ende, wenn wir diese 8 Multi-Heads betrachten, dann haben wir am Ende ja 8 mal eine Repräsentation der wichtigen Aspekte, also einen Vektor mit den wichtigen Aspekten oder eine Matrize mit den wichtigen Aspekten.
+
+Und diese acht Informationen, die hängen wir ja hintereinander.
+
+Da machen wir einen Konkret, wie du es auch vorhin schon mal gesagt hast, dass wir die einfach hintereinander hängen.
+
+Jetzt sind die aber von der Größe her größer als unsere Input bzw.
+
+unsere gewünschte Output.
+
+Das heißt, in diesem Encoder haben wir am Ende ja dann nochmal eine Schicht, also ein normales Dense Layer, also ein normales neuronales Netz nochmal innerhalb dieses Encoders.
+
+dass mir dafür sorgt, dass ich das wieder zusammenführe, dass ich am Ende wieder einen Zielvektor habe mit einer gewissen Größe, die ich halt definiert habe.
+
+Genau, und die ist immer genauso groß wie die Eingangsgröße und dann kann ich die halt problemlos kombinieren und halt genau dieses decken, dieses übereinander stapeln der Modelle oder der Komponenten, die dann halt mit derselben Größe halt immer wieder zusammenpassen.
+
+Und damit haben wir eigentlich schon den Encoder.
+
+Schon.
+
+Ja, fast.
+
+Es gibt noch eine Kleinigkeit, die jetzt an der Funktionalität sicherlich nichts ändert, aber die für die Durchführung wichtig ist.
+
+Und zwar werden an diese einzelnen Subkomponenten, also sprich dieses Zusammenführen und auch die Attention-Mechanismen selbst,
+
+die werden immer noch mit so sogenannten Skip-Komponenten, oder man kennt es aus dem ResNet, diese Residual-Geschichten, dass ich mal quasi wie so ein Bypass die Eingabe auch nochmal zusammen mit der Ausgabe der Subkomponente zusammenführe.
+
+Und das Ganze hat im Wesentlichen zwei Hauptgründe.
+
+Das eine ist, man möchte nicht wichtige Informationen verlieren, die vielleicht in der Subkomponente verloren geht.
+
+Das könnten zum Beispiel die Positionsinformationen sein.
+
+Vielleicht geht die ja bei der Richtung der Aufmerksamkeit auf bestimmte Aspekte verloren.
+
+Dann könnte ich die, aber auch jede andere Information auf die Art und Weise trotzdem dem Ergebnis immer wieder mit hinzuführen.
+
+Das heißt, in der Vorwärts...
+
+Durchführung der Netze, also bei dem Durchleiten der Signale ist das wichtig, aber ganz ganz besonders auch beim Lernen, weil ich auf die Art und Weise wieder, das hatten wir schon mal angesprochen, das sogenannte Vanishing Gradient Problem, dass also wenn ich viele Schichten lerne und durch das Stacking haben wir ja auch wieder relativ viele Schichten,
+
+kann es passieren, dass die Signale, die ich rückwärts beim Gradientenabstieg durchschicke, gegen 0 gehen.
+
+Durch das an der Seite Vorbeiführen der Signale kann ich immer gewährleisten, dass ich einen stabilen Gradienten dabei habe.
+
+Jetzt kommt der Punkt des Decoders.
+
+Wir haben den Encoder jetzt.
+
+Jetzt haben wir am Ende einen definierten Ausgang, den wir uns vorstellen, und den übergeben wir an den Decoder.
+
+Aber wir führen auch in den Decoder zusätzliche Informationen rein.
+
+Zum Beispiel, wir wollen ja in einer gewissen Weise bei einer Übersetzung einen deutschen Satz und einen englischen Satz übersetzen.
+
+Und für die Lernphase brauche ich ja in einer gewissen Weise Daten, dass ich sagen kann, okay, das ist der englische Satz, das ist der deutsche Satz oder umgekehrt.
+
+Vielleicht müssen wir mal eine wesentliche Sache hervorheben.
+
+Das eine ist, dass wir diese zweite Phase, diesen Decoder, dass der in gewisser Weise etwas anders betrachtet wird.
+
+Das heißt, dass wir hier jetzt wirklich davon wieder ausgehen, dass die Ausgabe Wort für Wort erzeugt wird.
+
+Weil wir ja quasi das an einer Position i erzeugte Wort ist und alle Wörter bis dahin ja wieder die Eingabe sind, genau wie du gesagt hast.
+
+Und das setzt halt in dem Sinne voraus, dass ich das mit der Position Schritt für Schritt durchführe.
+
+Das ist das eine.
+
+Und das andere ist, dass ich natürlich jetzt hier wieder Trainingsphase und Anwendungs- oder Inferenzphase unterscheiden muss.
+
+Während der Trainingsphase habe ich die Zielsätze ja.
+
+Hier kommt wieder ein echtes überwachtes Lernen zum Spiel.
+
+Während der Encoder
+
+funktioniert, ja, es wird oft unüberwacht genannt, mir ist es lieber zu sagen selbstüberwacht, weil ich ja quasi das, was ich da lerne, was ich haben möchte, basierend auf meine Eingangssätze irgendwie nutzen kann, teilweise, wenn es darum geht, wo setze ich die Aufmerksamkeit hin, kriege ich irgendwie die gute Darstellung meiner Repräsentation in Teilen, denn teilweise ist es aber wirklich unüberwacht.
+
+Und wenn ich das jetzt in den Decoder reinstecke, sagst du, wir haben zwei Eingaben.
+
+Das ist einerseits diese interne Repräsentation und das bisher Gesagte oder Erzeugte an Text.
+
+Und da kommen jetzt zweimal ein Attention Mechanismus zum Einsatz.
+
+Das erste ist der, der bereits den erzeugten Satz nochmal wieder darstellt, was wir schon gesagt haben.
+
+Und das Interessante ist, dann nehmen wir denselben Mechanismus, wie wir ihn schon vorher hatten.
+
+Und in der Lernphase gehe ich davon aus, dass ich den gesamten Satz, den ich erzeugen will, schon kenne.
+
+Und damit ich da gar nicht so viel Aufwand habe, das irgendwie hinzukriegen, lege ich da einfach so eine, ja man spricht von Masked Multi-Head-Attention, also von einer Maskierten.
+
+Und diese Maske ist einfach nur so, dass ich quasi auf einem Auge blind bin, sprich, dass ich alles, was ich zwar weiß in meinem Trainingsdaten, was später mal geschrieben wird, das weiß ich zwar schon, aber ich halte es quasi zu.
+
+Ja, alles, was quasi in der Zukunft liegt,
+
+Die hinteren Positionen, die liegen da zwar, aber ich benutze sie nicht.
+
+Das kann ich dadurch hinkriegen, indem ich meinetwegen einen ganz kleinen Wert darauf lege, Minus und Endlich.
+
+Das würde dann quasi bei Aktivierung immer zu Null führen, so als ob es gar nicht da wäre.
+
+Das ist ein wichtiger Punkt.
+
+Aber das Interessanteste ist jetzt eigentlich, wie kriege ich es denn jetzt hin, diese Repräsentation des Encoders mit dem bereits, mit dem Teilsatz, den ich schon erzeugt habe, da weiter fortzuführen?
+
+Also wie kann ich quasi die interne Repräsentation mit meiner angestrebten Übersetzung oder Fortführung des Satzes quasi verbinden?
+
+Eine wirklich sehr spannende Frage, weil wenn ich jetzt zum Beispiel den Satz in den gleichen Positionen reingeben würde, also dass ich sage, ich mag praktisch Position 1 ist das Wort 1 und Position 5 ist das fünfte Wort, dann lernt er die Positionen.
+
+Deswegen muss ich sozusagen hergehen und muss die Wörter ein bisschen verschieben.
+
+Also so, dass ich praktisch nicht in Position 1 das erste Wort habe, sondern in Position 1 vielleicht so ein Startzeichen oder ein Netz, also einfach nichts, und dann das erste Wort eigentlich an Position 2 erst reingeben.
+
+Also das fand ich, was ich sehr spannend fand, als ich das gelesen habe.
+
+Genau, man startet mit so einem Startsymbol.
+
+Hauptgrund wird aber auch sein, dass ich in unterschiedlichen Sprachen fange ich ja nicht gleich an.
+
+Also wenn ich jetzt das erste Wort einfach nehmen würde und dann übersetze, stelle ich auf einmal fest, ach, das passt da gar nicht.
+
+Also ich muss es unbedingt hinkriegen, dass ich den Anfang geschickt wähle und nicht einfach stumpf das erste Wort übersetze, um dann festzustellen, dass ich in der Sprache vielleicht meine Sätze ganz anders konstruiere.
+
+Ich denke mal, das wird sicherlich auch einer der Gründe sein, dass ich halt einfach mit einem Startsymbol
+
+starte.
+
+In der Darstellung ist das schon so shifted right, also eine Position versetzt, fange ich also an.
+
+Habt ihr die Eingangswerte.
+
+Die Frage ist jetzt aber, wie kann ich es denn hinkriegen, dass ich die Repräsentation intern mit meinem bereits bestehenden Satz kombinieren kann.
+
+Und da kommt auch wieder, das ist jetzt das Spannende, dieser Attention Mechanismus zum Einsatz.
+
+Wir erinnern uns ja, wir hatten die drei Komponenten.
+
+Query, Key und Value.
+
+Und jetzt ist es so, dass der bereits bestehende Satz, den ich schon habe, der kommt quasi als Query in meinen Attention Mechanismus hinein.
+
+Und Key und Value werden quasi vom Encoder geliefert.
+
+Der beinhaltet quasi so als große Kodierung das, was in dem Satz eigentlich gesagt wird.
+
+In dem Decoder meinst du, oder?
+
+Aus dem Encoder.
+
+Der Key und Value kommen aus dem Encoder.
+
+Das ist meine interne Repräsentation.
+
+Und der Query ist der Teil des Satzes, der gerade generiert wird.
+
+Aber wir haben ja vorher, also was du gesagt hast, ist ja jetzt der Attention-Based-Mechanismus auf Ebene vom Encoder-Decoder, oder?
+
+Das ist der zweite Attention-Mechanismus im Decoder.
+
+Ja, und wir haben ja praktisch vorher noch mal einen Intention-Mechanismus, das uns auch praktisch unseren Fremdsatz, Englisch, ja auch praktisch so aufbereitet, dass wir wissen, auf welche Wörter muss ein besonderer Gewicht umgedreht werden.
+
+Genau, ja, genau.
+
+Das ist dieser Masked-Multi-Head-Encoder, der beim Lernen zwar schon den gesamten Zielsatz kennt, aber es wird quasi alle Positionen, die nach der Position sind, die ich gerade bearbeiten möchte, der wird quasi zugehalten.
+
+Den kriegt das Netzwerk, darf es nicht nutzen sozusagen.
+
+Das zusammenführt dann dazu, dass wir eine gute Verbindung hinbekommen zwischen einem Quellwort und einem Zielwort.
+
+Beziehungsweise nicht Wort für Wort, sondern schon im Kontext des gesamten Satzes.
+
+Genau, dass der einfach basierend auf dem, was ich schon gesagt habe, und dem, was in dem Ursprungssatz in einer anderen Sprache oder wenn es um eine Fortführung geht.
+
+Das ist halt einfach das, was ich schon weiß, was ich eigentlich sagen möchte.
+
+was in der Ausgangsform gegeben ist, und dem, was ich schon gesagt habe, wird einfach geguckt, was müsste denn entsprechend als nächstes gesprochen werden.
+
+Und dann kommt noch einiges an der Nachverarbeitung natürlich danach.
+
+Ich muss das wieder überführen in meine entsprechende Embedding Size, dass ich jetzt wieder eine Repräsentation habe, die genauso groß ist, wie die Darstellung in meiner Ausgangssprache.
+
+Und dann muss ich diese Embeddings ja noch wieder überführen,
+
+in sozusagen meine One-Hot-Encoding für jedes Wort meiner Sprache, dass ich sagen kann, jetzt an der Stelle ist jetzt dieses Wort das Wahrscheinlichste.
+
+Mit einer Softmax-Funktion bestimme ich dann, welches der möglichen Wörter, die ich in meinem Vokabular habe, ist denn das Wahrscheinlichste jetzt an dieser Position.
+
+Und wichtig hier nochmal ergänzend, dass das ja wirklich Wort für Wort jetzt generiert wird.
+
+So lange, und zwar muss die Ausgabe nicht genauso langsam wie die Eingabe, das ist ja wichtig, weil es ist ja nicht jeder Sprache hat man ja genau, es ist ja nicht so, dass man Wort für Wort das eins zu eins übersetzt, sondern in manchen Sprachen sind Ausdrücke länger oder kürzer.
+
+Und das ganze Netz arbeitet so lange, bis es ein Stopptoken sozusagen generiert und dann kann man aufhören.
+
+Wirklich eine spannende Architektur, aber man merkt vielleicht auch so an dem gegenseitig Unterstützen in der Diskussion, sie ist nicht gerade trivial, sondern es ist schon eine relativ komplexe Bild.
+
+Genau haben wir schon, finde ich, wahnsinnig viele technische Details hier diskutiert und wenn man das erste Mal damit zu tun hat, ist es wahrscheinlich abschrecken und irritieren.
+
+Aber wenn man das Ganze jetzt anfängt zu implementieren, dann wird man feststellen, dass das nur die Spitze des Eisberges ist und man muss noch viele Details klären bei der Umsetzung, die wir jetzt hier einfach mal so übergangen haben oder einfach gar nicht genau erwähnt haben.
+
+Es steckt noch viel, viel mehr dahinter als dieser Aspekt.
+
+Aber die Grundidee ist zumindest hier skizziert worden.
+
+Und man muss sagen, dass die Transformers in den Gebieten, in denen man sie anwendet, halt wahnsinnig mächtig sind, gute Ergebnisse liefern, also gerade in der Übersetzung, auch in den Prognosen des nächsten Wortes oder Ähnliches.
+
+Aber auch, wenn man jetzt Teile der Architektur nimmt, zum Beispiel nur den Encode oder Ähnliches, dass man dann die für die eigentliche Erstellung von Embeddings auch schon verwendet.
+
+Also dass man eigentlich das auch für bestimmte Dinge zweckentfremdet, wofür sie ursprünglich nicht gedacht
+
+Genau, ist ein interessanter Schlusspunkt eigentlich, wenn das jetzt erstmal das Ende der Miniserie ist, aber der Aspekt, den wir sicherlich doch nochmal wieder aufgreifen müssen zu späterer Zeit, die Verwendung dieser Kernideen, gerade den Encoder-Teil, um einfach nur gute Repräsentationen für andere Aufgaben zu erzeugen.
+
+So ist es, also das werden wir sicher nicht
+
+jetzt unter den Tisch fallen lassen, sondern irgendwann in den nächsten Wochen wieder aufgreifen.
+
+Ich denke, in der nächsten Woche wird es dann vielleicht nicht mehr ganz so technisch, dass man da mal ein bisschen Lockerung drin haben, aber wir werden die Themen immer mal wieder aufgreifen.
+
+Aber ich denke, es war heute wirklich wichtig oder schön, auch mal zu hören, was in so einem Transformer passiert, was halt in vielen Worten oder in vielen Texten und Berichten halt auftaucht.
+
+Und dass man da ein bisschen was darüber versteht, finde ich eigentlich zielführend.
+
+Wertbringend.
+
+Von daher vielen Dank fürs Zuhören und dass Sie bis zum Ende dabei waren.
+
+Es sind jetzt doch 40 Minuten gewesen.
+
+Ich hoffe, dass es trotzdem angenehm war zuzuhören.
+
+Ansonsten gerne uns Wünsche, Vorschläge, Kritik zusenden.
+
+Da freuen wir uns auch gerne drüber.
+
+Vielen Dank.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

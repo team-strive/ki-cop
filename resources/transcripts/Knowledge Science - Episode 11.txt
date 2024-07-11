@@ -1,0 +1,611 @@
+ Hallo und herzlich willkommen zu der heutigen Folge.
+
+Wir sprechen heute über künstliche Intelligenz.
+
+Hierzu haben wir zwei Gäste, Johanna und Lea, in unserem Podcast, die uns Fragen zu künstlicher Intelligenz und anderen Themen stellen.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Heute haben wir ja zwei nette Gäste da.
+
+Das ist einmal die Lea und die Johanna.
+
+Die Johanna, die ist neun Jahre alt und geht in die dritte Grundschulklasse.
+
+Und sie wird uns heute, genauso wie die Lea, ein paar Fragen zur künstlichen Intelligenz stellen.
+
+Genau, und die Lea, die ist acht Jahre, geht auch schon in die dritte Klasse.
+
+Hallo Lea.
+
+Hallo.
+
+Und hallo Johanna.
+
+Hallo.
+
+Ich finde toll, dass ihr euch die Zeit nehmt, dass ihr bei unserem Podcast mitmacht.
+
+Johanna, du hast ja schon ein bisschen Berührungspunkte mit der künstlichen Intelligenz.
+
+Du hast ja schon mal einen Kurs gemacht.
+
+Kannst du da mal ein bisschen was dazu erzählen?
+
+Also, es ist halt irgendwie so eine Plattform.
+
+Minecraft, oder?
+
+Ja, also nein, es ist so eine Plattform, die halt so Kurse macht.
+
+Und da habe ich halt so einen Kurs mitgemacht, also zwei Basics auf jeden Fall vom Programmieren.
+
+Ähm, Basics.
+
+Äh, und ich hab halt auch schon einen Kurs bei dem, bei Minecraft bei KI gemacht, also halt Künstliche Intelligenz.
+
+Und ja, da haben wir halt zum Beispiel so einen Roboter programmiert, dass der halt auf Bildern erkennt, dass da halt Ocelots sind.
+
+Und ja, dass er halt zum Beispiel bei Meeren, dass er halt dann, wenn da so irgendwelche Sensoren kaputt sind,
+
+dass er die halt dann schnell repariert und das schneller kennt.
+
+Lea, dein Bruder, habe ich ja gehört, hat auch schon mal so einen Kurs mitgebracht und du hast da auch mal über die Schulter gucken dürfen.
+
+Hast du da auch schon erste Erfahrungen sammeln können?
+
+Die haben darüber geredet, was jetzt Autos für Künstliche intelligent haben und wie es später dann sein kann und was da sich alles verändert und so.
+
+Und sie haben dann noch programmiert, dass zum Beispiel Hühner übereinanderfliegen oder auch so ein Roboter, dass der läuft und dann muss der so Sachen, Hindernisse übergehen und dann musste man immer so lenken.
+
+Fandest du das spannend?
+
+Mhm.
+
+Das ist schön, gell?
+
+So, und jetzt haben wir auch die Möglichkeit, dass ihr uns Fragen stellt, nachdem wir ein paar Fragen an euch gestellt habt.
+
+Welche Fragen habt ihr denn?
+
+Wer möchte denn anfangen?
+
+Johanna meldet sich.
+
+Gut.
+
+Johanna, dann stell mal eine Frage.
+
+Also, ich wollte eigentlich fragen, warum heißt die KI eigentlich KI?
+
+Interessante frage künstliche intelligenz müsste man vielleicht abgrenzen zum menschlichen intelligenz wir glauben halt dass der mensch wahnsinnig viele.
+
+Aufgaben lösen kann mit mit hilfe seiner intelligenz und zwar was heißt intelligenz ich würde mal behaupten er kann einfach probleme lösen die er vorher noch nicht hatte wo er noch nicht weiß wie es funktioniert und er arbeitet sich er denkt sich lösungen dafür also eine problemlösung kompetenz sagt der fachmann und und diese sachen versucht man mit dem computer nachzubauen und weil sie halt nachgebaut sind nimmt man sie künstlich.
+
+Also wenn ihr euch das überlegt, ihr könnt ja, wenn ihr sagt, ihr würdet jetzt gerne eine Höhle bauen zum Beispiel, dann stellt ihr euch irgendwo hin und sagt, okay, wie baue ich jetzt eine Höhle?
+
+Und ihr habt es ja vielleicht noch nie vorher gewusst, wie das geht, aber ihr seid fähig dann zu sagen, okay, dann brauche ich vielleicht hier eine Kiste, dann brauche ich eine Decke, die lege ich oben drüber oder ähnliches.
+
+Also ihr seid fähig, dass ihr Probleme löst, die ihr vorher vielleicht noch nicht gesehen habt.
+
+Das kann der computer nur so bedingt.
+
+Ihr wisst vielleicht aber auch dass das nicht nur menschen sowas können es gibt auch tiere die die gewisse intelligenz haben man kann zum beispiel beobachten bei affen insbesondere aber auch bei anderen tieren habt ihr vielleicht schon mal auf logo oder ähnlichen folgen gesehen wie auf einmal es zum beispiel vögel schaffen mit hilfe eines strohheims irgendwelche sachen aus einer flasche zu coolen,
+
+Da sagt man auch, Mensch, das hat denen vorher niemand gesagt.
+
+Die müssen irgendwie auf die Idee kommen, wie mache ich das?
+
+Führen die meinetwegen so einen Strohhalm in irgendwie ein Gefäß ein, kriegen da irgendwelche Sachen raus?
+
+Deshalb, man braucht irgendwie so eine Strategie, ein Vorgehen, wie kann ich das Problem lösen?
+
+Und genau sowas möchte man erreichen, dass wir das Computer auch hinkriegen.
+
+Habt ihr weitere Fragen?
+
+Oder Johanna, ist deine Frage damit beantwortet?
+
+Ja, schon.
+
+Okay.
+
+Wie hat man eigentlich sowas gemerkt, dass man Tiere und so auch künstliche Intelligenz hat?
+
+Ja, da würde ich jetzt erstmal sagen, die haben ja keine künstliche, sondern eine natürliche Intelligenz.
+
+Wie hat man das gemerkt?
+
+Na, indem man halt beobachtet hat, dass die auf einmal
+
+Probleme gelöst haben was man denen vielleicht gar nicht zugetraut hat also der mensch denkt natürlich.
+
+Er selbst ist wahnsinnig intelligent und kann wahnsinnig viele sachen lösen sonst ist er vielleicht wäre er nicht so weit gekommen wie welche sind wir haben autos mit denen wir fahren können wir können fliegen im flugzeug.
+
+Und da glaubt man halt, Mensch, Tiere machen sowas nicht oder nicht in der Form.
+
+Und dann gibt's aber immer Wissenschaftler, Naturforscher, Tierforscher, die auf einmal gemerkt haben, Mensch, es gibt sogar Tiere, die sowas, gut, die haben jetzt vielleicht kein Auto gebaut, die aber bestimmte Sachen, Gegenstände, Werkzeuge zum Beispiel, nutzen, um damit ein Problem zu lösen, also um Nahrung insbesondere quasi zugänglich zu machen.
+
+Und da hat man sowas beobachtet und festgestellt, ja, das fordert Intelligenz.
+
+Da hat man das beobachtet und gesehen.
+
+Wollt ihr noch eine weitere Frage stellen?
+
+Nein.
+
+Johanna, heb den Finger wieder, stell mal eine Frage.
+
+Also, ich wollte eigentlich noch fragen, wie viel KI steckt eigentlich hinter einem Handy?
+
+Das ist richtig eine spannende Frage.
+
+Wenn man sich das so anschaut, dann denkt man ja, das ist ja nur ein Telefon und man kann ein bisschen Computerspiele drauf spielen und man kann ein bisschen ins Internet gehen, man macht Fotos damit.
+
+Und wenn man jetzt die einzelnen Komponenten, also die Teile anschaut,
+
+Das kann man sagen, jetzt zum Beispiel beim Fotografieren, da steckt künstliche Intelligenz drin, dass die Bilder besonders schön werden, dass die Farben ganz stark sind, aber auch, dass vielleicht die Kamera dann gleich Namen zuordnen kann.
+
+Wenn man dann durch das Album durchscrollt und sagt, okay, da ist ein Bild von dir oder deiner Mama, das dann weiter unten auch steht, das ist auch die Mama.
+
+Oder du kannst danach suchen nach der Mama und kriegst dann nur die Bilder.
+
+Also da haben wir künstliche Intelligenz.
+
+Aber schon, wenn du das Handy in die Hand nimmst, das hast du bestimmt schon mal erlebt, wenn du zuschaust, wie bei deiner Mama die Handy, also wenn sie damit eine Bedienung macht, dann ist es ja erst gesperrt und dann muss man ja eine PIN eingeben.
+
+Aber es gibt ja auch Handys sozusagen, wo du keine PIN eingeben musst, die erkennt, dass du es bist, also die dein Gesicht erkennt.
+
+Auch das ist künstliche Intelligenz, die da drin ist.
+
+Also das sind ganz viele, viele kleine Komponententeile in dem Handy, die mit künstlicher Intelligenz arbeiten.
+
+Eine sprachsteuerung wenn es einfach zuhört was du sagst und weiß was du machen möchtest.
+
+Aber nicht nur im handy auch auch im auto habt ihr es vielleicht schon mal erlebt wenn du irgendwie am steuer sitzt und sagst dem dem auto wo es hinfahren soll und der einfach zuhört klappt mal mehr mal weniger gut.
+
+da merkt man dass das mensch doch noch viel intelligenter ist als die maschine also wenn dann das auto ein nicht versteht.
+
+Aber die werden echt zunehmend deutlich besser neulich saß ich in einem neuen auto und sagte navigiere nach hause, da wusste es gar nicht wo das ist habe ich die adresse eingetippt und beim nächsten mal ohne dass ich gesagt habe dass das ist wusste es was mein zuhause ist.
+
+Das ist doch intelligent oder johanna.
+
+Also ich wollte auch sagen, dass wir auch schon mal mit dem Auto gefahren sind.
+
+Und dann haben wir irgendwie gemerkt, dass immer wenn der Papa was freundlich zu dem Auto sagt, dann hört es nicht.
+
+Und immer wenn die Mama das Auto anschreit, dann hört es.
+
+Das ist komisch, aber ich glaube vielleicht nicht, dass es am Schreien liegt, weil bei uns ist es genau andersrum.
+
+Wenn bei uns die Mama im Auto spricht, dann hört sie und wenn ich sage, dann nicht.
+
+Und dabei schreibe ich gar nicht, sondern bin ganz freundlich.
+
+Aber vielleicht liegt es ja auch eher, dass sie vielleicht dichter dran sitzt am Mikrofon oder dass die Stimme besser vertrauter ist.
+
+Ja, weil auch wenn es andersrum wäre, da ist es irgendwie, geht das nicht.
+
+Aber da merkt man, Johanna, dass das natürlich so eine künstliche Intelligenz,
+
+weit nicht so gut im moment ist wie der mensch selber weil du hörst ja auch dinge die vielleicht mit einem nebengeräusch versehen sind also wenn jetzt seine mama dich anspricht und sagt johanna deck mal den tisch dann kannst du im wohnzimmer klavier spielen und du hörst es trotzdem.
+
+Künstliche intelligenz könnte da schwierigkeiten haben weil sie im endeffekt das klavier spiel die musik,
+
+noch zusätzlich hört und es nicht unterscheiden kann und dann die stimme nicht so gut rausfiltern kann das heißt wenn jetzt vier leute im auto sitzen und der eine versagt fahr bitte dorthin und alle anderen quatschen, dann hast du das dass die künstliche intelligenz das nicht so gut versteht ich kenne aber ich kenne aber auch menschliche intelligenzen die sich nicht wohlfühlen wenn so viel gequatscht wird und die aus vielen verschiedenen stimmen wir war das richtige raus hören, ich denke zum beispiel an mich ich mag das gar nicht wenn ich mich konzentrieren muss und es ist quatschen ganz viele auf einmal,
+
+Ich kenne aber auch auch menschliche intelligenzen die das nicht hören dass sie den tisch decken sollen wenn man es ihnen sagt egal ob klavier gespielt wird oder nicht.
+
+Ist das bei dir so johanna ich will nicht hören.
+
+Aber auch das ist vielleicht eine gewisse intelligenz oder zu entscheiden dass es man sich hören will was meinst du.
+
+Wir sind auch mal bei einem Freund von der Mama aus Mamas Arbeit im Auto gefahren.
+
+Das waren wir so bei einer Ausstellung.
+
+Und der hat gesagt, stelle es bitte auf 28 Grad und dann hat der das runtergestellt.
+
+Die Temperatur oder was?
+
+Nein, der hat es so gesagt und das Auto hat es dann automatisch die Temperatur runtergestellt.
+
+Das ist auch eine Art künstliche Intelligenz, die da eingebaut ist.
+
+Dass das Auto versteht und das ist ja nicht nur das Verstehen, sondern es muss ja verstehen, also erstmal die Sprache, dann muss es auch noch wissen, was es tut.
+
+tun soll aus der sprache und dann muss es das auch noch tun also das sind ja mehrere schritte die dann sozusagen der computer oder das auto machen muss ich frage mich gerade ob der auch noch weiter mit denkt wenn du jetzt sagst stelle das auto auf 40 grad ob er das dann versucht zu machen oder ob er dir das auto die dann sagt so das ist keine gute idee das mache ich nicht und der hat mich dann auch mal gesagt
+
+Fahr mich zu meiner Frau und dann hat das Auto gesagt, ich kenne deine Frau nicht.
+
+Habt ihr auch noch andere Fragen?
+
+Johanna?
+
+Also, ich wollte eigentlich nur fragen, ob KI eigentlich das gleiche wie Programmieren ist.
+
+eine sehr interessante frage karsten schwenk zu hin und her ganz eindeutig ist es nicht ganz ganz ganz andere richtung man braucht programmierkenntnisse also man muss programmieren können um ki systeme zu bauen in gewisser weise.
+
+Man versucht trotzdem bei vielen Anwendungen oder KI-Anwendungen mit weniger Programmieren auszukommen.
+
+Ich denke da an sowas wie, das nennt man maschinelles Lernen.
+
+Das heißt, ich möchte einem Computer beibringen, selbstständig Sachen zu lernen aus Beobachtung.
+
+Das heißt, dass man mit möglichst wenig Programmieren auskommt.
+
+Also insofern, KI ist was anderes als Programmieren, aber
+
+Man braucht gewisse Programmierfähigkeiten, um Systeme mit künstlicher Intelligenz zu erschaffen, zu bauen.
+
+Und du musst ja sehen, die künstliche Intelligenz, die soll ja in einer gewissen Weise dann, also wenn es dann lernt, dann programmiert es ja in einer gewissen Weise selber.
+
+Also es ist so eine Kombination.
+
+Die Lea möchte gerne was dazu sagen.
+
+Wir haben auch früher sowas gehabt, da konnte man immer mit Wörtern
+
+Und dann musste man die so aneinandersetzen und dann gab es sogar einen Minicomputer und da hat man zum Beispiel was gesagt, ein Sternchen, und dann hat er das gesagt und auf dem Bild das gezeigt.
+
+Hat er das Wort dann ausgesprochen?
+
+Auch das gehört zur künstlichen Intelligenz, dass man bei Texten, die man geschrieben hat, dann Sprachen macht, dass er mit der Computer reden kann.
+
+Also, dass man sich mit ihm auch unterhalten kann, aber auch, dass er dir sozusagen Antworten geben kann.
+
+Und wenn ihr da so ein Spiel hattet, das ist schon natürlich schön, weil man es ja dann nicht lesen muss, dann kann man es nochmal hören.
+
+Johanna, willst du was dazu sagen?
+
+Also, zum Beispiel bei der Siri, da ist es ja auch so, man kann halt einfach
+
+Das ist halt sagen Hi Siri.
+
+Ja.
+
+Und dann tut sie halt z.B.
+
+mit dem Computer rechts kommen.
+
+Aber das ist nur bei Apple-Geräten so.
+
+Ja.
+
+Und damit kann man sich eigentlich auch gut unterhalten.
+
+Ihr habt ja euch auch schon mal mit der Alexe unterhalten, ne?
+
+Witze erzählt und so weiter, ne?
+
+Ja.
+
+Das war ziemlich lustig.
+
+Lea, du auch?
+
+Kennst du das?
+
+Ja, da waren wir von Niklas beim Freund, der heißt Max, der hat eine Alexa und der kann auch sagen, Alexa rübst man, dann rübst die.
+
+Die rübst dann?
+
+Ja, das ist ja lustig.
+
+Oder macht das Geräusch.
+
+Ja, na das habt ihr noch nicht ausprobiert, gell?
+
+Nein, das haben wir noch nicht ausprobiert.
+
+Aber ich weiß, was du nachher gleich machst.
+
+Ja, machen wir.
+
+Wir haben nämlich zwei Alexas, wir haben einmal die
+
+ohne Bildschirm und dann haben wir einmal die mit Bildschirm und da kann man zum Beispiel auch Videos anschauen.
+
+Und so.
+
+Und ich wollte noch sagen, dass ich, wir hatten halt auch schon mal so einen Kaliopen, also halt so ein Ding, der hieß Kaliopen Mini und den konnte man halt so programmieren, dass der zum Beispiel
+
+So ein Mini-Computer, ja?
+
+Ja, das ist ja zum Beispiel so... Also halt auf dem Bildschirm kommt auf Johanna zum Beispiel.
+
+Dann hinter einen Stern und dann sagt er halt auch Johanna.
+
+Ja, ist schön.
+
+Kann schon man halt sonst... Ich glaube, den meintest du auch, Leo, vorher, oder?
+
+Du hast auch mal mit dem Caligopi programmiert.
+
+Der war so wie ein Dings...
+
+Und dann waren da so viele Punkte und die musste man zusammenbauen und dann konnte man das einstellen.
+
+Oder da konnte man auch Tiere einsetzen und so und dann sagen was oder beim Text auseinander machen, was die machen sollen.
+
+Und das hat euch Spaß gemacht, damit zu arbeiten?
+
+Ja, man konnte auch damit dann auch Spiele programmieren.
+
+Also ich wollte nochmal erzählen, dass ich schon mal Scratch gemacht habe.
+
+Das ist halt so eine Internetseite, wo man halt sowas programmieren kann.
+
+Und da habe ich schon mal ein Spiel programmiert.
+
+Das heißt, haben wir irgendwie Ping-Pong oder so genannt.
+
+Und da musst du der Computer lernen, weil man halt mit einer Maustaste, also z.B.
+
+mit W, dem Buchstaben W, drückt, dass er dann halt nach oben geht, mit diesem Ding, damit der Ball so nach da, also halt dann abprallt.
+
+Das ist wie Tennis, gell?
+
+So ein bisschen.
+
+Also es ist so ein bisschen wie dieses eine andere Spiel, dass es so ganz alt ist.
+
+glaube ich, ist das.
+
+Und da kann man halt so dieses so steuern, damit die dahin können.
+
+Und auf der ersten Seite, da kann man die Spiele halt dann online stellen, dass es ganz viele andere spielen können.
+
+Und ja, es gibt da welche, die haben schon tausend Herzen für ihre Spiele.
+
+Und da ist aber keine künstliche Intelligenz drin gewesen, oder?
+
+Doch, weil ich glaube, dass man halt dem halt... Ach nee, doch nicht.
+
+Aber da könnte man auch eine einbauen, weil was, was du da ja gemacht hast, ist ja, dass du natürlich für zwei Spieler, die ja gegeneinander spielen, so Schläger gemacht hast, die dann die Bälle zuspielen.
+
+Und es könnte auch sein, dass du sagst, ach, ich habe jetzt gerade keinen, der mit mir spielt.
+
+Wenn keiner da ist, der mit mir spielt, wäre es doch gut, wenn der Computer mit mir spielt.
+
+Genau.
+
+Und wenn der dabei lernt, wie er möglichst gut spielt, also wenn man das nicht programmiert, nach dem Motto, der Ball kommt da lang, prallt mit dem Winkel ab, berechnet das, setzt den Schläger dahin, wo er hin muss, na klar, dann wäre das eine Möglichkeit.
+
+Wenn der dich aber einfach beobachtet oder er einfach stundenlang mit dir spielt und mit der Zeit immer besser wird, wenn er also beim Spielen besser wird, dann wäre es eine künstliche Intelligenz.
+
+Lea.
+
+So zum Beispiel beim Computerspiel,
+
+Da gibt es ja auch sowas, wenn jemand nicht gegeneinander spielt, dann spielt ja auch der Computer gegen ihn.
+
+Zum Beispiel beim Schach- oder Damenspielen kennt ihr sowas.
+
+Wenn man Computern beibringt, gut Schach zu spielen, kann man das auch mithilfe von Künstlicher Intelligenz machen.
+
+Ist dasselbe Prinzip letztendlich.
+
+Da kann man immer auch so Levels machen und da musste man das halt spielen und der hat dann selber gemerkt, welche Figuren man sieht und dann hat der versucht halt zu gewinnen.
+
+Und da gibt es dann halt mehrere Level.
+
+Und je nach Level hat er dich früher oder später gewinnen lassen.
+
+Genau.
+
+Jana?
+
+Also es ist halt... Also es gibt halt auch zum Beispiel bei...
+
+Es gibt halt so eine Schachseite, und ich glaube, das ist auch, also man hat halt, ist auch ein bisschen die künstliche Intelligenz, zum Beispiel bei den Taktikaufgaben.
+
+Ja.
+
+Da musst du ja auch erkennen, dass die Taktik richtig war.
+
+Und weil die können, weil das sind irgendwie 500 Taktiken oder so, oder noch mehr.
+
+Und das dauert halt total lange mit dem Programmieren, deswegen glaube ich, dass es eine künstliche Intelligenz war.
+
+Das ist sicher so, dass da bei dieser Internetseite, wo man Schach spielen kann, dass eine künstliche Intelligenz dahinter ist, die diese Schachzüge lernt und dann im Endeffekt gegen dich spielt.
+
+Wenn du besser wirst, wird auch sozusagen diese künstliche Intelligenz besser.
+
+Das lernt man durch mit jedem Spielen.
+
+Das Interessante ist ja, dass solche Computerprogramme früher mit Menschen gespielt wurden.
+
+Man kam auf die Idee, wir lassen die einfach gegeneinander spielen.
+
+Die sind ja viel ausdauernder.
+
+Der Computer hat viel mehr Ausdauer als ein Mensch.
+
+Der Mensch ist irgendwann müde und den Computer kannst du stundenlang gegen sich selber spielen lassen.
+
+Lea?
+
+Manchmal gibt es ja auch sowas, da merkt der Computer dann beim Spielen, man wird besser und dann wird er selber auch besser.
+
+So ist das frage ist nur ob das denn quasi dass der lernfortschritt der künstlichen intelligenz ist oder ob der computer so intelligent ist dass er sich beobachtet welches stufe du hast und dich so sich so anpasst dass du nicht frustriert bist auch was lernst aber auch mal gewinnst.
+
+Glaubt ihr, dass die künstliche Intelligenz irgendwann so weit ist, dass da ein Roboter neben euch sitzt und der sich ganz normal mit euch unterhält und vielleicht auch das Essen kocht und durch die Wohnung läuft?
+
+Glaubt ihr das oder meint ihr, das kommt nicht?
+
+Also ja, ich hab halt schon mal so eine Sendung angeschaut.
+
+Im Fernseher, die kommt immer Son... Nee, nicht Sonntag.
+
+Die kam immer sonntags bei KiKA.
+
+Und da haben die halt mal so erklärt, das heißt glaub ich irgendwas mit Zukunft.
+
+Und die haben da halt erklärt, dass wahrscheinlich in der Zukunft würde das so sein, dass halt die Roboter, dass die halt dann so weit sind, dass die dann halt fast wie ein Mensch sind.
+
+Und dann halt auch sich unterhalten können und kochen können und so.
+
+Und ja, einmal habe ich halt da, und bei LOGO, das ist so eine Nachrichtensendung für Kinder, da haben die einen Reporter, der sieht hier genauso aus wie der Reporter, bloß als Roboter.
+
+Also das ist ein Roboter, und der kann auch Gläser und so halten, der kann das alles, wenn man das ihm sagt.
+
+Man sagt zum Beispiel, wasch die Fenster, und dann wascht der auch die Fenster.
+
+Aber das ist ein Trick, oder?
+
+Oder meinst du, der ist echt?
+
+Der ist wirklich echt.
+
+Okay.
+
+Dieser Roboter ist wirklich echt.
+
+Also es ist ein Roboter.
+
+Man hat da nämlich gesehen, da haben die davon berichtet, man hat da nämlich, die sehen haargenau gleich aus.
+
+Und man hat da nämlich gesehen, wie die den gebaut haben.
+
+Und das lustigste war, dieser eine Roboter hat aus Versehen, das zu trinken, hat er immer, statt dem die Kanne ins Glas zu schütten, hat er immer die Kanne auf den Wissenschaftler gedingst und dann war er immer glitschnass.
+
+Aber Lea, du wolltest auch was dazu sagen?
+
+Wir haben mal einen Film geguckt, der heißt Jacker Tobi und der das macht und da gab es auch mal sowas, da sollte der irgendwo hinkommen zu jemandem, der was mit ihm macht und dann hat der
+
+Dann ist er reingegangen, aber er hatte keinen Schlüssel oder niemand war im Haus.
+
+Und dann hat eine Stimme gesagt, hänge deine Jacke auf und nimm dir was aus dem Kühlschrank.
+
+Und dann ist er aus dem Kühlschrank gekommen und die hat erklärt, was es mit einem Roboter so wäre.
+
+Und ob das dann sicher wäre oder ob da dann irgendwas passieren könnte.
+
+Hättet ihr Angst vor so Robotern?
+
+Also ich würde sagen, wenn sie irgendwie total knochig oder so aussehen, also halt dann nicht so.
+
+Oder zum Beispiel der Roboter im Tiergarten, der ist eigentlich jetzt nicht so.
+
+Also sowas, vor Robotern habe ich eigentlich keine Angst.
+
+Aber wenn halt die irgendwie total knochig oder so sind, oder halt dann irgendwelche Masken oder so aufhaben, weil es gibt ja irgendwelche, die setzen denen dann auch Masken auf, dann hätte ich davor Angst, aber eigentlich nicht.
+
+Also die sollen knuddelig aussehen, Lea, wie ist das?
+
+Die sollen knochig, knochig.
+
+Wenn die immer mehr Aufgaben überleben, die ihr sonst oder die wir früher gemacht haben, meint ihr nicht, dass euch vielleicht langweilig wird?
+
+Ähm...
+
+Da sah der Roboter eigentlich, da sah er überhaupt nicht gruselig aus.
+
+Da sieht er so aus wie auf dem Buch Roboter träumen nicht.
+
+Und da hat er einfach so wie Menschen ein Gesicht, nur dass es halt grau ist und da halt leuchtende Augen sind.
+
+Also da hättest du keine Angst?
+
+Und wird es euch langweilig sein, wenn der die ganze Arbeit von euch übernimmt?
+
+Also Tisch decken, aufräumen?
+
+Ein bisschen schon.
+
+Also ich würde, also erstens würde ich dem nicht sagen, dass er mein Zimmer aufräumen soll, weil ich hätte dann immer Angst, weil immer wenn meine Mama zum Beispiel das Zimmer aufräumt, dann finde ich immer alle Sachen nicht mehr.
+
+Und ja, deswegen würde ich das eher denen nicht machen lassen oder zum Beispiel Dischdecken vielleicht schon.
+
+Aber da hätte ich dann auch Angst, dass er, genauso wie die Mama sagt, dass dann nicht an der Gabel ist und dann an der Gabel ist und dann so unten dran ist dann zum Beispiel sowas, was die Spülmaschine vergessen hat wegzuspülen.
+
+Also halt was halt dann die Spülmaschine nicht weggekriegt hat.
+
+Aber das kann doch der Roboter erkennen.
+
+Kannst du ihm das sagen?
+
+Ja, schon.
+
+Bitte nimm nur sauberes Geschirr.
+
+Ja, aber ja.
+
+Also dann das Zimmer würde ich ihm auch nicht und ich denke eher,
+
+Zum Beispiel so Schulaufgaben oder so.
+
+Die musste ich ja dann eh noch machen.
+
+Aber das wäre doch toll, wenn der Roboter deine Hausaufgaben macht, dann hast du mehr Zeit zum Spielen.
+
+Nö, weil das mir Spaß macht.
+
+Das macht dir Spaß, ja.
+
+Und du lernst ja auch nichts, wenn der Roboter deine Aufgaben macht, oder?
+
+Ja, und das ist ja... Also wenn er zum Beispiel... Wir hätten ja dann auch mehr Zeit zum Spielen.
+
+Und...
+
+Also halt, wenn uns Möchte den Tisch deckt, dann kann ich davor noch ein bisschen Klavier üben.
+
+Aber meistens überrede ich meine Schwester dazu, dass sie bitte den Tisch deckt.
+
+Was würdest du denn machen, wenn der Roboter sagt, deck du doch den Tisch, ich will selber spielen?
+
+Dann wäre ich ein bisschen sauer.
+
+Würdest du dann ausschalten?
+
+Nein.
+
+Dann würde ich ihn wahrscheinlich anschreien.
+
+Lea, was meinst du?
+
+Das wäre meine Reaktion.
+
+Da war es so, da sind die dann mal ein bisschen weiter weggegangen und dann konnte die auf dem Gerät sehen, das Fenster ist offen und die war weg und dann hat sie trotzdem zum Roboter gesagt, mit irgendeinem Zeichen oder so, dann musste sie den Namen von ihm sagen und dann konnte die sagen,
+
+den Namen von dem und dass er das Fertigste dazu machen soll und dann war es zu.
+
+Sehr schön.
+
+Super.
+
+Das hat richtig Spaß gemacht mit euch heute.
+
+Ich hoffe, euch auch.
+
+Danke, dass ihr euch heute die Zeit genommen habt und Fragen gestellt habt.
+
+Und wir werden das sicher nochmal wiederholen in den nächsten Wochen irgendwann mal.
+
+Danke euch und bis bald.
+
+Ja, vielen Dank und tschüss.
+
+Tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

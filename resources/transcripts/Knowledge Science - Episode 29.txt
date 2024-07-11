@@ -1,0 +1,499 @@
+ Hallo und willkommen zur heutigen Sendung.
+
+Heute möchten wir über Human in the Loop sprechen.
+
+Ein Ansatz, bei dem der Mensch stärker in den Prozess der Modellerstellung eingebettet ist.
+
+Knowledge Science.
+
+Der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Carsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Jetzt sind wieder zwei Wochen vergangen.
+
+Letzte Woche haben wir es leider nicht geschafft, einen Podcast zu machen, aber jetzt soll es wieder regelmäßig wöchentlich laufen.
+
+Und wir haben vor zwei Wochen über FAIR AI gesprochen.
+
+Also die Thematik, dass ja in den Daten oder mit den Algorithmen ja auch zu Verzerrungen kommen kann und dass es dann dadurch ja zu Schwierigkeiten bei der Anwendung von Algorithmen kommen kann.
+
+Und in dem kontext kommt ja immer wieder das der hinweis auf es wäre gut wenn der mensch da reingebettet wäre in den ganzen prozess des modell erstellung der anwendung oder wo mit der erstellung und bewertung insbesondere vielleicht auch bewertung ja und da ist ja der begriff human loop immer wieder das thema was da immer auftaucht.
+
+Ein guter Punkt ist, dass wir sagen, stärker, denn involviert ist er ja ohnehin.
+
+Also ich denke mal, wir haben jetzt noch keine Systeme, die sich ständig selbst erzeugen, ihre Aufgaben definieren, gucken, wie sie da irgendwo eine Lösung finden und die einsetzen.
+
+Der Mensch ist im gesamten Prozess ja ohnehin drin.
+
+Die Frage ist nur, wo und wo kann er vielleicht noch stärker oder anders eingebaut oder eingebettet werden.
+
+Wir hatten ja kurz vorher ein bisschen diskutiert und da hat man uns ja gesagt, eine Frage, die du stellen wirst, wo ist er denn nicht eingebettet?
+
+Oder ist er denn überhaupt eingebettet?
+
+Und wir haben natürlich schon die Situation, dass die Maschine das nicht komplett autark macht.
+
+Also Stand heute, vielleicht in 20, 30, 40 Jahren, man weiß es nicht, vielleicht auch schneller, dann mag das vielleicht sein.
+
+Es gibt ja so Bewegungen mit AutoML und Selbstidentifizierung von Algorithmen, um die Probleme automatisch lösen zu können oder ähnliches.
+
+Aber das sind wir noch nicht so weit.
+
+Also genau wie du sagst, wir haben einen starken Automatisierungstrend und das ist ja auch schön und gut, dass wir die Sachen, die sich gut automatisieren lassen, wo die Maschine einfach besser ist beim schnellen Verrechnen, Verarbeiten von Daten, dass wir das natürlich auch nutzen.
+
+Und den Menschen, den müssen wir immer stärker da einbauen, wo einerseits seine Kreativität wichtig und gefragt ist, um Sachen mal anders, neue Wege einzuschlagen und insbesondere auch Feedback
+
+einbauen, gucken, macht die Lösung das, was sie sollen?
+
+Ist sie gut und richtig?
+
+Und das ist ja der Bogen, den wir hatten zu FAIR-ML.
+
+Wenn jetzt Daten verzerrt sind, und irgendeiner muss es ja merken, die Maschine wird es vielleicht nicht wissen, es sei denn, man hat es ihr beigebracht, brauchen wir auf jeden Fall da jetzt als Qualitätskontrolle Absicherung den Menschen.
+
+Aber dann ist für mich jetzt erstmal die Frage, wenn wir diesen Menschen in dieser ganzen Schleife im Kreislauf stärker berücksichtigen, müsste man vielleicht unterscheiden Menschen
+
+beim Erstellungsprozess, der sowieso irgendwo da ist, wie wir ihn vielleicht besser, effizienter einsetzen, aber noch entkoppelt von der eigentlichen Anwendung, oder aber den Menschen während der Nutzung eines Systems, sodass die Art und Weise, wie er das System nutzt, gleichzeitig wieder zurückfließt in die Verbesserung des Systems.
+
+Ja, und du hast jetzt gerade im Begriff schon gesagt, das geht ja einmal in die Unterscheidung in die Erstellung und einmal in die Entscheidung in die Weiterentwicklung, Verbesserung sozusagen.
+
+Also nicht völlig unabhängig voneinander, weil natürlich ich durch diese Verbesserung ja ich möglicherweise auch wieder Daten generiere und ich glaube, das ist der große Punkt, den wir hier ansprechen müssen.
+
+Aber man könnte es inhaltlich vielleicht trotzdem mal in diese zwei Schienen trennen, das reine Bereitstellen, bevor überhaupt so ein System zur Anwendung kommt.
+
+und danach, denn im Kern dreht sich es doch immer darum, dass ich, weil ich lerne ja aus Daten meine Modelle, das heißt, die Daten sind meine Eingabe, meine Basis, und da kann ich dann dran drehen, dass ich eine bessere Datengrundlage kriege, besser im Sinne von besserer Abdeckung, keine Fehler, kein Bias, das Ausmerzen, und da haben wir ja gesehen, dass viele Lernverfahren ja immer noch überwacht arbeiten.
+
+Das heißt, wir versuchen diesen Aufwand zu reduzieren, indem wir auf ungelabelten Daten vor Modelle erstellen, die eine gewisse Repräsentation meiner Domäne haben.
+
+Im Sprachumfeld ist es ja ganz, ganz wichtig, dass ich so ein allgemeines Sprachmodell habe, was ich mit unüberwachten
+
+Nein, mit ungelabelten Daten, aber trotzdem quasi im überwachten Sinne lerne, indem ich halt selbst aus den ungelabelten Daten mir Trainingsdaten generiere.
+
+Zum Beispiel dieses Prognostizieren eines fehlenden Wortes.
+
+Und ich weiß eigentlich welches Wort er ist, ich halte es nur zufällig zu.
+
+Das ist eine Geschichte, aber spätestens wenn ich konkrete Aufgaben habe, möchte ich ja
+
+mein Algorithmus dahingehend trainieren, dass er die BA lösen kann, das ist das Feintuning dann am Ende, und dann brauche ich da wieder diese Labels und spätestens da kommt der Mensch ja wieder ins Spiel, dass er irgendwas bereitstellen muss.
+
+Das müsste im Fokus jetzt erstmal sein, wie wir das geschickter oder besser hinkriegen.
+
+Das heißt, wir haben eigentlich die Einbildung des Menschen in der Datenbeschaffung, wenn man das so nennen möchte.
+
+Also natürlich Datenaufbereitung, Datenbeschaffung, um eine gute Qualität zu haben.
+
+Wir haben es dann während dem Evaluierungsprozess, also die Interpretation der Ergebnisse eines Algorithmuses, noch bevor wir den zum Beispiel in die Öffentlichkeit geben oder deployen,
+
+Also produktiv setzen.
+
+Und wir haben es dann im Endeffekt eigentlich wieder, und das gehört zu der Galerie der Datenbeschaffung eigentlich wieder, im Nachgang, wenn es angewandt wird, dass wir die Ergebnisse einer produktiv genutzten App oder eines Algorithmuses, dass wir die wieder zurückfließen lassen, um den Algorithmus sozusagen später weiter zu verbessern durch noch qualitativ höhere Daten oder ein besseres Verständnis der Nutzung.
+
+Genau, und die Frage ist dann für mich immer nur, wird er einfach in einer vorgegebenen Aufgabe immer besser oder lernt er vielleicht noch völlig neue Fähigkeiten durch die Rückmeldung hinzu.
+
+Und dann hätten wir ein echt lernendes System, was vielleicht auch neuartige Aufgaben lernt zu umzusetzen.
+
+Wenn es merkt, hier Mensch, ich soll irgendwas machen, das kann ich noch gar nicht.
+
+Und dann nachfragt und den Menschen stärker mit einbindet.
+
+Dann hätten wir aus meiner Sicht einen echten Human in the Loop.
+
+der mehr macht als nur, ein Häkchen nur, weil es ist schon Aufwand, die Daten zu labeln oder Feedback geben, ob das Labeln richtig war.
+
+Jetzt, wenn man ein bisschen guckt, so vom Verständnis her, glaube ich, ist das jetzt klar, dass wir so die unterschiedlichen Ebenen haben.
+
+Jetzt würde ich ganz gern mal in das Thema erst mal am Anfang Datenbeschaffung einsteigen.
+
+Und da gibt es ja sozusagen unterschiedliche Begriffe, die da immer genannt werden.
+
+Das ist einmal das Thema Semi-Supervised Learning, Active Learning, ja, aber auch Reinforcement Learning wird genannt, wenn man in dem Kontext sich bewegt.
+
+Und ich glaube, es wäre ganz gut, wenn man die mal auseinanderklamüselt.
+
+Ja, das muss man sagen, was ist denn das eine, was ist denn das andere, oder?
+
+Untertitel im Auftrag des ZDF für funk, 2017
+
+Ja, aber vielleicht bevor wir das machen, vielleicht nochmal so noch eine Ebene höher, mal zu überlegen, naja, was ist denn eigentlich das Ziel, wenn ich das Ganze habe?
+
+Ich stelle Daten bereit, ich will ein Modell erstellen.
+
+Und ich habe einen gewissen Aufwand, den ich dafür habe.
+
+Ein Punkt wäre ja, ich möchte eine vorgegebene Performance erreichen mit weniger Aufwand, also weniger Daten, die ich labeln muss.
+
+Oder aber ich möchte vielleicht durch zusätzliches Bereitstellen von weiteren Trainingsdaten eine bessere Performance erreichen.
+
+Oder ich möchte eine vorgegebene Performance durch Reduzierung oder Auswahl der Daten schneller erreichen können.
+
+Ja, und noch eine weitere Gruppe, die meiner Ansicht nach noch fehlt, ist, manchmal haben wir ja auch Daten, wo sozusagen die Gruppe, die wir betrachten wollen, unterrepräsentiert ist.
+
+Und wir an der Stelle sozusagen durch so eine Methodik, durch diese Unterrepräsentiertheit sozusagen.
+
+Gut, aber das wäre ja einfach nur eine bessere Performance erreichen durch eine bessere Zusammenstellung der Daten.
+
+Also eigentlich mit abgedeckt, aber ein guter Punkt, da kommen wir gleich noch zu einem anderen Geschichte.
+
+Andere Ziele, also das war jetzt mal wirklich das Datenlabel, was wir später noch diskutieren können ist natürlich, dass ich durch Kombinationen von Machine Learning Ergebnissen und dem Menschen, durch Interaktionen vielleicht noch Ergebnisse, Leistungen erreichen kann, die über diese Qualität der Systeme hinaus geht.
+
+Das wäre aber dann eine Anwendung.
+
+Jetzt bleiben wir mal bei dem ersten.
+
+Du sagtest, klar, die klassischen Szenarien, überwacht, unüberwacht.
+
+Nochmal ganz kurz für die, die die ersten Folgen nicht mehr präsent haben oder nicht gehört haben.
+
+Überwachtes Lernen heißt ja, ich habe Eingabe- und Ausgabedaten für eine bestimmte Beobachtung, die Lernbeispiele, und ich versuche diese Abbildung von der Eingabe auf die Ausgabe zu erlernen.
+
+Und das ist genau der Knackpunkt.
+
+Ich muss diese Ausgaben natürlich bereitstellen.
+
+Und da brauchen wir den Menschen, der sagt, hier, das sind die richtigen.
+
+Oder aber ich habe eine Anwendung, wo die automatisch bekannt werden nach einer Zeit.
+
+Wenn ich eine Börsenkursprognose mache und nach einer gewissen Zeit weiß ich halt, was die richtigen Werte gewesen wären.
+
+Das ist klar.
+
+Aber in vielen Anwendungen ist das nicht verfügbar und genau da muss der Mensch eingreifen.
+
+Und da sind wir genau bei solchen Themen.
+
+Semi-supervised kann ich es irgendwie hinkriegen, wenn nur ein Teil der Daten gelabelt ist, trotzdem diese ganzen nicht gelabelten Daten auszunutzen.
+
+Das sind eigentlich aber eher diese
+
+Ansätze wie Self-Supervised heute viel, viel dominanter, dass ich erst mal auf den ungelabelten Daten ein Vormodell zur Repräsentation generiere und dann nur noch wenige gelabelte Daten für die eigentliche Aufgabenerfüllung.
+
+Das klappt schon mal sehr gut, dann haben wir da einfach schon mal den Aufwand reduziert.
+
+Wenn wir aber das auch mal außen vor lassen, war spätestens dann für das Anpassen auf meine konkrete Aufgabe brauche ich ja wieder die Label.
+
+Und dann kommen meiner Meinung nach
+
+ein paar Aspekte zusammen.
+
+Wir können jetzt erstmal gucken, angenommen wir haben schon ein Modell, ein vortrainiertes Modell, was die Aufgabe in gewisser Weise schon lösen kann.
+
+Und dann können wir das mal so aufspannen.
+
+Das ist diese klassische Sichtweise mit den Known und Unknowns und so weiter.
+
+Können wir sagen, wenn wir ein Modell haben, was sich bei einer Entscheidung sehr sicher ist, dann ist das schon mal schön.
+
+Das ist der Teil, der gut funktioniert.
+
+Dann müssen wir da eigentlich gar nicht so viel machen.
+
+Dann werden wir aber Fälle haben, Entscheidungen, bei denen das System weiß, dass es sich unsicher ist.
+
+Das ist ein Punkt, wo wir Unsicherheit reduzieren können.
+
+Das ist ein Punkt, wo wir eingreifen können, wo insbesondere das aktive Lernen auch eingreift.
+
+Punkte, wo das Modell unsicher ist, von denen es dann aber vielleicht auch noch glaubt, dass wenn es dafür das Label hätte, dass es das Modell noch stark verbessern kann.
+
+Dann haben wir natürlich noch den Punkt, dass wir bekannte Zusammenhänge haben, aber die noch nicht richtig eingebaut sind.
+
+Und dann kommen solche Aspekte wie das Transfer-Learning rein.
+
+Ich sage mir, ich habe doch ein Modell, das kann bestimmte Sachen, aber vielleicht noch nicht in meinem Umfeld.
+
+Kann ich die ausnutzen?
+
+Das ist die Idee vom Transfer-Learning.
+
+Und dann, das, was du jetzt als letztes angesprochen hattest, sind die Unknown-Unknowns.
+
+Wie kann ich die Diversität erhöhen?
+
+Dass ich halt irgendwo Fälle, die noch gar nicht da sind, die vielleicht auch gar nicht kenne, dass ich sicherstellen kann, dass ich das abdecke.
+
+Und meiner Meinung nach müssten wir diese drei Bereiche adressieren.
+
+Ja, vielleicht nochmal das aufzugreifen.
+
+Semi-supervised learning, du hast ja gesagt self-supervised learning, heißt ja eigentlich, dass wir ein Modell benutzen, um die Labels zu identifizieren.
+
+wenn ich das richtig verstanden habe aus deinen Erklärungen heraus.
+
+Beim Active Learning gehen wir aber auch einen ähnlichen Schritt.
+
+Da ist es ja auch so, dass wir zunächst mal ein kleines Set an gelabelten Daten haben und vielleicht nochmal zur Wiederholung, ein Label oder Eingabe-Ausgabe-Paare heißt ja immer, wir haben irgendwelche Merkmale eines Datensatzes, also mal vielleicht bei einem medizinischen Thema die Blutgruppe, die Anzahl der Blutkörbchen oder Ähnliches.
+
+Und das Label wäre dann zum Beispiel Blutvergiftung, nicht Blutvergiftung.
+
+Also dass man im Endeffekt sagt, wir haben Merkmale, die auf eine Zielvariable hin orientiert sind.
+
+Und wir versuchen hier praktisch einen Algorithmus zu lernen, der dann eine Klassifikation vornimmt, um in diese beiden Klassen Ja, Nein einzuordnen.
+
+Das vielleicht noch mal zur Wiederholung für die, die die Sendung nicht gehört haben.
+
+Jetzt haben wir vielleicht ein Set an Daten, wo wir sagen, okay, da haben wir ein bisschen Labels.
+
+Da setzen wir vielleicht auch die Energie ein und setzen einen Menschen hin und sagen, so, jetzt nehmen wir einfach den Datensatz 10.000 Datensätze und dann gehen wir mal her und labeln halt 1.000.
+
+Aber halt nicht alle.
+
+Und die tausend nützen wir dann, um das erste Modell zu lernen.
+
+Wir wissen, dass das Modell nicht gut ist.
+
+Wir wissen, dass es vielleicht mit der Anzahl der Datensätze nicht alles repräsentiert.
+
+Aber wir nützen es trotzdem, um sozusagen damit die weiteren Daten auch zu labeln.
+
+Und da wären wir ja im Semi-Supervised Learning, wenn wir das auf dem Weg machen, oder nicht?
+
+Es gibt unterschiedliche Ansätze für das Semi-Surface-Learning, aber ganz klassische würden quasi ein initiales Modell, was aus einem kleinen Teil gelabelter Daten trainiert wurde, würden quasi die eigenen Prognosen auf diesen anderen Daten, die nicht gelabelt sind, nutzen.
+
+um die selbst gelabelten daten dann quasi in den lernprozess mit einfließen zu lassen und und da sehen wir ja auch dass das dass das gar nicht das schließt sich jetzt mit dem aktiven lernen gar nicht aus denn das das modell könnte einfach alle daten die vorwärts keine label hat selbst labeln und nutzen oder aber wenn ich jetzt sage naja ich nehme nur die
+
+die bei denen ich mir sicher bin und bei denen wo ich mir unsicher bin frage ich halt noch mal aktiv einen menschen dann könnte man das in der richtung natürlich immer erweitern das sind das sind das sind ansätze die sich nicht ausschließen.
+
+Nee aber ich glaube der punkt ist wie du so schön sagst dieses aktive so oft wie der name ist ja und man bezeichnet ja dann die interaktion mit den menschen bezeichnen wir den menschen als sogenannte oracles,
+
+die ja an der Stelle das Wissen haben über den Datensatz.
+
+Also die wissen einfach, was ist es.
+
+Und im Active Learning ist es ja so, dass der Algorithmus entscheidet, ob es notwendig ist, den Datensatz, den er jetzt vor sich liegen hat, zu erfragen oder nicht.
+
+Und das hört sich jetzt so einfach an, aber wir haben da natürlich schon verschiedenartige Schwierigkeiten.
+
+Also wenn wir zum Beispiel Datensätze haben, die in einem kontinuierlichen Strom kommen, dann haben wir zum Beispiel keine Historie, dann kann er auch nicht eine Verteilung berechnen, dann kann er keine
+
+kann Informationsgehalt berechnen oder ähnliches, dann muss er sozusagen durch bestimmte Kriterien, die man vorher festgelegt hat, bei Durchsagen an diesen einen, muss man das rausnehmen.
+
+Dieses Vorgehen nennt man dann Stream-Based Selective Sampling im Aktiv-Learning.
+
+Eine andere Methode ist, dass wir sagen, wir haben eigentlich die gesamte Grundmenge.
+
+Also nicht, dass wir so einen Datenstrom haben, sondern wir haben die ganzen Daten.
+
+Und dann kann er sozusagen anhand des Pools, also durch die gesamten Daten, die vorhanden sind, analysieren, welche der Daten führen zu den höchsten Informationsgewinn, wenn er die nochmal anfragt.
+
+Natürlich die, wie du es gesagt hast, die er sich hundertprozentig sicher ist, haben einen niedrigen Informationsgewinn, wenn er die anfragt.
+
+Also lässt er die außen vor.
+
+Und andere, wo er sich gar nicht sicher ist, die haben einen hohen Informationsgewinn, wenn er die anfragt.
+
+Die Frage ist dann halt, gehe ich davon aus, dass ich schon ein aktuelles Modell habe, auf das ich zurückgreifen kann?
+
+Dann können wir solche Sachen mit der Unsicherheit natürlich machen.
+
+Wenn nicht, dass ich einfach Kennzeilen, dass ich eine möglichst diverse Grundmenge habe, dass ich natürlich nicht Punkte mehrfach anfrage, die sehr ähnlich zueinander sind, sondern dass ich immer möglichst auf Datenpunkte gehe, die möglichst unähnlich zu dem sind, was ich bislang schon gesehen hatte, um dann eine vielfältige Abdeckung hinzugeben.
+
+Das geht ein bisschen in die Richtung.
+
+Ja, und diese Methode, die nennt man Pool-Based Sampling innerhalb des Active Learnings.
+
+Und die dritte gängige Methode ist dann die schwierigste in meinen Augen, das ist das sogenannte Membership Query Synthesizers.
+
+Da ist es so, dass der Algorithmus sozusagen anhand der Gruppe Merkmale identifiziert und synthetische Daten erzeugt.
+
+Er versucht dann sozusagen mit synthetischen Daten die gesamte Gruppe abzubilden und fragt dann die synthetischen Daten an.
+
+Das kann man sich natürlich schon vorstellen.
+
+Die Erstellung von synthetischen Daten, die eine Gruppe repräsentieren, ist nicht ganz so einfach und lässt sich meistens nur in dem Kontext anwenden, wo die Merkmale oder die Ausprägungen nicht so komplex sind.
+
+Ja genau, weil wenn ich da ganz Fehler mache, kann es ja sein, dass ich Daten generiere, die überhaupt nicht realistisch sind und ich was völlig Falsches lerne, wenn man da nicht aufpasst.
+
+Aber man muss sehen, der Unterschied, glaube ich, zum Semi-supervised Learning ist, dass wir bewusst diesen direkten Part, also diesen Human-in-the-loop, dieses Querying nach außen drin haben.
+
+Während das beim Semi-supervised Learning, wie du es schon gesagt hast, das sind natürlich, die überlagern sich, also die verschwimmen ineinander, die Verfahren, ja.
+
+Aber das Entscheidende ist, dass man da ja schon versucht, relativ automatisiert zu arbeiten beim Semi-supervised Learning.
+
+Genau, also da ist von der Grundidee automatisiert,
+
+Aber, wie gesagt, ich habe auch da, wenn ich als neue Dimension quasi den Menschen einbaue, kann ich das dahingehend verbessern, aber es würde auch erstmal ohne funktionieren.
+
+Und das Active Learning ist genau dieser Part, wie baue ich den Menschen in diesem Prozess ein, aber nicht einfach blind, sondern mit verschiedenen Strategien, es wird die ganzen Sampling-Strategien genannt, die haben einfach unterschiedliche Ziele, die Abdeckung der Daten um viel besser hinzukriegen.
+
+Entweder durch Unsicherheit, durch Diversität oder halt durch künstliche Generierung, während die anderen Endsätze darauf beruhen, dass ich die gegebenen Datenpunkte, die vorliegen, für die ich nur kein Label habe, dass ich da geschickt was auswähle und das andere, klar, wenn ich neuartige Daten synthetisch generiere, von denen ich glaube, dass sie mir viel bringen.
+
+Das ist ja immer der große Punkt.
+
+Letztendlich ist es immer, alle diese unterschiedlichen Strategien ziehen darauf ab, dass ich Punkte, Datenpunkte identifiziere, die mir für den Lernprozess, für die Modellerstellung viel bringen, um halt nicht einfach so blind einfach durch die schiere Masse das hinzukriegen, sondern durch wenige gut ausgewählte Datenpunkte trotzdem eine vergleichbare Leistung hinkriege, die ich sonst nur mit sehr vielen Daten
+
+Wenn wir mit der Gießkanne einfach rüber, dann braucht man halt sehr viel und weil genau ja der menschliche Aufwand für das Labeln so hoch ist, ist da halt das Ziel, die Anzahl zu reduzieren, um den Menschen zu entlasten.
+
+Kosten reduzieren.
+
+Es geht eigentlich faktisch um Kosten und Zeit.
+
+Genau, das ist das, was ich am Ende meinte.
+
+Man muss sich überlegen, was ist es?
+
+Aufwand reduzieren, dass ich eine vorgegebene Leistung halt mit weniger Aufwand hinkriege.
+
+Es ist wirklich spannend, da den Menschen definitiv einzubinden.
+
+Und ich glaube auch, dass das der Wege ist, den man in ganz vielen Themen sieht.
+
+Wir haben zum Beispiel auch im Forschungsprojekt, das wir gerade führen mit einem Dialogsystem, da fahren wir auch bewusst den Ansatz, den Kunden, also den Anwender am Ende extrem früh einzubinden, indem wir sozusagen halt schon einen relativ simplen Dialogassistenten erzeugen und den dann praktisch auf die Anwender loslassen, wenn man das so nennen möchte.
+
+um dann zu sehen, wie reagieren die damit, wie reagiert das System, da wieder Daten zu sammeln, da sind wir dann genau am Ende sozusagen bei dem Punkt, wo betten wir die Person ein oder den Jungen, um dann wieder ein besseres Modell daraus zu bekommen.
+
+Dann sind wir nämlich genau an der zweiten Stelle, wie man den Menschen besser mit einbinden kann.
+
+Vorher hatten wir gesagt, hier Daten labeln, wie kann man da den Aufwand reduzieren und jetzt sind wir dabei, dass wir sagen, wir wissen eigentlich gar nicht, was die richtige Strategie ist, vielleicht so einen Dialog zu führen und da kommen Ansätze des Reinforcement Learning rein.
+
+dass ich quasi jetzt ich sehe das system ist mein agent dass das spricht mit mir für den dialog und wie kann ich das jetzt gestalten da die richtige strategie policy ne wie führe ich so ein dialog was mache ich da, um das hinzukriegen weil auch da wieder ich kann natürlich ganz ganz ganz viele antworten fragen antworten paare sammeln,
+
+und versuchen daraus zu lernen.
+
+Aber hier sehen wir ja schon, dass die Vielfalt der möglichen Fragen und Antworten ist ja viel, viel höher, als wenn wir jetzt so eine einfache Klassifikation oder irgendwas haben.
+
+Und da werde ich ja nur einen ganz, ganz kleinen Anteil möglicher
+
+Datenpunkte überhaupt nur haben.
+
+Das heißt, ich komme gar nicht umhin, mir das so vorzustellen, dass das System eigenständig anfängt.
+
+Es muss eine gewisse Grundfunktionalität haben und dann aber eigenständig agiert mit mir und dadurch quasi neue Daten generiert, mit denen es dann auch immer wieder Rückkopplung kriegt.
+
+Eine Anwenderin sagt ja vielleicht so, oh nee, das war jetzt falsch, das stimmt nicht.
+
+Und das ist wieder ganz, ganz wichtiges Feedback,
+
+wo ich quasi das direkt nutzen kann, habe ich jetzt die richtige Antwort gegeben, passte das, passte das nicht und das muss ich ständig ausnutzen und dann sind wir ganz klar bei der Form des Reinforcement Learnings und das ist das, was ich ganz am Anfang meinte.
+
+Habe ich jetzt einen Anwender, der quasi vorgelagert eingebunden ist bei der Modellerstellung oder rückt der Feedbackgeber quasi in den Mittelpunkt, in dem Sinne, dass er oder sie das System selbst nutzt und durch die Nutzung
+
+Gleich schon wieder neue Feedback und somit neue Daten generiert.
+
+Ja, das ist super spannend alles.
+
+Und vor allem, man kann es ja auch noch weiterspinnen, wenn man sieht, haben wir auch andere Forschungsthemen, in denen wir zusammenarbeiten, wo wir auch drüber nachdenken, dass man sagt, eine Art Wissensbasis für Unternehmen oder ähnliches aufzubauen, die dann über KI-Komponenten im Unternehmen sinnvoller die Wissen verteilt.
+
+Und da kommen ja dann auch so Fragen auf, wie sind die Wissensfragmente, die wir denn in so einer Datenbank oder in so einem Knowledge Graphen haben, sind die denn überhaupt sozusagen noch gültig oder hat er die gut gesammelt oder ähnliches?
+
+Und da musst du ja genau auch so was haben, dass du das durch den Menschen zurückspiegelst, Feedback bekommst, das Feedback einarbeitest und so weiter.
+
+Also das ist, glaube ich, schon ein ganz, ganz wichtiger Part dieses Human in the Loop.
+
+Es ist gut, dass du das sagst, weil dieses Feedback kommt jetzt auf unterschiedlichsten Ebenen.
+
+Das eine ist ja, das System hat die Frage, die Absicht des Nutzers oder der Nutzerin gar nicht richtig verstanden.
+
+Da kommt da ja schon Feedback.
+
+Da kann man ja auch einbinden.
+
+Habe ich das richtig verstanden?
+
+Du möchtest das oder das wissen.
+
+Dann kann es ja sein, dass die Art und Weise, wie geantwortet wird, irgendwie nicht passt.
+
+Auf der Ecke kann ich mich schon verbessern.
+
+Oder aber das, was du am Ende sagtest, ja, ich ziehe die Antworten irgendwo her, entweder als
+
+Ja, Frage-Antwort aus so einem Pool, okay, das wäre noch relativ einfach, wenn da die richtigen Antworten sind.
+
+Aber wenn ich jetzt Hintergrundwissen einbeziehe, was ich in Form einer Wissensbasis aufgebaut habe, und ich dieses Wissen aber auch nicht manuell generiert habe und qualitätsgeprüft habe, sondern automatisiert, dann können da Fehler drin sein.
+
+Und dann muss einfach die Rückmeldung kommen, auch hier, ne, die Antwort stimmte nicht.
+
+Das heißt, ich kann auf diesen drei Ebenen auf jeden Fall immer das Feedback mit einbauen, wie es im normalen Leben ja auch ist.
+
+Wenn du als Mitarbeiter oder Mitarbeiterin irgendwo unterwegs bist und trainiert, wirst gefragt, dann kann es sein, dass du einfach eine völlig falsche Art und Weise zu antworten hast.
+
+Aber so macht man das nicht.
+
+So geht man da in dem Fall nicht um.
+
+oder aber du generierst eine Antwort, die ist falsch, dann kriegst du vielleicht gesagt, das stimmt nicht.
+
+Bestenfalls wirst du sogar korrigiert, dann müsste ich die korrekte Antwort vielleicht gleich in der Wissensbasis ablegen, wie man das in Menschen ja auch irgendwo hat.
+
+Manche brauchen häufiger Feedback, manche kriegen das mit einem Mal hin und dann sind wir uns genau auf einer Ebene, wie wir quasi menschliche Art und Weise, wie man mit solchen Problemen umgeht, versuchen nach und nach abzubilden.
+
+Ja, das ist echt interessant.
+
+In der Vorbeschersche auch zu der Sendung bin ich dann über so ein paar Seiten gestolpert und es gibt auch ein schönes Buch, das heißt auch Human in the Loop.
+
+Die haben so zehn Vorteile aufgezählt, warum man das machen sollte.
+
+Fand ich ganz interessant, wenn man die mal so durchgeht.
+
+Das erste war so Vermeidung von Bias, frühzeitig Erkennen von Bias und so weiter, hatten wir schon gesagt, das ist völlig d'accord.
+
+Dann ein wichtiger Punkt, der aufgeführt war, Schaffung neuer Arbeitsplätze.
+
+Das fand ich echt interessant, weil im ersten Moment, das merkt man jetzt vielleicht in den letzten 25 Minuten, wir haben jetzt sehr über die technischen Aspekte und Qualitätsverbesserungen usw.
+
+gedacht.
+
+Und als ich das so gelesen habe, Herr Lesert, mir kam das nicht sofort in den Kopf zu sagen, dadurch schaffe ich neue Arbeitsplätze.
+
+Aber eigentlich, wenn man so ein bisschen Schritt weiter denkt, ist es schon ganz interessant, weil auf der einen Seite sorgen wir ja dafür, dass wir durch den Automatismus Arbeitsplätze reduzieren, wahrscheinlich zumindest.
+
+Und auf der anderen Seite würde so ein Mechanismus dazu führen, dass wir Personen qualitativ wieder in den Prozess einbinden und im Endeffekt wieder Arbeitsplätze schaffen.
+
+Eigentlich werden wir alle zu Lehrern, Lehrerinnen und Kontrolleuren.
+
+Jeder hat so seinen eigenen Bot, der ihn oder sie unterstützt, muss dem natürlich beibringen, was es können soll, was so die Basis ist und gewisse Personalität damit ja auch irgendwie abdeckt und das ganze halt kontrollieren.
+
+Also man legt sich zurück, sagt man hier, man erzieht seinen Bot, man beurteilt ihn,
+
+Ja, weil im Endeffekt ist es ja auch das, was wir den Studierenden sagen, wenn wir in den Veranstaltungen stehen, dass wir sagen von wegen, es kann schon sein, dass sich die Menschheit in Zukunft so ein bisschen trennt in diejenigen, die sozusagen die Prozesse, Algorithmen und so weiter verstehen und da aktiv Part dran spielen und diejenigen, die da völlig blind sind, also blind jetzt nicht im
+
+im Negativ, sie einfach das Wissen nicht haben und damit dann zukünftigen Nachteil haben.
+
+Also von daher ist, glaube ich, das, was wir hier machen, dann Verständnis zu schaffen mit dem Podcast oder generell auch, was in der Öffentlichkeit passiert, an vielen Stellen ein ganz wichtiger Part, damit man auch die Chance hat, in solchen Bewegungen dabei zu sein.
+
+Das ist ein schöner Punkt und für uns Ausblick.
+
+Ich glaube, wir haben jetzt am Ende ja das Reinforcement Learning angesprochen.
+
+Ich glaube, es wird Zeit, in irgendeiner späteren Folge, das nochmal ein bisschen genauer zu betrachten.
+
+Und insbesondere aber nicht nur allgemein, weil es kommt ja sehr, sehr stark aus der Spiele-Ecke, aber auch zu zeigen, wie das jetzt in neueren Anwendungen, gerade jetzt im Bereich der Dialogsysteme, vielleicht auch zum Einsatz kommen kann.
+
+Definitiv.
+
+Also da denke ich, sollte man nächste Woche gleich damit starten, mit Reinforcement Learning.
+
+auch da den ansatz mit juman in the loop aufzeigen weil grundsätzlich ist es ja so von der grundidee her so dass auch agenten miteinander agieren also dass die maschine mit sich selber agiert also gegeneinander oder ähnliches aber das glaube ich mach meine muss genau weil der allgemeine reinforcement learning muss muss dieser diese umwelt ja nicht unbedingt mensch sein es kann ja auch irgendwas was anderes sein aber für uns wenn wenn natürlich die dieses umfeld durch die menschen geprägt wird
+
+Dann haben wir natürlich das Human-in-the-Loop-Reinforcement-Learning kombiniert, ein sehr, sehr spannendes Feld.
+
+Perfekt.
+
+Vielen Dank für's Zuhören diese Woche.
+
+Wir hören uns nächste Woche wieder, jetzt wieder pünktlich jede Woche.
+
+Von daher noch mal Entschuldigung, dass wir letzte Woche keinen Podcast erstellt haben, aber ab jetzt läuft's wieder runter.
+
+Und eine schöne Restwoche Ihnen.
+
+Ciao.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

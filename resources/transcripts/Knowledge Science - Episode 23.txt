@@ -1,0 +1,413 @@
+ Hallo und herzlich willkommen.
+
+Nachdem wir letzte Woche die GANs abgeschlossen haben, wollen wir diese Woche über die ethische Implikation von GANs und damit natürlich auch über Deepfakes sprechen.
+
+Knowledge Science – der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Carsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+Du sag mal, was ist denn eigentlich ein Deepfake?
+
+Gute Frage.
+
+Deepfake ist, wenn ich ein Bild von jemand anders oder ein Video von jemand anders so gut nachmache, dass ich nicht mehr erkennen kann, dass es real ist.
+
+Ich bin die Woche, und wir haben uns ja im Vorfeld unterhalten, über ein Video gestolpert.
+
+Das hieß Just Another Singularity von DeepNap.
+
+Und das ist echt schockierend, wie gut dieses Video ist.
+
+Also man sieht im Endeffekt Morgan Freeman als Schauspieler.
+
+und unten drunter einen mann der im endeffekt kopfhörer im ohr hat und der mann spricht die stimme ist aber die von morgen freeman und auch die gestik und so weiter wird eins zu eins auf das bild übertragen von dem schauspieler.
+
+Komplett das bild die bewegung der ton also,
+
+und umgewandelt.
+
+Genau, komplett erzeugt, ja.
+
+Und es ist ganz interessant, weil es halt so aufgemacht ist, so dem Motto, wenn man jetzt glaubt, dass es echt ist, sollte man darüber nachdenken, was denn die Realität ist und was nicht und so weiter.
+
+Also so ist es halt ein bisschen dargestellt, so ein bisschen reißerisch natürlich auch.
+
+Aber es spiegelt schon natürlich was Schockierendes wider, nämlich, dass man natürlich praktisch einfach nur anhand eines Bildes von jemandem anders ganze Videosequenzen erzeugen kann mit natürlich
+
+passenden ton und passende mimik passende geistig und so weiter und das führt natürlich zu ganz.
+
+Heftigen diskussionen in meinen augen und natürlich zu ethischen fragestellungen die sich daraus ergeben ethisch moralische fragestellung und zwar das erschütternde dass es reicht teilweise ein gutes foto wenige sätze um.
+
+Fakes also nachahmungen zu erzeugen die täuschend echt sind ja.
+
+Ja, und man muss natürlich auch sehen, wir hatten ja in den letzten Sendungen jetzt immer über die Generative Adversarial Networks gesprochen und das ist natürlich die Technologie dahinter, die das überhaupt ermöglicht, so gute
+
+Ja, Nachahmungen zu erzeugen.
+
+Und muss man sich natürlich schon fragen, ob das ethisch, wir hatten auch mal eine Sendung über die Regulierungsbestrebungen der EU bezüglich dem Risiko von künstlicher Intelligenz, ob an der Stelle natürlich nicht solche Applikationen nicht schon ein gewisses Risiko darstellen oder ob man die nicht verbieten sollte oder reglementieren sollte.
+
+Also in der tat ist die die nutzung von deepfakes kann als als waffe bezeichnet oder betrachtet werden es hat solche ausmaße die es annehmen kann es mag einsatzbereiche geben die vertretbar in ordnung sind aber das wollen wir heute vielleicht einfach mal.
+
+Ja, ein bisschen durchleuchten.
+
+Vielleicht nochmal, ich hatte ja diese Frage gestellt, warum Deepfake?
+
+Also eigentlich ist es ein Kunstwort aus Deep Learning und Fake.
+
+Also ich nutze aktuelle Deep Learning Technologien, um Fakes, Nachahmungen zu generieren von menschlicher Stimme, Bilder oder in Kombination und in der Bewegung Video.
+
+die so echt sind inzwischen, dass ich es auf den ersten Blick zumindest erstmal nicht mehr unterscheiden kann.
+
+Also flüchtig drauf geschaut und manchmal auch inzwischen sogar schon intensiver drauf geschaut, sieht man es teilweise nicht mehr.
+
+Ich finde halt wenn man jetzt zum beispiel hat jetzt hier mit diesen schauspieler mit dem transfer der mimik und so weiter, dann ist es relativ schnell klar dass es wirklich auch nen ziemlich großen negativen touch hat, weil man natürlich da im endeffekt persönlichkeitsrechte verletzt oder verletzen kann weil man im endeffekt aussagen verdrehen kann man kann ja im endeffekt wenn man das jetzt mal so ein bisschen,
+
+Wenn man größer denkt, könnte man an gewisse nationale Sicherheitsprobleme denken, man müsste bestimmte Aussagen von Politikern oder ähnliches in eine gewisse Richtung bringen.
+
+Also man kann sich relativ schnell vorstellen, dass solche Technologien oder solche Möglichkeiten in den falschen Händen, wie man das immer so schön sagt, auch ganz schön gravierende Auswirkungen haben können.
+
+Aber, und das würde ich ganz gerne auch nochmal so ein bisschen in den Gedankengang mit reinbringen, wenn wir über ethische Themen sprechen, dann ist es ja nicht nur dieses, ich sag mal, dieses ganz Extreme, wie jetzt in dem Fall, wo man sagt, da ist eine
+
+da, aber das ist ja praktisch der Fall, wenn ich ja so Bilder von jemandem Fremdes nehme und dem andere Sätze im Mund setze oder ähnliches, dann ist es ja wirklich eine Verletzung von eigenen Rechten oder von Rechten.
+
+Aber wenn ich jetzt zum Beispiel auch an sowas denke wie
+
+man findet ja auch ganz interessante sache dass die technologien die in dem deepfake verwendet werden oder bei den ganz also die ganz verwendet werden dass man da zum beispiel künstliche charaktere erzeugt zum beispiel influencer und dann halt massiven content erzeugt weil ich brauche ja niemand ich brauche sie nicht mehr aufnehmen per se
+
+ich brauche niemanden mehr eine gage zahlen ich kann im endeffekt hergehen und kann sagen jetzt brauche ich mal wieder zehn neue videos und dann generiere ich mir die schnell mal mit einem fiktiven charakter also kein kein echter mensch ich verletze keine persönlichkeitsrechte oder ähnliches sondern ich erzeuge einfach in den künstlichen charakter und mit cdn für werbemaßnahmen für influencer tätigkeiten
+
+Das ist vielleicht gar nicht so verwerflich nur dass ich natürlich bestimmte berufsgruppen wenn ich jetzt schauspieler bin, dass ich da natürlich genauso wie ich wenn ich das thema digitalisierung generell unternehmen habe dass ich sage bestimmte jobs fallen weg ist das natürlich auch ein bereich,
+
+ja wo solche drops vielleicht wegfallen können.
+
+Das ist richtig also praktisch einerseits die überlegung richtung jobs die andere überlegung die ich hatte ist ob es ethisch vertretbar ist mit künstlichen charakteren die man erzeugt ein den profit sozusagen zu steigern also einfach die masse zu erzeugen um den profit zu steigern ob das sozusagen ethisch vertretbar wäre.
+
+Kann man nicht auch diskutieren ob werbung ethisch ist oder nicht.
+
+Kann man sicher auch aber da habe ich so ein gewisses ja ich habe im endeffekt einen gewissen kostenblock also in dem fall reduziere ich ja den kostenblock auf ein auf ein minimum also meine grenzkosten gehen ja nahezu null wenn ich praktisch content beliebig in beliebiger masse generieren kann.
+
+Und das sehen wir ja im endeffekt auch wenn wir spam mails anschauen die sind ja nur deswegen so massiv da weil die verbreitung dieser der mails einfach nichts kostet oder nahezu nichts kostet.
+
+Und wenn wir für jede mail den euro verlangen würden dann wird es keine spam mails geben.
+
+Die geschwindigkeit und die einfachheit mit der sowas erzeugt werden kann stellt uns halt einfach für neue völlig neue herausforderungen klar wie du sagst man kann doch hatte früher schon post verschicken können mit entsprechend porto druck kosten.
+
+Wurde das in manchen Fällen sicherlich gemacht, aber es war eher begrenzt und mit Abnahme der Kosten und der Zeit, die man dafür braucht, das zu erstellen, wird es halt massiv viel, viel stärker genutzt werden.
+
+Dann ist Tür und Tor geöffnet für Betrug, für solche, ja, um Menschen zu täuschen letztendlich.
+
+Das Ding ist, wenn wir mal die Deepfakes nochmal anschauen, wenn du sagst, mit der Zeit und der Geschwindigkeit, mit den Kosten,
+
+Es gab auch früher schon in der Videoproduktion oder in der Fototechnik die Tatsache, dass Bilder oder sogar Filme schon entsprechend manipuliert wurden, um Szenen zu generieren, die einfach so nicht machbar waren sonst, oder um Bilder, bestimmte Sachen auszutauschen, zu retuschieren.
+
+Aber das war üblicherweise mit viel viel zeit und sehr hohen kosten verbunden da was man damals in den wochen monatelanger arbeit mit extrem hohen kosten erzeugen konnte das geht heute teilweise mit mit einfachen apps in wenigen minuten für leine teilweise machbar das heißt es ist ja teilweise toll was technik kann aber auch erschütternd um zu sehen wie leicht entsprechend dass dieser missbrauch dann auch da möglich wird.
+
+Ja, es gibt Fake.de auch Naver, also eine schöne Übersicht über Deepfakes und ihre Erkennungsmethoden, wo wir sicher jetzt auch gleich nochmal drüber sprechen.
+
+Das Paper ist von Nikian et al.
+
+Das heißt Deep Learning for Deepfakes Creation and Detection.
+
+Und der listet in dem Paper tatsächlich 30, 40 verschiedene
+
+Werkzeuge auf, die natürlich alle aus einer wissenschaftlichen Forschung herauskommen, was möglich ist, also geht es eher erst mal um den educational Bereich oder halt um das Thema zu zeigen, was Technik kann.
+
+Aber wenn man dann die einzelnen Applikationen anschaut, dann ist es sozusagen ein Face-to-Face-Transfer oder ein Video-zu-Video-Transfer, also wo ich praktisch genau das, was wir gerade angesprochen haben, Gestiken und Töne von dem einen auf den anderen übertrage in einer guten Qualität.
+
+Und wenn man sich diese, wir sagen ja immer Repositories, also den Quellcode, der frei verfügbar ist, anschaut, dann ist die Hürde, das anzuwenden, einfach minimal.
+
+Also die ist gering.
+
+Also es ist im Endeffekt, kann man sagen, wenn man ein gewisses Grundverständnis von Technik hat,
+
+Ich würde schon fast sagen, wenn Sie unserem Podcast regelmäßig folgen und dann sich diese Repositories anschauen, dann würde ich sagen, innerhalb von einem Tag, zwei Tage kann man da, vielleicht natürlich nicht mit dem Verständnis, was da alles im Hintergrund passiert, aber einfach von der Methodik her von, ich habe eine Vorstellung, dass ich ein Bild nehmen möchte oder ein Video und möchte das auf ein anderes transferieren, wenn wir das Beispiel weiter stressen wollen.
+
+Das dass man das in einem tag hinkriegt ich glaube teilweise vielleicht sogar noch schneller es gibt ja also das eine möglichkeit ist natürlich die algorithmen implementierung zu nehmen anzuwenden man muss sie gar nicht verstehen, jeder der fern schaut muss ja auch nicht verstehen wie die elektrotechnik dahinter funktioniert es gibt aber auch schon fertige anwendungen also wie sagt es gerade das gesicht austauschen, face swapping in echtzeit hier mit der fake app gibt es gibt es entsprechend anwendung die,
+
+kann man schon einfach so nutzen und das heißt die die die hürde das tatsächlich zu machen ist um noch mal wieder deutlich geringer als wenn du sagst ich setze mich dahin und implementiere das in einem tag nach.
+
+Es ist schon erschreckend auf der einen seite es bedeutet und das ist das was man ja auch sieht also wenn man das jetzt mal sieht zum beispiel die papers die sich mit deepfakes creation und detection
+
+Also alles, was sozusagen in den, wir müssen überlegen, so richtig aufgekommen ist, ist ja eigentlich wirklich tatsächlich mit den generativen Netzen, das heißt so um die 2015, 2016 rum, da ging das ja so nach und nach los, was diese Deepfakes angeht.
+
+Und man sieht, also 2016 gab es tatsächlich null Veröffentlichungen zum Thema Deepfakes.
+
+Und wenn man das jetzt heute anschaut 2020 also heute ich habe jetzt nur die zahlen bis 2020 da ist es so das sind dann fast 1270 pay was die im jahr für 2020 seit einigen jahren die qualität wirklich so ist dass man getäuscht wird wenn man immer eben drauf schaut was gibt ja so spannende seiten wie richface ist real.com wo man halt immer so zwei bilder präsentiert bekommt und ich habe dafür mal durchgespielt
+
+Ich hatte dazu noch einen Artikel gelesen, wie man denn aktuell noch Fake-Bilder gut erkennen kann und mit Hilfe dieser Hinweise, da können wir vielleicht auch nochmal drauf eingehen in der Kürze, war es mir tatsächlich möglich, einen Großteil der Bilder entsprechend richtig einzuordnen, aber flüchtig drauf geschaut, würde ich sagen, keine Chance.
+
+Das ist praktisch eine Seite, in der du original und falsche Bilder.
+
+Genau, man kriegt mal zwei Bilder angezeigt, eins ist echt, eins wurde erzeugt mit einem Garn und dann muss man einfach auswählen, welches ist das Fake, welches ist das echte Bild und dann kriegt man gleich gesagt, ob es stimmt oder nicht.
+
+Ja, das ist interessant.
+
+Ja, ich hab echt auch, als man sich jetzt so, wir hatten ja ein paar Sekunden vorher schon gesprochen, es ist so ein bisschen erschreckend, wenn man sich da tiefer reinliest und dann mal guckt, was es denn so gibt.
+
+Man bleibt irgendwie an jeder Methode hängen, also die Vorbereitungszeit.
+
+Hier ein bisschen länger, weil man halt immer ganz gerne sich das noch anschaut und das ganz spannend findet.
+
+Und wenn das nicht so alles so ein bisschen gelesen habe und mir so meine Gedanken gemacht habe, habe ich mir gedacht, na ja eigentlich, wo wird das hinführen?
+
+Wir haben auf der einen Seite ein Wettrüsten, was die Technologien angeht, wie gut die sind.
+
+also wie gut die generativen netze sind also dass die qualität wahnsinnig gut ist dass die auf früher war es ja so wenn man jetzt wobei wir früher reden wie gesagt reden wir von vor zwei drei jahren ja da war ja die auflösung nicht so hoch also da waren die bilder dann kleiner und so weiter und wenn man das heute anschaut stand heute die sind ja wirklich in high definition sind ja wirklich verfügbar das heißt
+
+Es ist ein Wettrüsten auf der einen Seite in der Generierung und auf der anderen Seite, glaube ich, wird es irgendwann in die Richtung gehen, dass man sagt, entweder es wird Regulatorien geben, wo man das einblenden muss, dass es praktisch keine realen Menschen sind oder so ähnliches, oder dass es tatsächlich Mechanismen gibt, mit denen man diese Effects identifizieren kann.
+
+Ich finde es interessant, wenn man mal ganz kurz nochmal ein bisschen zurückdenkt und sich überlegt, so technologische Entwicklung, Telefonie, E-Mail-Verkehr, Internet, Anfang der 90er Jahre.
+
+Ich meine letztendlich, vermutlich war bei jeder Technologie irgendwo die Sorge, Großmensch, hier ist ein Telefon, da kann ja irgendjemand anrufen, man gibt sich für eine andere Person aus, soll ich es glauben oder auch nicht.
+
+Wo ich mich erstmals gelöst habe von diesem echten face-to-face begegnung wo ich den menschen sehe ihn riechen kann direkt gestik mimik alles habe da war natürlich die gefahr viel geringer natürlich konnte ich auch mich in ein gespräch begeben und mich als jemand anders ausgeben klar aber war schwierig telefon haben bestimmt auch seit der zeit diskutiert er kann jeder anrufen insbesondere aber so anfang der neunziger jahre mit das internet sagen wir mal öffentlich stärker
+
+genutzt wurde ich erinnere mich noch an so ein cartoon wo zwei hunde vom internet sitzen und sagen ach mach dir nichts raus im internet weiß keiner dass du ein hund bist und nutzen das also sprich da mal zur überlegung menschen nutzername sagt nichts über die identität jeder kann sich irgendwie nennen jeder kann irgendwie schnell irgendwelche inhalte generieren und wie häufig wollen wir das den nutzern gerade kindern ein nicht auf rein zu fallen wenn er jetzt irgendwo sie man sich als ich bin deine mama ausgibt und glaubt das nicht ja also so und
+
+oder irgendwelche Nachrichten, Texte, die generiert wurden.
+
+Aber lange Zeit war immer noch irgendwie gesetzt, ja wenn es Bilder gibt, wenn es Ton und Video gibt, dann ist das ein Indiz dafür, dann ist es echt.
+
+Und jetzt kommen wir genau an den Punkt, wo das nicht mehr gegeben ist.
+
+Aber wir können uns nicht darauf verlassen, nur über was höheren Bilder da zu sehen, zu sagen, jawohl da muss es so sein.
+
+Und ich glaube, das Wichtigste erstmal ist im Umgang damit, wir müssen es einfach akzeptieren, es ist so, es ist möglich.
+
+Wir können natürlich Regularien schaffen und sagen, das ist verboten, man darf es nicht machen, es ist nicht moralisch, nicht ethisch, alles schön und gut, aber es ist technisch möglich.
+
+Und das aber erstmal festzustellen, dass es so ist, erstmal das einfach anzunehmen, finde ich es wichtig, entsprechend die Gesellschaft darüber zu informieren,
+
+Und aufzuzeigen, gerade Kindern oder jeglichen Nutzer letztendlich, was alles möglich ist.
+
+Das heißt, es gibt Aufklärungswebseiten, die zeigen, wie gut die Technologie ist.
+
+Dass man sagt, Mensch, das hätte man vorher gar nicht gedacht.
+
+Das finde ich wichtig, dass man einfach klar macht, das ist so.
+
+Dass man halt lernt, genauso wie man Medien-Internet-Nutzung in der Schule verbreitet und sagt, Mensch, ihr müsst lernen, die Glaubwürdigkeit einer Quelle einzustufen.
+
+Auch da einfache ansätze wie nur weil ich finde es ein fake video gibt wichtig wäre finde ich das auch noch in anderen ordnungsstellen wenn es nur einmal das gibt ist es nicht dafür dass es ein fake ist wenn es echt ist müsste das wahrscheinlich in mehreren grillen also als beispiel so einfachen möglichkeiten.
+
+aus der Bewusstheit heraus, dass es halt existiert, auch damit umgehen zu können.
+
+Das nächste, wie kann ich als Mensch sowas erkennen?
+
+Da würde ich gleich noch mal ganz kurz drauf eingehen.
+
+Und das letzte, was du auch gerade angesprochen hattest, die algorithmische Erkennung.
+
+Und da gibt es auch wahnsinnige Fortschritte.
+
+dass ich, ich hatte auch ein tolles Paper gerade entdeckt, immerhin auch von einer deutschen Forschergruppe aus, von der Hohe Universität in Bochum, das ist der Joel Frank, und unsere Kollegen und Kolleginnen, die haben letztendlich durch eine Frequenzanalyse von Bildern es geschafft,
+
+zu zeigen, dass aktuelle Gant-Technologien bestimmte Artefakte in den Frequenzbereichen erzeugen.
+
+Typischerweise durch dieses Upscaling durch die Convolutional Networks gibt es so eine Art Gitterstruktur in den Frequenzbereichen und man kann
+
+Auf schnelle und einfache Art und Weise sind diese Fake und Nicht-Fake quasi linear trennbar, lassen sich ganz, ganz einfach erkennen.
+
+Insofern ist das schon mal gut.
+
+Also man kann aktuell algorithmisch das erkennen.
+
+Hab ich mir nur gedacht, ist ja schön.
+
+Das ist ja wie so ein Katz-Maus-Spiel, Hase-Igel.
+
+Wenn ich jetzt die Art und Weise, wie diese Algorithmen die Fake von Real auseinanderhalten, als Diskriminator, zusätzlichen Diskriminator in meinen Garnnetzen nehme,
+
+Dann kann ich die ja genau dahin trainieren, dass sie das wieder quasi täuschen können.
+
+Dann kann ich genau das wieder ausgleichen.
+
+Wahrscheinlich wird man immer hinterherlaufen oder man ist vielleicht mal voraus, aber die Möglichkeit, diese Täuschung trotzdem zu generieren oder täuschend echte Sachen zu erzeugen, die nicht zu erkennen sind, das wird immer wieder passieren.
+
+Ja, da waren jetzt viele Punkte drin, die du genannt hast.
+
+Eins fand ich ganz schön, dass du sagst, man muss die Gesellschaft informieren, aufklären und so weiter, zum kritischen Denken anregen, ist ja eigentlich der Aspekt.
+
+Und nicht nur einfach nur konsumieren, eine Quelle, du sagst, eigentlich das, was man die ganze Zeit auch seinen Kindern oder auch den Studenten oder ähnliches sagt, vertrauen Sie sich nicht auf eine Quelle, nehmen Sie sich ein zweites Buch, schauen Sie, was die dazu sagen, führen Sie das zusammen.
+
+ganz normalen dinge eigentlich kommen hier eigentlich meiner ansicht nach wieder viel viel stärker in den vordergrund was vielleicht das ist jetzt vielleicht meine persönliche meinung was vielleicht vereinzelt in den letzten jahren jahrzehnten bei dem einen oder anderen vielleicht nicht ganz so im vordergrund stand also dass man hat immer nur eine quelle hat oder ähnliches man konnte sich im alltag ja zurücklehnen und sagen naja kommen im alltag ich schaue fern bild video kann ich mich darauf verlassen
+
+Genau so das ist der eine punkt und das andere was du gesagt hast mit dem katzen maus spiel sehe ich genau so.
+
+Ich bin der meinung dass es nicht ganz so richtig ist dass man sagen wir haben die katzen maus spiel und man hängt ein bisschen hinterher wenn man es genau nimmt sind die ganz haben wir ja letzte woche gesagt bestehen ja aus dem generator und den diskriminator.
+
+Und die beiden lernen ja gleich gut das heißt theoretisch gibt es ja jedes fake generierte bild auch einen diskriminator der vermeintlich zumindest annähernd so gut ist den zu erkennen.
+
+Aber ich meinte das das offenet diese diskriminatoren jetzt entwickelt wurden die waren ja nicht die die in den in den garnetzen eingebaut waren sondern die haben leute im nachgang entwickelt und deshalb meine ich ich muss ja nur diesen diskriminator nehmen ihn als zusätzlichen,
+
+Also als zuletzt ein Diskriminator im Gar-Netzwerk während des Trainingsprozesses einbauen, dann lernt der auch, weil moderne Architekturen haben nicht nur einen Diskriminator, sondern mehrere.
+
+Die können dann auf verschiedene Art und Weise, wie ich sowas entlarven kann, werden die trainiert, das alles zu erreichen.
+
+Dauert natürlich länger, aber mit mehr Rechenleistung und mehr Zeit kann ich entsprechend das dann auch lernen.
+
+Insofern werde ich dann wahrscheinlich diese aktuell gültigen Algorithmen, die das können, täuschen können.
+
+Also und ein Punkt hattest du noch genannt mit dem, was ich mit den Artefakten von der deutschen Forschungsgruppe, witzigerweise bin ich da beim Paper gestoßen, international von Harvard, Sifci Umur et al.
+
+sind die Autoren, das heißt, how do the heartbeats of deepfakes beat?
+
+Deepfake Source Detection via Interpreting Residuals of Biological Signals.
+
+Und die haben festgestellt, dass praktisch so Art, also die nennen das Herzschlag, aber es ist kein Herzschlag, dass praktisch wenn man ein Video betrachtet, dass durch diese Aneinanderreihung der Bilder, so ähnlich wie du es auch gesagt hast mit den Artefakten, dass es da dann zu leichten Pulsierungen kommt.
+
+Und diese Pulsierungen sind wie so eine Art Pulsschlag zu erkennen, was in einem normalen Video eigentlich nicht der Fall war.
+
+Es ist ganz klein, also ganz feine Nuancen, aber das ist dem Computer in einer gewissen Weise ja egal, der kann auf sowas achten.
+
+Das war dieses Punkt, was wir bei den bewegten Bildern hatten.
+
+Ich komme mal wieder zu meinem Lieblingsfall mit dem Zählbrat zurück, wo das Muster des Zählbrats auf jedem einzelnen Bild perfekt ist, aber die Übergänge bei der Bewegung halt, wo man merkte, das stimmt nicht.
+
+Ich wurde gerade bei sowas ansprichst ich finde es extrem wichtig finde mal die des bewusstsein zu schärfen wie sowas erkenne aktuell ein paar beispiele wie ich das manuell erkenne und das kann ja jeder mal ausprobieren gesagt which face is real.com mal die seite aufrufen und dann sieht man es gibt manchmal so auf alten bildern kennt man das so wasserflecken wenn wir so kleine stellen sind wo irgendwo das ein bisschen.
+
+Unscharf ist verlaufen irgendwie das findet man meistens nicht mitten im gesicht sondern so an den übergangsbereichen oder am rand ganz oft so oberreich wo irgendwo abrupte veränderungen sind nur läppchen oder sowas da ist oft mal sowas bei haare ansetzen haare generell lange haare wenn ihr auf einmal lange strecke sehr sehr.
+
+gleichmäßig sind, so als ob man mit dem Pinselstrich darüber gemalt hätte, was nicht natürlich ist.
+
+Ganz, ganz wichtig, so Symmetrie, Asymmetrie.
+
+Wenn du sagst, die Augen sind nicht gleich oder jede Person schielt.
+
+Ja, klar, natürlich gibt es das auch in der Realität, aber es ist vielleicht selten, da fällt schon mal auf.
+
+Die Nasen sind nicht, Nasenlöcher sind nicht gleich groß oder auf der einen Seite ist ein Ohrring, auf der anderen nicht.
+
+Das merkt der Rechner nicht so schnell oder natürlich so
+
+Konformität zwischen dem Geschlecht und den äußeren Merkmalen.
+
+Natürlich gibt es da, wenn wir jetzt mal genderkonform sagen, natürlich gibt es auch in der Realität Sachen, dass jemand aussieht wie ein Mann mit Frauenklamotten geträgt oder sowas.
+
+Das ist ja solches völlig in Ordnung.
+
+Aber der Rechner weiß das nicht.
+
+Und wenn ich jetzt sehe, Mensch, da ist ein Mann, der hat ungewöhnliche Ohrringe.
+
+Oder nur auf einer seite dann fällt sowas natürlich schon mal auf die haben oft probleme mit mit feinen details so in den bildern wo es nicht ganz so viele bilder für gibt so zähne wenn jemand mund auf hat und spricht wie sieht es da drin aus.
+
+Was hat man noch gesagt artefakt übergänge insbesondere im hintergrund.
+
+wenn er versucht irgendwelche texturen irgendwo zu generieren die nicht passen aufgrund von spiegelungen und asymmetrien das auf einmal in den text da steht aber schmier verkehrt ist das weiß der rechner nicht durch date augmentation haben aber viele daten erzeugt und dann können solche sachen darauf steht also es sind viele kleinigkeiten man darf nicht irgendwie nur das gesamte gesicht irgendwo sehen so man muss so so ja dann sein bewusstsein schärfen und in andere bereiche gucken als man vielleicht sonst auch die man sonst geachtet hat und dann kann man viele dieser sachen feststellen
+
+Ja, ich hatte auch im Vorfeld einiges gelesen und ein Beispiel war auch, was du schon gesagt hast, Augen sind ein großes Thema.
+
+Und oft ist es so, dass bei den Deepfakes die Augen zentriert sind, also dass die wirklich in der Mitte des Bildes sind.
+
+Ja, weil wenn ich jetzt so an die Datenbeschaffung denke, versuche ich ja wirklich bei einer großen Anzahl an Bildern für so ein generatives Netz, was wir ja gesagt haben, da haben wir ja ganz viele Bilder.
+
+dann versuchen wir ja, die Bildmenge, damit das Lernen schnell geht, auch trotzdem irgendwie kompakt zu halten, also von der Dateigröße her.
+
+Das heißt, wir nehmen den wichtigen Ausschnitt, zentrieren den und schneiden das Außenrum weg.
+
+Das heißt, bei den Deepfake-Bildern sind sehr häufig die Augen tatsächlich zentriert im Bild, was in der Realität halt nicht unbedingt der Fall sein muss.
+
+Und das sind auch so Indizien, die man merkt, also gerade, wenn man wirklich so an völlig generierte Charaktere denkt.
+
+Aber, wie du sagst, es bleibt ein Wettrennen, zumindest in der Anwendung.
+
+Ich finde, an manchen Stellen ist es vielleicht auch gar nicht so schlecht, dass man sagt, man hat dazu, wie du es gesagt hast, bei Filmen, bei Spielen oder ähnliches, dass man auch wirklich auf Charaktere zurückgreifen kann, die man nicht filmen muss, die man nicht mühsam
+
+was man praktisch erzeugen muss, virtuell oder halt auch durch Videoaufnahmen.
+
+Ich hatte im Vorfeld dann gesehen, dass das Ersetzen von Arbeitsplätzen natürlich ein ganz großes Thema ist in dem Kontext.
+
+Und da waren viele Beispiele genannt, so Dinge wie Wettermoderator oder Moderatorin, generelle Moderatoren,
+
+natürlich influencers beispiel hat man schon genannt das sind ja alles aspekte wo man vielleicht nicht unbedingt in den rein ethischen bereich kommt aber wo man halt drüber diskutieren kann zu sagen naja das sind halt dann die rationalisierung die durch die technologie entstehen
+
+Es ist wichtig, dass es diese Leute gibt, aber die müssen nicht unbedingt, wenn man mal sieht, am Ende einer Nachrichtensendung, die Art und Weise, das Wetter zu präsentieren, das ist ja doch standardisiert.
+
+Das kann man sich vorstellen, das kann sehr gut ein, ich würde ja nicht von Deepfake reden, ich müsste nicht unbedingt einen bestehenden Menschen faken, sondern einfach generell ein synthetischer Mensch.
+
+der einfach das wetter präsentiert und sagt wo die sonne scheint und wo es regnet ja das in der tat ist das muss muss nicht eine konkrete person sein oder nachempfunden sein sondern das kann einfach halbwegs realistisch aussehen dann reicht es und dann ist es ein anwendungsbereich, den man durchaus als als vertretbar einstufen kann also synthetisch generierte menschen, die einfach um was präsentieren das ist das gefühl aber ja da ist jemand der kümmert sich um mich,
+
+wie gesagt, problematisch, dann, wenn wirklich real existierende Personen nachgemacht werden und denen, ja, ich nehm' dir diesen Spruch vor, das hat man mir in den Mund gelegt, das bekommt hier jetzt eine ganz neue Bedeutung, würde ich mal sagen, weil man ja wirklich nicht nur jemandem was sagen lässt und wieder hindringt, sondern ich kann ihnen wirklich jedes bliebige Wort oder jeden üblichen Satz in den Mund legen und das ist dann das Gefährliche.
+
+Wie du es ja auch schon am Anfang gesagt hast, mit, ja, gerade auch Richtung Demokratie vor Wahlen, wenn ich halt irgendwie Personen diskreditieren möchte zum Beispiel,
+
+Ja, ich hab noch eine Sache, ne, fand ich auch ganz interessant, weil ich den Begriff vorher noch nicht kannte, Product Farming.
+
+Weiß nicht, ob du da drüber gestolpert bist.
+
+Ganz interessant.
+
+Im Endeffekt gleiches Prinzip, also wir nützen die Technologie, um massenhaft oder kostengünstig Produkte zu erzeugen.
+
+Und in dem Kontext ist vor allem das Thema Generierung von Kunstwerken sozusagen ein Thema gewesen.
+
+Also man erstellt mit Hilfe von generativen Netzen, also generativ-adversarial-networks, erstellt man Kunstwerke, die modern sind, die abstrakt sind oder ähnliches, und das in Masse.
+
+Also einfach, du bestellst halt Millionen dieser Kunstwerke, produzierst die, druckst die, verkaufst die, und tust halt das unter deinem Künstlernamen machen, bist aber eigentlich gar kein Künstler.
+
+Also das ist sozusagen ein Thema.
+
+Und dieses Vorgehen gibt's auch tatsächlich schon etliche, ja, ich sag mal Shops oder Boutiquen, wie man's auch immer nennen möchte, die solche Kunstwerke verkaufen.
+
+Also eins ist zum Beispiel No Artist.
+
+Da kann man dann auf der Internetseite tatsächlich die Kunstwerke
+
+also preisspanne ist zwischen 100 euro bis 1200 euro die völlig generiert sind dass es geht von komplett abstrakten malerei also wirklich farblechse bis hin zu gesichtern die dann aber auch verzerrt sind also so anatali mäßig und so weiter und werden da dann in masse verkauft spannend ist denn ob es da welche vorlagen gab mit denen das trainiert wurde und ob denen dann quasi irgendwelche ja in entschädigung oder entlohnung anteile daran anzustehen würden
+
+Ja, das ist, das hatte ich heute mit meiner Tochter diskutiert, weil wir darüber gesprochen haben, was ist denn eigentlich, wenn jetzt zum Beispiel ein Schauspieler ersetzt wird durch so eine Technologie, und vielleicht ein bisschen makaber, hat er natürlich darüber gesprochen, dass es natürlich auch Schauspieler geben könnte, die nicht mehr existieren, also die gestorben sind, und die aber dann halt vorzeit zum 5, 6, 7 oder ähnliches dann trotzdem mitspielen, weil sie halt generiert sind.
+
+Und dann war halt die große Diskussion heute Mittag, dass wir gesagt haben, ja und, wem steht das Geld zu?
+
+Also steht der Familie das Geld zu oder die Urheberrechte?
+
+Das ist zwar sicher ein Thema, das ein Jurist besser diskutieren kann und betrachten kann, aber wenn man darüber nachdenkt, sieht man schon auch, dass das ganz schöne Probleme erzeugen kann.
+
+Aber gut, wem steht das Geld zu und wie geht die Familie damit um, wenn sie geliebte Menschen, Mitmenschen dann auch irgendwie wieder sehen?
+
+Vielleicht ist aber auch denkbar, so was in der Medizin als Therapie einzusetzen, wenn jemand einen familienangehörigen Partner, Partnerin verloren hat, vielleicht auch unerwartet, und man ihnen, ich will jetzt nicht von Wiederauferstehung sprechen, aber man kann vielleicht ihn nochmal aufleben lassen, er kann sich nochmal verabschieden, vielleicht ist es ja als therapeutische Maßnahme durchaus, hat es einen gewissen Wert, das weiß ich nicht.
+
+Aber ansonsten glaube ich, sind die negativen Auswirkungen solcher Technologie wirklich als Deepfake, denke ich mal, sind so gravierend und überwiegend, dass man halt insgesamt da vorsichtig sein muss.
+
+Und mit den Möglichkeiten, die wir aufgezeigt haben, denke ich mal, schaffen wir durchaus erstmal ja ein gewisses Bewusstsein darüber, dass es halt eine gewisse Gefahr darstellt, dass wir besser damit umgehen können, aber man muss wachsam bleiben.
+
+Ja, vielleicht noch, weil wir jetzt die ganze Zeit über Bilder und Video gesprochen haben, das ganze Thema Deepfake hilft ja nicht nur das, sondern wir haben ja auch im Thema Texte das Problem.
+
+Das sind also praktisch künstlich generierte Texte, die vielleicht bestimmte Aussagen machen, die nicht real sind, also die nicht richtig sind.
+
+Also das ist nicht nur ein reines Video- oder Audio-Thema.
+
+Gibt's übrigens auch ein interessantes Paper, wo eine Forschergruppe versucht hat, also um Fuck Me At All, so heißt der Autor,
+
+Das Paper heißt Deepfake about Detection, Deepfake Tweets, die dann erstmalig einen Datensatz aufgebaut haben, um überhaupt die Möglichkeit zu bieten, in kurzen Nachrichten, das ist ja nochmal extra schwierig, in kurzen Textnachrichten, eine Unterscheidung zwischen real und maschinell erzeugten Nachrichten zu unterscheiden.
+
+Gut ich denke so für heute war es mal eine schöne diskussionsrunde, sehr technischen themen fand ich sehr interessant mal drüber nachzudenken über solche auswirkungen wie gehen wir damit um und denk mal es war ein sehr sehr wichtiges thema nochmal.
+
+Ich glaube, wir sollten, wir hatten es ja das letzte Mal schon ein bisschen angekündigt und haben jetzt gerade aufgrund dieses Freeman-Videos, haben wir uns kurzzeitig entschlossen, diese Einheit hier rein zu machen.
+
+Aber wir sollten, glaube ich, dann nächste Woche daran anschließen.
+
+Bisher haben wir ja über die Gans gesprochen in Bezug auf Bilder und Video, dass man vielleicht dann tatsächlich das Thema Sprachgenerierung dann nächste Woche aufgreift.
+
+Ja, auf jeden Fall.
+
+Von daher vielen Dank fürs Zuhören und eine schöne Woche.
+
+Bis dahin, tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 

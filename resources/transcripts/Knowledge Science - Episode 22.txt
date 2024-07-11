@@ -1,0 +1,463 @@
+ Hallo und herzlich willkommen.
+
+Nach den Anwendungsbeispielen, die wir letzte Woche aufgezeigt haben, wollen wir uns heute kritisch mit der Verwendung von GANs in der Sprachverarbeitung auseinandersetzen und damit den Einblick in die generativen Adversarion-Networks abschließen.
+
+Knowledge Science, der Podcast über künstliche Intelligenz im Allgemeinen und Natural Language Processing im Speziellen.
+
+Mittels KI-Wissen entdecken, aufbereiten und nutzbar machen.
+
+Das ist die Idee hinter Knowledge Science.
+
+Durch Entmystifizierung der künstlichen Intelligenz und vielen praktischen Interviews machen wir dieses Thema wöchentlich greifbar.
+
+Willkommen zum Podcast von Sigurd Schacht und Karsten Lankjohn.
+
+Hallo Carsten.
+
+Hallo Sigurd.
+
+So, wir hatten ja letzte Woche gar keine Ankündigung gemacht, was wir diese Woche so besprechen wollen.
+
+Und wir haben uns gedacht, wir greifen die GANs nochmal auf und machen so einen, ich sag mal, kleineren Abschluss.
+
+Weil ich sag mal, ganz los werden wir die GANs sicher nicht.
+
+Die werden sicher auch in den nächsten Sendungen immer mal wieder auftauchen.
+
+Oder wenn wir über andere Anwendungsfelder sprechen, dann werden die sicher auch wieder präsent sein.
+
+Aber heute wollen wir sie ein bisschen abschließen, dass wir nochmal so einen Einblick geben.
+
+Nicht wahr?
+
+Ja genau, finde ich eine wichtige Geschichte auch nochmal zu unterscheiden, was ist eigentlich der Unterschied zwischen einer Architektur mit verschiedenen Schichten und Funktionen, die wir da drin haben und einer Art und Weise des Lernens, dass wir das einfach auseinanderhalten und von der Perspektive nochmal drauf schauen.
+
+Ja, ich glaube auch, dass das ganz gut ist, wenn man da nochmal den zusammenfassenden Überblick, weil bisher haben wir über Architektur gesprochen, wenn man so die letzten Sendungen anschaut, dass wir sagen, wir haben irgendwelche LSTM-Netze, Recurl-Netze, jetzt haben wir dann über die GANs gesprochen und man muss es jetzt eigentlich mal genauer betrachten, weil wenn man sich die
+
+ganz in den papers mal anschaut dann ist es ja nicht so dass es das gar nicht gibt sondern wir haben ja ganz viele mehr mein cycle garen wir haben den esser garen wir haben heife garen wir haben also ganz viele verschiedenartige ganz man fragt sich ja was ist sind das jetzt alles neue architekturen oder was ist das eigentlich genau und das ist ja nicht so dass ich sage ich habe entweder eine rnn oder garen sondern man kann ja diese verschiedenen
+
+Themen, die wir hier haben, auch miteinander kreuzen.
+
+Man sollte es eher einordnen in einer Art und Weise.
+
+Ich habe überwachtes und unüberwachtes Lernen.
+
+Nochmal als kurze Erinnerung.
+
+Überwachtes Lernen zu Beweislearning.
+
+Ich habe ein Ausgabepaar XY-Werte, die präsentiere ich einem Lernalgorithmus und er lernt dadurch genau diese Abbildung von X nach Y.
+
+Und weil ich für die Trainingsdaten ja die Label, die y-Werte, kenne, kann ich immer sofort sagen, ob das richtig oder falsch war.
+
+Auf direktem Wege kann ich das machen.
+
+Ein unüberwachtes Lernen, habe nur die x-Werte und versuche daraus irgendwas zu lernen.
+
+Zusammenhänge in den Daten oder aber die ganze Verteilung.
+
+Das heißt, dass ich diesen datengenerierenden Prozess lernen möchte, um zum Beispiel neue Daten, die so ähnlich verteilt sind, zu generieren.
+
+In dem Zusammenhang sprechen wir auch gerne von generativen Modellen.
+
+die Daten generieren können.
+
+Wenn wir das auf Klassifikationen als etwas aus dem Überwachtenlernen beziehen, ist vielleicht auch wichtig, die Unterscheidung zwischen generativen und diskriminativen Klassifikatoren und Modellen auch interessant.
+
+Wenn wir zum Beispiel diskriminierende Klassifikatoren haben, dann lernen wir oder versuchen wir zu lernen, die Wahrscheinlichkeit, dass es eine Klasse ist, gegeben die Eingabedaten.
+
+Und da muss der Klassifikator das Modell, die die entscheidenden Eigenschaften herauslesen, um zu sagen, okay, mit der und der Wahrscheinlichkeit ist es die und die Klasse, und dann entscheide ich mich einfach für die Klasse, die am wahrscheinlichsten ist.
+
+Und das ist meine Ausgabe.
+
+Wenn ich das jetzt generativ denke, ist es ganz anders.
+
+Da lerne ich eher so eine gemeinsame Verteilung der Daten mit den Labels.
+
+Dann gucke ich, okay, wie wahrscheinlich ist es jetzt, dass ich diese Daten hier irgendwie sehe.
+
+Und dann kann ich mich über die Art und Weise, durch Umdrehen der Wahrscheinlichkeiten, so Base-Regel zum Beispiel, kann ich mich dann entscheiden für eine der Klassen mit der höchsten Wahrscheinlichkeit.
+
+Das ist aber ein ganz anderer Ansatz, aber ich kann sie nicht nur für die Prognose verwenden, sondern erst mal generell, um Daten auch zu erzeugen, wenn ich die Prozesse erstellt habe.
+
+Aber das ist ein sehr, sehr komplexer Vorgang, wie wir schon gesehen haben.
+
+Können wir für beide Richtungen mal Beispiele nennen, dass man das nochmal so ein bisschen abholen, dass man sagt, okay, diskriminierende Modelle.
+
+Was ist so ein Beispiel?
+
+Sentimentanalyse wäre eigentlich ein Beispiel, oder?
+
+Ja, so ein Spam-Filter, vielleicht so mit Sentimentanalyse.
+
+Wir haben eine Nachricht und wissen, okay, die ist entweder positiv, negativ oder Spam oder es ist nicht Spam.
+
+So, und angenommen, man kann jetzt anhand der verschiedenen Wörter ausmachen.
+
+Ich sage, okay, wenn ich jetzt
+
+das Wort gut und ist toll und irgendwas anderes sehe, dann ist die Wahrscheinlichkeit dafür, dass es positiv ist, manchmal 80 Prozent und sonst nur 20 Prozent.
+
+Dann hätte ich jetzt anhand dieser Merkmale diese Wahrscheinlichkeiten bestimmt und kann sagen, okay, diskriminatives Modell.
+
+Ich kann aber auch jetzt einfach sagen, okay, wie wahrscheinlich ist es, dass ich ein positives
+
+eine positive Nachricht mit diesen und diesen Wörtern beobachte.
+
+Dann sage ich halt, es ist vielleicht 10% Wahrscheinlichkeit.
+
+Wie wahrscheinlich ist es, dass ich eine negative Nachricht mit diesen und diesen Wörtern beobachte?
+
+80% Wahrscheinlichkeit.
+
+Okay, dann ist es wahrscheinlich eher eine negative Nachricht, weil die Wahrscheinlichkeit dieser Gesamtkonstellation der gesamten Daten höher ist.
+
+Wenn wir jetzt aber die Gans nehmen an der Stelle, dann haben wir hier die generativen Netze.
+
+Also es gehört ja eindeutig der Klasse der Generativen zu.
+
+Aber nichtsdestotrotz haben wir ja in dem Gan den Generator und den Diskriminator.
+
+Das heißt, wir haben ja dann dort auch wieder diskrete Modelle und generative Modelle kombiniert unten drunter.
+
+Genau.
+
+Der Diskriminator ist ganz klar diskriminierend.
+
+Der entscheidet, ist es richtig oder falsch gegeben, das was er sieht.
+
+Das wäre ein typisches Beispiel für ein diskriminatives Modell.
+
+Anhand der beobachtbaren Werte entscheide ich mich richtig falsch und genauso lerne ich ihn auch klassischerweise im überwachten Stil, weil ich weiß ja während des Trainingsprozesses, wo die Daten herkamen und ob die fake oder real sind.
+
+Aber die Erzeugung, der generative Teil, da versuche ich ja aus dem Nichts heraus, irgendwo Datenobjekte zu generieren, die, so hat man es ja definiert, möglichst den Realen entsprechen und von diesen nicht zu unterscheiden sind.
+
+Und zwar ohne, dass ich die jemals gesehen habe.
+
+Und das ist rein unüberwacht.
+
+Ich versuche einfach, auf geschickte Art und Weise die Verteilung der Daten anzunähern.
+
+Und natürlich indirekte Rückkopplung, indem ich das Modell so lange versuchen lasse, Daten zu generieren, bis ich darauf einfalle, dass die nicht echt sind.
+
+Das heißt eigentlich, wenn wir die Gans anschauen, dann reden wir eigentlich über die Art des Lernprozesses.
+
+wenn wir über GANs reden, weil wir ja praktisch zwei Modelle haben, die den Kategorien, die wir jetzt genannt haben, zugeordnet sind, aber die Art und Weise, wie wir lernen, nämlich dass der Diskriminator praktisch immer wieder Hinweise dem Generator gibt, ob er jetzt richtig oder falsch liegt, das ist ja das Spezielle daran eigentlich.
+
+Das interessante ist nur, dass dieses Rückkopplungssignal, ob das jetzt gut oder schlecht war, das entspricht ja eher dem, was ich habe, wie wenn ich nicht überwacht lerne.
+
+Weil ich ihm ja auch sagen kann, pass mal auf, ich bin jetzt reingefallen oder ich bin nicht reingefallen.
+
+Das heißt, ich kriege ja schon ein direktes Rückkopplungssignal.
+
+ohne dass ich aber die Daten jeweils gesehen habe.
+
+Also es ist anders als klassisches überwachtes Lernen, aber ich habe trotzdem ein direktes Rückkopplungssignal, ob das jetzt gut oder schlecht war, was ich mir aber auf andere Art und Weise generiere, als wenn ich jetzt diese Klassenlabels meinetwegen vorher wie zugeordnet habe, wie beim klassischen überwachten Lernen.
+
+Das war ja das selbe Szenario, wenn du dich erinnerst, wir hatten die GPD 2, 3 Modelle,
+
+Oder auch bei den Transformern haben wir ja auch Sprachmodelle generiert.
+
+Das sind ja am Ende auch generative Modelle.
+
+Das sind Modelle, die beinhalten die Verteilung von der Nutzung von Wörtern in einer Sprache.
+
+Und die kann man nutzen, um entsprechend Wörter, Texte zu generieren.
+
+Entweder in einem Rutsch oder einfach das nächste Wort.
+
+Und wie trainiere ich die?
+
+Auch indem ich, das hatten wir so festgelegt, verschiedenste Ansätze gab es da, aber ich halte einfach Teile in meinem Text zu von Sätzen und versuche einfach, das fehlende Wort zu prognostizieren.
+
+Auf die Art und Weise lerne ich die Verteilung der Wörter in Kombination, im Zusammenhang.
+
+Das ist auch ein generatives Modell.
+
+Interessant war, wir haben ja letzte Woche dann über die Anwendungsfelder von GANS gesprochen und haben dann auch Beispiele mit den Bildern, wir haben in jeder Sendung jetzt über das Pferd und das Zebra geredet, also ich glaube das sollte man heute nicht machen, aber es war zumindest eins der Anwendungsfelder, dass wir über Bilder reden.
+
+Wir haben es ein bisschen angedeutet, aber nicht detailliert ausgeführt.
+
+Auch das Thema Audio, das sind ganz sehr verbreitet und natürlich Videos als Ansammlung von Einzelbildern in der Zeitachse.
+
+Interessanterweise ist sozusagen die Verbreitung der Gans bei Texten, also wenn wir von geschriebenen Texten sprechen, gar nicht so groß.
+
+Also momentan noch nicht weit, weil wir natürlich da jetzt wirklich, also wir merken es langsam auch in der Vorbereitung, wenn wir so über die Papers drüber gehen und so weiter,
+
+Wir kommen jetzt sozusagen an den aktuellen Forschungsstand an, und man merkt, dass da noch einiges zu tun ist, auch was Forschung angeht in dem Kontext, sodass man die ganz in dem Bereich der reinen Textverarbeitung und geschriebener Text noch gar nicht so intensiv einsetzt.
+
+Ja, wir können das ja nochmal ganz kurz aufbröseln, dass man sagt, okay, Text, Sprache im Bereich der ganz generell, wir können es wieder erinnern, eigentlich haben wir so eine Sequence-to-Sequence-Geschichte.
+
+Wir haben irgendwie eine komplexe Eingabe, meistens eine Sequenz, oder halt vielleicht ein Bild, kann auch nochmal eine komplexe Eingabe sein und die Ausgabe ist wieder irgendwas Komplexeres.
+
+Im schlimmsten Fall auch eine Sequenz.
+
+Sondern könnte es ja sein, dass die Eingabe ein Text ist,
+
+Und auch die Ausgabe im Text.
+
+Wie zum Beispiel einen großen Text abbilden auf eine Zusammenfassung.
+
+Oder ein Schriftstück in einer Stilrichtung abbilden auf eine andere Literatur-Epoche.
+
+Du hattest da so schöne Beispiele mal genannt.
+
+Das ist eine Variante.
+
+Es kann aber auch sein, dass das gemischt ist.
+
+Die Eingabe ist im Text und die Ausgabe ist die synthetisierte Sprache.
+
+Sprich doch mal bitte Rechner, erzeug mal die gesprochene Sprache.
+
+Und sowas findet man ja schon.
+
+Ja genau, also gerade wenn es darum geht, wirklich Ähnlichkeiten der Sprache wiederzugeben, da sind die ganz natürlich präsent.
+
+Wir hatten es ja auch bei der Sprachsynthisierung, wo man gesagt hat, Stimmengenerierung oder ähnliches, da werden sie massiv eingesetzt, um wirklich einen wahnsinnig guten Klang, einen menschenähnlichen Klang zu erzeugen.
+
+Also das Thema Spracherzeugung ist für uns so wichtig, das hatten wir mal gerade irgendwie überlegt, wollen wir vielleicht in der ganzen Serie mal wieder zu spendieren.
+
+Der Punkt da ist, es gibt Modelle, die anders funktionieren, also die anders trainiert werden, also man bringt tatsächlich Stück für Stück, ähnlich wie die spracherzeugenden, texterzeugenden Modelle, das Stück für Stück so die Wellenanteile in der Akustik quasi zusammensetzen, das machen die sind vergleichsweise langsam.
+
+Und ich glaube, wir werden sehen, dass ein Vorteil der Ganze ist, dass die inzwischen eine vergleichbare Qualität sehr viel schneller erzeugen können, weil sie halt viel, viel besser parallelisierbar sind.
+
+Aber das werden wir später aufgreifen.
+
+Wenn wir jetzt nochmal zu unserem Ausgangsüberlegung zurückkommen.
+
+Eingang kann Text sein, das abgebildet auf gesprochene Sprache.
+
+Es kann ja auch andersrum sein.
+
+Die Eingabe ist gesprochene Sprache und ich möchte den Text erkennen.
+
+Richtig.
+
+Aber in dem Kontext verwendet man GANS gar nicht so stark.
+
+Also da sieht man tatsächlich, wenn man jetzt bei den, das ist ja praktisch Automated Speech Recognition, wie das so schön heißt, ASR, dass da die GANS noch gar nicht so richtig präsent sind.
+
+Also es gibt ein paar Ansätze in der Forschung, wo man sieht, ja, ja, man versucht damit zu arbeiten, aber dass man sagt, jetzt wirklich gravierende Modelle, die schon extrem gut sind, habe ich jetzt zumindest keine bisher entdeckt oder damit wahrgenommen.
+
+Wir arbeiten hier ganz mit sequenziellen Modellen, das heißt also mit Recural Neural Networks und ihre speziellen Formen, haben wir auch schon eine Sendung dazu gemacht, für die Spracherkennung.
+
+Aber wenn ich das mal so kurz aufgreifen, die Frage ist ja, warum denn eigentlich nicht?
+
+Und ich glaube, weil die Frage ist, welches Lernmodell ist eigentlich besser geeignet?
+
+Wann ist es vorteilhaft, sowas wie die Technologie hinter den Garn zu nehmen mit diesem Adversarial Training und wann nicht?
+
+Und bei welcher Ausgabe ist das dann relevant?
+
+Ich werfe jetzt einfach mal so eine Vermutung in den Raum.
+
+Wenn ich gesprochene Sprache auf Text abbilde, ist die Abbildung eindeutig.
+
+Ich habe den Text und das ist richtig, ich habe es richtig gehört oder auch nicht.
+
+Ich habe da nicht den Wunsch, eine gewisse Variabilität drin zu haben.
+
+Andersrum, wenn ich aus geschriebenen Text Sprache mache und ich möchte bewusst nicht so eine monotone Computerstimme haben, sondern ein paar menschliche Züge, dass man mal Stock ein bisschen was anders betont, ein bisschen Varianz drin hat oder bei Bildern, dass ich sage, naja, es gibt kein richtig oder falsch für ein
+
+Gesicht als ganzes, sondern das sieht aus wie ein menschliches Gesicht, aber da hat wahnsinnig viel Variabilität da drin und das können ja solche Netze.
+
+Diesen Sachverhalt habe ich bei der Erkennung von Text ausgesprochener Sprache nicht, sondern ich möchte das möglichst genau transkribiert haben.
+
+Das ist die Variabilität praktisch beim Eingang und nicht beim Ausgang.
+
+Und das könnte der Grund sein, warum man die Modelle in der Form... Es ginge, aber die Notwendigkeit ist nicht so da, das da zu nutzen.
+
+Und man muss halt auch sehen, so schön das in vielen Bereichen funktioniert, gerade wenn dieser kreative Variantenaspekt eine Rolle spielt, dass es nicht die eine Ausgabe gibt, sondern dass viele Ausgaben möglich sind.
+
+Und wenn wir das haben, dann können ganz ihre Stärke ausspielen.
+
+Wenn wir das aber nicht haben, dann ist es aufgrund des viel langwierigeren Trainingsprozesses und der Tatsache, dass der nicht ganz so stabil ist wie vielleicht bei anderen Lernarchitekturen, wird man es wahrscheinlich seltener sehen im Einsatz.
+
+Das ist sicher so.
+
+Es gibt zwei Ansätze, haben wir ja auch schon im Vorfeld diskutiert, wo man versucht, diese Problematik der Sequenzen, die wir ja bei Texten haben, also kontinuierliche Zeitachse eigentlich, wenn man das so sieht, weil ja praktisch der Anfang des Satzes ein Beginn einer Zeitachse ist und der Ende dann ein anderer Zeitabschnitt.
+
+Dass man das mit in die GANs mit einbaut und damit dann sozusagen die Problematik, die die GANs haben, ein bisschen abbaut.
+
+Aber wie du sagst, der Ausgang ist eindeutig und da will man keine Varianz haben.
+
+Da möchte man ganz klar die richtigen Satz haben und zwar nicht mit Rechtschreibfehler oder irgendwas, sondern der Satz muss richtig sein.
+
+Und dementsprechend kann ich mir das momentan, mal schauen, was die Forschung sich da noch ausdenkt, aber kann ich es mir momentan auch nicht wirklich
+
+Ich denke mal, es wird dann kommen oder über Leute werden sich überlegen, es einzusetzen, wenn bestehende Architekturen irgendwo Schwächen haben.
+
+Man hat ja gesagt, entweder ist was zu langsam bei der Sprachsynthetisierung, wenn vielleicht die klassische Art und Weise zu langsam ist.
+
+und man durch durch ganz dann das trainieren dauert der ganz dauert lange aber wenn sie dann trainiert sind die verwendung weil ich in einem rutsch ja quasi so eine ganze sprachsequenz gesprochene sprache generieren kann sind sie viel viel schneller und das kann das kann der entscheidende vorteil sein warum man sie nutzt wenn wir dessen vorteil.
+
+oder diese Notwendigkeit in dem anderen Bereich nicht haben, wird da vielleicht aus sich aus nicht so schnell irgendwas probieren.
+
+Das sind dann Leute, die haben Langeweile und probieren einfach mal verschiedene Lösungen aus, um da was zu machen.
+
+Aber gehen wir nochmal einen Schritt wieder zurück.
+
+Wir hatten gesagt, Text auf Text, Text generieren, findet man auch nicht unbedingt bei den Gans.
+
+Und die Frage ist, warum findet man diesen Teil nicht?
+
+Da hätte man ja eine gewisse Art von Kreativität, die man sich wünscht, aber warum ist es denn bei Text so schwierig?
+
+Also vielleicht würde ich da noch was anderes aufgreifen, weil wir haben schon Themen, wo die Textgenerierung eine Relevanz hat oder generell mit Text auch was generiert wird.
+
+Nämlich dann, wenn wir Text eingeben und daraus ein Bild haben wollen.
+
+Oder wenn wir Bilder haben und dann im Endeffekt Unterbildschriften, also die Caption, wie es so schön auf Englisch heißt, erzeugen.
+
+Auch dort sehen wir es gar nicht.
+
+Also es ist nicht so, dass wir sie dort gar nicht sehen.
+
+Finde ich gar nicht.
+
+Aber du sagtest ja am Anfang, man findet sie nicht so dominant wie in anderen Bereichen.
+
+Und die Frage ist, warum?
+
+Und ich sage mal, eine mögliche Antwort, könnte man viele noch geben, aber was mir so naheliegt, ist vielleicht zu sehen, wir haben diese Sequenz.
+
+Die Frage ist, wie wird eine Sequenz, wenn ich einen Satz habe, wie wird die erzeugt?
+
+Wenn wir jetzt mal nicht auf die Transformerarchitektur gehen, sondern auf eine klassische Art und Weise mit RNNs, LSTMs, dann wird das ja Wort für Wort generiert.
+
+Und bei jedem nächsten Wort wählt man wegen die
+
+die architektur des das wort mit der größten wahrscheinlichkeit oder mit einer welt aus der menge aller wörter das mit der größten wahrscheinlichkeit aber am ende wurde eins gewählt und dann ist es gesetzt so dann habe ich am ende, was ist ich haben einen satz mit zehn wörtern habe ich zehn mal eine entscheidung getroffen und die ist dann da und wenn ich diesen satz,
+
+quasi als Ganzes generiert habe und dann einem Diskriminator geben würde, um zu sagen, jetzt ist es fake oder auch nicht.
+
+Und jetzt sagt der, es war fake oder nicht fake und ich spiele jetzt dieses Signal zurück.
+
+Wie soll ich denn das bei dem Generierungsprozess unterbringen?
+
+Und das finde ich so spannend, das erinnert mich sofort an das Reinforcement Learning, wo ich ja auch eine ganze Reihe von Aktionen habe.
+
+Ich spiele meinetwegen Schach oder Go, habe da x Spielzüge und am Ende habe ich gewonnen oder verloren.
+
+Sagen wir mal ich habe verloren und ich muss meine Strategie anpassen, wo setze ich denn an, welcher meiner Züge war nicht gut, nicht optimal, wo muss ich ansetzen, in der Welt spricht man vom Credit Assignment Problem, welcher Zug war schlecht oder gut, wie kann ich das rückverfolgen und ein ähnliches Problem haben wir hier ja genauso.
+
+Ich glaube, wir müssen die Hörer da noch ganz kurz abholen.
+
+Über Reinforcement Learning haben wir, glaube ich, noch gar nicht gesprochen.
+
+Hatten wir schon mal, wir haben schon mal, glaube ich, ansatzweise darüber gesprochen.
+
+Okay, aber glaube ich noch nie so richtig.
+
+Schau mal nach.
+
+Genau, jetzt sollte ich mir gleich die eigenen Folgen mal anhören.
+
+Wir sind ja eingestiegen mit überwachtem Lernen, unüberwachtem Lernen, das ist so ein bisschen eines der dritten Lernparadigmen.
+
+wenn ich am Anfang erstmal noch gar keine Daten habe, sondern ich habe in dem Umfeld, sprich mal von einem Agenten, der in einer Umgebung agiert und einfach Aktionen durchführen kann.
+
+Und er kriegt für seine Aktionen, die er durchführt, irgendwann ein Feedback.
+
+Aber nicht zwingend nach jedem Schritt, sondern das kann auch nach einer ganzen Kette von Aktionen sein, wie beispielsweise beim Schachspiel.
+
+Ich mache ganz viele Züge und am Ende habe ich gewonnen oder nicht.
+
+Und dieses ist ein Rückkopplungssignal, den in dem Fall der Agent, im normalen Fall kann das jetzt ein Schachspieler sein, aber der nach einer gewissen Anzahl von Zügen, den er erhält, kann der Agent dann nutzen,
+
+um seine Strategie anzupassen.
+
+Also letztendlich spricht man beim Reinforcement auch davon, dass ich eine Strategie entwickle, wie ich agiere in meiner Umwelt, um irgendein Ziel zu erreichen, was ich natürlich definieren muss.
+
+Also zum Beispiel ein Spiel gewinnen.
+
+Ja, diese Garn-Architektur, die hat ja ein paar Aspekte davon, die an das Reinforcement-Learning erinnern, weil das ja selbst quasi ja erstmal seine eigenen Daten generiert und dafür dann quasi dieses Feedback kriegt, ob es dieses Indirekte quasi, das hat ja gewisse Ähnlichkeiten damit.
+
+Aber nichtsdestotrotz, das Problem bleibt.
+
+Wir haben im Endeffekt die Schwierigkeit, dass wir eine Sequenz haben, die sich eigentlich bei der Textgenerierung mit den klassischen, wenn man das so nennen möchte, Verfahren aufbaut, und wir aber im Kern einfach ein Feedback geben, ja, nein.
+
+Und das einfach von der Rückkopplung und von dem Lernprozess, also wenn man die Backpropagation,
+
+rückführen des fehlers ins netz sozusagen reden dass wir an der stelle einfach die schwierigkeit haben dass wir es nicht auf den generator rüber bringen.
+
+So dass er die notwendigen informationen haben.
+
+Man kann es nicht direkt übertragen man muss vielleicht anpassung vornehmen wie ich dieses über verschiedene schritte mache.
+
+wie ich diesen Sachverhalt, dass ich mich für ein Wort entschieden habe, das erstmal ein diskreter Zustand ist, wo ich halt Probleme habe, Gradienten zu berechnen, wo ich vielleicht sagen muss, okay, ich kann nicht diese 1-0-Entscheidung nehmen, ich brauche eine Softmax oder irgendwo was differenzierbares, wo ich ein Signal besser, in Gradienten besser bestimmen kann.
+
+Das sind alles Aspekte, aber es bleibt am Ende, es gibt Anpassungen, wie ich das machen kann.
+
+Es ist aber eine sehr, sehr komplexe Art und Weise des Trainings wieder und da hat sich jetzt bislang gezeigt, dass die Art und Weise, wie es bei den Transformern, wie wir es da gesehen haben, wie es auch bei dem GPT-2 und 3 Modellen letztendlich passiert, dass ich quasi Lücken in meinen Texten versuche zu prognostizieren.
+
+Es ist viel, viel direkter und schneller.
+
+Ob es besser ist, vielleicht kommt ja irgendwann eine Mischung, dass ich das erstmal auf die schnelle Art und Weise Lücken
+
+Versuche zu schließen und wenn ich da was habe, vielleicht kann ich ja mit dem Feintuning durch dieses, wie kann ich jetzt meinen Gegenüber noch besser täuschen, vielleicht kann ich damit ja ein bisschen Varianz noch reinkriegen, die am Ende zu schöneren Ergebnissen führt.
+
+Also ich glaube, diese Mischung von verschiedenen Architekturen ist möglicherweise eine Sache, die uns langfristig im Bereich des Maschinenlernens noch stärker verfolgen wird.
+
+Sicher, es gibt ja jetzt schon Papers, also eins davon nennt sich Adversarial Text Generation Without Reinforcement Learning, was genau dieses, was du gerade beschreibst, aufkreist, dass man andere Architekturen mitnimmt, also in dem Fall sind es Autoencoders, die man verwendet, also das, was wir auch bei den Transformers gehört haben, also dass ich natürlich einen Encoder habe, der zunächst mal eine niederdimensionierte Repräsentation der Daten vornimmt,
+
+Und dann wieder eine Zurückführung in das Ziel, also wenn ich an Übersetzung denke, für eine Sprache, dann in eine Fremdsprache als Rückführung.
+
+Und diesen Mittelschritt, also durch das, was in der Mitte rauskommt bei solchen Autoencoders, den nützt man dann zum Beispiel als Satzvektor, dass man ganze Sätze in so einem Garn hat und den dann rückführt in den Generator.
+
+Also es gibt Ansätze.
+
+Aber wir sollten vielleicht an dem Punkt mal festhalten, GANs sind in dem heutigen Stand extrem gut verwendbar bei Bildern.
+
+Und zwar mit faszinierenden Ergebnissen, wo man wirklich auch teilweise erschrickt.
+
+Also, wir haben es ja gesagt, Bildgenerierung, menschliche Gesichtergenerierung, also da ist die Qualität wahnsinnig gut.
+
+Gesichter oder Personen im Alter verändern und so weiter, also teilweise, dass man es wirklich nicht mehr unterscheiden kann.
+
+wir verwenden sie im audio bereich also in der sprachverarbeitung aber da überwiegend in der generierung der der sprache also nicht in generierung des textes und in der varianten reichen aussprache und bei videos und bei texten da muss man realistisch sein da ist es halt einfach noch nicht zusammenfassend sagen immer dann wenn eine gewisse variabilität gewünscht ist ein bisschen kreativität ist nicht dieses richtig falsch in dem sinne gibt wenn sie jetzt menschen
+
+siehst und die nase ein tick zu weit links oder rechts oder ein tick zu groß oder klein und sagen okay das ist halt einfach die eigenheit des mensches es wird dadurch nicht richtig oder falsch.
+
+Während man bei einem geschriebenen text wenn dann die grammatik falsch ist fällt sofort auf, dass es nicht so ganz passt.
+
+Es gibt da zwar auch variantenreichtum aber das ist vielleicht viel viel strenger abgegrenzt, dass man eher sagt oh das ist jetzt falsch und während man bei bildern bei tonen vielleicht sagt oh es ist jetzt
+
+Ungewöhnlich, ein bisschen seltsam, aber das ist viel weicher von der Abgrenzung, würde ich behaupten.
+
+Und deshalb ist es da von der Anwendung wesentlich zielführender, kommt eher zu Ergebnissen, die man sich wünscht.
+
+Und ich glaube, an der Stelle sollten wir dann noch die ganz mal zumindest von dem Überblick, den wir hier machen wollen, so ein bisschen abschließen und einen Ausblick auf die nächste Woche.
+
+Ich denke, gute Idee wäre, wenn wir jetzt mal so Richtung Sprachverarbeitung weitermachen würden, da auch so eine kleine, vielleicht eine kleine Miniserie machen mit Thema Audio, Stimmgenerierung.
+
+Das haben wir jetzt paar mal als Beispiel gebracht.
+
+Da wäre es vielleicht jetzt mal wirklich interessant für die Zuhörer mal zu hören, was passiert da genau?
+
+Ich denke, auch ein paar
+
+Interviews, die wir führen können und wollen.
+
+Also ich denke, das wäre jetzt sicher das nächste, was wir machen werden.
+
+Also Sprache im Sinne von gesprochener Sprache, Speech und nicht die geschriebene Sprache als Text.
+
+Das ist im Deutschen ein Tick schwieriger auseinanderzuhalten, im Englischen wäre es einfacher, da haben wir Text und Speech, wenn wir so abgrenzen.
+
+Im Deutschen, wenn wir über Sprache reden, da ist immer nicht ganz klar, welchen Teil wir meinen.
+
+Genau, weil die gesprochene Sprache da als Eingabe oder Ausgabe oder beides, das wird spannend.
+
+Genau.
+
+Von daher vielen Dank fürs Zuhören und eine schöne Restwoche wünsche ich Ihnen.
+
+Und Tschüss.
+
+Das war eine weitere Folge des Knowledge Science Podcasts.
+
+Vergessen Sie nicht, nächste Woche wieder dabei zu sein.
+
+Vielen Dank fürs Zuhören. 
