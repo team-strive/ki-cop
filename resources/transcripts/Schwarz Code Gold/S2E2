@@ -1,0 +1,640 @@
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer, hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht. Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir. Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded. Herzlich willkommen zu Staffel 2, Episode 2 von Schwarz-Code-Gold. Ich bin Jürgen und ich habe hier wieder meine beiden Kollegen Bodo und Frederik dabei. Hi, ihr beiden. Hallo, Jürgen. Hallo, Jürgen. Hallo, Bodo. Und ich lasse euch jetzt nicht noch einmal eure persönlichen Readmes vorlesen, aber ich fand das ganz nett beim letzten Mal. Ich glaube, das machen wir immer, wenn jemand neu dazukommt, da darf der sein Readme vorlesen. Und ansonsten findet ihr die in den Show Notes beziehungsweise auf unserer Webseite schwarz-code-gold.de. Jo, was mich sehr gefreut hat, wir haben ein Feedback zur ersten Episode bekommen. Ich glaube, ich habe es euch weitergeleitet. Einer hat es sich angehört und hat gesagt, er findet es sehr gut und er würde sich wünschen, dass wir über Wege zum Quereinsteigen in den Beruf des Softwareentwicklers mal reden. Ich würde es nur tatsächlich gerne dann ausführlich tun, vielleicht gar nicht jetzt, sondern dann mal, wenn wir die nächsten ein, zwei Folgen gemacht haben. Ich glaube, dann passt es ganz gut rein, oder?
+
+
+Okay, klingt als eine gute Idee.
+
+
+Also könnt ihr mal die Ohren offen halten, bei den Kollegen vielleicht mal rumfragen in den nächsten Wochen, wie deren Wege so aussahen, dann können wir die vielleicht auch mal hier kurz einspielen oder so. Ich glaube, da könnte man im Haus wahrscheinlich ganz, ganz viel Input dazu sammeln. Ja, eigentlich können wir auch dann direkt in den aktuelles Block springen. Vielleicht ganz kurzes Datum, dass man es einordnen kann. Heute ist der 20.04.2023. Was gibt es an aktuellen Themen, die euch umtreiben? Friederik.
+
+
+Ja, ein aktuelles Thema habe ich jetzt nochmal auf das Thema KI bezogen, Künstliche Intelligenz. dass da jetzt diese Bremsentreter so auf den Schirm treten, also Elon Musk und Konsorten, die da jetzt sagen, ja, oh, haben wir da alles bedacht und sollen wir da jetzt nicht mal unterbrechen oder auf die Bremse treten oder alles zeitlich etwas langsamer machen mit der KI, das ist ein bisschen schnell gelaufen jetzt die letzte Zeit. Finde ich doch interessant, dass dieser Diskurs jetzt da, wo eigentlich der Zug schon am Fahren ist, unaufhaltsam, von einigen Größen losgetreten wird.
+
+
+Ja, und vor allem wer halt auf dieser Unterstützerliste so auftaucht. Also gerade bei Elon Musk kann ich es am wenigsten nachvollziehen, der ja Open AI mitgegründet hat.
+
+
+Ja, aber gerade deswegen. Der hat ja von Anfang an, hat Elon Musk schon seit Jahren, spricht ja schon davon, dass er es als große Gefahr ansieht, dass die künstliche AI irgendwann die Menschheit übernimmt oder die Menschheit verdrängt. Und das ist ja auch der Grund, warum zum Mars quasi eine neue Kolonie gründen will, um da irgendwie ein zweites
+
+
+Standbein zu haben. Aber glaubt ihr, also ich kaufe ihm das irgendwie nicht ab, glaubt ihr, das ist eine ehrliche Angst vor der Technik? Ja, glaube ich wirklich. Oder ist es ein Scheiße, ich bin nicht in diesem Unternehmen irgendwie involviert und ich muss jetzt irgendwie Zeit gewinnen, um aufzuholen?
+
+
+Ne, also das sehe ich überhaupt nicht so, weil er hat ja in seiner eigenen Firma, also bei Tesla hat er ja durchaus ein großes Team, was sich mit AI befasst, natürlich jetzt spezifisch für Automobilanwendungen, aber auch schon für Roboter und das geht ja dann schon auch sehr in Richtung allgemeine künstliche Intelligenz. Also das, ich glaube ihm das wirklich, nehmt ihm das wirklich ab, dass er das als Gefahr sieht und ehrlich gesagt, ich sehe es auch als Gefahr. Also ich kann das auch durchaus nachvollziehen.
+
+
+Also, dass es eine Gefahr ist, brauchen wir, glaube ich, gar nicht drüber streiten. Die Gefahr besteht, aber dass man jetzt für ein halbes Jahr auf die Bremse treten und sagen, ja, Moment, lasst uns doch mal kurz durchatmen. Das ist absolut unrealistisch.
+
+
+Kann man sich jetzt darüber streiten. Er hat ja selber auch schon auf Twitter gesagt, dass er es für unrealistisch hält, dass das passieren wird. Aber ich glaube, er hat es nur deswegen gesagt, um hinterher sagen zu können, ich habe es euch ja gesagt.
+
+
+Genau. Ja, finde ich super spannend. Finde ich spannend.
+
+
+Bodo, hast du auch ein aktuelles Thema? Naja, also das AI-Thema ist natürlich das aktuelle Thema, was irgendwie auch mich nach wie vor bewegt und wahrscheinlich auch noch das nächste Jahr oder noch länger bewegen wird. Und von daher habe ich da jetzt nichts anderes. Aber ich habe vielleicht noch einen anderen Aspekt, weil ich neulich ein Interview mit jemandem gehört habe, der gesagt hat, und zwar das war nach dem Zeitpunkt, als JetGPT veröffentlicht worden ist, wurde der interviewt und da ging es auch um AI im Allgemeinen und so weiter, wurde er auch eben gefragt, für wie wahrscheinlich hält er es, dass quasi, dass es eine allgemeine künstliche Intelligenz im engeren Sinn geben wird, also in dem Sinne, dass sie wirklich dem Menschen ebenbürtig ist. Und da hat dieser, der da interviewt worden ist, ja so quasi, das wäre ja noch Jahre weg und das könnte man ja, und da denke ich mir, was? Der hat selber zwei Sätze vorher gesagt, dass er JetGPT kennt, dass er sich das angeguckt hat. Und dann sagt er, das ist Jahre weg. Also für mich, das fühlt sich an, wie es ist schon da. Wie kann da jemand sagen, das ist Jahre weg?
+
+
+Ja, das ist natürlich auch so ein bisschen jetzt Begriffglauberei. Wo fängt jetzt eine generelle künstliche Intelligenz an? Und dieser Begriff der künstlichen Intelligenz ist, glaube ich, von vielen einfach auch ... ganz unterschiedlich interpretiert. Also ich sehe das nach wie vor so, dass es nur darum geht, menschliche Intelligenz nachzuahmen. Aber ich glaube, andere belegen den für sich ein bisschen anders den Begriff. Ja, ist spannend, weil ich habe natürlich auch ein KI-Thema auf meinem Zettel stehen. Ich habe mir das Thema Auto-GPT aufgeschrieben, was ich jetzt so die spannendste Entwicklung der letzten Wochen fand. Sagt euch das was? Habt ihr das mitverfolgt? Ich hab den Begriff gelesen, aber... Also Auto-GPT ist jetzt im Grunde, könnt ihr euch vorstellen, wie ein Chat-GPT, das sich selber promptet. Also du gibst ihm quasi einen losen Auftrag und er kann dann die Rückfragen, die er sonst irgendwie dir stellen würde, oder die Vorschläge, die er macht, die dann wieder weiter kommentiert werden, so wie du es mal in der Bonusfolge auch beschrieben hast, und dann komme ich mit einer Rückmeldung wieder zum Nächsten. Das macht er einfach selber. Also er kann sich quasi autonom weiterentwickeln. Ich hab da Videos gesehen und Twitter-Threads seitenlang durchgelesen, was das für Auswüchse annehmen kann. Du gibst ihm einen Rechercheauftrag und er rennt los und macht dir quasi die ersten Vorschläge, um dieses Thema zu erarbeiten, musst du A, B und C mal irgendwie ... Und dann fängt er an, A, B und C zu erörtern. Und dann kommt er wieder mit, um das tiefer zu sehen, musst du C, D und F ... Und dann geht es immer so weiter. Und es führt tatsächlich auch ganz oft, dass es sich in so Todesloops verfängt. Also immer tiefer, immer tiefer, immer tiefer. recherchiert, aber sie haben zum Beispiel auch sowas gemacht, wie sie haben so Agenten in einer Simulation gesteckt. Also stell dir vor wie Sims. Und jeder Bewohner von dieser Landschaft ist an eine KI angeschlossen, die sich dann quasi autonom weiterentwickelt. Und die haben ganz einfache Aufgaben bekommen, wie du musst jetzt irgendwie eine Party planen oder du musst jetzt irgendwie das machen und alles weiter haben sie sich selbst erarbeitet. Die haben sich untereinander abgesprochen, Beziehungen zueinander entwickelt und genutzt. Die haben irgendwie neue Verknüpfungen gemacht. Es ist wirklich ... Man liest es und denkt sich, in was für einem Science-Fiction-Film bin ich eigentlich gerade? Das ist vollkommen absurd. Ich hab eine schöne Anleitung, den Link in die Show Notes gefunden, wie man das ausprobieren kann. Wie man sich selber so einen Auto-GPT aufsetzen kann. Du brauchst natürlich dann den API-Access für OpenAI. Und Chat-GPT-4, glaub ich, nutzen die. Und das kostet dann auch richtig Geld. Also die API-Aufrufe, die da im Hintergrund ablaufen, da bist du bei, ich habe ein Beispiel gelesen, mach mir ein Rezept für Thanksgiving, glaube ich, das hat dann irgendwie 14 Dollar gekostet. Also das summiert sich dann sehr, sehr schnell. Das muss einem bewusst sein, aber es kann jeder einfach mal ausprobieren. Man kann es im Grunde mit ein paar Kommandozeilen, Befehle kannst du es nachbauen und ausprobieren. Ich bin völlig hin und weg.
+
+
+Ja, das ist wirklich krass. Aber ist das nicht so, wie du das beschreibst, dass quasi die A.I.s mit sich selber unterhält und so Gedankengänge spinnt? Ist das nicht eigentlich genau das, was in einem menschlichen Gehirn auch abläuft?
+
+
+Voll! Und vor allem diese Agenten in dieser Simulation, die tun genau das, was Menschen auch tun würden. Sie verabreden sich, sie gehen zusammen zu so einer Party, sie fragen, ob sie noch irgendwie was mitbringen. Also sie verhalten sich wie Menschen. Und da verstehe ich auch, wie du fassungslos bist, dass man das nicht sehen kann, denke ich mir auch. Also, wie viel genauer muss man uns denn noch nachahmen, dass man sagen kann, okay, das ist jetzt so intelligent, ne? Ich bin völlig hin- und hergekommen.
+
+
+Zusammen mit dem Thema habe ich was gesehen, ich glaube, auch in Videoform, dass eine gesagt hat, ja, du musst ja gar nicht so irgendwie, weil man kann sich ja Prompts kaufen mittlerweile, oder Leute, die einen Prompt geschickt generieren quasi, weil man selber sich für unfähig erachtet, zu prompten, was ja durchaus sein kann. Aber da hat eine ein Video dazu gemacht und hat gesagt, man kann auch Chat-GPT dazu bringen, dass der selber Prompts schreibt für sich oder für andere Chatbots. Genau. Und die hat einfach gesagt, ja, man gibt ihm halt einfach Kontext, möglichst viel Kontext und sagt dann halt, jetzt prompte mal in Richtung, ich möchte diese Frage beantwortet haben, schreibt mir doch mal möglichst geschickte Prompts. Und dann geht es in die Richtung mit diesem Auto-GPT, dass der dann quasi dann so Prompts für sich selber generiert oder so und sich selber die Fragen stellt, die er eigentlich fragen müsste. Und das finde ich echt witzig.
+
+
+Also ich habe das gesehen bei ganz vielen, ... ... die das machen, um dann mit Journey ... ... zum Beispiel zu befüttern, ... ... wo du ja nicht diese Interaktion hast normalerweise, ... ... sondern wo du einmal einen Prompt reingibst ... ... und dann kommt ein Bild und dann kannst du noch sagen, ... ... ah ja, das bitte verfeinern, ... ... aber du hast nicht diesen Kontext ... ... und diese Interaktion. Und dann ist der Prompt natürlich noch viel wichtiger. Und da gab es ein Video, ... ... das haben meine Kinder auf YouTube irgendwie geguckt ... ... und ich bin dazugekommen und war völlig baff, ... ... dass die sich solche Dinge auf YouTube anschauen. Da hat einer ... ... versucht irgendwie ein Business draus zu machen, ... ... automatisiert ... Chat-GPT-Prompts generieren zu lassen, entweder für Dali oder für Mitschön, ich weiß gar nicht mehr, das dann wieder automatisiert T-Shirts produziert hat, glaube ich. Und dann hat der irgendwie automatisch in den Webshop, also hat irgendwie, keine Ahnung, tausend Vorschläge die Stunde irgendwie generiert und die dann automatisiert irgendwie zum Verkauf letztendlich angeboten. Wenn am Ende drei T-Shirts verkauft, dann hat sich das schon gelohnt, ja. Also völlig abwegig, was da gerade passiert. Absurd. Ja, das soll aber eigentlich gar nicht unser Thema sein heute, wobei ich mich in Stunden darüber freuen könnte, was da gerade alles passiert. Aber wir haben uns ja das Thema Software-Craftsmanship vorgenommen. Und ich habe mir hier tatsächlich aufgeschrieben, eigentlich müssten wir mal die Definition von Software-Craftsmanship auch versuchen, glaube ich. Aber ich würde es gar nicht heute machen wollen. Ich würde auch erst mal jetzt, dass wir noch ein bisschen in dem Thema uns, glaube ich, erst ein bisschen reinfühlen. Und dann, ich glaube, mit Definition kommt dann mal so in zwei, drei Folgen und vielleicht nochmal in zehn Folgen dann nochmal eine neue, also zumindest mal so unsere Definition vielleicht.
+
+
+Ja, deswegen fangen wir jetzt ja heute auch an, mal über die Ausbildung uns Gedanken zu machen oder zu sprechen, wie man da hinkommt dann.
+
+
+Genau, das Thema Ausbildung im Studium. Ich meine, wer den Podcast länger hört, weiß, wir haben da schon mal eine Folge dazu gemacht oder ich habe mich da schon mal auch in dieses Thema eingefuchst. Und ein Aspekt, der mir da sehr hängen geblieben ist, ist jetzt gar nicht so ganz konkret auf das Thema Softwarekraftmanagement, aber so allgemein auf diese IT-Themen. Und ich habe mir da gemerkt, dass wir einfach echt dafür sorgen müssen, dass wir unsere Kinder für diese Themen interessieren und vor allem, dass wir unsere Kinder auch gleichberechtigt für diese Themen begeistern. Also das ist mir ganz stark hängen geblieben. Und in der Richtung habe ich auch ein paar Zahlen dann mal recherchiert. Und ich mache mal noch einfach ein kleines Quiz zum Einstieg. Ich habe so ein paar Statista-Zahlen und Zahlen vom Statistischen Bundesamt mir besorgt. Und wahrscheinlich haben wir jetzt zufällig genau die gleichen recherchiert. Ich hoffe nicht. Bodo habe ich auch die Hausaufgabe gegeben, Zahlen herauszusuchen. Aber mal für den Anfang. Was glaubt ihr denn, wie viele Auszubildende gibt es in Deutschland im Jahr oder aktuell so? Okay, die Zahl habe ich auch. Mist. Dann Frederik, was glaubst du? Ich habe die nicht. Also ich habe die aus dem Jahr 2021. Wie viele Auszubildende gab es aktiv in der Ausbildung im Jahr 2021?
+
+
+Ich hätte mal grob geschätzt so 25.000 bis 30.000. Oh, viel zu wenig. Viel zu wenig. Okay.
+
+
+Okay. 1,25 Millionen.
+
+
+Oh, okay. Also ich habe ein bisschen eine andere Zahl. Also ich habe die Zahl gefunden bei Statista, dass letztes Jahr 15.700 Fachinformatiker angefangen haben mit ihrer Ausbildung. Ja. Natürlich, die Ausbildung ist zwei oder drei Jahre. Das heißt, man müsste das dann mal drei nehmen, schlimmstenfalls. Aber viel mehr dürfte es nicht sein.
+
+
+Aber über alle Berufe hinweg habe ich die Zahl. Ach, ich dachte doch tatsächlich an Fachinformatik. Okay, dann habe ich das schlecht kommuniziert. Ich wollte mich so ganz langsam dem Thema nähern. Ich habe ganz weit gegriffen. Das erklärt aber die Diskrepanz in den Zahlen. Da bin ich froh. Dann war ich gar nicht so weit weg von Unterschätzung. Sehr gut geschätzt, würde ich sagen. Was ich super spannend fand, war daneben zu gucken, wie viele Leute sind denn gerade im Studium. Was glaubt ihr? Also gleiche Ausgangslage, nur nicht Auszubildende, sondern Studierende. Wie viel hatten wir jetzt? 1,25 Millionen Auszubildende hatten wir gerade.
+
+
+Boah, ich hätte gedacht, dass fast mittlerweile mehr in die Akademie gehen. Also anderthalb Millionen vielleicht, zwei Millionen.
+
+
+Nicht schlecht. Ich würde auch sagen, ungefähr gleiche Größenordnung. Also ich hätte auch gedacht, ungefähr gleiche Größenordnung, aber es sind tatsächlich 1,7 Millionen Studierende. Also wenn man darüber nachdenkt, ist es auch logisch, weil ein Studium kann ja dreimal so lange dauern wie eine Ausbildung, wenn es dumm läuft. Von daher ist es auch irgendwie logisch und nachvollziehbar. Aber es sagt, glaube ich, auch was über Deutschland aus. Ich glaube, das ist schon auch so ein deutsches Phänomen, könnte ich mir vorstellen. Ich habe gerade schon angedeutet, dass mich vor allem auch diese Geschlechterfrage so ein bisschen, dass mir die hängen geblieben ist. Und deswegen habe ich auch mal geguckt, wie ist denn die Geschlechterverteilung bei uns in der Gesamtbevölkerung? Die verrate ich euch. Das ist, wir sind 49,3 Prozent Männer und 50,7 Prozent Frauen. Wie würdet ihr denken, ist das, machen wir mal bei den Studierenden zuerst die Geschlechterverteilung?
+
+
+Bei den Studierenden insgesamt? Ja. Das sind natürlich mehr Frauen, sehr klar, würde ich sagen.
+
+
+Stimmt. Meinst du echt? Die Tendenz stimmt.
+
+
+Ich hätte jetzt 50-50 gesagt, dass es beim Studieren auch irgendwie so ist, dass sich die gleiche Menge für das Studieren entscheidet.
+
+
+Also es ist sehr ähnlich tatsächlich. Die Zahlen sind genau rumgedreht. Es sind 50,7% Männer und 49,3% Frauen. In der Bevölkerung?
+
+
+Nein, beim Studieren.
+
+
+Es ist rumgedreht. In der Gesamtbevölkerung sind es tendenziell ein bisschen mehr Frauen und bei den Studierenden sind es ein bisschen mehr Männer.
+
+
+Ich hätte jetzt gedacht, es sind vielleicht eher sogar 60%, aber da lag ich falsch.
+
+
+Und die spannende Zahl ist aber in der Ausbildung, fand ich. Wie ist die Geschlechterverteilung in der Ausbildung? Über alle Ausbildungsberufe?
+
+
+Da wahrscheinlich mehr Männer, wenn man so die Handwerksberufe denkt und so.
+
+
+Ja, es gibt ja die ganzen Verkäufer und Bürokaufmann und so weiter Berufe. Bürokauffrau muss man dann sagen. sagen wir Bürokaufenleute. So hätte ich dann auch gesagt, ungefähr genauso die Verteilung. Ich meine, muss ja dann eigentlich so sein, logischerweise.
+
+
+Da gibt es dann wahrscheinlich eher so Richtung Frauen.
+
+
+Hätte ich jetzt auch gedacht, das muss ja dann, wo sind die sonst? Das muss ja so sein. Tatsächlich, die Zahlen vom Statistischen Bundesamt, ich konnte es gar nicht glauben, 65,5 Prozent Männer in der Ausbildung. 34,5 Prozent Frauen.
+
+
+Also lag ich doch so Richtung Handwerker.
+
+
+Was ist dann mit den Frauen, die nichts studieren und keine Ausbildung machen?
+
+
+Ich weiß es nicht. Hausfrau ist doch heute kein Thema mehr eigentlich, ne? So dieses, das gibt es doch nicht. Was machen die gerade? Frage ich mich auch. Also fand ich sehr spannend. Ich habe noch eine spannende Zahl, die jetzt auch nichts mit dem Thema zu tun hat, aber fand ich trotzdem spannend, deswegen frage ich sie, wie viel verdient so ein Azubi im Durchschnitt im Jahr 2022? Also müsst ihr jetzt ausmitteln, über die drei Lehrjahre muss sich das ja bei manchen Berufen zwangsläufig steigern, also das alles im Durchschnitt?
+
+
+In Anbetracht der aktuellen Inflationssituation hätte ich gedacht, dass unter den Tausenden eigentlich fast schon eine Frechheit ist, ihn dazu geheim gehen zu lassen, aber in manchen Berufen
+
+
+Und Schneider sind, glaube ich, tendenziell eher schlecht bezahlt. Also von daher, ich weiß die Zahl für die Azubis Fachinformatiker. Spannend, können wir dann nebeneinander sprechen.
+
+
+Aber über alle? Sag ich mal, der Schnitt liegt so bei 650 Euro vielleicht.
+
+
+Ich würde sagen so 750.
+
+
+Also deine erste Schätzung hat mir besser gefallen. Ich war tatsächlich auch positiv überrascht. Bei 1057 Euro liegt der Durchschnitt. Und da jetzt nochmal die Geschlechterverteilung, die lasse ich euch jetzt nicht raten, das ist tatsächlich auch marginal. Aber Frauen verdienen im Durchschnitt in der Ausbildung mehr als Männer. 1101 zu 1022 Euro. Also nicht viel, aber wo man ja immer vom Tender Pay Gap spricht, in der Ausbildung ist es umgedreht. Was natürlich vielleicht auch damit zu tun hat, dass Frauen gefragter sind, weil sie seltener sind in der Ausbildung. Könnte ich mir vorstellen. Weiß ich nicht. Oder dass in bestimmten Berufen einfach ein Überhang ist.
+
+
+Ich denke eher, dass das Zweite eher da reinspielt, dass da bestimmte Berufsgruppen reinzählen, die halt die Frauen vielleicht mehr belegen als die Männer und die halt vielleicht besser bezahlt sind.
+
+
+Wahrscheinlich hat es irgendwie damit was zu tun. Das bringt uns gut zum Thema, über das wir ja eigentlich reden wollen, Informatik. Schauen wir mal, ob du die Zahl auch mitgebracht hast, Bodo. Ich habe mir ein Ranking vom Statistischen Bundesamt gezogen, die beliebtesten Ausbildungsberufe in Deutschland im Jahr 2021. Dann Friederik, was glaubst du, Fachinformatik, auf welchem Platz ist Fachinformatik im Ranking geschlechterunabhängig?
+
+
+Boah, also ich hätte es nicht in den Top Ten gedacht. Weil das klingt so immer so hochschultechnisch schon fast. Also das vertrauen sich vielleicht manche nicht zu und ergreifen es dann nicht. Ich hätte gesagt so Rang 12, 13 oder sowas in dem Dreh.
+
+
+Tatsächlich über beide Geschlechter ist es Rang 4. Okay, doch tatsächlich. Rang 4 hinter Kraftfahrzeugmechatroniker, Kaufmann, Kauffrau für Büromanagement, Kaufmann, Kauffrau im Einzelhandel und vor medizinischen Fachangestellten oder medizinischer Fachangestellten.
+
+
+Da bin ich dann aber bei Platz sechs, wenn du das alles einzeln aufzählst, so wie du es gerade gemacht hast. Eins? Was? Eins, zwei, drei? Die Reihenfolge ist bei mir. Kaufmann ist Platz eins. Also Kaufmann Einzelhandel Platz eins. Kaufmann Büromanagement ist Platz zwei. Verkäufer Platz drei. Kraftfahrzeugmechatroniker ist vier. Medizinische Fachangestellte fünf. Und dann der Fachinformatiker auf Platz sechs.
+
+
+Es gab zwei Listen, wahrscheinlich haben wir jetzt genau die unterschiedlichen. Die eine war nämlich, auch wieder so, sind gerade in Ausbildung und die andere waren neu angefangene Ausbildungsberufe. Ah ja, okay. Kann sein, dass die sich leicht unterscheiden. Ja, das kann sein, genau. Das sind die Neuverträge, die du jetzt gefragt hast.
+
+
+Genau, die, die ich habe, sind die Neuverträge.
+
+
+Genau, die andere Liste, ja. Also das erklärt es. Aber was da eigentlich auch die spannendere Frage ist, ist, das unterscheidet sich nochmal sehr stark, wenn du die Geschlechter nochmal auftrennst. Oh ja, das glaube ich. Schauen wir noch mal die Positionierung des Berufsfachinformatiker bei Männern. Was glaubt ihr? Ich weiß es.
+
+
+Du weißt es? Ich hätte immer noch vermutet, 80% gehen da Männer rein und ich sage mal so 20% Frauen.
+
+
+Also als Ranking an beliebten Ausbildungsberufen. Achso. So Männer, die eine Ausbildung machen, reine Folge der beliebtesten Ausbildungsberufe.
+
+
+Ich finde das bei Männern vielleicht so auf Platz 2 und 3 vielleicht sogar schon, jetzt in Anbetracht der vorhergehenden Situation und bei Frauen so an 8, 9, vielleicht da auch aus der Top Ten ausgefallen, weiß ich nicht.
+
+
+Erster Tipp war fantastisch, Platz 2. Weiß nicht, Bodo, in deiner Liste auch?
+
+
+Ich habe eine andere Zahl, ich habe nämlich das Verhältnis der Azubis.
+
+
+Okay, dann machen wir das gleich. Die Platzierung bei Männern Platz 2, bei Frauen nicht mal in den Top 20. Ja, würde ich auch sagen. Krass. Und das ist schon ein Problem. Genau. Deine Zahl noch, die du rausgesucht hast?
+
+
+Also ich habe gelesen, dass es 10% Frauen bei den Fachinformatikern gibt. 10%? Ja, 10%. Das ist ja nichts. Allerdings muss ich dazu sagen, so aus meiner eigenen Beobachtung, jetzt nicht nur von ein oder zwei Leuten, sondern von mehr Leuten und was ich jetzt auch im Beruf sehe, und es geht natürlich jetzt in die Statistik nicht ein, ist, dass es sehr viele Frauen in dem IT-Betrieb gibt, die entweder im Projektmanagement sind oder vor allem jetzt ganz viel in letzter Zeit Usability und User Experience. Und das ist aber mehr ein, das ist kein Ausbildungsberuf, leider muss man sagen, Moment, oder da gibt es keine Spezialrichtung dafür, sondern das sind dann wirklich die Frauen, die ich da kenne, und das sind jetzt relativ viele, die haben halt alle ein Bachelor studiert dann irgendwo an der Fachhochschule.
+
+
+Ja, aber, also man kann, glaube ich, über den Ausbildungsweg da schon auch hin, aber es ist dann immer irgendwie ein Quereinstieg mit irgendwie, keine Ahnung. Bachelor kann man schon studieren. UX Design ist ein ganz normaler Studiengang. Spannend. Ich glaube auch bei Frauen in IT-Berufen wäre die Zahl auch nicht ganz so dramatisch. Es ist tatsächlich dieses Fachinformatiker-Ding.
+
+
+UX-Ding würde ich kurz nochmal reingrätschen oder vorgreifen. Weil wir haben einen dazu, wie bei uns, der macht ja Ausbildung zum Anwendungsentwickler mit einem Zusatzschwerpunkt UX. Das hat scheinbar die Branded mit bei der IHK forciert.
+
+
+Ja, also ich sage auch nicht, dass es nicht geht. Es ist nur so, dass es nicht Also in den Beschreibungen für die Ausbildung taucht es nirgends auf, dass das überhaupt eine Möglichkeit ist, klar. Also wenn du selber dann bei der IHK nachfragst und sagst, ja wir hätten gerne jemanden, der das als Schwerpunkt macht, dann sagen die schon, ja das geht und es gibt ja auch diesen sogenannten, wie nennt sich das jetzt, das Einsatzgebiet, Also es ist quasi ein Begriff in der Fachinformatikerausbildung und da wäre das schon mit drin, nur in den Fragen, die zum Beispiel in der IHK-Prüfung enthalten sind, da ist das Thema eigentlich nicht präsent.
+
+
+Können wir dann gleich nochmal tiefer auch einsteigen, weil wir auch noch ein anderes Beispiel haben mit so einer Zusatzqualifikation, die man zu so einer Ausbildung vielleicht noch machen kann. Ja, nee, lass uns da reingehen. Wir haben ja mal im Haus rumgefragt, wie es so ausschaut. Unsere Ausgangsfrage ist ja, Podcast, ja, ist Deutschland ein Entwicklungsland. Die Ausgangsfrage ist, wie steht es um Softwareentwicklung bei uns im Land? Und wir haben ja beschlossen, wir konkretisieren das für die Staffel zwei weiter und sagen, hey, lasst uns doch mal wirklich die Handwerkskunst Softwareentwicklung irgendwie genauer anschauen. Was ist Software Craftmanship überhaupt? Kann man das lernen? Wie lernt man das? Was kommt davon in der Ausbildung? Was vielleicht im Studium? Das sind jetzt so die relevanten Fragen. Und vielleicht, Bodo, kannst du mal zum Einstieg so ein bisschen was, weil du ja schon ausgebildet hast im Bereich Fachinformatik. Was muss man denn da wissen über die Ausbildung zum Fachinformatiker? Was lernt man da? Was ist der Schwerpunkt? Was ist man danach? Was kann man danach? Mal so ein paar grundsätzliche einordnende Worte vielleicht.
+
+
+Ja, also für die Ausbildung Fachinformatiker muss man natürlich eine ganze Menge an Grundlagen erst mal lernen und das sind so Dinge wie Projektmanagement, Qualitätsmanagement, IT-Sicherheit, Datenschutz, das gehört alles dazu. Wie funktionieren Netzwerke, solche Dinge und das ist natürlich, das nimmt doch einen relativ großen Teil der Ausbildung ein, sodass man ja da jetzt eigentlich die Der eigentliche Kern, wo man es erwarten würde, Anwendungsentwicklung, ja, da lernt man jetzt programmieren, ja, das lernt man schon auch. Aber das ist halt prozentual gesehen, auch von der Anzahl der Fragen her, die in der Prüfung dann drankommen und vom Lehrplan her, ist das ein relativ kleiner Teil eben, weil man so viele Grundlagen erst mal lernen muss im Überblick, wie ich eben gesagt habe. Also auch Qualitätsmanagement, Datenschutz, IT-Sicherheit, IT-Systeme, wie funktioniert überhaupt ein Computer. All diese ganzen Grundlagen, die muss man natürlich erst mal haben, bevor man dann anfangen kann, irgendwie ein Programm zu schreiben.
+
+
+Genau, dazu sei auch noch gesagt, dass das erste Lehrjahr, das war bei mir damals vor 20 Jahren auch so, ist tatsächlich so, dass das erste Lehrjahr von Fachinformatikern, egal welche Richtung man einschlägt, also Anwendungsentwicklung oder Systemelektroniker oder da gibt es ja noch einen anderen Zweig, dass das erste Lehrjahr tatsächlich den gleichen Lehrplan hat. Und da wird dann natürlich klar so Basics beigebracht. Wir haben damals Windows NT installiert auf irgendwelchen alten Kisten in der Schule und sowas, um da auch Netzwerke aufzubauen und überhaupt die Basics zu lernen. Und somit dient auch das erste Lehrjahr auch so viel zum Glattbügeln über die verschiedenen, woher die Leute kommen. Da kommen ja manche vielleicht sogar von der Hauptschule, manche sind auch Studienabbrecher, die haben dann vielleicht nochmal ein bisschen mehr Vorwissen. Die kommen aus dem IT-Studium und haben das abgebrochen. Oder manche sind komplett Quereinsteiger. Und da wird auch das erste Jahr, habe ich so den Eindruck gehabt, damals so zum Homogenisieren der Klasse genutzt.
+
+
+Ja, da sind auch so ein paar Inhalte aus dem Wirtschaftsbereich, Wirtschaftsrecht, Sozialkunde sind ja auch noch da mit dabei, eben wie du schon sagst, weil natürlich die Ausbildung so konzipiert ist, dass es im Prinzip auch jemand mit Hauptschule oder mittleren Reife sozusagen abschließen können soll. Demzufolge muss man natürlich diese Grundlagen auch beibringen, auch so Dinge wie Arbeitsrecht, das gehört auch, spielt auch mit eine Rolle.
+
+
+Und weil man sich als IHK ausgebildeter Fachinformatiker auch selbstständig machen kann. Also du kannst dich, du könntest quasi mit der Ausbildung auch einen Betrieb gründen und ein IT-Beratungshaus, whatever.
+
+
+Es gibt ja keinen Meister als Fachinformatiker. Genau.
+
+
+Finde ich auch schade, aber das wäre gut gewesen.
+
+
+Aber da frage ich mich, ich weiß nicht, ob das einer von euch beantworten kann, aber ist das in anderen Berufen anders? Ist das nicht grundsätzlich das System der dualen Ausbildung oft so?
+
+
+Ne, also zum Beispiel bei den Baugewerken weiß ich, da gibt es ja durchaus, zum Beispiel wenn du Heizungen baust, dann kannst du eine Ausbildung zum Heizungsbauer machen und dann kannst du noch keinen Betrieb Genau, dann bist du Geselle und dann musst du einen Meisterausbildung machen und dann erst darfst du überhaupt in den Betrieb.
+
+
+Aber da hast du doch trotzdem in der Berufsschule dann Fächer wie Deutsch und Englisch und in manchen Richtungen sogar Sport, wo ich mich frage, was hat denn das in der Berufsschule zu tun?
+
+
+Aber hier in der Fachinformatikausbildung auch einen erheblichen Schwerpunkt auf betriebliche Abläufe und Prozesse und auch Organikramen und irgendwelche ... Abrechnungsthemen, die man eigentlich ja in der Schule schon mal hatte, also so biblische Rechnungswesen. Die haben auch tatsächlich nochmal einen Schwerpunkt, auch in der Prüfung nochmal einen Schwerpunkt. Und das liegt unter anderem daran, dass man sich eben mit der Fachinformatiker-Ausbildung ... ohne Meisterbrief quasi selbstständig machen kann.
+
+
+Ist spannend, weil ich habe ja diese Ausbildung auch gemacht für Systemintegration dann allerdings. Also ich bin dann an dem anderen Zweig irgendwann abgebogen und ich habe auch so Fächer wie Rechnungswesen und Betriebswirtschaftslehre und so gehabt. Habe ich dann aber später im Studium irgendwas mit Medien auch wieder gehabt. Also auch da ist es dann nochmal irgendwie platziert, das Thema. Das ist eine interessante Frage, warum das so ist, wenn es in anderen Ausbildungsberufen vielleicht nicht so ist. Aber wir sind eigentlich schon fast einen Schritt zu weit gegangen. Ich habe nämlich im Vorgespräch herausgefunden, dass wir überhaupt nicht die gleiche Vorstellung von Ausbildung haben alle. Oder dass das vielleicht gar nicht mehr zeitgemäß ist, wie meine Vorstellung von Ausbildung ist. Denn ich dachte, das ist immer so. bewirbt sich um den Ausbildungsplatz in den Betrieb und dann geht man dahin und dann wird man blockweise, manchmal so gebündelt in einem Block, manchmal aber auch immer so zerteilt über wenige Wochen hinweg, in die Berufsschule geschickt und parallel dazu ist man im Betrieb und man lernt dann quasi einmal so das Ganze theoretisch und einmal so das Ganze praktisch und am Ende macht man eine Prüfung und dann hat man seinen Abschluss. Das war auch mein Wissensstand.
+
+
+Das denken natürlich viele und das dachte ich auch bis vor ein paar Jahren, dass das so ist und dann hatten wir die Situation, dass wir eben ein ganzes Team von Azubis gegründet haben, die gemeinsam quasi in dem Team die Ausbildung machen sollten. Ungefähr alle auch zur gleichen Zeit dann angefangen haben. Und das waren alles Studienabbrecher. Also es war gar nicht so, dass wir speziell Studienabbrecher gesucht haben, aber das hat sich halt so ergeben. Und dann haben wir uns überlegt, Mensch, Studienabbrecher, die haben ja Abitur und so weiter, die jetzt noch mal in die Berufsschule schicken. Und wir hatten also einen Azubi, der war da auch in der Berufsschule. Und der war da gerade ein Jahr lang in der Berufsschule. Und er hat dann gesagt, hey, das ist alles total langweilig. Der war auch abiturierend eigentlich. Das ist alles irgendwie das gleiche Zeug. Das braucht man eigentlich nicht. Und dann haben wir angefangen zu recherchieren. Ja, geht das irgendwie auch anders? Irgendwie bei der IHK angerufen und da mal gefragt, bei der Berufsschule angerufen. Wie ist das eigentlich? Und haben herausgefunden, also A, jemand, der das Abitur hat, der hat erst mal keine Schulpflicht mehr. Was ein Unterschied ist zu jemand, der jetzt nur den Hauptschulabschluss hätte. der hätte tatsächlich irgendwie noch so eine Art Schulpflicht. Echt?
+
+
+Aber die geht doch bis zur neunten Klasse, oder?
+
+
+Bis einschließlich neunte Klasse? Also wenn jemand wirklich mit neun, ich glaube, das reicht nicht ganz. Also ich glaube, wenn du nur neun Jahre Hauptschulabschluss gemacht hast und du machst dann noch eine Ausbildung, ich glaube dann, wenn ich es richtig in Erinnerung habe, aber korrigiert mich, wenn ich falsch liege, dann ist es glaube ich so, dass du tatsächlich in die Berufsschule gehen musst, aber wenn du eben Beim Abitur weiß ich es auf jeden Fall, weil da konkret der Punkt, wo wir nachgefragt haben, wenn du Abitur hast, musst du es eben nicht. Und bei der IHK war dann die Auskunft, die haben dann gesagt, ja, man kann ja immer als Externer eine Prüfung machen, was uns erstmal auch irgendwie neu war. Als Externer, was heißt das genau? Er stellte sich raus, naja, es gibt eine ganze Reihe von vor allem großen Firmen, die die ganze Ausbildung einfach intern organisieren. Und da haben wir gesagt, ja, das, was die können, können wir auch. Und haben das auch dann so gemacht und hat auch funktioniert. Und man muss sagen, auch die Azubis, die wir dann hinterher befragt haben, die waren auch durchaus ganz komfortabel mit der Lösung dann am Ende.
+
+
+Das ist ein gutes Stichwort, Azubis, die wir befragt haben. Wir haben nämlich auch im Vorfeld hier unsere Azubis befragt. Magst du kurz erklären, wer Florian ist? Dann spiele ich kurz eine Frage oder eine Antwort besser gesagt von Florian ein.
+
+
+Ja, der Florian ist einer unserer Azubis, die eben dann später zu diesem Team damals dazugekommen sind, der auch bei uns die Fachinformatikerausbildung gemacht hat und auch bei uns jetzt als Softwareentwickler festangestellt ist, schon seit einem Jahr jetzt, glaube ich.
+
+
+Genau, und den haben wir gefragt, ob er das jetzt empfehlen würde, so eine Ausbildung ohne Berufsschule.
+
+
+Generell für alle Leute kann man es, glaube ich, nicht empfehlen, weil Ausbildung halt wirklich für alle ist. Und wir haben ja jetzt alle Azubis, die ich jetzt kennengelernt habe, waren ja alle Studienabbrecher. Also schon jahrelanges Programmieren quasi. Ausbildung ist halt für sehr, sehr verschiedene Leute.
+
+
+Aber ich sage mal, wenn du das schon ansprichst, für die Kategorie, sage ich mal, der Azubis, die quasi als Studienabbrecher das machen, würdest du denken, dass es für die sinnvoll ist, nicht in die Berufsschule zu gehen, so wie du und deine Kollegen das ja gemacht haben? Glaube ich schon.
+
+
+Ja, kann ich, glaube ich, generell so sagen, ja. Wenn dir die 1,0 unbedingt so wichtig ist, dann bist du, glaube ich, auch diszipliniert genug, ohne Berufsfehler dran zu schaffen. Also, es wird schon.
+
+
+Ja, also es ist mal so, eigentlich auch naheliegend, kein so grundsätzliches Ja oder Nein, sondern man muss da schon genau hinschauen, ob die Personen, in welcher Situation die sind und ob die vielleicht auch vom Ehrgeiz und vom eigenen Anspruch her besser aufgehoben sind in einer schulischen Ausbildung oder ob die sich auch das selbst... Wir haben das auch den Leuten immer freigestellt oder auch ist nach wie vor so.
+
+
+Und manche, weiß nicht, ob du den Abschnitt auch noch hast von dem anderen Interview, manche haben das dann auch mal drei Monate ausprobiert und haben dann festgestellt, naja, Berufsschule ist doch nicht so cool.
+
+
+Dann lass uns da doch mal kurz reinhören.
+
+
+Am Anfang wurde mir die Wahl gestellt, ob ich es mit Berufsschule machen würde oder ohne. Ich habe mich erst mal für die Berufsschule entschieden, weil herausgehend aus dem Studium das selbstorganisierte Lernen, das wurde dann zum Nachhinein immer lästiger und schwieriger. Mir ist dann aber auch relativ schnell in der Berufsschule aufgefallen, aufgrund der neuen Ausbildungsverordnung, dass die Lehrer doch nicht so den richtigen Lernstoff schon parat hatten. Da war vielleicht die Kommunikation mit der IHK auch nicht so gut. Deswegen habe ich mich dann später nach drei Monaten entschieden, dann wieder aus der Berufsschule auszutreten und das selbst organisiert über den Stoff, den die IHK in ihrem Lernportal zustellt, das so weiterzumachen, anstatt die Berufsschule zu besuchen.
+
+
+Genau. Das war Alexo. Ich bleibe mal bei seinem Spitznamen, der witzigerweise am gleichen Tag wie ich hier angefangen hat. Und der macht ja, da können wir später nochmal kurz dran drüber reden, auch so eine besondere Form der Ausbildung, so eine kombinierte, so ähnlich wie das mit dem UX-Schwerpunkt, das es so nicht gibt, dass man dann irgendwie noch dazu flanschen kann. Aber er hat jetzt auch noch einen anderen Punkt angesprochen. Diese neue Ausbildungsverordnung, also da hast du ja auch mal näher reingeguckt, dass ich da vor kurzem, gab es da wohl eine größere Änderung in den Inhalten des Berufs zum Fachinformatiker und was hast du denn da so entdeckt?
+
+
+Genau, also die Fachinformatikerausbildung, die wurde 2020, wurde die quasi neu konzipiert, neu aufgeteilt, aufgrund, glaube ich, sogar einer Anfrage des Bundeswirtschaftsministeriums an die IHKs und die haben sich dann eben darauf geeinigt, statt den bisher zwei Ausbildungsrichtungen, also früher gab es eben Fachinformatik Richtung Anwendungsentwicklung und die zweite Richtung war Systemintegration, gibt es jetzt vier Ausbildungsrichtungen innerhalb vom Fachinformatiker. Daneben gibt es ja noch drei Ausbildungsrichtungen, die auch im weitesten Sinne mit IT zu tun haben. Ich nenne nur mal die Namen. Das ist IT Systemelektroniker, Kaufmann für IT Systemmanagement und Kaufmann für Digitalisierungsmanagement. Fragt mich jetzt nicht, was der Unterschied zwischen den letzten beiden war.
+
+
+Aber ganz kurz, das finde ich jetzt spannend, weil diese Zweige gab es früher nicht und das setzt jetzt das fort, was wir gerade schon entdeckt haben, dass so viele so kaufmännische Themen in der Ausbildung bisher drin waren.
+
+
+Doch, es gab schon früher auch, also da haben wir auch Auszubildende gehabt, das hieß glaube ich, es gab auf jeden Fall so einen IT-Kaufmann an sich, gab es schon früher. Ja, so einen allgemeinen. Genau, aber jetzt gibt es eben drei, diese drei Richtungen, die ich gerade genannt habe. Und dann gibt es nochmal den Fachinformatiker, mit dem wir uns jetzt speziell beschäftigen, der eben jetzt vier verschiedene Unterrichtungen nochmal hat, statt der zwei Unterrichtungen, die wir früher hatten. Genau, da ist was jetzt neu dazugekommen ist, also es gibt nach wie vor Anwendungsentwicklung einerseits und Systemintegration zum zweiten, aber zum dritten gibt es jetzt noch Daten- und Prozessanalyse und zum vierten gibt es noch digitale Vernetzung.
+
+
+Und ich würde davon ausgehen, dass es nicht lange dauert, bis es da auch noch was gibt wie künstliche Intelligenz.
+
+
+Also künstliche Intelligenz ist tatsächlich so ein bisschen in Daten- und Prozessanalyse und auch ein bisschen in Anwendungsentwicklung mit in den Lehrplan reingekommen. Also da gibt es zumindest mal so ein Kapitel, eine Seite irgendwie im Lehrbuch immerhin zu dem Thema oder zwei Seiten.
+
+
+Spannend, hab ich hier mal auch noch einen dritten Einspieler von Dimitri, der ja auch jetzt nach dieser neuen Ausbildungsordnung, glaube ich, schon seine Ausbildung macht und der auch, wenn ich es richtig jetzt wieder zusammenkriege, zwei Jahre in der Berufsschule war und im dritten Jahr, glaube ich, nicht mehr. Nee, er war, glaube ich, nur ein paar Wochen da.
+
+
+Er war nur ein paar Wochen da? Also er hat auch irgendwie angefangen, hat gesehen, das ist nichts für ihn und
+
+
+Genau, also er ist auf jeden Fall, er war da und ist jetzt nicht mehr. Dann habe ich mir zumindest den Teil richtig gemerkt. Und der sagt was auch zu dem Thema Neuer Lehrplan und wie er das so findet und auch zu der Themenfülle, die da so drin steht.
+
+
+Ich bin ja jetzt einer der Ersten, die nach der neuen Ausbildungsordnung gehen. Ich glaube, ich bin im zweiten Jahrgang. Und ich bin immer noch in Kontakt mit meinen Klassenkameraden, meinen ehemaligen jetzt. Und die meinten, und da war halt ein richtiger Shitstorm in der Klassengruppe, aufgrund der Abschlussprüfung, weil die von Halbjahr zu Halbjahr anders ausfällt, der Schwerpunkt anders ist, weil halt eben dieses Berufsfeld Fachinformatiker Anwendungsentwicklung so viele Sachen zusammenfasst. Und der Lernplan, obwohl er jetzt erneuert wurde, teilweise immer noch so veraltet ist, dass ... Also gut, die Lehrer, die unterrichten das Ganze natürlich etwas moderner, die nehmen moderne Beispiele. Weichen natürlich auch ein bisschen ab, um etwas mehr realitätsnah den Schülern das Ganze beizubringen. Aber man merkt, dass das alles etwas veraltet ist.
+
+
+Kommst du auch zu dem Schluss, Bodo? Du hast jetzt nur die Überschriften quasi, du hast nicht komplett durchdrungen, aber du hast mal die Überschriften gelesen.
+
+
+Ja, ich habe nicht nur die Überschriften gelesen, sondern ich habe mir auch in einem Buch sind so Beispielprüfungen, also eine Prüfungssimulation nennt sich es da, dabei. Und die habe ich mir auch angesehen, wie diese konzipiert sind. Und ich finde, so wie es in dem Buch Konzipiert ist, finde ich das schon zum großen Teil eigentlich sinnvoll, die Fragen. Man muss natürlich allerdings sagen, wenn man sich den Lehrplan anschaut und die Stichpunkte, die der Lehrplan vorschreibt und das, was man dann in Prüfungsfragen daraus macht, da gibt es natürlich ein weites Feld, wie man Fragen stellen kann. Normalerweise, und ich kenne das auch vom Studium und von anderen Situationen, letzten Endes, wenn man auf eine Prüfung lernt, dann ist natürlich das sicherste immer, alte Prüfungsaufgaben zu haben und mit denen zu lernen. Und genau so haben wir das. bei dem Jahrgang, den ich damals oder bei den zwei Jahrgängen, die ich damals ausgebildet habe, auch gemacht. Wir haben uns halt die alten Prüfungsunterlagen plus zum Teil auch Musterlösungen besorgt und anhand von denen hat man gelernt und dann waren da auch keine Überraschungen drin. So, jetzt ist aber natürlich die Situation, jetzt ist der Lehrplan komplett neu und es gibt noch keine Musterprüfungen und keine Musterlösungen und es gibt ja erst zwei Jahrgänge. Das heißt, Da gibt es noch nicht so viel Beispielmaterial und es ist natürlich für einen Prüfling immer eine blöde Situation, in einem neuen Lehrplansystem zu sein und einfach keine Vorlage zu haben, wie so eine Prüfung ausschaut.
+
+
+Aber der Lehrplan ist dann ja quasi das, nachdem die Berufsschulen arbeiten. Wenn du jetzt nicht in die Berufsschule gehst, orientierst du dich dann auch an dem Lehrplan oder suchst du dir dann eigentlich nur, die Prüfungsinhalte raus und zusammen und Beispiele dazu.
+
+
+Naja, es gibt von der IHK sozusagen oder die IHKs untereinander haben sich abgesprochen. Ich weiß nicht genau, wie der Prozess da funktioniert, aber da kann man auf den Webseiten von den IHKs findet man dann auch immer wieder ähnliche Dokumente, wo eben so PDFs sind, wo quasi diese ganzen Prüfungsinhalte aufgelistet sind. Aber wie ich schon gesagt habe, das ist halt so grob, bezeichnet, da kann man alles und nichts fragen. Das ist nicht ... Damit alleine sozusagen nur den Lehrplan sich anzuschauen, sich auf eine Prüfung vorzubereiten, ist praktisch unmöglich. Weil man nicht genau weiß, was genau kommt jetzt dann tatsächlich dran? Welches spezielle Problem wird jetzt genau abgefragt? So, nur mal ein Beispiel, also wenn es um Programmiersprachen geht und wie man sozusagen den Algorithmus schreibt, dann ist halt ... Eine ganz beliebte Sache, früher immer gewesen, dass man Sortieralgorithmen, Bubble Sort, das ist so ganz beliebt. Das hat zwar keinerlei praktische Relevanz, weil jeder, der heutzutage was sortieren will, der nimmt irgendeine Library und die macht das einfach. Aber es ist natürlich trotzdem ein schönes Beispiel, wenn man eben so Programmstrukturen lernen will oder wenn man beibringen will, wie konstruiert man so einen Algorithmus. Und wenn man jetzt weiß, aha, in der Prüfung kommt wahrscheinlich irgendwie was mit Sortieren dran, dann gibt es halt eine Handvoll Algorithmen, die da infrage kommen, irgendwie vier oder fünf Stück und die schaut man sich halt an und dann kann man auch die Prüfungsfrage beantworten. Aber jetzt kann man natürlich als Prüfer auch hergehen und kann sagen, mich interessieren Sortieralgorithmen gar nicht. Keine Ahnung, was für Algorithmen, die damit gar nichts zu tun haben. Das würde natürlich das Fachgebiet oder den Lehrplaninhalt auch abdecken. Aber der Prüfling hat natürlich dann keine Ahnung, weil er sich auf diese spezielle Frage nicht vorbereiten konnte.
+
+
+Wie seid ihr dann damals vorgegangen in dem Team, wo die nicht in der Berufsschule waren? Wir waren ja noch in dem alten Lehrplansystem. Aber dann quasi mit den Prüfungen einfach nur?
+
+
+Wir hatten diese Prüfungsvorlagen, genau. Genau, ich hatte noch damals Vorbereitungstour ist abgelegt also für meine eigene Prüfung der war ganz hilfreich also weil einfach nochmal alle Themen vorzubringen und ein bisschen, auch Themen nochmal mit einem, wir hatten einen Lehrer damals der war selber Ausbilder bei der Telekom hier in Nürnberg oder bei T-Systems hier in Nürnberg. Und hat da auch nochmal vermitteln können, wenn man irgendwelche Fragen hatte zu irgendwelchen Fachthemen, konnte da auch nochmal ein bisschen vertieft reingehen, wenn man da wirklich was nicht verstanden hatte, zum Beispiel während der Ausbildungszeit. Und das hat uns sehr gut vorbereitet auf die Prüfung. Also das hat mich zumindest persönlich sehr gut vorbereitet auf die Prüfung.
+
+
+Ist ja auch so ein ganz eigenes Geschäft, so Vorbereitungen auf irgendwelche IHK-Prüfungen, mache ich gerade für den ADA-Schein auch, musste ich auch so einen Vorbereitungskurs buchen, damit ich überhaupt eine Idee habe, was hinter diesen Überschriften vielleicht alles abgefragt werden könnte.
+
+
+War eine gute Sache bei mir.
+
+
+Aber jetzt muss man natürlich das Ganze insofern wieder etwas relativieren, wenn man sich mal anschaut, wie viel zählen jetzt eigentlich diese Einzelprüfungen? Dann stellt man fest, naja, das ist jetzt gar nicht so dramatisch. Also selbst wenn man jetzt die fachliche IHK-Prüfung, also diese Fragenprüfung, wo es quasi darum geht, so Fragen zu beantworten, wenn man die jetzt irgendwie versaut und da nur eine 4 oder sowas hat, dann heißt das noch nicht, dass alles verloren ist, weil immerhin 50 Prozent des Prüfungsergebnisses oder des Endergebnisses sozusagen, ist allein die Abschlussarbeit. Die praktische Prüfung in dem Fall. Das heißt, und da ist ja der Azubi relativ frei, zusammen mit seinem Ausbilder und dem Betrieb, sich irgendein interessantes Thema zu suchen, sich dann da rein zu vertiefen. Das heißt, da macht er dann eine schriftliche Ausarbeitung dafür, er macht einen Vortrag dafür und wird dann zu dem Thema auch befragt, also mündlich. Und da ist er dann auch tief drin und da kann er natürlich dann glänzen. Genau, er zeigt, was er kann, würde ich gerade sagen.
+
+
+Ich habe mal noch einen Spieler von Florian, der auch noch mal was zum Thema Lehrplan gesagt hat, was ich ganz spannend fand.
+
+
+Was die Nützlichkeit des Lehrplans angeht, kann ich dir nur sagen, wir haben das praktisch zweigeteilt. Wir haben für die Schule gelernt und wir haben fürs Leben gelernt und das hatte relativ wenig Überschneidungen. Das heißt, in der Berufsschulzeit hast du halt Prüfungen und Prüfungsstoff gepaukt und in der anderen Zeit hast du Programmieren gelernt. Und ja, die Mehrzahl der Zeit und die Mehrzahl des Stoffes gab es eigentlich keine Überschneidung zwischen den beiden. Aber vielleicht ist es besser mit einem neuen Blair Plan, aber so war das für uns.
+
+
+Klingt ein bisschen deprimierend. Ja, wobei ich sagen würde, mit dem Abstand, den ich jetzt habe, und wenn ich jetzt noch mal sozusagen zurückgeblickt habe auf die Inhalte, dann würde ich sagen, ganz so schlimm ist es nicht. Es sind schon ein paar Sachen dabei, wo ich sage, naja, das ist eigentlich, da könnte man darauf verzichten. Beispielsweise wird relativ viel, sowohl im alten als auch im neuen Lehrplan, auf diese ganzen UML-Diagramme und Zustandsdiagramme und so weiter Ja, da wird sehr drauf rumgeritten, wo ich sage, ja, das hat manchmal eine praktische Relevanz. Das kommt schon mal vor, dass man so ein Diagramm mal lesen muss. In den allerseltensten Fällen muss man mal selber eins erstellen. Das würde ich jetzt vielleicht nicht so intensiv in der Ausbildung unterbringen. Das lässt sich halt so schön abprüfen.
+
+
+Das folgt halt der enggesteckten Chemik, so ein klassischer Schulinhalt.
+
+
+Aber es gibt so andere Sachen und das hat der Florian dann in einem anderen Schnipsel, weiß nicht, ob du den da hast, ja auch gesagt, zum Thema zum Beispiel SQL. Also, dass man mal lernt, wie man eine SQL-Abfrage zusammenbaut, das macht schon durchaus Sinn und das ist auch Lehrplaninhalt.
+
+
+Das war auch damals in der Berufsschule war das ein ziemlich großer Block noch als QL, soweit ich weiß. Habe ich auch viel gelernt.
+
+
+Da konnte ich noch glänzen, das war richtig gut. Ja, ich habe später auch im Studium einen freiwilligen, also einen Pflichtwahlfach, Wahlpflichtfach, wie heißt es, genau, also ich musste einen Kurs belegen aus einer Auswahl an Themen und dann habe ich auch irgendwas mit Datenbanken und PAP genommen und habe geglänzt. Der Berufsschule war vorher. Aber es ist natürlich auch, wir haben es gerade schon gesagt, es ist so eine Fülle an Themen und es ist natürlich wahnsinnig schwer, da auch irgendwie auf der theoretischen Ebene in der Berufsschule dann tief einzusteigen. Und da kann man, da würde ich gerne mal mit einem Berufsschullehrer oder mit einem Rektor oder mit irgendjemandem auch sprechen, um mal zu checken, ist das überhaupt die Aufgabe der Berufsschule? Müssen die, müssen die überhaupt einzelne Aspekte, weil alle kannst du, kriegst du eh nicht unter, aber müssen die wirklich einzelne Aspekte in so einer Tiefe ja, den Leuten in die Köpfe prügeln, dass die dann wirklich auch damit arbeiten können, oder dass das eigentlich überhaupt nicht die Aufgabe ist, sondern müssten sie das dann eigentlich ja nehmen aus der Berufsschule und damit in den Betrieb gehen und sagen, hey, ich habe da jetzt mal in dieses Thema reingeschnuppert, kann ich das mal in irgendeinem Projekt hier vertiefen? Also so war mein Studio im Grunde auch aufgebaut. Also im Studium habe ich auch von TV-Studio bis Online-Journalismus wirklich alles mitgenommen, Und aber nix richtig. Das musste ich dann in praktischen Semestern und in Praxisarbeiten und in den Themen, die ich mir halt drumherum selber gezogen habe, dann vertiefen. Also vielleicht ist es nur so ein Missverständnis eigentlich.
+
+
+Ja. Als ich studiert habe, hätte ich wahrscheinlich auch kurz danach, nachdem ich mit dem Studium fertig war, gesagt, naja, wo ist jetzt da die praktische Relevanz? Jetzt mit vielen Jahren Abstand muss ich sagen, ja, wahrscheinlich kann man es gar nicht groß anders machen. Also man bringt ein paar Grundlagen bei, vertieft dann ein paar Gebiete, einfach nur um zu zeigen, wie ist denn das, wenn man sich in irgendeinem Gebiet vertieft, ohne dass das jetzt irgendwie wahrscheinlich ist, auch nur, dass man mit diesem Gebiet dann später weiterarbeiten kann.
+
+
+Ja, gut, aber viele Dinge sind ja auch Grundlagen. Ich weiß auch noch nicht, das habe ich glaube ich tatsächlich dabei, Ich werde bei Florian, der dann auch sagt so, also, was wirklich auch gut wäre zu lernen, wäre sowas wie, wie funktionieren Apps heutzutage? So Frontend, Backend, so diese Aufgleisung, wie macht man das? Dass das überhaupt getrennte Komponenten sind, warum? Und so, und das hat er ein bisschen vermisst. Und das den Leuten so Grundlagen, die mir dann auch wirklich in einer tieferen Tiefe beizubringen, gerne an dem Beispiel, halte ich jetzt als Außenstehender für sinnvoll, ja?
+
+
+Ja, sicher. Und um da nochmal Bezug kurz zu nehmen auf die Antwort gerade aus dem Interview, Da wurde ja gesagt, in der Schule haben wir was für das Leben gelernt und in der Arbeit Programmierhandwerk. Das war auch so meine Wahrnehmung. Und da würde ich jetzt doch noch mal eine Lanze brechen für die Schule. Was ich da, wenn man da der Typ für ist, was ich cool fand, so soziale Aspekte, war natürlich auch da super. Man hatte eine Klassengemeinschaft. Wir haben sogar so eine Art Abschlussfahrt am Schluss noch gehabt, wo wir irgendwie mal im See campen gegangen sind und so. Das sind so Sachen, wo ich sage, das ist halt, wenn man da der Typ für ist, ist die Berufsschule dann doch noch für einen was. Und war aber auch meine Wahrnehmung, Programmieren habe ich in der Berufsschule auch als SQL und sowas, also hat relativ wenig Zeit eingenommen tatsächlich. Aber hat auch Sportunterricht, wir hatten auch nochmal Englisch, wo es dann Verwerfungen gab mit, dass wir Begriffe wie ein Netzwerkswitch eindeutschen sollten und sowas bei Übersetzungsübungen und sowas, wo ich mir gedacht habe, so hm. Ne.
+
+
+Ja, aber das ist ein interessanter Aspekt und schöne Grüße an Susann, mit der ich in die Berufsschule gegangen bin, falls sie zuhört. Das ist unsere CEO heute. Also manchmal halten so Kontakte auch über 20 Jahre hinweg. Von daher, ja, ist natürlich auch richtig. Und von daher finde ich es aber ganz spannend auch reinzugucken, was da in unserem Themenbereich, den wir uns vorgenommen haben, was da passiert. Hast du das Gefühl, dass das Software-Craftsmanship, dass das irgendwie ein wichtiger Aspekt ist in der schulischen Ausbildung?
+
+
+Also da habe ich nicht wirklich das Gefühl, dass das ein wichtiger Aspekt ist. Weil eben weil es so wichtig ist, dass man diese ganzen Grundlagen erstmal beibringt und dass man sich auch über bestimmte Dinge bewusst ist, dass es das überhaupt gibt. Also zum Beispiel das Thema Datenschutz ist natürlich ein total trockenes und langweiliges Thema für jeden, der irgendwie programmieren lernen will. Das verstehe ich auch und ich finde das Thema auch langweilig. Es ist halt wirklich ein wichtiges Thema und es muss eigentlich jeder Programmierer muss immer dieses Datenschutzthema und auch das IT-Sicherheitsthema, das muss der immer irgendwie im Hinterkopf haben. Und deswegen finde ich es schon richtig, dass man sich auch mal ein paar Stunden mit dem Thema, mit diesen Themen beschäftigt. Und da gibt es halt eine ganze Reihe von diesen grundlegenden Sachen, Und ich denke, in den zwei oder drei Jahren, je nachdem, ob jemand eben verkürztes Ausbildung macht oder nicht, ist es einfach nicht drin, das auch noch unterzubringen, dass man jetzt sagt, okay, dann macht man jetzt, bildet man jetzt quasi zum Meister, in Anführungszeichen aus, also zum Craftman, der jetzt... Das ist ja legitim, das dann wirklich vertiefend hinten dran zu setzen, aber den Leuten zu sagen, hey, da gibt's was.
+
+
+Und wenn ihr Programmieren gelernt habt, dann könnt ihr quasi so, das ist wie beim Krate, dann die nächste Farbe erreichen, so sieht die aus. Also ich meine, zumindest haben wir Dimitri mal gefragt, ob er den Begriff Software-Craftsmanship schon mal gehört hat, oder ob er damit was anfangen kann.
+
+
+Oh, ich weiß es im Echtzeit nicht. Software-Craftsmanship sagt mir im Echtzeit relativ wenig. Ich habe da irgendwie einen Ventiler mit Schüssel in der Hand.
+
+
+Reicht doch als Antwort.
+
+
+Ja, und dann haben wir noch hinterher gefragt, ob er mit dem Begriff History & Development was anfangen kann.
+
+
+Ich habe von einem Arbeitskollegen von uns, Bodo, der hat ja mal eine Open Bar Session dazu gemacht. Teamkollegen, JP zum Beispiel, der hat das auch damals ein bisschen, wollte in die Richtung gehen. Ich glaube, ich habe auch dann eine Zeit lang mit Cypress erstmal meine Tests geschrieben und dann hast du das Ganze programmiert. Aber das Ganze hat dann so gesehen keinen Fuß gefasst. Das lag allerdings, glaube ich, auch allgemein an unserer Teamlage.
+
+
+Ja, also dürftig. Ja, speziell zu dem letzten Thema, was er angeschnitten hat, Test Driven Development, muss ich sagen, das ist natürlich ein Thema, wo auch ausgebildete Fachinformatiker, die schon viele Jahre im Beruf sind, an dem Thema, sag ich mal, zumindest, ja, ich will jetzt nicht sagen straucheln, aber doch sich herausgefordert fühlen. Es hat einfach eine sehr steile Lernkurve tatsächlich und es dauert eine Weile, bis man das irgendwie, bis man versteht, wie das, was das Konzept ist und bis man auch komfortabel ist und dann diese Art zu denken irgendwie eingenommen hat. Wobei es gibt auch Leute, die sagen, also einer der Autoren und großen Verfechter von dem Thema Test Driven Development, der hat auch eine Tochter und er hat erzählt oder hat geschrieben, dass er seiner Tochter das Programmieren von vornherein Test Driven beigebracht hat oder versucht hat beizubringen.
+
+
+Auch jetzt gerade hier noch reinwerfen, weil das wäre ja eigentlich, also A, vielleicht ganz kurz der Disclaimer, wir müssen dann mal irgendwann noch klären, ob Test-Studio-Development überhaupt in dem Bereich zählt, so das steht mir noch aus, aber gehen wir jetzt mal für den Moment davon aus. Es wäre doch geil, das den Leuten von vornherein richtig beizubringen oder zumindest schon mal mit anzulegen.
+
+
+Definitiv mal eine interessante didaktische Frage, ob es quasi möglich ist überhaupt und ich denke wahrscheinlich ja. Und was es dann eben für Folgen und für Vorteile hat, wenn man jemandem das Programmieren von vornherein so beibringt, wie man eben Test-Driven arbeitet, dass man wirklich zuerst den Test schreibt.
+
+
+Aber jetzt mal sicherheitshalber gefragt, das Thema Software-Tests ist schon relevant in der Ausbildung.
+
+
+Das Thema Software-Tests an sich oder das Thema noch allgemeiner, das geht dann unter dem Begriff Qualitätsmanagement und darunter wiederum fällt dann das Testen von Software und welche Testverfahren es gibt. Das ist natürlich schon Teil der Ausbildung, aber eben auch jetzt kein sehr großer Teil, sondern es ist halt einer von zehn anderen Gesichtspunkten, die man halt irgendwie auch beigebracht kriegt am Rande, dass es sowas gibt. Also da erfährt man vielleicht noch, was ein White-Box- und ein Black-Box-Test ist und was der Unterschied zwischen einem statischen und einem dynamischen Testverfahren ist, aber viel mehr ist es dann auch nicht.
+
+
+Die Fragen waren vor 20 Jahren in meiner Prüfung tatsächlich relevant, kann ich mich erinnern.
+
+
+Ich konnte sie nicht beantworten. Aber da muss man einfach auch noch mal betrachten, wie wenig Zeit man quasi für die Ausbildung hat. Wenn man sagt, drei Jahre, wenn man verkürzt, zweieinhalb oder zwei Jahre vielleicht sogar, bei manchen, die Abitur gemacht haben, glaube ich, kann man auch zwei Jahre verkürzen sogar eventuell.
+
+
+Zweieinhalb ist das, was die meisten glauben. Genau.
+
+
+Das ist natürlich relativ viel Stoff, der in kurze Zeit reingepresst wird und der dann auch unter Umständen komplett abgefragt wird in den Prüfungen und dann Klar kann man nicht alle Themen vertieft sprechen und was ich damals auch noch so fand und nach der Ausbildung fand ich mich relativ gerüstet dafür mehr zu lernen und weiter weiter meinen Beruf zu vertiefen. und hatte da auch die Gelegenheit dazu und war halt wirklich ja dann eigentlich ein Jahr lang in der Firma, wo ich dann war. Das erste Jahr habe ich Java gelernt komplett, eine andere Programmiersprache, als ich eine Ausbildung hatte und bin da vom Greenhorn zum Programmierer geworden letztlich. Und das war wirklich so, dieses eine Jahr, muss ich sagen, nach der Ausbildung war auch noch mal so, gut, ich habe die Firma gewechselt, aber war auch noch mal wirklich so vertiefend für mich, wo ich gesagt habe, ich habe jetzt eigentlich fast mehr gelernt, als ich in der Ausbildung gelernt habe.
+
+
+Aber da geht ja das Lernen dann nochmal los. Wir müssen jetzt auch, glaube ich, ein bisschen aufpassen, dass wir nicht unsere ganzen Wünsche und Erwartungen da jetzt so in eine berufliche Ausbildung interpretieren. Und dass wir sagen, okay, das müssten die aber alles. Das ist schon richtig, das Gutes einzuordnen. Und ja, wir haben auch Alexo gefragt, was er denn so Nützliches gelernt hat in seiner Ausbildung.
+
+
+Das ist ein bisschen schwer zu sagen. In einer Hinsicht gab es im Prüfungsstoff einen ganz interessanten Bereich. Da ging es grob in das Thema SQL. Da wurde auch tief reingegangen. Da sehe ich vielleicht einen Punkt, das könnte ich bei uns im Team noch verwenden oder zum Einsatz kommen. Allerdings die ganzen normalen Programmierstrukturen wie Java oder JavaScript, was da in den Prüfungsstoff drankam, das sehe ich eigentlich nicht so von Nutzen für meinen täglichen Arbeitsbereich. Das, was ich wirklich interessant fand, ist, dass auch XML in der Prüfung drankam und darum dreht sich ja quasi mein permanenter Arbeitsablauf XML all over the place.
+
+
+Also zeigt natürlich auch, es ist ein vielfältiger Beruf und je nachdem, welchen Aspekt man in seinem Berufsumfeld dann im Betrieb auch besetzt, trifft natürlich auf dich nur ein Teil davon auch zu. Aber schon schön, dass er zwei Beispiele findet, wo er sagt, ah ja, okay, das hat gesessen und gepasst. Und bei der Sprache hätte ich ihm jetzt noch entgegnet, das haben wir auch in der ersten Staffel, in der Folge über Ausbildung. mal kurz angerissen, dass Programmieren lernen ganz viel gemein hat mit Sprachenlernen. Also, dass wenn du, wenn du einmal eine Sprache gelernt hast, tust du dich leichter mit einer neuen Sprache. Und genau das gilt auch für Programmiersprachen so. Also ich habe in der Berufsschule C plus.
+
+
+Noch dazu kommt, dass es ja viele Programmiersprachen gibt, die sehr, sehr ähnlich auch noch untereinander sind. Das ist ja fast schon wie, Ich könnte mir vergleichen, wie Dialekte in einer bestimmten Sprache, zum Beispiel in Deutsch, wenn man irgendwie bayerisch und wie, keine Ahnung, oberpfälzisch oder so. Und so gibt's halt C++ und Java zum Beispiel sind ja auch sehr ähnlich.
+
+
+Ich hätte jetzt fast ein Plus unterschlagen, ja. Ich musste jetzt nur kurz mich selber überlegen, ob da noch ein Plus hinkommt oder nicht.
+
+
+Wobei man da als Besonderheit noch sagen müsste, Pokémissprachen, also zumindest die aktuell genutzt werden, die leben auch noch, die sind lebendig, die verändern sich. Ach gut, so die Sprache endet sich auch.
+
+
+Geht für Sprache auch. Genau. In einem Gespräch mit einem haben wir neulich die These aufgestellt und da halte ich auch fest, es ist leichter eine Programmiersprache zu lernen als eine richtige Sprache, weil es von der Art und Weise her, du hast Grammatik, du hast Vokabeln, also es ist vieles ähnlich, aber es folgt sehr viel strengeren Regeln.
+
+
+Es sind ja viel weniger Vokabeln, also ich meine, ich würde mal sagen, Java, wie viele Vokabeln in dem Sinne gibt es da? Schlüsselwörter, das ist irgendwie eine Handvoll, das sind 20 Schlüsselwörter.
+
+
+Aber so Bibliotheken, wie du die dann verwendest und so, das kann man da schon mit reinzählen, würde ich sagen.
+
+
+Gut, wenn du die ganzen Bibliotheken und so dazu zählst, das stimmt.
+
+
+Da wiederholen sich ja dann schon Dinge. Also die Syntax und die Grammatik und die Vokabeln, das hat viel miteinander gemeint, mehr als man denkt. Das wird immer so in die mathematische Richtung geschoben. Und da ist es eigentlich gar nicht so. Also oft hat es was mit Logik zu tun, ja. Und manchmal hast du auch was mit Zerlegen von Problemen. Tust du dich leichter, wenn du es mathematisch zerlegst?
+
+
+Ich habe neulich mich mit jemandem unterhalten und da habe ich zu ihm gesagt, eigentlich glaube ich inzwischen, dass Programmieren Lernen und das Lernen von beispielsweise Rechtswissenschaften ähnlicher sind als Programmieren und Mathematik.
+
+
+Kann sein. Würde ich unterschreiben.
+
+
+Kann sein.
+
+
+Steine These. Also unterschreibe ich deshalb, weil ich sage, ich war in Mathematik nie so in der Mega-Crack, aber kann, meine ich zumindest, ganz gut programmieren. Und deswegen unterschreibe ich das komplett.
+
+
+Wir haben auch noch Dimitri gefragt, ob er sich gut auf das Berufsleben vorbereitet fühlt. Der war ja auch jetzt nicht komplett zumindest in der Berufsschule.
+
+
+Oh ja, sowas von. Ich bin ja dadurch, dass ich in die Berufsschule gehe, habe ich ja an sich mehr Zeit insgesamt, die ich mit dem Team und die ich halt im echten Arbeitsleben verbringe. Klar, ich habe meine acht bis zwölf Stunden pro Sprint, die ich dann mit Berufsschule oder halt eigenen Themen, wo ich mich weiterbilden möchte, verbringe. Allerdings ist die restliche Zeit halt vor allem mit dem Team arbeiten, an Storys arbeiten, wirklich an Anwendungen und in Kundenterminen dasitzen und halt wirklich... Es ist quasi Arbeiten mit zusätzlich halt die zwölf Stunden Ausbildungszeit.
+
+
+Also die Praxiserfahrung hat dich sehr gut gerüstet, muss man sagen. Ja, auf jeden Fall.
+
+
+Das ist... Das habe ich so auch noch nicht bei irgendwelchen Freunden oder Klassenkameraden bekommen, dass die da so involviert werden.
+
+
+Also er hat es jetzt ein bisschen komisch formuliert, aber es war jetzt ein Plädoyer dafür quasi, dass er sich die Zeit in der Berufsschule spart oder gespart hat. Und für ihn war es genau das Richtige, mehr Zeit im Betrieb zu verbringen und aber sich die Zeit trotzdem als Lernzeit quasi zu flocken, zu reservieren und aber sehr, sehr nahe an den Kollegen zu bleiben, an den praktischen Projekten, an den Kundenprojekten. Also das würde er ja
+
+
+Genau, und vielleicht sollte man das ein bisschen präzisieren. Ich glaube, an der Stelle, wo er gesagt hat, er lernt für die Berufsschule, was er eigentlich gemeint hat in Wirklichkeit ist, er lernt für die IHK-Prüfung, was ein Unterschied ist, weil die Berufsschule macht ja nicht die Abschlussprüfung, sondern die Industrie- und Handelskammer macht die Abschlussprüfung und auf die lernt er.
+
+
+Ja, und das hat er mit Sicherheit gemeint.
+
+
+Ja, das ist auch so ein beliebter Quell der Diskussion, kann ich mich erinnern, noch beim Abitur. Ich meine, du lernst in deiner Schule und die bereiten dich aufs Abitur vor, aber die Prüfung kommt ja auch vom Kultusministerium und kann unter Umständen Themengebiete umfassen, die du so in der Tiefe überhaupt nicht gesehen hast. Genau. Wir müssen ein bisschen auf die Zeit schauen, wir sind schon sehr tief eingetaucht. Im Sinne einer gesunden Fehlerkultur vielleicht die Frage, was könnte man denn besser machen? Ich habe jetzt schon mitgenommen, die neue Prüfungsordnung, der neue Lehrplan, das macht es schon besser, das ist schon ein Schritt. in die richtige Richtung. Da sind moderne Themen sogar schon mit reingewandert, wie KIs.
+
+
+Ja, zum Beispiel der Begriff Scrum, also eben Prozessmanagementmodelle, die man in der Softwareentwicklung verwendet. Also Scrum und Kanban sind tatsächlich zumindest genannt. Also ich sage jetzt nicht, dass man das intensiv da lernt, aber man hat es zumindest dann schon mal gehört. Es sind auch ein paar Themen drin, die mit künstlicher Intelligenz im weitesten Sinne zu tun haben, natürlich auch nur sehr oberflächlich, aber ja, also es sind schon, es ist aktualisiert worden, das merkt man deutlich am Lehrplan.
+
+
+Mir ist noch Dr. Julia Freudenberg im Ohr, die gesagt hat, man setzt da einen disruptiven Impuls. Also es geht darum, quasi den Leuten was zu zeigen und ein Feuer zu entfachen. Vielleicht müssen wir das einfach auch unter der, unter dem Gesichtspunkt sehen. Mal schauen, was Alex so findet, dass man vielleicht in Zukunft besser machen könnte in so einer Ausbildung oder was ihm persönlich vielleicht gefehlt hat.
+
+
+Was ich vielleicht wichtig fände, was in der Abschlussprüfung noch drankommen könnte, wäre, häufig hat man den Fall, dass man in der Softwareentwicklung einfach mal frühmorgens aufsteht und dann hat man einen Bug auf dem Tisch liegen und dann muss man erstmal eine Fehlersuche betreiben. Und dieser Aspekt der Fehlersuche, der hat mir ein bisschen in der Abschlussprüfung gefehlt, also dass da wirklich Aufgabenbereiche gestellt werden, wo da jetzt, sag ich mal, Quellcode vorliegt. Und man da wirklich Mängel aufweisen muss und auch die Fehler suchen muss, weil das ist eigentlich auch ein Hauptaspekt der täglichen Arbeit.
+
+
+Wobei ich würde sogar sagen, dass ich zumindest in dem einen Vorbereitungsbuch, was eben für solche Azubis gedacht ist, in der Prüfungssimulation eine Aufgabe gesehen hätte, wo es genau darum geht, einen Fehler zu finden. Das heißt, da ist ein Stück Programmcode abgedruckt, der zwei Fehler enthält, und die soll man dann finden.
+
+
+Ja, aber das ist ja noch mal was anderes. Das ist so Code lesen auf Papier und dann irgendwie finden den Fehler. So ein bisschen wie Unterschiede suchen in solchen Bildern.
+
+
+Klar, ist es natürlich nochmal was anderes in einer komplexen Software, systematischen Fehler zu finden.
+
+
+Die debuggen und breakpoints setzen. Also ich interpretiere jetzt auch noch rein, dass gemeint war eventuell, dass man ja täglich Code Reviews macht. Also man ist ja täglich eigentlich dabei, auch Code von seinen Kollegen anzuschauen, in jetzt bei uns mit Git natürlich in Merge Requests und Code Reviews zu fahren, um den Code von Kollegen anzuschauen und auch auf Qualität abzuklopfen oder auch auf Fehler anzuschauen. Man selber ist manchmal so stoisch am Programmieren ... ... oder programmiert was runter ... ... und dann übersieht man halt Kleinigkeiten ... ... oder irgendwelche auch vielleicht größere Logiklücken ... ... oder sowas. Und die halt aber einem Kollegen sofort ins Auge springen ... ... oder eben in der Code Review halt auffallen. Und da sowas zum Beispiel, ... ... das wäre was, was ich tatsächlich vermisse, ... ... also dieses Code Review Verfahren, ... ... dass man halt einfach Code von Kollegen anschaut ... ... oder eben einfach mal auf Wähler hin. Wobei das war, glaube ich, mal ein objektorientierter Teil, ... ... hier tatsächlich sogar, wie du gesagt hast, ... ... war das drin, hab ich auch gesehen.
+
+
+Und mal so noch als These, also ich glaube, die Arbeitsweise bei, egal ob du jetzt Bugs suchst oder ob du irgendwie Performance optimierst oder ob du irgendwie deine Tests schreibst und da versuchst, irgendwie das auszureizen oder deinen Code ganz allgemein verbessern willst, die Arbeitsweise ist, glaube ich, relativ ähnlich. Und das so den Leuten vielleicht im Sinne der Craftsmanship schon mal einzutrichtern, okay, viel der Arbeit ist einfach, was du Zeug, das du schon mal geschrieben hast, noch mal anzufassen, was andere geschrieben haben, noch mal anzufassen und zu verstehen. Ja, kann man Ihnen glaube ich recht geben.
+
+
+Ja, wobei ich sagen würde, das ist ja genau eigentlich ein Aspekt, den man gerade im Betrieb in einem praktischen Szenario oder eben in der täglichen Arbeit viel leichter abbilden kann, als jetzt in einer Prüfungssituation das nachzubilden.
+
+
+Und er konnte es natürlich auch nur auf die Abschlussprüfung beziehen, weil er nach drei Monaten aus der Berufsschule heraus ist. Vielleicht wäre es daher auch lange ein Thema gewesen. Wir haben auch Florian gefragt, was ihm vielleicht fehlt.
+
+
+Git, allererstes und allergrößtes Beispiel. Du hast im ganzen Prüfungsstoff nicht ein Versionskontrollsystem. Das ist halt so ein Alltagsding für Softwareentwickler. Also klar, Sprache macht jeder Auszubildende vielleicht was anderes, also kannst du das nicht so einfach in Prüfungsstoff. Aber zumindest die Grundlagen, wie Git funktioniert, also die Konzepte dahinter, würden so vielen Leuten helfen, nicht nur Auszubildenden, weil es immer noch viele gibt, die halt drei Git-Kommandos kennen und damit kommen sie durch den Tag. Ist halt, wie du vorhin gesagt hast, es gibt viel mehr Sicherheit, wenn man sich halt auskennt.
+
+
+Hat er da einen Punkt?
+
+
+Definitiv. Also da, das würde ich hundertprozentig unterschreiben. Also das ist, um Git kommt, glaube ich, keins aus dem Entwickler rum. Und das ist wirklich ein Thema auch, also da gibt es manche, eine ganze Reihe von Aspekten eigentlich, Versionskontrolle, die nicht so trivial sind, auch von den Konzepten her, wie sowas eigentlich funktioniert und so. Und da spreche ich aus eigener Erfahrung. Also ich habe mich auch bestimmt jeden Monat mindestens einmal gewundert, warum Git was macht, wo ich nicht verstehe, warum das gerade jetzt so ist.
+
+
+Also unglaublich, dass das kein Thema ist. Das ist auch jetzt in dem Buch, was wir beide als Grundlage ein bisschen hatten hier für den heutigen Termin. Unglaublich, dass das kein Thema ist. Und auch Continuous Integration vermisse ich. Was ist eine Pipeline? Wie wird meine Software eigentlich dann in Umgebungen ausgeliefert oder sowas? Das ist halt auch kein... Stimmt, das kommt eigentlich auch nicht vorher. Also zumindest laut meiner Übersicht hier gerade.
+
+
+Das würde dir schon... Kein Thema sticht mir auch ins Auge. Das würde dir schon noch zu den Grundlagen zählen. Also nicht zu den weiterführenden Themen, die dann zum Meister quasi... Das ist ein Thema, was man mal angelegt haben sollte.
+
+
+Man muss das auch nicht in aller Tiefe, in aller Breite besprechen. Das lernt man dann im Betrieb, später dann auch noch nach der Ausbildung. Aber das ist zumindest mal sowas wie objektiv-orientierte Programmierung findet ja auch Anklang. Das hat sowas zumindest mal als Prinzip erklärt.
+
+
+Aber ich würde nochmal auf das GIT zurückkommen, weil das GIT bietet sich eigentlich an, in der Ausbildung zu machen oder auch in der Berufsschule abzufragen, weil da kann man auch ganz leicht nämlich Aufgaben konstruieren. Man kann ganz leicht eine Situation im Git konstruieren, die man dann irgendwie lösen muss oder wo man irgendwie, was weiß ich, einfach zwei Dateien, die unterschiedliche Änderungen haben, irgendwie zusammenführen muss. Also das ist fast ein Paradebeispiel für was, was man relativ leicht tatsächlich in so einer Prüfungssituation oder überhaupt eben in so einem kleinen Setup nachstellen kann. Was bei den bei den CI-Pipelines nicht so ohne weiteres. Also eine CI-Pipeline, da musst du schon ein bisschen mehr, da brauchst du eine ganze Menge von Infrastruktur, die du irgendwie haben musst, damit du das überhaupt dann irgendwie simulieren kannst.
+
+
+Abprüfen ist da schwierig, aber wahrscheinlich wird es auch in den Betrieben angesprochen bei den Azubis. Es ist halt nur nicht im IHK, aber die Abprüfung ist letztlich schon nicht schwierig.
+
+
+Man sollte sich ja dann super wieder mit den Kolleginnen und Kollegen vom Netzwerk zusammenschließen und da irgendwie große Aufbauten machen. Wir haben bei Florian nochmal nachgehakt. Er hat noch ein, zwei Aspekte, die er auch noch irgendwie gerne gesehen hätte.
+
+
+Für mich wären es noch zwei Dinge, nämlich Grundlagen Linux, weil gerade jetzt mit Docker Containern ist Linux halt überall. Da konntest du dich nicht mehr vor verstecken. Und ich weiß nicht, ob es dran kam, aber Ajax, also REST Requests und wie, dass man sich halbwegs vorstellen kann, dass da ein Frontend läuft, ein Browser und ein Backend läuft am Server. Weil sich das vorstellen zu können, ist extrem wichtig, egal woran du jetzt arbeitest. Ist aber vielleicht nicht für alle Programmierergruppen relevant, weil vielleicht macht dann jemand Desktop-Applications und da trifft es halt mal so überhaupt nicht zu. Aber hilfreich ist es.
+
+
+Also zu den Docker-Containern muss man sagen, dass das geht schon, glaube ich, prinzipiell auch komplett in dem Windows-Environment, aber ich gebe ihm trotzdem Recht.
+
+
+Ja, also du kannst unter Windows Docker-Container hochfahren, aber in dem Container drin ist meistens ein Linux. Daher Linux-Kenntnisse, ja, würde ich auch unterschreiben.
+
+
+Ja, und zu dem Thema Web-Apps und so, also Desktop-Apps, also die Frage, Desktop-Apps, gefühlt sehe ich keine neuen Desktop-Apps mehr irgendwie erscheinen.
+
+
+Es gibt noch Firmen, die haben die Fälle, aber ich genau, was ich gerade meinte, Thema moderne Architektur von modernen Web-Applikationen. Das ist halt überhaupt nicht Thema. Und das könnte, das ist auch ein Thema, was man abprüfen kann.
+
+
+Auch was er gesagt hat, diese REST-Kommunikation, AJAX REST, das ist definitiv meiner Meinung nach auch ein Thema, wo eigentlich fast jeder Programmierer früher oder später in Berührung kommt. Selbst wenn er eine Desktop-Applikation hat, ist es nicht selten, dass die dann ihrerseits... Wollte gerade sagen, oft ist das auch nötig.
+
+
+Ein Fenster, wo ein Browser irgendwo versteckt läuft und dann eigentlich genau das gleiche passiert im Hintergrund.
+
+
+REST-Datenstrukturen kommen ja vor und dann wäre sowas wie JSON zum Beispiel, würde sich auch anbieten, mit dem man meistens über REST kommuniziert. Also man muss nicht mit JSON kommunizieren über REST, aber genau. Das ist auch kein Thema.
+
+
+Tja, wie fassen wir das Thema jetzt zusammen? Was ist unser Urteil? Vielleicht brauchen wir auch gar noch kein Urteil. Vielleicht ist es einfach jetzt auch noch verfrüht und vielleicht müssen wir uns wirklich nächste Folge auch noch das Thema Studium genauer anschauen.
+
+
+Und da folgt ja dann in der nächsten Folge was Spannendes.
+
+
+Und der Aufruf steht, also auch dann gerne zu späterer Zeitpunkt nochmal da eine Berufsschulperspektive, also sei es Lehrer, sei es Inspektors, also irgendjemand, der da in dem Bereich Erfahrung hat, gerne mal Bescheid geben, gerne mal melden. Würde mich auch interessieren, ich würde hier niemanden irgendwie angreifen. Also ich glaube, wir haben versucht, das auch ein bisschen einzuordnen, aber gerne auch mal aus der Sicht. zur Schulperspektive das Thema beleuchten.
+
+
+Würde mich auch interessieren. Ich habe noch eine Sache, die wir noch nicht gesprochen haben. Ich meine, es ist jetzt zwar allgemein bekannt, dass es in Deutschland einen Fachkräftemangel gibt, aber vielleicht nochmal eine Zahl dazu. Also 65 Prozent aller Betriebe klagen über diesen Fachkräftemangel in der IT-Industrie. Also von allen Ausbildungsplätzen, die angeboten werden von Firmen, können 34 Prozent, also ein Drittel, gar nicht besetzt werden.
+
+
+Ich habe auch aus der ersten Staffel noch die Zahl, dass wenn du als Unternehmen im IT-Bereich heute eine Stelle ausschreibst, du ein halbes Jahr im Schnitt brauchst, um die zu besitzen. Was auch absurd ist.
+
+
+Und vielleicht noch ein kleiner Punkt, um vielleicht auch für die Ausbildung als Fachinformatiker zu werben. Die Abbrecherquote dort, da habe ich auch eine Zahl dazu, die ist tatsächlich relativ gering. Nämlich die liegt nur bei 14 Prozent bei den auszubildenden Fachinformatikern. Das ist jedenfalls eine Zahl, die ich gefunden habe. Im Gegensatz mal, extrem Vergleich, Ausbildung zum Koch, Abbrecherquote 50 Prozent. Wow.
+
+
+Zählen da jetzt unsere Beispiele auch rein, die ja die Schule abgebrochen haben, die Ausbildung aber abgeschlossen?
+
+
+Ja, also bei uns jetzt von denen, die bei uns im Haus Ausbildung angefangen haben, ich könnte glaube ich keinen einzigen nennen, der die Ausbildung auch abgebrochen hat.
+
+
+Ich kenne auch keinen, der die Ausbildung abgebrochen hat. Also persönlich kenne ich in meinem Umfeld.
+
+
+Und ich glaube, über die Jahre waren das bestimmt 20, 30 Leute, die ich irgendwie mit denen nicht zu tun hatte, die bei uns Ausbildung gemacht haben. Und da hat keine einzige die Ausbildung abgebrochen.
+
+
+Das war schon mal gut. Dann machen wir da mal vorsichtig den Deckel drauf für heute, würde ich sagen, ohne jetzt ein allzu großes Fazit irgendwie zu ziehen und schauen, dass wir da in der nächsten Folge nochmal anknüpfen. So, und dann können wir in die nächste Kategorie übergehen, unsere Software-Picks, das Software-Update-Update. Bodo hat vorhin noch ganz hektisch irgendwas auf seinen Zettel geschrieben, jetzt bin ich gespannt, was er mitgebracht hat.
+
+
+Naja, ich wollte jetzt nicht schon wieder Bing und Chat-GPT sagen, was ich glaube das letzte Mal schon gesagt habe, was ich tatsächlich auch nach wie vor noch sehr intensiv benutze und auch jetzt gerade den Vergleich zwischen Bing, was ja auch diesen JetGPT eingebaut hat und das eigentliche JetGPT, wo ich auch schon seit einiger Zeit eine Profilizenz habe und wirklich das auch intensiv benutze. Der Vergleich ist interessant. JetGPT ist zum Teil viel ausführlicher. Aber Bing ist manchmal schneller und ein bisschen prägnanter. Also ich benutze eigentlich beides parallel inzwischen. Je nachdem, was ich für eine Fragestellung habe. Nämlich entweder das eine oder das andere. Ist auch ganz interessant eigentlich, wie sich das so entwickelt hat.
+
+
+Es gibt ja auch so Browser-Plugins, die dir dann auf den Suchseiten ein Chat-GPT-Fenster mitreiben. Also fast so, wie wenn du das New Bing benutzt. Und dann kannst du ja vielleicht dann, wenn du gerade das andere benutzt, so beide gleichzeitig benutzen.
+
+
+Ja, weiß ich jetzt nicht, ob das dann zielführend wäre. Jedenfalls meine andere Tool-Empfehlung, oder die ich halt jetzt viel benutze in letzter Zeit vor allem, sind diese Browser-Tab-Gruppen. Gibt's jetzt ja schon auch seit einiger Zeit. Aber ich weiß nicht, ob es alle Leute schon benutzen. Aber ich mache das zurzeit ganz extrem. Also in meinem Browser habe ich irgendwie zehn Tab-Gruppen und die sind genau markiert mit Farben und so weiter. Und dann kann ich dann die auf- und zuklappen. Also das finde ich super praktisch, Tab-Gruppen. Hätte ich schon vor 20 Jahren gebraucht eigentlich.
+
+
+Ich bin auch ein großer Fan davon und benutze es dann immer genau zwei Tage lang und dann vergesse ich, was in diesen ganzen Tab-Gruppen irgendwie drin war und es ist dann auch wurscht und irgendwann stürzt der Browser ab und es ist sowieso alles weg. Und dann fange ich wieder von vorne an.
+
+
+Gab's mal die Frage in einem anderen Podcast, wie viele geöffnete Tabs hast du momentan auf deinem Handy? 99 plus steht da immer bei mir.
+
+
+Ja, bei mir wahrscheinlich auch so. Auf dem Handy habe ich auch irgendwie 500 geöffnete Tabs, aber auf meinem Rechner. Und ich meine, diese Tab-Gruppen, stellen sich ja auch wieder her, wenn du denn, wenn der Browser abstürzt.
+
+
+Ganz gut, ja. Und wie viele Fenster ist da noch die, die Anschlussfrage?
+
+
+Also ich würde sagen pro Tab-Gruppe vielleicht zehn Fenster. Nee, ich meine, also quasi sehr übergeordnet. Achso, nee, ich mache Arbeit nur mit einem Fenster.
+
+
+Also mehrere Tab-Gruppen in mehreren Fenstern.
+
+
+Okay, du gewinnst. Ich habe einen Browser für Privat und einen Browser für Beruf und einen Browser, wo ich Bing mit aufrufe.
+
+
+Und Privat und Beruf sind unterschiedliche Browser oder der gleiche Browser nur mit unterschiedlichen Prozessen?
+
+
+Ne, Privat ist Safari und Beruflich ist Chrome.
+
+
+Ich verstehe. Boah, das schließt meinen Software-Pick voll gut an. Also hopp. Ich habe den Tor-Browser, den würde ich gerne empfehlen. Das ist ein uraltes Projekt, torproject.org. Wenn man sich anonym im Internet bewegen möchte und Also wirklich anonym, da kommt man ja über irgendwelchen Proxys raus und ist dann eigentlich ganz woanders und surft halt anonym. Und das ist gerade, ich finde auch in der heutigen Zeit, wenn man in Staaten unterwegs ist, also meine Mama ist jetzt mal in Ägypten im Urlaub und da ist auch ein bisschen schwierig mit OSTP-Kommunikation, die sperren glaube ich Skype und sowas zum Beispiel aus, haben es zumindest früher ausgesperrt. Lässt sich dann aber mit meinen Tools umgehen, unter anderem auch mit sowas wie dem Top Browser.
+
+
+Und es braucht noch nicht mal unbedingt den Tor-Browser dafür. Es gibt auch in Brave, was ja auch ein Chrome ist im Grunde, gibt es auch eingebaute Tor-Technik. Also du kannst quasi ein neues Fenster mit Tor öffnen, was ganz geil ist. Das war jetzt aber nicht mein Pick. Mein Pick ist tatsächlich auch wieder im Hintergrund, auch wenn es nicht so aussieht, aber es ist wieder OpenAI im Hintergrund. Ich habe ein neues Desktop-Programm für mich entdeckt, Mac Whisper heißt es. Also Whisper kannte ich schon, das ist quasi auf der Kommandozeile kannst du Transkriptionen machen von Audio und Video auf Basis von, ich weiß gar nicht, was für eine Ausprägung der KI drin steckt, aber der Gag ist, es ist auf jeden Fall lokal auf deinem Rechner. Du nutzt die Power of Chat-GPT mehr oder weniger, aber auf deinem Rechner, um Transkriptionen zu erstellen und das geht richtig, richtig gut. Also je nach Modell, die du darunter lädst. Und da gibt es jetzt ein schönes Frontend für, das nennt sich Mac Whisper, also wie Flüstern. Und das ist ein saukooler Entwickler, der ganz viele Projekte hat, auch im KI-Bereich. Und da gibt es eine freie Version, die kann man wunderbar benutzen, wenn man aber exklusivere oder Exotischere Exportformate haben wir zum Beispiel, dann zahlt man einmalig 17 Dollar, was super fair ist. Und ich bin ein großer Fan von diesem Projekt, weil ich gerade für den Podcast jetzt mit den Interviews, ich hab die da reingeworfen, dann hab ich den Text da stehen, hab mir das irgendwie grob als Text mal irgendwie rausgeguckt, was ich verwenden will. Da sind Transkripte einfach geil und das hat jahrelang, war das immer schwierig und du musstest online irgendwie Zeug hochladen und dann wieder runterladen und das war alles ein Schmerz. Und mit Mac Whisper ist das irgendwie kein großer Schmerz mehr.
+
+
+Bin ich großer Fan. Aber sag mal, kann man da jetzt auch schon dann in dem Text editieren und es editiert sich automatisch der Audio-Teil mit? Weil das wäre ja noch das ultimative Feature, was ich mir wünschen würde.
+
+
+Das gibt es tatsächlich. Ich habe heute auch nochmal ein anderes Tool benutzt, weil du kennst auch, es gibt so Editoren, wo du zumindest schneiden kannst auf diese Weise, wo du den Text hast und dann kannst du aus dem Text einen Satz löschen und es schneidet automatisch das Audio. Das will ich haben. Das habe ich noch nicht benutzt. Gibt's Descript glaube ich eine, die machen das glaube ich, bin mir jetzt nicht ganz sicher, aber eine Ex-Kollegin von uns ist bei einem Unternehmen untergekommen, die auch so eine Software vertreiben und da geht es auf jeden Fall. Kann ich dir dann nochmal raussuchen, habe ich jetzt den Namen, Ghost Beach glaube ich war das. Jetzt habe ich kurz den Faden verloren. Was würde ich jetzt sagen? Was aber zumindest ganz geil ist und eines der möglichen Exportformate bei Mac, Wispa auch, ist, du kannst ein HTML rauslassen, wo dein Transkript drin ist und wo du klicken kannst an die Stellen. Und dann spielt dazu passendes Audio ab. Das ist auch schon mal sehr, sehr cool. Und das einfach in so einem Standardformat, HTML, also nicht irgendwie ein ganz komisches, proprietäres irgendwas, sondern das ist ein HTML. Kannst du zusammen einen Ordner zusammen verschicken und auf einem anderen Rechner genauso verwenden. Das ist wirklich ganz cool, um das auch rauszugeben. Klingt cool, ja. Yo, dann hätte ich jetzt hier noch auf dem Zettel stehen Ausblick, aber den haben wir jetzt glaube ich schon gegeben. Ich glaube, wir können jetzt einfach direkt hier das Outro einspielen und außer ihr habt noch was auf dem Herzen? Zahn? Ich bin Jürgen Kraus, wir sind Branded und das ist Schwarz Coat Gold.
+
+
+Untertitel im Auftrag des ZDF für funk, 2017
+
+
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer, hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht. Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir. Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded.

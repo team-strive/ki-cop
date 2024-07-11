@@ -1,0 +1,502 @@
+Hallo da draußen. Schön, dass wir uns mal wieder hören. Es war schon viel zu ruhig auf diesem Kanal hier. Das muss ich leider zugeben. Wir haben eine Pause gemacht. Wir haben die erste Staffel beendet. Wir haben aber die ganze Zeit uns Gedanken gemacht, wie wir dieses Format bald mal fortsetzen können. Und die gute Nachricht ist, wir werden auf jeden Fall mit Schwarz-Rot-Gold eine zweite Staffel anfangen. Wahrscheinlich im März. Also es wird auf jeden Fall neuer Inhalt kommen. Wir werden mehr wirklich Entwicklerkolleginnen und Kollegen hören. Wir werden mehr Dialog haben. Wir werden mehr diskutieren. Es wird jetzt nicht so ein durchproduziertes Format, wie es vorher war, sondern ich habe mir wirklich dann einen Haufen Leute geschnappt, die ich da noch, oder viele wissen davon noch gar nichts, aber ich werde mir noch einen Haufen Leute schnappen, die mir dann auch wirklich zu den Entwicklerthemen Rede und Antwort stehen werden. Damit es bis dahin nicht ganz so langweilig wird, haben wir beschlossen, eine Bonus-Episode aufzunehmen heute. Hauptsächlich, weil das Thema gerade so präsent ist. Wir wollen heute noch mal über künstliche Intelligenz sprechen. Einfach, weil es ein Thema ist, das die Menschen gerade ziemlich bewegt, habe ich das Gefühl. Weil wir nächsten Monat eine interne Entwickler-Convention haben werden, die auch unter diesem Thema stehen wird. Auch meine Kolleginnen und Kollegen beschäftigen sich viel mit dem Thema. Und ich glaube, wir hatten schon eine Folge in diesem Podcast viel dazu. Seitdem hat sich die Welt aber noch mal gewaltig weiter gedreht. Also da ist ganz schön viel passiert. Ich habe eine Verstärkung geholt. Ich habe hier meine beiden Kollegen Bodo und Frederik. Hallo ihr beiden. Hallo. Hallo. Die Stimmen hat man vielleicht in dem Podcast schon mal gehört. Aber wir werden dann in der nächsten richtigen Episode mal ausführlicher darauf eingehen, wo ihr herkommt, was ihr so macht, was eure Spezialgebiete sind. Heute habe ich beschlossen, springen wir einfach mal so direkt ins Thema. Und das soll KI sein. Es gibt ja so die einen, die sagen, KI, das kann es überhaupt nicht geben. Das kann überhaupt nicht funktionieren. Also Intelligenz kann man nicht in der Form künstlich nachbauen. Und dann gibt es die anderen, die sagen, KI ist eigentlich die Nachahmung menschlicher Intelligenz. Also KI muss nichts weiteres tun, als zu aussehen, als wäre es menschliche Intelligenz. Und genau bei dieser Definition würde ich mit ChatGBT andocken und sagen, Was diese Definition angeht, hat Chez Ghibli gerade eigentlich alles gelöst, oder?
+
+
+Wie seht ihr das? Ja, also ich würde sagen, auf jeden Fall kann man davon ausgehen, dass der Turing-Test bestanden werden kann oder könnte, wenn man ihn denn durchführen würde. mit chat gpt also auf jeden fall ich fühle mich jedenfalls stark bestätigt weil ich habe das schon vor zehn jahren gesagt dass das früher oder später kommen wird und jetzt ist es da.
+
+
+Genau also hätte ich hätte ich vor einem jahr oder von einem halben jahr die frage beantworten müssen hätte ich auch gesagt so ja gibt es ja gar nicht oder kann es gar nicht geben weil, ... diverse Gründe und ... ... da sah das alles noch so aus, ... ... sah so abstrakt aus und ... ... mit der GPT aber hat sich auch meine Meinung ... ... tatsächlich wirklich sehr gewandelt. Also ich muss schon sagen, ... ... mit dem Sprachmodell, ... ... was das beantwortet auf Anfragen, ... ... ist schon beeindruckender.
+
+
+Also für mich ist es vor allem dieser Punkt des Nachahmens. Ich habe mich ja früher auch nicht so in der Tiefe mit der Definition auseinandergesetzt, aber als ich da gelesen habe, es geht eigentlich nur darum, so auszusehen, als wäre es Intelligenz. Und ich finde, es vergeht kaum ein Tag, an dem ich nicht staune, was dieses Ding an Output produziert. Ja, das stimmt. Ich merke, wie ich innerlich aufleuchte, wenn ich nur darüber rede, weil ich es gar nicht in Worte fassen kann, wie mich das begeistert, was da gerade passiert. Ich fand die Vergleich von Sascha Lobow so treffend. Ich meine, von ihm kann man halten, was man will. Aber er hat gesagt, das, was wir hier gerade beobachten, ist wie die ersten Menschen, die die ersten Autos gesehen haben. Die stehen da und können das überhaupt nicht einordnen, wissen nicht, was das passiert. Da fahren ein paar Leute extravagant mit ihren Autos rum, mit ganz wenig KMH und es wirkt noch sehr exzentrisch. Aber wir wissen ja alle, was dann passiert ist so in den folgenden Jahrzehnten und Jahrhunderten.
+
+
+Ja, also die Metapher finde ich tatsächlich auch sehr, sehr einleuchtend, sehr gut. Wo ich die zum ersten Mal gehört habe, tatsächlich von dir habe ich sie gehört, ich habe es von Sacha Lobo original nicht gelesen. Aber die finde ich sehr, sehr passend, sehr zutreffend auf das ganze Thema momentan. Wie schnell sich jetzt das auch momentan bewegt, das Thema.
+
+
+Was hattet ihr denn für Berührungspunkte mit KI schon? Vielleicht gerne auch mal vor ChatGPT und jetzt dann aber auch vielleicht seitdem. Bodo, vielleicht mal du zuerst.
+
+
+Also ich muss sagen, ich habe schon während meiner Studienzeit, das war in den Ende 80er, Anfang 90er Jahren, da gab es schon auch so Ideen, eben so mit neuronalen Netzen irgendwie Dinge zu bauen und Versuche zu machen. Und es hat damals irgendwie ziemlich schlecht funktioniert. Also ein paar einfache Probleme konnte man damit lösen und es hat mich auch interessiert eigentlich, aber ja damals war einfach die Rechenleistung viel zu gering und was man natürlich damals nicht absehen konnte ist, was man jetzt an JetGPT tatsächlich sieht ist, Offensichtlich ist es eben, man braucht eine gewisse Größe oder eine gewisse Größe der neuronalen Netze und eine gewisse Rechenleistung, damit das ganze Konzept überhaupt funktioniert. Und da sind wir halt jetzt, naja, seit knapp zehn Jahren, glaube ich, sind wir jetzt da eigentlich angekommen. Und das beschleunigt sich immer mehr.
+
+
+Ich würde sogar noch ergänzen, vielleicht auch Rechenleistung und Daten.
+
+
+Ja, genau, richtig. Der zweite wichtige Punkt natürlich für JetGPT, aber auch für diese BILD, Generierungsalgorithmen, die man jetzt so findet, ist natürlich die Datenlage. Und es nie gab so viele Daten verschriftlicht von der Menschheit insgesamt wie heute.
+
+
+Schmeiße ich gerade mal noch rein, bevor Frederik auch noch die Frage beantworten darf. Chatchpiti wurde trainiert mit 570 Gigabyte an Textdaten. Also das ist 165.000 mal Herr der Ringe inklusive der Hobbit. So rein, dass man sich das mal grob vorstellen kann. Man kann es sich ja trotzdem nicht. Aber von der Menge her. Und das Modell zu trainieren hat 34 Tage gedauert. Mit diesen Daten. Was schon sportlich ist.
+
+
+Was schon sportlich ist, ja. Aber Rechenleistung, es ist nicht mehr Jahre. Ja und man muss sagen, 34 Tage und ich glaube irgendwie 250.000 Prozessoren oder irgendwie sowas Verrücktes. Also parallel, ja.
+
+
+Genau. Aber das ist möglich heute. Also es ist immer noch Kompliziert und aufwendig, aber es ist möglich. Aber Frederik, wie war es bei dir? Wann hast du das erste Mal bewusst mit KI getrunken?
+
+
+Also mit KI bewusst gearbeitet, weil ich war ja tatsächlich so ein Ketzer, also ich muss schon sagen. Also wirklich einer, der gesagt hat, also selbst als Programmierer, der seit jetzt 15 Jahren selber programmiert, habe ich gesagt, das kann nicht möglich sein, dass man so ein, also so einfache Sprachroboter und sowas gab es ja schon immer mal, also dass man so einfache, ... so Chatbots in irgendwelchen Hotlines hat oder so, ... ... wo die dann irgendwie so auf so Textbausteine ... ... mit Textbausteinen antworten und sowas. Aber dass das Ding jetzt dann wirklich Antworten formuliert und bei der nächsten Frage, die man vielleicht ähnlich gestellt hat, dann völlig anders antwortet und sowas, das gab es vorher so in der Form vielleicht schon mal, aber ich habe es quasi nicht dazu gesehen.
+
+
+Nicht wirklich, aber ich denke, der Punkt ist ja, dass selbst heute und selbst die Leute, die an diesen Modellen arbeiten, ja nicht genau erklären können, was da innen drin wirklich passiert und warum das so passiert. sondern es ist ja so eine inkrementelle Entwicklung, so wie vieles natürlich im Ingenieurwesen. Man hat halt irgendwie bestimmte Strukturen von neuronalen Netzen gefunden, die, wenn man sie richtig zusammen koppelt und mit den richtigen Daten füttert, dann sowas rauskommt. Aber was da innen drin passiert, Das weiß ja keiner so genau eigentlich.
+
+
+Da muss ich mal lobend erwähnen an der Stelle, das Zukunftsmuseum in Nürnberg hat ein sehr anschauliches Exponat, das ganz grob das Prinzip von einem neuronalen Netz veranschaulicht. Also ich möchte jetzt nicht behaupten, dass ich es verstanden habe, aber es hat es zumindest mal für mich begreifbar gemacht, für mich als Laien.
+
+
+Man kann ja auch tatsächlich ein neuronales Netz, was aus zehn Neuronen besteht und zwei Ausgängen besteht, das kann man ja auch auf Blatt und Papier nachrechnen und das kann man auch verstehen. Das ist nicht schwer. Das Erstaunliche ist nur, dass wenn man das sozusagen millionenfach kopiert, dass dann plötzlich sowas Mächtiges rauskommt. Das ist eigentlich das, was ich immer noch verblüffend finde, obwohl ich ja schon lange gedacht habe, dass das geht. Letzten Endes, das menschliche Gehirn ist ja auch nichts anderes.
+
+
+Das ist ja das Entscheidende. Also was man früher schon gemacht hat und was ich vor 15 Jahren, wo ich angefangen habe mit Programmieren, dann auch schon gemacht habe, war, dass man sich irgendwann einen Code schreibt, der selber mehr Code schreibt zum Beispiel. Also so Reflection-Klassen erzeugen, ganz simpel jetzt gesprochen. Also von einer Datenbank hat man irgendwie Tabellen erzeugt und braucht dann aber Objekte in einem Programm. Dann schreibt man die nicht jedes Mal selber, sondern baut sich irgendwann einen Code, der aus den Tabellen den Code für einen schreibt. Und wenn man das ganz runtergedummt betrachtet, ... ... ist das vielleicht sogar sowas, dass man halt, ... ... man schreibt halt was, was halt irgendwie was erzeugt ... ... und das erzeugt vielleicht nochmal weiter was ... ... und dann erzeugt man irgendwie so noch ein Neuletzer. Also wenn man das so runterdummt, ... ... vielleicht kann man das ein bisschen einfacher erklären. Und irgendwann klar, ... ... verselbstständigt sich sowas dann auch ... ... in gewisser Weise, im gewissen Rahmen ... ... so gesprochen.
+
+
+Ja. Ich hab grad auch überlegt, ob ich meine Berührungspunkte mit KI noch reinbringen soll. Die sind ja nicht weiter der Rede wert. Aber ich komm aus dem journalistischen Umfeld und hab früher über Videospiele geschrieben und hab dann immer die KI verteufelt. Und hab gesagt, oh, die Gegner-KI ist aber grottig. Hab aber eigentlich auch gar nicht verstanden, was da genau passiert. Es war nur klar, okay, so richtig mit Intelligenz zu tun hat es nichts.
+
+
+Wobei ich bei der Tangente fast sogar einhaken würde. Ich würd sagen, wenn die Entwickler heutzutage die Spiele-KIs auf 180 drehen würden, dann würde keiner mehr ein Spiel spielen wollen.
+
+
+Ich bin so gespannt, was jetzt da heute passiert mit den Möglichkeiten, die jetzt dann zur Verfügung stehen. Ich meine, wir haben es schon, ansatzweise gibt es es in der Videospielwelt schon mit Dungeons, die nicht vorbestimmt sind, sondern die on the fly generiert werden oder mit mit anderen Planeten in einem Weltraum spielen. Also, es gibt schon so ganz vorsichtig, aber dass das wirklich mal, ähm, richtig gut in eine Gegner-KI, die herausfordernd ist, ne, die dich wirklich challenged, ne, und vielleicht auch sich richtig adaptiert an dein Spielverhalten und so. Da bin ich wirklich gespannt, was da passiert.
+
+
+Nein, ich meine, wenn es um Wortgefechte ging, da würde ja Chet Chippity auf jeden Fall schon Parole bieten können.
+
+
+Sind wir heute schon ganz gut. Das ist ein guter Übergang, was ich heute mit euch gerne machen möchte. Ich habe mir so ein paar Einsatzszenarien rausgesucht und überlegt, wo man denn heute schon jetzt mit den Mitteln, die da sind, mit den freien Tools, die man zur Verfügung hat, wo man heute schon KI nutzen kann, gerade im Kontext Softwareentwicklung. Und mich würde eure Meinung zu den einzelnen Punkten interessieren, beziehungsweise dürft ihr dann gerne auch ergänzen, wenn ihr noch mehr habt. Aber ich würde mal ganz vorsichtig anfangen mit Code dokumentieren. Ist das ein Feld, wo ihr sagen würdet, oh, das könnte schon funktionieren, das ist schon was, womit wir heute vielleicht auch schon gearbeitet haben?
+
+
+Das ist eines der Felder, die vielleicht schwierig sind, weil man dann ChatGPT im Code mitteilen müsste. Also man müsste ja sagen, hier, ich habe hier diesen Code, ... ... bitte dokumentiere noch oder setze Kommentare ... ... zu den einzelnen Methoden oder sowas. Das könnte er wahrscheinlich, aber ist die Frage, ... ... möchte ich jetzt dem momentan quasi öffentlich verfügbaren ... ... Chat-GPT meinen Code mitteilen? Das ist dann nochmal eine andere Frage dann eben. Aber ich denke, er könnte das. Also ich denke, er könnte schon eine Methode beschreiben, ... ... was sie gerade macht da innen drin.
+
+
+Also ehrlich gesagt, ich habe darüber noch nicht nachgedacht und ich kann es mir jetzt auch nicht vorstellen, aber man muss bedenken, dass JetGPT auf der einen Seite sozusagen ein Vortraining hat, was eben aufgrund der ganzen Daten, von denen du vorher gesprochen hast, Jürgen, was war das? 500 Gigabyte an Textdaten, sozusagen erstmal trainiert ist. Und dann gibt es aber noch scheinbar so eine Art Nachtuning, was dann im Nachhinein noch zusätzlich funktioniert. Und auch letzten Endes, wenn man sich mal so ein kompletten Chat-Verlauf anschaut, den man mit Chat-GPT macht, der ja vielleicht dann sogar über mehrere Seiten geht, dann ist es durchaus so, dass dieser Kontext immer mit einbezogen wird. Und wenn ich quasi als Kontext am Anfang mein Programm hinstelle, dann kann ich mir schon vorstellen, dass Chat-GPT da was dazu sagen kann. Das wäre tatsächlich mal ein interessanter Versuch, mal ein paar Programmzeilen da reinzukopieren und ihn mal zu fragen, ob er den Fehler findet. Fehler finden kann er ja, das weiß ich.
+
+
+Fehler finden ist noch der nächste Punkt in meiner Liste.
+
+
+Ja, nicht nur in seinem eigenen Programm, sondern auch in dem, was ich ihm quasi vorgebe.
+
+
+Aber das sind jetzt zwei ganz spannende Punkte. Das eine ist Kontext, da können wir gleich mal noch drüber reden. Das andere ist aber der Punkt Datenschutz, der natürlich auch eine extreme Rolle spielt bei allem, was jetzt nicht nur eine Spielerei ist, um das mal auszuprobieren. Wir haben ja schon überlegt hier auch, ob wir im professionellen Kontext solche Tools irgendwie einsetzen können. Und wenn du aber im Kundenauftrag unterwegs bist, dann kannst du das unter Umständen eben nicht, weil du dann deinen Code irgendwo hinpacken müsstest. Und ich weiß nicht genau, ich habe mir die Nutzungsbedingungen nicht durchgelesen. Wisst ihr da mehr, was mit dem Code alles passiert?
+
+
+Es geht nicht nur darum, dass man den Code hinstellt. Also wenn man jetzt Kundencode nehmen würde und würde den hinstellen, das wäre problematisch auf der Seite. ... dass man den Kundencode geleaked hat halt. Die andere Sache ist aber auch die, ... ... dass man den Code, den jetzt JetGPT erzeugt, ... ... eigentlich auch nicht einfach so verwenden darf momentan, ... ... weil der ja auch unter Lizenzbedingungen fällt. Also das ist, wenn man nicht die, ... ... ich weiß nicht, ob man in der gekauften Version ... ... mittlerweile eingeschränkt irgendwie ... ... lizenziertes Zeug verwenden darf, aber ... Da streiten sich gerade Juristen noch drum, ... ... was da möglich ist oder was man da darf und was nicht. Aber gerade das ist halt wirklich ein Problem. Solange man keine eigenen Modelle hat, ... ... keine eigenen JetGPTs im Haus hat oder sowas, ... ... würde ich gerade das, dass man da mal ... ... Code reinschmeißt, ... ... also wichtigen Code und Kerncode ... ... von irgendwelchen Programmen, ... ... würde ich da nie reinschmeißen. Ich würde dann eher so ... ... vielleicht einen Dummy-Code schreiben ... ... und den mal einfach reinwerfen ... ... und gucken, was er so dazu sagt ... ... und ob er Fehler findet ... ... und ob er so kommentieren kann tatsächlich, ... ... würde ich ihn machen.
+
+
+Also ich hab mal aus dem Fundus, den ich so in meinem Leben mal zusammengestümpert hab, hab ich mal so ein paar Zeilen Python reingeschrieben und hab gesagt, so, jetzt schreib mir mal da eine Doku dazu. Und was dann schon funktioniert hat, ist, dass zu jeder Funktion einen Einzeiler, was sie macht, mitunter auch, was dann für Parameter irgendwie da aufgerufen werden und was der Output ist und so. Also das war ziemlich genau, aber das war jetzt auch keine Raketenwissenschaft. Also mich würde interessieren, was jemand, der dann wirklich auch mit komplexeren Dingen irgendwie arbeitet, mit vielleicht, ich weiß nicht, Matrizen oder mit, mit irgendwie komplizierten Sachverhalten. Bei mir waren das relativ einfache Dinge. Da hat es funktioniert zumindest.
+
+
+Na ja, ich denke, das Ganze ist halt eine Frage, wie groß ist der Kontext? Und solange der Kontext sozusagen klein bleibt, also im Sinne von, was weiß ich, ein paar Kilobyte oder ein, zwei, drei Textzeiten, und du kein sonstiges externes Wissen dazu brauchst, scheint es ganz gut zu funktionieren. Weil das ist so, wie ich jetzt Chat GPT auch verwendet habe, eben in diesen relativ überschaubaren Kontexten funktioniert das alles sehr gut.
+
+
+Das heißt so alles in einer Datei, der komplette Programmcode, nicht nur irgendwie externe Abhängigkeiten und so, genau.
+
+
+Ja, oft kommentiert man ja so Businesslogikabhängigkeiten, also wo man sagt, hier, da kommt jetzt das und das rein und man verarbeitet das und dann kommt irgendwie, in der Verarbeitung wird das und das entschieden und dann kommt dies und das wieder raus. ... also wenn man jetzt so eine Methode beschreiben würde, ... ... so eine einfache Input-Output-Methode, ... ... und dann beschreibt man aber oft ... ... Business-abhängige Vorgänge, ... ... die da quasi wirklich von dem ... ... Kontext abhängen. Wenn man dem jetzt die Methode einfach so hinschmeißt, ... ... könnte ich mir nicht, ... ... er kann das Mechanische beschreiben, ... ... aber er kann jetzt nicht, ... ... er weiß natürlich nichts von der Business-Logik, ... ... wenn man ihm nicht Hinweise dazu gegeben hat vorher natürlich.
+
+
+Aber gibst du ihm ja vielleicht schon allein ... ... durch den Funktionsnamen zum Beispiel?
+
+
+Eventuell ja. Aber ich meine, das Interessante an einem Code-Kommentar finde ich ja eher, wenn zum Beispiel eine Fachlichkeit erwähnt ist, die der Code abbilden soll, wenn es irgendwie nicht ganz offensichtlich ist, weil du irgendeinen, was weiß ich, komplizierten Algorithmus hast, den du nicht sofort überschauen kannst. Dann kannst du natürlich entweder die Methodennamen so benutzen, so benennen, dass es der Leser versteht. Oder du kannst eben noch einen Kommentar dazu schreiben, der aber dann eher das übergeordnete Konzept sozusagen beschreiben muss, aus meiner Sicht. Und da wird es natürlich dann schwierig, weil da ist ja dann der Kontext plötzlich viel größer, den du berücksichtigen musst. Und da weiß ich nicht, ob dir Chat GPD an der Stelle wirklich weiterhilft.
+
+
+Ja, also wie gesagt, das war heute bei mir ein sehr einfacher Test. Ich glaube auch, dass man da relativ schnell an Grenzen stoßen kann. Aber tatsächlich könnte ich mir gut vorstellen, dass das ein künftiges Einsatzszenario für genau solche Tools ist. Also, ich meine, Dokuschreiben ist, glaube ich, jetzt nicht der Lieblingsjob in Entwicklungsteams.
+
+
+Der korrigiert mich gerne, wenn ich falsch klicke, aber ... Ja, es ist vielleicht noch ein anderes Thema, wenn es um Endbenutzerdokumentation geht, also so Oberflächendokumentation. Da wüsste ich noch gar keinen Ansatz, wie das gehen könnte. Vielleicht geht sowas irgendwann mal in die Richtung, dass man sagt, man haut ihm ein Bild hin oder einen Screenshot seiner Anwendung. Und der versucht so Erklärungen einzubauen, was man da machen kann. Oder vielleicht, dass man dem ein Klickmodell gibt, das man schon durchklicken kann. Der klickt sich da überall mal durch und weiß dann schon was, wohin führt, fadmäßig und könnte dann so eine Dummy-Doku aufbauen oder sowas in die Richtung. Das könnte ich mir tatsächlich vorstellen, dass sowas vielleicht in der Zukunft, also dass sowas Zukunftsmusik ist, könnte ich mir vorstellen.
+
+
+Das ist natürlich ein ganz spannender Schritt, wenn man dann noch so einen Medienbruch einbaut. Wenn man sagt, okay, ich habe hier eine Konzeptzeichnung von einer App. Schreibt mir doch jetzt mal bitte die Funktionen dazu. Ich glaube, da sind wir, glaube ich, noch nicht. Mein zweites Feld, ihr habt es gerade schon selbst angeteasert, wäre tatsächlich Fehlersuche und vielleicht angedockt auch Software-Tests. Wie schätzt ihr da die Situation gerade ein? Na ja, ziemlich gut, würde ich sagen. Hast du da schon experimentiert?
+
+
+Na ja, ich habe auf jeden Fall damit experimentiert und sogar sehr erfolgreich damit experimentiert, Chat-GPT kleinere Codeschnipsel schreiben zu lassen oder einfach Programmiererfragen zu stellen. Wie ich sie einem Kollegen stellen würde, dem ich eine bestimmte Erfahrung in einer bestimmten Programmiersprache zutraue, sozusagen genauso habe ich den Chat-GPD gefragt, zum Beispiel über Python-Code auch tatsächlich erst vorgestern oder so. Weil ich selber mit Python noch nicht wirklich viel gemacht habe. Und da bekommt man sehr gute Antworten. Und wenn dann in den Antworten aber ein Fehler drin ist und man sagt dann, hey, Chat GPT, da ist ja ein Fehler, das funktioniert ja so nicht, dann kriegt man auch oftmals, nicht immer, aber oftmals auch die Korrekturen tatsächlich dann dazu.
+
+
+Spannend. Wie siehst du es? Ja, also zum Fehler korrigieren und zum Gucken, wo ist da ein Fehler, klappt das wunderbar. Das muss man schon auch sagen. Das kann er halt irgendwie. Und auch, wie du gesagt hast, mit dem Erarbeiten von wirklich fremden Programmiersprachen ist das eine super Sache. Wenn man da anfängt irgendwie vielleicht irgendwas ich hab das hier in Java machen wir das mal in Python das kann der denke ich auch ganz gut oder dieses. Umwandeln von, habe ich jetzt konkret tatsächlich noch nicht probiert sogar. Also, dass man mal sagt, hier, ich habe hier einen Code-Stüpsel von irgendwas in der Sprache.
+
+
+Aber wäre mal spannend, weil ich könnte mir nämlich vorstellen, dass gerade Python die Datenlage relativ gut ist, so eine der beliebtesten Programmiersprachen, dass da eben auch viel Training stattfindet und das gerade alles in Python zu konvertieren, ihm vielleicht sogar relativ leicht fällt, während vielleicht andere Programmiersprachen, ich weiß nicht, Swift ist glaube ich unterstützt und Objective-C oder ich bin mir nicht ganz sicher, welche.
+
+
+Das Witzige war ja, Also ich habe es immer mal gelesen, ich dachte, dass JGBD eigentlich gar nicht dazu intendiert war, dass man Programmiersprachen damit irgendwie abhandeln kann, das konnte der dann irgendwann einfach. Und das ist jetzt eine der Sachen, wo wir vom Anfang her kommen, irgendwie das Ding hat sich so ein bisschen verselbstständigt, hat dann eben irgendwo auch Programmiersprachen, irgendwelche Fragen gestriffen. und kann dann plötzlich Programmiersprachen.
+
+
+Ja, offensichtlich, weil einer der Inputs eben einfach öffentliche Softcodes waren von Programmiersprachen, von allen möglichen Programmiersprachen. Ja, gutes Abbild halt, ne, der Gesellschaft gerade.
+
+
+Und ich glaube auch, dass das, ja, es ist ja, die haben ja eine viel bessere, inhärentere Logik als normale Sprache.
+
+
+Stimmt eigentlich.
+
+
+Ja, von daher ist es nur naheliegend. Also, wenn man das nicht kommen sehen hat, muss ich sagen, okay, hätte man vielleicht kommen sehen müssen, aber Das nächste spannende Feld finde ich, ich habe es genannt, explain this to me. Also wenn ich irgendwie ein Stück Code habe, das ich mir vielleicht von Reddit oder irgendwo aus dem Internet geklaut habe und ich verstehe es nicht ganz und es macht aber vielleicht das, was ich haben will oder ich könnte mir vorstellen, dass es die Lösung zu meinem Problem ist, aber ich kann es nicht richtig anwenden, weil mir noch irgendwie ein Wissen fehlt. Und ich schmeiße es da rein und lasse es mir erklären. Was glaubt ihr, funktioniert das gut?
+
+
+Funktioniert. Also meiner Erfahrung nach funktioniert es sehr gut. Manchmal kriegt man falsche Erklärungen tatsächlich. Also es ist nicht immer perfekt natürlich. Manchmal kommt auch irgendwie komische, ich würde jetzt nicht sagen Blödsinn raus, aber manchmal werden einfach so Stereotypen, die man auch anderswo im Netz findet, einfach wiedergekäut. Quasi unkritisch wiedergekäut, logischerweise, aber oft funktioniert das sehr gut.
+
+
+Aber da sind wir wieder beim Punkt nachhaben. Du hast vorhin gesagt, wenn ich meine Kollegen frage, und du fragst vielleicht nicht denen mit 20 Jahren Erfahrung, sondern denen mit zwei Monaten Erfahrung, könnte das genauso passieren?
+
+
+Definitiv. Ja, da muss man noch ein bisschen aufpassen, weil er fängt dann manchmal an, hochzustapeln. Das ist gerade bei solchen Sachen, so Mathematikformel-Erklärungen oder sowas, wo er dann anfängt, manchmal Märchen zu erzählen. Das sind gerade diese Sachen, wo jetzt manche Schüler sich vielleicht manchmal in die Nessen setzen werden in Zukunft, jetzt am Anfang gerade vor allem noch. Oder vielleicht auch nicht, vielleicht wird es nicht erkannt in der Schule, keine Ahnung, und dann sagt der Lehrer, ja cool gesagt, was ist das für ein Ding, aber das ist alles falsch oder so. Oder der Lehrer erkennt es nicht und sagt, das ist alles richtig, cool, was du jetzt alles erklärt hast, und das war totaler Bullshit, was er der Klasse erklärt hat gerade. Das ist manchmal noch mit Vorsicht zu genießen, also mit den Erklärungen, aber manchmal liefert er ganz gute Erklärungen.
+
+
+Also, dass wir an der Stelle nochmal lernen müssen, damit überhaupt ganz anders umzugehen, gerade in der Ausbildung, gerade in der Schule, gerade an der Universität und so, das ist nochmal eine ganz andere Diskussion, die glaube ich heute fast ein bisschen in den Rahmen springt, obwohl ich es super spannend finde.
+
+
+Ich glaube, letzten Endes muss man Jett, GPD wie einen anderen Menschen immer kritisch hinterfragen. Menschen erzählen auch manchmal Blödsinn und so ist es bei JetGPD eben auch.
+
+
+Und das ist eben genau der Punkt. Also es kann ja, wenn meine Erwartung ist, dass ich da, dass ich eine Wundermaschine habe, in der ich all meine Probleme reinkippe und ich kriege die Lösung dafür raus, so dann werde ich enttäuscht. Wenn ich aber erwarte, dass ich mir vielleicht ein bisschen Zeit sparte oder dass ich einfach eine andere Sichtweise nochmal, die ich vorher gar nicht auf dem Schirm hatte oder dass ich mein Problem umformuliere. Manchmal reicht es ja das Problem um zu formulieren. Manchmal bin ich in dem Thema so wenig drin, dass ich mein Problem gar noch nicht richtig formulieren kann. Und dann kann sowas natürlich super helfen, indem es das Problem nochmal anders verpackt und mir dann so die Erkenntnis selber kommt. Also vielleicht ist das eigentlich das, wie wir so eine KI Verstehen müssen, oder? Also das ist nochmal so eine ganz offische Diskussion.
+
+
+Um noch kurz eine Nebenstraße zu nehmen. Es gibt eines der Prinzipien beim Programmieren oder beim Erklären von Problemstellungen. Wenn man sich vorstellt, man erklärt es einer kleinen Badeente quasi, also die eigentlich überhaupt nichts kann, die einfach nur in dem Sinne zuhört. Und man erklärt sein Problem, was man gerade hat, einfach mal so einer Badeente oder stellt sich vor, man erklärt es einer Badeente. Dann kommt man manchmal nochmal auf Ideen, die man gar nicht durchschaut hat vorher am Anfang. Und dann hat einem die kleine Badeente tatsächlich geholfen, die dumme Badeente, dass man da weitergekommen ist. Und so kann der Jett GPT manchmal jetzt vielleicht die Badeente ersetzen und gibt einem vielleicht noch qualifiziertere Anstöße an die Techno-Ente.
+
+
+Aber ist es dieses Rubber-Dugging, von dem ich schon mal gehört habe? Wahrscheinlich, ja. Ich glaube, das ist ein Ding. Wenn es sogar ich schon gehört habe, dann ist es, glaube ich, ein Ding. Das nächste Feld, wo ich eure Meinung brennend interessieren würde, ist Refactoring. Oh, jetzt überlegen. Jetzt kommen beide ganz hart.
+
+
+Damit habe ich jetzt ehrlich gesagt noch nicht experimentiert.
+
+
+Für mich als Laien. Welchen Anteil an eurem Arbeitsalltag hat denn Refactoring? Ist es so, dass man wirklich alten Code immer und immer wieder rausholt und sagt, oh, ich muss den jetzt noch besser machen? Oder ist es im Geschäftsalltag eher so, dass ich sage, es muss jetzt einfach mal fertig sein und ich gehe zum nächsten Problem?
+
+
+Naja, eher Letzteres würde ich sagen. Ich meine, ich beschäftige mich gerade ziemlich intensiv mit Test-Driven Development und da ist ja Refactoring ein ganz großer Teil und die Idee, die ich eigentlich auch so unterstütze und die ich eigentlich auch so anwende, ist, Ich mache das Refactoring dann, wenn ich feststelle, ich habe eine neue Anforderung, also eine neue fachliche Anforderung, zu der mein Code eigentlich nicht mehr gut passt. Und dann baue ich den Code um, damit er zu dieser Anforderung passt.
+
+
+Kann hier aber auch einfach sein, der Code muss robuster sein oder die Qualität muss besser sein. Es darf nicht so oft abstürzen oder es
+
+
+Naja gut, wenn ich Test-Driven arbeite, dann stürzt mein Code eh nicht ab, weil dann ist er durch die Tests abgedeckt und dann funktioniert er erstmal. Das Problem ist immer, was ist, wenn ich eine neue Anforderung habe? Dann ist man sehr schnell in der Fachlichkeit und dann ist man sehr schnell an der Stelle, an der ich zumindest JetGPT bisher noch nicht herausgefordert habe, sondern meine Fragen waren bisher eher einfachere. Aber nicht so komplexe Sachen, die dann gleich in Richtung Fachlichkeit gehen. Weil ich glaube, da muss man, das ist immer wieder bei dem Kontext, da muss man einfach sehr viel mehr außenrum dann erklären auch. Und dann müsste man bescheid die Fragen auch viel umfassender stellen. Aber wäre mal ein interessanter Ansatzpunkt.
+
+
+Also ich würde sogar verschiedene Arten von Refractorings ausmachen. Also dass man halt einfach die Art hat, dass man Fachlichkeiten anpasst. Und dann braucht man Tests dazu. Sonst kann man eigentlich eine Fachlichkeit nicht verändern oder anpassen. Oder erweitern wenn man aber jetzt im Refractoring auf der Ebene des Boy Scout Rules betrachtet oder der Pfadfinder Regeln, dass man halt sagt, den Code den man jetzt hier gerade hat, den möchte man verbessern oder man möchte entschlacken oder man hat eh schon Hinweise von so einer Cube bekommen oder irgendwas um, ... den Grot mal ein bisschen aufzuräumen. Ich glaube, das könnte ich JetJPB, da würde ich zutrauen, dass er das kann. Dass man halt sagt, verbessert diesen Grot und dann schmeißt du den Grot hin und dann verbessert er diesen Grot ... ... oder versucht ihn zu verbessern. Das könnte ich mir tatsächlich vorstellen. Oder vereinfacht dann irgendwas oder macht vielleicht aus einem ... ... aus einem komplizierten For-Loop mit irgendwelchen If-Bedingungen dann einen Stream draus oder sowas zum Beispiel.
+
+
+Aber macht er ja in seinen ... ... macht der JPE heute auch schon zum Beispiel. Macht er ja mit seinen eigenen Ausgaben auch, wenn du einfach den Knopf regenerate drückst, dann macht er dir ja das gleiche nochmal nur mit völlig anderem Aufbau unter Umständen oder völlig anderen, ja eben kein Schleifen oder anderen Verzweigungen oder, also ich könnte mir vorstellen, dass das tatsächlich da, ein guter Einsatz ist, wobei die Frage natürlich berechtigt sein muss, wozu überhaupt refactoren? Also so sinnlos refactoren ist wahrscheinlich gar nicht sinnvoll.
+
+
+Also meine Meinung ist inzwischen, dass man, wenn man einen Code von vornherein gut aufgebaut hat, dass man dann eigentlich nur dann refactort, wenn man eine neue Anforderung hat. Weil an der Stelle wird es dann nämlich auch bezahlt. Also weil das Problem ist ja immer, ich habe einen Code und ich bin eigentlich fertig. Der Code tut alles, was er soll. Warum sollte ich jetzt noch refactoren, wenn keine neuen Anforderungen dazukommen? Das kostet nur Geld. Birgt die Gefahr von Regressionen. Birgt die Gefahr, dass irgendwas kaputt geht und ansonsten habe ich nichts gewonnen. Ich habe aber dann was gewonnen, wenn ich eine neue Anforderung habe, dann feststelle ich, okay, der Code passt so nicht. Jetzt mache ich, bevor ich die neue Anforderung implementiere, aber schon mit Blick auf die neue Anforderung, baue ich jetzt den Code so um, dass er dann mit der neuen Anforderung leicht erweiterbar ist. Dann habe ich den Vorteil, ich muss das sozusagen nicht extra dem Kunden berechnen, sondern es ist halt inklusive in der neuen Anforderung mit drin und ich habe einen Grund, warum ich es mache.
+
+
+Dafür bräuchte halt die KI sehr viel Kontext, sehr viel fachlich Besatzkontext.
+
+
+Und dann sind wir eigentlich eben wieder bei der Fachlichkeit und beim Kontext.
+
+
+Könnte man sich aber auf einem einfachen Level schon vorstellen, dass man sagt, hier ist mein bestehendes Modul, whatever, und die neue Anforderung lautet so und so. Bitte berücksichtige das oder bitte erweitere das.
+
+
+Ich meine, es ist ja so, dass heutige integrierte Entwicklungsumgebungen tatsächlich ganz viel von diesen Funktionen schon drin haben. Also du kannst ja, was weiß ich, Funktionen nicht nur umbenennen, sondern du kannst komplett Funktionen rausziehen in eine andere Klasse Verlage und all diese Dinge, die werden ja heute von den IDEs unterstützt und wahrscheinlich hast du recht und es wäre vielleicht auch spannend, drüber nachzudenken, ob man eben noch mächtigere Funktionen in die EDEs einbauen kann, die eben mithilfe der KI dann solche Sachen noch einfacher machen für den Entwickler.
+
+
+Ist ein spannender Punkt. Es ist wirklich ja viel schon drin, wo wir überhaupt nicht auf die Idee kommen würden, das Intelligenz zu nennen.
+
+
+Wo einfach nur so Logikchecks drin sind.
+
+
+Obwohl es eigentlich nur relativ einfache Regeln sind. Genau. Also hier Codequalität, schreib das doch bitte nicht so, sondern so und dann machst du das. Das ist auch schon Refactoring auf Basis von einem automatisch generierten Vorschlag.
+
+
+Also spannend. Ich könnte mir vorstellen, dass du das noch auf deiner Agenda hast, ... ... aber ich könnte mir vorstellen, dass so Sachen wie ... ... schreib mir mal Tests zu dem Thema.
+
+
+Das sind wir gerade darüber wegstanden tatsächlich, ... ... aber wir haben es ausgelassen, von daher gerne.
+
+
+Also das Thema, ... ... dass eben leider noch viel Legacy-Code unterwegs ist, ... ... der nicht getestet ist. Gar nicht getestet ist schlecht und ... ... dann Tests zu schreiben ist sehr anstrengend ... ... und vielleicht, dass man so Basistests ... ... oder so verschiedene Komplexitätsstufen dann ... an Möglichkeiten von der KI als Tests schreiben lassen kann. Das könnte ich mir auch gut vorstellen. Also dass der so eine Ausgangssituation, eine Ausgangsbasis für Tests erstmal schreibt, die ganz gut ist wahrscheinlich.
+
+
+Also das habe ich auch konkret jetzt zwar noch nicht oft probiert, aber mindestens in einem Fall. Ich fange ja immer an, ich sage zu JetGPT, gib mir ein Stück Code für das und das. Also irgendwie so kleine Codesequenzen. Und ich habe auch schon mal gefragt, jetzt schreibt mir, also direkt im Anschluss, jetzt schreibt mir den Test dazu. Hat er auch gemacht, hat auch funktioniert.
+
+
+Ordnet das mal bitte kurz für mich ein, Tests schreiben. Macht man das nur für seinen eigenen Code? Macht man das dauernd für anderen Code? Gibt man das den Junior-Entwicklern, damit die das für den eigenen Code machen? Ordnet das mal bitte kurz für mich ein.
+
+
+Das macht man eigentlich dauernd, bevor man seinen Code schreibt.
+
+
+Eigentlich vorher, ja. Also eigentlich formuliert man die fachliche Anforderung, die man hat. Oder ich sage jetzt, Mann, ich würde es halt so machen und die Leute… Das ist jetzt der testdriften Ansatz. Das ist der testdriften Ansatz.
+
+
+Aber der ist jetzt auch noch nicht Industriestandard, oder?
+
+
+Also ich würde sagen schon, aber das ist… Ich meine, da können wir mal eine eigene Episode dazu machen. Wir werden eine ganze Staffel zu dem Thema machen, aber okay. Aber ja, also eigentlich, ich würde es so sehen, dass es gute Handwerkskunst ist, test-driven anzufangen. Und wenn man das dann tut, dann bedeutet es, dass man eigentlich seine fachliche Anforderungen in einem Test formuliert, bevor man sozusagen die Lösung dafür schreibt.
+
+
+Okay. Und wenn man das nicht macht, wie ist es dann? Dann wird es schwierig, dass man Code refactored, dann wird es schwierig, dass man ... Also ich könnte mir vorstellen, dass man dann einfach sagt, hier so, ich muss ja den Code nicht verstehen, also das kann jetzt irgendein Junior-Entwickler machen, du musst den Code nicht verstehen, du musst nur schauen, was geht in die Funktion rein und was kommt raus und dafür schreibst du mir jetzt einen Test.
+
+
+Ich meine, dann macht der ja trotzdem einen Test, dann macht der ja irgendwelche klickoberflächlichen Tests, die er halt mal durchführt. Dann muss er sich vielleicht eine Liste anlegen und macht immer wieder diesen kleinen Test, aber das ist halt ... Trotzdem hat es die Gefahr, dass es nicht systemisch unterlegt ist. Es kann nicht integriert werden in eine Pipeline. Also man kann nicht automatisch eben testen.
+
+
+Ja, die Frage ist halt, was so... Ich meine, man kann schon sozusagen im Nachhinein natürlich Tests schreiben. Und das ist auch das, was viele Entwickler tatsächlich tun. Die Frage ist halt immer, was habe ich damit gewonnen eigentlich? Und was zu was für eine Art von Tests führt es? Also meiner Meinung nach führt es vor allem zu Tests, die sehr eng mit der Implementierung verkoppelt sind, von dem, was mein eigentlicher Produktionscode macht. Das bedeutet, wenn ich die Implementierung ändere, zum Beispiel wegen einem Refactoring, ohne dass sich meine Anforderung ändert, Dann muss ich aber trotzdem meinen Test ändern, weil der Test jetzt an der Implementierung hängt und nicht an der eigentlichen Anforderung.
+
+
+Und wenn man Tests ändert, dann hat man irgendwas falsch gemacht.
+
+
+Ja, und dann bin ich dauernd am hinterher ändern von Tests. Und das ist eigentlich nicht das, was man will, sondern man will, dass die Tests so robust sind, dass ich, solange sich meine Anforderungen nicht ändern, solange ich nur sozusagen intern was umbaue, dass der Test immer noch funktioniert und nicht, dass der dann bricht.
+
+
+Also ich hoffe, dass die Entwicklerinnen und Entwickler da draußen das jetzt gut einordnen können.
+
+
+Wenn man es so beschreiben möchte, vielleicht im Sinne eines Fußballfelds, also Tests sind eher auf der Seite fußballfeldmäßig der Fachlichkeit, der Anforderungen, die man implementieren muss und gehen eher von dieser Seite aus und die andere Seite ist dann halt die Implementierung. Also das verstehe ich glaube ich schon.
+
+
+Also du versuchst einen Test so zu schreiben, dass das anhand des Ergebnisses, das du haben willst, du sagst, ich möchte jetzt, dass der, keine Ahnung, irgendwie eine Eingabe und dann kommt eine bestimmte Ausgabe raus, ich will das Ergebnis so haben und du kannst es ja dann aber in x Funktionen zum Beispiel aufteilen und wenn du aber dann die Tests für die Funktionen schreibst, dann ist es falsch, dann ist es schlecht.
+
+
+Oder halt auch, also man schreibt ja auch Tests, die zum Beispiel, wozu man das Programm zu brechen dann auch, man sagt halt, ... was man jetzt, ... ... dass man viele erwartet an einer bestimmten Stelle, ... ... dass auch viel Verhalten geprüft wird, ... ... sowas in die Richtung, das ... ... sollte man auch vorher sich überlegen ... ... und dann muss man es nicht hinterher ... ... künstlich irgendwie sich erzeugen ... ... und künstlich überlegen.
+
+
+Okay, ich sehe schon. Ich glaube, das ist eine Diskussion, die ... ... verlagern wir tatsächlich mal ... ... in eine eigene Episode, ... ... aber da war ich jetzt an der Stelle neugierig. Das nächste Feld. Ich habe tatsächlich neulich versucht mal, es gab ja Whisper AI, ich weiß nicht, ob ihr das mitbekommen habt, auch von OpenAI, mit dem man quasi Audio einfach transkriptieren kann. Zuhause ohne irgendwelche Online-Server, ohne Online-Dienste, zuhause auf der eigenen Maschine, relativ einfach kann man irgendwie automatisieren. Und da habe ich mich dann hingesetzt und habe auch mir mithilfe von ChatGBT ein Skript schreiben lassen, habe gesagt, lade mir jetzt mal von dem Podcast hier die Episoden runter und transkriptiere mir die mit Whisper. Und dann hat er das ganz gut gemacht und am Ende kam aber eine Textdatei raus. Und dann hab ich gesagt, ja, Textdatei ist blöd, es gibt da so fertige Formate, VTT und SVT, glaub ich. Und dann hab ich gesagt, so, jetzt schreib mir bitte dafür noch die Funktion. Nee, Quatsch, die eine hab ich mir aus dem Internet kopiert und die andere hat mir noch gefehlt. Und dann hab ich gesagt, so, das ist die eine Funktion und jetzt schreib mir die bitte noch genau für das andere Format. Ich hab ihm aber nicht erklärt, wie das andere Format aussieht. Ich hab ihm den Rest des Codes nicht erklärt, hab das einfach da reingeworfen. Und er hat mir quasi auf Basis meines bestehenden Codes eine fehlende Funktion, die ich schon benannt hatte, Wo schon der Kontext klar war, aber der Inhalt gefehlt hat. Die habe ich auffüllen lassen. Das hat einwandfrei funktioniert. Cool. Also das Anwendungsgebiet wäre für Vollständigen quasi von Code. Wie schätzt ihr das ein? Ich glaube, ich habe es jetzt sehr kompliziert erklärt. Ja, doch.
+
+
+Klingt krass. Ja, also das denke ich, dass das auf jeden Fall gut funktioniert, weil das ist ja genau das, worauf Jett GPT letzten Endes programmiert ist. Das ist ja nicht eine Frage- und Antwortmaschine, sondern es ist ja einfach nur eine Vorhersagemaschine. Was kommt als Nächstes? Also das heißt, du hast einen Textkontext vorne. Und was ist jetzt das, was als Nächstes am wahrscheinlichsten als Text kommt. Das ist das, was der Chat GP die letzten Endes macht. Und es funktioniert anscheinend mit Programmiersprachen auch sehr gut.
+
+
+Also es müsste jetzt diese Reihe fort, müsste quasi der Killer-Killer-Killer-Anwendung dafür. Okay, habt ihr da schon irgendwas ausprobiert in der Richtung?
+
+
+Naja, also was ich halt, was ich tatsächlich gemacht habe, ist, ich habe halt zum Beispiel, weil du vorhin Python gesagt hast, Ich habe mir neulich an einem Buch sozusagen gelesen, wo eine Aufgabenstellung drin war, die man in Python lösen sollte. Und ich habe noch nie Python-Code geschrieben. Also klar, ich weiß so grob, kann den Code auch lesen, weil es so ähnlich wie C und C++ und Java und so weiter ist. Aber ich kann jetzt nicht Python-Code, konnte nicht schreiben. Und dann habe ich alles, was ich wissen musste, um diesen Code zu schreiben, habe ich alles ChatGPT gefragt. Also ich habe gefragt, wie mache ich eine Klasse mit einem Konstruktor? Ich hatte keine Ahnung, wie man einen Konstruktor in Python formuliert. Das hat wirklich 99 Prozent von dem, was er ausgespuckt hat. Die komplette Aufgabe, das ging über mehrere Seiten von dem Buch, konnte ich komplett alles mit JetGPT lösen. Ich habe es immer mit meinen umgangssprachlichen Worten formuliert und er hat mir den Code dafür ausgespuckt in Python. Und zwar auch immer richtig.
+
+
+Und auch immer noch mit Erklärungen und Beispielen dazu, ne?
+
+
+Ja, genau. Oder wenn man eben nachfragt, dann kriegt man auch mal, also ich hatte zum Beispiel eine Frage mal, eine Funktion, die er mir ausgespuckt hat, auf eine Frage, das war eine Java-Frage, die Funktion kannte ich noch nicht und wusste nicht genau, was die tut. Und da habe ich nachgefragt, was macht denn das eigentlich? kriegt man auch die Erklärung, was das macht.
+
+
+Und es war auch hilfreich. Hat sich dein Suchverhalten an der Stelle schon komplett verändert, dass du nicht mehr das bei Google oder bei Stack Overflow eingibst? Also seit zwei Wochen definitiv.
+
+
+Also ich habe vor zwei Wochen glaube ich, habe ich JetGPT Plus gekauft, was 20 Dollar kostet im Monat. Weil mich das genervt hat, dass es irgendwie so unzuverlässig war. Und seitdem verwende ich das wirklich, also wenn ich programmiere, verwende ich das praktisch dauernd. Und viel, viel mehr wie Google. Es gibt ein paar wenige Fälle, wo ich es mal mit Google, also wo ich dann sozusagen auf Google zurückgreifen musste, weil es mit Chat GPT dann doch nicht funktioniert, aber das ist wirklich dann nur ein oder zwei Prozent.
+
+
+Hast du da ein konkretes, das würde mich jetzt interessieren. Kannst du dich erinnern, welche das waren?
+
+
+Das war ein Beispiel in einer Spring Boot Anwendung und zwar da ging es darum, einen Test zu schreiben mit Websocket Stomp Client. Meine IDE hat mir immer ausgespuckt, dass die Transport-Buffer-Size zu klein gewesen wäre. Und dann habe ich JitschiBT gefragt und gesagt, ja, schreib mir doch mal das so um, dass die Transport Buffer Size größer wird. Also ich habe da eine Stunde, zwei Stunden wirklich auf keinen grünen Zweig gekommen. Alle hatten mir viel, viel Vorschläge gemacht. Die habe ich alle ausprobiert, auch wirklich Code reinkopiert, bei mir laufen lassen. Es hat alles nicht funktioniert. Am Ende habe ich dann aufgegeben und habe dann direkt bei Google gesucht und habe dann irgendwie der zweite Treffer auf Stack Overflow, der war's dann.
+
+
+Hast du aufs Datum geguckt von dem Treffer? War der neu?
+
+
+Ja, guter Punkt. Ja, guter Punkt. Hab ich nicht geguckt. Wenn JetTPT hier nur Daten hat bis, ich glaube, 2021 Ende.
+
+
+Wäre jetzt eben auch mal spannend, hast du die Konkurrenzprodukte vielleicht schon mal, oder auch du, Frederik, die Konkurrenzprodukte schon mal ausprobiert?
+
+
+Von JetTPT jetzt? Ja. Noch nicht, ich habe nur mal so Nebenprodukte mit ausprobiert.
+
+
+Also ich habe jetzt konkret an die Bing-Suche gedacht?
+
+
+Die Bing-Suche ist ja kein Konkurrenzprodukt in dem Sinne, die ist ja eher ein integratives Produkt, die nutzt ja dann den JetGPT.
+
+
+Ist das die gleiche?
+
+
+Ja, die gleiche Microsoft unterstützt ja quasi JetGPT momentan. Das habe ich jetzt durcheinander gebracht. Das Budget fließt ja hauptsächlich da rein von denen. Du hast vollkommen recht. Und die integrieren das jetzt immer mehr in die Bing-Suche und das wird irgendwann auch dann auf aktuelle Daten zugreifen können. Und dann eben in der Bing-Suche wird Jett-GPT in gewisser Weise mit fungieren.
+
+
+Und die anderen sind aber noch nicht so weit, dass man die ausprobieren kann, oder?
+
+
+Ich habe zwei Sachen ausprobiert tatsächlich. Ich habe u.com ausprobiert. Und ich habe neva.com ausprobiert. Schreibt sich neva.com. Die beide von sich behaupten, dass sie quasi eine Suchmaschine wären mit KI. Und die sind auch quasi irgendwie so eine Art Mischung aus Google und JetGPT. Das heißt, wenn man da eine Frage eingibt, dann bekommt man einerseits so einen Fenster, so wie bei Chat-GPT, also so eine kompakte Erklärung, in den meisten Fällen jedenfalls, die dann mehr oder weniger gut ist und wo man auch Rückfragen stellen kann. Und gleichzeitig bekommt man aber noch eine ganze Reihe von Links, so wie es halt bei Google üblich ist. Beides quasi kombiniert. Finde ich einen ganz interessanten Ansatz. Weil das ist nämlich genau das, was Chachipiti nicht kann. Habe ich schon ein paar Mal versucht nachzufragen. Wo hast du diese Weisheit denn her? Da kommt mir zu gar nichts.
+
+
+Naja gut, das ist ja der nächste große Meilenstein. Wenn das gelöst ist, dann werden wir nochmal ganz anders über KI reden. Also wenn wirklich der Faktencheck noch irgendwie eingebaut ist in irgendeiner Form, dann haben wir glaube ich noch ganz andere Themen hier zu diskutieren.
+
+
+Aber ich bin auch wirklich gespannt, wie das mit Bing funktioniert. Also ich habe mich natürlich angemeldet. Also ich weiß nicht, hast du schon Zugriff auf das New Bing gekriegt wirklich selber? Noch nicht.
+
+
+Weil mir ist es auch noch nicht gelungen. Man muss sich registrieren momentan und man muss dann auch den neuesten Beta- oder Alpha-Edge runterladen und also quasi da auch die quasi die jüngsten Versionen verwenden, die es gibt. Ich bin aber auch noch nicht dabei.
+
+
+Das habe ich auf dem Mac nicht übersetzt gekriegt.
+
+
+Ich habe es tatsächlich gemacht, auf dem Mac, Edge runtergeladen, die Developer, genau um in der Warteliste 1 weiterzukommen, nur um dann gesagt zu bekommen, dass ich jetzt, außer dass ich Edge installieren muss auf meinem Mac, auch noch, was weiß ich, die App installieren muss und dieses und jenes und das noch machen muss.
+
+
+Eigentlich sollst du Windows installieren auf deinem Mac mit dem Cambo oder so.
+
+
+Wahrscheinlich. Also ich bin immer noch auf der Warteliste, leider. Aber es gab einen sehr interessanten Artikel auf heise.de, jetzt am Wochenende erst, wo der Redakteur eben, der das geschrieben hat, der hat glaube ich auch einen Podcast oder ein Video davon gemacht, Und er hat es dann so ausprobiert mit Bing. Man stellt fest, dieses New Bing ist nicht gleich JetGPT, sondern das basiert schon auf dem gleichen Modell, aber die Ergebnisse sind deutlich neuer, also nicht beschränkt auf 2021 oder bis 2021. Es ist scheinbar dieses ganze Nachtuning, was OpenAI noch gemacht hat für den Chat-GPT. Also zum Beispiel, dass er eben nicht unverschämt wird, dass er keine rassistischen Aussprüche macht und all diese Dinge. Da haben die irgendwie eine Abkürzung genommen und der New Bing, der wird ziemlich schnell ziemlich unverschämt.
+
+
+Könnte aber auch ein USP sein an der Stelle. Finde ich eigentlich ganz interessant.
+
+
+Ja, also, ihr müsst es mal lesen.
+
+
+Das war in der ersten Version noch so, da haben sie gesagt, es ist noch irgendwo auf der Ticketliste ganz unten, die zahlkonformen Anpassungen an das Ding.
+
+
+Aber ich meine, ich finde es gerade spannend, da fließen ja dann sicherlich auch wieder Erkenntnisse zurück. Auf was klicken dann die Anwender, wo bleiben sie länger und so. Da kann man ja nochmal ganz interessante Rückschlüsse ziehen, die man dann wieder aufs weitere Training verwenden kann. Bestimmt, ja. Das ist ja schon nochmal ganz spannend.
+
+
+Ja, das soll ja ähnlich laufen, wie es Google, glaube ich, heute macht. Also jetzt, wie die Einblendungssache passieren soll wohl, dass das jetzt eingeblendet wird, dass das die KI beantwortet hat. Ähnlich wie bei Google, dass der ja so eigene Sachen mittlerweile selbst auf seiner Seite beantwortet, angeblich. Oder die Quellenangabe noch mit drin hat. Also der macht dann halt so ein extra Fenster ja auf und sagt, das ist jetzt hier die Antwort, ohne dass du den eigentlichen Link folgen musst, was eine Suchmaschine früher ja war. ... und das macht Google ja auch schon ... ... halt natürlich nur mit seinen Google-Algorithmen ... ... und will einen halt auf der eigenen Seite behalten, ... ... um natürlich klar die eigene Werbung kostet.
+
+
+Im Prinzip macht Google das ja schon ganz lang, ... ... auch ohne KI.
+
+
+Genau, genau. Aber es ist ja keine KI-Antwort genutzt, ... ... einfach nur, dass du auf der Google-Seite bleibst, ... ... um die Werbung von denen zu konsumieren ... ... und nicht die Werbung von der Seite.
+
+
+Das letzte Feld, das ich noch hier aufgeschrieben habe, das haben wir, glaube ich, schon angerissen und das ist eigentlich aber auch dann so die Königsdisziplin. Das ist dann aus einer einfachen Textanfrage einfach kurz zu produzieren. Also aus einem einfachen Satz schreibt mir ein Modul, das XY tut. Das habt ihr jetzt sicherlich schon ausprobiert. Wie sind deine Erfahrungen damit?
+
+
+Ja, also wir hatten ein Thema, das hat dann mein Kollege noch gelöst tatsächlich. Der Kollege Philipp kam zu mir, der auch relativ viel mit der KI mittlerweile, mit der GPT auch konkret gemacht hat. Und der hatte das Problem, er wollte für so einen Dart-Liga-Betrieb, also für so einen Dart-Verein quasi, oder so einen Liga-Betrieb quasi, wollte er halt so einen Liga-Algorithmus schreiben. Und ich dachte zuerst, voll simpel, so einen Liga-Betrieb macht ja jeder da draußen quasi eigentlich. Bundesliga, jeder macht ja so Liga-Betrieb, aber dass man quasi so Teams matcht, die auch jeder gegen jeden spielt und so, und dann irgendwie, dass es danach aufgeht am Ende und so, ist gar nicht so trivial tatsächlich. Auch mit Terminen, die dann irgendwie gefunden werden können, dass natürlich die eine Mannschaft nicht spielen kann, wenn die andere Mannschaft mit der anderen Mannschaft spielt und so, das ist also lauter so Zeugs. Und dann haben wir versucht, ihn darauf hinzuschreiben, dass er ein fertiges Programm ausspuckt. Und das war, also zumindest in den Versuchen, die ich erst mit ihm zusammen gemacht habe, noch nicht ganz ans Ziel geführt. Aber er hat dann gesagt, da kam dann eine Woche später, kam er dann an, hat gesagt, Herr Ricker, ich habe es jetzt geschafft und so und habe es tatsächlich mit der GPT fast mit einem vollständigen Programm geschrieben. Also da hat er berichtet.
+
+
+Okay, krass. Das ist schon sehr komplex eigentlich. Bodo, du?
+
+
+Ich kann mal einen Satz vorlesen oder eine Frage, die ich gestellt habe und auf die ich auch eine gute Antwort gekriegt habe. Es ist alles auf Englisch, weil offensichtlich nebenbei bemerkt ist es so, dass JGPT zwar auch Deutsch kann oder andere Sprachen kann, aber dass es wohl so ist, dass der intern irgendwie nach Englisch übersetzt und deswegen scheint es so zu sein, dass da in der Übersetzung doch auch manches verloren geht. Deswegen, ich habe jetzt konsequent einfach immer Englisch verwendet.
+
+
+Also hake ich ganz kurz ein, das ist ja meine eigentliche Profession, ist ja der Werbetext und ist tatsächlich so, also du kannst ihn auf Deutsch füttern, du kannst ihn auf Englisch füttern und nach Deutsch fragen explizit und es funktioniert auch, aber die Textqualität ist deutlich schlechter. Jetzt mal gar nicht auf Code bezogen, sondern auf Text. Also es geht schon als korrekt oder annähernd korrekt durch, Kommasetzung ist vergleichsweise gut, also wo andere echt Probleme haben, ist er relativ gut. Aber es ist einfach oft halt so Schüleraufsatztext. Und im Englischen schreibt er unter Umständen auch richtig kreative Texte. Ah, okay.
+
+
+Na jedenfalls, ich habe ihm folgende Frage gestellt. Also die hatte ich auch tatsächlich eben an einer Stelle, wo ich programmiert hatte in meinem letzten Projekt. When filtering a stream of objects in Java, how would you get the first object with property x gleich 1, if that is contained in the stream, or if it's not, then get the first object with the property x equals 2. Und das hat tatsächlich, also da hat er mir tatsächlich sozusagen eine korrekte Antwort ausgespuckt, die auch funktioniert hat und auch schön irgendwie, wie man das in Java so macht, so mit Streams und irgendwie einem Filter und einer Condition und dann irgendwie mit getFirst und so weiter. Und dann hatte ich aber festgestellt, oh, jetzt habe ich es ja irgendwie falschrum. Ich habe meine Frage sozusagen falschrum formuliert. Ich wollte eigentlich das mit x gleich 2 sozusagen normalerweise haben und nur wenn es das nicht gibt, das andere. Und dann habe ich dann gesagt, tatsächlich, bitte drehe mir das um. Was er dann gemacht hat, war ganz lustig, weil er hatte nämlich an einer Stelle diese Bedingung x gleich 1 und x gleich 2, das war mit oder verknüpft. Und wie wir alle wissen, eine ODA-Verknüpfung ist ja egal, ob ich die so oder so rumdrehe. Ich habe mir vorgeschlagen, die ODA-Verknüpfung umzudrehen und zusätzlich noch an einer anderen Codezeile was zu ändern. Das war die eigentlich richtige Änderung, die auch funktioniert hat. Nur dieses Umdrehen, das hat natürlich gar nichts gebracht, hat aber auch nicht gestört. Aber am Ende hat es funktioniert.
+
+
+Das ist spannend. Also fällt mir jetzt gerade auch noch eine Frage auf, was du vorgelesen hast. Wie höflich seid ihr in euren Anfragen?
+
+
+Also ich bin sehr höflich.
+
+
+Ja, als ob ich mit einem Menschen reden würde. Ich habe ihn auch mal provoziert, glaube ich, irgendwann. Dann fängt er an, diese sozialen Schranken zu machen, wo er dann sagt, ich antworte nicht auf freche Sachen oder ich mache keine anstößigen Dinge und sowas. Da fängt er dann schon auch an zu sagen, hier geht es nicht weiter gerade in diesem Raum, bitte drehen Sie um.
+
+
+Also ehrlich gesagt, ich ertappe mich in letzter Zeit immer mehr, dass ich auch bei Google jetzt vollständig formulierte Sätze schreibe. Ich spreche mit Chat-GPT, wie mit meinem Kollegen. Und wenn ich eine gute Antwort kriege, dann schreibe ich sogar manchmal, okay, gut, Ausrufungsteilung und dann die Folgefrage.
+
+
+Es ist witzig, weil es haben so erste Untersuchungen auch ergeben, dass tatsächlich relativ viele Leute mit Danke und Bitte und sehr sehr höflich da rangehen, was ja total merkwürdig ist, weil eigentlich könnte man auch einfach nur die Fakten und alles andere weglassen.
+
+
+Was witzig ist, weil in sozialen Netzwerken werden die Leute immer toxischer.
+
+
+Ganz, ganz merkwürdig. Und ich habe ja auch schon für die letzte KI-Podcast-Episode, habe ich auch schon mit so einer Dialog-KI ein bisschen experimentiert und da auch so ganz komische Erfahrungen gemacht mitunter, dass man da auch sich ertappt. Man weiß, es ist eine KI und man weiß, es ist alles nicht echt, aber allein diese Interaktion fühlt sich, also erfüllt viele soziale Bedürfnisse, die du so mit einem Mensch, mit dem du chattest, vielleicht auch erfüllen würdest. Also selbst, obwohl du es weißt, macht es was mit dir. Das finde ich total spannend. Ja, das stimmt. Ich habe noch eine andere Frage. Also erstmal vielleicht noch, habt ihr noch andere Einsatzszenarien, die ich jetzt noch nicht auf dem Schirm hatte, wo ihr sagt, das unbedingt mal ausprobieren?
+
+
+Ja, also ich habe es tatsächlich am Anfang sehr kreativ genutzt, so eine Freizeit, also nicht nur beim Programmieren. Darauf gekommen bin ich tatsächlich auch über einen Kumpel, der dann anfing so, ich habe hier eine nackte Wand noch in meinem Wohnzimmer und so, wollen wir nicht ein Bildchen hängen oder so irgendwie? Und dann hat er so sein Wohnzimmer beschrieben, so ein bisschen in Jett-TPT, hat gesagt hier, mein Wohnzimmer sieht so aus, hat die und die Wandfarbe, da steht noch da ein Sideboard in der Farbe und so, also ungefähr die Farben beschrieben und so. Und dann hat er gesagt, gib mir doch mal eine Beschreibung für irgendeine Bilder-Render-KI oder so. Dann hat er dafür die, ich weiß nicht, wie heißt die Nummer, die von Lensa heißt das, glaube ich, von OpenAI auch. DALI kenne ich von OpenAI. DALI, DALI war es, genau. Dann hat er tatsächlich auch Output für DALI generiert, also auf Englisch dann geantwortet. Das ist doch deutsch, du hättest es ihm reinschreiben können, was du für Bedingungen hast. Und dann hat er gesagt, häng mir doch mal ein Bild bitte an die Wand und ich bitte beschreibe mir das Bild für DALI. Und dann hat er eine Beschreibung für Dali ausgegeben und hat dann halt verschiedene, so in verschiedenen, wie jetzt dann ein Künstler, oder wie jetzt zumindest so ein Kreativartist hergehen würde. Der sagt dann halt, ich habe hier drei Vorschläge, hier willst du davon was haben. Und dann ist er in Dali gegangen, hat da den Text eingegeben. Dann kam der Vorschläger, der hat gesagt, ja cool, okay, ist schon lustig, willst du hier ein paar rumkommen und so. Und dann hat er in Dali weitergemacht, hat dort dann immer weiter verbessert. Am Ende kam dann auch ein Bild rum, wo er gesagt hat, es würde sich jetzt schon an die Wand hängen. Vielleicht auch mit dem Ding noch von der KI generiert oder so als unten drunter. Aber hat er nicht gemacht? Oder noch nicht? Ich weiß nicht, ob es nächstes Mal, wenn ich komme, dass ein Bild hängt oder so. Weiß ich nicht. Von der KI generiert. Witzig wäre es ja schon. Und ich habe es dann tatsächlich auch aufgrund dieser Basis dann auch angefangen, weil ich selber ein bisschen in meiner Freizeit male auch. Also auf Acryl oder auf Öl oder so mit so Fingermalfarben auf Pinsel dann quasi. Und hab das dann tatsächlich mal so als Ideengenerator genutzt, hab dann halt so ein bisschen, male mir mal ein Auto an der Ampel in blau, das Auto ist blau, die Auspuffrohre rauchen ein bisschen und so, und dann generiert der wunderbare Sachen, so als Vorschläge ist das echt super tauglich, oder Skizzen oder sowas, das macht Dali echt ...
+
+
+Krass. Ich überlege ja auch schon eine Weile, ... ... da mal irgendwie einen Prompt für ein Tattoo ... ... irgendwie reinzuschmeißen. Ja, mach mal. Aber wenn, dann muss ich schon vorher committed sein, ... ... das dann aber auf jeden Fall mir stechen zu lassen. Ganz so weit bin ich noch nicht.
+
+
+Du kannst ja viel auswählen dann. Du kannst es ja interagieren lassen. Ja. Dafür habe ich es eben auch genutzt, also für so ...
+
+
+Aber ja, ich folgte auch jemandem auf LinkedIn, der macht da auch ganz spannende Experimente. Der gibt ganz viel dann Bilder vor, die er ganz grob mit Stockbildern vorbaut in Photoshop, also wirklich ganz roh ausschneidet, ganz grob nur Dinge auswählt und zusammensetzt und sich daraus dann richtig interessante Renderings in Fantasy-Welten oder jetzt habe ich was aus dem Science-Fiction-Bereich von ihm gesehen, wo dann irgendwie ein Pilot und irgendwie ein Astronaut im Cockpit von so einem Spacecraft irgendwie sitzen und irgendwie durchs Weltall fliegen und so. Und das sind die Ergebnisse schon wirklich krass.
+
+
+Ja, schon witzig. Und allein anhand einer textlichen Beschreibung quasi, was der da ... Also nur textliche Beschreibung ist auch witzig.
+
+
+Also das war jetzt bildliche Beschreibung, das fand ich auch spannend, aber textliche Beschreibung sowieso.
+
+
+Man kann eben mal eine bildliche Sachen geben und machen wir mal ähnliches Zeug. Das ist ja noch, sag ich mal, easy going für das Ding. Aber das da anhand von textlicher Beschreibung und dann sagst du, du möchtest ein Acrylzeichen Bleistiftzeichnung, du möchtest ein Ölgemälde und dann macht er halt wirklich so eine Bleistiftzeichnung von einem Auto an einer Ampel stehend, nicht blau, weil das geht ja mit Bleistiftzeichnung dann nicht, aber der macht dann wirklich so eine echt coole Sachen da draußen und dann steckt er immer fünf Sachen vor und dann sagst du so, okay, gefällt mir das, verbessert das noch mal so.
+
+
+Da noch ein Vorschlag und genau.
+
+
+Leider auch das Traurige, das ist halt was ein Kreativartist auch macht. Das musst du dir kennen. Also wenn du ein Kreativartist, ich hab schon mal miteinander privat sogar zusammengearbeitet, wenn du dem sagst, du hättest gerne dies und das für die und die Antwort und dann kommt der erstmal mit drei, vier, fünf oder zehn Vorschlägebildern, dann schrägt er deine Auswahl ein, dann sagst du, du nimmst die ersten fünf, die gefallen mir. Dann ändert er nochmal was dran, sagt dann hier wieder fünf Stück, wähl doch die ersten zwei oder drei von dir aus, die du als Favorit hast und so weiter geht es ja weiter. Und das ist halt ein bisschen traurig, auch weil dieser Beruf, dieses Kreativartist, in Zukunft eventuell, oder vielleicht kreative Berufe, weiß ich nicht, ob die gefährdet werden dadurch, oder ob die auch nur ergänzt werden dadurch, oder vielleicht einfacher werden dadurch.
+
+
+Also kann ich jetzt in Bezug auf Grafik nicht beantworten, in Bezug auf Text habe ich dann eine sehr, sehr klare Meinung. Es befreit dich halt unter Umständen von den ganzen langweiligen Aufgaben und du kannst dich dann auf die coolen Aufgaben konzentrieren. Du kannst Masse produzieren, du kannst vielleicht niedrige Qualität produzieren, aber die Dinge, die richtig Spaß machen, wie irgendwie geile Headlines oder Witze irgendwo reinschreiben oder wirklich kreative Texte zu produzieren, das löst die KI. Oder ein lustiges Bild zu deinem Text. heute, genau, das löst sich heute noch nicht und das löst sich wahrscheinlich morgen auch nicht, vielleicht übermorgen, das kann durchaus sein. Aber dann ist es die Challenge quasi auch, ... als Beruf vielleicht diese KI zu bedienen. Also dann ändert sich ja dein Berufsbild. Das müssen wir uns schon akzeptieren, dass sich der Beruf ändert. Das glaube ich auch. Aber dass du überflüssig wirst, also die Diskussion ... Nein, ich bin nicht überflüssig.
+
+
+Ich meine aber, es verändert dich auf jeden Fall definitiv. Es hat einen Impact gerade auf kreative Berufe jetzt momentan. Auf jeden Fall. In gewisser Weise das Programmieren ja auch. Ich fühle mich da immer sehr kreativ dabei. Also es ist eigentlich auch kreativ.
+
+
+Ich würde sogar so weit gehen, das wird noch unsere komplette Wahrnehmung verändern, was wir an Inhalten im Internet finden, was wir irgendwo zusammensuchen. Egal mit welcher Suchmaschine und mit welchem Tool, wir können uns irgendwann nicht mehr darauf verlassen, dass da wirklich mal ein Mensch einen Faktencheck gemacht hat. Das wird unsere komplette Wahrnehmung verändern, was Informationen im Netz angeht. So weit würde ich mich aus dem Fenster lehnen. Ich habe noch eine andere Frage an euch, die ein bisschen in so eine Richtung geht. Ihr macht ja unter Umständen auch, wenn jetzt neue Bewerberinnen und Bewerber bei uns irgendwie anklopfen, macht ihr ja auch Code Deep Dives mit denen, um zu checken, ob fachlich das alles passt, ob die irgendwie, wie die arbeiten und so weiter. Wie schneiden die im Vergleich zu so einer KI ab?
+
+
+Spannend, müssen wir mal ausprobieren. Habe ich ja noch nicht da, wäre ich noch nicht drüber nachgedacht. Du hast gute Ideen, stelle ich fest.
+
+
+Das ist der erste Bewerber, den man dann dabei erwischt, der an seinem Handy irgendwie so... Aber das muss ja erlaubt sein.
+
+
+Also das muss ja unbedingt... Das, also ich verstehe nicht.
+
+
+Vielleicht sogar, ja, wenn du so siehst, klar, als Skillset, dass man jetzt sagt, man müsste es mit, oder es wäre cool, wenn er es mitbringt, dann wäre es vielleicht sogar witzig, wenn er jetzt erstmal den Chat-TPT, ja, ich würde jetzt mal Chat-TPT fragen, wie geht denn das?
+
+
+Naja, ich meine, wir versuchen ja in den, Gesprächen mit den Bewerbern jetzt nicht nur so nackte Programmierer, wie soll man sagen, Sachen abzufragen, wie eine Programmiersprache funktioniert oder wie eine bestimmte Funktion heißt oder sowas, sondern wir versuchen natürlich schon, das konzeptuelle Denken zu erforschen von dem Kandidaten. Wer stellt ein Problem und schaut dann, okay, wie geht er denn mit dem Problem um? Und vor allem, welche Fragen stellt er zu dem Problem? Weil dieses Testproblem, das wir vorlegen, das ist durchaus beabsichtigt sozusagen unvollständig und an einigen Stellen sogar widersprüchlich. Und das ist aber interessant. stellt er das fest, dass das Widersprüche enthält? Was stellt er für Rückfragen? Und das ist mal was, was ich glaube, was gerade Chet Chibiti jetzt eben gerade noch nicht kann. Also Rückfragen zu stellen, irgendwie ein Ziel vor Augen zu haben, irgendwo hinzukommen, das ist nicht das, was Chet Chibiti im Moment macht.
+
+
+Ja, er ist eher so der Bullshit-Artist, der dann versucht, darüber wegzugehen, dass da Widersprüche drin sind. Naja, okay. Von daher ist der vergleichbar.
+
+
+Ja, aber das stimmt genau. In dem ersten Lied, bei dem ich jetzt dabei war letzte Woche, Da war es ja wirklich so, da war jetzt nicht so, ich will die fertige Lösung haben von dem Bewerber, sondern eigentlich, wo will der hin, was stellt er für Fragen, wie geht der konzeptionell vor in seiner Arbeit. Und das ist eher das Wichtige, was auch einen guten Programmierer ausmacht, wie geht der vor.
+
+
+Ja, und da würde ich jetzt auch nochmal gerne kurz anknüpfen und den Punkt gerade noch zu Ende bringen. Also da rege ich mich gerade auf, wenn die Diskussion lautet, wie können wir zum Beispiel in der Lehre sicherstellen, dass Leute solche Tools nicht benutzen oder dass wir das entdecken, wenn Leute solche Tools benutzen, wo ich sage, eigentlich ist das die falsche Diskussion. Wir müssen diskutieren, wie können wir die Leute ermutigen, solche Tools zu nutzen, um noch bessere Ergebnisse zu erzielen und wirklich auch was zu lernen und so.
+
+
+Das muss eigentlich die richtige Diskussion sein. Ja, am Ende mündet sich das wieder in der gleichen verqueren Idee, dass man halt sagt, Handys sind verboten, Tablets sind verboten, alles ist verboten in der Schule.
+
+
+Genau, da sind wir jetzt zum Glück schon ein bisschen drüber raus so, diese ganze Tablet-Geschichte in der Schule, die ist noch nicht gelöst, aber die ist schon besser als es vor zehn Jahren war. Genau. Und jetzt die nächste, ich würde jetzt nicht sagen die nächste Sau im Dorf.
+
+
+Aber ich meine, aus Sicht der Lehre ist es natürlich schon eine große Herausforderung, jetzt die Aufgabenstellungen so zu formulieren, dass man es eben nicht einfach in eine KI eintippen kann, sondern dass man eben schaut, okay, was ist denn das, was ein Schüler eigentlich lernen soll? Oder es gibt andere Aufgaben, dass man vielleicht mithilfe von Chemie irgendeine Aufgabe löst.
+
+
+Ja, aber wie formuliert man diese Aufgaben?
+
+
+Da müssen sich Gedanken drum machen. Also keine Frage, dass das nicht leicht ist, das will ich auch nicht sagen, aber das ist die Diskussion, die wir führen sollten. Das ist die Challenge, die wir uns annehmen sollten. Und ich erwarte nicht, dass ein Lehrer sagt, der macht das jetzt morgen alles richtig. Überhaupt nicht der Punkt. Aber die Diskussion würde ich gerne an der Stelle führen.
+
+
+Ja, das ist ganz witzig, weil wir hatten heute beim Mittagessen das Gespräch mit meinem Kollegen, das Gespräch kurz, wo es darum ging, warum kommt denn in Deutschland so Technik dem nicht voran? Also ein Schwungspunkt war bei uns, dass der Chef von, der letzte Familieninhaber von SAP ja jetzt quasi auch seinen Hut genommen hat und jetzt diese Woche oder nächste Woche oder geht irgendwie. Und da ja, der aber auch ein bisschen resigniert noch hingefrotzelt hat, so ja, in Deutschland geht ja nix voran und er sieht's irgendwie relativ düster. Aber grad solche Themen sind ja, ist ja das, wo man sieht, wenn jetzt dann die Lehrer aufspringen und sagen, jetzt machen alle nur noch die gefakten Aufsätze und sowas. Vielleicht sollte man da wirklich die Fragestellung ändern und genau, also man muss die Fragestellung ändern, wie kann man denn mit diesem Thema arbeiten, wie kann man denn mit einem Auto um 1900 herumfahren und auf den Zug aufspringen, statt irgendwie immer davor zu stehen und zu sagen, Hilfe, Hitze läuft alles vor alten Rudern.
+
+
+Also eine schöne Anekdote zum Thema Auto, weil mir die gerade aus einem anderen Podcastprojekt noch im Kopf ist. Das erste Unfallopfer von einem Auto war eine Frau, die in England überfahren wurde. Bridget Driscoll, glaube ich, wenn ich es recht in Erinnerung noch habe. Die wurde mit 6,5 kmh überfahren. So, das kann man sich überhaupt nicht vorstellen heute. Aber die war so von dieser, von dieser, oh, das ist jetzt was völlig Neues. Und ich meine, wir dürfen uns nicht von KI überfahren lassen. Ich verstehe das, wenn man da eingeschüchtert ist und wenn man da sagt, ich habe da jetzt keine Antwort drauf und erst mal resigniert oder erst mal blockt und so, habe ich vollstes Verständnis für. Aber dann bitte drüber nachdenken und mal schauen, okay, wie kann man das lösen und wie kann ich das verteufeln und wie kann ich das irgendwie wegsperren? So, jetzt habe ich hier voll... Das war gar nicht vor, so eine Tirade hier loszulassen. Ich habe noch eine letzte Frage an euch beide. Das ist jetzt eher so ein Ausblick in die Zukunft. Was glaubt ihr, wie wird sich euer Alltag mit KI in Zukunft verändern, vor allem euer beruflicher Alltag?
+
+
+Also ich glaube, dass man als Programmierer, dass es weniger darum geht, irgendwelche Details von Programmiersprachen kennen zu müssen. oder auch von Frameworks, sondern dass es mehr darum geht, die Probleme, also die fachlichen Probleme zu zerlegen in kleine, verdaubare, für die KI verdaubare Einheiten letzten Endes. Ich glaube, dass das zumindest mal mittelfristig, dass es da hingeht. Wirklich, irgendwann wird uns die KI wahrscheinlich auch dann da überholen. Aber im Moment ist es glaube ich noch so, so dieses Aufbrechen von einer großen fachlichen Idee in lauter kleine verdaubare Einheiten. Das was auf der einen Seite der Product Owner, dann Projektmanager schon macht und dann eben auch die Softwareentwickler im Moment machen. Darauf wird sich glaube ich noch mehr, werden wir uns noch mehr konzentrieren und wir werden weniger daran gemessen werden oder auch das überhaupt können müssen, wie eine Programmiersprache, wie man das jetzt formuliert, so eine Zeile.
+
+
+Habe ich noch eine Frage dazu. Spricht da auch ein bisschen die Angst, wenn du dann sagst, okay, Mal angenommen, die KI könnte das schon, dann wäre das so wie jetzt so ein neuronales Netz. Ich verstehe gar nicht mehr, was da eigentlich passiert. Aber solange der Output stimmt, könnte das ja eigentlich egal sein. Aber wird es dann nicht auch wahnsinnig gruselig irgendwann?
+
+
+Ja, irgendwann wird es gruselig. Also die Singularität ist nice, sag ich nur.
+
+
+Frederik, du vielleicht noch. Wie sind deine Zukunftsvisionen?
+
+
+Ja, also definitiv wird es die Alltagsarbeit ein bisschen bereichern. Ein bisschen wird es arg bereichern. ... wie wir vorhin bei den kreativen Sachen gesagt haben, ... ... vielleicht dann einfach auf die coolen Dinge stürzen ... ... und lässt die uncoolen Dinge dann die KI machen ... ... oder die einfachen, simplen Dinge dann vielleicht, ... ... vielleicht auch die komplexen Dinge, die einen genervt haben, ... ... die man ... ... so vielleicht nie auch ... ... 100% umrissen hat, kann man dann vielleicht ... ... in der Eigenheit einer Programmiersprache ... ... muss man sich nicht mehr darum kümmern, wie du gesagt hast. Das sind so Dinge, die man vielleicht der KI einfach geben kann in Zukunft ... ... oder einfach die langweiligen Algorithmen ... Wir haben heute noch einen Workshop gehabt, ... ... um unsere Tickets ein bisschen besser zu framen. Also wie aufwendig ist denn jetzt eine Aufgabe bei uns. Da haben wir auch ein Getherium genommen, ... ... dass man so, manchmal hat man so, ... ... ich nenne es so Quadratmeter-Arbeit, ... ... also so Fliesenleger-Arbeit. Man legt halt einfach tausend Fliesen aneinander. So simple Arbeit, die man dann einfach mal sagen kann, ... ... die kann jetzt die KI auch schnell runterschreiben zum Beispiel. Das könnte man einfach an die KI abtreten und sagen. Machen wir doch mal da die Liste mit den allen Ländern und multiplizieren das aus in alle Sprachen, die dort gesprochen werden. Da muss ich mich nicht darum kümmern, was ich da suchen muss. Faktenchecken muss man dazu noch machen vielleicht. Ja, das ist also, ich würde sagen, eine Bereicherung momentan.
+
+
+Ja, und das schreibe ich. Und wenn ich schon merke, und das sehe ich an euch beiden, und das stelle ich auch an mir fest, wie das Thema eigentlich beflügelt, wie das Thema eigentlich einlädt, sich spielerisch damit auseinanderzusetzen und mit Themen auseinanderzusetzen, die über die eigentliche, seine eigentliche Kernaufgabe gerade hinausgehen, einfach um zu stehen, wo ist die Grenze, was geht da, was kommt da raus. Also das ist doch unglaublich befruchten und unglaublich wertvoll. Und das kann ja eigentlich nur noch mehr werden und nur noch besser werden. Ja, finde ich auch. Ich finde es hier etwas sehr Spannendes. Cool. Ich könnte mir vorstellen, dass wir in wenigen Wochen oder Monaten nochmal zu einem ähnlichen Thema irgendwie hier sitzen, weil da einfach gerade so viel passiert. Und spätestens, wenn wir hier unsere Developer-Veranstaltung im Haus haben zu dem Thema, sicherlich auch nochmal neue Sichtweisen, vielleicht auch von Kolleginnen und Kollegen dazu, da mit reinkommen. Also ich könnte mir vorstellen, dass wir hier nochmal was zum Thema KI hören werden. Und dann freue ich mich darauf, dass wir bald in die zweite Staffel starten mit diesem Podcast. Und für heute würde ich sagen, ich bin Jürgen Kraus, wir sind Branded und das ist Schwarz-Kote-Gold. Tschüss. Tschüss. Ciao.
+
+
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer, hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht. Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir. Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded.

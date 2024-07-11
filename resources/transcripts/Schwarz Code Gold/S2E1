@@ -1,0 +1,347 @@
+Hallo zusammen, schön, dass ihr wieder zuhört. Wir haben es neulich schon angekündigt in der Bonus-Folge, dieser Podcast wird fortgesetzt. Tschüüü, yeah. Ich freue mich. Wir starten in die Staffel 2 und wer den Bonus gehört hat, kennt auch schon meine beiden Mitstreiter Bodo und Frederik. Hallo ihr beiden. Hallo. Hallo. Wir haben beschlossen, dass wir jetzt dieses Thema Podcast nochmal hinterfragen, nochmal ein bisschen anders angehen und dass wir auf jeden Fall jetzt mal eine neue Staffel produzieren wollen. Wir bleiben bei unserem Titel und der grundsätzlichen Frage, ob Deutschland ein Entwicklungsland ist. Also das wollen wir nicht verändern. Aber die Headline wird jetzt ein bisschen anders lauten. Also wir wollen das Thema vor allem Software Craftsmanship. erkunden, schauen, was bedeutet das eigentlich, was ist dazu los im Land, was für Themen fallen da rein, wie codet man heutzutage, wie lernt man coden heutzutage. Sind schon auch wahrscheinlich viele Fragen, die wir in der ersten Staffel schon mal angerissen haben, die wir auch noch mal diskutieren werden. Aber genau, das dann alles zu seiner Zeit. Jetzt vielleicht mal an euch beide zuerst die Begrüßung, die habe ich ja auch in der Bonusfolge schon angekündigt. Wir haben uns einen kleinen Spaß überlegt, um uns mal vorzustellen für alle, die jetzt noch nicht länger zuhören. Wenn euer Leben ein Software-Repository wäre, was würde dann in eurem persönlichen Readme stehen? Das war die Hausaufgabe und Frederik, vielleicht magst du mal dein persönliches Readme einfach vorlesen.
+
+
+Genau, ich fange mal an. Da steht drin, Frederik ist 95 Jahre alt, hat während seiner Ausbildung im Jahr 2005 angefangen zu coden und hatte schon vorher ein großes Interesse an IT generell. Das Auseinandernehmen und Zusammenbauen von Computern hat er schon als Jugendlicher beherrscht, aber Programmieren gibt ihm die Möglichkeit, Computer so zu gestalten, wie er es möchte. Er ist seit 15 Jahren als Backend-Entwickler tätig und arbeitet seit etwa einem Jahr bei Branded Development im Java-Backend-Umfeld. Und er mag es, sich in schwierige Problemstellungen zu vertiefen und ist der Meinung, dass es für fast alles immer eine Lösung gibt. In seiner Freizeit hat er momentan keine Coding-Projekte, da er Zeit mit seiner Familie verbringt und gerne in Videospielwelten abtaucht.
+
+
+Das ist schon mal ganz gut. Ihr könnt dann gerne auch die Readmes nochmal auf der Webseite nachlesen. Die werden wir in den Show Notes auf jeden Fall verlinken. Willst du zugeben, dass du die nicht komplett alleine geschrieben hast?
+
+
+Ich wollte es am Anfang noch sagen, ich habe einen langen Text verfasst, der war ein bisschen zu lang, habe es mir tatsächlich jetzt mit Chats GPT zusammenfassen lassen.
+
+
+Genau, also wer nochmal hören will, was wir von Chats GPT und den Möglichkeiten halten, gerne auch nochmal in die letzte Bonus Episode reinhören. Dann Bodo, die gleiche Frage auch in deine Richtung. Was steht in deinem persönlichen Readme-File?
+
+
+Ja, in meinem persönlichen Rhythmifall steht, dass ich 1980 ungefähr, glaube ich, Softwareentwicklung oder Softwareprogrammieren gelernt habe. Damals noch auf einem Sinclair ZX80, glaube ich. Und ja, meine Motivation eigentlich weiterhin zum Coden ist, dass mich Softwareentwicklung nach wie vor begeistert. Mich begeistert es einfach, Dinge zu bauen, schnelles Feedback zu bekommen über das, was ich gerade da mache, um eben zu sehen, ob es funktioniert und wie es funktioniert. Und ich arbeite derzeit, muss ich sagen, wieder als Softwareentwickler, hatte ja mal etliche Jahre auch andere Dinge gemacht bei uns in der Firma, die jetzt nicht direkt mit Softwareentwicklung zu tun hatten. Ich interessiere mich im Moment besonders für Systemkonzepte, für Test-Driven Development, vor allem Testautomatisierung und versuche eben auch meine Erfahrungen und Überzeugungen an die Kollegen weiterzugeben, die sozusagen nachkommen. Ich bin ja schon etwas älter und länger im Geschäft und habe schon eine Menge, ja, Dinge gesehen, sage ich mal so. Beruflich arbeite ich im Moment gerade mit Java konkret und Spring Boot Backends für die Unternehmensanwendung, gelegentlich auch mal mit Angular fürs Frontend. Ich versuche also immer Test First zu arbeiten. Das heißt natürlich, wenn man mit Spring Boot arbeitet, mit JUnit 5. Ab und zu verwende ich Mutation Testing, zum Beispiel Pi-Test. Was das genau ist, können wir vielleicht mal in einer zukünftigen Folge tiefer erkunden, für die, denen das jetzt nichts sagt. Und in meiner Freizeit mache ich Musik, gehe manchmal zum Fliegen oder fliege auf dem Flugsimulator. X-Plane 12 ist die aktuelle Version.
+
+
+Ja, aber auch nicht so ein bisschen, sondern schon auch so richtig ernst, mit richtiger Simulation und simuliertem Funkverkehr und dem ganzen Drum und Dran. Ganz genau, ja. Ich durfte schon mal mitfliegen. Du wirst ja schon mal mitgeschlagen. Du fliegst ja auch in echt.
+
+
+Ich fliege auch in echt, wenn das Wetter wieder wärmer wird.
+
+
+Genau, dann will ich mich natürlich auch vorstellen, vielleicht kennt mich der eine oder andere schon aus Staffel 1, aber trotzdem habe ich mir das jetzt nicht nehmen lassen. Wenn es um Texte schreiben geht, bin ich immer ganz vorne mit dabei. Ich habe mir auch ein persönliches Readme geschrieben und bei mir steht drin, Jürgen ist irgendwann mal in einen Kessel vor der 90 Minuten Lehrkassetten gefallen und kann sich seitdem nur schwer von Mikrofonen fernhalten. Wenn er nicht gerade Podcasts aufnimmt oder Veranstaltungen rund um das Thema organisiert, schreibt er wahrscheinlich Texte mit schlechten Wortwitzen ins Internet oder hängt an einer der vielen Boulderwände in der Region rum. Gerne erinnert er sich außerdem an die Zeit zurück, als er Basic Code Zeile für Zeile aus Büchern in seinen C64 abgetippt hat. Vielleicht nicht ganz so alt wie Bodo, aber schon auch in der Zeit. Und beinahe wäre Jürgen auch Softwareentwickler geworden. Er ist dann aber an den entscheidenden Weggabelungen in seinem Leben erst in Richtung was mit Netzwerken und dann hinzu was mit Medien abgebogen. Geblieben ist immer meine unbändige Neugier auf alles, was mit Coden zu tun hat und irgendwie gibt es ja deshalb auch diesen Podcast.
+
+
+Programmcode für den C64 abzutippen, das weiß ich auch noch.
+
+
+Ja, C64 und Schneider CPC von meinem Papa habe ich das auch gemacht. Da kann ich mich tatsächlich noch an Einspieler erinnern, dass ich da Nächte lang, Abende lang, Tage lang, ich weiß gar nicht, das hat ewig gedauert. Die Listings und man fehlt ein Stiftkode irgendwo oder ein Code. Genau, die Listings abzutippen und das hat dann nie funktioniert auf Anhieb und alles nochmal zu vergleichen, das ist wirklich Wahnsinn. Aber das war schon nicht ganz zehn Jahre später, als du wahrscheinlich angefangen hast. Aber doch, 7, 8 war es auf jeden Fall. Wir haben uns überlegt, wie wir diese Podcast-Sache jetzt irgendwie gestalten wollen, dass sich das irgendwie gut für uns anfühlt. Also da werden wir jetzt ein bisschen experimentieren wahrscheinlich. Wir haben uns so ein paar Rubriken überlegt, die wir eigentlich ganz gerne machen wollen. Da dürft ihr uns aber auch gerne Feedback dazu geben, ob ihr von irgendwas mehr oder weniger hören wollt, ob das irgendwie sinnvoll ist. Zum Beispiel wollen wir über Aktuelles reden, aber vielleicht ist das in dem Podcast, den man in einem Jahr noch hört, völlig für die Katz. Also vielleicht will das gar niemand. Trotzdem würde ich jetzt einfach mal unsere Struktur, wie wir sie uns überlegt haben, mal knallhart durchziehen und euch fragen, gibt es aktuell aus dem Bereich Technik, IT, Softwareentwicklung, das euch so wichtig erscheint, dass ihr da unbedingt drüber reden wollt?
+
+
+Was mich im Moment gerade umtreibt oder interessiert, ist das Thema Software Craftsmanship. Unter anderem deswegen, weil wir mit einem Buch hier in der Firma im Team oder mit mehreren Teams angefangen haben, uns damit zu beschäftigen. Da gibt es ein sehr spannendes Buch von Robert C. Martin. Onkel Bob genannt. Das hat einige interessante Aspekte zum Thema, wie man heutzutage Software entwickeln sollte und da können wir mal tiefer einsteigen.
+
+
+Okay, du sagst etwas aktuelles, weil dieses Buch noch relativ neu ist oder weil wir uns jetzt gerade auch mit mehreren Kollegen und im größeren Kreis damit befasst haben?
+
+
+Das Buch ist jetzt nicht mehr ganz neu, also ist nicht neu rausgekommen gerade, sondern es gab einfach den Anstoß bei uns in der Firma, sich noch mal näher damit zu beschäftigen. in welchen Rahmenbedingungen wir eigentlich Software entwickeln wollen, wie wir sozusagen gute Qualität produzieren können, wie wir uns auch letzten Endes an Alleinstellungsmerkmal oder doch zumindest von dem Haus, Wald und Wiesen Softwareentwickler sozusagen absetzen können. um eben einfach besser zu sein. Also im Sinne von einem guten sportlichen Wettbewerb einfach besser zu werden auch jederzeit und immer wieder. Und da ist uns eben dieses Thema über den Weg gelaufen. Und ich denke, das war wirklich eine sehr gute, sehr gute Wahl, sich damit oder mit diesen Anregungen von Onkel Bob sich nochmal tiefer zu beschäftigen. Also bei mir ist, muss ich sagen, eigentlich irgendwie offene Türen eingerannt worden, weil das sind alles Themen, die mich eigentlich schon immer beschäftigt haben. Es hat mir manchmal in der Vergangenheit ein bisschen gefehlt, Kollegen, mit denen ich mich darüber austauschen kann oder auch ein Forum, in dem man sich da austauschen kann. Ich habe schon hin und wieder mal versucht, das auch irgendwie weiterzugeben. Und ja, jetzt hat sich halt bei uns in der Firma endlich so eine kleine Gruppe zusammengetan, auch nochmal angeschoben von einem anderen Kollegen. dem das eben wichtig war und das hat jetzt ganz gut so funktioniert und ja, sind wir ziemlich gut ins Gespräch gekommen über diese Themen.
+
+
+Also das heißt, da ist dir dann wirklich das Herz aufgegangen, so als wir am Mittwoch, ich war ja auch dabei, am Mittwoch in unserem Open Space in großer Runde mal über dieses Buch geredet haben. Das fand ich auch mega spannend und ich meine, ganz viele Themen werden wir, glaube ich, jetzt auch in diese und in die nächsten Episoden packen. Ich will jetzt nicht sagen, dass wir uns komplett an diesem Buch entlanghangeln. Ich würde gerne schon den Kontext ein bisschen größer ziehen. Ja, auf jeden Fall. Aber für den Auftrag, glaube ich, gibt uns so dieses Buch und auch die Aufteilung in dem Buch, glaube ich, einen ganz guten Fahrplan. Genau, dazu gleich mehr. Frederik, ist dir irgendwas begegnet?
+
+
+Ja, also ich habe als aktuelles Thema jetzt so ein bisschen ein Mischthema, also nicht IT betreffend, aber eher IT-Unternehmen betreffend. Die Silicon Valley-Bankenkrise, die so ein bisschen, man weiß nicht, was ist noch, vielleicht wissen wir nächstes Mal mehr. Das trifft jetzt scheinbar doch einige, vor allem Startup-Unternehmen, eventuell ein bisschen hart, weil die ihre Kredite nicht mehr gesichert sind. Wir hoffen mal, dass es nicht allzu weite Kreise zieht, aber das ist so ein Thema, das schüttet zumindest gerade die amerikanische IT-Welt so ein bisschen und auch die Bankenwelt ein bisschen in den USA. Wir hoffen mal, dass das nicht allzu weit strahlen wird, dieses Thema, aber es ist mal wieder eine Bank, die es gerissen hat und diesmal leider in der IT.
+
+
+Hätten wir vielleicht am Anfang der Folge dazu sagen sollen, heute ist der 14. März 2023, nur falls sich jemand nachhört und weiß, es gibt quasi keinen Silicon Valley mehr, dann hat das jetzt gerade seinen Anfang genommen. Ich habe mir auch mal die News von heute irgendwie so durchgelesen in den Online-Medien und fand eins ganz spannend, was jetzt mit Softwareentwicklung gar nicht mal so viel zu tun hat, aber ich habe es einfach mal mitgebracht, weil ich an dem Artikel hängen geblieben bin. Und zwar stand da, dass eine Organisation, die sich nennt Katholische Laien und Klerus für Erneuerung, die haben für mehrere Millionen US-Dollar Daten unter anderem von Grindr gekauft und haben diese Daten benutzt, um herauszufinden, welche der christlichen Priester homosexuell sind. Und diese Daten haben sie dann genommen und haben sie quasi an die Kirche weitergereicht, an die Bischöfe und denen so ein bisschen die Entscheidung dann zugeschoben, was man jetzt mit diesen Daten denn machen soll. Und ich habe es nicht hundertprozentig verstanden, warum das legal ist, warum man das einfach so machen kann. Aber USA ist mit seinen Datenschutzgesetzen ja doch ein bisschen anders unterwegs und ich glaube, das ist auch ein skandinavisches Unternehmen, jetzt Grindr. Aber mir sind tatsächlich die Nackenhaare so ein bisschen hochgekommen, als ich das gelesen habe. Das ist ein unfassbar gruseliges Datenschutz-Szenario, finde ich.
+
+
+Das stimmt, ja. Das klingt wirklich gruselig.
+
+
+Gut. Ich glaube, wir brauchen auf jeden Fall so Audio-Trenner für die. Aber Moment, ich habe sogar Audio-Trenner.
+
+
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer. Hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht. Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir. Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded. Das ist doch fantastisch. Gehen wir zum Thema über. Bodo, ich glaube, die wichtigste Frage am Anfang ist, wie würdest du Software Craftsmanship denn interpretieren oder erklären, wenn man jetzt mit dem Begriff überhaupt nichts anfangen kann?
+
+
+Naja, man kann natürlich erst mal den Begriff übersetzen auf Deutsch, dann kommt man auf handwerkliches Können. Wobei ich glaube, dass der deutsche Begriff das nicht so richtig trifft, was man im Englischen darunter versteht. Ich würde es fast im Deutschen eher als Ingenieurkunst bezeichnen, als bessere Übersetzung dafür. Auch wenn es das jetzt vielleicht nicht genau vom Sprachlichen her trifft. Aber das ist, glaube ich, mehr das, was gemeint ist.
+
+
+Weil es im Deutschen, ich will jetzt nicht sagen, negativ konnotiert ist, also es ist nicht negativ konnotiert, aber es gibt schon einen klaren Unterschied zwischen Handwerk und Wissensarbeit zum Beispiel.
+
+
+Ja, in Deutschland ist es halt sehr strikt, auch durch die Ausbildungsregeln und die ganzen Ausbildungsgänge und so weiter, ist es ja ziemlich klar getrennt, was ist sozusagen ein Handwerksmeister und was ist ein Ingenieur. Das ist aber vielleicht, gerade im amerikanischen Sprachraum oder im englischen Sprachraum ist das nicht so extrem getrennt. Und es ist ja auch letzten Endes bei uns in der Softwareindustrie in Deutschland, da gibt es zwar natürlich auch diese Ausbildungsgänge Fachinformatiker, was quasi eher wie so eine Handwerksausbildung ist, aber in Wirklichkeit wird es nicht mehr so gelebt. Also so wie wir zusammenarbeiten in Teams, da sind Leute mit ganz unterschiedlichen Ausbildungsgängen dabei, bis hin, dass Leute gar keine Ausbildung haben und sich die selber beigebracht
+
+
+Das ist ja aber so das Klischee, oder? Stimmt es wirklich noch, dass quasi Softwareentwickler sind alles Studienabbrecher und Quereinsteiger?
+
+
+Nee, würde ich nicht sagen. Die gibt es natürlich auch und zwar nicht wenige, das ist richtig. Aber es gibt natürlich genauso Leute, die irgendwie Quereinsteiger sind, die Also ich zum Beispiel habe E-Technik studiert, habe ich früher auch nicht gedacht, dass das jetzt wirklich im engeren Sinn was mit Softwareentwicklung zu tun hat. Ich habe immer gedacht, naja, das sind dann die Informatiker, aber stellt sich heraus, ist nicht so. Also es ist tatsächlich so, dass viele Ingenieure, auch Maschinenbauer, viel mit Software zu tun haben, weil natürlich ganz viele Dinge heutzutage mit Software gesteuert werden und in der E-Technik ist es genauso. Das sind halt ganz viele Sachen inzwischen, die irgendwie mit Software auch zu tun haben. Deswegen muss man die eben auch programmieren. Und bei mir war es so, dass ich tatsächlich von Anfang an im Berufsleben als Ingenieur zwar sozusagen gearbeitet habe, aber immer in der Softwareentwicklung war. Ich habe nie Hardware gebaut in dem Sinn.
+
+
+Ja, mein Ausbilder zum Beispiel, der kam auch aus dem Webmaschineningenieurswesen, also hat irgendwie Webmaschinen, ich bin mir nicht sicher, auch programmiert oder irgendwie auch mitgebaut, bin mir ganz sicher, aber er kam so aus dieser quasi Kleidungsherstellung quasi, die in Deutschland auch relativ groß mal war. Und ja, kam auch aus der Ingenieursrichtung halt, deswegen kann ich das tatsächlich bestätigen. Also ich kannte auch, ich kenne auch einige, die aus dem Ingenieurswesen zum Programmierer geworden sind. Also so aus, gerade aus dem, aus seinem Jahrgang letztlich.
+
+
+Also ich habe mal zwei Semester Informatik an der Uni studiert und da habe ich eigentlich fast gar nicht programmiert, wenn ich mich so zurecht erinnere. Das war nochmal eine andere Ebene. Deswegen finde ich spannend, dass du da so einen Unterschied siehst, zumal im Englischen ist ja aber auch noch der Begriff des Software Engineering ist ja auch nochmal ein anderer oder bezeichnet ja auch nochmal irgendwie eine andere Nuance.
+
+
+Ja stimmt, da kommt der Begriff natürlich mit dem Ingenieur im Deutschen wieder rein und ich finde das ist ja, ich glaube es ist so das gleiche gemeint, nämlich dass man eben auf der einen Seite mit einem Verständnis von einem, im Deutschen vielleicht, von einem guten Handwerker, der eben nach dem aktuellen Stand der Kunst oder der Wissenschaft oder je nachdem, seine Arbeit macht. Und genauso ist es eigentlich für einen Ingenieur. Ein Ingenieur hat eben eine bestimmte Arbeitsweise, die sehr systematisch ist. Genauso wie letzten Endes auch der Handwerker eine bestimmte systematische Arbeitsweise hat. Und da überlappt sich das ja auch ein bisschen. Und das ist, glaube ich, das, was hier gemeint ist. Also es gibt eben bestimmte Grundideen, wie man arbeiten sollte, um eben eine qualitativ hochwertige Software entwickeln zu können.
+
+
+Würdest du sagen, das ist so der Goldstandard aktuell? Ja. Wer hat den denn erfunden oder wer hat den definiert, wenn du sagst, man sollte? Das ist mir zu losgelöst. Wer sagt, dass er das sollte?
+
+
+Naja, ich meine zum Beispiel Robert C. Martin ist natürlich einer der wirklich bekannten Speaker, Buchautoren, der auch auf vielen Konferenzen und so weiter gesprochen hat. Gibt es Dutzende von YouTube-Videos von ihm, der natürlich da einer der Sprecher, sage ich mal, ist von dieser Bewegung. Aber gibt es natürlich viele andere auch, Martin Fowler und Ken Beck und so weiter, die eben durch ihre Publikationen und durch ihre Auftritte eben viele von diesen Grundideen publiziert haben. Das sind jetzt die, die sozusagen auch aktuell noch quasi leben und noch Bücher schreiben oder auftreten. Viel früher gab es andere Leute, die sich da auch verdient gemacht haben, deren Namen vielleicht nicht mehr ganz so bekannt ist. Es gibt zum Beispiel ein Buch Design Pattern von der sogenannten Gang of Four. Das waren vier Autoren. Die Namen habe ich jetzt nicht mehr auswendig, aber das war so ein Buch, was in den 90ern oder Ende der 90er eben sehr populär war, die eben auch so grundlegende Dinge erklärt haben, wie man arbeiten sollte, damit man eben eine gute Qualität sicherstellen kann.
+
+
+Was sind denn deiner Einschätzung nach da die wichtigsten Faktoren für Qualität an der Stelle? Also was stellt genau sicher, dass die Qualität gut wird damit?
+
+
+Ja, eigentlich muss man ja mal fragen, was ist das überhaupt Softwarequalität?
+
+
+Wie macht sich das eigentlich bemerkbar? Was ist denn Softwarequalität? Das ist eine gute Frage. Wie macht sich das bemerkbar?
+
+
+Also meiner Meinung nach macht sich nicht nur darin bemerkbar, dass die Software jetzt wenig Bugs hat. Das ist natürlich das, was sozusagen der End-User als erstes zu sehen bekommt. Stolpe ich über irgendwelche Bugs in meiner Software oder nicht? Das ist aber nur eine sehr oberflächliche Sichtweise. Das, was der normale End-User nicht so zu sehen bekommt, ist zum Beispiel die Frage, wie gut kann ich denn meine Software warten? Wie kann ich die denn weiterentwickeln? Wie kann ich neue Funktionen, wie leicht kann ich neue Funktionen einbauen? Oder wie schwer ist es, neue Funktionen einzubauen? Wie schwer ist es, die Software an neue Anforderungen anzupassen? Und eine gute Qualität in diesem Sinne bedeutet eben, ich kann die Software leicht an neue Anforderungen anpassen. Und eine schlechte Qualität wäre eben, Ich muss sehr viel mehr Zeit aufwenden, um die Software anzupassen und habe dann am Ende noch sehr viel mehr Bugs, die ich dann auch noch fixen muss, die dann vielleicht beim Enduser sozusagen auch aufpoppen. Und der, die dann berichten muss, das wäre dann eben schlechte Qualität.
+
+
+Ich versuche gerade irgendwie ein Beispiel aus der Nicht-Software-Welt zu finden, die das irgendwie ein bisschen anfassbarer noch macht. Aber mir fällt jetzt sporadisch keine Zeit.
+
+
+Ja, ich versuche auch da parallel zu ziehen, gedanklich so zu einem Handwerk, so Schreinerhandwerk zum Beispiel. Also der Schreiner, der vielleicht einen Schrank baut und irgendwie noch vorsieht, dass man die Bretter anbringen kann, wie man möchte, zum Beispiel innen drin. Also das Innenleben irgendwie vielleicht. dann an seine veränderten Lebensbedingungen anpassen kann, dass man dann irgendwann vielleicht noch, wenn man dann Anzüge irgendwann hat, vielleicht eine Kleiderstange noch einziehen kann oder sowas, dass man das halt schon vorbereitet hat vielleicht. Und wenn man da in Parallelen ziehen möchte zu einem alten Berufshandwerk.
+
+
+Also klar, diese Analogien sind natürlich immer sehr beliebt. Eine andere Analogie wäre natürlich die mit der Architektur von Gebäuden. Aber aus meiner Sicht führt diese Analogie relativ schnell eigentlich in eine Sackgasse, weil das, was man mit Software nämlich machen kann, nämlich sie schnell und leicht zu ändern, das ist genau das, was man mit Gebäuden zum Beispiel nicht machen kann. Und die Idee, also das, was du jetzt gesagt hast, dass man quasi im Vorhinein schon vorsieht, weil man es vorausahnen kann, dass jemand irgendwas ändert in einem Haus, das ist auch was, was man eigentlich in der Software gerade eben nicht tun sollte, aus meiner Sicht. Man sollte eben gerade nicht sich irgendwelche zukünftigen Anforderungen ausdenken als Entwickler, die aber mein Product Owner oder eben derjenige, der für die Produktidee sozusagen verantwortlich ist, die er noch gar nicht geäußert hat. Weil das führt dann dazu, dass die Software unheimlich aufgebläht ist, dass ich viele Funktionen einbaue, die überhaupt niemand braucht und vielleicht auch nie jemand brauchen wird. und die ganz viel Geld kosten. Also Softwareentwicklung ist ja richtig, richtig teuer. Also es ist ja nicht so eine Zeile Programmcode. Ich weiß nicht, wie man das umrechnen kann, aber es ist sehr teuer, Software zu entwickeln. Und deswegen ist es eben, und das ist auch eine der Dinge, die sich eigentlich in den letzten, sage ich mal, 20, 30 Jahren so herauskristallisiert hat mit der ganzen Entwicklung von Scrum, dass man versucht, eben sehr sparsam wirklich nur das zu entwickeln, was wirklich jetzt im Moment gebraucht wird. Und das, was ich meine, dass die Software anpassbar ist, ist, dass ich meine Softwarearchitektur für die Funktionen, die ich jetzt im Moment habe, dass ich die trotzdem so strukturiert habe, dass ich sie leicht ändern kann. Und da kommt man auch dann an der Stelle relativ schnell zur Testautomatisierung, weil wenn ich die Software ändere, offensichtlich besteht die Gefahr, Bugs einzubauen.
+
+
+Genau, da muss aber das bisherige Programm noch so funktionieren, wie es soll und das kann man eben mit Testautomatisierung dann eben sicherstellen.
+
+
+Genau, und deswegen gehört aus meiner Sicht zum Beispiel das Thema Testautomatisierung immer ganz eng auch zu der Softwarequalität dazu, denn nur wenn ich eine Testautomatisierung für meine bestehende Software habe, kann ich eben sicherstellen, dass ich, wenn ich sie erweitere, die alten Funktionen nicht kaputt mache.
+
+
+Und da rückt man dann sehr schnell tatsächlich von der alten Handwerksanalogie ab, weil man ja als Schreiner macht ja ein Möbelstück und das ist dann eigentlich fertig. Und Software ist eigentlich nie fertig. Ja, wenn man so möchte, ja. Oder kann nie fertig sein.
+
+
+Ist das ein One-Size-Fits-All-Ansatz oder gibt es davon Ausnahmen?
+
+
+Naja gut, ich meine, wenn ich jetzt irgendwie ein kleines Skriptchen baue, was mir, keine Ahnung, irgendwie eine Datei von einem Format ins andere konvertiert und die besteht aus fünf Zeilen, Dann hat es natürlich eine andere Dimension, als wenn ich eine Unternehmensanwendung habe, die hunderttausende von Zeilen hat. Also ich sage mal zehn Zeilen, vielleicht hundert Zeilen, vielleicht sogar tausend Zeilen. Das kann ich noch überblicken. Das kann ich auch noch von Hand testen alles. Da brauche ich noch keine Testautomatisierung. Und da ist auch das Potenzial für Bugs und für Fehler nicht so groß. Aber es gibt eben, und das ist ein fließender Übergang, irgendwann eine Dimension von Software, wo es für den einzelnen Entwickler schon gar nicht mehr zu überblicken ist, selbst wenn er selber der Einzige war, der die Software geschrieben hat über viele Monate oder Jahre, weil man vergisst ja auch wieder, was man mal vor einem halben Jahr gemacht hat. Und wenn die Software dann so groß ist, dass man das nicht mehr überblicken kann, dann braucht man eben Strukturen und Mechanismen, um trotzdem mit der Software noch irgendwie umzugehen. Und da gehören ganz viele Einzelteile dazu. Also wir haben schon genannt, die Testautomatisierung ist eine davon. Das Ganze in einem Scrum-Prozess zu entwickeln, ist eine andere Sache, die sicher auch wichtig ist. Oder eben zum Beispiel auch Continuous Integration, Continuous Deployment, dass man eben die Software quasi ständig so in einem auslieferungsbereiten Zustand hält und sie auch täglich oder wöchentlich ausliefert. Das ist auch so ein Aspekt, der da mit reinspielt.
+
+
+Genau, wobei dieses Thema mit der Continuous Integration und Continuous Delivery dann nochmal manche alten Hasen so ein bisschen, die so nicht in dieser Welt unterwegs sind, so die Haare zu Berge stehen lässt, die dann sagen so, oh, ihr habt jetzt produktiv ausgeliefert. Jetzt gerade vor einer Stunde habt ihr doch schon mal produktiv ausgeliefert. Und dann sagen wir, ja, haben wir gemacht, ja. Und da ist nichts umgefallen. Wir haben ja unsere Tests. Wenn das umfällt, dann liefern wir nicht aus. Das ist manchmal ganz amüsant. Wenn auf Konferenzen zum Beispiel was vorgestellt wird, dann liefert jemand da gerade über seine Pipeline gerade in die Produktion aus. Das geht manchmal auch schief live. Das ist auch lustig. Aber wenn es so ist, wie es sein soll, dann liefern die manchmal in Produktion aus, starten ihre Container neu und das geht alles und die können das so zeigen. ohne dass da jetzt irgendwie die Produktion tatsächlich gestört wird.
+
+
+Ja, also ich meine, was man so hört, die ganzen großen Social-Media-Anbieter, also Facebook und so weiter oder auch Google, die arbeiten eigentlich alle so. Die haben keinen Release-Date, wo man jetzt so wie früher noch, also ich kenne das auch noch so aus meiner Zeit, wo ich angefangen habe, dann gab es irgendwie so monatelange oder sogar jahrelange Vorbereitung mit irgendwelchen ganz langen Plänen und dann hat man da zu dem einen Zeitpunkt, hat man es dann ausgeliefert. Früher hat man ja noch Software auf CD ausliefern müssen oder so. Aber das ist eigentlich, da ist man heute komplett davon abgekommen. Selbst für Software, die man eigentlich auch auf CD, also sogenannte On-Premise-Software, die sozusagen einmal beim Kunden installiert wird, selbst da ist es so, dass man davon abkommt, so lange Release-Zyklen zu haben, weil es einfach sich gezeigt hat, dass es unpraktisch ist.
+
+
+Ja, weil auch das und da als Allerweltsbeispiel zum Beispiel Browser Chrome oder Firefox, die haben immer noch so ein feierliches Release. Jetzt haben wir unsere Version 59.1, die releasen wir jetzt morgen. Aber im Hintergrund gibt es da schon nightly Releases, die werden einfach nächtlich gebaut, jede Nacht bauen die ihre Software und liefern die aus, kann man auch unterladen und installieren. Mindestens jede Nacht, wahrscheinlich bei uns tagsüber auch nochmal ein paar Mal, aber es gibt eben die Nightly Builds dann. Dann gibt es irgendwann ein Release Candidate, wo man dann nochmal eine Testphase mit einem anderen Kundenkreis vielleicht testet und dann liefert man irgendwann aus.
+
+
+Aber wenn man euch jetzt so zuhört, könnte man ja meinen, okay, wir können uns diesen Podcast sparen und können hier auf Stop drücken, weil es ist ja jetzt quasi schon so, die Welt hat sich weiterentwickelt, das ist jetzt der Standard, alle machen das schon so. Wie würdet ihr da die aktuelle Situation einschätzen?
+
+
+Naja, ich meine, der Punkt ist, und das ist auch das, was ich tatsächlich aus dem Buch Clean Craftsmanship gelernt habe oder noch mal mir ins Bewusstsein gekommen ist, das Problem ist ja, dass die Anzahl der Softwareentwickler sich alle fünf oder sechs Jahre tatsächlich verdoppelt. Gibt es auch ein Gesetz von Moore dazu? Ja, so ähnlich. Also ich glaube, er schreibt sogar in den Anfangsjahren, also so der erste Softwareentwickler, den kann man zurückführen so auf die 40er Jahre ungefähr im 20. Jahrhundert, so wo halt die ersten Computer gebaut worden sind und ab da sozusagen die ersten 20, 30 Jahre hat es sich wirklich alle zweieinhalb Jahre verdoppelt, die Anzahl der Softwareentwickler. Und es ist wirklich, also jeder der mal eine Exponentialfunktion sich vor Augen führt, der weiß, das ist wirklich Eine sehr interessante Entwicklung und die hat natürlich auch Folgen, weil zum Beispiel so ich als jemand, der jetzt schon relativ lang im Geschäft ist, der eben schon relativ alt ist mit meinen 56, wie alt ich jetzt bin, ich arbeite jetzt eigentlich dauernd mit ganz vielen jungen Softwareentwicklern, die viel jünger sind als ich und es geht aber jedem Softwareentwickler in meinem Alter so, Und das wird auch jedem von den Jungen jetzt so gehen, dass wenn sie in meinem Alter sind, dass sie auch von lauter Jungen umgeben sind.
+
+
+Ich wollte gerade sagen, das geht auch mittlerweile schon so. Also wenn ich jetzt hier in die Firma gucke, also ich ziehe den Schnitt dann auch irgendwann schon hoch, mit 35, aber da sind auch schon viele, also die Alterspyramide geht auf jeden Fall noch unten sehr breit bei uns.
+
+
+Und das hat eben zur Folge, dass viele junge Softwareentwickler, die auch auf ganz unterschiedlichen Wegen zur Softwareentwicklung kommen, wie wir ja gehört haben, man kann nicht davon ausgehen, dass die jetzt alle irgendwie studiert sind. Und selbst wenn sie studiert sind, ist die Frage, weil du vorhin gesagt hast, du hast ja auch in den ersten zwei Semestern gar nicht Software wirklich geschrieben, dann ist auch die Frage, wie hilfreich das überhaupt war. Und die Schwierigkeit ist eben, dass all diese jungen Softwareentwickler eben relativ wenig Erfahrung haben. Und die machen natürlich, wenn man ihnen das nicht anders beibringt, dann machen sie genau die gleichen dummen Fehler, die ich halt gemacht habe, als ich in dem Alter war. Und die Frage ist jetzt eben, wie kriegt man das irgendwie eingefangen? Wie kann man das so organisieren? Wie kann man Softwareentwicklung so organisieren? Und wie kann man eben auch solche Regeln aufstellen, dass eben die schlimmsten Fehler schon mal am Anfang vermieden werden.
+
+
+Ja, ist spannend, ist spannend. Also da wird es auf jeden Fall, glaube ich, noch ganz schön in die Tiefe gehen in den nächsten Folgen. Da können wir jetzt mal für den Anfang nur an der Oberfläche kratzen. Und ich fände es auch super spannend, dann mal einen von den ganz Jungen vielleicht hier mit einzuladen und mal zu fragen, wie denn da so der Stand der Ausbildung gerade ist, was da gerade so passiert. Ich glaube, Ausbildung, Studium wird sowieso in einer der nächsten Folgen ein großes Thema sein. Ich versuche noch so ein bisschen rauszukitzeln, was man dem dagegen halten kann. Also das klingt für mich so, ja alle feiern das, das ist klar, wir machen das so, Craftsmanship super, wir machen alle jetzt Test-Driven-Development, das ist ja für alle so naheliegend und logisch. Aber es muss doch auch irgendjemanden geben, der sagt, ne Moment, das kann nicht der Weg sein.
+
+
+So ein Ding gibt es ja immer. Jaja, ich meine so naheliegend ist es nicht. Und ich meine, wenn ich an mich zurückdenke, wo ich zum Beispiel hier in der Firma angefangen habe, Da gab es halt niemanden, der noch älter war als ich, der mir das irgendwie beigebracht hätte. Und ich habe halt natürlich das gemacht, was ich damals dachte, was gut ist. Aber ich hätte mir schon auch damals irgendwie die Erfahrung von jemandem gewünscht, der einfach in größeren Projekten schon länger gearbeitet hat. Und das fehlt in manchen Teams komplett. Das fehlt.
+
+
+Und auch wenn man jetzt in größere Firmen, man zum Kunde zum Beispiel schaut, die sind in Transformationsprozessen. Die sind sich dessen bewusst, dass agile Entwicklungsmethoden Vorteile bieten und auch Software-Craftsmanship. die einige Vorteile bietet, wenn man das, und auch Test-Stream-Development, wenn man das eben durchzieht, so im täglichen Doing-Habats halt da. Die sind auch da, sich am Umstellen und am Umgucken und haben aber teilweise wirklich auch das Problem, dass sie so viel mit ihrer bestehenden Software zu tun haben, operatives Geschäft und alles, wo auch Programmierer mit involviert sind oder Bug-Fixing von aktueller Software. ... dass sie tatsächlich wenig Zeit haben, ... ... sich mit umzuschulen auf neue Themen ... ... oder auf Scrum umzuschulen ... ... oder die Zeit dafür bekommen eben. Da hängt es dann auch ein bisschen ... ... an der Führungsebene noch wieder ein bisschen. Wenn es da so alte Abteilungsstrukturen noch gibt, ... ... die es ja bei uns nicht gibt zum Beispiel, ... ... dass das von oben auch gewollt ist. Das muss von innen und von oben kommen.
+
+
+Das stimmt und man muss ja sagen, ... So wie ich das mitgekriegt habe, in Deutschland oder bei uns in der Firma zum Beispiel, haben wir nach dem agilen Scrum-Prinzip angefangen zu arbeiten, so ungefähr ums Jahr 2010, würde ich mal sagen. Unsere Firma ist aber gegründet worden 2003. Und wir waren alle, wir waren noch relativ klein und wir konnten uns relativ schnell umstellen, als wir dann festgestellt haben, dass wir uns umstellen wollen. Aber wenn man sich jetzt größere Firmen anschaut, die schon viel länger etabliert sind, also ich habe mich neulich mal zum Beispiel mit einer Softwareentwicklerin unterhalten, die bei einer großen Versicherung ist, die es schon seit 100 Jahren oder so gibt. Und die haben da zum Teil schon noch sehr alte, überkommene hierarchische Strukturen, die irgendwie ganz weit weg von jeglicher Agilität sind. Also die arbeiten da noch sehr hemmzärmlich und ja eben nicht so modern, wie man es aus meiner Sicht tun sollte. Und es ist aber schwer, so eingespielte Teams, die ja dann aus vielen älteren Mitarbeitern auch dann doch vielleicht an der Stelle mal bestehen, weil die Firma halt auch schon sehr lang existiert, dann dort Dinge zu ändern. Das ist einerseits der Vorteil, wenn man viele junge Leute in der Firma hat, dann kann man es leichter ändern, weil die weniger eingefahren sind. Aber es gibt eben auch das andere, dass eben sich so Firmenstrukturen und Organisationsstrukturen, wenn die mal sehr fest eingefahren sind, nur schwer ändern lassen.
+
+
+Ja, naja, es gibt das andere Extreme aber auch, dass zu viel Veränderung einfach dann irgendwann die Ruhe zum Arbeiten fehlt, wenn du dich nur noch veränderst. Aber ich würde jetzt sagen, das ist überhaupt kein softwareentwicklungsexklusives Problem. Das habe ich jetzt im Kopf auf die Bereiche, in denen ich schon unterwegs war, auch übertragen, diese Strukturen und diese.
+
+
+Also ich meine gerade diese Idee der Agilität, die wird ja inzwischen schon seit einigen Jahren nicht nur auf Softwareentwicklung angewendet, sondern in vielen anderen Bereichen auch. Also allein schon, wenn man sich anschaut, wie Elon Musk seine Raketen baut. Das ist ja Agilität in Reifform.
+
+
+Genau. Das ist vielleicht noch eine der tatsächlichen Analogien zum Handwerk. Elon Musks Raketenbau. Also dieses, der baut ja wirklich iterativ und die Rakete stürzt halt ab und explodiert halt mal. Es wurscht, war halt eine Iteration, die schief gegangen ist. Also eine CI-Pipeline, die hingefallen ist, wenn man so möchte. Bei ihm halt immer ein bisschen teurer dafür. Ja, wobei man in der Software vielleicht auch, wenn man da überlegt... Ja, ist aber einkalkuliert. Einkalkuliert, genau. Aber das ist tatsächlich vielleicht nur eine der Analogien, die man wirklich ziehen kann, weil das ist ja wirklich, da kommt Hardware bei raus und da wird noch was gebaut und geklöppelt und so und dann startet das und fliegt halt so weit, wie es kann. Und wenn es halt nicht war, dann zieht man noch die Diagnosedaten und sagt hier, nächstes Mal machen wir es besser.
+
+
+Ich musste auch gerade an meinen 3D-Drucker denken. Den kauft man sich und den hat man noch nix wirklich gedruckt und fängt schon an, jetzt tausche ich hier mal das aus und dann drucke ich mir was, um den 3D-Drucker nochmal zu verbessern und dann kommt oben noch was drauf und hier noch ein Spulenhalter und hier ein anderer Druckkopf und das ist auch so ein bisschen sehr iterativ.
+
+
+Ehrlich, dass du das gemacht, dass du deinen 3D-Drucker nochmal verändert hast?
+
+
+Also ich war nicht ganz so krass unterwegs, aber ich bin schon mehrmals in so Probleme gerannt, die ich dann irgendwie nicht mehr einfach so lösen konnte, wo ich dann gesagt habe, jetzt kaufe ich mir einen neuen Druckkopf, dann wird es schon wieder gehen.
+
+
+Ich wollte dann lieber was Neues eingebaut haben, als das irgendwie... Was du dir mir gesagt hast, die ersten Teile, die man mit dem 3D-Drucker druckt, sind tatsächlich Teile, die den 3D-Drucker an sich verbessern?
+
+
+Also bei ganz vielen ist das tatsächlich so. Also jeder, der sich mit dem Thema ein bisschen länger befasst, der macht das eigentlich so. Also das erste ist mal so ein Spulenhalter, der irgendwie oben drauf sitzt, statt da unten, weil dann irgendwie halt das Filament besser läuft. Also es gibt so viele, es gibt da so eine Community. Das ist wirklich iteratives Entwickeln. In diesem Buch, von dem wir jetzt geredet haben, teilt Martin das Thema so ein bisschen in drei Bereiche. Wir haben jetzt viel schon über den ersten Abschnitt, er hat es Disciplines genannt, wo es viel um diese Art und Weise geht, wie man denn heutzutage entwickelt. Der zweite Bereich heißt Standards. Kannst du mir das so ein bisschen erklären, was damit gemeint ist und was da so reinfällt?
+
+
+Also das, was er als Standards ansieht, das ist einerseits die Produktivität. Wie kann man sozusagen die Produktivität hochhalten, auch über längeren Zeitraum? Das ist so eine der Herausforderungen letzten Endes auch bei der Entwicklung von sehr großen Software-Systemen, weil wenn man eben nicht aufpasst, dann wird es mit der Zeit immer langsamer. Also jede neue Funktion, die man einbaut, wird mit der Zeit immer teurer, obwohl sie sozusagen auch nicht größer vom Umfang wie am Anfang, weil, wenn man nicht aufpasst, die Software eben sehr groß undurchsichtig für die Programmierer selber schwer verständlich wird und deswegen wird es immer teurer. Das ist eben deswegen sozusagen Produktivität und die Frage ist eben sozusagen einer der Punkte ist eben, wie kann ich die Produktivität, welche Standards brauche ich, um diese Produktivität weiter kontinuierlich hoch zu halten?
+
+
+Also bisher habe ich das eigentlich so verstanden, dass das ein Thema ist, das sich die Softwareentwicklenden selbst auferlegen auch. Also die Art und Weise, wie ich programmiere, das wird mir ja nicht unbedingt vorgegeben. Aber an der Stelle frage ich mich gerade in so einem Auftraggeber-Dienstleister-Verhältnis, kann mir das nicht komplett egal sein? Also wenn das dann teurer wird, ist ja dann gut für mich, dann werde ich vielleicht wieder beauftragt. Ja, das stimmt. Also wer ist an der Stelle überhaupt?
+
+
+Naja, das ist ja auch irgendwie so eine ethische Frage. Es ist ja so, wir als Softwareentwickler haben eigentlich genug Arbeit. Es ist ja nicht so, dass wir sozusagen irgendwie befürchten müssen, dass wir arbeitslos werden. Das heißt, die Motivation, die jetzt vielleicht ein anderer hätte, um seine Arbeitszeit irgendwie unnötig zu verlängern, der Kunde überblickt es nicht so richtig und zahlt und zahlt und zahlt. In der Situation sind wir eigentlich nicht. Also müssten wir auch nicht sein, haben wir gar keine Motivation dazu. Selbst wenn wir sozusagen böswillig wären, was wir natürlich nicht sind. Aber selbst dann ist es so, oder eben genau deswegen ist es so, dass wir eben selber versuchen, die Software auch für den Kunden möglichst gut und günstig zu entwickeln. Weil ich meine, es macht eigentlich auch keinen richtigen Spaß, sozusagen Software absichtlich schlecht zu entwickeln.
+
+
+Ich rede ja gar nicht von absichtlich. Also mir geht es schon wirklich um den Antrieb. Wo kommt der Antrieb her?
+
+
+Ja, und es ist auch sehr mühsam, sag ich mal, wenn man in einem größeren Softwareprojekt arbeitet und man sich zum Beispiel mit den Kollegen und so weiter gut versteht. Und jetzt ist aber die Software irgendwie so undurchsichtig, dass man jeden Tag irgendwie Mühe hat, die Dinge, die man eigentlich einbauen will, einzubauen. Das macht weniger Spaß, als wenn ich eine gut strukturierte Software habe, wo es mir leicht fällt, Dinge zu ändern und Dinge einzubauen. Also ich meine, ich zum Beispiel mache ja Softwareentwicklung auch, weil es mir Spaß macht im Wesentlichen und es macht mir umso mehr Spaß, je besser die zugrunde liegende Struktur der schon bestehenden Softwareteile ist und je besser durchdacht es ist.
+
+
+Ja, das gehe ich mit und das verstehe ich auch, aber das reicht mir, glaube ich, noch nicht so ganz als Antwort. Also ich glaube, so die Ebene drüber ist schon auch relevant. Also dieses Thema Standards, das kann eigentlich nicht von den Entwicklerinnen und Entwicklern alleine alleine bestimmt und alleine gestaltet werden, sondern es muss auch die Ebene drüber, der PO oder der Abteilungsleiter oder der Teamleiter oder wer auch immer da in der Verantwortung ist an der Stelle, das muss auch auf der Ebene irgendwo so verstanden werden, oder?
+
+
+Ja, also klar. Ich meine, wenn die Führungs- oder die Management-Ebene Die haben natürlich bestimmte Anforderungen, klar, auch wenn die das vielleicht im Detail nicht durchblicken, was die Softwareentwickler jetzt machen, aber die haben natürlich bestimmte Anforderungen, wie eben zum Beispiel, dass die Software leicht änderbar ist, dass die Produktivität konstant bleibt, dass wir sie jederzeit ausliefern könnten zumindest, wenn denn sozusagen der Manager das gerade für richtig hält und dass er nicht das irgendwie sechs Monate im Vorhinein planen muss. Also das sind eben so Standards. die er in dem Buch eben auch so erwähnt.
+
+
+Es geht ja auch bei dem Qualitätsthema zum Beispiel, dass man ja keine schlechte Software ausliefern möchte. ... geht es auch so ein bisschen darum, ... ... dass man die technische Schuld im Projekt ... ... gering hält. Da war ich letztes Jahr eben, ... ... ich habe es jetzt gerade herausgesucht, ... ... wie es genau hieß, ... ... bei einem Vortrag von der Carola Lienthal ... ... auf der WeChat. Die hat einen Vortrag gehalten ... ... über technische Schulden, ... ... dem Management erklären, ... ... was ein echt interessanter Vortrag war. Weil irgendwann kommt man in die Situation, ... ... wo man, ... ... wenn man die technischen Schulden nicht ... ... dauerhaft niedrig hält ... ... oder dauerhaft bereinigt, ... ... in einem Fluss eben, ... in einem iterativen Fluss, dass man dann irgendwann in die blöde Situation kommt und dem Management zu erzählen, wir müssten eigentlich nochmal an die Software ran und das zahlt einem dann wirklich gar keinen. Also dieses, die Qualität ist schlecht und wir haben Probleme, uns Software weiterzuentwickeln, weil die Wartbarkeit einfach, der Aufwand für die Wartbarkeit zu groß geworden ist, für die Wartung zu groß geworden ist. Und da gibt es verschiedene Möglichkeiten, das da anzusetzen. Also da gibt es zum Beispiel so Die Regel der Pfadfinder, also Boy Scout Rule, dass man einfach guckt, wenn man jetzt irgendwie in einen Grut reinfasst und noch vielleicht drumherum ein bisschen Stellen sieht, die nicht so sauber gemacht sind, dass man die dann halt einfach noch mit sauber macht, obwohl die jetzt mit dem eigentlichen Thema, was man gerade bearbeitet, eventuell nichts zu tun haben. Das ist so die Boy Scout Rule, dass man einfach den Ort, den man besucht hat, besser hinterlässt, als man ihn vorgefunden hat.
+
+
+Das ist so ein bisschen wie so ein selbst auferlegter Ehrenkodex.
+
+
+Genau, kann man aber auch im Team tatsächlich so als Katerregel mitgeben, dass man sagt, man als Team, hält man das jetzt als Teamregel fest und man schaut dann einfach immer, dass man, wenn man irgendwas anfasst, dass man das dann nochmal ein bisschen besser macht vielleicht.
+
+
+Das finde ich super spannend. Vor allem war der letzte Abschnitt in diesem Buch auch sich mit dem Thema Ethik befasst und gerade ich habe mich da mit den auch mit dem Buchclub, mit unseren Kollegen unterhalten darüber und die haben mir als Beispiel genannt, naja, die Diesel-Affäre ist so ein Beispiel, wo man mal schön diskutieren kann, welche ethische, moralische Verantwortung einzelne Softwareentwicklende haben. Und du sagst jetzt gerade, ja, also wir machen das nach der Boy Scout-Rule. Wenn ich jetzt überlege, wenn du in diesem Projekt entwickelt hättest, die Diesel-Steuerungssoftware in einem, ich nenne jetzt keinen Habe ich schon einen genannt? Nein, ich habe nur Dieselaffäre gesagt. Ich nenne jetzt mal keinen Autobauer, aber das Problem hatten ja mehrere. Wenn dein Manager zu dir sagt, baue mal bitte hier eine Funktion ein, die auf dem Teststand ein anderes Ergebnis ausspuckt als in der Echtwelt draußen. Wie würdest du damit umgehen?
+
+
+Weiß ich nicht unbedingt mit der Boy-Squad-Rule, weil die Boy-Squad-Rule, ich würde dann halt die Funktion, die da beschummelt, möglichst perfekt machen.
+
+
+Also du würdest deinen Job versuchen, möglichst gut zu machen.
+
+
+So rein auf die reine Aufgabe bezogen wahrscheinlich, vermutlich ja, weil ich vielleicht den Kontext gar nicht kenne.
+
+
+Naja, aber ich meine, das ist ja eigentlich genau der Punkt in der den er mit der Ethik ansprechen will, dass man eben nicht als Programmierer sich darauf zurückziehen soll, dass man den Kontext nicht kennt oder dass das einen nicht interessiert oder dass man sich nur sozusagen auf seine unmittelbare Aufgabe konzentriert, sondern dass eben Softwareentwickler sehr wohl im Kontext der Gesellschaft auch existieren und in dem Sinne auch eine Verantwortung tragen und zwar eine ziemlich große Verantwortung, weil fast alles, was uns heute umgibt, ist irgendwie von Software gesteuert. Und diese große Verantwortung, ich meine jetzt gerade bei der Diesel-Affäre würde ich sagen, würde ich keine Sekunde überlegen und würde sofort ablehnen, würde wahrscheinlich sofort meine Kündigung auf den Tisch knallen, dem Manager, der das fragt. Aber das ist natürlich jetzt leicht gesagt im Nachhinein. Schwieriger sind natürlich die Fälle, die halt noch nicht passiert sind und die man vielleicht auch nicht sofort so leicht erkennt. Oder wo man sagt, naja, diesen kleinen Dings kann ich jetzt nochmal, da drücke ich jetzt mal noch ein Auge zu. Weil da wird schon nichts passieren und so weiter. Das ist halt die Frage. Jetzt zum Beispiel mit Datenschutz gibt es oft so Fragen. Kann man das noch verantworten? Ist das okay so? Oder jetzt auch mit KI-Entwicklung, was da so alles passiert. Da gibt es auch eine ganze Menge ethische Fragen, die sich natürlich da stellen. Was Robert C. Martin eben meint, ist, dass man sich eben als Softwareentwickler nicht darauf zurückziehen soll, das anderen zu überlassen, den Philosophen zu überlassen oder den Managern zu überlassen, sondern das ist schon auch die Verantwortung der Softwareentwickler.
+
+
+Ich habe ja auch eben ein bisschen das Teufelsadvokaten gespielt, habe dich gut rausgekitzelt. Schon gemerkt.
+
+
+Ja, also ich finde das eine super spannende Diskussion, weil das in der Theorie natürlich ganz klar und einfach ist, wo du sagst, natürlich würde ich nichts moralisch verwerflich machen. Klar, würde ich lieber kündigen und so, aber wenn es dann wirklich soweit ist und dein Job dran hängt und die Frage nicht so eindeutig ist, kann man immer nur froh sein, wenn man nicht in so eine Situation gerät. Das stimmt, ja.
+
+
+Und man sollte eben schon auch über die Folgen Nachdenken von dem, was man da produziert.
+
+
+Ja. DSGVO, da wollte ich einhaken gerade, Datenschutz. Da gibt es ganz einfache Grundlagen. Beim Datenschutz ist aber auch das Thema noch, da ist man gerade bei DSGVO-Themen, ist entweder die Firma mit einem Bein im Knast oder man selber. tatsächlich auch rechtlich belangbar. Da gibt es eine ganz einfache Regel, die heißt Datensparsamkeit, die in der Datenschutzgrundverordnung drin steht. Man soll Daten möglichst sparsam nutzen von jeder Mann da draußen. Und das geht dann so weit, also bei Firmen, wo ich vorher schon gearbeitet habe, wo auch schon die Datenschutzgrundverordnung dann angesetzt wurde, wo auch mit Kundendaten gearbeitet wurde, dass man einfach in Formularen, die man hat, also Onlineshop Beispiel einfach, Wenn der nach meiner Telefonnummer fragt, warum fragt der mich jetzt nach meiner Telefonnummer? Ich habe eigentlich keinen Kontext dafür, um nach der Telefonnummer zu fragen. Und das sind schon so Sachen, die DSGVO relevant werden können, wenn der die nicht nutzt, um sich zum Beispiel per SMS wie über den Lieferstatus zu benachrichtigen, sondern weil er die einfach halt erfasst hat, weil könnte man ja irgendwie mal brauchen. Vielleicht schickt man da mal eine Werbe-SMS hin oder so. Also man darf nicht einfach Daten abfragen und einfach auf Vorrat bevorraten. Das war früher eben etwas unscharf definiert. Mit der DSGVO ist das sehr scharf definiert eigentlich.
+
+
+Also ich finde, die Datensparsamkeit finde ich auch noch relativ unscharf.
+
+
+Also der Paragraf ist noch genauer ausgeführt auch. Da steht auch sowas drin, dass man halt keine Daten abfragen soll, die man nicht selber weiterverarbeitet. Und ich weiß nicht, wie es genau drin steht, müssen wir nochmal nachschauen im Paragrafen, aber es ist, im Prosa bedeutet das, du sollst nur so viel nachfragen, abfragen beim Kunden oder bei deiner jetzigen Aufgabe Daten abfragen, die du auch selber wirklich verarbeitest. Und wenn du mehr abfragst und es nur auf Vorrat speicherst,
+
+
+Aber das ist doch so ein Beispiel. Macht sich da wirklich am Ende des Tages dann jemand gerannt darüber, aber jetzt da in dem Formularfeld, das er gerade baut, noch eine Telefonnummer abfragt, wenn dann der Vorgesetzte das jetzt gerade verlangt?
+
+
+Naja, wir haben jedes Jahr eine Datenschutzschulung, die auch die Datenschutzgrundverordnung so ein bisschen mit tangiert und einschließt.
+
+
+Naja, ich meine, an der Stelle gibt es natürlich noch einen anderen Aspekt, der zur Datensparsamkeit führt, weil ich muss natürlich auch als Entwickler immer hinterfragen, welchen Sinn hat denn die Funktion, die ich jetzt da einbaue? Also wenn jemand zu mir sagt, baue hier eine Telefonnummer ein, dann muss ich schon auch verstehen, wozu wird die benutzt? Warum soll ich das jetzt machen? Weil es kostet ja auch Geld. Das ist ja die andere Seite. Genau. Erwärmungsgeld kostet es auch. Deswegen muss man schon immer hinterfragen, wozu ist es eigentlich gut? Wozu braucht man das? Brauchen wir das wirklich? Das ist eine Frage, die jeder Softwareentwickler eigentlich immer stellen sollte. Und wenn man da keine gute Antwort kriegt, ja, dann braucht man eben keine Telefonnummer.
+
+
+Am Ende schlägt sowas sogar noch in die Codequalität durch, weil man hat dann an irgendeinem Objekt, was weiß ich, Kundenadresse, die Telefonnummer stehen als, sagen wir mal so als Private Field oder was. Und dann sieht man irgendwann so Zero Usages, also wird nie benutzt, das Feld. Dann denkt man sich so, ja, was soll der Dreck? schmeißt es weg oder mein Sona-Cube sagt sogar, die Viable wird nicht benutzt, das ist ein Codesmell. Bitte bereinige diese Stelle. Gerade da spätestens sollten bei einem so ein bisschen die Alarmsirenen schrillen und sagen, nee, brauchen wir nicht, wird nicht benutzt.
+
+
+Aber das ist doch ein wahnsinniger Druck auf jede und jeden Einzelnen von, ich sage jetzt mal euch, aber ein Stück weit sehe ich mich da auch mit in der Pflicht, weil mein Formular fällt ja für indene Zeiten so, das fällt auch in meinen Aufgabenbereich. Von daher ist es doch, ist ganz schön viel verlangt.
+
+
+Ja, aber deswegen ist es ja eine... Gehört mit zum Handwerk, ne? Gehört mit zum Handwerk, deswegen ist es ja eine Profession und kein Hobby.
+
+
+Wird man darauf vorbereitet, wenn du sagst, es ist eine Profession, in seinem Werdegang, so in idealer Weise schon in der Ausbildung?
+
+
+Manchmal. Für manche Dinge. Bei Datenschutz ist es tatsächlich so, dass ja diese Datenschutzverpflichtungen in Deutschland, diese Datenschutzschulungen in Deutschland verpflichtend sind. Insofern, da kann sich jetzt keiner rausreden, dass er das irgendwie nicht mitgekriegt hat.
+
+
+Die nimmt man auch in der Ausbildung schon mit als Auszubildender.
+
+
+Also das ist, muss man sagen, zum Glück ein Thema, was wirklich sehr präsent ist eigentlich.
+
+
+In den letzten Jahren.
+
+
+Sehr, sehr präsent geworden ist, das stimmt. Jede Firma braucht ja auch zumindest mindestens einen externen Datenschutzbeauftragten. Also der kann auch intern sein, aber meistens zu teuer.
+
+
+Und ich meine, was passiert, wenn man da eben keinen Augenmerk darauf richtet? Das habe ich ja am Anfang mit meiner News irgendwie schon mal gezeigt. Wenn man das alles nicht so ernst nimmt, was da am Ende dann rauskommt.
+
+
+Naja, es gehen jetzt tatsächlich so nach den ersten paar Jahren, die jetzt die Datenschutzgrundverordnung aktiv ist, auch EU-weit. gehen schon die ersten Strafen tatsächlich rum. Also gut, leider an Konzerne, die sich da versuchen, dagegen zu wehren. Also an Facebook als Paradebeispiel, die ja einen Datenleck hatten. Ja, aber die mussten doch zahlen, oder? Ich weiß nur nicht, inwiefern sie wirklich gezahlt haben. Ich glaube, sie versuchen sich gerade noch rauszuwinden irgendwie und lassen das alles nochmal von Anwälten durchklagen. Aber wenn man ein europäischer Firmakonzern ist und irgendwie Datenschutzauflagen nicht einhält und dann dafür auch angeklagt wird, dann sind die Strafen groß.
+
+
+Ist ja auch gut und richtig. Was natürlich da im Fahrwasser passiert, ist dann wiederum nicht so schön, dass dann irgendwelche Abmahnwellen gegen Mittelständler irgendwie losgetreten werden, weil sie Schriftarten auf ihrer Webseite haben.
+
+
+Das ist die andere Phase, ja.
+
+
+Ja, aber gut, das hat immer zwei Seiten. Grundsätzlich bin ich auch ganz froh, dass da was passiert und dass das keine leeren Drohungen sind. Wir sind jetzt ganz schön durch die Themen gerannt, gesprungen, gehüpft. Wir werden bei all diesen Sachen, glaube ich, noch tiefer gehen in den nächsten Folgen. Das sollte jetzt bewusst mal oberflächlich ein bisschen an der Einführung, auf der Einführungsebene bleiben. Gibt es noch irgendeinen Punkt, den ihr noch mit reinschmeißen würdet zum Thema?
+
+
+Es gibt noch ganz viele Punkte natürlich, aber es würde jetzt, glaube ich, alles den Rahmen sprengen.
+
+
+Genau, ich glaube auch, dass wir es lieber ein bisschen kürzer halten, ein bisschen durchstrukturieren. Dann kann man sich gezielt nämlich dann die Episoden und Themen rauspacken. Für die, die nicht alles hören wollen, finde ich eigentlich auch selber ganz angenehm. Dann mache ich wieder so einen schönen Trenner rein hier. Und kommen wir noch zum Abschließen, würde ich sagen, wir haben ja noch die Kategorie Picks. Ach ne, ich hatte einen schönen Namen dafür. Ich habe es das Software-Update-Update genannt. Machen wir noch das Software-Update-Update. Nein, okay, ich sehe schon, bin nur ich, der sowas gut findet. Ich liebe das total, wenn technische Podcasts sich die Leute dann noch darüber austauschen, was sie gerade für coole Tools und Helfer und Programme und Online-Dienste und so entdeckt haben, weil da nehme ich mir immer wahnsinnig viel mit. Deswegen habe ich euch gefragt in der Vorbereitung, ob ihr nicht auch irgendwie einen aktuellen Pick habt, den ihr mir hier rüberwerfen könnt.
+
+
+Also ich darf jetzt auf New Bing mit der neuen OpenAI-Chatbot-Anbindung sozusagen zugreifen seit, glaube ich, irgendwie fünf Tagen, vier Tagen oder so. Ich war ja auf der Warteliste und habe auch mir sogar auf meinem MacBook einen Edge rausgerufen.
+
+
+Das tut mir weh. Das tut mir im Herzen weh.
+
+
+Damit ich in der Warteliste sozusagen weiter vorkomme, was scheinbar geholfen hat. Und da bin ich am Rumprobieren und Ausprobieren, was der so alles kann und auch wie die Unterschiede zu ChatGPT sind. Also ich habe auch einen Account bei ChatGPT von OpenAI Direct. Und die sind schon ein bisschen unterschiedlich, die Art und Weise, wie sozusagen die Ergebnisse auch präsentiert werden. Wieso dein erster Eindruck? Ja, ich meine, das Tolle an Bing ist, dass es eben verbunden ist mit der normalen Suche. Also ich muss auch sagen, seitdem komme ich fast, ich meine, ich habe wirklich jahrzehntelang Google benutzt zum Googlen. Und jetzt benutze ich zum Googlen hauptsächlich Bing. Seit ungefähr sieben Tagen oder fünf Tagen. Und das funktioniert ziemlich gut, weil man hat eigentlich beides. Du gibst irgendwie einen Satz ein oder eine Frage ein und du hast auf der einen Seite, kriegst du schnell die Suchergebnisse, die aus meiner Sicht mindestens so gut sind wie die bei Google bisher. Und auf der anderen Seite kriegst du aber dann auch noch, das allerdings dauert auch ein bisschen länger, weil diese AI produziert den Text ja nur, ich weiß nicht, wer das schon mal probiert hat, der weiß, dass das, da kann man zuschauen, wie die einzelnen Buchstaben sozusagen auf dem Bildschirm erscheinen. Das geht ein bisschen langsamer. Aber das Ergebnis, was dann da kommt, ist oft auch sehr, sehr hilfreich. Also beides.
+
+
+Nicht schlecht. Da muss ich mich doch mal noch damit auseinandersetzen, aber ich glaube, ich kriege es nicht übers Herz, Edge auf meinem Mac zu installieren. Frederik, wie schaut es bei dir aus?
+
+
+Ja, also so ein richtiges Tool zum Programmieren eigentlich nicht, aber da geht es um einige andere Themen. Ich gehe mal in den Videospielbereich gerade. Ich hatte eine Steam Deck eine Zeit lang und die Steam Deck hat mich etwas arg überfordert. Ich habe gesagt, ich kenne nicht die Zeit dazu, habe sie wieder verkauft, tatsächlich noch zu einem okayen Kurs. Aber was ich cool finde, ist das Betriebssystem, das sie haben. Und zwar hat Valve dahinter eben auch SteamOS entwickelt, was ja auf der Steam Deck mit läuft. Und SteamOS ist quasi Linux für Spiele, wenn man so möchte, und unterstützt tatsächlich dadurch, dass die Steam Deck jetzt so im Fokus gerückt ist, immer mehr tatsächlich Videospiele und das ist für Linux tatsächlich ein Novum. Also es wird natürlich hinten im Hintergrund emuliert auf Wine und so, aber diese Emulation funktioniert jetzt immer besser durch tatsächlich Valve, die da vorne dran sind an der Entwicklung. und SteamOS vorantreiben. Das kann man sich runterladen, frei und kann sich das auf seinem Rechner installieren und kann dann auch tatsächlich mit Linux auch spielen. Also es ist auf Debian-Basis, es ist ein ganz normales Linux.
+
+
+Was würdest du sagen, ist so die Abdeckung an Spielen, die im Steam-Store stehen, wie viel gehen auf Linux?
+
+
+Also sie haben zumindest die Steam-Deck-kompatiblen Spiele, listen sie ja in ihrem Store tatsächlich auch so transparent. Ich bin mir gerade nicht ganz sicher, ich glaube so 300 Spiele ungefähr, die sie da... Also das sind jetzt natürlich fast alles so... AA oder AAA-Spiele, oder auch tatsächlich viele Indie-Spiele, die auf dem Steam-Deck laufen, die müssten auch alle auf SteamOS problemfrei laufen. Problematisch wird's mit Spielen, die so eine eigene binäre Anti-Cheat-Software mitbringen oder irgend so was, und die läuft natürlich dann nicht so richtig in der Linux-Umgebung. Außer es ist jetzt die Valve-Anti-Cheat-Software für Counter-Strike.
+
+
+Ja, ich meine, ich merke es auch auf dem Mac. Also es werden auch in den letzten Monaten und Jahren sind es immer mehr Spiele, die mit Mac-Unterstützung daherkommen. Ich denke, das sind dann technisch wahrscheinlich, geht das ziemlich in die gleiche Richtung. Das ist wahrscheinlich ziemlich deckungsgleich, die, die auf Linux laufen und die, die auf Mac laufen. Das ist eine ganz schöne Entwicklung, finde ich auch ganz cool. Ja, mein Pack ist mein Lieblingstool. Das ist weder neu noch irgendwie, wahrscheinlich kennst du die meisten schon, aber jeden Tag freue ich mich das zu benutzen. Das ist Obsidian. Obsidian MD. Also es ist quasi eine Software zum Markdown-Notizen schreiben. Eine Notizverwaltung und ich habe die vor Jahren mal ausprobiert und habe das schnell wieder beiseite gelegt, weil ich habe festgestellt, ja irgendwie einfach nur so Markdown-Notizen, da kann ich auch tausend andere Programme nehmen, die irgendwie schöner ausschauen. Aber das coole ist, das hat so einen Second-Brain-Ansatz, den habe ich damals nur nicht verstanden. Aber eigentlich muss man anfangen und seine ganzen Notizen miteinander verlinken und da unterstützt einen die Software eigentlich ganz gut. Und am Ende, wenn du das konsequent eine Weile machst, also ich mache da tatsächlich, morgens plane ich da meine To-Dos drin und habe dann meine Ideen-Dateien und habe dann irgendwie Dokumentation und mache mir jetzt auch Notizen bei Meetings und so und es vernetzt sich alles miteinander und dann findest du da ziemlich schnell dann irgendwie von einem zum anderen und dir fällt nicht mehr so viel runter und das ist ziemlich cool und das ist eine Open Source Software mit wahnsinnig vielen Extensions auch aus der Community, wo man dann auch alles mögliche, also du kannst da Kanban mit rein machen und sie haben jetzt vor kurzem einen ein Canvas vorgestellt, wo man dann MiroBoard-mäßig Karten hin und her schieben kann. Und das alles auf Markdown-Basis, alles in einer Software. Du kannst alles einfach nehmen und als Dateien wegspeichern, um ein Backup zu machen. Gefällt mir richtig gut, finde ich richtig, richtig schön.
+
+
+Klingt sehr interessant.
+
+
+Gerade mal über die Webseite gescrollt, ist wirklich... Werde ich nicht müde, das zu empfehlen.
+
+
+Sieht cool aus. Ich bin sowieso ein großer Markdown-Fan, also von daher...
+
+
+Ich gebe gerne mal eine Einführung oder ich habe mich auch schon mit anderen Obsidian Ultras verabredet, dass wir uns mal hier so eine kleine Community treffen und die Profi-Tricks und Tipps austauschen. Dann bleibt eigentlich nur noch zu sagen, in der nächsten Folge wollen wir reden über das Thema Studium, Ausbildung, wie wir es genau klustern, wissen wir glaube ich noch nicht, aber wir schauen auf jeden Fall, dass wir auch da vielleicht noch andere Stimmen dann in Zukunft hören werden in diesem Podcast. Dann bleibt mir nur noch zu sagen, vielen Dank euch beiden. Ich bin Jürgen Kraus, wir sind Branded und das ist Schwarz-Kote-Gold.
+
+
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer, hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht. Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir. Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded.
+

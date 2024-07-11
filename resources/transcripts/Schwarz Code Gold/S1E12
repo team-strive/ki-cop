@@ -1,0 +1,1244 @@
+Hallo und herzlich willkommen zu Schwarz-Kote-Gold, Deutschland Entwicklungsland.
+
+
+Ich bin Jürgen Kraus und ich habe heute leider keine neue Podcast-Episode für dich, denn eigentlich war hier an der Stelle eine Folge zum Thema Kryptowährung und Blockchain geplant.
+
+
+Es hat jetzt aber ein Interviewpartner das Interview leider um einige Wochen nach hinten geschoben.
+
+
+Und wir haben uns schweren Herzens entschlossen, die Folge nicht ohne dieses Interview zu veröffentlichen.
+
+
+Von daher wird es jetzt ein bisschen dauern, bis die geplante Folge tatsächlich erscheint.
+
+
+Aber damit hier in den Tweet trotzdem ein bisschen Leben reinkommt, haben wir beschlossen, mal wieder einen Bonus zu veröffentlichen.
+
+
+Und zwar habe ich eines der Interviews rausgekramt, die ich für die KI-Episode geführt habe, und zwar mit Saim Alkan von AX Semantics.
+
+
+Da geht es um künstliche Intelligenz, vor allem bei der Texterstellung und um die Frage, wann und wie und ob
+
+
+und die Maschinen irgendwann den Job wegnehmen werden.
+
+
+Viel Spaß damit und die nächste vollständige Episode folgt dann im November.
+
+
+Bis dahin!
+
+
+Wenn ich die Anmoderation für diese Podcast-Episode von einer oder von eurer KI schreiben lassen wollte, wie genau würde ich das anstellen und was käme dabei raus?
+
+
+Das ist eine interessante Frage, die ganz leicht zu beantworten ist.
+
+
+Es wäre nicht so einfach möglich, um mal eine klare Antwort zu geben gleich zu Beginn.
+
+
+Wir haben mit unserer Software eine Lösung, die eher wiederholende oder ähnliche Texte schreiben kann.
+
+
+Also das ist wie bei vielen anderen KI-Entwicklungen auch.
+
+
+Dinge, die sich wiederholen, lassen sich dann eben besser vorhersagen und dann entsprechend formulieren.
+
+
+Eine einzelne Anmoderation könnten wir schreiben.
+
+
+Ich wurde mal gefragt, ob wir einen politischen Kommentar schreiben könnten mit unserer Software, ob der amtierende Bundespräsident eine zweite Amtszeit antreten soll.
+
+
+Das haben wir jetzt ja gerade.
+
+
+Und jetzt würde man eine ganze Menge Daten sammeln, ob Herr Steinmeier bei den Gewerkschaften, bei den Kirchen, bei den Bürgern, bei den Prominenten dieses Landes
+
+
+akzeptiert ist oder nicht.
+
+
+Und mit all den Daten könnten wir dann einen Text schreiben und könnten den jeden Tag in vielen Varianten schreiben.
+
+
+Rein wirtschaftlich ist es unsinnig, weil ich brauche diesen Artikel alle zehn Jahre, nämlich dann, wenn der Bundespräsident zur Wiederwahl steht, habe aber unglaublich viel Geld für diese Datenbank ausgegeben.
+
+
+Es wäre schwierig, technisch zwar machbar, aber betriebswirtschaftlich definitiv nicht sinnvoll.
+
+
+Viel besser ist es, Texte, die sich wiederholen.
+
+
+Der Wetterbericht für 12.500 deutsche Städte, der sich am Tag 18 mal ändert.
+
+
+Die Finanzberichte dieser Welt, Fußballberichte in zig Sprachen für zig Länder.
+
+
+Das sind genau die Dinge, die wir damit tun.
+
+
+Und die Hauptgruppe unserer Kunden kommt sogar aus dem E-Commerce.
+
+
+Das sind Produktbeschreibungen für schnelldrehende Produkte, technisch, Fashion, Porzellan.
+
+
+Das sind alles Kunden, die wir betreuen und da vor allen Dingen Produktbeschreibungen, also ein Marketing-Tool.
+
+
+Da gehen wir gleich noch näher drauf ein, aber vorher vielleicht mal so einen Einblick unter die Haube.
+
+
+Wie genau funktioniert so eine KI und wie muss ich mir da so das technische Grundgerüst dafür vorstellen?
+
+
+Für den Kunden ergibt sich zunächst mal, man braucht strukturierte Daten.
+
+
+Das können Produktinformationen sein, das können Wirtschaftskurse sein.
+
+
+Und ich glaube, wir haben ein sehr technisches Publikum, so grob können die sich vorstellen, wie eine Tabelle aussieht.
+
+
+Wir haben also vorne meinetwegen die Postleitzahl, dann haben wir den Ortsnamen, dann haben wir den Windgeschwindigkeit, die Tageshöchsttemperatur, die Niederschlagswahrscheinlichkeit.
+
+
+Und daraus kann ich dann eben sagen, weiß ich nicht, den dritten Tag in Folge erwarten wir in Stuttgart ein sonniges Wetter, für den Januar außerordentlich warm oder ungewöhnlich warm.
+
+
+Da lässt sich dann eben genauso einordnen.
+
+
+Und es ist zum einen diese Datenbank, zum anderen ein Regelwerk, das der Autor selbst festlegt.
+
+
+Also wir haben eine regelbasierte KI an der Stelle, wo ich das Regelwerk definiere, was die Maschine sagen soll.
+
+
+Und dann kommen noch neuronale Netze dazu, um die ganze Grammatik aktuell in 110 Sprachen zu lösen.
+
+
+Das heißt, wenn ich es dann einmal in Deutsch semantisch zugeordnet habe,
+
+
+dann sind wir durchaus in der Lage, mit geringem Aufwand die Maschine nach denselben Regeln, das Ganze in Englisch oder Japanisch oder Islandisch oder you name it, es sind eben 110 Sprachen, dann auch wieder schreiben zu lassen.
+
+
+Und das macht eigentlich die Nützlichkeit dieser Software oder dieses Hauptargument für diese Software aus.
+
+
+Es ist besser als übersetzt.
+
+
+Also die Übersetzungsdienste, die wir kennen, ob jetzt DeepL oder
+
+
+Google Translate als Beispiel, haben immer die Schwäche, dass sie Kontext erkennen müssen und dann aus dem Kontext den Text richtig übersetzen müssen.
+
+
+Wir haben eine Regel, das ist eine Bank, auf der ich sitzen kann.
+
+
+Diese Bank kannst du kaufen und in deinen Garten stellen, ist die nächste Regel.
+
+
+Und dann ist es relativ einfach, in Anführungszeichen, mit neuronalen Netzen das in verschiedenen Grammatiken unterzubringen.
+
+
+Und die grammatikalische Anpassung, die Beugung, Flexion etc., die kommen dann wirklich aus dem System direkt.
+
+
+Und so kann ich sehr, sehr sicher auf der Marketingseite formulieren.
+
+
+Thema Produkthaftung, Falschversprechen gegenüber dem Kunden, Retourenquote, das hängt ja alles mit dran und kann das eigentlich ganz gut ausschließen.
+
+
+Habt ihr da, wie muss ich mir das vorstellen, habt ihr da in Stuttgart bei euch irgendwie einen Haufen Rechner in einer Surferfarm stehen oder nutzt ihr da einen Supercomputer irgendwo in München oder greift ihr auf Abi-Schnittstellen irgendwo in San Francisco zu oder wie genau funktioniert das?
+
+
+Also alles, was wir an Software nutzen, ist eine Eigenentwicklung.
+
+
+Wir haben fast 16 Millionen Euro Kapital eingesammelt als Startup ursprünglich, haben mit dem Geld diese Software gebaut hier, sind da echt stolz darauf, dass die Entwickler, die wir
+
+
+ins Team geholt haben, wirklich zu großen Teilen immer noch hier sind, also wirklich jetzt mittlerweile seit sieben, acht Jahren, haben diese Software
+
+
+als eigene IP entwickelt und die läuft auf der AWS, also auf der Amazon Cloud.
+
+
+Und da sind wir so flexibel, dass wir die Server, die wir brauchen, einfach zubuchen oder wegbuchen.
+
+
+Das wissen die Techniker.
+
+
+Aber da sind wir von Anfang an auf eine Cloud-Lösung gegangen, sind niemals mit eigenen Servern unterwegs gewesen, sondern die Software, so wie wir sie heute nutzen, ist tatsächlich komplett Cloud-basiert.
+
+
+Du kommst ja, du hast mir gerade erzählt, du kommst auch aus der Textecke, genau wie ich.
+
+
+Wird sich mein Job als Werbetexter in Zukunft dramatisch verändern?
+
+
+Deiner hat sich ja, glaube ich, doch ziemlich verändert in den letzten 10, 15 Jahren.
+
+
+Wie sind die Prognosen für meinen Job?
+
+
+Also wir sehen das jetzt schon bei unseren Kunden.
+
+
+Ich sehe das bei mir selbst.
+
+
+Das ist natürlich das erste Beispiel, aber das ist ja immer das Problem, wenn man Software entwickelt für sich selbst.
+
+
+Das ist immer schön.
+
+
+Viel wichtiger ist es, wenn man, so wie wir, 300, 400 Kunden betreut, mal schaut, was diese 300, 400 Kunden tun.
+
+
+Und beim Großteil unserer Kunden ist es so, dass die schreibenden Teams andere Aufgaben wahrnehmen.
+
+
+Also wir sehen bei vielen der E-Commerce Kunden, die haben, weiß ich nicht, zehn, zwölf Produkttexter.
+
+
+Die sukzessive gehen weg, weil die Produkttexte plötzlich automatisiert werden.
+
+
+Aber die wechseln ins Social Media Team, die gehen in die Blog-Abteilung.
+
+
+Also die schreiben plötzlich Texte und Inhalte, die ich mit einer Maschine eben nicht so gut lösen kann.
+
+
+Also ein Chatbot ist ein sehr entscheidungs-, einem entscheidungsbaren ausgerichtetes Dialogsystem.
+
+
+Da kann es besser sein, ich habe jemanden sitzen, der wirklich im Chat sitzt und das leibhaftig macht, sozusagen.
+
+
+Im Social-Media-Team kann es spannend sein, wenn da Menschen sitzen und nicht einfach nur maschinelle Posts rausgehen.
+
+
+Und da, wo eben dieses Menschliche, dieses Einfühlsame notwendig ist, da schiebe ich dann sozusagen die Leute hin.
+
+
+Und per se wird in der Produktabteilung weniger Leute sein, aber die, die dann noch da sind,
+
+
+sind deutlich höher qualifiziert, weil sie sich plötzlich mit dem KI-System beschäftigen, mit dem Textsystem beschäftigen und eben schauen, was sind die Verkaufsargumente für einen Stuhl, was sind die Verkaufsargumente für ein Hemd oder für ein Pullover und das der Maschine beibringt, das korrekt zu formulieren und dann möglichst in vielen Sprachen als ein Beispiel, sodass sich der Job verändert, weil er qualifizierter wird.
+
+
+Das richtig gute Talent, das schreiben kann, wird dann millionenfach Texte produzieren mithilfe einer Maschine.
+
+
+Das Ganze wird skalierend.
+
+
+Ich kann Anpassungen schneller umsetzen.
+
+
+Insofern ja, es ändert sich.
+
+
+Das ist das, was wir bei den Kunden beobachten.
+
+
+Das Witzige ist, es gibt kaum Stellenabbau.
+
+
+Es ist eher so, dass die Leute
+
+
+plötzlich in Teams geschoben werden, wo es keine Texte gibt oder zu wenig Texte gibt, und dann dort eben entsprechend ergänzen.
+
+
+Und auch nicht jeder will das mitmachen, das ist auch ganz klar.
+
+
+Viele sagen auch, nee, ich bin Textor und ich habe da eine Ehre und ich mache keine Maschine und zeige da nicht, wie man textet, sondern ich mache das weiterhin selber.
+
+
+Gut, dann eben im direkten Dialog mit Kunden zum Beispiel oder in Form eines Blogbeitrags.
+
+
+Weiß ich nicht, der Blogbeitrag könnte sein bei einem Möbelhersteller.
+
+
+Ich mache keine Stuhltexte mehr, sondern wie richte ich ein kleines Zimmer großzügig ein und wie mache ich einen großen Raum gemütlich?
+
+
+Das kann die Maschine schlecht schreiben.
+
+
+Dann schreibst du das in Zukunft und dafür die Produkttexte übernimmt jetzt eine Maschine, weil die brauchen wir auch in zehn Sprachen oder wie auch immer.
+
+
+Aber das ist ja im Grunde genau der Schritt, den wir auch schon in der Vergangenheit bei einer industriellen Revolution gegangen sind.
+
+
+Die Menschen hatten Angst davor, dass die Maschine ihnen die Jobs wegnimmt.
+
+
+Der Mensch wird aber dadurch frei für qualifiziertere Aufgaben.
+
+
+Also ich kann mich erinnern in meiner Verlagshistorie, aus der ich ja ursprünglich komme, als wir den Computersatz eingeführt haben.
+
+
+Heute lachen wir drüber.
+
+
+Damals war das eine Revolution.
+
+
+Es kommt Quark Express und ich schreibe nicht mehr in Word und druck eine Textfahne aus und der Grafiker klebt eine Textfahne, sondern du schreibst direkt ins System und der Grafiker war auf einmal arbeitslos.
+
+
+Das Lektorat war auf einmal weg im Verlag, weil es gab eine Rechtschreibhilfe in Word.
+
+
+Da brauchst du keinen Lektoraten und ehrlich gesagt braucht man doch noch einen Lektoraten.
+
+
+Ja, ich kenne es.
+
+
+Und das Dritte war...
+
+
+Als die ISDN-Übertragung endlich stabil genug war, haben wir die Druckdaten direkt in die Druckerei geschickt, 150 Kilometer weg von Stuttgart.
+
+
+Und da musste der Motorradfahrer nicht mehr bei Tag und bei Nacht, bei Wind, Wetter, Regen, Eis mit den Datenträgern 150 Kilometer unter Lebensgefahr fahren, sondern da kam es per ISDN.
+
+
+Und auch der hat einen anderen Job gefunden.
+
+
+Also es ist einfach so, wir haben in dieser
+
+
+Medienwelt, in der Medienbranche, aus der wir ursprünglich kommen, wir disrumpieren uns immer als Erste, bevor dann alle anderen Branchen kommen.
+
+
+Und diese Disruption in der Medienbranche, das ist immer der, finde ich, ein bisschen der Seismograph dessen, was passieren wird.
+
+
+Und dann sehen wir das in allen anderen Branchen direkt hinterher.
+
+
+Und das Internet hat als erstes Verlage und Medien durchgeschüttelt.
+
+
+Jetzt haben wir die Digitalisierung.
+
+
+Das schüttelt wieder die Verlage und die Medien ordentlich durch.
+
+
+Und wenn wir durch sind, dann kommen alle anderen hinterher.
+
+
+Und ich glaube, das ist eben einfach die Entwicklung in unserer Branche.
+
+
+Das spannt jetzt schon ganz schön den Bogen.
+
+
+Ich würde gerne mit dir einmal ganz kurz noch abklopfen, wie der Weg bis hier war in Sachen KI in Deutschland oder gerne bei euch, wo wir heute genau stehen und wie es morgen aussieht.
+
+
+Brechen wir es mal in drei Fragen runter.
+
+
+Wie sah die Reise bis hier aus bei euch?
+
+
+Also es war viel Glück dabei.
+
+
+Ich fange mal mit dem Wesentlichen an.
+
+
+Dummheit und Glück, das gehört einfach an der Stelle zusammen.
+
+
+Ich bin kein Softwareentwickler.
+
+
+Ich bin Wirtschaftsingenieur.
+
+
+Ich bin in Stuttgart groß geworden.
+
+
+Man hört es, glaube ich, hin und wieder raus.
+
+
+Was mir gar nicht bewusst war, als ich angefangen habe, als noch mal mit Abschluss Wirtschaftsingenieur, mir Gedanken zu machen, was können wir tun?
+
+
+Und der Gedanke kam, ich mache eine Software, war mir das Thema als Computerlinguistik so gar nicht bewusst.
+
+
+Jetzt haben wir in Stuttgart das große Glück oder ich habe das große Glück, dass wir eine hervorragende Computerlinguistik an der Hochschule, einen großartigen Lehrstuhl für Computerlinguistik haben und da einfach davon zehren.
+
+
+Also wir haben in Stuttgart Computerlinguistiker dort.
+
+
+Das war der große Dusel an der Stelle oder die Dummheit, das überhaupt nicht vorher zu prüfen.
+
+
+Man hätte auch nach Bochum gehen können.
+
+
+Die sind ähnlich talentierte Menschen dort.
+
+
+Aber die Hochschule in Stuttgart ist natürlich dafür prädestiniert.
+
+
+Das zweite war der Gedanke, wenn wir das automatisieren, liefern wir dem Kunden ein fertiges Produkt, also einen fertigen Text.
+
+
+Ich sagte also sozusagen, wie dein Wettertext aussehen soll.
+
+
+Löse das Problem.
+
+
+Deswegen hieß auch so eine Lösung, die wir gebaut hatten damals, Textautomat, so sinngemäß.
+
+
+Ich schmeiße oben zwei Euro rein und unten kommt ein Wettertext raus.
+
+
+Das wollen die Leute auch nicht, weil die wollen irgendwie selbst prägen, wie dieses Produkt klingt.
+
+
+Und mir war nicht bewusst,
+
+
+Wieder die Schwäche des Nicht-Software-Entwicklers vor gut acht Jahren, dass wir ein MVP bauen sollten.
+
+
+Also was braucht der Kunde eigentlich?
+
+
+Wir suchen mal eine Lösung, bauen mal was, bieten was an und gucken, ob es angenommen wird.
+
+
+Sondern wir haben erstmal ein Produkt gebaut.
+
+
+Zweiter großer Fehler.
+
+
+Würde ich mit guten Software-Entwicklern von Anfang an gearbeitet haben, wäre mir das nicht passiert.
+
+
+Ich hatte die Kompetenz nicht.
+
+
+Das war die Dummheit.
+
+
+So Glück und Dummheit zusammen haben zu dem geführt, was wir heute haben.
+
+
+Ein Textgenerierungssystem, das jetzt 400 Kunden nutzen, weit über 1000 Anwender sitzen auf der Plattform und generieren bei uns Texte.
+
+
+Und zwar nichts, was wir vorgeben, sondern was wir geschafft haben, ist eine Schnittstelle, eine Mensch-Maschine-Schnittstelle zu schaffen, ein CX zu schaffen, eine
+
+
+Anwendbarkeit unserer hochkomplexen Software für den Textor.
+
+
+Du musst kein Techniker sein, sondern vorne am Frontend sitzt ein Textor.
+
+
+Und ich sage immer, es ist so ein bisschen wie Microsoft Word für automatisierte Texte.
+
+
+Ich vergleiche mich um Gottes Willen nicht mit Microsoft.
+
+
+Bitte nicht falsch verstehen an der Stelle.
+
+
+Aber unser Ansatz ist, ich gucke da drauf.
+
+
+Ich habe eine Art Texteditor vor mir.
+
+
+Ich kann anfangen, ein paar Zeilen zu schreiben.
+
+
+Die Maschinen-Learning-Komponenten entdecken in deiner Datenbank die Felder, die du gerade ansprechen möchtest und verbinden die schon mal.
+
+
+Es entsteht im ersten Schritt so eine Art Lückentext und Steroids sagen wir immer dazu.
+
+
+Ich schreibe mal einen Text, der erkennt, das ist das neue Apple iPhone 13.
+
+
+Dann sagt der Apple, ist in der Hersteller-Tabelle oder in der Tabelle der Hersteller zu finden.
+
+
+iPhone 13 ist ein Produkt dieser Firma und das hat eine Bildschirmdiagonale von, weiß ich nicht, 8 Zoll und entsprechend A, das ist Bildschirmdiagonale und hier habe ich 8 Zoll, hier ist der Wert.
+
+
+Und das machen dann die Machine Learning Komponenten und die beflügeln dann den Textor beim Schreiben und machen diesen, wie gesagt, Lückentext und Stereoids.
+
+
+Das ist so ein bisschen die technische Lösung.
+
+
+Und das ist der Weg, auf dem wir waren von, wir bieten einen fertigen Text, hin zu einem, wir bieten dir eine konfigurierbare KI-Plattform, mit der du deine individuellen Texte schreibst nach deinen Vorgaben.
+
+
+Was für Meilensteine gab es denn so in der KI-Entwicklung bis dahin?
+
+
+Du hast jetzt schon Machine Learning angesprochen, vorhin viel das Schlagwort Regel basiert.
+
+
+Du bist ja schon sehr lange daran oder damit jetzt beschäftigt.
+
+
+Wie hat es angefangen und gab es so große Meilensteine unterwegs oder war das eher so ein flüssiger Übergang?
+
+
+Es war natürlich unter all dem, was wir falsch gemacht haben in der ganz ursprünglichen technischen Entwicklung,
+
+
+gab es schon ganz wesentliche Entwicklungsschritte.
+
+
+Also ich glaube, der erste war, als wir erkannt haben, dass die Software auf gar keinen Fall fertige Texte liefern darf, sondern konfigurierbar sein muss.
+
+
+Das Umdenken in, wir sind eine Plattform, die vom Kunden selbst gestaltete Texte automatisiert.
+
+
+Das war, glaube ich, so eine wichtige Erkenntnis.
+
+
+Das war, glaube ich, so der wesentliche Meilenstein.
+
+
+Das war dann auch die Grundlage der heutigen Software, als wir das für uns verstanden haben und damit auch begonnen haben.
+
+
+Dann gab es für mich einen ganz wesentlichen Meilenstein, als wir in der Lage waren... Wir haben die Maschine blöderweise in Deutsch gebaut.
+
+
+Das ist übrigens das Nächste.
+
+
+Ich würde das immer in Englisch machen.
+
+
+Englisch hat keine Grammatik.
+
+
+Man sagt ja sogar, Englisch hätte keine Grammatik.
+
+
+Im Vergleich zu Deutsch stimmt das tatsächlich.
+
+
+Wir haben es in Deutsch gebaut, aber so nach dem Motto, wenn du Deutsch automatisieren kannst, kannst du ja alles andere auch.
+
+
+Englisch wäre einfacher gewesen, aber wir haben für die Einbindung der englischen Sprache fast neun Monate gedauert.
+
+
+Das war unsere erste Fremdsprache, die wir integriert haben.
+
+
+Wir haben dann andere Sprachen in wenigen Wochen geschafft und sind jetzt aktuell in der Lage, in sieben bis zehn Tagen eine neue Sprache online zu bringen und tatsächlich in Funktion, also grammatikalisch in Funktion zu bringen, dass die Maschine diese Sprache spricht.
+
+
+Das war für mich ein zweiter ganz wesentlicher Meilenstein.
+
+
+Und dann waren für mich so Meilensteine, einzelne Entwicklungsschritte, wo das Tool einfach super Features bekommen hat, zum Teil für den Kunden gar nicht so wahrnehmbar, aber wo wir einfach zusammen mit den CX Leuten aus den Kundenanalysen heraus und den Entwicklern
+
+
+Features gebaut haben, die wirklich das Denken der Maschine oder die Bedienbarkeit der Maschine deutlich verbessert haben.
+
+
+Und dann für mich ganz persönlich, als die Stuttgarter Zeitung mit unserer Software einen Journalismuspreis gewonnen hat.
+
+
+Das war jetzt für mich nochmal so ein Nachweis.
+
+
+Können Maschinentexte überhaupt gut sein?
+
+
+Immerhin so gut, dass sie journalistische Preise abräumen.
+
+
+Das funktioniert.
+
+
+Und dass die im E-Commerce erfolgreich sind, das sehe ich jeden Monat, wenn die Kunden steigende Umsatzzahlen haben und sagen, ja, die Retouren gehen runter oder die Kunden kaufen mehr diese Produkte.
+
+
+Das ist alles ein Beleg auch, dass der Inhalt auf dieser Website funktioniert.
+
+
+Und das ist für mich jedes Mal ein kleiner Meilenstein, nicht ganz so groß wie ein Journalismuspreis.
+
+
+Aber das ist schon sehr spannend.
+
+
+Was sind denn Stand heute?
+
+
+Was sind denn die Grenzen?
+
+
+Du hast jetzt, glaube ich, schon eigentlich mehr oder weniger beantwortet, glaube ich.
+
+
+Aber vielleicht noch mal so ganz klar, woran arbeitet ihr heute?
+
+
+Oder was ist der Punkt, wo du sagst, das geht jetzt heute noch nicht, aber vielleicht ist das irgendwie noch lösbar?
+
+
+Also wir sind meiner Meinung nach an einer Stelle,
+
+
+wo wir was jetzt, Automatisierung der Grammatik, Behandlung der Daten, Nutzung der Daten, die vom Kunden kommen, also von unserem Anwender kommen, Produktdaten, Wetterdaten, was auch immer, schon ganz gut aufgestellt.
+
+
+Was uns aktuell fehlt, ist dem Autoren Inspiration zu liefern.
+
+
+Das ist etwas, an dem wir gerade aktiv arbeiten.
+
+
+Also man kennt unter den Technikern das vielleicht nicht so, aber unter uns Schreibern, wir sagen ja weißes Blatt Syndrom.
+
+
+Ich sitze vor Word, der Cursor blickt mich so fies aus der Ecke an und sagt, schreib doch was.
+
+
+Und dann ist immer so der Einstieg in den ersten Text.
+
+
+Die ersten paar Zeilen fallen einem nicht immer leicht.
+
+
+Manchmal leichter, manchmal weniger leicht.
+
+
+Wenn jetzt aber die Maschine die Daten nehmen würde und mir die ersten drei Zeilen formuliert oder die ersten fünf Sätze formuliert und sagt, so könnte eine Produktbeschreibung von Apple, iPhone aussehen.
+
+
+Selbst wenn ich das komplett verwerfe.
+
+
+Es ist ja manchmal so, du brauchst so einen Kristallisationspunkt als Kreativer.
+
+
+Und dann schreibe ich dir einfach mal einen Text hin.
+
+
+Und dann sagst du, hey, das ist eine geile Formulierung, die übernehme ich.
+
+
+Die anderen vier sind scheiße.
+
+
+genehmigt machst du.
+
+
+Hauptsache du bist inspiriert und es geht weiter.
+
+
+Und wir sind gerade überlegen, wie wir unter anderem so eine Inspiration hinbekommen, also dem Autor wirklich den Einstieg in seine Textwelt, in seine Arbeitsaufgabe zu erleichtern.
+
+
+Das ist das eine.
+
+
+Und das zweite, was wir gerade schon ausgeliefert haben in der Beta, sind personalisierte Texte.
+
+
+Das heißt, die Maschine liefert
+
+
+unter bestimmten Triggern andere Produktbeschreibungen als Beispiel.
+
+
+Also du bist Erstbesucher auf meiner Fahrradwebsite als Beispiel.
+
+
+Dann kennst du mich noch nicht als Fahrradlieferanten.
+
+
+Dann muss ich dir vielleicht erzählen, dass wir Deutschlands größter sind oder dass wir einer der größten europäischen sind oder die einzigen, die die Marke XY in diesem Land vertreten.
+
+
+Und wenn du zum zweiten oder dritten Mal auf dieses 5000 Euro E-Bike schaust,
+
+
+Dann muss ich dir vielleicht andere Inhalte erzählen, als dass wir der deutsche Alleinvertreter sind dieser Marke, sondern dann vielleicht so ein Angebot Richtung Jobrat oder Ratenzahlung bei 5000 Euro.
+
+
+Und wenn das nicht 5000 Euro kostet, dann gibt es vielleicht keine Ratenzahlung.
+
+
+Aber es gibt eine Klarnahezahlung, wo ich dann sage, kannst du erst in 14 Tagen.
+
+
+Also was braucht der Kunde in dem Moment?
+
+
+Und diese Personalisierung, die gibt es für Webseiten und Layouts, die gibt es aber nicht auf der Content-Seite.
+
+
+Da sind wir wirklich weltweit die Ersten, die das anbieten.
+
+
+Da läuft gerade viel Energie rein.
+
+
+Und dann befürchte ich, bis ich endlich in Rente darf, werden uns noch fünf, sechs andere große Sachen einfallen, an denen wir arbeiten wollen und werden.
+
+
+Aber aktuell sind es die zwei Themen, an denen wir ganz massiv arbeiten.
+
+
+Spannend, ja.
+
+
+Ja, zum Morgen kommen wir gleich noch.
+
+
+Vorher vielleicht noch, kannst du, magst du mal den Blick über deinen Tellerrand wagen und einmal versuchen, den Status quo zum Thema KI in Deutschland zu beurteilen oder zu bewerten?
+
+
+Ach, wir haben ganz findige Leute, finde ich.
+
+
+Also dumm sind wir ja nicht.
+
+
+Ich glaube, wir haben coole KI-Leute in Deutschland.
+
+
+Ich weiß nur nicht, ob wir immer mit der Infrastruktur so zufrieden sein können.
+
+
+Das ist so ein Thema, das mich
+
+
+zumindest gedanklich immer wieder beschäftigt.
+
+
+Und ich finde unsere Mentalität in Bezug auf KI einfach extrem schwierig.
+
+
+Also versuchen wir auf der Unternehmenseite, das ein bisschen zu beleuchten.
+
+
+Wir haben ganz, ganz viele Unternehmen und Menschen in Unternehmen, die Hurra schreien, wenn es um KI geht.
+
+
+Wenn es dann aber konkret wird, dann ist aus dem Hurra plötzlich ein Hurräle geworden auf Schwäbisch.
+
+
+Es wird plötzlich sehr klein und die Motivation sinkt.
+
+
+Oh, da muss man ja arbeiten.
+
+
+Und oh, das ist ja Entwicklungsaufwand.
+
+
+Ach, da braucht man Menschen dafür.
+
+
+Und man braucht Daten dafür.
+
+
+Ja, die habe ich ja sowieso nicht.
+
+
+Deswegen ist dieses Hurra auf der einen Seite immer ganz schön, weil es Tür und Tor öffnet.
+
+
+Es ist viel Blendwerk dadurch entstanden und ist nach wie vor unterwegs.
+
+
+Wir hören immer wieder, oh ja, das müssen wir unbedingt machen.
+
+
+Es gab Reiseunternehmen, die sich vor über fünf Jahren mit uns beschäftigt haben.
+
+
+Und gesagt haben, hey, wir brauchen eure Lösung, finden wir cool, KI ist geil, müssen wir unbedingt machen.
+
+
+Dann sind sie drei Jahre verschwunden, um Daten aufzubauen.
+
+
+Direkt zu Beginn der Pandemie hat sich dieses Riesen-Reiseunternehmen wieder gemeldet.
+
+
+Und jetzt brauche ich natürlich nicht weiter auszuführen, was in der Pandemie mit den Reiseunternehmen passiert ist.
+
+
+Also die sind bis heute keine Kunden, haben aber vor fünf Jahren geschrien, hurra, wir brauchen das.
+
+
+Das ist die eine Seite.
+
+
+Also diese Courage-Feier und wir nennen die mittlerweile KI-Touristen.
+
+
+Also Leute, die hier anrufen bei uns, die mit uns Kontakt aufnehmen.
+
+
+Ich wollte mal sehen, wie das funktioniert.
+
+
+Das ist schön.
+
+
+Ja, das ist wie ein bisschen am Grand Canyon stehen und das Selfie machen und dann auch hinschreiben, ich beschäftige mich mit dem Thema KI.
+
+
+Irgendwas angucken ist nicht beschäftigen mit KI.
+
+
+Ich bring's mal so auf den Punkt.
+
+
+Das ist die Unternehmensseite.
+
+
+Dann haben wir die andere Seite, das ist die gesellschaftliche Diskurs und Diskussion, die in der Politik gipfelt in diesem ethische KI-Thema.
+
+
+das für mich ein ganz wesentlicher Punkt ist.
+
+
+Also ich nehme gerne auf jede meiner KI-Themen die Ethiker mit und diskutiere auch mit denen.
+
+
+Finde auch, dass wir das Thema Ethik gar nicht vernachlässigen dürfen, aber es als Leitbild über eine KI-Entwicklung zu schreiben, finde ich schwierig.
+
+
+Baden-Württemberg ist ja von der grünen Landesregierung geprägt und die Idee der grünen Landesregierung war schon immer die ethische KI.
+
+
+In Tübingen haben wir einen KI-Stützpunkt gebaut, mit viel Geld von Amazon, wo die Dinge, die wir da tun, immer unter dem Label laufen müssen, ethisch.
+
+
+Halte ich für extrem schwierig.
+
+
+Also wenn wir nach Amerika schauen, ich will extra nicht China sagen, da ist es ähnlich, aber da ist es natürlich auch politisch etwas schwieriger, aber schauen wir mal nach Amerika, ein sehr liberales Land,
+
+
+Da wird nicht diskutiert, ob das autonom fahrende Fahrzeug die Oma überfahren soll oder zwei Schulkinder überfahren soll, wenn es dann zu dieser letzten Entscheidung kommt, in diesem ganz, ganz kritischen Moment.
+
+
+Es ist so typisch deutsch, dass wir schon über dieses Drama, dieses Verkehrsunfalls diskutieren, noch bevor das erste autonom fahrende Auto in Deutschland überhaupt auf der Straße war oder ist.
+
+
+In Amerika baue ich das Tool, fange an zu fahren, da fährt ein Auto auf einer Teststrecke und gucke mir das an und schaue, was die technischen Probleme sind und fange dann irgendwann an, diese Ethik einzubinden und das Ganze auch ethisch zu diskutieren, was ganz wichtig ist.
+
+
+Bei uns wird erstmal in der Käseglocke über Oma und zwei Spielkinder geredet, bevor wir auch nur das erste Auto gebaut haben.
+
+
+Und das ist ein zweiter ganz großer Hemmschuh, den wir über die gesellschaftliche Diskussion uns selbst anlegen.
+
+
+Der mag nicht falsch sein, aber es wirft uns aktuell nicht nach vorne.
+
+
+Also wir sind nicht der welterfolgreichste KI-Anbieter, wenn man es in Umsatz rechnet.
+
+
+Vielleicht sind wir in der ethischen KI ganz weit vorne, aber damit lässt sich halt sehr wenig Geld verdienen.
+
+
+Damit werden wir wenige Unternehmen begeistern, das auch entsprechend umzusetzen.
+
+
+Und das sind für mich die zwei ganz wesentlichen Aspekte, die das Thema KI prägen.
+
+
+Also Unternehmenstouristen auf der einen Seite, auf der anderen Seite der Diskurs der Ethik.
+
+
+Und das Letzte, was mich tierisch nervt, ist, wir arbeiten remote, schon vor der Pandemie.
+
+
+Mit der Pandemie wurde das noch stärker.
+
+
+Wir haben mittlerweile Mitarbeiter, die ausgewandert sind, während der Pandemie immer noch bei uns arbeiten.
+
+
+Also auch spezielle Entwickler, die ausgewandert sind.
+
+
+die Gott sei Dank eine gute Datenanbindung haben.
+
+
+Und das ist eigentlich das Hauptproblem, die Infrastruktur.
+
+
+Also jetzt, wo alle remote sind, sowieso noch schwieriger.
+
+
+Viele haben ja die zugesagten vertraglichen Upload-Geschwindigkeiten überhaupt nicht zur Verfügung.
+
+
+Und wenn wir remote arbeiten wollen, und ich glaube, dass sich das nicht einfach wieder auflöst, selbst wenn die Pandemie morgen weg wäre,
+
+
+Also wir denken zumindest über ganz andere Bürostrukturen nach.
+
+
+Wir denken über viel kleinere Büros nach.
+
+
+Wir haben Mitarbeitern Arbeitsgeräte zur Verfügung gestellt für zu Hause.
+
+
+Wir denken über Budgets für Büromöbel nach bei Mitarbeitern.
+
+
+Die haben jetzt erstmal hier aus dem Büro einfach mitgenommen.
+
+
+LKW geholt, eingeladen, den Schreibtisch zum Mitarbeiter gefahren.
+
+
+Denken über ganz andere Strukturen nach, aber das heißt auch, dass wir jetzt, und jetzt kommen wir dazu, die Infrastrukturaufgabe der Datenentbindung lösen müssen und zwar nachhaltig.
+
+
+Das wären dann auch deine konkreten Vorschläge, um es für die Zukunft zu verbessern.
+
+
+Was wäre denn dann, um jetzt den Bogen in die Zukunft zu spannen, was wäre denn dann morgen möglich?
+
+
+Mal gesetzt im Fall, wir schaffen hier irgendwie die Kurve zu kriegen.
+
+
+Wann kann ich dann meine Tastatur an den Nagel hängen und was wird KI zu unseren Lebzeiten vielleicht noch zu leisten imstande sein?
+
+
+Ich tue mir da wahnsinnig schwer.
+
+
+Ich habe vor, mittlerweile darf ich das ja sagen, vor über 25 Jahren einen Artikel geschrieben.
+
+
+Da ging es um CD-ROM-Kataloge.
+
+
+Ich komme noch aus einer Zeit, da war CD-ROM-Kataloge programmiert und verkauft, massenhaft an technische Lieferanten.
+
+
+Und damals habe ich einen Fachartikel geschrieben, da war das Thema, wie lange es noch CD-ROM geben wird, wenn es jetzt das Internet gibt und die ersten Fax-Anbindungen ans Internet waren.
+
+
+Also wir reden über Modems, 14.4er-Modems oder 9.6er-Modems, also wirklich ganz, ganz wahnsinnig langsame Anbindungen.
+
+
+Und da habe ich gesagt, solange das so ist, werden wir noch ewig CD-ROM-Pathaloge haben.
+
+
+Was mir nicht klar war, wie schnell die Internetverbindungen deutlich schneller wurden.
+
+
+Damals schon auf ISDN, dann zum Teil 2-Kanal- oder 4-Kanal-ISDN-Anbindung.
+
+
+Da waren wir schon ganz gut, also für damalige Weltwissen, gut unterwegs.
+
+
+Und da war der CD-ROM-Katalog schneller obsolet als ich dachte.
+
+
+Ich glaube tatsächlich, dass egal wie dynamisch wir ein KI-Szenario heute zeichnen, es wird noch schneller sein.
+
+
+Also wenn ich jetzt sage, wir werden in drei Jahren dies oder das tun, dann ist das glatter Unfug, weil das wird übermorgen wahrscheinlich schon passieren.
+
+
+Und wenn ich sage, in zehn Jahren, wenn wir das und das tun, werden wir das wahrscheinlich in vier Jahren erreicht haben.
+
+
+Also ich glaube einfach, alle Szenarien, die wir heute sehen, werden viel viel schneller greifen.
+
+
+weil die Akzeleration, sobald KI begonnen hat, sich zu entwickeln und Daten analysieren kann, Daten vorhanden sind, Daten nachgeliefert werden, dann geht es auch tatsächlich immer schneller.
+
+
+Also der Entwicklungsprozess beschleunigt sich in sich selbst.
+
+
+Skalierende Systeme, exponentielles Wachstum als Schlagwort und dann ist eigentlich klar, das wird viel schneller gehen, als uns das heute klar ist.
+
+
+Das kann man jetzt begrüßen oder verabscheuen, das weiß ich nicht.
+
+
+Das muss man vielleicht dann auch mit den Ethikern nochmal besprechen, wie wir uns da verhalten.
+
+
+Aber ich glaube, das wird sich dramatisch verändern.
+
+
+Also wir haben Entwicklungen ja auch durch die Pandemie.
+
+
+Ich glaube, in Irland bekommen Künstler jetzt ein bedingungsloses Grundeinkommen.
+
+
+Vielleicht ist das eine Entwicklung, die wir dann gesellschaftlich sehen werden.
+
+
+Wenn mehr KI da ist, werden wir alle zu Dichtern und Künstlern möglicherweise.
+
+
+Werden Softwareentwickler morgen Computerkünstler sein?
+
+
+Weiß ich nicht.
+
+
+Auch das ist eine Idee, wo es hinführen kann.
+
+
+Es wird auf jeden Fall nicht so bleiben, wie es heute ist, sondern da steht ein großer Umbruch.
+
+
+Nicht nur ins Land, sondern in diese Welt.
+
+
+Ich hab jetzt hier noch eine Frage auf meinem Zettel stehen.
+
+
+Ich glaube auch, dass du da die Antworten eigentlich schon geliefert hast.
+
+
+Aber ich fand es einen schönen philosophischen Gedanken.
+
+
+Vielleicht wollen wir da noch ganz kurz nochmal drauf eingehen.
+
+
+Du hast gesagt, ein großer Anwendungsfall für eure KI ist, dass da eben massenhaft Texte für Online-Marketing und so weiter, für das Internet generiert werden.
+
+
+Also im Grunde für SEO, kann man vielleicht sagen.
+
+
+Und das läuft ja dann am Ende eigentlich darauf raus, dass eine KI Texte für eine andere KI schreibt.
+
+
+Kann man das so sagen?
+
+
+Ist das wirklich so?
+
+
+Muss man sich das so vorstellen?
+
+
+Wie gesagt, ich glaube, du hast es eigentlich schon beantwortet und daher steckt mehr dahinter.
+
+
+Aber vielleicht magst du da noch mal ein, zwei Sätze zu... Ja, also eine KI, die für eine KI arbeitet, wäre zumindest nicht mein Ziel.
+
+
+Also im Kern bin ich ja Texter, habe das ursprünglich gelernt.
+
+
+Und mein Ziel war immer, wenn jemand einen Text von mir liest und das ist jetzt Werbetext, das ist bitte keine Prosa.
+
+
+Ich schreibe zwar auch Kurzgeschichten und will meinen ersten Roman irgendwann mal schreiben, aber lassen wir das mal beiseite.
+
+
+Ich möchte was mit diesem Text bewirken und wenn wir mal in die Kommunikationslehre reinschauen, dann können wir im Prinzip drei Dinge bewegen, wenn wir Texte schreiben.
+
+
+Wir können das Wissen von jemanden verändern, wir können seine Einstellung verändern und wir können seine Handlung verändern.
+
+
+Wissen ändern ist einfach.
+
+
+Ich sage dir einfach, dieses Produkt besteht zu 100% aus Baumwolle, dann würdest du es wissen.
+
+
+Ich kann deine Haltung oder deine Einstellung zu diesem Produkt verändern, indem ich sage, es ist Öko-Baumwolle.
+
+
+Es ist nachhaltig produziert, ohne Kinderarbeit.
+
+
+Dann ändert es deine Einstellung.
+
+
+Und wenn du es jetzt noch schaffst, dass du das Ding kaufst, dann habe ich eigentlich die höchste Stufe der Kommunikationslehre aus Textblick zumindest erreicht.
+
+
+Da kauft nämlich jemand dieses Produkt.
+
+
+Und wir schreiben Texte oder wir wollen unsere Kunden anleiten.
+
+
+Deswegen haben wir übrigens auch eine eigene Schreibwerkstatt, wo wir Menschen das Schreiben beibringen, weil am Ende sind die ja verantwortlich für das Training der Maschine, dass wirklich der Mensch was damit anfangen kann.
+
+
+Und das Schöne ist, wenn der Mensch sich auf der Webseite korrekt verhält,
+
+
+dann hast du auch automatisch Suchmaschinenoptimierung gemacht.
+
+
+Also es ist einfach nicht mehr so, dass die KI auf Google-Seite sich einfach überlästen lässt, indem ich da 22 Mal das Wort kariertes Hemd hinschreibe und dann ranke ich zu kariertem Hemd auf Platz 1 in Deutschland, sondern ich muss ein bisschen mehr leisten und unter anderem werden ja User-Signale analysiert bei Google.
+
+
+Und wenn ein Kunde sich auf der Website aufhält, ein Produkt kauft, nicht zurückspringt auf die Suchansicht, also die Bounce-Rate niedrig ist,
+
+
+dann hat Google ein gutes Signal für den Text.
+
+
+Und das war immer mein Anspruch, für den Leser zu schreiben und nicht für eine KI.
+
+
+Also am Ende schreibe ja ich, weil ich die Maschine trainiere.
+
+
+Die Maschine hilft mir nur einfach alles viel schneller auszuführen und tausendfach und millionenfach zu optimieren.
+
+
+Am Ende kommt der Grundgedanke dieses Textes aus dem Mensch.
+
+
+Also unser Training ist ja nicht, indem wir tausende von Texten lesen und die dann nachschreiben.
+
+
+Das will nämlich keiner.
+
+
+Niemand will so klären.
+
+
+Also wenn ich heute, weiß ich nicht.
+
+
+Wenn ich Otto bin, will ich nicht klingen wie Zalando.
+
+
+Wenn ich About You bin, will ich auch nicht klingen wie Zalando.
+
+
+Ich habe meine eigene Sprache.
+
+
+Ich habe meine eigene Marketing-Idee, meine eigene Brand.
+
+
+Und wenn ein Unternehmen wie H&M plötzlich auf den Nachhaltigkeitszug aufspringt, dann hilft es mir nichts, wenn ich einfach Texte analysiere von Zalando und die nachschreibe.
+
+
+Sondern die müssen von mir kommen und da muss drinstehen, Nachhaltigkeit spielt für uns eine große Rolle.
+
+
+Wir nehmen Produkte zurück.
+
+
+Wir schauen in der Produktion genau drauf.
+
+
+Wir gucken nach dem Wasserverbrauch bei Baumwolleweben und so weiter.
+
+
+Und dann hat ja keiner einen Text in dieser Form geschrieben.
+
+
+Ich möchte aber bei all meinen Produkten in allen Sprachen unterbringen.
+
+
+Und dann sind wir eben bei diesem Selbstkreieren, den User beeinflussen, sein Wissen ändern, seine Einstellung ändern.
+
+
+H&M ist nicht mehr so ein Schundladen, wie er mal war.
+
+
+Entschuldige mich jetzt schon bei H&M.
+
+
+Und am Ende kauft dann ein Kunde ein nachhaltiges Produkt und tauscht es vielleicht auch irgendwann um und kauft dann ein neues Produkt, sodass wir den Kreislauf da schließen und der Umweltgedanke da plötzlich platziert ist, den bis heute so kein anderer verfolgt oder zumindest nicht im Marketing so stark verfolgt, wie H&M das aktuell tut beispielsweise.
+
+
+Super.
+
+
+Saim, vielen Dank.
+
+
+Ich glaube, ich habe alles, was ich brauche.
+
+
+Schön, dass wir jetzt trotz dem holprigen Start hier ein gutes Gespräch noch zusammengebracht haben.
+
+
+Sehr geehrte Podcast-Hörerin, sehr geehrter Podcast-Hörer, hiermit bewerben wir uns als dein nächster Arbeitgeber.
+
+
+Ja, ich weiß schon, dass das normalerweise andersrum läuft, aber ich finde, dass sich Unternehmen heutzutage durchaus etwas reinhängen müssen, wenn es um neue Mitarbeitende geht.
+
+
+Falls du also Scrum Master bist oder viel Erfahrung hast mit Fullstack, Backend oder Frontend-Entwicklung, dann freue ich mich über eine kurze Nachricht an jobs at branded.dev und dann schicke ich super gerne unsere Bewerbungsunterlagen einschließlich Anschreiben, Lebenslauf und Fotos zu dir.
+
+
+Bis hoffentlich bald und mit den allerbesten Grüßen von deinen neuen Kolleginnen und Kollegen von Branded.
+
